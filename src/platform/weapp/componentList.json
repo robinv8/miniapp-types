@@ -1,0 +1,206 @@
+[
+  {
+    "name": "cover-image",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/cover-image.html"
+  },
+  {
+    "name": "cover-view",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/cover-view.html"
+  },
+  {
+    "name": "match-media",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/match-media.html"
+  },
+  {
+    "name": "movable-area",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/movable-area.html"
+  },
+  {
+    "name": "movable-view",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/movable-view.html"
+  },
+  {
+    "name": "page-container",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/page-container.html"
+  },
+  {
+    "name": "scroll-view",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/scroll-view.html"
+  },
+  {
+    "name": "share-element",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/share-element.html"
+  },
+  {
+    "name": "swiper",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/swiper.html"
+  },
+  {
+    "name": "swiper-item",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/swiper-item.html"
+  },
+  {
+    "name": "view",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/view.html"
+  },
+  {
+    "name": "icon",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/icon.html"
+  },
+  {
+    "name": "progress",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/progress.html"
+  },
+  {
+    "name": "rich-text",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/rich-text.html"
+  },
+  {
+    "name": "text",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/text.html"
+  },
+  {
+    "name": "button",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/button.html"
+  },
+  {
+    "name": "checkbox",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/checkbox.html"
+  },
+  {
+    "name": "checkbox-group",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/checkbox-group.html"
+  },
+  {
+    "name": "editor",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/editor.html"
+  },
+  {
+    "name": "form",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/form.html"
+  },
+  {
+    "name": "input",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/input.html"
+  },
+  {
+    "name": "keyboard-accessory",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/keyboard-accessory.html"
+  },
+  {
+    "name": "label",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/label.html"
+  },
+  {
+    "name": "picker",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/picker.html"
+  },
+  {
+    "name": "picker-view",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/picker-view.html"
+  },
+  {
+    "name": "picker-view-column",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/picker-view-column.html"
+  },
+  {
+    "name": "radio",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/radio.html"
+  },
+  {
+    "name": "radio-group",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/radio-group.html"
+  },
+  {
+    "name": "slider",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/slider.html"
+  },
+  {
+    "name": "switch",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/switch.html"
+  },
+  {
+    "name": "textarea",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/textarea.html"
+  },
+  {
+    "name": "functional-page-navigator",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/functional-page-navigator.html"
+  },
+  {
+    "name": "navigator",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html"
+  },
+  {
+    "name": "audio",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/audio.html"
+  },
+  {
+    "name": "camera",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/camera.html"
+  },
+  {
+    "name": "image",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/image.html"
+  },
+  {
+    "name": "live-player",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html"
+  },
+  {
+    "name": "live-pusher",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/live-pusher.html"
+  },
+  {
+    "name": "video",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/video.html"
+  },
+  {
+    "name": "voip-room",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/voip-room.html"
+  },
+  {
+    "name": "map",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/map.html"
+  },
+  {
+    "name": "canvas",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html"
+  },
+  {
+    "name": "web-view",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html"
+  },
+  {
+    "name": "ad",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/ad.html"
+  },
+  {
+    "name": "ad-custom",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/ad-custom.html"
+  },
+  {
+    "name": "official-account",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/official-account.html"
+  },
+  {
+    "name": "open-data",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/open-data.html"
+  },
+  {
+    "name": "native-component",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/native-component.html"
+  },
+  {
+    "name": "aria-component",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/aria-component.html"
+  },
+  {
+    "name": "navigation-bar",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/navigation-bar.html"
+  },
+  {
+    "name": "page-meta",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/page-meta.html"
+  }
+]

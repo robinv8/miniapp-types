@@ -1,0 +1,98 @@
+[
+  {
+    "name": "view",
+    "url": "https://mp-docs.jd.com/component/view/view.html#view"
+  },
+  {
+    "name": "scroll-view",
+    "url": "https://mp-docs.jd.com/component/view/scroll-view.html"
+  },
+  {
+    "name": "swiper",
+    "url": "https://mp-docs.jd.com/component/view/swiper.html"
+  },
+  {
+    "name": "icon",
+    "url": "https://mp-docs.jd.com/component/content/icon.html"
+  },
+  {
+    "name": "text",
+    "url": "https://mp-docs.jd.com/component/content/text.html"
+  },
+  {
+    "name": "progress",
+    "url": "https://mp-docs.jd.com/component/content/progress.html"
+  },
+  {
+    "name": "button",
+    "url": "https://mp-docs.jd.com/component/form/button.html"
+  },
+  {
+    "name": "form",
+    "url": "https://mp-docs.jd.com/component/form/form.html"
+  },
+  {
+    "name": "input",
+    "url": "https://mp-docs.jd.com/component/form/input.html"
+  },
+  {
+    "name": "checkbox",
+    "url": "https://mp-docs.jd.com/component/form/checkbox.html"
+  },
+  {
+    "name": "radio",
+    "url": "https://mp-docs.jd.com/component/form/radio.html"
+  },
+  {
+    "name": "picker",
+    "url": "https://mp-docs.jd.com/component/form/picker.html"
+  },
+  {
+    "name": "picker-view",
+    "url": "https://mp-docs.jd.com/component/form/picker-view.html"
+  },
+  {
+    "name": "slider",
+    "url": "https://mp-docs.jd.com/component/form/slider.html"
+  },
+  {
+    "name": "switch",
+    "url": "https://mp-docs.jd.com/component/form/switch.html"
+  },
+  {
+    "name": "label",
+    "url": "https://mp-docs.jd.com/component/form/label.html"
+  },
+  {
+    "name": "navigator",
+    "url": "https://mp-docs.jd.com/component/navigation.html#navigator"
+  },
+  {
+    "name": "image",
+    "url": "https://mp-docs.jd.com/component/media/media.html#image"
+  },
+  {
+    "name": "live-player",
+    "url": "https://mp-docs.jd.com/component/media/live-player.html#live-player"
+  },
+  {
+    "name": "video",
+    "url": "https://mp-docs.jd.com/component/media/video.html#video"
+  },
+  {
+    "name": "camera",
+    "url": "https://mp-docs.jd.com/component/media/camera.html#camera"
+  },
+  {
+    "name": "map",
+    "url": "https://mp-docs.jd.com/component/map.html#map"
+  },
+  {
+    "name": "canvas",
+    "url": "https://mp-docs.jd.com/component/canvas.html#canvas"
+  },
+  {
+    "name": "web-view",
+    "url": "https://mp-docs.jd.com/component/ability.html"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "name": "ad 广告",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/ad/"
+  },
+  {
+    "name": "aweme-data 抖音开放数据",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/aweme-data/"
+  },
+  {
+    "name": "button 按钮",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/button/"
+  },
+  {
+    "name": "camera 相机",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/camera/"
+  },
+  {
+    "name": "canvas 画布",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/canvas/canvas/"
+  },
+  {
+    "name": "checkbox 多选选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/checkbox/"
+  },
+  {
+    "name": "checkbox-group 多项选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/checkbox-group/"
+  },
+  {
+    "name": "form 表单",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/form/"
+  },
+  {
+    "name": "icon 图标",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/icon/"
+  },
+  {
+    "name": "image 图片",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/image/"
+  },
+  {
+    "name": "input 输入框",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/input/"
+  },
+  {
+    "name": "label 表单组件标签",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/label/"
+  },
+  {
+    "name": "live-player",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/live-player/"
+  },
+  {
+    "name": "map 地图",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/map/map/"
+  },
+  {
+    "name": "movable-area 可移动视图区域",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/movable-area/"
+  },
+  {
+    "name": "movable-view 可移动视图容器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/movable-view/"
+  },
+  {
+    "name": "navigator 页面链接",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/navigation/navigator/"
+  },
+  {
+    "name": "open-data 开放数据",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/open-data/"
+  },
+  {
+    "name": "picker 底部弹起的滚动选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/picker/"
+  },
+  {
+    "name": "picker-view 嵌入页面的滚动选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/picker-view/"
+  },
+  {
+    "name": "picker-view-column 嵌入页面的滚动选择器子项",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/picker-view-column/"
+  },
+  {
+    "name": "progress 进度条",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/progress/"
+  },
+  {
+    "name": "radio 单选项目",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/radio/"
+  },
+  {
+    "name": "radio-group 单向选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/radio-group/"
+  },
+  {
+    "name": "rich-text 富文本",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/rich-text/"
+  },
+  {
+    "name": "scroll-view 可滚动视图区域",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/scroll-view/"
+  },
+  {
+    "name": "slider 滑动选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/slider/"
+  },
+  {
+    "name": "swiper 滑块视图容器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/swiper/"
+  },
+  {
+    "name": "swiper-item",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/swiper-item/"
+  },
+  {
+    "name": "switch 开关选择器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/switch/"
+  },
+  {
+    "name": "text 文本",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/text/"
+  },
+  {
+    "name": "textarea 多行文本输入框",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/textarea/"
+  },
+  {
+    "name": "video 视频",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/video/"
+  },
+  {
+    "name": "view 视图容器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/view/"
+  },
+  {
+    "name": "web-view 网页容器",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/web-view/"
+  },
+  {
+    "name": "原生组件",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/native-components/"
+  },
+  {
+    "name": "基础组件",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/introduction/basic-component/"
+  },
+  {
+    "name": "消息推送客服",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/message-push-customer-service/"
+  },
+  {
+    "name": "获取手机号",
+    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/acquire-phone-number-acquire/"
+  }
+]

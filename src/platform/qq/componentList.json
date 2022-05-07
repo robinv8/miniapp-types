@@ -1,0 +1,146 @@
+[
+  {
+    "name": "view",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/view.html"
+  },
+  {
+    "name": "scroll-view",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/scroll-view.html"
+  },
+  {
+    "name": "swiper",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/swiper.html"
+  },
+  {
+    "name": "movable-view",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html"
+  },
+  {
+    "name": "movable-area",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html#movable-area"
+  },
+  {
+    "name": "cover-view",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html"
+  },
+  {
+    "name": "cover-image",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html#cover-image"
+  },
+  {
+    "name": "icon",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/icon.html"
+  },
+  {
+    "name": "text",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/text.html"
+  },
+  {
+    "name": "rich-text",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/rich-text.html"
+  },
+  {
+    "name": "progress",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/progress.html"
+  },
+  {
+    "name": "button",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/button.html"
+  },
+  {
+    "name": "checkbox",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/checkbox.html"
+  },
+  {
+    "name": "form",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/form.html"
+  },
+  {
+    "name": "input",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/input.html"
+  },
+  {
+    "name": "label",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/label.html"
+  },
+  {
+    "name": "picker",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/picker.html"
+  },
+  {
+    "name": "picker-view",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/picker-view.html"
+  },
+  {
+    "name": "radio",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/radio.html"
+  },
+  {
+    "name": "slider",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/slider.html"
+  },
+  {
+    "name": "switch",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/switch.html"
+  },
+  {
+    "name": "textarea",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/textarea.html"
+  },
+  {
+    "name": "navigator",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/navigation/navigator.html"
+  },
+  {
+    "name": "functional-page-navigator",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/navigation/functional-page-navigator.html"
+  },
+  {
+    "name": "audio",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/audio.html"
+  },
+  {
+    "name": "image",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/image.html"
+  },
+  {
+    "name": "video",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/video.html"
+  },
+  {
+    "name": "camera",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/camera.html"
+  },
+  {
+    "name": "live-player",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/live-player.html"
+  },
+  {
+    "name": "live-pusher",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/live-pusher.html"
+  },
+  {
+    "name": "map",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/map/map.html"
+  },
+  {
+    "name": "canvas",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/canvas/canvas.html"
+  },
+  {
+    "name": "open-data",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/open-data.html"
+  },
+  {
+    "name": "web-view",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/web-view.html"
+  },
+  {
+    "name": "ad",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/ad.html"
+  },
+  {
+    "name": "official-account",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/official-account.html"
+  }
+]
