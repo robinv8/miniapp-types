@@ -1,0 +1,194 @@
+[
+  {
+    "name": "size",
+    "type": "string",
+    "options": [
+      "default",
+      "mini"
+    ],
+    "defaultValue": "default",
+    "description": "按钮的大小",
+    "required": false
+  },
+  {
+    "name": "type",
+    "type": "string",
+    "options": [
+      "primary",
+      "default",
+      "warn"
+    ],
+    "defaultValue": "default",
+    "description": "按钮的样式类型",
+    "required": false
+  },
+  {
+    "name": "plain",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "按钮是否镂空，背景色透明",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "loading",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "名称前是否带 loading 图标",
+    "required": false
+  },
+  {
+    "name": "form-type",
+    "type": "string",
+    "options": [
+      "submit",
+      "reset"
+    ],
+    "description": "用于 form 组件，点击分别会触发 form 组件的 submit/reset 事件",
+    "required": false
+  },
+  {
+    "name": "open-type",
+    "type": "string",
+    "options": [
+      "contact",
+      "share",
+      "getPhoneNumber",
+      "getUserInfo",
+      "launchApp",
+      "openSetting",
+      "feedback",
+      "chooseAvatar"
+    ],
+    "description": "微信开放能力",
+    "required": false
+  },
+  {
+    "name": "hover-class",
+    "type": "string",
+    "defaultValue": "button-hover",
+    "description": "指定按钮按下去的样式类。当 `hover-class=\"none\"` 时，没有点击态效果",
+    "required": false
+  },
+  {
+    "name": "hover-stop-propagation",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "指定是否阻止本节点的祖先节点出现点击态",
+    "required": false
+  },
+  {
+    "name": "hover-start-time",
+    "type": "number",
+    "defaultValue": "20",
+    "description": "按住后多久出现点击态，单位毫秒",
+    "required": false
+  },
+  {
+    "name": "hover-stay-time",
+    "type": "number",
+    "defaultValue": "70",
+    "description": "手指松开后点击态保留时间，单位毫秒",
+    "required": false
+  },
+  {
+    "name": "lang",
+    "type": "string",
+    "options": [
+      "en",
+      "zh_CN",
+      "zh_TW"
+    ],
+    "defaultValue": "en",
+    "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。",
+    "required": false
+  },
+  {
+    "name": "session-from",
+    "type": "string",
+    "description": "会话来源，open-type=\"contact\"时有效",
+    "required": false
+  },
+  {
+    "name": "send-message-title",
+    "type": "string",
+    "defaultValue": "当前标题",
+    "description": "会话内消息卡片标题，open-type=\"contact\"时有效",
+    "required": false
+  },
+  {
+    "name": "send-message-path",
+    "type": "string",
+    "defaultValue": "当前分享路径",
+    "description": "会话内消息卡片点击跳转小程序路径，open-type=\"contact\"时有效",
+    "required": false
+  },
+  {
+    "name": "send-message-img",
+    "type": "string",
+    "defaultValue": "截图",
+    "description": "会话内消息卡片图片，open-type=\"contact\"时有效",
+    "required": false
+  },
+  {
+    "name": "app-parameter",
+    "type": "string",
+    "description": "打开 APP 时，向 APP 传递的参数，open-type=launchApp时有效",
+    "required": false
+  },
+  {
+    "name": "show-message-card",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示\"可能要发送的小程序\"提示，用户点击后可以快速发送小程序消息，open-type=\"contact\"时有效",
+    "required": false
+  },
+  {
+    "name": "bindgetuserinfo",
+    "type": "eventhandle",
+    "description": "用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致，open-type=\"getUserInfo\"时有效",
+    "required": false
+  },
+  {
+    "name": "bindcontact",
+    "type": "eventhandle",
+    "description": "客服消息回调，open-type=\"contact\"时有效",
+    "required": false
+  },
+  {
+    "name": "bindgetphonenumber",
+    "type": "eventhandle",
+    "description": "获取用户手机号回调，open-type=getPhoneNumber时有效",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "description": "当使用开放能力时，发生错误的回调，open-type=launchApp时有效",
+    "required": false
+  },
+  {
+    "name": "bindopensetting",
+    "type": "eventhandle",
+    "description": "在打开授权设置页后回调，open-type=openSetting时有效",
+    "required": false
+  },
+  {
+    "name": "bindlaunchapp",
+    "type": "eventhandle",
+    "description": "打开 APP 成功的回调，open-type=launchApp时有效",
+    "required": false
+  },
+  {
+    "name": "bindchooseavatar",
+    "type": "eventhandle",
+    "description": "获取用户头像回调，open-type=chooseAvatar时有效",
+    "required": false
+  }
+]

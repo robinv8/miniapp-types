@@ -1,0 +1,31 @@
+[
+  {
+    "name": "src",
+    "type": "string",
+    "description": "图标路径，支持临时路径、网络地址（1.6.0起支持）、云文件ID（2.2.3起支持）。",
+    "required": false
+  },
+  {
+    "name": "referrer-policy",
+    "type": "string",
+    "options": [
+      "origin",
+      "no-referrer"
+    ],
+    "defaultValue": "no-referrer",
+    "description": "格式固定为 `https://servicewechat.com/{appid}/{version}/page-frame.html`，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
+    "required": false
+  },
+  {
+    "name": "bindload",
+    "type": "eventhandle",
+    "description": "图片加载成功时触发",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "description": "图片加载失败时触发",
+    "required": false
+  }
+]

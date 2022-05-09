@@ -1,0 +1,54 @@
+[
+  {
+    "name": "type",
+    "type": "string",
+    "options": [
+      "groupName",
+      "userNickName",
+      "userAvatarUrl",
+      "userGender",
+      "userCity",
+      "userProvince",
+      "userCountry",
+      "userLanguage"
+    ],
+    "description": "开放数据类型",
+    "required": false
+  },
+  {
+    "name": "open-gid",
+    "type": "string",
+    "description": "当 type=\"groupName\" 时生效, 群id",
+    "required": false
+  },
+  {
+    "name": "lang",
+    "type": "string",
+    "options": [
+      "en",
+      "zh_CN",
+      "zh_TW"
+    ],
+    "defaultValue": "en",
+    "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo",
+    "required": false
+  },
+  {
+    "name": "default-text",
+    "type": "string",
+    "description": "数据为空时的默认文案",
+    "required": false
+  },
+  {
+    "name": "default-avatar",
+    "type": "string",
+    "description": "用户头像为空时的默认图片，支持相对路径和网络图片路径",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "description": "群名称或用户信息为空时触发",
+    "required": false
+  }
+]

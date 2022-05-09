@@ -1,0 +1,98 @@
+[
+  {
+    "name": "min",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "最小值",
+    "required": false
+  },
+  {
+    "name": "max",
+    "type": "number",
+    "defaultValue": "100",
+    "description": "最大值",
+    "required": false
+  },
+  {
+    "name": "step",
+    "type": "number",
+    "defaultValue": "1",
+    "description": "步长，取值必须大于 0，并且可被(max - min)整除",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "value",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "当前取值",
+    "required": false
+  },
+  {
+    "name": "color",
+    "type": "color",
+    "defaultValue": "#e9e9e9",
+    "description": "背景条的颜色（请使用 backgroundColor）",
+    "required": false
+  },
+  {
+    "name": "selected-color",
+    "type": "color",
+    "defaultValue": "#1aad19",
+    "description": "已选择的颜色（请使用 activeColor）",
+    "required": false
+  },
+  {
+    "name": "activeColor",
+    "type": "color",
+    "defaultValue": "#1aad19",
+    "description": "已选择的颜色",
+    "required": false
+  },
+  {
+    "name": "backgroundColor",
+    "type": "color",
+    "defaultValue": "#e9e9e9",
+    "description": "背景条的颜色",
+    "required": false
+  },
+  {
+    "name": "block-size",
+    "type": "number",
+    "defaultValue": "28",
+    "description": "滑块的大小，取值范围为 12 - 28",
+    "required": false
+  },
+  {
+    "name": "block-color",
+    "type": "color",
+    "defaultValue": "#ffffff",
+    "description": "滑块的颜色",
+    "required": false
+  },
+  {
+    "name": "show-value",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示当前 value",
+    "required": false
+  },
+  {
+    "name": "bindchange",
+    "type": "eventhandle",
+    "description": "完成一次拖动后触发的事件，event.detail = {value}",
+    "required": false
+  },
+  {
+    "name": "bindchanging",
+    "type": "eventhandle",
+    "description": "拖动过程中触发的事件，event.detail = {value}",
+    "required": false
+  }
+]

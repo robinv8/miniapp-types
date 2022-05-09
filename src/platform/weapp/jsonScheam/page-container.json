@@ -1,0 +1,105 @@
+[
+  {
+    "name": "show",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示容器组件",
+    "required": false
+  },
+  {
+    "name": "duration",
+    "type": "number",
+    "defaultValue": "300",
+    "description": "动画时长，单位毫秒",
+    "required": false
+  },
+  {
+    "name": "z-index",
+    "type": "number",
+    "defaultValue": "100",
+    "description": "z-index 层级",
+    "required": false
+  },
+  {
+    "name": "overlay",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否显示遮罩层",
+    "required": false
+  },
+  {
+    "name": "position",
+    "type": "string",
+    "defaultValue": "bottom",
+    "description": "弹出位置，可选值为 top bottom right center",
+    "required": false
+  },
+  {
+    "name": "round",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示圆角",
+    "required": false
+  },
+  {
+    "name": "close-on-slideDown",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否在下滑一段距离后关闭",
+    "required": false
+  },
+  {
+    "name": "overlay-style",
+    "type": "string",
+    "description": "自定义遮罩层样式",
+    "required": false
+  },
+  {
+    "name": "custom-style",
+    "type": "string",
+    "description": "自定义弹出层样式",
+    "required": false
+  },
+  {
+    "name": "bind:beforeenter",
+    "type": "eventhandle",
+    "description": "进入前触发",
+    "required": false
+  },
+  {
+    "name": "bind:enter",
+    "type": "eventhandle",
+    "description": "进入中触发",
+    "required": false
+  },
+  {
+    "name": "bind:afterenter",
+    "type": "eventhandle",
+    "description": "进入后触发",
+    "required": false
+  },
+  {
+    "name": "bind:beforeleave",
+    "type": "eventhandle",
+    "description": "离开前触发",
+    "required": false
+  },
+  {
+    "name": "bind:leave",
+    "type": "eventhandle",
+    "description": "离开中触发",
+    "required": false
+  },
+  {
+    "name": "bind:afterleave",
+    "type": "eventhandle",
+    "description": "离开后触发",
+    "required": false
+  },
+  {
+    "name": "bind:clickoverlay",
+    "type": "eventhandle",
+    "description": "点击遮罩层时触发",
+    "required": false
+  }
+]

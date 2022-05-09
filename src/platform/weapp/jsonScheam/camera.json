@@ -1,0 +1,85 @@
+[
+  {
+    "name": "mode",
+    "type": "string",
+    "options": [
+      "normal",
+      "scanCode"
+    ],
+    "defaultValue": "normal",
+    "description": "应用模式，只在初始化时有效，不能动态变更",
+    "required": false
+  },
+  {
+    "name": "resolution",
+    "type": "string",
+    "options": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "defaultValue": "medium",
+    "description": "分辨率，不支持动态修改",
+    "required": false
+  },
+  {
+    "name": "device-position",
+    "type": "string",
+    "options": [
+      "front",
+      "back"
+    ],
+    "defaultValue": "back",
+    "description": "摄像头朝向",
+    "required": false
+  },
+  {
+    "name": "flash",
+    "type": "string",
+    "options": [
+      "auto",
+      "on",
+      "off",
+      "torch"
+    ],
+    "defaultValue": "auto",
+    "description": "闪光灯，值为auto, on, off",
+    "required": false
+  },
+  {
+    "name": "frame-size",
+    "type": "string",
+    "options": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "defaultValue": "medium",
+    "description": "指定期望的相机帧数据尺寸",
+    "required": false
+  },
+  {
+    "name": "bindstop",
+    "type": "eventhandle",
+    "description": "摄像头在非正常终止时触发，如退出后台等情况",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "description": "用户不允许使用摄像头时触发",
+    "required": false
+  },
+  {
+    "name": "bindinitdone",
+    "type": "eventhandle",
+    "description": "相机初始化完成时触发，`e.detail = {maxZoom}`",
+    "required": false
+  },
+  {
+    "name": "bindscancode",
+    "type": "eventhandle",
+    "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效",
+    "required": false
+  }
+]

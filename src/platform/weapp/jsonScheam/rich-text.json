@@ -1,0 +1,30 @@
+[
+  {
+    "name": "nodes",
+    "type": [
+      "array",
+      "string"
+    ],
+    "defaultValue": "[]",
+    "description": "节点列表/HTML String",
+    "required": false
+  },
+  {
+    "name": "space",
+    "type": "string",
+    "options": [
+      "ensp",
+      "emsp",
+      "nbsp"
+    ],
+    "description": "显示连续空格",
+    "required": false
+  },
+  {
+    "name": "user-select",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "文本是否可选，该属性会使节点显示为 block",
+    "required": false
+  }
+]

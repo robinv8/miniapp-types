@@ -1,0 +1,35 @@
+[
+  {
+    "name": "header-text",
+    "type": "string",
+    "description": "选择器的标题，仅安卓可用",
+    "required": false
+  },
+  {
+    "name": "mode",
+    "type": "string",
+    "options": [
+      "selector",
+      "multiSelector",
+      "time",
+      "date",
+      "region"
+    ],
+    "defaultValue": "selector",
+    "description": "选择器类型",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "bindcancel",
+    "type": "eventhandle",
+    "description": "取消选择时触发",
+    "required": false
+  }
+]

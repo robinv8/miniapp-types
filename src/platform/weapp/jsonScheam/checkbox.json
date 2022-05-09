@@ -1,0 +1,29 @@
+[
+  {
+    "name": "value",
+    "type": "string",
+    "description": "checkbox标识，选中时触发checkbox-group的 change 事件，并携带 checkbox 的 value",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "checked",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "当前是否选中，可用来设置默认选中",
+    "required": false
+  },
+  {
+    "name": "color",
+    "type": "string",
+    "defaultValue": "#09BB07",
+    "description": "checkbox的颜色，同css的color",
+    "required": false
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "selectable",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "文本是否可选 (已废弃)",
+    "required": false
+  },
+  {
+    "name": "user-select",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "文本是否可选，该属性会使文本节点显示为 inline-block",
+    "required": false
+  },
+  {
+    "name": "space",
+    "type": "string",
+    "options": [
+      "ensp",
+      "emsp",
+      "nbsp"
+    ],
+    "description": "显示连续空格",
+    "required": false
+  },
+  {
+    "name": "decode",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否解码",
+    "required": false
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "title",
+    "type": "string",
+    "description": "导航条标题",
+    "required": false
+  },
+  {
+    "name": "loading",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否在导航条显示 loading 加载提示",
+    "required": false
+  },
+  {
+    "name": "front-color",
+    "type": "string",
+    "description": "导航条前景颜色值，包括按钮、标题、状态栏的颜色，仅支持 #ffffff 和 #000000",
+    "required": false
+  },
+  {
+    "name": "background-color",
+    "type": "string",
+    "description": "导航条背景颜色值，有效值为十六进制颜色",
+    "required": false
+  },
+  {
+    "name": "color-animation-duration",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "改变导航栏颜色时的动画时长，默认为 0 （即没有动画效果）",
+    "required": false
+  },
+  {
+    "name": "color-animation-timing-func",
+    "type": "string",
+    "defaultValue": "\"linear\"",
+    "description": "改变导航栏颜色时的动画方式，支持 linear 、 easeIn 、 easeOut 和 easeInOut",
+    "required": false
+  }
+]

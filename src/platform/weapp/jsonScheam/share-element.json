@@ -1,0 +1,29 @@
+[
+  {
+    "name": "key",
+    "type": "string",
+    "description": "映射标记",
+    "required": true
+  },
+  {
+    "name": "transform",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否进行动画",
+    "required": false
+  },
+  {
+    "name": "duration",
+    "type": "number",
+    "defaultValue": "300",
+    "description": "动画时长，单位毫秒",
+    "required": false
+  },
+  {
+    "name": "easing-function",
+    "type": "string",
+    "defaultValue": "ease-out",
+    "description": "css缓动函数",
+    "required": false
+  }
+]

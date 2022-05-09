@@ -1,0 +1,66 @@
+[
+  {
+    "name": "read-only",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "设置编辑器为只读",
+    "required": false
+  },
+  {
+    "name": "placeholder",
+    "type": "string",
+    "description": "提示信息",
+    "required": false
+  },
+  {
+    "name": "show-img-size",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "点击图片时显示图片大小控件",
+    "required": false
+  },
+  {
+    "name": "show-img-toolbar",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "点击图片时显示工具栏控件",
+    "required": false
+  },
+  {
+    "name": "show-img-resize",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "点击图片时显示修改尺寸控件",
+    "required": false
+  },
+  {
+    "name": "bindready",
+    "type": "eventhandle",
+    "description": "编辑器初始化完成时触发",
+    "required": false
+  },
+  {
+    "name": "bindfocus",
+    "type": "eventhandle",
+    "description": "编辑器聚焦时触发，event.detail = {html, text, delta}",
+    "required": false
+  },
+  {
+    "name": "bindblur",
+    "type": "eventhandle",
+    "description": "编辑器失去焦点时触发，detail = {html, text, delta}",
+    "required": false
+  },
+  {
+    "name": "bindinput",
+    "type": "eventhandle",
+    "description": "编辑器内容改变时触发，detail = {html, text, delta}",
+    "required": false
+  },
+  {
+    "name": "bindstatuschange",
+    "type": "eventhandle",
+    "description": "通过 Context 方法改变编辑器内样式时触发，返回选区已设置的样式",
+    "required": false
+  }
+]

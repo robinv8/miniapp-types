@@ -1,0 +1,57 @@
+[
+  {
+    "name": "type",
+    "type": "string",
+    "description": "指定 canvas 类型，支持 2d (2.9.0) 和 webgl (2.7.0)",
+    "required": false
+  },
+  {
+    "name": "canvas-id",
+    "type": "string",
+    "description": "canvas 组件的唯一标识符，若指定了 type 则无需再指定该属性",
+    "required": false
+  },
+  {
+    "name": "disable-scroll",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "当在 canvas 中移动时且有绑定手势事件时，禁止屏幕滚动以及下拉刷新",
+    "required": false
+  },
+  {
+    "name": "bindtouchstart",
+    "type": "eventhandle",
+    "description": "手指触摸动作开始",
+    "required": false
+  },
+  {
+    "name": "bindtouchmove",
+    "type": "eventhandle",
+    "description": "手指触摸后移动",
+    "required": false
+  },
+  {
+    "name": "bindtouchend",
+    "type": "eventhandle",
+    "description": "手指触摸动作结束",
+    "required": false
+  },
+  {
+    "name": "bindtouchcancel",
+    "type": "eventhandle",
+    "description": "手指触摸动作被打断，如来电提醒，弹窗",
+    "required": false
+  },
+  {
+    "name": "bindlongtap",
+    "type": "eventhandle",
+    "description": "手指长按 500ms 之后触发，触发了长按事件后进行移动不会触发屏幕的滚动",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "description": "当发生错误时触发 error 事件，detail = {errMsg}",
+    "required": false
+  }
+]

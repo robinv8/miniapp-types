@@ -1,0 +1,29 @@
+[
+  {
+    "name": "value",
+    "type": "string",
+    "description": "radio 标识。当该radio 选中时，radio-group 的 change 事件会携带radio的value",
+    "required": false
+  },
+  {
+    "name": "checked",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "当前是否选中",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "color",
+    "type": "string",
+    "defaultValue": "#09BB07",
+    "description": "radio的颜色，同css的color",
+    "required": false
+  }
+]
