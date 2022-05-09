@@ -42,6 +42,7 @@
   {
     "name": "movable-area",
     "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html#movable-area",
+    "tableIndex": 2,
     "fields": {
       "name": 0,
       "type": 1,
@@ -62,6 +63,7 @@
   {
     "name": "cover-image",
     "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html#cover-image",
+    "tableIndex": 1,
     "fields": {
       "name": 0,
       "type": 1,
@@ -132,6 +134,7 @@
   {
     "name": "checkbox",
     "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/checkbox.html#checkbox",
+    "tableIndex": 1,
     "fields": {
       "name": 0,
       "type": 1,
@@ -199,6 +202,7 @@
   {
     "name": "radio",
     "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/radio.html#radio",
+    "tableIndex": 1,
     "fields": {
       "name": 0,
       "type": 1,

@@ -14,7 +14,7 @@ const fn = async () => {
   const getComponentProps = async ({ page, url, name }) => {
     await page.goto(url, { waitUntil: 'domcontentloaded' });
 
-    const data = await page.evaluate(({ name, tableIndex, fields }) => {
+    const data = await page.evaluate(({ name, tableIndex = 0, fields }) => {
       function handleType(str, char) {
         if (str.indexOf(char) === -1) {
           return str;
@@ -24,10 +24,7 @@ const fn = async () => {
       const attributes = [];
       const idEl = document.getElementById(name);
 
-      const tablesEl =
-        tableIndex > -1
-          ? document.querySelectorAll('table')[tableIndex]
-          : idEl.nextElementSibling.nextElementSibling;
+      const tablesEl = document.querySelectorAll('table')[tableIndex];
       tablesEl?.querySelectorAll('tbody tr')?.forEach((el) => {
         const len = el.children.length;
         const options = [];
