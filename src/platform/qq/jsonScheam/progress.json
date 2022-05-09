@@ -1,0 +1,83 @@
+[
+  {
+    "name": "percent",
+    "type": "Float",
+    "defaultValue": "无",
+    "description": "百分比0~100"
+  },
+  {
+    "name": "show-info",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "在进度条右侧显示百分比"
+  },
+  {
+    "name": "border-radius",
+    "type": [
+      "Number",
+      "String"
+    ],
+    "defaultValue": "0",
+    "description": "圆角大小，单位px"
+  },
+  {
+    "name": "font-size",
+    "type": [
+      "Number",
+      "String"
+    ],
+    "defaultValue": "16",
+    "description": "右侧百分比字体大小，单位px"
+  },
+  {
+    "name": "stroke-width",
+    "type": [
+      "Number",
+      "String"
+    ],
+    "defaultValue": "6",
+    "description": "进度条线的宽度，单位px"
+  },
+  {
+    "name": "color",
+    "type": "Color",
+    "defaultValue": "#09BB07",
+    "description": "进度条颜色 （请使用 activeColor）"
+  },
+  {
+    "name": "activeColor",
+    "type": "Color",
+    "defaultValue": "",
+    "description": "已选择的进度条的颜色"
+  },
+  {
+    "name": "backgroundColor",
+    "type": "Color",
+    "defaultValue": "",
+    "description": "未选择的进度条的颜色"
+  },
+  {
+    "name": "active",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "进度条从左往右的动画"
+  },
+  {
+    "name": "active-mode",
+    "type": "String",
+    "defaultValue": "backwards",
+    "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
+  },
+  {
+    "name": "bindactiveend",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "动画完成事件"
+  },
+  {
+    "name": "aria-label",
+    "type": "String",
+    "defaultValue": "",
+    "description": "无障碍访问，（属性）元素的额外描述"
+  }
+]

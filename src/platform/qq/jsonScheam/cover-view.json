@@ -1,0 +1,23 @@
+[
+  {
+    "name": "scroll-top",
+    "type": [
+      "Number",
+      "String"
+    ],
+    "defaultValue": "",
+    "description": "设置顶部滚动偏移量，仅在设置了 overflow-y: scroll 成为滚动元素后生效"
+  },
+  {
+    "name": "aria-role",
+    "type": "String",
+    "defaultValue": "",
+    "description": "无障碍访问，（角色）标识元素的作用"
+  },
+  {
+    "name": "aria-label",
+    "type": "String",
+    "defaultValue": "",
+    "description": "无障碍访问，（属性）元素的额外描述"
+  }
+]

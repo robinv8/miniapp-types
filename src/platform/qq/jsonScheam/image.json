@@ -1,0 +1,38 @@
+[
+  {
+    "name": "src",
+    "type": "String",
+    "defaultValue": "",
+    "description": "图片资源地址，支持云文件ID（2.2.3起）"
+  },
+  {
+    "name": "mode",
+    "type": "String",
+    "defaultValue": "'scaleToFill'",
+    "description": "图片裁剪、缩放的模式"
+  },
+  {
+    "name": "lazy-load",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "图片懒加载。只针对page与scroll-view下的image有效"
+  },
+  {
+    "name": "binderror",
+    "type": "HandleEvent",
+    "defaultValue": "",
+    "description": "当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}"
+  },
+  {
+    "name": "bindload",
+    "type": "HandleEvent",
+    "defaultValue": "",
+    "description": "当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}"
+  },
+  {
+    "name": "aria-label",
+    "type": "String",
+    "defaultValue": "",
+    "description": "无障碍访问，（属性）元素的额外描述"
+  }
+]

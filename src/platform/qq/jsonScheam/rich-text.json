@@ -1,0 +1,22 @@
+[
+  {
+    "name": "nodes",
+    "type": [
+      "Array",
+      "String"
+    ],
+    "defaultValue": "[]",
+    "description": "节点列表 / HTML String"
+  },
+  {
+    "name": "space",
+    "type": "String",
+    "options": [
+      "ensp",
+      "emsp",
+      "nbsp"
+    ],
+    "defaultValue": "",
+    "description": "显示连续空格"
+  }
+]

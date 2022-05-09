@@ -1,0 +1,50 @@
+[
+  {
+    "name": "canvas-id",
+    "type": "String",
+    "defaultValue": "",
+    "description": "canvas 组件的唯一标识符"
+  },
+  {
+    "name": "disable-scroll",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "当在 canvas 中移动时且有绑定手势事件时，禁止屏幕滚动以及下拉刷新"
+  },
+  {
+    "name": "bindtouchstart",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "手指触摸动作开始"
+  },
+  {
+    "name": "bindtouchmove",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "手指触摸后移动"
+  },
+  {
+    "name": "bindtouchend",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "手指触摸动作结束"
+  },
+  {
+    "name": "bindtouchcancel",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "手指触摸动作被打断，如来电提醒，弹窗"
+  },
+  {
+    "name": "bindlongtap",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "手指长按 500ms 之后触发，触发了长按事件后进行移动不会触发屏幕的滚动"
+  },
+  {
+    "name": "binderror",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "当发生错误时触发 error 事件，detail = {errMsg: 'something wrong'}"
+  }
+]

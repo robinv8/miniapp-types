@@ -1,0 +1,63 @@
+[
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "groupName",
+      "userNickName",
+      "userAvatarUrl",
+      "userGender",
+      "userCity",
+      "userProvince",
+      "userCountry",
+      "userLanguage",
+      "userCloudStorage",
+      "friendCloudStorage",
+      "groupCloudStorage"
+    ],
+    "defaultValue": "",
+    "description": "开放数据类型"
+  },
+  {
+    "name": "open-gid",
+    "type": "String",
+    "defaultValue": "",
+    "description": "当 type=\"groupName\" 时生效, 群 id"
+  },
+  {
+    "name": "lang",
+    "type": "String",
+    "defaultValue": "en",
+    "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo，有效值有：en, zh_CN, zh_TW"
+  },
+  {
+    "name": "share-ticket",
+    "type": "String",
+    "defaultValue": "en",
+    "description": "当 type=groupCloudStorage 时有效，群分享对应的 shareTicket"
+  },
+  {
+    "name": "key-list",
+    "type": "String",
+    "defaultValue": "en",
+    "description": "当 type=*CloudStorage 时有效，指定要拉取的 key 列表"
+  },
+  {
+    "name": "component-data",
+    "type": "String",
+    "defaultValue": "en",
+    "description": "当 type=*CloudStorage 时有效，从主域透传给开放数据域的数据，会自动注入到自定义开放数据域组件的 properties 中"
+  },
+  {
+    "name": "generic:simple-component",
+    "type": "String",
+    "defaultValue": "en",
+    "description": "当 type=*CloudStorage 时有效,指定使用哪个自定义开放数据域组件来渲染开放数据,具体说明见下方"
+  },
+  {
+    "name": "binderror",
+    "type": "String",
+    "defaultValue": "en",
+    "description": "当 type=*CloudStorage 时有效,开放数据请求或定向分享失败时触发，event.detail = {errMsg: \"getGroupCloudStorage:fail no data\"}"
+  }
+]

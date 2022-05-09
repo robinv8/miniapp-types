@@ -1,0 +1,170 @@
+[
+  {
+    "name": "longitude",
+    "type": "number",
+    "defaultValue": "",
+    "description": "是"
+  },
+  {
+    "name": "latitude",
+    "type": "number",
+    "defaultValue": "",
+    "description": "是"
+  },
+  {
+    "name": "scale",
+    "type": "number",
+    "defaultValue": "16",
+    "description": "否"
+  },
+  {
+    "name": "markers",
+    "type": "Array.<marker>",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "polyline",
+    "type": "Array.<polyline>",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "circles",
+    "type": "Array.<circle>",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "include-points",
+    "type": "Array.<point>",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "show-location",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "polygons",
+    "type": "Array.<polygon>",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "subkey",
+    "type": "String",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "layer-style",
+    "type": "number",
+    "defaultValue": "1",
+    "description": "否"
+  },
+  {
+    "name": "rotate",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "否"
+  },
+  {
+    "name": "skew",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "否"
+  },
+  {
+    "name": "enable-3D",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "show-compass",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "show-scale",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "enable-overlooking",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "enable-zoom",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "enable-scroll",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "enable-rotate",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "enable-satellite",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "enable-traffic",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "setting",
+    "type": "Object",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "bindtap",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "bindmarkertap",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "bindupdated",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "bindregionchange",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "bindpoitap",
+    "type": "EventHandle",
+    "defaultValue": "",
+    "description": "否"
+  }
+]

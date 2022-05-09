@@ -1,0 +1,38 @@
+[
+  {
+    "name": "hover-class",
+    "type": "String",
+    "defaultValue": "none",
+    "description": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果"
+  },
+  {
+    "name": "hover-stop-propagation",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "指定是否阻止本节点的祖先节点出现点击态"
+  },
+  {
+    "name": "hover-start-time",
+    "type": "Number",
+    "defaultValue": "50",
+    "description": "按住后多久出现点击态，单位毫秒"
+  },
+  {
+    "name": "hover-stay-time",
+    "type": "Number",
+    "defaultValue": "400",
+    "description": "手指松开后点击态保留时间，单位毫秒"
+  },
+  {
+    "name": "aria-role",
+    "type": "String",
+    "defaultValue": "",
+    "description": "无障碍访问，（角色）标识元素的作用"
+  },
+  {
+    "name": "aria-label",
+    "type": "String",
+    "defaultValue": "",
+    "description": "无障碍访问，（属性）元素的额外描述"
+  }
+]

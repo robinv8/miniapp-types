@@ -1,0 +1,88 @@
+[
+  {
+    "name": "unit-id",
+    "type": "String",
+    "defaultValue": "",
+    "description": "是"
+  },
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "banner",
+      "card",
+      "feeds",
+      "block"
+    ],
+    "defaultValue": "banner",
+    "description": "否"
+  },
+  {
+    "name": "ad-left",
+    "type": "Number",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "ad-top",
+    "type": "Number",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "ad-width",
+    "type": "Number",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "ad-height",
+    "type": "Number",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "block-size",
+    "type": "Number",
+    "defaultValue": "1",
+    "description": "否"
+  },
+  {
+    "name": "block-orientation",
+    "type": "String",
+    "options": [
+      "vertical",
+      "landscape"
+    ],
+    "defaultValue": "landscape",
+    "description": "否"
+  },
+  {
+    "name": "bindsize",
+    "type": "eventhandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "bindload",
+    "type": "eventhandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "defaultValue": "",
+    "description": "否"
+  },
+  {
+    "name": "test-banner-type",
+    "type": "String",
+    "options": [
+      "one",
+      "three"
+    ],
+    "defaultValue": "three",
+    "description": "否"
+  }
+]
