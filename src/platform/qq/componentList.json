@@ -1,146 +1,365 @@
 [
   {
     "name": "view",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/view.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "scroll-view",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/scroll-view.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/scroll-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "swiper",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/swiper.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/swiper.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "movable-view",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "movable-area",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html#movable-area"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/movable-view.html#movable-area",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "cover-view",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "cover-image",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html#cover-image"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/view-container/cover.html#cover-image",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "icon",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/icon.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/icon.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "text",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/text.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/text.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "rich-text",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/rich-text.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/rich-text.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "progress",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/progress.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/basic-content/progress.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "button",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/button.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/button.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
+    "name": "checkbox-group",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/checkbox.html#checkbox-group",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "checkbox",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/checkbox.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/checkbox.html#checkbox",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "form",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/form.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/form.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "input",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/input.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/input.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "label",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/label.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/label.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "picker",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/picker.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/picker.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "picker-view",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/picker-view.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/picker-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
+  },
+  {
+    "name": "radio-group",
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/radio.html#radio-group",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "radio",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/radio.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/radio.html#radio",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "slider",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/slider.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/slider.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "switch",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/switch.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/switch.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "textarea",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/textarea.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/form/textarea.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "navigator",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/navigation/navigator.html"
-  },
-  {
-    "name": "functional-page-navigator",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/navigation/functional-page-navigator.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/navigation/navigator.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "audio",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/audio.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/audio.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "image",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/image.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/image.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "video",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/video.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/video.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "camera",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/camera.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/camera.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "live-player",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/live-player.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/live-player.html",
+    "tableIndex": 1,
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "live-pusher",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/live-pusher.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/media/live-pusher.html",
+    "tableIndex": 1,
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "map",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/map/map.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/map/map.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "canvas",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/canvas/canvas.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/canvas/canvas.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "open-data",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/open-data.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/open-data.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "web-view",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/web-view.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/web-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "ad",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/ad.html"
-  },
-  {
-    "name": "official-account",
-    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/official-account.html"
+    "url": "https://q.qq.com/wiki/develop/miniprogram/component/open-ability/ad.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   }
 ]
