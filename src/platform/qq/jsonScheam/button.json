@@ -45,7 +45,6 @@
       "submit",
       "reset"
     ],
-    "defaultValue": "",
     "description": "用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件"
   },
   {
@@ -67,7 +66,6 @@
       "shareMessageToFriend",
       "addToFavorites"
     ],
-    "defaultValue": "",
     "description": "QQ 开放能力"
   },
   {
@@ -103,49 +101,41 @@
   {
     "name": "bindgetuserinfo",
     "type": "Handler",
-    "defaultValue": "",
     "description": "用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与qq.getUserInfo返回的一致"
   },
   {
     "name": "app-parameter",
     "type": "String",
-    "defaultValue": "",
     "description": "打开 APP 时，向 APP 传递的参数"
   },
   {
     "name": "group-id",
     "type": "String",
-    "defaultValue": "",
     "description": "打开群资料卡时，传递的群号"
   },
   {
     "name": "guild-id",
     "type": "String",
-    "defaultValue": "",
     "description": "打开频道页面时，传递的频道号"
   },
   {
     "name": "public-id",
     "type": "String",
-    "defaultValue": "",
     "description": "打开公众号资料卡时，传递的号码"
   },
   {
     "name": "binderror",
     "type": "Handler",
-    "defaultValue": "",
     "description": "当使用开放能力时，发生错误的回调"
   },
   {
     "name": "bindlaunchapp",
     "type": "Handler",
-    "defaultValue": "",
     "description": "打开 APP 成功的回调"
   },
   {
     "name": "bindopensetting",
     "type": "Handler",
-    "defaultValue": "",
     "description": "在打开授权设置页后回调"
   },
   {
@@ -163,49 +153,41 @@
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   },
   {
     "name": "open-id",
     "type": "String",
-    "defaultValue": "",
     "description": "添加好友时，对方的 openid"
   },
   {
     "name": "bindaddfriend",
     "type": "Handler",
-    "defaultValue": "",
     "description": "添加好友的回调"
   },
   {
     "name": "bindaddgroupapp",
     "type": "Handler",
-    "defaultValue": "",
     "description": "添加群应用的回调。errCode 错误码：41004（当前用户非管理员或群主，无权操作），41005（超过可添加群应用的群数量）"
   },
   {
     "name": "bindcontact",
     "type": "Handler",
-    "defaultValue": "",
     "description": "打开客服会话的回调。"
   },
   {
     "name": "share-message-friend-info",
     "type": "FriendInfo",
-    "defaultValue": "",
     "description": "发送对象的 FriendInfo"
   },
   {
     "name": "share-message-title",
     "type": "String",
-    "defaultValue": "",
     "description": "转发标题，不传则默认使用当前小程序的昵称。 FriendInfo"
   },
   {
     "name": "share-message-img",
     "type": "String",
-    "defaultValue": "",
     "description": "转发显示图片的链接，可以是网络图片路径（仅 QQ CDN 域名路径）或本地图片文件路径或相对代码包根目录的图片文件路径。显示图片长宽比是 5:4FriendInfo"
   }
 ]

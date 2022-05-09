@@ -20,19 +20,16 @@
   {
     "name": "bindchange",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
   },
   {
     "name": "color",
     "type": "Color",
-    "defaultValue": "",
     "description": "switch 的颜色，同 css 的 color"
   },
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

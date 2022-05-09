@@ -1,8 +1,29 @@
 [
   {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "defaultValue": "",
-    "description": "<radio-group> 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项radio的value}"
+    "name": "value",
+    "type": "String",
+    "description": "<radio> 标识。当该<radio> 选中时，<radio-group> 的 change 事件会携带<radio>的value"
+  },
+  {
+    "name": "checked",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "当前是否选中"
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用"
+  },
+  {
+    "name": "color",
+    "type": "Color",
+    "description": "radio的颜色，同css的color"
+  },
+  {
+    "name": "aria-label",
+    "type": "String",
+    "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

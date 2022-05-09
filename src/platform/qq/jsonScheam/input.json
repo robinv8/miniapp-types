@@ -2,7 +2,6 @@
   {
     "name": "value",
     "type": "String",
-    "defaultValue": "",
     "description": "输入框的初始内容"
   },
   {
@@ -26,13 +25,11 @@
   {
     "name": "placeholder",
     "type": "String",
-    "defaultValue": "",
     "description": "输入框为空时占位符"
   },
   {
     "name": "placeholder-style",
     "type": "String",
-    "defaultValue": "",
     "description": "指定 placeholder 的样式"
   },
   {
@@ -96,7 +93,6 @@
   {
     "name": "cursor",
     "type": "Number",
-    "defaultValue": "",
     "description": "指定focus时的光标位置"
   },
   {
@@ -120,37 +116,31 @@
   {
     "name": "bindinput",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
   },
   {
     "name": "bindfocus",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度"
   },
   {
     "name": "bindblur",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "输入框失去焦点时触发，event.detail = {value: value}"
   },
   {
     "name": "bindconfirm",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "点击完成按钮时触发，event.detail = {value: value}"
   },
   {
     "name": "bindkeyboardheightchange",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
   },
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

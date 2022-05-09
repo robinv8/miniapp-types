@@ -2,7 +2,6 @@
   {
     "name": "type",
     "type": "String",
-    "defaultValue": "",
     "description": "icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear"
   },
   {
@@ -17,13 +16,11 @@
   {
     "name": "color",
     "type": "Color",
-    "defaultValue": "",
     "description": "icon的颜色，同css的color"
   },
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

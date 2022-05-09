@@ -15,13 +15,11 @@
       "friendCloudStorage",
       "groupCloudStorage"
     ],
-    "defaultValue": "",
     "description": "开放数据类型"
   },
   {
     "name": "open-gid",
     "type": "String",
-    "defaultValue": "",
     "description": "当 type=\"groupName\" 时生效, 群 id"
   },
   {

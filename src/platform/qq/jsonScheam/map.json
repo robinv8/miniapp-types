@@ -2,169 +2,183 @@
   {
     "name": "longitude",
     "type": "number",
-    "defaultValue": "",
-    "description": "是"
+    "description": "中心经度",
+    "required": true
   },
   {
     "name": "latitude",
     "type": "number",
-    "defaultValue": "",
-    "description": "是"
+    "description": "中心纬度",
+    "required": true
   },
   {
     "name": "scale",
     "type": "number",
     "defaultValue": "16",
-    "description": "否"
+    "description": "缩放级别，取值范围为3～20",
+    "required": false
   },
   {
     "name": "markers",
     "type": "Array.<marker>",
-    "defaultValue": "",
-    "description": "否"
+    "description": "标记点",
+    "required": false
   },
   {
     "name": "polyline",
     "type": "Array.<polyline>",
-    "defaultValue": "",
-    "description": "否"
+    "description": "路线",
+    "required": false
   },
   {
     "name": "circles",
     "type": "Array.<circle>",
-    "defaultValue": "",
-    "description": "否"
+    "description": "圆",
+    "required": false
   },
   {
     "name": "include-points",
     "type": "Array.<point>",
-    "defaultValue": "",
-    "description": "否"
+    "description": "缩放视野以包含所有给定的坐标点",
+    "required": false
   },
   {
     "name": "show-location",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "显示带有方向的当前定位点",
+    "required": false
   },
   {
     "name": "polygons",
     "type": "Array.<polygon>",
-    "defaultValue": "",
-    "description": "否"
+    "description": "多边形",
+    "required": false
   },
   {
     "name": "subkey",
     "type": "String",
-    "defaultValue": "",
-    "description": "否"
+    "description": "个性化地图使用的key",
+    "required": false
   },
   {
     "name": "layer-style",
     "type": "number",
     "defaultValue": "1",
-    "description": "否"
+    "description": "个性化地图配置的style，不支持动态修改",
+    "required": false
   },
   {
     "name": "rotate",
     "type": "number",
     "defaultValue": "0",
-    "description": "否"
+    "description": "旋转角度，范围0～360，地图正北与设备y轴\b的夹角角度",
+    "required": false
   },
   {
     "name": "skew",
     "type": "number",
     "defaultValue": "0",
-    "description": "否"
+    "description": "倾斜角度，范围0～40，关于z轴的倾角",
+    "required": false
   },
   {
     "name": "enable-3D",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "展示3D楼块（工具暂不支持）",
+    "required": false
   },
   {
     "name": "show-compass",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "显示指南针",
+    "required": false
   },
   {
     "name": "show-scale",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "显示比例尺（工具暂不支持）",
+    "required": false
   },
   {
     "name": "enable-overlooking",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "开启俯视",
+    "required": false
   },
   {
     "name": "enable-zoom",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "是否支持缩放",
+    "required": false
   },
   {
     "name": "enable-scroll",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "是否支持拖动",
+    "required": false
   },
   {
     "name": "enable-rotate",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "是否支持旋转",
+    "required": false
   },
   {
     "name": "enable-satellite",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "是否开启卫星图",
+    "required": false
   },
   {
     "name": "enable-traffic",
     "type": "boolean",
     "defaultValue": "false",
-    "description": "否"
+    "description": "是否开启实时路况",
+    "required": false
   },
   {
     "name": "setting",
     "type": "Object",
-    "defaultValue": "",
-    "description": "否"
+    "description": "配置项",
+    "required": false
   },
   {
     "name": "bindtap",
     "type": "EventHandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "点击地图时触发，返回经纬度信息",
+    "required": false
   },
   {
     "name": "bindmarkertap",
     "type": "EventHandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "点击标记点时触发 e.detail = {markerId}",
+    "required": false
   },
   {
     "name": "bindupdated",
     "type": "EventHandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "在地图渲染更新完成时触发",
+    "required": false
   },
   {
     "name": "bindregionchange",
     "type": "EventHandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "视野发生变化时触发 \b会触发两次，返回的type值分别为begin/end。",
+    "required": false
   },
   {
     "name": "bindpoitap",
     "type": "EventHandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "点击地图poi点时触发 e.detail = {name, longitude, latitude}",
+    "required": false
   }
 ]

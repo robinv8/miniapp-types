@@ -2,8 +2,8 @@
   {
     "name": "unit-id",
     "type": "String",
-    "defaultValue": "",
-    "description": "是"
+    "description": "广告单元 id，可在QQ 小程序管理后台的流量主模块新建",
+    "required": true
   },
   {
     "name": "type",
@@ -15,37 +15,39 @@
       "block"
     ],
     "defaultValue": "banner",
-    "description": "否"
+    "description": "广告类型",
+    "required": false
   },
   {
     "name": "ad-left",
     "type": "Number",
-    "defaultValue": "",
-    "description": "否"
+    "description": "type 为 feeds 时广告左边距（px），必须大于 0",
+    "required": false
   },
   {
     "name": "ad-top",
     "type": "Number",
-    "defaultValue": "",
-    "description": "否"
+    "description": "type 为 feeds 时广告上边距（px），必须大于 0",
+    "required": false
   },
   {
     "name": "ad-width",
     "type": "Number",
-    "defaultValue": "",
-    "description": "否"
+    "description": "type 为 feeds 时广告宽度（px），默认 100%，最大值为屏幕宽度，最小值为 265",
+    "required": false
   },
   {
     "name": "ad-height",
     "type": "Number",
-    "defaultValue": "",
-    "description": "否"
+    "description": "type 为 feeds 时广告高度（px），最小 85，最大 160",
+    "required": false
   },
   {
     "name": "block-size",
     "type": "Number",
     "defaultValue": "1",
-    "description": "否"
+    "description": "type 为 block 时请求积木广告数量（展示以实际拉取广告数量为准）",
+    "required": false
   },
   {
     "name": "block-orientation",
@@ -55,25 +57,26 @@
       "landscape"
     ],
     "defaultValue": "landscape",
-    "description": "否"
+    "description": "type 为 block 时请求积木广告排列方向",
+    "required": false
   },
   {
     "name": "bindsize",
     "type": "eventhandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "type 为 feeds 时广告实际宽高回调，event.detail = {width:296,height:150}",
+    "required": false
   },
   {
     "name": "bindload",
     "type": "eventhandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "广告加载成功的回调",
+    "required": false
   },
   {
     "name": "binderror",
     "type": "eventhandle",
-    "defaultValue": "",
-    "description": "否"
+    "description": "广告加载失败的回调，event.detail = {errCode: 1002}",
+    "required": false
   },
   {
     "name": "test-banner-type",
@@ -83,6 +86,7 @@
       "three"
     ],
     "defaultValue": "three",
-    "description": "否"
+    "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图",
+    "required": false
   }
 ]

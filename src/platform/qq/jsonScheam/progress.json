@@ -47,13 +47,11 @@
   {
     "name": "activeColor",
     "type": "Color",
-    "defaultValue": "",
     "description": "已选择的进度条的颜色"
   },
   {
     "name": "backgroundColor",
     "type": "Color",
-    "defaultValue": "",
     "description": "未选择的进度条的颜色"
   },
   {
@@ -71,13 +69,11 @@
   {
     "name": "bindactiveend",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "动画完成事件"
   },
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

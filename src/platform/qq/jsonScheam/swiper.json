@@ -86,19 +86,16 @@
   {
     "name": "bindchange",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}"
   },
   {
     "name": "bindtransition",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
   },
   {
     "name": "bindanimationfinish",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
   }
 ]

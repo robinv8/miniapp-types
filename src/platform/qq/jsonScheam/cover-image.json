@@ -2,31 +2,26 @@
   {
     "name": "src",
     "type": "String",
-    "defaultValue": "",
     "description": "图标路径，支持临时路径、网络地址、云文件ID。暂不支持base64格式。"
   },
   {
     "name": "bindload",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "图片加载成功时触发"
   },
   {
     "name": "binderror",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "图片加载失败时触发"
   },
   {
     "name": "aria-role",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（角色）标识元素的作用"
   },
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

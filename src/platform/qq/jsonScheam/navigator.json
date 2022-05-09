@@ -8,7 +8,6 @@
   {
     "name": "url",
     "type": "String",
-    "defaultValue": "",
     "description": "当前小程序内的跳转链接"
   },
   {
@@ -28,25 +27,21 @@
   {
     "name": "delta",
     "type": "Number",
-    "defaultValue": "",
     "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数"
   },
   {
     "name": "app-id",
     "type": "String",
-    "defaultValue": "",
     "description": "当target=\"miniProgram\"时有效，要打开的小程序 appId"
   },
   {
     "name": "path",
     "type": "String",
-    "defaultValue": "",
     "description": "当target=\"miniProgram\"时有效，打开的页面路径，如果为空则打开首页"
   },
   {
     "name": "extra-data",
     "type": "Object",
-    "defaultValue": "",
     "description": "当target=\"miniProgram\"时有效，需要传递给目标小程序的数据，目标小程序可在 App.onLaunch()，App.onShow() 中获取到这份数据。详情"
   },
   {
@@ -82,25 +77,21 @@
   {
     "name": "bindsuccess",
     "type": "String",
-    "defaultValue": "",
     "description": "当target=\"miniProgram\"时有效，跳转小程序成功"
   },
   {
     "name": "bindfail",
     "type": "String",
-    "defaultValue": "",
     "description": "当target=\"miniProgram\"时有效，跳转小程序失败"
   },
   {
     "name": "bindcomplete",
     "type": "String",
-    "defaultValue": "",
     "description": "当target=\"miniProgram\"时有效，跳转小程序完成"
   },
   {
     "name": "aria-label",
     "type": "String",
-    "defaultValue": "",
     "description": "无障碍访问，（属性）元素的额外描述"
   }
 ]

@@ -1,44 +1,109 @@
 [
   {
-    "name": "社交",
-    "type": "直播",
-    "description": "涉及娱乐性质，如明星直播、生活趣事直播、宠物直播等。选择该类目后首次提交代码审核，需经当地互联网主管机关审核确认，预计审核时长7天左右"
+    "name": "src",
+    "type": "string",
+    "description": "音视频地址。目前仅支持flv, rtmp格式",
+    "required": false
   },
   {
-    "name": "教育",
-    "type": "在线视频课程",
-    "description": "网课、在线培训、讲座等教育类直播"
+    "name": "mode",
+    "type": "string",
+    "defaultValue": "live",
+    "description": "模式",
+    "required": false
   },
   {
-    "name": "医疗",
-    "type": "互联网医院，公立医院",
-    "description": "问诊、大型健康讲座等直播"
+    "name": "autoplay",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "自动播放",
+    "required": false
   },
   {
-    "name": "金融",
-    "type": [
-      "银行、信托、基金、证券",
-      "期货、证券、期货投资咨询、保险、征信业务、新三板信息服务平台、股票信息服务平台（港股",
-      "美股）、消费金融"
-    ],
-    "description": "金融产品视频客户理赔、金融产品推广直播等"
+    "name": "muted",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否静音",
+    "required": false
   },
   {
-    "name": "汽车",
-    "type": "汽车预售服务",
-    "description": "汽车预售、推广直播"
+    "name": "orientation",
+    "type": "string",
+    "defaultValue": "vertical",
+    "description": "画面方向",
+    "required": false
   },
   {
-    "name": "政府主体账号",
-    "type": [
-      "",
-      ""
-    ],
-    "description": "政府相关工作推广直播、领导讲话直播等"
+    "name": "object-fit",
+    "type": "string",
+    "defaultValue": "contain",
+    "description": "填充模式，可选值有contain, fillCrop",
+    "required": false
   },
   {
-    "name": "工具",
-    "type": "视频客服",
-    "description": "不涉及以上几类内容的一对一视频客服服务，如企业售后一对一视频服务等"
+    "name": "min-cache",
+    "type": "number",
+    "defaultValue": "1",
+    "description": "最小缓冲区，单位s",
+    "required": false
+  },
+  {
+    "name": "max-cache",
+    "type": "number",
+    "defaultValue": "3",
+    "description": "最大缓冲区，单位s",
+    "required": false
+  },
+  {
+    "name": "sound-mode",
+    "type": "string",
+    "defaultValue": "speaker",
+    "description": "声音输出方式",
+    "required": false
+  },
+  {
+    "name": "auto-pause-if-navigate",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放",
+    "required": false
+  },
+  {
+    "name": "auto-pause-if-open-native",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放",
+    "required": false
+  },
+  {
+    "name": "enable-metadata",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否回调metadata",
+    "required": false
+  },
+  {
+    "name": "bindstatechange",
+    "type": "eventhandle",
+    "description": "播放状态变化事件，detail = {code}",
+    "required": false
+  },
+  {
+    "name": "bindfullscreenchange",
+    "type": "eventhandle",
+    "description": "全屏变化事件，detail = {direction, fullScreen}",
+    "required": false
+  },
+  {
+    "name": "bindnetstatus",
+    "type": "eventhandle",
+    "description": "网络状态通知，detail = {info}",
+    "required": false
+  },
+  {
+    "name": "bindmetadatachange",
+    "type": "eventhandle",
+    "description": "metadata通知，detail = {info}",
+    "required": false
   }
 ]

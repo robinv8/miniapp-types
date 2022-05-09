@@ -16,7 +16,6 @@
       "emsp",
       "nbsp"
     ],
-    "defaultValue": "",
     "description": "显示连续空格"
   }
 ]
