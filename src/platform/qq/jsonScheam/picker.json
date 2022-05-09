@@ -11,7 +11,6 @@
   {
     "name": "range-key",
     "type": "String",
-    "defaultValue": "",
     "description": "当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容"
   },
   {
@@ -23,7 +22,6 @@
   {
     "name": "bindchange",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "value 改变时触发 change 事件，event.detail = {value: value}"
   },
   {
@@ -35,7 +33,6 @@
   {
     "name": "bindcancel",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "取消选择或点遮罩层收起 picker 时触发"
   }
 ]

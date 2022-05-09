@@ -2,13 +2,11 @@
   {
     "name": "src",
     "type": "String",
-    "defaultValue": "",
     "description": "要播放视频的资源地址，支持云文件ID"
   },
   {
     "name": "duration",
     "type": "Number",
-    "defaultValue": "",
     "description": "指定视频时长"
   },
   {
@@ -20,7 +18,6 @@
   {
     "name": "danmu-list",
     "type": "Object Array",
-    "defaultValue": "",
     "description": "弹幕列表"
   },
   {
@@ -56,7 +53,6 @@
   {
     "name": "initial-time",
     "type": "Number",
-    "defaultValue": "",
     "description": "指定视频初始播放位置"
   },
   {
@@ -68,7 +64,6 @@
   {
     "name": "direction",
     "type": "Number",
-    "defaultValue": "",
     "description": "设置全屏时视频的方向，不指定则根据宽高比自动判断。有效值为 0（正常竖向）, 90（屏幕逆时针90度）, -90（屏幕顺时针90度）"
   },
   {
@@ -110,7 +105,6 @@
   {
     "name": "poster",
     "type": "String",
-    "defaultValue": "",
     "description": "视频封面的图片网络资源地址或云文件ID。若 controls 属性值为 false 则设置 poster 无效"
   },
   {
@@ -122,7 +116,6 @@
   {
     "name": "title",
     "type": "String",
-    "defaultValue": "",
     "description": "视频的标题，全屏时在顶部展示"
   },
   {
@@ -152,49 +145,41 @@
   {
     "name": "bindplay",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "当开始/继续播放时触发play事件"
   },
   {
     "name": "bindpause",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "当暂停播放时触发 pause 事件"
   },
   {
     "name": "bindended",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "当播放到末尾时触发 ended 事件"
   },
   {
     "name": "bindtimeupdate",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次"
   },
   {
     "name": "bindfullscreenchange",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction 有效值为 vertical 或 horizontal"
   },
   {
     "name": "bindwaiting",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "视频出现缓冲时触发"
   },
   {
     "name": "binderror",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "视频播放出错时触发"
   },
   {
     "name": "bindprogress",
     "type": "EventHandle",
-    "defaultValue": "",
     "description": "加载进度变化时触发，只支持一段加载。event.detail = {buffered}，百分比"
   }
 ]
