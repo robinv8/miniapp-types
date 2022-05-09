@@ -22,7 +22,6 @@ const fn = async () => {
         return str.split(char).map((item) => item.trim());
       }
       const attributes = [];
-      const idEl = document.getElementById(name);
 
       const tablesEl = document.querySelectorAll('table')[tableIndex];
       tablesEl?.querySelectorAll('tbody tr')?.forEach((el) => {

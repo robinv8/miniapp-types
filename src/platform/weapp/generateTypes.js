@@ -1,49 +1,130 @@
 const puppeteer = require('puppeteer');
-const fs = require('fs')
-const path = require('path')
-const humps = require('humps');
-const componentList = require('./componentList.json')
+const fs = require('fs');
+const path = require('path');
+const componentList = require('./componentList.json');
 
-
-const fn = async ()=>{
+const fn = async () => {
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
-  })
+  });
   const page = await browser.newPage();
 
-  let index=0
-  const getComponentProps = async (url, page)=>{
-    await page.goto(url,{ waitUntil: 'networkidle0' });
-    const data = await page.evaluate(()=>{
-      const attributes = []
-      document.querySelector('table')?.querySelectorAll('tbody tr')?.forEach(el=>{
-        const len = el.children.length
-        if(len>5){
-          attributes.push({
-            name: el.children[len===6?0:1].innerText,
-            type: el.children[len===6?1:2].innerText,
-          })
-        } else {
+  let index = 0;
+  const getComponentProps = async ({ page, url, name }) => {
+    await page.goto(url, { waitUntil: 'domcontentloaded' });
 
+    const data = await page.evaluate(({ name, tableIndex = 0, fields }) => {
+      function handleType(str, char) {
+        if (str.indexOf(char) === -1) {
+          return str;
         }
-      })
-      return attributes
-    })
-    let tsCode = 'interface '+humps.pascalize(componentList[index].name)+'Props {\n'
-    data.forEach(el=>{
-      tsCode += ' '+humps.camelize(el.name)+': '+el.type+';\n'
-    })
-    tsCode += '}'
-    componentList[index].props=data
-    fs.writeFileSync(path.join(process.cwd(), `dist/weapp/${humps.camelize(componentList[index].name)}.d.ts`),tsCode)
-    index++
-    const nextUrl = componentList[index]?.url
-    if(nextUrl) {
-      getComponentProps(nextUrl,page)
-    }
-  }
-  getComponentProps(componentList[index].url,page)
-}
+        return str.split(char).map((item) => item.trim());
+      }
+      const attributes = [];
 
-fn()
+      const tablesEl = document.querySelectorAll('table')[tableIndex];
+      Array.from(tablesEl?.querySelector('tbody').children)?.forEach((el) => {
+        const len = el.children.length;
+        const options = [];
+
+        if (el?.className.indexOf('children-table') === -1 && len > 0) {
+          const nextTrEl = el.nextElementSibling;
+          if (nextTrEl?.className.indexOf('children-table') > -1) {
+            nextTrEl
+              .querySelector('tbody')
+              .querySelectorAll('tr')
+              .forEach((el) => {
+                options.push(el.children[0].innerText);
+              });
+          }
+
+          const hasChild = tablesEl.querySelector('.children-table');
+          const defaultValue =
+            el.children[fields.defaultValue + (hasChild ? 1 : 0)]?.innerText;
+          const description =
+            el.children[fields.description + (hasChild ? 1 : 0)]?.innerText;
+          const required =
+            el.children[fields.required + (hasChild ? 1 : 0)]?.innerText;
+
+          attributes.push({
+            name: el.children[fields.name + (hasChild ? 1 : 0)]?.innerText,
+            type: handleType(
+              el.children[fields.type + (hasChild ? 1 : 0)]?.innerText,
+              '/',
+            ),
+            ...(options.length > 0 ? { options } : {}),
+            ...(defaultValue ? { defaultValue } : {}),
+            ...(description ? { description } : {}),
+            ...(required !== undefined && required !== null
+              ? { required: required === '是' }
+              : {}),
+          });
+        }
+      });
+
+      return attributes;
+    }, componentList[index]);
+    if (data.length > 0) {
+      const folder = path.join(__dirname, 'jsonScheam');
+      if (!fs.existsSync(folder)) {
+        fs.mkdirSync(folder, { recursive: true });
+      }
+      fs.writeFileSync(
+        path.join(folder, `${name}.json`),
+        JSON.stringify(data, null, 2),
+      );
+    }
+
+    // let tsCode =
+    //   'interface ' + humps.pascalize(componentList[index].name) + 'Props {\n';
+    // data.forEach((prop) => {
+    //   tsCode += `
+    //   /**
+    //    * @description ${prop.description}${
+    //     prop.defaultValue ? `\n* @default ${prop.defaultValue}` : ''
+    //   }
+    //    * @type ${humps.camelize(prop.type)}
+    //    */
+    //   ${humps.camelize(prop.name)}: ${
+    //     prop.options?.length > 0
+    //       ? prop.options.map((item) => `'${item}'`).join(' | ')
+    //       : humps.camelize(prop.type)
+    //   };
+    //   `;
+    // });
+    // tsCode += '}';
+    // if (!fs.existsSync('dist/qq')) {
+    //   fs.mkdirSync(path.join(process.cwd(), 'dist/qq'), { recursive: true });
+    // }
+
+    // fs.writeFileSync(
+    //   path.join(
+    //     process.cwd(),
+    //     `dist/qq/${humps.camelize(componentList[index].name)}.d.ts`,
+    //   ),
+    //   tsCode,
+    // );
+    index++;
+    const { url: nextUrl = '', name: nextName = '' } =
+      componentList[index] || {};
+    if (nextUrl) {
+      getComponentProps({
+        url: nextUrl,
+        name: nextName,
+        page,
+      });
+    } else {
+      await browser.close();
+    }
+  };
+  const { url = '', name } = componentList[index] || {};
+
+  getComponentProps({
+    url,
+    name,
+    page,
+  });
+};
+
+fn();
