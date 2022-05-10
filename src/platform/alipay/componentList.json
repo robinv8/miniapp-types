@@ -1,154 +1,336 @@
 [
   {
     "name": "view",
-    "url": "https://opendocs.alipay.com/mini/component/view"
+    "url": "https://opendocs.alipay.com/mini/component/view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "swiper",
-    "url": "https://opendocs.alipay.com/mini/component/swiper"
+    "url": "https://opendocs.alipay.com/mini/component/swiper",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "scroll-view",
-    "url": "https://opendocs.alipay.com/mini/component/scroll-view"
+    "url": "https://opendocs.alipay.com/mini/component/scroll-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "cover-view",
-    "url": "https://opendocs.alipay.com/mini/component/cover-view"
+    "url": "https://opendocs.alipay.com/mini/component/cover-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "cover-image",
-    "url": "https://opendocs.alipay.com/mini/component/cover-image"
+    "url": "https://opendocs.alipay.com/mini/component/cover-image",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "match-media",
-    "url": "https://opendocs.alipay.com/mini/02ycxe"
+    "url": "https://opendocs.alipay.com/mini/02ycxe",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "movable-view",
-    "url": "https://opendocs.alipay.com/mini/component/movable-view"
+    "url": "https://opendocs.alipay.com/mini/component/movable-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "movable-area",
-    "url": "https://opendocs.alipay.com/mini/component/movable-area"
+    "url": "https://opendocs.alipay.com/mini/component/movable-area",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "text",
-    "url": "https://opendocs.alipay.com/mini/component/text"
+    "url": "https://opendocs.alipay.com/mini/component/text",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "icon",
-    "url": "https://opendocs.alipay.com/mini/component/icon"
+    "url": "https://opendocs.alipay.com/mini/component/icon",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "progress",
-    "url": "https://opendocs.alipay.com/mini/component/progress"
+    "url": "https://opendocs.alipay.com/mini/component/progress",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "rich-text",
-    "url": "https://opendocs.alipay.com/mini/component/rich-text"
+    "url": "https://opendocs.alipay.com/mini/component/rich-text",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "button",
-    "url": "https://opendocs.alipay.com/mini/component/button"
+    "url": "https://opendocs.alipay.com/mini/component/button",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "form",
-    "url": "https://opendocs.alipay.com/mini/component/form"
+    "url": "https://opendocs.alipay.com/mini/component/form",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "label",
-    "url": "https://opendocs.alipay.com/mini/component/label"
+    "url": "https://opendocs.alipay.com/mini/component/label",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "input",
-    "url": "https://opendocs.alipay.com/mini/component/input"
+    "url": "https://opendocs.alipay.com/mini/component/input",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "textarea",
-    "url": "https://opendocs.alipay.com/mini/component/textarea"
+    "url": "https://opendocs.alipay.com/mini/component/textarea",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "radio",
-    "url": "https://opendocs.alipay.com/mini/component/radio"
+    "url": "https://opendocs.alipay.com/mini/component/radio",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "radio-group",
-    "url": "https://opendocs.alipay.com/mini/component/radio-group"
+    "url": "https://opendocs.alipay.com/mini/component/radio-group",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "checkbox",
-    "url": "https://opendocs.alipay.com/mini/component/checkbox"
+    "url": "https://opendocs.alipay.com/mini/component/checkbox",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "checkbox-group",
-    "url": "https://opendocs.alipay.com/mini/component/checkbox-group"
+    "url": "https://opendocs.alipay.com/mini/component/checkbox-group",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "switch",
-    "url": "https://opendocs.alipay.com/mini/component/switch"
+    "url": "https://opendocs.alipay.com/mini/component/switch",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "slider",
-    "url": "https://opendocs.alipay.com/mini/component/slider"
+    "url": "https://opendocs.alipay.com/mini/component/slider",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "picker-view",
-    "url": "https://opendocs.alipay.com/mini/component/picker-view"
+    "url": "https://opendocs.alipay.com/mini/component/picker-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "picker",
-    "url": "https://opendocs.alipay.com/mini/component/picker"
+    "url": "https://opendocs.alipay.com/mini/component/picker",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "navigator",
-    "url": "https://opendocs.alipay.com/mini/component/navigator"
+    "url": "https://opendocs.alipay.com/mini/component/navigator",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "image",
-    "url": "https://opendocs.alipay.com/mini/component/image"
+    "url": "https://opendocs.alipay.com/mini/component/image",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "video",
-    "url": "https://opendocs.alipay.com/mini/component/video"
+    "url": "https://opendocs.alipay.com/mini/component/video",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "lottie",
-    "url": "https://opendocs.alipay.com/mini/component/lottie"
+    "url": "https://opendocs.alipay.com/mini/component/lottie",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "required": 2,
+      "description": 3
+    }
   },
   {
     "name": "canvas",
-    "url": "https://opendocs.alipay.com/mini/component/canvas"
+    "url": "https://opendocs.alipay.com/mini/component/canvas",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "map",
-    "url": "https://opendocs.alipay.com/mini/component/map"
-  },
-  {
-    "name": "map 高级定制渲染",
-    "url": "https://opendocs.alipay.com/mini/component/00n21l"
+    "url": "https://opendocs.alipay.com/mini/component/map",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "web-view",
-    "url": "https://opendocs.alipay.com/mini/component/web-view"
+    "url": "https://opendocs.alipay.com/mini/component/web-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "lifestyle",
-    "url": "https://opendocs.alipay.com/mini/component/lifestyle"
+    "url": "https://opendocs.alipay.com/mini/component/lifestyle",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "contact-button",
-    "url": "https://opendocs.alipay.com/mini/component/contact-button"
+    "url": "https://opendocs.alipay.com/mini/component/contact-button",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "error-view",
-    "url": "https://opendocs.alipay.com/mini/component/error-view"
+    "url": "https://opendocs.alipay.com/mini/component/error-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "aria-component",
-    "url": "https://opendocs.alipay.com/mini/component/accessibility"
+    "url": "https://opendocs.alipay.com/mini/component/accessibility",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "page-meta",
-    "url": "https://opendocs.alipay.com/mini/component/pagemeta"
+    "url": "https://opendocs.alipay.com/mini/component/pagemeta",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   }
 ]
