@@ -1,0 +1,42 @@
+[
+  {
+    "name": "type",
+    "type": "string",
+    "description": "否"
+  },
+  {
+    "name": "canvas-id",
+    "type": "string",
+    "description": "否"
+  },
+  {
+    "name": "disableScroll",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "bindtouchstart",
+    "type": ""
+  },
+  {
+    "name": "bindtouchmove",
+    "type": ""
+  },
+  {
+    "name": "bindtouchend",
+    "type": ""
+  },
+  {
+    "name": "bindtouchcancel",
+    "type": ""
+  },
+  {
+    "name": "bindlongtap",
+    "type": ""
+  },
+  {
+    "name": "binderror",
+    "type": ""
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "name": "url",
+    "type": "String",
+    "description": "当前小程序内的跳转链接"
+  },
+  {
+    "name": "open-type",
+    "type": "String",
+    "options": [
+      "navigate",
+      "redirect",
+      "switchTab",
+      "reLaunch",
+      "navigateBack"
+    ],
+    "defaultValue": "navigate",
+    "description": "跳转方式"
+  },
+  {
+    "name": "delta",
+    "type": "Number",
+    "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数"
+  },
+  {
+    "name": "hover-class",
+    "type": "String",
+    "defaultValue": "navigator-hover",
+    "description": "指定点击时的样式类，当 hover-class=\"none\" 时，没有点击态效果"
+  },
+  {
+    "name": "hover-stop-propagation",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "指定是否阻止本节点的祖先节点出现点击态"
+  },
+  {
+    "name": "hover-start-time",
+    "type": "Number",
+    "defaultValue": "50",
+    "description": "按住后多久出现点击态，单位毫秒"
+  },
+  {
+    "name": "hover-stay-time",
+    "type": "Number",
+    "defaultValue": "600",
+    "description": "手指松开后点击态保留时间，单位毫秒"
+  }
+]

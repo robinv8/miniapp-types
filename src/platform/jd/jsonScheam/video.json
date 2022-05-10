@@ -1,0 +1,114 @@
+[
+  {
+    "name": "src",
+    "type": "string",
+    "description": "是"
+  },
+  {
+    "name": "autoplay",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "muted",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "controls",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "否"
+  },
+  {
+    "name": "loop",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "否"
+  },
+  {
+    "name": "bindplay",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindpause",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindended",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindtimeupdate",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindfullscreenchange",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "binderror",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindwaiting",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindloadeddata",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindloadedmetadata",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindloadstart",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindseeked",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "bindseeking",
+    "type": "eventHandler",
+    "description": "否"
+  },
+  {
+    "name": "objectFit",
+    "type": "string",
+    "defaultValue": "contain",
+    "description": "否"
+  },
+  {
+    "name": "initialTime",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "否"
+  },
+  {
+    "name": "poster",
+    "type": "string",
+    "description": "否"
+  },
+  {
+    "name": "mobilenet-hint-type",
+    "type": "number",
+    "defaultValue": "1",
+    "description": "否"
+  }
+]

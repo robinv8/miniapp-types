@@ -1,0 +1,42 @@
+[
+  {
+    "name": "mode",
+    "type": "string",
+    "options": [
+      "normal"
+    ],
+    "defaultValue": "normal",
+    "description": "否"
+  },
+  {
+    "name": "device-position",
+    "type": "string",
+    "options": [
+      "front",
+      "back"
+    ],
+    "defaultValue": "back",
+    "description": "否"
+  },
+  {
+    "name": "flash",
+    "type": "string",
+    "options": [
+      "auto",
+      "on",
+      "off"
+    ],
+    "defaultValue": "auto",
+    "description": "否"
+  },
+  {
+    "name": "bindstop",
+    "type": "eventhandle",
+    "description": "否"
+  },
+  {
+    "name": "binderror",
+    "type": "eventhandle",
+    "description": "否"
+  }
+]
