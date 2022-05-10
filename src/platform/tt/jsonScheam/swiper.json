@@ -1,0 +1,125 @@
+[
+  {
+    "name": "indicator-dots",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示面板指示点",
+    "required": false
+  },
+  {
+    "name": "indicator-color",
+    "type": "Color",
+    "defaultValue": "rgba(0, 0, 0, .3)",
+    "description": "指示点颜色",
+    "required": false
+  },
+  {
+    "name": "indicator-active-color",
+    "type": "Color",
+    "defaultValue": "rgba(0, 0, 0, 0)",
+    "description": "当前选中的指示点颜色",
+    "required": false
+  },
+  {
+    "name": "autoplay",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否自动切换",
+    "required": false
+  },
+  {
+    "name": "current",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "当前选中滑块的索引",
+    "required": false
+  },
+  {
+    "name": "current-item-id",
+    "type": "string",
+    "defaultValue": "\"\"",
+    "description": "当前选中滑块的组件 id，不能与 current 属性同时指定",
+    "required": false
+  },
+  {
+    "name": "interval",
+    "type": "number",
+    "defaultValue": "5000",
+    "description": "自动切换时间间隔（ms）",
+    "required": false
+  },
+  {
+    "name": "previous-margin",
+    "type": "string",
+    "defaultValue": "\"\"",
+    "description": "前边距，可以用露出前一项的一小部分，支持 px 和 rpx，默认单位是 px",
+    "required": false
+  },
+  {
+    "name": "next-margin",
+    "type": "string",
+    "defaultValue": "\"\"",
+    "description": "后边距，可用于露出后一项的一小部分，支持 px 和 rpx，默认单位是 px",
+    "required": false
+  },
+  {
+    "name": "display-multiple-items",
+    "type": "number",
+    "defaultValue": "1",
+    "description": "同时显示的滑块数量",
+    "required": false
+  },
+  {
+    "name": "duration",
+    "type": "number",
+    "defaultValue": "500",
+    "description": "滑动动画时长（ms）",
+    "required": false
+  },
+  {
+    "name": "circular",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否循环播放（首尾衔接）",
+    "required": false
+  },
+  {
+    "name": "vertical",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "滑块放置方向是否为竖直",
+    "required": false
+  },
+  {
+    "name": "easing-function",
+    "type": "string",
+    "options": [
+      "default",
+      "linear",
+      "easeInCubic",
+      "easeOutCubic",
+      "easeInOutCubic"
+    ],
+    "defaultValue": "\"default\"",
+    "description": "指定 swiper 切换缓动动画类型，详情见 easing-function 的合法值",
+    "required": false
+  },
+  {
+    "name": "bindchange",
+    "type": "EventHandle",
+    "description": "current 改变时触发",
+    "required": false
+  },
+  {
+    "name": "bindanimationfinish",
+    "type": "EventHandle",
+    "description": "动画结束时会触发 animationfinish 事件",
+    "required": false
+  },
+  {
+    "name": "bindtransition",
+    "type": "EventHandle",
+    "description": "swiper-item 产生位移时触发 transition 事件",
+    "required": false
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "mode",
+    "type": "string",
+    "options": [
+      "selector",
+      "multiSelector",
+      "time",
+      "date",
+      "region"
+    ],
+    "defaultValue": "\"selector\"",
+    "description": "选择器类型，详见 mode 的合法值",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "bindcancel",
+    "type": "EventHandle",
+    "description": "取消选择收起 picker 时触发",
+    "required": false
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "name": "src",
+    "type": "string",
+    "description": "组件指向网页的链接。网页链接需登录字节小程序开发者平台配置业务域名。只支持 https 和 wss 协议。",
+    "required": true
+  },
+  {
+    "name": "progressbar-color",
+    "type": "Color",
+    "defaultValue": "#51a0d8",
+    "description": "webview 的进度条颜色",
+    "required": false
+  },
+  {
+    "name": "bindmessage",
+    "type": "EventHandle",
+    "description": "当网页通过 tt.miniProgram.postMessage 向小程序 postMessage 时，bindmessage 绑定的方法会在小程序的特定时机（小程序后退、组件销毁、分享）触发并收到消息。",
+    "required": false
+  },
+  {
+    "name": "bindload",
+    "type": "EventHandle",
+    "description": "当网页加载完成时触发的消息",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "EventHandle",
+    "description": "当网页加载失败时触发的消息",
+    "required": false
+  }
+]

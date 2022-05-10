@@ -1,0 +1,93 @@
+[
+  {
+    "name": "size",
+    "type": "string",
+    "options": [
+      "default",
+      "mini"
+    ],
+    "defaultValue": "default",
+    "description": "按钮的大小，详情见 size 的合法值",
+    "required": false
+  },
+  {
+    "name": "type",
+    "type": "string",
+    "options": [
+      "primary",
+      "default"
+    ],
+    "defaultValue": "default",
+    "description": "按钮的样式类型，详情见 type 的合法值",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "loading",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否带 loading 图标",
+    "required": false
+  },
+  {
+    "name": "form-type",
+    "type": "string",
+    "options": [
+      "submit",
+      "reset"
+    ],
+    "description": "用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值",
+    "required": false
+  },
+  {
+    "name": "open-type",
+    "type": "string",
+    "options": [
+      "share",
+      "getPhoneNumber",
+      "contact"
+    ],
+    "description": "用于调用开放能力, 详情见 open-type 的合法值",
+    "required": false
+  },
+  {
+    "name": "hover-class",
+    "type": "string",
+    "defaultValue": "button-hover",
+    "description": "点击状态的样式类",
+    "required": false
+  },
+  {
+    "name": "hover-start-time",
+    "type": "number",
+    "defaultValue": "20",
+    "description": "按住后多久出现点击态，单位毫秒",
+    "required": false
+  },
+  {
+    "name": "hover-stay-time",
+    "type": "number",
+    "defaultValue": "70",
+    "description": "手指松开后点击态保留时间，单位毫秒",
+    "required": false
+  },
+  {
+    "name": "hover-stop-propagation",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "指定是否阻止本节点的祖先节点出现点击态",
+    "required": false
+  },
+  {
+    "name": "bindgetphonenumber",
+    "type": "EventHandle",
+    "description": "获取用户手机号回调，只在 open-type=getPhoneNumber 时有效",
+    "required": false
+  }
+]

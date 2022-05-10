@@ -1,0 +1,83 @@
+[
+  {
+    "name": "mode",
+    "type": "string",
+    "options": [
+      "normal",
+      "scanCode"
+    ],
+    "defaultValue": "normal",
+    "description": "模式，不支持动态修改，详情见 mode 的合法值",
+    "required": false
+  },
+  {
+    "name": "resolution",
+    "type": "string",
+    "options": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "defaultValue": "medium",
+    "description": "分辨率，不支持动态修改，详情见 resolution 的合法值",
+    "required": false
+  },
+  {
+    "name": "device-position",
+    "type": "string",
+    "options": [
+      "front",
+      "back"
+    ],
+    "defaultValue": "back",
+    "description": "摄像头朝向，详情见 device-position 的合法值",
+    "required": false
+  },
+  {
+    "name": "flash",
+    "type": "string",
+    "options": [
+      "off",
+      "torch"
+    ],
+    "defaultValue": "off",
+    "description": "闪光灯，详情见 flash 的合法值",
+    "required": false
+  },
+  {
+    "name": "frame-size",
+    "type": "string",
+    "options": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "defaultValue": "medium",
+    "description": "指定期望的相机帧数据尺寸，详情见 frame-size 的合法值",
+    "required": false
+  },
+  {
+    "name": "bindinitdone",
+    "type": "EventHandle",
+    "description": "相机初始化完成时触发，e.detail = {maxZoom}",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "EventHandle",
+    "description": "用户不允许使用摄像头或相机异常时触发",
+    "required": false
+  },
+  {
+    "name": "bindstop",
+    "type": "EventHandle",
+    "description": "摄像头在非正常终止时触发，如退出后台/跳转页面/电话中断等情况",
+    "required": false
+  },
+  {
+    "name": "bindscancode",
+    "type": "EventHandle",
+    "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效",
+    "required": false
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "nodes",
+    "type": "(Node | Text)[] | string",
+    "defaultValue": "[ ]",
+    "description": "节点列表 / HTML String",
+    "required": false
+  }
+]

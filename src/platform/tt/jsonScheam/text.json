@@ -1,0 +1,27 @@
+[
+  {
+    "name": "selectable",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否可以选中文字",
+    "required": false
+  },
+  {
+    "name": "space",
+    "type": "string",
+    "options": [
+      "ensp",
+      "emsp",
+      "nbsp"
+    ],
+    "description": "是否显示连续的空格，可以取值ensp emsp nbsp，详见 space 的合法值",
+    "required": false
+  },
+  {
+    "name": "decode",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否转义",
+    "required": false
+  }
+]

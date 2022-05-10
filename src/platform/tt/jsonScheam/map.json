@@ -1,0 +1,205 @@
+[
+  {
+    "name": "longitude",
+    "type": "number",
+    "description": "中心经度",
+    "required": true
+  },
+  {
+    "name": "latitude",
+    "type": "number",
+    "description": "中心纬度",
+    "required": true
+  },
+  {
+    "name": "scale",
+    "type": "number",
+    "defaultValue": "16",
+    "description": "缩放级别，取值范围为 3-19",
+    "required": false
+  },
+  {
+    "name": "markers",
+    "type": "Marker[]",
+    "description": "标记点",
+    "required": false
+  },
+  {
+    "name": "circles",
+    "type": "Circle[]",
+    "description": "圆",
+    "required": false
+  },
+  {
+    "name": "show-location",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示当前位置",
+    "required": false
+  },
+  {
+    "name": "polyline",
+    "type": "Polyline[]",
+    "description": "路线数组",
+    "required": false
+  },
+  {
+    "name": "include-points",
+    "type": "LngLat[]",
+    "description": "缩放视野以包含所有给定的坐标点；示例：[{latitude: 0, longitude: 0}]",
+    "required": false
+  },
+  {
+    "name": "bindtap",
+    "type": "EventHandle",
+    "description": "点击地图时触发，e.detail = { latitude, longitude}",
+    "required": false
+  },
+  {
+    "name": "bindmarkertap",
+    "type": "EventHandle",
+    "description": "点击标记点时触发，e.detail = {markerId, latitude, longitude}",
+    "required": false
+  },
+  {
+    "name": "bindcallouttap",
+    "type": "EventHandle",
+    "description": "点击标记点对应的气泡时触发, e.detail = {markerId}",
+    "required": false
+  },
+  {
+    "name": "bindregionchange",
+    "type": "EventHandle",
+    "description": "视野发生变化时触发",
+    "required": false
+  },
+  {
+    "name": "rotate",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "顺时针旋转角度，范围 0 ~ 360，旋转原点为地图容器中心点",
+    "required": false
+  },
+  {
+    "name": "skew",
+    "type": "number",
+    "defaultValue": "0",
+    "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角",
+    "required": false
+  },
+  {
+    "name": "polygons",
+    "type": "Polygon[]",
+    "description": "多边形",
+    "required": false
+  },
+  {
+    "name": "show-compass",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "显示指南针",
+    "required": false
+  },
+  {
+    "name": "enable-overlooking",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "开启俯视手势支持，双指上下滑调整俯仰角",
+    "required": false
+  },
+  {
+    "name": "enable-rotate",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "开启旋转手势支持，双指旋转调整旋转角度",
+    "required": false
+  },
+  {
+    "name": "min-scale",
+    "type": "number",
+    "defaultValue": "3",
+    "description": "最小缩放级别，取值范围为 3 - max-scale",
+    "required": false
+  },
+  {
+    "name": "max-scale",
+    "type": "number",
+    "defaultValue": "19",
+    "description": "最大缩放级别，取值范围为 min-scale - 19",
+    "required": false
+  },
+  {
+    "name": "enable-3D",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否展示 3D 楼块，该属性 IOS 不支持",
+    "required": false
+  },
+  {
+    "name": "show-scale",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示比例尺",
+    "required": false
+  },
+  {
+    "name": "enable-zoom",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否支持缩放",
+    "required": false
+  },
+  {
+    "name": "enable-scroll",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否支持拖动",
+    "required": false
+  },
+  {
+    "name": "enable-satellite",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否开启卫星图",
+    "required": false
+  },
+  {
+    "name": "enable-traffic",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否开启实时路况，在该属性为 true 时，enable- building 和 enable-3D 无效",
+    "required": false
+  },
+  {
+    "name": "enable-poi",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否显示地名",
+    "required": false
+  },
+  {
+    "name": "enable-building",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否展示建筑物",
+    "required": false
+  },
+  {
+    "name": "bindlabeltap",
+    "type": "EventHandle",
+    "description": "点击 label 时触发，e.detail = {markerId}",
+    "required": false
+  },
+  {
+    "name": "bindupdated",
+    "type": "EventHandle",
+    "description": "在地图渲染更新完成时触发",
+    "required": false
+  },
+  {
+    "name": "bindanchorpointtap",
+    "type": "EventHandle",
+    "description": "点击定位标时触发，e.detail = {longitude, latitude}",
+    "required": false
+  }
+]

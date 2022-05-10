@@ -1,0 +1,278 @@
+[
+  {
+    "name": "src",
+    "type": "string",
+    "description": "要播放的视频资源地址",
+    "required": true
+  },
+  {
+    "name": "autoplay",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否自动播放",
+    "required": false
+  },
+  {
+    "name": "poster",
+    "type": "string",
+    "description": "视频封面的图片网络资源地址",
+    "required": false
+  },
+  {
+    "name": "loop",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否循环播放",
+    "required": false
+  },
+  {
+    "name": "show-fullscreen-btn",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否显示全屏按钮",
+    "required": false
+  },
+  {
+    "name": "show-play-btn",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮",
+    "required": false
+  },
+  {
+    "name": "controls",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "是否显示全部播放控件",
+    "required": false
+  },
+  {
+    "name": "object-fit",
+    "type": "string",
+    "options": [
+      "contain",
+      "fill",
+      "cover"
+    ],
+    "defaultValue": "contain",
+    "description": "当视频大小与 video 容器大小不一致时，视频的表现形式：contain（包含），fill（填充），cover（覆盖）",
+    "required": false
+  },
+  {
+    "name": "play-btn-position",
+    "type": "string",
+    "options": [
+      "center",
+      "bottom"
+    ],
+    "defaultValue": "center",
+    "description": "播放按钮的位置：center（视频中间），bottom（控制条上）",
+    "required": false
+  },
+  {
+    "name": "pre-roll-unit-id",
+    "type": "string",
+    "description": "前贴广告的 unit id",
+    "required": false
+  },
+  {
+    "name": "post-roll-unit-id",
+    "type": "string",
+    "description": "后贴广告的 unit id",
+    "required": false
+  },
+  {
+    "name": "vslide-gesture",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+    "required": false
+  },
+  {
+    "name": "vslide-gesture-in-fullscreen",
+    "type": "boolean",
+    "defaultValue": "true",
+    "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+    "required": false
+  },
+  {
+    "name": "enable-progress-gesture",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度",
+    "required": false
+  },
+  {
+    "name": "enable-play-gesture",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否开启播放手势，即双击切换播放/暂停",
+    "required": false
+  },
+  {
+    "name": "muted",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否静音播放",
+    "required": false
+  },
+  {
+    "name": "show-mute-btn",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示静音控件",
+    "required": false
+  },
+  {
+    "name": "show-playback-rate-btn",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "是否显示倍速控件，点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2",
+    "required": false
+  },
+  {
+    "name": "direction",
+    "type": "number",
+    "options": [
+      "0",
+      "90",
+      "-90"
+    ],
+    "defaultValue": "-90",
+    "description": "设置全屏时视频的方向，详见 direction 的合法值",
+    "required": false
+  },
+  {
+    "name": "enable-play-in-background",
+    "type": "boolean",
+    "defaultValue": "false",
+    "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放",
+    "required": false
+  },
+  {
+    "name": "signature",
+    "type": "Signature",
+    "description": "设置署名水印",
+    "required": false
+  },
+  {
+    "name": "bindplay",
+    "type": "EventHandle",
+    "description": "当开始播放时触发 play 事件",
+    "required": false
+  },
+  {
+    "name": "bindpause",
+    "type": "EventHandle",
+    "description": "当暂停播放时触发 pause 事件",
+    "required": false
+  },
+  {
+    "name": "bindended",
+    "type": "EventHandle",
+    "description": "当播放到末尾时触发 ended 事件",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "EventHandle",
+    "description": "视频播放出错时触发 error 事件",
+    "required": false
+  },
+  {
+    "name": "bindtimeupdate",
+    "type": "EventHandle",
+    "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }",
+    "required": false
+  },
+  {
+    "name": "bindfullscreenchange",
+    "type": "EventHandle",
+    "description": "视频进入和退出全屏时触发",
+    "required": false
+  },
+  {
+    "name": "bindwaiting",
+    "type": "EventHandle",
+    "description": "视频出现缓冲时触发",
+    "required": false
+  },
+  {
+    "name": "bindadstart",
+    "type": "EventHandle",
+    "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
+    "required": false
+  },
+  {
+    "name": "bindadended",
+    "type": "EventHandle",
+    "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
+    "required": false
+  },
+  {
+    "name": "bindadload",
+    "type": "EventHandle",
+    "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
+    "required": false
+  },
+  {
+    "name": "bindadclose",
+    "type": "EventHandle",
+    "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
+    "required": false
+  },
+  {
+    "name": "bindaderror",
+    "type": "EventHandle",
+    "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
+    "required": false
+  },
+  {
+    "name": "bindloadedmetadata",
+    "type": "EventHandle",
+    "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}",
+    "required": false
+  },
+  {
+    "name": "bindseekcomplete",
+    "type": "EventHandle",
+    "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}",
+    "required": false
+  },
+  {
+    "name": "bindplaybackratechange",
+    "type": "EventHandle",
+    "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}",
+    "required": false
+  },
+  {
+    "name": "bindmutechange",
+    "type": "EventHandle",
+    "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}",
+    "required": false
+  },
+  {
+    "name": "bindcontroltap",
+    "type": "EventHandle",
+    "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值",
+    "required": false
+  },
+  {
+    "name": "bindenterbackground",
+    "type": "EventHandle",
+    "description": "进入小窗播放时触发",
+    "required": false
+  },
+  {
+    "name": "bindclosebackground",
+    "type": "EventHandle",
+    "description": "关闭小窗播放时触发",
+    "required": false
+  },
+  {
+    "name": "bindleavebackground",
+    "type": "EventHandle",
+    "description": "离开小窗进入 app 事件时触发",
+    "required": false
+  }
+]
