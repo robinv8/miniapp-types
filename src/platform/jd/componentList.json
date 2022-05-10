@@ -1,98 +1,253 @@
 [
   {
     "name": "view",
-    "url": "https://mp-docs.jd.com/component/view/view.html#view"
+    "url": "https://mp-docs.jd.com/component/view/view.html#view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "scroll-view",
-    "url": "https://mp-docs.jd.com/component/view/scroll-view.html"
+    "url": "https://mp-docs.jd.com/component/view/scroll-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "swiper",
-    "url": "https://mp-docs.jd.com/component/view/swiper.html"
+    "url": "https://mp-docs.jd.com/component/view/swiper.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
+    "name": "swiper-item",
+    "url": "https://mp-docs.jd.com/component/view/swiper.html#swiper-item",
+    "tableIndex": 2,
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "icon",
-    "url": "https://mp-docs.jd.com/component/content/icon.html"
+    "url": "https://mp-docs.jd.com/component/content/icon.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "text",
-    "url": "https://mp-docs.jd.com/component/content/text.html"
+    "url": "https://mp-docs.jd.com/component/content/text.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "progress",
-    "url": "https://mp-docs.jd.com/component/content/progress.html"
+    "url": "https://mp-docs.jd.com/component/content/progress.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "button",
-    "url": "https://mp-docs.jd.com/component/form/button.html"
+    "url": "https://mp-docs.jd.com/component/form/button.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "form",
-    "url": "https://mp-docs.jd.com/component/form/form.html"
+    "url": "https://mp-docs.jd.com/component/form/form.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "input",
-    "url": "https://mp-docs.jd.com/component/form/input.html"
+    "url": "https://mp-docs.jd.com/component/form/input.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "checkbox",
-    "url": "https://mp-docs.jd.com/component/form/checkbox.html"
+    "url": "https://mp-docs.jd.com/component/form/checkbox.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "radio",
-    "url": "https://mp-docs.jd.com/component/form/radio.html"
+    "url": "https://mp-docs.jd.com/component/form/radio.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "picker",
-    "url": "https://mp-docs.jd.com/component/form/picker.html"
+    "url": "https://mp-docs.jd.com/component/form/picker.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "picker-view",
-    "url": "https://mp-docs.jd.com/component/form/picker-view.html"
+    "url": "https://mp-docs.jd.com/component/form/picker-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "slider",
-    "url": "https://mp-docs.jd.com/component/form/slider.html"
+    "url": "https://mp-docs.jd.com/component/form/slider.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "switch",
-    "url": "https://mp-docs.jd.com/component/form/switch.html"
+    "url": "https://mp-docs.jd.com/component/form/switch.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "label",
-    "url": "https://mp-docs.jd.com/component/form/label.html"
+    "url": "https://mp-docs.jd.com/component/form/label.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "navigator",
-    "url": "https://mp-docs.jd.com/component/navigation.html#navigator"
+    "url": "https://mp-docs.jd.com/component/navigation.html#navigator",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "image",
-    "url": "https://mp-docs.jd.com/component/media/media.html#image"
+    "url": "https://mp-docs.jd.com/component/media/media.html#image",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "live-player",
-    "url": "https://mp-docs.jd.com/component/media/live-player.html#live-player"
+    "url": "https://mp-docs.jd.com/component/media/live-player.html#live-player",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "video",
-    "url": "https://mp-docs.jd.com/component/media/video.html#video"
+    "url": "https://mp-docs.jd.com/component/media/video.html#video",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "camera",
-    "url": "https://mp-docs.jd.com/component/media/camera.html#camera"
+    "url": "https://mp-docs.jd.com/component/media/camera.html#camera",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "map",
-    "url": "https://mp-docs.jd.com/component/map.html#map"
+    "url": "https://mp-docs.jd.com/component/map.html#map",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "canvas",
-    "url": "https://mp-docs.jd.com/component/canvas.html#canvas"
+    "url": "https://mp-docs.jd.com/component/canvas.html#canvas",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   },
   {
     "name": "web-view",
-    "url": "https://mp-docs.jd.com/component/ability.html"
+    "url": "https://mp-docs.jd.com/component/ability.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
   }
 ]
