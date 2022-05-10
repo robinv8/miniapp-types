@@ -1,0 +1,70 @@
+[
+  {
+    "name": "src",
+    "type": "String",
+    "description": "图片地址。"
+  },
+  {
+    "name": "mode",
+    "type": "String",
+    "defaultValue": "scaleToFill",
+    "options":[
+      "scaleToFill",
+      "aspectFit",
+      "aspectFill",
+      "widthFix",
+      "heightFix",
+      "top",
+      "bottom",
+      "center",
+      "left",
+      "right",
+      "top left",
+      "top right",
+      "bottom left",
+      "bottom right"
+    ],
+    "description": "图片模式。\n默认值： scaleToFill"
+  },
+  {
+    "name": "class",
+    "type": "String",
+    "description": "外部样式。"
+  },
+  {
+    "name": "style",
+    "type": "String",
+    "description": "内联样式。"
+  },
+  {
+    "name": "lazy-load",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。\n默认值： false\n版本要求： 基础库 1.9.0 及以上"
+  },
+  {
+    "name": "default-source",
+    "type": "String",
+    "description": "默认图片地址，若设置默认图片地址，会先显示默认图片，等 src 对应的图片加载成功后，再渲染对应的图片。\n版本要求： 基础库 1.19.0 及以上"
+  },
+  {
+    "name": "onLoad",
+    "type": "EventHandle",
+    "description": "图片载入完毕时触发，事件对象 event.detail = {height: '图片高度px', width: '图片宽度px'}。"
+  },
+  {
+    "name": "onError",
+    "type": "EventHandle",
+    "description": "当图片加载错误时触发，事件对象 event.detail = {errMsg: 'something wrong'。"
+  },
+  {
+    "name": "onTap",
+    "type": "EventHandle",
+    "description": "点击图片时触发。"
+  },
+  {
+    "name": "catchTap",
+    "type": "EventHandle",
+    "description": "点击图片时触发，阻止事件冒泡。"
+  }
+]

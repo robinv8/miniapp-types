@@ -1,0 +1,37 @@
+[
+  {
+    "name": "open-type",
+    "type": "String",
+    "options": [
+      "navigate",
+      "redirect",
+      "switchTab",
+      "navigateBack",
+      "reLaunch",
+      "exit"
+    ],
+    "defaultValue": "navigate",
+    "description": "跳转方式。\n默认值： navigate"
+  },
+  {
+    "name": "hover-class",
+    "type": "String",
+    "defaultValue": "none",
+    "description": "点击后的样式类。\n默认值： none"
+  },
+  {
+    "name": "hover-start-time",
+    "type": "Number",
+    "description": "按住后多少时间后出现点击状态，单位 ms。"
+  },
+  {
+    "name": "hover-stay-time",
+    "type": "Number",
+    "description": "手指松开后点击状态保留时间，单位 ms。"
+  },
+  {
+    "name": "url",
+    "type": "String",
+    "description": "当前小程序内的跳转链接。"
+  }
+]

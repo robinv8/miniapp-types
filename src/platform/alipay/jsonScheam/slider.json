@@ -1,0 +1,80 @@
+[
+  {
+    "name": "name",
+    "type": "String",
+    "description": "组件名字，用于表单提交获取数据。"
+  },
+  {
+    "name": "min",
+    "type": "Number",
+    "defaultValue": "0",
+    "description": "最小值。\n默认值： 0"
+  },
+  {
+    "name": "max",
+    "type": "Number",
+    "defaultValue": "100",
+    "description": "最大值。\n默认值： 100"
+  },
+  {
+    "name": "step",
+    "type": "Number",
+    "defaultValue": "1",
+    "description": "步长，值必须大于 0，并可被（max-min）整除。\n默认值： 1"
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用。\n默认值： false"
+  },
+  {
+    "name": "value",
+    "type": "Number",
+    "defaultValue": "0",
+    "description": "当前取值。\n默认值： 0"
+  },
+  {
+    "name": "show-value",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否显示当前 value。\n默认值： false"
+  },
+  {
+    "name": "active-color",
+    "type": "String",
+    "description": "已选择的颜色，同 CSS 色值。\n默认值： #108ee9"
+  },
+  {
+    "name": "background-color",
+    "type": "String",
+    "description": "背景条颜色，同 CSS 色值。\n默认值： #ddd"
+  },
+  {
+    "name": "track-size",
+    "type": "Number",
+    "defaultValue": "4",
+    "description": "轨道线条高度。\n默认值： 4"
+  },
+  {
+    "name": "handle-size",
+    "type": "Number",
+    "defaultValue": "22",
+    "description": "滑块大小。\n默认值： 22"
+  },
+  {
+    "name": "handle-color",
+    "type": "String",
+    "description": "滑块填充色，同 CSS 色值。\n默认值： #fff"
+  },
+  {
+    "name": "onChange",
+    "type": "EventHandle",
+    "description": "完成一次拖动后触发，event.detail = {value: value}。"
+  },
+  {
+    "name": "onChanging",
+    "type": "EventHandle",
+    "description": "拖动过程中触发的事件，event.detail = {value: value}。\n版本要求： 基础库版本 1.5.0 及以上"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "name",
+    "type": "String",
+    "description": "组件名字，用于表单提交获取数据。"
+  },
+  {
+    "name": "onChange",
+    "type": "EventHandle",
+    "description": "中选中项发生改变时触发， detail = {value: 选中的 checkbox 项 value 的值}。"
+  }
+]

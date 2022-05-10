@@ -1,0 +1,7 @@
+[
+  {
+    "name": "for",
+    "type": "String",
+    "description": "绑定组件的 ID。"
+  }
+]

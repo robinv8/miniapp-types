@@ -1,0 +1,182 @@
+[
+  {
+    "name": "style",
+    "type": "String",
+    "description": "内联样式。"
+  },
+  {
+    "name": "class",
+    "type": "String",
+    "description": "样式名。"
+  },
+  {
+    "name": "latitude",
+    "type": "Number",
+    "description": "中心纬度。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "longitude",
+    "type": "Number",
+    "description": "中心经度。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "scale",
+    "type": "Number",
+    "description": "缩放级别，取值范围为 5-18。\n\n默认值：16\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "skew",
+    "type": "Number",
+    "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角。\n\n默认值：0\n\n版本要求：基础库 1.20.0 及以上"
+  },
+  {
+    "name": "rotate",
+    "type": "Number",
+    "description": "顺时针旋转的角度，范围 0 ~ 360。\n\n默认值：0\n\n版本要求：基础库 1.20.0 及以上"
+  },
+  {
+    "name": "markers",
+    "type": "Array",
+    "description": "覆盖物，在地图上的一个点绘制图标。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "polyline",
+    "type": "Array",
+    "description": "覆盖物，多个连贯点的集合（路线）。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "circles",
+    "type": "Array",
+    "description": "覆盖物，圆。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "controls",
+    "type": "Array",
+    "description": "在地图 View 之上的一个控件。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "polygon",
+    "type": "Array",
+    "description": "覆盖物，多边形。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "show-location",
+    "type": "Boolean",
+    "description": "是否显示带有方向的当前定位点。\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "include-points",
+    "type": "Array",
+    "description": "视野将进行小范围延伸包含传入的坐标。\n\n[{\n\n   latitude: 30.279383,\n\n   longitude: 120.131441,\n\n}]\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "include-padding",
+    "type": "Object",
+    "description": "视野在地图 padding 范围内展示。\n\n{\n\n    left:0, right:0,\n\n    top:0, bottom:0\n\n}\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "ground-overlays",
+    "type": "Array",
+    "description": "覆盖物，自定义贴图。\n\n[{\n\n    // 刷新的时候需要变更id值\n\n    id:'0', \n\n    // 右上，左下\n\n    'include-points':[{\n\n        latitude: 39.935029,\n\n        longitude: 116.384377,\n\n    },{\n\n        latitude: 39.939577,\n\n        longitude: 116.388331,\n\n    }],\n\n    image:'/image/overlay.png',\n\n    alpha:0.25,\n\n    zIndex:1\n\n}]\n\n版本要求：基础库 1.11.0 及以上"
+  },
+  {
+    "name": "tile-overlay",
+    "type": "Object",
+    "description": "覆盖物，网格贴图。\n\n{\n\n    url:'http://xxx',\n\n    type:0, // url类型\n\n    tileWidth:256,\n\n    tileHeight:256,\n\n    zIndex:1,\n\n}\n\n版本要求：基础库 1.11.0 及以上"
+  },
+  {
+    "name": "custom-map-style",
+    "type": "String",
+    "description": "设置地图样式。\n\ndefault：默认样式\nlight：精简样式\n\n版本要求：基础库 1.20.0 及以上"
+  },
+  {
+    "name": "panels",
+    "type": "Array",
+    "description": "基于 map 高级定制渲染，设置覆盖在地图上的 view。\n\n版本要求：基础库 1.23.0 及以上"
+  },
+  {
+    "name": "setting",
+    "type": "Object",
+    "description": "设置。\n\n{\n\n  // 手势\n\n  gestureEnable: 1,\n\n  // 比例尺\n\n  showScale: 1,\n\n  // 指南针\n\n  showCompass: 1,\n\n  //双手下滑\n\n  tiltGesturesEnabled: 1,\n\n  // 交通路况展示\n\n  trafficEnabled: 0,\n\n  // 地图 POI 信息\n\n  showMapText: 0,\n\n  // 高德地图 logo 位置\n\n  logoPosition: {\n\n    centerX: 150,\n\n    centerY: 90\n\n  }\n\n}"
+  },
+  {
+    "name": "onMarkerTap",
+    "type": "EventHandle",
+    "description": "点击 Marker 时触发。\n\n{\n\n    markerId,\n\n    latitude,\n\n    longitude, \n\n}\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "onCalloutTap",
+    "type": "EventHandle",
+    "description": "点击 Marker 对应的 callout 时触发。\n\n{\n\n    markerId,\n\n    latitude,\n\n    longitude, \n\n}\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "onControlTap",
+    "type": "EventHandle",
+    "description": "点击 control 时触发。\n\n{\n\n    controlId\n\n}\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "onRegionChange",
+    "type": "EventHandle",
+    "description": "视野发生变化时触发。\n\n基础库 1.24.0 版本新增 skew、rotate、causedBy 返回；\n\nbegin 阶段 causedBy 有效值为 update(接口触发)、gesture(手势触发)；\n\nend 阶段 causedBy 有效值为 update(接口触发)、drag/scale/skew/rotate (手势触发)。\n\n{\n\n    type: \"begin/end\", \n\n    latitude,\n\n    longitude, \n\n    scale,\n\n    skew,\n\n    rotate,\n\n    causedBy: \"update/gesture\"\n\n}\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "onTap",
+    "type": "EventHandle",
+    "description": "点击地图时触发。\n\n{\n\n    latitude,\n\n    longitude, \n\n}\n\n版本要求：基础库 1.10.0 及以上"
+  },
+  {
+    "name": "onPanelTap",
+    "type": "EventHandle",
+    "description": "点击 panel 时触发。\n\n{ \n\n   panelId,\n\n   layoutId,\n\n}\n\n版本要求：基础库 1.23.0 及以上"
+  },
+  {
+    "name": "show-compass",
+    "type": "Boolean",
+    "description": "显示指南针。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "show-scale",
+    "type": "Boolean",
+    "description": "显示比例尺。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-overlooking",
+    "type": "Boolean",
+    "description": "开启俯视。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-zoom",
+    "type": "Boolean",
+    "description": "是否支持缩放。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-scroll",
+    "type": "Boolean",
+    "description": "是否支持拖动。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-rotate",
+    "type": "Boolean",
+    "description": "是否支持旋转。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-traffic",
+    "type": "Boolean",
+    "description": "是否开启实时路况。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-poi",
+    "type": "Boolean",
+    "description": "是否展示 POI 点。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "enable-building",
+    "type": "Boolean",
+    "description": "是否展示建筑物。\n\n版本要求：基础库 2.7.2 及以上"
+  },
+  {
+    "name": "onInitComplete",
+    "type": "EventHandle",
+    "description": "地图初始化完成即将开始渲染第一帧时触发。\n\n版本要求：基础库 2.7.2 及以上"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "name": "value",
+    "type": "String",
+    "description": "组件值，选中时 change 事件会携带的 value。"
+  },
+  {
+    "name": "checked",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "当前是否选中，可用来设置默认选中。\n默认值： false"
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用。\n默认值： false"
+  },
+  {
+    "name": "onChange",
+    "type": "EventHandle",
+    "description": "组件发生改变时触发，detail = {value: 该 checkbox 是否 checked }。"
+  },
+  {
+    "name": "color",
+    "type": "String",
+    "description": "checkbox 的颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
+  }
+]

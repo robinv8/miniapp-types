@@ -1,0 +1,33 @@
+[
+  {
+    "name": "name",
+    "type": "String",
+    "description": "组件名字，用于表单提交获取数据。"
+  },
+  {
+    "name": "checked",
+    "type": "Boolean",
+    "description": "是否选中。"
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "description": "是否禁用。"
+  },
+  {
+    "name": "color",
+    "type": "String",
+    "description": "组件颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
+  },
+  {
+    "name": "onChange",
+    "type": "EventHandle",
+    "description": "checked 改变时触发，event.detail={ value:checked}。"
+  },
+  {
+    "name": "controlled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上"
+  }
+]

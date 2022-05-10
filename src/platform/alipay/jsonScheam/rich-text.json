@@ -1,0 +1,37 @@
+[
+  {
+    "name": "nodes",
+    "type": "Array",
+    "description": "节点列表。目前仅支持使用 Array 类型，如果需要支持 HTML String，则需要自己将 HTML String 转化为 nodes 数组，可使用 mini-html-parser2 转换。"
+  },
+  {
+    "name": "onTap",
+    "type": "EventHandle",
+    "description": "触摸。"
+  },
+  {
+    "name": "onTouchstart",
+    "type": "EventHandle",
+    "description": "触摸动作开始。"
+  },
+  {
+    "name": "onTouchmove",
+    "type": "EventHandle",
+    "description": "触摸移动事件。"
+  },
+  {
+    "name": "onTouchcancel",
+    "type": "EventHandle",
+    "description": "触摸动作被打断。"
+  },
+  {
+    "name": "onTouchend",
+    "type": "EventHandle",
+    "description": "触摸动作结束。"
+  },
+  {
+    "name": "onLongtap",
+    "type": "EventHandle",
+    "description": "触摸后，超过 500ms 再离开。"
+  }
+]

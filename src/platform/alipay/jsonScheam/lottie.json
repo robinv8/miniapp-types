@@ -1,0 +1,87 @@
+[
+  {
+    "name": "autoplay",
+    "type": "Boolean",
+    "description": "false"
+  },
+  {
+    "name": "path",
+    "type": "String",
+    "description": "false"
+  },
+  {
+    "name": "speed",
+    "type": "Float",
+    "description": "false"
+  },
+  {
+    "name": "repeat-count",
+    "type": "Number",
+    "description": "false"
+  },
+  {
+    "name": "auto-reverse",
+    "type": "Boolean",
+    "description": "false"
+  },
+  {
+    "name": "assets-path",
+    "type": "String",
+    "description": "false"
+  },
+  {
+    "name": "placeholder",
+    "type": "String",
+    "description": "true"
+  },
+  {
+    "name": "django-id",
+    "type": "String",
+    "description": "false"
+  },
+  {
+    "name": "md5",
+    "type": "String",
+    "description": "false"
+  },
+  {
+    "name": "optimize",
+    "type": "Boolean",
+    "description": "false"
+  },
+  {
+    "name": "onDataReady",
+    "type": "EventHandle",
+    "description": "-"
+  },
+  {
+    "name": "onDataFailed",
+    "type": "EventHandle",
+    "description": "-"
+  },
+  {
+    "name": "onAnimationStart",
+    "type": "EventHandle",
+    "description": "-"
+  },
+  {
+    "name": "onAnimationEnd",
+    "type": "EventHandle",
+    "description": "-"
+  },
+  {
+    "name": "onAnimationRepeat",
+    "type": "EventHandle",
+    "description": "-"
+  },
+  {
+    "name": "onAnimationCancel",
+    "type": "EventHandle",
+    "description": "-"
+  },
+  {
+    "name": "onDataLoadReady",
+    "type": "EventHandle",
+    "description": "-"
+  }
+]

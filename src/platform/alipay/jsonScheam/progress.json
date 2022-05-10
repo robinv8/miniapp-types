@@ -1,0 +1,35 @@
+[
+  {
+    "name": "percent",
+    "type": "Float",
+    "description": "百分比(0~100)。"
+  },
+  {
+    "name": "show-info",
+    "type": "Boolean",
+    "defaultValue": "show",
+    "description": "在右侧显示百分比值。\n默认值： show-info=\"{{false}}\""
+  },
+  {
+    "name": "stroke-width",
+    "type": "Number",
+    "defaultValue": "6",
+    "description": "线的粗细，单位 px。\n默认值： 6"
+  },
+  {
+    "name": "active-color",
+    "type": "Color",
+    "description": "已选择的进度条颜色。\n默认值： #09BB07"
+  },
+  {
+    "name": "background-color",
+    "type": "Color",
+    "description": "未选择的进度条颜色。"
+  },
+  {
+    "name": "active",
+    "type": "Boolean",
+    "defaultValue": "active",
+    "description": "是否添加从 0% 开始加载的入场动画。\n默认值： active=\"{{false}}\""
+  }
+]

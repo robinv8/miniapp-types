@@ -1,0 +1,115 @@
+[
+  {
+    "name": "size",
+    "type": "String",
+    "options": [
+      "default",
+      "mini"
+    ],
+    "defaultValue": "default",
+    "description": "有效值 default, mini（小尺寸）。\n默认值： default"
+  },
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "default",
+      "primary",
+      "warn"
+    ],
+    "defaultValue": "default",
+    "description": "按钮的样式类型，有效值 primary、default、warn。\n默认值： default"
+  },
+  {
+    "name": "plain",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否镂空（ghost 与 plain 等效）。\n默认值： false"
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用。\n默认值： false"
+  },
+  {
+    "name": "loading",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "按钮文字前是否带 loading 图标。\n默认值： false"
+  },
+  {
+    "name": "hover-class",
+    "type": "String",
+    "defaultValue": "button",
+    "description": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。\n默认值： button-hover"
+  },
+  {
+    "name": "hover-start-time",
+    "type": "Number",
+    "defaultValue": "20",
+    "description": "按住后多少时间后出现点击状态，单位毫秒。\n默认值： 20"
+  },
+  {
+    "name": "hover-stay-time",
+    "type": "Number",
+    "defaultValue": "70",
+    "description": "手指松开后点击状态保留时间，单位毫秒。\n默认值： 70"
+  },
+  {
+    "name": "hover-stop-propagation",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否阻止当前元素的祖先元素出现被点击样式。\n默认值： false\n版本要求： 基础库 1.10.0 及以上"
+  },
+  {
+    "name": "form-type",
+    "type": "String",
+    "options":[
+      "submit",
+      "reset"
+    ],
+    "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。"
+  },
+  {
+    "name": "open-type",
+    "type": "String",
+    "options": [
+      "share",
+      "getAuthorize",
+      "contactShare",
+      "lifestyle"
+    ],
+    "description": "开放能力。\n版本要求： 基础库 1.1.0 及以上"
+  },
+  {
+    "name": "scope",
+    "type": "String",
+    "description": "当 open-type 为 getAuthorize 时有效。\n版本要求： 基础库 1.11.0 及以上"
+  },
+  {
+    "name": "onTap",
+    "type": "EventHandle",
+    "description": "点击。\n说明： 每点击一次会触发一次事件，建议自行使用代码防止重复点击,可以使用 js 防抖和节流实现。"
+  },
+  {
+    "name": "public-id",
+    "type": "String",
+    "description": "生活号 id，必须是当前小程序同主体且已关联的生活号，open-type=\"lifestyle\" 时有效。"
+  },
+  {
+    "name": "onGetAuthorize",
+    "type": "EventHandle",
+    "description": "当 open-type 为 getAuthorize 时有效。\n当授权成功时触发。\n版本要求：基础库 1.11.0 及以上"
+  },
+  {
+    "name": "onFollowLifestyle",
+    "type": "EventHandle",
+    "description": "当 open-type 为 lifestyle 时有效。\n当点击按钮时触发。\nevent.detail = { followStatus }，folllowStatus 合法值有 1、2、3，其中 1 表示已关注。2 表示用户不允许关注。3 表示发生未知错误；\n已知问题：基础库 1.0，当用户在点击按钮前已关注生活号，event.detail.followStatus 的值为 true。\n版本要求：基础库 1.11.0 及以上"
+  },
+  {
+    "name": "onError",
+    "type": "EventHandle",
+    "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。\n版本要求：基础库 1.11.0 及以上"
+  }
+]
