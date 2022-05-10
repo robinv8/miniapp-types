@@ -1,0 +1,22 @@
+[
+  {
+    "name": "size",
+    "type": "String",
+    "defaultValue": "default",
+    "description": "组件大小",
+    "required": false
+  },
+  {
+    "name": "type",
+    "type": "String",
+    "defaultValue": "primary",
+    "description": "组件样式",
+    "required": false
+  },
+  {
+    "name": "bindfavorstatuschange",
+    "type": "EventHandle",
+    "description": "关注和取消关注成功的回调，返回关注状态 {isFavor: true|false}",
+    "required": false
+  }
+]

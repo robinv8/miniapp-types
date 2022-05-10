@@ -1,0 +1,22 @@
+[
+  {
+    "name": "mode",
+    "type": "String",
+    "defaultValue": "selector",
+    "description": "选择器类型",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "bindcancel",
+    "type": "EventHandle",
+    "description": "取消选择或点击遮罩层收起 picker 时触发",
+    "required": false
+  }
+]

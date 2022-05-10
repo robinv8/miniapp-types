@@ -1,0 +1,8 @@
+[
+  {
+    "name": "for",
+    "type": "String",
+    "description": "绑定控件的 ID",
+    "required": false
+  }
+]

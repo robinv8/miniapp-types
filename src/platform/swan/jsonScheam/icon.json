@@ -1,0 +1,40 @@
+[
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "success",
+      "info",
+      "warn",
+      "waiting",
+      "success_no_circle",
+      "clear",
+      "search",
+      "personal",
+      "setting",
+      "top",
+      "close",
+      "cancel",
+      "download",
+      "checkboxSelected",
+      "radioSelected",
+      "radioUnselect",
+      "loadingGrey"
+    ],
+    "description": "生效的值见下表 type 有效值",
+    "required": true
+  },
+  {
+    "name": "size",
+    "type": "Number",
+    "defaultValue": "23",
+    "description": "icon 的大小（单位：px）",
+    "required": false
+  },
+  {
+    "name": "color",
+    "type": "Color",
+    "description": "icon 的颜色",
+    "required": false
+  }
+]

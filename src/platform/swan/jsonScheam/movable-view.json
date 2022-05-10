@@ -1,0 +1,121 @@
+[
+  {
+    "name": "direction",
+    "type": "String",
+    "options": [
+      "all",
+      "vertical",
+      "horizontal",
+      "none"
+    ],
+    "defaultValue": "none",
+    "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none",
+    "required": false
+  },
+  {
+    "name": "inertia",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "movable-view 是否带有惯性",
+    "required": false
+  },
+  {
+    "name": "out-of-bounds",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "超过可移动区域后，movable-view 是否还可以移动",
+    "required": false
+  },
+  {
+    "name": "x",
+    "type": "Number",
+    "description": "定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画",
+    "required": false
+  },
+  {
+    "name": "y",
+    "type": "Number",
+    "description": "定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画",
+    "required": false
+  },
+  {
+    "name": "damping",
+    "type": "Number",
+    "defaultValue": "20",
+    "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快",
+    "required": false
+  },
+  {
+    "name": "friction",
+    "type": "Number",
+    "defaultValue": "2",
+    "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "scale",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内",
+    "required": false
+  },
+  {
+    "name": "scale-min",
+    "type": "Number",
+    "defaultValue": "0.5",
+    "description": "定义缩放倍数最小值",
+    "required": false
+  },
+  {
+    "name": "scale-max",
+    "type": "Number",
+    "defaultValue": "10",
+    "description": "定义缩放倍数最大值",
+    "required": false
+  },
+  {
+    "name": "scale-value",
+    "type": "Number",
+    "defaultValue": "1",
+    "description": "定义缩放倍数，取值范围为 0.5-10",
+    "required": false
+  },
+  {
+    "name": "animation",
+    "type": "Boolean",
+    "defaultValue": "true",
+    "description": "是否使用动画",
+    "required": false
+  },
+  {
+    "name": "bindchange",
+    "type": "EventHandle",
+    "description": "拖动过程中触发的事件，event.detail = {x: x, y: y, source: source}，其中 source 表示产生移动的原因，值可为 touch（拖动）",
+    "required": false
+  },
+  {
+    "name": "bindscale",
+    "type": "EventHandle",
+    "description": "缩放过程中触发的事件，event.detail = {x: x, y: y, scale: scale}",
+    "required": false
+  },
+  {
+    "name": "bindhtouchmove",
+    "type": "EventHandle",
+    "description": "手指初次触摸后发生横向移动，如果 catch 此事件，则意味着 touchmove 事件也被 catch",
+    "required": false
+  },
+  {
+    "name": "bindvtouchmove",
+    "type": "EventHandle",
+    "description": "手指初次触摸后发生纵向移动，如果 catch 此事件，则意味着 touchmove 事件也被 catch",
+    "required": false
+  }
+]

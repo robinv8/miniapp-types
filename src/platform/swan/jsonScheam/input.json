@@ -1,0 +1,147 @@
+[
+  {
+    "name": "value",
+    "type": "String",
+    "description": "输入框的初始内容。若要动态设置输入框内容，需设置value=\"{= value =}\"（注：若要取键盘输入后的 value 请通过 bindinput 获取）",
+    "required": false
+  },
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "text",
+      "number",
+      "idcard",
+      "digit"
+    ],
+    "defaultValue": "text",
+    "description": "input 的类型",
+    "required": false
+  },
+  {
+    "name": "password",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否是密码类型",
+    "required": false
+  },
+  {
+    "name": "placeholder",
+    "type": "String",
+    "description": "输入框为空时占位符。其样式暂时只支持设置 text-align、font-size、font-weight、color",
+    "required": false
+  },
+  {
+    "name": "placeholder-style",
+    "type": "String",
+    "description": "placeholder 的样式",
+    "required": false
+  },
+  {
+    "name": "placeholder-class",
+    "type": "String",
+    "defaultValue": "input-placeholder",
+    "description": "placeholder 的样式类",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "maxlength",
+    "type": "Number",
+    "defaultValue": "140",
+    "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
+    "required": false
+  },
+  {
+    "name": "cursor-spacing",
+    "type": "Number",
+    "defaultValue": "0",
+    "description": "指定光标与键盘的距离（单位：px）。当键盘弹出时， 如果需要页面上滑才能完整显示 input 组件, 那么此时光标与键盘的距离为设定的 cursor-spacing 值； 如果 input 组件处于屏幕上方，键盘弹出时不会挡住 input， 则忽略该属性",
+    "required": false
+  },
+  {
+    "name": "focus",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "获取焦点，调起键盘\n开发者工具暂不支持自动获取焦点",
+    "required": false
+  },
+  {
+    "name": "confirm-type",
+    "type": "String",
+    "options": [
+      "send",
+      "search",
+      "next",
+      "go",
+      "done"
+    ],
+    "defaultValue": "done",
+    "description": "设置键盘右下角按钮的文字。其最终表现与手机输入法本身的实现有关，部分安卓系统输入法和第三方输入法可能不支持或不完全支持",
+    "required": false
+  },
+  {
+    "name": "confirm-hold",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "点击键盘右下角按钮时是否保持键盘不收起",
+    "required": false
+  },
+  {
+    "name": "cursor",
+    "type": "Number",
+    "description": "指定 focus 时的光标位置，自动聚焦时才会生效\n开发者工具暂不支持",
+    "required": false
+  },
+  {
+    "name": "selection-start",
+    "type": "Number",
+    "defaultValue": "-1",
+    "description": "光标起始位置，自动聚焦时有效，需与 selection-end 搭配使用",
+    "required": false
+  },
+  {
+    "name": "selection-end",
+    "type": "Number",
+    "defaultValue": "-1",
+    "description": "光标结束位置，自动聚焦时有效，需与 selection-start 搭配使用",
+    "required": false
+  },
+  {
+    "name": "adjust-position",
+    "type": "Boolean",
+    "defaultValue": "true",
+    "description": "键盘弹起时，是否自动上推页面",
+    "required": false
+  },
+  {
+    "name": "bindinput",
+    "type": "EventHandle",
+    "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值。暂不支持处理函数直接 return 一个字符串",
+    "required": false
+  },
+  {
+    "name": "bindfocus",
+    "type": "EventHandle",
+    "description": "输入框聚焦时触发，event.detail = {value: value, height: height}，height 为键盘高度",
+    "required": false
+  },
+  {
+    "name": "bindblur",
+    "type": "EventHandle",
+    "description": "输入框失去焦点时触发，event.detail = {value: value}",
+    "required": false
+  },
+  {
+    "name": "bindconfirm",
+    "type": "EventHandle",
+    "description": "点击完成按钮时触发，event.detail = {value: value}",
+    "required": false
+  }
+]

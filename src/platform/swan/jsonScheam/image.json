@@ -1,0 +1,76 @@
+[
+  {
+    "name": "src",
+    "type": "String",
+    "description": "图片资源地址",
+    "required": false
+  },
+  {
+    "name": "mode",
+    "type": "String",
+    "options": [
+      "scaleToFill",
+      "aspectFit",
+      "aspectFill",
+      "heightFix",
+      "widthFix",
+      "top",
+      "bottom",
+      "center",
+      "left",
+      "right",
+      "top left",
+      "top right",
+      "bottom left",
+      "bottom right"
+    ],
+    "defaultValue": "scaleToFill",
+    "description": "图片裁剪、缩放的模式",
+    "required": false
+  },
+  {
+    "name": "webp",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "只针对 iOS 端，且 iOS 系统默认不解析 WEBP 格式，只支持网络资源",
+    "required": false
+  },
+  {
+    "name": "lazy-load",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "图片懒加载，在图片即将进入一定范围（距离当前屏 50px）时才开始进行加载",
+    "required": false
+  },
+  {
+    "name": "image-menu-prevent",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "阻止长按图片时弹起默认菜单（即将该属性设置为image-menu-prevent=\"true\"或image-menu-prevent），只在初始化时有效，不能动态变更；若不想阻止弹起默认菜单，则不需要设置此属性。注：长按菜单后的操作暂不支持 svg 格式",
+    "required": false
+  },
+  {
+    "name": "preview",
+    "type": "Boolean",
+    "description": "点击后是否预览图片。在不设置的情况下，若 image 未监听点击事件且宽度大于 1/4 屏宽，则默认开启",
+    "required": false
+  },
+  {
+    "name": "original-src",
+    "type": "String",
+    "description": "预览时显示的图片地址",
+    "required": false
+  },
+  {
+    "name": "binderror",
+    "type": "EventHandle",
+    "description": "当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}",
+    "required": false
+  },
+  {
+    "name": "bindload",
+    "type": "EventHandle",
+    "description": "当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度 px', width:'图片宽度 px'}",
+    "required": false
+  }
+]

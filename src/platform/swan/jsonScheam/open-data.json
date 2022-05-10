@@ -1,0 +1,13 @@
+[
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "userNickName",
+      "userAvatarUrl",
+      "userGender"
+    ],
+    "description": "开放数据类型",
+    "required": true
+  }
+]

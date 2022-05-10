@@ -1,0 +1,40 @@
+[
+  {
+    "name": "checked",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否选中",
+    "required": false
+  },
+  {
+    "name": "type",
+    "type": "String",
+    "options": [
+      "switch",
+      "checkbox"
+    ],
+    "defaultValue": "switch",
+    "description": "样式，有效值：switch、checkbox",
+    "required": false
+  },
+  {
+    "name": "color",
+    "type": "Color",
+    "defaultValue": "#3388ff",
+    "description": "switch 的颜色，同 CSS 的 color",
+    "required": false
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用",
+    "required": false
+  },
+  {
+    "name": "bindchange",
+    "type": "EventHandle",
+    "description": "checked 改变时触发 change 事件，event.detail = {checked: true}",
+    "required": false
+  }
+]
