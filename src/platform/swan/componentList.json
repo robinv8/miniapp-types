@@ -1,234 +1,564 @@
 [
   {
     "name": "cover-image",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_cover-image/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_cover-image/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "cover-view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_cover-view/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_cover-view/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "movable-area",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_movable-area/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_movable-area/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "movable-view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_movable-view/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_movable-view/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "scroll-view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_scroll-view/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_scroll-view/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "swiper",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_swiper/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_swiper/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "swiper-item",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_swiper-item/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_swiper-item/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/view_view/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/view_view/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "icon",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/base_icon/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/base_icon/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "progress",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/base_progress/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/base_progress/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "rich-text",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/base_rich-text/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/base_rich-text/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "text",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/base_text/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/base_text/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "button",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_button/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_button/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "checkbox",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_checkbox/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_checkbox/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "checkbox-group",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_checkbox-group/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_checkbox-group/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "form",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_form/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_form/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "input",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_input/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_input/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "label",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_label/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_label/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "picker",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_picker/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_picker/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "picker-view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_picker-view/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_picker-view/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "picker-view-column",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_picker-view-column/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_picker-view-column/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "radio",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_radio/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_radio/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "radio-group",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_radio-group/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_radio-group/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "slider",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_slider/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_slider/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "switch",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_switch/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_switch/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "textarea",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_textarea/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/formlist_textarea/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "navigator",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/nav/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/nav/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "tabs",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/tabs/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/tabs/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "tab-item",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/tab-item/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/tab-item/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "animation-video",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/animation-video/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/animation-video/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "animation-view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/animation-view-Lottie/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/animation-view-Lottie/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "audio",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_audio/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_audio/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "camera",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_camera/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_camera/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "ar-camera",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_ar-camera/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_ar-camera/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "image",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_image/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_image/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "live-player",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_live-player/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_live-player/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "video",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_video/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_video/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "rtc-room",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_rtc-room/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_rtc-room/",
+    "tableIndex": 1,
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "rtc-room-item",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/media_rtc-room-item/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/media_rtc-room-item/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "map",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/map/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/map/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "canvas",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/canvas/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/canvas/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "ad",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/ad/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/ad/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "open-data",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/open/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/open/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "web-view",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/open_web-view/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/open_web-view/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "follow-swan",
-    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/follow-swan/"
+    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/follow-swan/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "login",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/login/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/login/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "inline-payment-panel",
-    "url": "https://smartprogram.baidu.com/docs/develop/component/inline_payment_panel/"
+    "url": "https://smartprogram.baidu.com/docs/develop/component/inline_payment_panel/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "like",
-    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/like/"
+    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/like/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "One-stop Interaction",
-    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/interaction/"
+    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/interaction/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "comment-list",
-    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/comment-list/"
+    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/comment-list/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "comment-detail",
-    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/comment-detail/"
-  },
-  {
-    "name": "Editor 富文本编辑器",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/editor/"
-  },
-  {
-    "name": "swan-sitemap 小程序索引页组件",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/sitemap/"
-  },
-  {
-    "name": "ECharts 图表",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/echarts/"
-  },
-  {
-    "name": "modelviewer VR 3D 模型-beta",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/modelviewer/"
-  },
-  {
-    "name": "panoviewer VR 全景图-beta",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/panoviewer/"
-  },
-  {
-    "name": "spintileviewer VR 3D 环物—beta",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/spintileviewer/"
-  },
-  {
-    "name": "vrvideo VR 全景-beta",
-    "url": "https://smartprogram.baidu.com/docs/develop/framework/vrvideo/"
+    "url": "https://smartprogram.baidu.com/docs/develop/extended/component-content/comment-detail/",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   }
 ]
