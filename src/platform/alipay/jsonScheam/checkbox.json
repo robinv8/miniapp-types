@@ -2,7 +2,8 @@
   {
     "name": "value",
     "type": "String",
-    "description": "组件值，选中时 change 事件会携带的 value。"
+    "description": "组件值，选中时 change 事件会携带的 value。",
+    "required": true
   },
   {
     "name": "checked",

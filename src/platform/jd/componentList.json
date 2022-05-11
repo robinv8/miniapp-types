@@ -101,8 +101,19 @@
     }
   },
   {
-    "name": "checkbox",
+    "name": "checkbox-group",
     "url": "https://mp-docs.jd.com/component/form/checkbox.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
+    "name": "checkbox",
+    "url": "https://mp-docs.jd.com/component/form/checkbox.html#checkbox",
+    "tableIndex": 1,
     "fields": {
       "name": 0,
       "type": 1,
