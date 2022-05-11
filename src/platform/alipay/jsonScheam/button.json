@@ -2,21 +2,14 @@
   {
     "name": "size",
     "type": "String",
-    "options": [
-      "default",
-      "mini"
-    ],
+    "options": ["default", "mini"],
     "defaultValue": "default",
     "description": "有效值 default, mini（小尺寸）。\n默认值： default"
   },
   {
     "name": "type",
     "type": "String",
-    "options": [
-      "default",
-      "primary",
-      "warn"
-    ],
+    "options": ["default", "primary", "warn"],
     "defaultValue": "default",
     "description": "按钮的样式类型，有效值 primary、default、warn。\n默认值： default"
   },
@@ -65,26 +58,19 @@
   {
     "name": "form-type",
     "type": "String",
-    "options":[
-      "submit",
-      "reset"
-    ],
+    "options": ["submit", "reset"],
     "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。"
   },
   {
     "name": "open-type",
     "type": "String",
-    "options": [
-      "share",
-      "getAuthorize",
-      "contactShare",
-      "lifestyle"
-    ],
+    "options": ["share", "getAuthorize", "contactShare", "lifestyle"],
     "description": "开放能力。\n版本要求： 基础库 1.1.0 及以上"
   },
   {
     "name": "scope",
     "type": "String",
+    "options": ["phoneNumber", "userInfo"],
     "description": "当 open-type 为 getAuthorize 时有效。\n版本要求： 基础库 1.11.0 及以上"
   },
   {

@@ -49,7 +49,27 @@
     "name": "binderror",
     "type": "eventhandle",
     "description": "当发生错误时触发 error 事件，detail = {errMsg:MediaError.code}",
-    "required": false
+    "required": false,
+    "others": {
+      "errorCode": [
+        {
+          "code": 1,
+          "description": "获取资源被用户禁止"
+        },
+        {
+          "code": 2,
+          "description": "网络错误"
+        },
+        {
+          "code": 3,
+          "description": "解码错误"
+        },
+        {
+          "code": 4,
+          "description": "不合适资源"
+        }
+      ]
+    }
   },
   {
     "name": "bindplay",

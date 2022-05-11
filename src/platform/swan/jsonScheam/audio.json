@@ -49,7 +49,27 @@
     "name": "binderror",
     "type": "EventHandle",
     "description": "当发生错误时触发 error 事件，detail = {errMsg: MediaError.code}返回错误码可参考 MediaError.code",
-    "required": false
+    "required": false,
+    "others": {
+      "errorCode": [
+        {
+          "code": 1,
+          "description": "获取资源过程被用户终止"
+        },
+        {
+          "code": 2,
+          "description": "网络错误"
+        },
+        {
+          "code": 3,
+          "description": "当解码时发生错误"
+        },
+        {
+          "code": 4,
+          "description": "不支持音频"
+        }
+      ]
+    }
   },
   {
     "name": "bindplay",

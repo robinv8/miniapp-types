@@ -237,7 +237,8 @@
       "name": 0,
       "type": 1,
       "defaultValue": 2,
-      "description": 3
+      "required": 3,
+      "description": 4
     }
   },
   {

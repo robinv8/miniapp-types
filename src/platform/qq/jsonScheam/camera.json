@@ -3,19 +3,22 @@
     "name": "mode",
     "type": "String",
     "defaultValue": "normal",
-    "description": "有效值为 normal, scanCode"
+    "description": "有效值为 normal, scanCode",
+    "options": ["normal", "scanCode"]
   },
   {
     "name": "device-position",
     "type": "String",
     "defaultValue": "back",
-    "description": "前置或后置，值为front, back"
+    "description": "前置或后置，值为front, back",
+    "options": ["front", "back"]
   },
   {
     "name": "flash",
     "type": "String",
     "defaultValue": "auto",
-    "description": "闪光灯，值为auto, on, off"
+    "description": "闪光灯，值为auto, on, off",
+    "options": ["auto", "on", "off"]
   },
   {
     "name": "bindstop",

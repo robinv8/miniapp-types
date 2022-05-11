@@ -2,21 +2,14 @@
   {
     "name": "size",
     "type": "String",
-    "options": [
-      "default",
-      "mini"
-    ],
+    "options": ["default", "mini"],
     "defaultValue": "default",
     "description": "按钮的大小"
   },
   {
     "name": "type",
     "type": "String",
-    "options": [
-      "primary",
-      "default",
-      "warn"
-    ],
+    "options": ["primary", "default", "warn"],
     "defaultValue": "default",
     "description": "按钮的样式类型"
   },
@@ -41,10 +34,7 @@
   {
     "name": "form-type",
     "type": "String",
-    "options": [
-      "submit",
-      "reset"
-    ],
+    "options": ["submit", "reset"],
     "description": "用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件"
   },
   {
@@ -142,13 +132,22 @@
     "name": "share-type",
     "type": "Number",
     "defaultValue": "27",
-    "description": "分享类型集合，请参考下面share-type有效值说明。share-type后续将不再维护，请更新为share-mode"
+    "description": "分享类型集合，请参考下面share-type有效值说明。share-type后续将不再维护，请更新为share-mode",
+    "deprecated": true
   },
   {
     "name": "share-mode",
     "type": "Array<String>",
     "defaultValue": "['qq', 'qzone']",
-    "description": "分享类型集合，请参考下面share-mode有效值说明"
+    "description": "分享类型集合，请参考下面share-mode有效值说明",
+    "options": [
+      "qq",
+      "qzone",
+      "quickToDialog",
+      "wechatFriends",
+      "wechatMoment",
+      "recentContacts"
+    ]
   },
   {
     "name": "aria-label",

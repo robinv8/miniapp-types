@@ -28,7 +28,68 @@
     "name": "binderror",
     "type": "EventHandle",
     "description": "广告组件加载失败时触发",
-    "required": false
+    "required": false,
+    "others": {
+      "errorCode": [
+        [
+          {
+            "code": "1001-1",
+            "status": "内部错误",
+            "description": "初始化失败"
+          },
+          {
+            "code": "1001-2",
+            "status": "内部错误",
+            "description": "广告返回执行异常"
+          },
+          {
+            "code": "1001-3",
+            "status": "内部错误",
+            "description": "渲染广告异常"
+          },
+          {
+            "code": "1001-4",
+            "status": "内部错误",
+            "description": "广告异常"
+          },
+          {
+            "code": "1001-5",
+            "status": "内部错误",
+            "description": "广告缓存异常"
+          },
+          {
+            "code": "1002-1",
+            "status": "广告请求",
+            "description": "广告返回异常"
+          },
+          {
+            "code": "1003-2",
+            "status": "无可用广告",
+            "description": "数据层级不对"
+          },
+          {
+            "code": "1003-3",
+            "status": "无可用广告",
+            "description": "广告内容不完整"
+          },
+          {
+            "code": "1004-1",
+            "status": "媒体接入异常",
+            "description": "web 化广告不渲染"
+          },
+          {
+            "code": "1004-2",
+            "status": "媒体接入异常",
+            "description": "视频贴片广告组件放置不在 video 内"
+          },
+          {
+            "code": "1004-3",
+            "status": "媒体接入异常",
+            "description": "视频贴片当前是非同层渲染"
+          }
+        ]
+      ]
+    }
   },
   {
     "name": "bindload",
