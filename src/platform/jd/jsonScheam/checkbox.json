@@ -1,7 +1,24 @@
 [
   {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "<checkbox-group/> 中选中项发生改变是触发 change 事件，detail = {value: [ 选中的 checkbox 的 value 的数组 ]}"
+    "name": "value",
+    "type": "String",
+    "description": "<checkbox/> 标识，选中时触发 <checkbox-group/> 的 change 事件，并携带 <checkbox/> 的 value"
+  },
+  {
+    "name": "disabled",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "是否禁用"
+  },
+  {
+    "name": "checked",
+    "type": "Boolean",
+    "defaultValue": "false",
+    "description": "当前是否选中，可用来设置默认选中"
+  },
+  {
+    "name": "color",
+    "type": "Color",
+    "description": "checkbox 的颜色，同 css 的 color"
   }
 ]
