@@ -1,0 +1,15 @@
+{
+  "title": "form",
+  "type": "object",
+  "properties": {
+    "report-submit": {
+      "type": "boolean"
+    },
+    "bindsubmit": {
+      "type": "eventHandle"
+    },
+    "bindreset": {
+      "type": "eventHandle"
+    }
+  }
+}

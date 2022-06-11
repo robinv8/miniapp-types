@@ -1,0 +1,24 @@
+{
+  "title": "picker-view",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "numberArray"
+    },
+    "indicator-style": {
+      "type": "string"
+    },
+    "indicator-class": {
+      "type": "string"
+    },
+    "mask-style": {
+      "type": "string"
+    },
+    "mask-class": {
+      "type": "string"
+    },
+    "bindchange": {
+      "type": "eventHandle"
+    }
+  }
+}

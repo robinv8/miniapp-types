@@ -1,0 +1,60 @@
+{
+  "title": "progress",
+  "type": "object",
+  "properties": {
+    "percent": {
+      "type": "float",
+      "description": "百分比 0~100"
+    },
+    "show-info": {
+      "type": "boolean",
+      "description": "在进度条右侧显示百分比"
+    },
+    "stroke-width": {
+      "type": "number",
+      "description": "进度条线的宽度，单位 px"
+    },
+    "color": {
+      "type": "color",
+      "description": "进度条颜色 （请使用 activeColor）"
+    },
+    "activeColor": {
+      "type": "color",
+      "description": "已选择的进度条的颜色"
+    },
+    "backgroundColor": {
+      "type": "color",
+      "description": "未选择的进度条的颜色"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "进度条从左往右的动画"
+    },
+    "active-mode": {
+      "type": "string",
+      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
+    },
+    "border-radius": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "圆角大小"
+    },
+    "font-size": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "右侧百分比字体大小"
+    },
+    "duration": {
+      "type": "number",
+      "description": "进度增加1%所需毫秒数"
+    },
+    "bindactiveend": {
+      "type": "eventhandle",
+      "description": "动画完成事件"
+    }
+  }
+}

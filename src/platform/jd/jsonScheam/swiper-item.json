@@ -1,8 +1,0 @@
-[
-  {
-    "name": "item-id",
-    "type": "String",
-    "defaultValue": "",
-    "description": "该 swiper-item 的标识符"
-  }
-]

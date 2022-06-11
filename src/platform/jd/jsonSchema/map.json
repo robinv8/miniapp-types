@@ -1,0 +1,66 @@
+{
+  "title": "map",
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "description": "是"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "是"
+    },
+    "scale": {
+      "type": "number",
+      "description": "否"
+    },
+    "theme": {
+      "type": "string",
+      "description": "否"
+    },
+    "showLocation": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "includePoints": {
+      "type": "array（point)",
+      "description": "否"
+    },
+    "markers": {
+      "type": "array(marker)",
+      "description": "否"
+    },
+    "polyline": {
+      "type": "array(polyline)",
+      "description": "否"
+    },
+    "circles": {
+      "type": "array(circle)",
+      "description": "否"
+    },
+    "controls": {
+      "type": "array(control)",
+      "description": "否"
+    },
+    "bindmarkertap": {
+      "type": "eventhandler",
+      "description": "否"
+    },
+    "bindcallouttap": {
+      "type": "eventhandler",
+      "description": "否"
+    },
+    "bindcontroltap": {
+      "type": "eventhandler",
+      "description": "否"
+    },
+    "bindregionchange": {
+      "type": "eventhandler",
+      "description": "否"
+    },
+    "bindtap": {
+      "type": "eventhandler",
+      "description": "否"
+    }
+  }
+}

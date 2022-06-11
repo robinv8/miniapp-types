@@ -1,0 +1,26 @@
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "否"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "否"
+    },
+    "flash": {
+      "type": "string",
+      "description": "否"
+    },
+    "bindstop": {
+      "type": "eventhandle",
+      "description": "否"
+    },
+    "binderror": {
+      "type": "eventhandle",
+      "description": "否"
+    }
+  }
+}

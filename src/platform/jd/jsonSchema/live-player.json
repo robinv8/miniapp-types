@@ -1,0 +1,42 @@
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "否"
+    },
+    "mode": {
+      "type": "string",
+      "description": "否"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "否"
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "否"
+    },
+    "sound-mode": {
+      "type": "string",
+      "description": "否"
+    },
+    "bindstatechange": {
+      "type": "eventhandle",
+      "description": "否"
+    },
+    "bindfullscreenchange": {
+      "type": "eventhandle",
+      "description": "否"
+    }
+  }
+}

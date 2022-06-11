@@ -1,0 +1,22 @@
+{
+  "title": "switch",
+  "type": "object",
+  "properties": {
+    "checked": {
+      "type": "boolean",
+      "description": "是否选中"
+    },
+    "type": {
+      "type": "string",
+      "description": "样式，有效值：switch, checkbox"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
+    },
+    "color": {
+      "type": "color",
+      "description": "switch 的颜色，同 css 的 color"
+    }
+  }
+}

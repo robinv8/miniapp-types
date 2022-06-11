@@ -1,0 +1,90 @@
+{
+  "title": "video",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "是"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "controls": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "否"
+    },
+    "bindplay": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindpause": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindended": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindtimeupdate": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindfullscreenchange": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "binderror": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindwaiting": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindloadeddata": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindloadedmetadata": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindloadstart": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindseeked": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindseeking": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "objectFit": {
+      "type": "string",
+      "description": "否"
+    },
+    "initialTime": {
+      "type": "number",
+      "description": "否"
+    },
+    "poster": {
+      "type": "string",
+      "description": "否"
+    },
+    "mobilenet-hint-type": {
+      "type": "number",
+      "description": "否"
+    }
+  }
+}

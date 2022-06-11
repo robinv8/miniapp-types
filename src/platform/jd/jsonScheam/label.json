@@ -1,7 +1,0 @@
-[
-  {
-    "name": "for",
-    "type": "String",
-    "defaultValue": "绑定控件的 id"
-  }
-]

@@ -1,0 +1,9 @@
+{
+  "title": "label",
+  "type": "object",
+  "properties": {
+    "for": {
+      "type": "string"
+    }
+  }
+}

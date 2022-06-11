@@ -1,0 +1,18 @@
+{
+  "title": "text",
+  "type": "object",
+  "properties": {
+    "selectable": {
+      "type": "boolean",
+      "description": "文本是否可选"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格"
+    },
+    "decode": {
+      "type": "boolean",
+      "description": "是否解码"
+    }
+  }
+}
