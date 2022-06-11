@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "humps": "^2.0.1",
+    "json-schema-to-typescript": "^10.1.5",
     "puppeteer": "^13.7.0"
   }
 }
