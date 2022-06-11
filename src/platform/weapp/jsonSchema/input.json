@@ -1,212 +1,126 @@
-[
-  {
-    "name": "value",
-    "type": "string",
-    "description": "输入框的初始内容",
-    "required": true
-  },
-  {
-    "name": "type",
-    "type": "string",
-    "options": [
-      "text",
-      "number",
-      "idcard",
-      "digit",
-      "safe-password",
-      "nickname"
-    ],
-    "defaultValue": "text",
-    "description": "input 的类型",
-    "required": false
-  },
-  {
-    "name": "password",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否是密码类型",
-    "required": false
-  },
-  {
-    "name": "placeholder",
-    "type": "string",
-    "description": "输入框为空时占位符",
-    "required": true
-  },
-  {
-    "name": "placeholder-style",
-    "type": "string",
-    "description": "指定 placeholder 的样式",
-    "required": true
-  },
-  {
-    "name": "placeholder-class",
-    "type": "string",
-    "defaultValue": "input-placeholder",
-    "description": "指定 placeholder 的样式类",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "maxlength",
-    "type": "number",
-    "defaultValue": "140",
-    "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
-    "required": false
-  },
-  {
-    "name": "cursor-spacing",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
-    "required": false
-  },
-  {
-    "name": "auto-focus",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "(即将废弃，请直接使用 focus )自动聚焦，拉起键盘",
-    "required": false
-  },
-  {
-    "name": "focus",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "获取焦点",
-    "required": false
-  },
-  {
-    "name": "confirm-type",
-    "type": "string",
-    "options": [
-      "send",
-      "search",
-      "next",
-      "go",
-      "done"
-    ],
-    "defaultValue": "done",
-    "description": "设置键盘右下角按钮的文字，仅在type='text'时生效",
-    "required": false
-  },
-  {
-    "name": "always-embed",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)",
-    "required": false
-  },
-  {
-    "name": "confirm-hold",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "点击键盘右下角按钮时是否保持键盘不收起",
-    "required": false
-  },
-  {
-    "name": "cursor",
-    "type": "number",
-    "description": "指定focus时的光标位置",
-    "required": true
-  },
-  {
-    "name": "selection-start",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
-    "required": false
-  },
-  {
-    "name": "selection-end",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用",
-    "required": false
-  },
-  {
-    "name": "adjust-position",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "键盘弹起时，是否自动上推页面",
-    "required": false
-  },
-  {
-    "name": "hold-keyboard",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "focus时，点击页面的时候不收起键盘",
-    "required": false
-  },
-  {
-    "name": "safe-password-cert-path",
-    "type": "string",
-    "description": "安全键盘加密公钥的路径，只支持包内路径",
-    "required": false
-  },
-  {
-    "name": "safe-password-length",
-    "type": "number",
-    "description": "安全键盘输入密码长度",
-    "required": false
-  },
-  {
-    "name": "safe-password-time-stamp",
-    "type": "number",
-    "description": "安全键盘加密时间戳",
-    "required": false
-  },
-  {
-    "name": "safe-password-nonce",
-    "type": "string",
-    "description": "安全键盘加密盐值",
-    "required": false
-  },
-  {
-    "name": "safe-password-salt",
-    "type": "string",
-    "description": "安全键盘计算hash盐值，若指定custom-hash 则无效",
-    "required": false
-  },
-  {
-    "name": "safe-password-custom-hash",
-    "type": "string",
-    "description": "安全键盘计算hash的算法表达式，如 `md5(sha1('foo' + sha256(sm3(password + 'bar'))))`",
-    "required": false
-  },
-  {
-    "name": "bindinput",
-    "type": "eventhandle",
-    "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。",
-    "required": true
-  },
-  {
-    "name": "bindfocus",
-    "type": "eventhandle",
-    "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持",
-    "required": true
-  },
-  {
-    "name": "bindblur",
-    "type": "eventhandle",
-    "description": "输入框失去焦点时触发，event.detail = { value, encryptedValue, encryptError }",
-    "required": true
-  },
-  {
-    "name": "bindconfirm",
-    "type": "eventhandle",
-    "description": "点击完成按钮时触发，event.detail = { value }",
-    "required": true
-  },
-  {
-    "name": "bindkeyboardheightchange",
-    "type": "eventhandle",
-    "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}",
-    "required": true
+{
+  "title": "input",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "输入框的初始内容"
+    },
+    "type": {
+      "type": "string",
+      "description": "input 的类型"
+    },
+    "password": {
+      "type": "boolean",
+      "description": "是否是密码类型"
+    },
+    "placeholder": {
+      "type": "string",
+      "description": "输入框为空时占位符"
+    },
+    "placeholder-style": {
+      "type": "string",
+      "description": "指定 placeholder 的样式"
+    },
+    "placeholder-class": {
+      "type": "string",
+      "description": "指定 placeholder 的样式类"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "maxlength": {
+      "type": "number",
+      "description": "最大输入长度，设置为 -1 的时候不限制最大长度"
+    },
+    "cursor-spacing": {
+      "type": "number",
+      "description": "指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "(即将废弃，请直接使用 focus )自动聚焦，拉起键盘"
+    },
+    "focus": {
+      "type": "boolean",
+      "description": "获取焦点"
+    },
+    "confirm-type": {
+      "type": "string",
+      "description": "设置键盘右下角按钮的文字，仅在type='text'时生效"
+    },
+    "always-embed": {
+      "type": "boolean",
+      "description": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)"
+    },
+    "confirm-hold": {
+      "type": "boolean",
+      "description": "点击键盘右下角按钮时是否保持键盘不收起"
+    },
+    "cursor": {
+      "type": "number",
+      "description": "指定 focus 时的光标位置"
+    },
+    "selection-start": {
+      "type": "number",
+      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用"
+    },
+    "selection-end": {
+      "type": "number",
+      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用"
+    },
+    "adjust-position": {
+      "type": "boolean",
+      "description": "键盘弹起时，是否自动上推页面"
+    },
+    "hold-keyboard": {
+      "type": "boolean",
+      "description": "focus时，点击页面的时候不收起键盘"
+    },
+    "safe-password-cert-path": {
+      "type": "string",
+      "description": "安全键盘加密公钥的路径，只支持包内路径"
+    },
+    "safe-password-length": {
+      "type": "number",
+      "description": "安全键盘输入密码长度"
+    },
+    "safe-password-time-stamp": {
+      "type": "number",
+      "description": "安全键盘加密时间戳"
+    },
+    "safe-password-nonce": {
+      "type": "string",
+      "description": "安全键盘加密盐值"
+    },
+    "safe-password-salt": {
+      "type": "string",
+      "description": "安全键盘计算 hash 盐值，若指定custom-hash 则无效"
+    },
+    "safe-password-custom-hash": {
+      "type": "string",
+      "description": "安全键盘计算 hash 的算法表达式，如 md5(sha1('foo' + sha256(sm3(password + 'bar'))))"
+    },
+    "bindinput": {
+      "type": "eventhandle",
+      "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
+    },
+    "bindfocus": {
+      "type": "eventhandle",
+      "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持"
+    },
+    "bindblur": {
+      "type": "eventhandle",
+      "description": "输入框失去焦点时触发，event.detail = { value, encryptedValue, encryptError }"
+    },
+    "bindconfirm": {
+      "type": "eventhandle",
+      "description": "点击完成按钮时触发，event.detail = { value }"
+    },
+    "bindkeyboardheightchange": {
+      "type": "eventhandle",
+      "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
+    }
   }
-]
+}

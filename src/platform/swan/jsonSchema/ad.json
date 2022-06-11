@@ -1,112 +1,38 @@
-[
-  {
-    "name": "appid",
-    "type": "String",
-    "description": "小程序应用 ID",
-    "required": true
-  },
-  {
-    "name": "apid",
-    "type": "String",
-    "description": "小程序广告位 ID",
-    "required": true
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "defaultValue": "feed",
-    "description": "广告类型：banner、feed ，需和百青藤平台上的代码位类型相匹配",
-    "required": false
-  },
-  {
-    "name": "updatetime",
-    "type": "String",
-    "description": "更改该属性，可以触发广告刷新",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "广告组件加载失败时触发",
-    "required": false,
-    "others": {
-      "errorCode": [
-        [
-          {
-            "code": "1001-1",
-            "status": "内部错误",
-            "description": "初始化失败"
-          },
-          {
-            "code": "1001-2",
-            "status": "内部错误",
-            "description": "广告返回执行异常"
-          },
-          {
-            "code": "1001-3",
-            "status": "内部错误",
-            "description": "渲染广告异常"
-          },
-          {
-            "code": "1001-4",
-            "status": "内部错误",
-            "description": "广告异常"
-          },
-          {
-            "code": "1001-5",
-            "status": "内部错误",
-            "description": "广告缓存异常"
-          },
-          {
-            "code": "1002-1",
-            "status": "广告请求",
-            "description": "广告返回异常"
-          },
-          {
-            "code": "1003-2",
-            "status": "无可用广告",
-            "description": "数据层级不对"
-          },
-          {
-            "code": "1003-3",
-            "status": "无可用广告",
-            "description": "广告内容不完整"
-          },
-          {
-            "code": "1004-1",
-            "status": "媒体接入异常",
-            "description": "web 化广告不渲染"
-          },
-          {
-            "code": "1004-2",
-            "status": "媒体接入异常",
-            "description": "视频贴片广告组件放置不在 video 内"
-          },
-          {
-            "code": "1004-3",
-            "status": "媒体接入异常",
-            "description": "视频贴片当前是非同层渲染"
-          }
-        ]
-      ]
+{
+  "title": "ad",
+  "type": "object",
+  "properties": {
+    "appid": {
+      "type": "string",
+      "description": "小程序应用 ID"
+    },
+    "apid": {
+      "type": "string",
+      "description": "小程序广告位 ID"
+    },
+    "type": {
+      "type": "string",
+      "description": "广告类型：banner、feed ，需和百青藤平台上的代码位类型相匹配"
+    },
+    "updatetime": {
+      "type": "string",
+      "description": "更改该属性，可以触发广告刷新"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "广告组件加载失败时触发"
+    },
+    "bindload": {
+      "type": "eventHandle",
+      "description": "广告组件加载完成触发"
+    },
+    "bindclose": {
+      "type": "eventHandle",
+      "description": "关闭广告组件时触发"
+    },
+    "bindstatus": {
+      "type": "eventHandle",
+      "description": "贴片类型广告播放期间触发"
     }
-  },
-  {
-    "name": "bindload",
-    "type": "EventHandle",
-    "description": "广告组件加载完成触发",
-    "required": false
-  },
-  {
-    "name": "bindclose",
-    "type": "EventHandle",
-    "description": "关闭广告组件时触发",
-    "required": false
-  },
-  {
-    "name": "bindstatus",
-    "type": "EventHandle",
-    "description": "贴片类型广告播放期间触发",
-    "required": false
   }
-]
+}

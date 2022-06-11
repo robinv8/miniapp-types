@@ -1,44 +1,30 @@
-[
-  {
-    "name": "percent",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "进度",
-    "required": false
-  },
-  {
-    "name": "stroke-width",
-    "type": "number",
-    "defaultValue": "6",
-    "description": "进度条的垂直宽度",
-    "required": false
-  },
-  {
-    "name": "active-color",
-    "type": "Color",
-    "defaultValue": "#F85959",
-    "description": "进度条颜色",
-    "required": false
-  },
-  {
-    "name": "background-color",
-    "type": "Color",
-    "defaultValue": "#EBEBEB",
-    "description": "未达到进度的颜色",
-    "required": false
-  },
-  {
-    "name": "active",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "进度条动画",
-    "required": false
-  },
-  {
-    "name": "active-mode",
-    "type": "string",
-    "defaultValue": "backwards",
-    "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
-    "required": false
+{
+  "title": "progress",
+  "type": "object",
+  "properties": {
+    "percent": {
+      "type": "number",
+      "description": "进度"
+    },
+    "stroke-width": {
+      "type": "number",
+      "description": "进度条的垂直宽度"
+    },
+    "active-color": {
+      "type": "color",
+      "description": "进度条颜色"
+    },
+    "background-color": {
+      "type": "color",
+      "description": "未达到进度的颜色"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "进度条动画"
+    },
+    "active-mode": {
+      "type": "string",
+      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
+    }
   }
-]
+}

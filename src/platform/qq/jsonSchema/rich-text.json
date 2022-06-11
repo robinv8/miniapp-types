@@ -1,21 +1,17 @@
-[
-  {
-    "name": "nodes",
-    "type": [
-      "Array",
-      "String"
-    ],
-    "defaultValue": "[]",
-    "description": "节点列表 / HTML String"
-  },
-  {
-    "name": "space",
-    "type": "String",
-    "options": [
-      "ensp",
-      "emsp",
-      "nbsp"
-    ],
-    "description": "显示连续空格"
+{
+  "title": "rich-text",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": [
+        "Array",
+        "String"
+      ],
+      "description": "节点列表 / HTML String"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格"
+    }
   }
-]
+}

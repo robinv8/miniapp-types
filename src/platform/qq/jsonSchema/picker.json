@@ -1,38 +1,33 @@
-[
-  {
-    "name": "range",
-    "type": [
-      "Array",
-      "Object Array"
-    ],
-    "defaultValue": "[]",
-    "description": "mode为 selector 或 multiSelector 时，range 有效"
-  },
-  {
-    "name": "range-key",
-    "type": "String",
-    "description": "当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容"
-  },
-  {
-    "name": "value",
-    "type": "Number",
-    "defaultValue": "0",
-    "description": "value 的值表示选择了 range 中的第几个（下标从 0 开始）"
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "value 改变时触发 change 事件，event.detail = {value: value}"
-  },
-  {
-    "name": "disabled",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否禁用"
-  },
-  {
-    "name": "bindcancel",
-    "type": "EventHandle",
-    "description": "取消选择或点遮罩层收起 picker 时触发"
+{
+  "title": "picker",
+  "type": "object",
+  "properties": {
+    "range": {
+      "type": [
+        "Array",
+        "Object Array"
+      ],
+      "description": "mode为 selector 或 multiSelector 时，range 有效"
+    },
+    "range-key": {
+      "type": "string",
+      "description": "当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容"
+    },
+    "value": {
+      "type": "number",
+      "description": "value 的值表示选择了 range 中的第几个（下标从 0 开始）"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "value 改变时触发 change 事件，event.detail = {value: value}"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "bindcancel": {
+      "type": "eventHandle",
+      "description": "取消选择或点遮罩层收起 picker 时触发"
+    }
   }
-]
+}

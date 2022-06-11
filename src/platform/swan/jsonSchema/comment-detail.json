@@ -1,58 +1,38 @@
-[
-  {
-    "name": "comment-param",
-    "type": "Object",
-    "defaultValue": "是",
-    "description": "评论核心参数",
-    "required": false
-  },
-  {
-    "name": "srid",
-    "type": "String",
-    "defaultValue": "是",
-    "description": "评论 ID",
-    "required": false
-  },
-  {
-    "name": "is-page-scroll",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "滚动方式为页面滚动，若组件作为浮层使用，该参数需设为 false",
-    "required": false
-  },
-  {
-    "name": "need-toolbar",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "是否需要底部 toolbar，若使用开发者自定义的底部 toolbar，该参数需设为 false",
-    "required": false
-  },
-  {
-    "name": "need-like-btn",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "是否需要详情顶部父级评论的点赞按钮，默认显示",
-    "required": false
-  },
-  {
-    "name": "back-list-after-delete",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "删除详情后是否返回列表项，默认一站式逻辑。若使用浮层，请设置改属性为 false",
-    "required": false
-  },
-  {
-    "name": "add-comment",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "用于调起评论发布器发布评论",
-    "required": false
-  },
-  {
-    "name": "binddelete",
-    "type": "EventHandle",
-    "defaultValue": "否",
-    "description": "删除整体详情内容时触发，返回数据为{status, data:{srid}}",
-    "required": false
+{
+  "title": "comment-detail",
+  "type": "object",
+  "properties": {
+    "comment-param": {
+      "type": "object",
+      "description": "评论核心参数"
+    },
+    "srid": {
+      "type": "string",
+      "description": "评论 ID"
+    },
+    "is-page-scroll": {
+      "type": "boolean",
+      "description": "滚动方式为页面滚动，若组件作为浮层使用，该参数需设为 false"
+    },
+    "need-toolbar": {
+      "type": "boolean",
+      "description": "是否需要底部 toolbar，若使用开发者自定义的底部 toolbar，该参数需设为 false"
+    },
+    "need-like-btn": {
+      "type": "boolean",
+      "description": "是否需要详情顶部父级评论的点赞按钮，默认显示"
+    },
+    "back-list-after-delete": {
+      "type": "boolean",
+      "description": "删除详情后是否返回列表项，默认一站式逻辑。若使用浮层，请设置改属性为 false"
+    },
+    "add-comment": {
+      "type": "boolean",
+      "description": "用于调起评论发布器发布评论"
+    },
+    "binddelete": {
+      "type": "eventHandle",
+      "description": "删除整体详情内容时触发，返回数据为{status, data:{srid}}"
+    }
   }
-]
+}

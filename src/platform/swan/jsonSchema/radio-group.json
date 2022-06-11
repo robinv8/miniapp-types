@@ -1,8 +1,10 @@
-[
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "<radio-group> 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项 radio 的 value}",
-    "required": false
+{
+  "title": "radio-group",
+  "type": "object",
+  "properties": {
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "<radio-group> 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项 radio 的 value}"
+    }
   }
-]
+}

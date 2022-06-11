@@ -1,38 +1,30 @@
-[
-  {
-    "name": "mode",
-    "type": "String",
-    "defaultValue": "normal",
-    "description": "有效值为 normal, scanCode",
-    "options": ["normal", "scanCode"]
-  },
-  {
-    "name": "device-position",
-    "type": "String",
-    "defaultValue": "back",
-    "description": "前置或后置，值为front, back",
-    "options": ["front", "back"]
-  },
-  {
-    "name": "flash",
-    "type": "String",
-    "defaultValue": "auto",
-    "description": "闪光灯，值为auto, on, off",
-    "options": ["auto", "on", "off"]
-  },
-  {
-    "name": "bindstop",
-    "type": "EventHandle",
-    "description": "摄像头在非正常终止时触发，如退出后台等情况"
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "用户不允许使用摄像头时触发"
-  },
-  {
-    "name": "bindscancode",
-    "type": "EventHandle",
-    "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "有效值为 normal, scanCode"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "前置或后置，值为front, back"
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯，值为auto, on, off"
+    },
+    "bindstop": {
+      "type": "eventHandle",
+      "description": "摄像头在非正常终止时触发，如退出后台等情况"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "用户不允许使用摄像头时触发"
+    },
+    "bindscancode": {
+      "type": "eventHandle",
+      "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
+    }
   }
-]
+}

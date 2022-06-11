@@ -1,97 +1,62 @@
-[
-  {
-    "name": "is-liked",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "是否已被点赞",
-    "required": false
-  },
-  {
-    "name": "mode",
-    "type": "String",
-    "defaultValue": "否",
-    "description": "按钮模式。icon：表示仅有图标；mixture：表示图标文字结合",
-    "required": false
-  },
-  {
-    "name": "icon-type",
-    "type": "String",
-    "defaultValue": "否",
-    "description": "图标类型。hand：表示手形；heart：表示心形",
-    "required": false
-  },
-  {
-    "name": "style",
-    "type": "String",
-    "defaultValue": "否",
-    "description": "仅在 mode 为 mixture 时可配置。none：无边框；border：有边框",
-    "required": false
-  },
-  {
-    "name": "like-text",
-    "type": "String",
-    "defaultValue": "否",
-    "description": "点赞按钮上的文案。默认为赞，仅在 mode 属性值为'mixture'时有效",
-    "required": false
-  },
-  {
-    "name": "like-num",
-    "type": "Number",
-    "defaultValue": "否",
-    "description": "点赞数量",
-    "required": false
-  },
-  {
-    "name": "like-type",
-    "type": "Number",
-    "defaultValue": "否",
-    "description": "被点赞的对象类型。0：表示对文章内容进行点赞；1：表示对评论内容进行点赞",
-    "required": false
-  },
-  {
-    "name": "animation-type",
-    "type": "Number",
-    "defaultValue": "否",
-    "description": "点赞动效形式。0：无动效；1：轻动效；2：强动效",
-    "required": false
-  },
-  {
-    "name": "is-show-toast",
-    "type": "Boolean",
-    "defaultValue": "否",
-    "description": "点赞后是否弹出 toast 提示",
-    "required": false
-  },
-  {
-    "name": "toast-text",
-    "type": "Array",
-    "defaultValue": "否",
-    "description": "toast 文案，默认为已点赞、已取消",
-    "required": false
-  },
-  {
-    "name": "like-param",
-    "type": "Object",
-    "defaultValue": "是",
-    "description": "点赞服务需要的必要参数",
-    "required": false
-  },
-  {
-    "name": "bind:error",
-    "type": "EventHandle",
-    "description": "使用 npm 方式引入点赞组件时，点击按钮时在用户未登录状态下会触发此事件；使用动态库方式引入点赞组件时，点击按钮时在用户未登录状态下不会触发此事件",
-    "required": false
-  },
-  {
-    "name": "bind:success",
-    "type": "EventHandle",
-    "description": "点击点赞按钮，在点赞服务成功后将状态返回给使用组件者",
-    "required": false
-  },
-  {
-    "name": "bind:fail",
-    "type": "EventHandle",
-    "description": "点击点赞按钮，在点赞服务失败后将状态返回给使用组件者",
-    "required": false
+{
+  "title": "like",
+  "type": "object",
+  "properties": {
+    "is-liked": {
+      "type": "boolean",
+      "description": "是否已被点赞"
+    },
+    "mode": {
+      "type": "string",
+      "description": "按钮模式。icon：表示仅有图标；mixture：表示图标文字结合"
+    },
+    "icon-type": {
+      "type": "string",
+      "description": "图标类型。hand：表示手形；heart：表示心形"
+    },
+    "style": {
+      "type": "string",
+      "description": "仅在 mode 为 mixture 时可配置。none：无边框；border：有边框"
+    },
+    "like-text": {
+      "type": "string",
+      "description": "点赞按钮上的文案。默认为赞，仅在 mode 属性值为'mixture'时有效"
+    },
+    "like-num": {
+      "type": "number",
+      "description": "点赞数量"
+    },
+    "like-type": {
+      "type": "number",
+      "description": "被点赞的对象类型。0：表示对文章内容进行点赞；1：表示对评论内容进行点赞"
+    },
+    "animation-type": {
+      "type": "number",
+      "description": "点赞动效形式。0：无动效；1：轻动效；2：强动效"
+    },
+    "is-show-toast": {
+      "type": "boolean",
+      "description": "点赞后是否弹出 toast 提示"
+    },
+    "toast-text": {
+      "type": "array",
+      "description": "toast 文案，默认为已点赞、已取消"
+    },
+    "like-param": {
+      "type": "object",
+      "description": "点赞服务需要的必要参数"
+    },
+    "bind:error": {
+      "type": "eventHandle",
+      "description": "使用 npm 方式引入点赞组件时，点击按钮时在用户未登录状态下会触发此事件；使用动态库方式引入点赞组件时，点击按钮时在用户未登录状态下不会触发此事件"
+    },
+    "bind:success": {
+      "type": "eventHandle",
+      "description": "点击点赞按钮，在点赞服务成功后将状态返回给使用组件者"
+    },
+    "bind:fail": {
+      "type": "eventHandle",
+      "description": "点击点赞按钮，在点赞服务失败后将状态返回给使用组件者"
+    }
   }
-]
+}

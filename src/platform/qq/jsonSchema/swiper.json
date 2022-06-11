@@ -1,101 +1,74 @@
-[
-  {
-    "name": "indicator-dots",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否显示面板指示点"
-  },
-  {
-    "name": "indicator-color",
-    "type": "Color",
-    "defaultValue": "rgba(0, 0, 0, .3)",
-    "description": "指示点颜色"
-  },
-  {
-    "name": "indicator-active-color",
-    "type": "Color",
-    "defaultValue": "#000000",
-    "description": "当前选中的指示点颜色"
-  },
-  {
-    "name": "autoplay",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否自动切换"
-  },
-  {
-    "name": "current",
-    "type": "Number",
-    "defaultValue": "0",
-    "description": "当前所在滑块的 index"
-  },
-  {
-    "name": "current-item-id",
-    "type": "String",
-    "defaultValue": "\"\"",
-    "description": "当前所在滑块的 item-id ，不能与 current 被同时指定"
-  },
-  {
-    "name": "interval",
-    "type": "Number",
-    "defaultValue": "5000",
-    "description": "自动切换时间间隔"
-  },
-  {
-    "name": "duration",
-    "type": "Number",
-    "defaultValue": "500",
-    "description": "滑动动画时长"
-  },
-  {
-    "name": "circular",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否采用衔接滑动"
-  },
-  {
-    "name": "vertical",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "滑动方向是否为纵向"
-  },
-  {
-    "name": "previous-margin",
-    "type": "String",
-    "defaultValue": "\"0px\"",
-    "description": "前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值"
-  },
-  {
-    "name": "next-margin",
-    "type": "String",
-    "defaultValue": "\"0px\"",
-    "description": "后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值"
-  },
-  {
-    "name": "display-multiple-items",
-    "type": "Number",
-    "defaultValue": "1",
-    "description": "同时显示的滑块数量"
-  },
-  {
-    "name": "skip-hidden-item-layout",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息"
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}"
-  },
-  {
-    "name": "bindtransition",
-    "type": "EventHandle",
-    "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
-  },
-  {
-    "name": "bindanimationfinish",
-    "type": "EventHandle",
-    "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
+{
+  "title": "swiper",
+  "type": "object",
+  "properties": {
+    "indicator-dots": {
+      "type": "boolean",
+      "description": "是否显示面板指示点"
+    },
+    "indicator-color": {
+      "type": "color",
+      "description": "指示点颜色"
+    },
+    "indicator-active-color": {
+      "type": "color",
+      "description": "当前选中的指示点颜色"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "是否自动切换"
+    },
+    "current": {
+      "type": "number",
+      "description": "当前所在滑块的 index"
+    },
+    "current-item-id": {
+      "type": "string",
+      "description": "当前所在滑块的 item-id ，不能与 current 被同时指定"
+    },
+    "interval": {
+      "type": "number",
+      "description": "自动切换时间间隔"
+    },
+    "duration": {
+      "type": "number",
+      "description": "滑动动画时长"
+    },
+    "circular": {
+      "type": "boolean",
+      "description": "是否采用衔接滑动"
+    },
+    "vertical": {
+      "type": "boolean",
+      "description": "滑动方向是否为纵向"
+    },
+    "previous-margin": {
+      "type": "string",
+      "description": "前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值"
+    },
+    "next-margin": {
+      "type": "string",
+      "description": "后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值"
+    },
+    "display-multiple-items": {
+      "type": "number",
+      "description": "同时显示的滑块数量"
+    },
+    "skip-hidden-item-layout": {
+      "type": "boolean",
+      "description": "是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}"
+    },
+    "bindtransition": {
+      "type": "eventHandle",
+      "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
+    },
+    "bindanimationfinish": {
+      "type": "eventHandle",
+      "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
+    }
   }
-]
+}

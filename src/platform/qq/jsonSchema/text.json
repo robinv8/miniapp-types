@@ -1,25 +1,18 @@
-[
-  {
-    "name": "selectable",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "文本是否可选"
-  },
-  {
-    "name": "space",
-    "type": "String",
-    "options": [
-      "ensp",
-      "emsp",
-      "nbsp"
-    ],
-    "defaultValue": "false",
-    "description": "显示连续空格"
-  },
-  {
-    "name": "decode",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否解码"
+{
+  "title": "text",
+  "type": "object",
+  "properties": {
+    "selectable": {
+      "type": "boolean",
+      "description": "文本是否可选"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格"
+    },
+    "decode": {
+      "type": "boolean",
+      "description": "是否解码"
+    }
   }
-]
+}

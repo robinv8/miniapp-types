@@ -1,22 +1,18 @@
-[
-  {
-    "name": "size",
-    "type": "String",
-    "defaultValue": "default",
-    "description": "组件大小",
-    "required": false
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "defaultValue": "primary",
-    "description": "组件样式",
-    "required": false
-  },
-  {
-    "name": "bindfavorstatuschange",
-    "type": "EventHandle",
-    "description": "关注和取消关注成功的回调，返回关注状态 {isFavor: true|false}",
-    "required": false
+{
+  "title": "follow-swan",
+  "type": "object",
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "组件大小"
+    },
+    "type": {
+      "type": "string",
+      "description": "组件样式"
+    },
+    "bindfavorstatuschange": {
+      "type": "eventHandle",
+      "description": "关注和取消关注成功的回调，返回关注状态 {isFavor: true|false}"
+    }
   }
-]
+}

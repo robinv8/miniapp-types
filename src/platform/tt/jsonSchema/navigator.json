@@ -1,57 +1,34 @@
-[
-  {
-    "name": "url",
-    "type": "string",
-    "description": "跳转地址",
-    "required": true
-  },
-  {
-    "name": "delta",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数",
-    "required": false
-  },
-  {
-    "name": "open-type",
-    "type": "string",
-    "options": [
-      "navigate",
-      "redirect",
-      "switchTab",
-      "navigateBack",
-      "reLaunch"
-    ],
-    "defaultValue": "navigate",
-    "description": "跳转方式，详情见 open-type 的合法值",
-    "required": false
-  },
-  {
-    "name": "hover-class",
-    "type": "string",
-    "defaultValue": "navigator-hover",
-    "description": "指定点击时的样式类，当 hover-class=\"none\"时，没有点击态效果类",
-    "required": false
-  },
-  {
-    "name": "hover-start-time",
-    "type": "number",
-    "defaultValue": "50",
-    "description": "按住后多久出现点击态，单位毫秒",
-    "required": false
-  },
-  {
-    "name": "hover-stay-time",
-    "type": "number",
-    "defaultValue": "400",
-    "description": "手指松开后点击态保留时间，单位毫秒",
-    "required": false
-  },
-  {
-    "name": "hover-stop-propagation",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "指定是否阻止本节点的祖先节点出现点击态",
-    "required": false
+{
+  "title": "navigator",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "跳转地址"
+    },
+    "delta": {
+      "type": "number",
+      "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数"
+    },
+    "open-type": {
+      "type": "string",
+      "description": "跳转方式，详情见 open-type 的合法值"
+    },
+    "hover-class": {
+      "type": "string",
+      "description": "指定点击时的样式类，当 hover-class=\"none\"时，没有点击态效果类"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多久出现点击态，单位毫秒"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击态保留时间，单位毫秒"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "指定是否阻止本节点的祖先节点出现点击态"
+    }
   }
-]
+}

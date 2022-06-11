@@ -1,247 +1,158 @@
-[
-  {
-    "name": "longitude",
-    "type": "number",
-    "description": "中心经度",
-    "required": true
-  },
-  {
-    "name": "latitude",
-    "type": "number",
-    "description": "中心纬度",
-    "required": true
-  },
-  {
-    "name": "scale",
-    "type": "number",
-    "defaultValue": "16",
-    "description": "缩放级别，取值范围为3-20",
-    "required": false
-  },
-  {
-    "name": "min-scale",
-    "type": "number",
-    "defaultValue": "3",
-    "description": "最小缩放级别",
-    "required": false
-  },
-  {
-    "name": "max-scale",
-    "type": "number",
-    "defaultValue": "20",
-    "description": "最大缩放级别",
-    "required": false
-  },
-  {
-    "name": "markers",
-    "type": "Array.<marker>",
-    "description": "标记点",
-    "required": false
-  },
-  {
-    "name": "covers",
-    "type": "Array.<cover>",
-    "description": "即将移除，请使用 markers",
-    "required": false
-  },
-  {
-    "name": "polyline",
-    "type": "Array.<polyline>",
-    "description": "路线",
-    "required": false
-  },
-  {
-    "name": "circles",
-    "type": "Array.<circle>",
-    "description": "圆",
-    "required": false
-  },
-  {
-    "name": "controls",
-    "type": "Array.<control>",
-    "description": "控件（即将废弃，建议使用 cover-view 代替）",
-    "required": false
-  },
-  {
-    "name": "include-points",
-    "type": "Array.<point>",
-    "description": "缩放视野以包含所有给定的坐标点",
-    "required": false
-  },
-  {
-    "name": "show-location",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "显示带有方向的当前定位点",
-    "required": false
-  },
-  {
-    "name": "polygons",
-    "type": "Array.<polygon>",
-    "description": "多边形",
-    "required": false
-  },
-  {
-    "name": "subkey",
-    "type": "string",
-    "description": "个性化地图使用的key",
-    "required": false
-  },
-  {
-    "name": "layer-style",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "个性化地图配置的 style，不支持动态修改",
-    "required": false
-  },
-  {
-    "name": "rotate",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "旋转角度，范围 0 ~ 360, 地图正北和设备 y 轴角度的夹角",
-    "required": false
-  },
-  {
-    "name": "skew",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角",
-    "required": false
-  },
-  {
-    "name": "enable-3D",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "展示3D楼块",
-    "required": false
-  },
-  {
-    "name": "show-compass",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "显示指南针",
-    "required": false
-  },
-  {
-    "name": "show-scale",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "显示比例尺，工具暂不支持",
-    "required": false
-  },
-  {
-    "name": "enable-overlooking",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "开启俯视",
-    "required": false
-  },
-  {
-    "name": "enable-zoom",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "是否支持缩放",
-    "required": false
-  },
-  {
-    "name": "enable-scroll",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "是否支持拖动",
-    "required": false
-  },
-  {
-    "name": "enable-rotate",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否支持旋转",
-    "required": false
-  },
-  {
-    "name": "enable-satellite",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否开启卫星图",
-    "required": false
-  },
-  {
-    "name": "enable-traffic",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否开启实时路况",
-    "required": false
-  },
-  {
-    "name": "enable-poi",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "是否展示 POI 点",
-    "required": false
-  },
-  {
-    "name": "enable-building",
-    "type": "boolean",
-    "description": "是否展示建筑物",
-    "required": false
-  },
-  {
-    "name": "setting",
-    "type": "object",
-    "description": "配置项",
-    "required": false
-  },
-  {
-    "name": "bindtap",
-    "type": "eventhandle",
-    "description": "点击地图时触发，2.9.0起返回经纬度信息",
-    "required": false
-  },
-  {
-    "name": "bindmarkertap",
-    "type": "eventhandle",
-    "description": "点击标记点时触发，e.detail = {markerId}",
-    "required": false
-  },
-  {
-    "name": "bindlabeltap",
-    "type": "eventhandle",
-    "description": "点击label时触发，e.detail = {markerId}",
-    "required": false
-  },
-  {
-    "name": "bindcontroltap",
-    "type": "eventhandle",
-    "description": "点击控件时触发，e.detail = {controlId}",
-    "required": false
-  },
-  {
-    "name": "bindcallouttap",
-    "type": "eventhandle",
-    "description": "点击标记点对应的气泡时触发e.detail = {markerId}",
-    "required": false
-  },
-  {
-    "name": "bindupdated",
-    "type": "eventhandle",
-    "description": "在地图渲染更新完成时触发",
-    "required": false
-  },
-  {
-    "name": "bindregionchange",
-    "type": "eventhandle",
-    "description": "视野发生变化时触发，",
-    "required": false
-  },
-  {
-    "name": "bindpoitap",
-    "type": "eventhandle",
-    "description": "点击地图poi点时触发，e.detail = {name, longitude, latitude}",
-    "required": false
-  },
-  {
-    "name": "bindanchorpointtap",
-    "type": "eventhandle",
-    "description": "点击定位标时触发，e.detail = {longitude, latitude}",
-    "required": false
+{
+  "title": "map",
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "description": "中心经度"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "中心纬度"
+    },
+    "scale": {
+      "type": "number",
+      "description": "缩放级别，取值范围为3-20"
+    },
+    "min-scale": {
+      "type": "number",
+      "description": "最小缩放级别"
+    },
+    "max-scale": {
+      "type": "number",
+      "description": "最大缩放级别"
+    },
+    "markers": {
+      "type": "array.<marker>",
+      "description": "标记点"
+    },
+    "covers": {
+      "type": "array.<cover>",
+      "description": "即将移除，请使用 markers"
+    },
+    "polyline": {
+      "type": "array.<polyline>",
+      "description": "路线"
+    },
+    "circles": {
+      "type": "array.<circle>",
+      "description": "圆"
+    },
+    "controls": {
+      "type": "array.<control>",
+      "description": "控件（即将废弃，建议使用 cover-view 代替）"
+    },
+    "include-points": {
+      "type": "array.<point>",
+      "description": "缩放视野以包含所有给定的坐标点"
+    },
+    "show-location": {
+      "type": "boolean",
+      "description": "显示带有方向的当前定位点"
+    },
+    "polygons": {
+      "type": "array.<polygon>",
+      "description": "多边形"
+    },
+    "subkey": {
+      "type": "string",
+      "description": "个性化地图使用的key"
+    },
+    "layer-style": {
+      "type": "number",
+      "description": "个性化地图配置的 style，不支持动态修改"
+    },
+    "rotate": {
+      "type": "number",
+      "description": "旋转角度，范围 0 ~ 360, 地图正北和设备 y 轴角度的夹角"
+    },
+    "skew": {
+      "type": "number",
+      "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角"
+    },
+    "enable-3D": {
+      "type": "boolean",
+      "description": "展示3D楼块"
+    },
+    "show-compass": {
+      "type": "boolean",
+      "description": "显示指南针"
+    },
+    "show-scale": {
+      "type": "boolean",
+      "description": "显示比例尺，工具暂不支持"
+    },
+    "enable-overlooking": {
+      "type": "boolean",
+      "description": "开启俯视"
+    },
+    "enable-zoom": {
+      "type": "boolean",
+      "description": "是否支持缩放"
+    },
+    "enable-scroll": {
+      "type": "boolean",
+      "description": "是否支持拖动"
+    },
+    "enable-rotate": {
+      "type": "boolean",
+      "description": "是否支持旋转"
+    },
+    "enable-satellite": {
+      "type": "boolean",
+      "description": "是否开启卫星图"
+    },
+    "enable-traffic": {
+      "type": "boolean",
+      "description": "是否开启实时路况"
+    },
+    "enable-poi": {
+      "type": "boolean",
+      "description": "是否展示 POI 点"
+    },
+    "enable-building": {
+      "type": "boolean",
+      "description": "是否展示建筑物"
+    },
+    "setting": {
+      "type": "object",
+      "description": "配置项"
+    },
+    "bindtap": {
+      "type": "eventhandle",
+      "description": "点击地图时触发，2.9.0起返回经纬度信息"
+    },
+    "bindmarkertap": {
+      "type": "eventhandle",
+      "description": "点击标记点时触发，e.detail = {markerId}"
+    },
+    "bindlabeltap": {
+      "type": "eventhandle",
+      "description": "点击 label 时触发，e.detail = {markerId}"
+    },
+    "bindcontroltap": {
+      "type": "eventhandle",
+      "description": "点击控件时触发，e.detail = {controlId}"
+    },
+    "bindcallouttap": {
+      "type": "eventhandle",
+      "description": "点击标记点对应的气泡时触发e.detail = {markerId}"
+    },
+    "bindupdated": {
+      "type": "eventhandle",
+      "description": "在地图渲染更新完成时触发"
+    },
+    "bindregionchange": {
+      "type": "eventhandle",
+      "description": "视野发生变化时触发，"
+    },
+    "bindpoitap": {
+      "type": "eventhandle",
+      "description": "点击地图 poi 点时触发，e.detail = {name, longitude, latitude}"
+    },
+    "bindanchorpointtap": {
+      "type": "eventhandle",
+      "description": "点击定位标时触发，e.detail = {longitude, latitude}"
+    }
   }
-]
+}

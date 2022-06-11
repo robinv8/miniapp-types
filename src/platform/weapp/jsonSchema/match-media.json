@@ -1,44 +1,34 @@
-[
-  {
-    "name": "min-width",
-    "type": "number",
-    "description": "页面最小宽度（ px 为单位）",
-    "required": false
-  },
-  {
-    "name": "max-width",
-    "type": "number",
-    "description": "页面最大宽度（ px 为单位）",
-    "required": false
-  },
-  {
-    "name": "width",
-    "type": "number",
-    "description": "页面宽度（ px 为单位）",
-    "required": false
-  },
-  {
-    "name": "min-height",
-    "type": "number",
-    "description": "页面最小高度（ px 为单位）",
-    "required": false
-  },
-  {
-    "name": "max-height",
-    "type": "number",
-    "description": "页面最大高度（ px 为单位）",
-    "required": false
-  },
-  {
-    "name": "height",
-    "type": "number",
-    "description": "页面高度（ px 为单位）",
-    "required": false
-  },
-  {
-    "name": "orientation",
-    "type": "string",
-    "description": "屏幕方向（ landscape 或 portrait ）",
-    "required": false
+{
+  "title": "match-media",
+  "type": "object",
+  "properties": {
+    "min-width": {
+      "type": "number",
+      "description": "页面最小宽度（ px 为单位）"
+    },
+    "max-width": {
+      "type": "number",
+      "description": "页面最大宽度（ px 为单位）"
+    },
+    "width": {
+      "type": "number",
+      "description": "页面宽度（ px 为单位）"
+    },
+    "min-height": {
+      "type": "number",
+      "description": "页面最小高度（ px 为单位）"
+    },
+    "max-height": {
+      "type": "number",
+      "description": "页面最大高度（ px 为单位）"
+    },
+    "height": {
+      "type": "number",
+      "description": "页面高度（ px 为单位）"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "屏幕方向（ landscape 或 portrait ）"
+    }
   }
-]
+}

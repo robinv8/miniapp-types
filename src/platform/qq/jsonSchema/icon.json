@@ -1,26 +1,25 @@
-[
-  {
-    "name": "type",
-    "type": "String",
-    "description": "icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear"
-  },
-  {
-    "name": "size",
-    "type": [
-      "Number",
-      "String"
-    ],
-    "defaultValue": "23px",
-    "description": "icon的大小，单位px"
-  },
-  {
-    "name": "color",
-    "type": "Color",
-    "description": "icon的颜色，同css的color"
-  },
-  {
-    "name": "aria-label",
-    "type": "String",
-    "description": "无障碍访问，（属性）元素的额外描述"
+{
+  "title": "icon",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear"
+    },
+    "size": {
+      "type": [
+        "Number",
+        "String"
+      ],
+      "description": "icon的大小，单位px"
+    },
+    "color": {
+      "type": "color",
+      "description": "icon的颜色，同css的color"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    }
   }
-]
+}

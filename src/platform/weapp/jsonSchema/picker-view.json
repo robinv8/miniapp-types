@@ -1,57 +1,42 @@
-[
-  {
-    "name": "value",
-    "type": "Array.<number>",
-    "description": "数组中的数字依次表示 picker-view 内的 picker-view-column 选择的第几项（下标从 0 开始），数字大于 picker-view-column 可选项长度时，选择最后一项。",
-    "required": false
-  },
-  {
-    "name": "indicator-style",
-    "type": "string",
-    "description": "设置选择器中间选中框的样式",
-    "required": false
-  },
-  {
-    "name": "indicator-class",
-    "type": "string",
-    "description": "设置选择器中间选中框的类名",
-    "required": false
-  },
-  {
-    "name": "mask-style",
-    "type": "string",
-    "description": "设置蒙层的样式",
-    "required": false
-  },
-  {
-    "name": "mask-class",
-    "type": "string",
-    "description": "设置蒙层的类名",
-    "required": false
-  },
-  {
-    "name": "immediate-change",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件。",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "eventhandle",
-    "description": "滚动选择时触发change事件，event.detail = {value}；value为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）",
-    "required": false
-  },
-  {
-    "name": "bindpickstart",
-    "type": "eventhandle",
-    "description": "当滚动选择开始时候触发事件",
-    "required": false
-  },
-  {
-    "name": "bindpickend",
-    "type": "eventhandle",
-    "description": "当滚动选择结束时候触发事件",
-    "required": false
+{
+  "title": "picker-view",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "array.<number>",
+      "description": "数组中的数字依次表示 picker-view 内的 picker-view-column 选择的第几项（下标从 0 开始），数字大于 picker-view-column 可选项长度时，选择最后一项。"
+    },
+    "indicator-style": {
+      "type": "string",
+      "description": "设置选择器中间选中框的样式"
+    },
+    "indicator-class": {
+      "type": "string",
+      "description": "设置选择器中间选中框的类名"
+    },
+    "mask-style": {
+      "type": "string",
+      "description": "设置蒙层的样式"
+    },
+    "mask-class": {
+      "type": "string",
+      "description": "设置蒙层的类名"
+    },
+    "immediate-change": {
+      "type": "boolean",
+      "description": "是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件。"
+    },
+    "bindchange": {
+      "type": "eventhandle",
+      "description": "滚动选择时触发 change 事件，event.detail = {value}；value为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）"
+    },
+    "bindpickstart": {
+      "type": "eventhandle",
+      "description": "当滚动选择开始时候触发事件"
+    },
+    "bindpickend": {
+      "type": "eventhandle",
+      "description": "当滚动选择结束时候触发事件"
+    }
   }
-]
+}

@@ -1,30 +1,22 @@
-[
-  {
-    "name": "hover-class",
-    "type": "string",
-    "defaultValue": "none",
-    "description": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
-    "required": false
-  },
-  {
-    "name": "hover-stop-propagation",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "指定是否阻止本节点的祖先节点出现点击态",
-    "required": false
-  },
-  {
-    "name": "hover-start-time",
-    "type": "number",
-    "defaultValue": "50",
-    "description": "按住后多久出现点击态，单位毫秒",
-    "required": false
-  },
-  {
-    "name": "hover-stay-time",
-    "type": "number",
-    "defaultValue": "400",
-    "description": "手指松开后点击态保留时间，单位毫秒",
-    "required": false
+{
+  "title": "view",
+  "type": "object",
+  "properties": {
+    "hover-class": {
+      "type": "string",
+      "description": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "指定是否阻止本节点的祖先节点出现点击态"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多久出现点击态，单位毫秒"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击态保留时间，单位毫秒"
+    }
   }
-]
+}

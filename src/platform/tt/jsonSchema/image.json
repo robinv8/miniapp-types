@@ -1,50 +1,26 @@
-[
-  {
-    "name": "src",
-    "type": "string",
-    "description": "图片资源地址",
-    "required": false
-  },
-  {
-    "name": "mode",
-    "type": "string",
-    "options": [
-      "scaleToFill",
-      "aspectFit",
-      "aspectFill",
-      "widthFix",
-      "heightFix",
-      "top",
-      "bottom",
-      "center",
-      "left",
-      "right",
-      "top left",
-      "top right",
-      "bottom left",
-      "bottom right"
-    ],
-    "defaultValue": "scaleToFill",
-    "description": "图片剪裁方式，详情见 mode 的合法值",
-    "required": false
-  },
-  {
-    "name": "lazy-load",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "当错误发生时触发",
-    "required": false
-  },
-  {
-    "name": "bindload",
-    "type": "EventHandle",
-    "description": "当图片载入完毕时触发",
-    "required": false
+{
+  "title": "image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图片资源地址"
+    },
+    "mode": {
+      "type": "string",
+      "description": "图片剪裁方式，详情见 mode 的合法值"
+    },
+    "lazy-load": {
+      "type": "boolean",
+      "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "当错误发生时触发"
+    },
+    "bindload": {
+      "type": "eventHandle",
+      "description": "当图片载入完毕时触发"
+    }
   }
-]
+}

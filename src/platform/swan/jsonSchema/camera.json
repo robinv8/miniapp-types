@@ -1,37 +1,22 @@
-[
-  {
-    "name": "device-position",
-    "type": "String",
-    "options": [
-      "front",
-      "back"
-    ],
-    "defaultValue": "back",
-    "description": "前置或后置，值为 front、back",
-    "required": false
-  },
-  {
-    "name": "flash",
-    "type": "String",
-    "options": [
-      "auto",
-      "on",
-      "off"
-    ],
-    "defaultValue": "auto",
-    "description": "闪光灯，值为 auto、on、off",
-    "required": false
-  },
-  {
-    "name": "bindstop",
-    "type": "EventHandle",
-    "description": "摄像头在非正常终止时触发，如退出后台等情况",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "用户不允许使用摄像头时触发",
-    "required": false
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "device-position": {
+      "type": "string",
+      "description": "前置或后置，值为 front、back"
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯，值为 auto、on、off"
+    },
+    "bindstop": {
+      "type": "eventHandle",
+      "description": "摄像头在非正常终止时触发，如退出后台等情况"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "用户不允许使用摄像头时触发"
+    }
   }
-]
+}

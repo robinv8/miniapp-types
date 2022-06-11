@@ -1,134 +1,78 @@
-[
-  {
-    "name": "value",
-    "type": "string",
-    "description": "输入框的初始值",
-    "required": false
-  },
-  {
-    "name": "type",
-    "type": "string",
-    "options": [
-      "text",
-      "number",
-      "idcard",
-      "digit"
-    ],
-    "defaultValue": "text",
-    "description": "input 的类型，详情见 type 的合法值",
-    "required": false
-  },
-  {
-    "name": "password",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否是密码类型",
-    "required": false
-  },
-  {
-    "name": "placeholder",
-    "type": "string",
-    "description": "输入框为空时占位符",
-    "required": false
-  },
-  {
-    "name": "placeholder-style",
-    "type": "string",
-    "description": "指定 placeholder 的样式",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "maxlength",
-    "type": "number",
-    "defaultValue": "140",
-    "description": "最大输入长度",
-    "required": false
-  },
-  {
-    "name": "cursor-spacing",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "指定软键盘弹出时，与光标的距离是多少，单位是 px",
-    "required": false
-  },
-  {
-    "name": "focus",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "获取焦点，详情见 Bug & Tip",
-    "required": false
-  },
-  {
-    "name": "cursor",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "指定 focus 时的光标位置，详情见光标位置说明",
-    "required": false
-  },
-  {
-    "name": "selection-start",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明",
-    "required": false
-  },
-  {
-    "name": "selection-end",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明",
-    "required": false
-  },
-  {
-    "name": "adjust-position",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "键盘弹起时，是否自动上推页面",
-    "required": false
-  },
-  {
-    "name": "confirm-type",
-    "type": "string",
-    "options": [
-      "send",
-      "search",
-      "next",
-      "go",
-      "done"
-    ],
-    "defaultValue": "done",
-    "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值",
-    "required": false
-  },
-  {
-    "name": "bindinput",
-    "type": "EventHandle",
-    "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明",
-    "required": false
-  },
-  {
-    "name": "bindfocus",
-    "type": "EventHandle",
-    "description": "输入框聚焦时触发，详情见 bindfocus 说明",
-    "required": false
-  },
-  {
-    "name": "bindblur",
-    "type": "EventHandle",
-    "description": "输入框失去焦点时触发，详情见 bindblur 说明",
-    "required": false
-  },
-  {
-    "name": "bindconfirm",
-    "type": "EventHandle",
-    "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明",
-    "required": false
+{
+  "title": "input",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "输入框的初始值"
+    },
+    "type": {
+      "type": "string",
+      "description": "input 的类型，详情见 type 的合法值"
+    },
+    "password": {
+      "type": "boolean",
+      "description": "是否是密码类型"
+    },
+    "placeholder": {
+      "type": "string",
+      "description": "输入框为空时占位符"
+    },
+    "placeholder-style": {
+      "type": "string",
+      "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color 三个 css 特性"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "maxlength": {
+      "type": "number",
+      "description": "最大输入长度"
+    },
+    "cursor-spacing": {
+      "type": "number",
+      "description": "指定软键盘弹出时，与光标的距离是多少，单位是 px"
+    },
+    "focus": {
+      "type": "boolean",
+      "description": "获取焦点，详情见 Bug & Tip"
+    },
+    "cursor": {
+      "type": "number",
+      "description": "指定 focus 时的光标位置，详情见光标位置说明"
+    },
+    "selection-start": {
+      "type": "number",
+      "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明"
+    },
+    "selection-end": {
+      "type": "number",
+      "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明"
+    },
+    "adjust-position": {
+      "type": "boolean",
+      "description": "键盘弹起时，是否自动上推页面"
+    },
+    "confirm-type": {
+      "type": "string",
+      "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值"
+    },
+    "bindinput": {
+      "type": "eventHandle",
+      "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明"
+    },
+    "bindfocus": {
+      "type": "eventHandle",
+      "description": "输入框聚焦时触发，详情见 bindfocus 说明"
+    },
+    "bindblur": {
+      "type": "eventHandle",
+      "description": "输入框失去焦点时触发，详情见 bindblur 说明"
+    },
+    "bindconfirm": {
+      "type": "eventHandle",
+      "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明"
+    }
   }
-]
+}

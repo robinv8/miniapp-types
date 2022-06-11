@@ -1,84 +1,54 @@
-[
-  {
-    "name": "min",
-    "type": "Number",
-    "defaultValue": "0",
-    "description": "最小值",
-    "required": false
-  },
-  {
-    "name": "max",
-    "type": "Number",
-    "defaultValue": "100",
-    "description": "最大值",
-    "required": false
-  },
-  {
-    "name": "step",
-    "type": "Number",
-    "defaultValue": "1",
-    "description": "步长，取值必须大于 0，并且可被 max - min 整除",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "value",
-    "type": "Number",
-    "defaultValue": "0",
-    "description": "当前取值",
-    "required": false
-  },
-  {
-    "name": "background-color",
-    "type": "Color",
-    "defaultValue": "#cccccc",
-    "description": "背景条的颜色",
-    "required": false
-  },
-  {
-    "name": "block-size",
-    "type": "Number",
-    "defaultValue": "24",
-    "description": "滑块的大小，取值范围为 12-28",
-    "required": false
-  },
-  {
-    "name": "block-color",
-    "type": "Color",
-    "defaultValue": "#ffffff",
-    "description": "滑块的颜色",
-    "required": false
-  },
-  {
-    "name": "active-color",
-    "type": "Color",
-    "defaultValue": "#3c76ff",
-    "description": "已选择的颜色",
-    "required": false
-  },
-  {
-    "name": "show-value",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否显示当前 value",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "完成一次拖动后触发的事件，event.detail = {value: value}",
-    "required": false
-  },
-  {
-    "name": "bindchanging",
-    "type": "EventHandle",
-    "description": "拖动过程中触发的事件，event.detail = {value: value}",
-    "required": false
+{
+  "title": "slider",
+  "type": "object",
+  "properties": {
+    "min": {
+      "type": "number",
+      "description": "最小值"
+    },
+    "max": {
+      "type": "number",
+      "description": "最大值"
+    },
+    "step": {
+      "type": "number",
+      "description": "步长，取值必须大于 0，并且可被 max - min 整除"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "value": {
+      "type": "number",
+      "description": "当前取值"
+    },
+    "background-color": {
+      "type": "color",
+      "description": "背景条的颜色"
+    },
+    "block-size": {
+      "type": "number",
+      "description": "滑块的大小，取值范围为 12-28"
+    },
+    "block-color": {
+      "type": "color",
+      "description": "滑块的颜色"
+    },
+    "active-color": {
+      "type": "color",
+      "description": "已选择的颜色"
+    },
+    "show-value": {
+      "type": "boolean",
+      "description": "是否显示当前 value"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "完成一次拖动后触发的事件，event.detail = {value: value}"
+    },
+    "bindchanging": {
+      "type": "eventHandle",
+      "description": "拖动过程中触发的事件，event.detail = {value: value}"
+    }
   }
-]
+}

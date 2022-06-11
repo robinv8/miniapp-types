@@ -1,12 +1,12 @@
-[
-  {
-    "name": "bindload",
-    "type": "EventHandle",
-    "defaultValue": "组件加载成功时触发"
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "defaultValue": "组件加载失败时触发"
+{
+  "title": "official-account",
+  "type": "object",
+  "properties": {
+    "bindload": {
+      "type": "eventHandle"
+    },
+    "binderror": {
+      "type": "eventHandle"
+    }
   }
-]
+}

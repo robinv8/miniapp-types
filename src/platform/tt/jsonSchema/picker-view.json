@@ -1,26 +1,22 @@
-[
-  {
-    "name": "value",
-    "type": "number[]",
-    "description": "数组第 i 项的值表示 <picker-view /> 内的第 i 个 <picker-view-column /> 选择的第几项（下标从 0 开始）。如果值大于 <picker-view-column /> 可选项长度时，选择最后一项。",
-    "required": true
-  },
-  {
-    "name": "indicator-style",
-    "type": "string",
-    "description": "设置选择器中间选中框的样式",
-    "required": false
-  },
-  {
-    "name": "mask-style",
-    "type": "string",
-    "description": "设置蒙层的样式",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "改变时触发",
-    "required": false
+{
+  "title": "picker-view",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "number[]",
+      "description": "数组第 i 项的值表示 <picker-view /> 内的第 i 个 <picker-view-column /> 选择的第几项（下标从 0 开始）。如果值大于 <picker-view-column /> 可选项长度时，选择最后一项。"
+    },
+    "indicator-style": {
+      "type": "string",
+      "description": "设置选择器中间选中框的样式"
+    },
+    "mask-style": {
+      "type": "string",
+      "description": "设置蒙层的样式"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "改变时触发"
+    }
   }
-]
+}

@@ -1,68 +1,42 @@
-[
-  {
-    "name": "src",
-    "type": "string",
-    "description": "视频地址。目前支持 flv、rtmp 和 hls，支持跨域",
-    "required": true
-  },
-  {
-    "name": "autoplay",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否自动播放",
-    "required": false
-  },
-  {
-    "name": "muted",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否静音",
-    "required": false
-  },
-  {
-    "name": "orientation",
-    "type": "string",
-    "options": [
-      "vertical",
-      "horizontal"
-    ],
-    "defaultValue": "vertical",
-    "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值",
-    "required": false
-  },
-  {
-    "name": "object-fit",
-    "type": "string",
-    "options": [
-      "contain",
-      "fillCrop"
-    ],
-    "defaultValue": "contain",
-    "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值",
-    "required": false
-  },
-  {
-    "name": "signature",
-    "type": "Signature",
-    "description": "设置署名水印",
-    "required": false
-  },
-  {
-    "name": "bindstatechange",
-    "type": "EventHandle",
-    "description": "播放状态变化事件，detail = {code}",
-    "required": false
-  },
-  {
-    "name": "bindfullscreenchange",
-    "type": "EventHandle",
-    "description": "全屏变化事件，detail = {direction, fullScreen}",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "播放错误事件",
-    "required": false
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "视频地址。目前支持 flv、rtmp 和 hls，支持跨域"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "是否自动播放"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值"
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值"
+    },
+    "signature": {
+      "type": "signature",
+      "description": "设置署名水印"
+    },
+    "bindstatechange": {
+      "type": "eventHandle",
+      "description": "播放状态变化事件，detail = {code}"
+    },
+    "bindfullscreenchange": {
+      "type": "eventHandle",
+      "description": "全屏变化事件，detail = {direction, fullScreen}"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "播放错误事件"
+    }
   }
-]
+}

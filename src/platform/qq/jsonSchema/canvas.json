@@ -1,43 +1,38 @@
-[
-  {
-    "name": "canvas-id",
-    "type": "String",
-    "description": "canvas 组件的唯一标识符"
-  },
-  {
-    "name": "disable-scroll",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "当在 canvas 中移动时且有绑定手势事件时，禁止屏幕滚动以及下拉刷新"
-  },
-  {
-    "name": "bindtouchstart",
-    "type": "EventHandle",
-    "description": "手指触摸动作开始"
-  },
-  {
-    "name": "bindtouchmove",
-    "type": "EventHandle",
-    "description": "手指触摸后移动"
-  },
-  {
-    "name": "bindtouchend",
-    "type": "EventHandle",
-    "description": "手指触摸动作结束"
-  },
-  {
-    "name": "bindtouchcancel",
-    "type": "EventHandle",
-    "description": "手指触摸动作被打断，如来电提醒，弹窗"
-  },
-  {
-    "name": "bindlongtap",
-    "type": "EventHandle",
-    "description": "手指长按 500ms 之后触发，触发了长按事件后进行移动不会触发屏幕的滚动"
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "当发生错误时触发 error 事件，detail = {errMsg: 'something wrong'}"
+{
+  "title": "canvas",
+  "type": "object",
+  "properties": {
+    "canvas-id": {
+      "type": "string",
+      "description": "canvas 组件的唯一标识符"
+    },
+    "disable-scroll": {
+      "type": "boolean",
+      "description": "当在 canvas 中移动时且有绑定手势事件时，禁止屏幕滚动以及下拉刷新"
+    },
+    "bindtouchstart": {
+      "type": "eventHandle",
+      "description": "手指触摸动作开始"
+    },
+    "bindtouchmove": {
+      "type": "eventHandle",
+      "description": "手指触摸后移动"
+    },
+    "bindtouchend": {
+      "type": "eventHandle",
+      "description": "手指触摸动作结束"
+    },
+    "bindtouchcancel": {
+      "type": "eventHandle",
+      "description": "手指触摸动作被打断，如来电提醒，弹窗"
+    },
+    "bindlongtap": {
+      "type": "eventHandle",
+      "description": "手指长按 500ms 之后触发，触发了长按事件后进行移动不会触发屏幕的滚动"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "当发生错误时触发 error 事件，detail = {errMsg: 'something wrong'}"
+    }
   }
-]
+}

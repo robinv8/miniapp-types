@@ -1,35 +1,30 @@
-[
-  {
-    "name": "checked",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否选中"
-  },
-  {
-    "name": "disabled",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否禁用"
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "defaultValue": "switch",
-    "description": "样式，有效值：switch, checkbox"
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
-  },
-  {
-    "name": "color",
-    "type": "Color",
-    "description": "switch 的颜色，同 css 的 color"
-  },
-  {
-    "name": "aria-label",
-    "type": "String",
-    "description": "无障碍访问，（属性）元素的额外描述"
+{
+  "title": "switch",
+  "type": "object",
+  "properties": {
+    "checked": {
+      "type": "boolean",
+      "description": "是否选中"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "type": {
+      "type": "string",
+      "description": "样式，有效值：switch, checkbox"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
+    },
+    "color": {
+      "type": "color",
+      "description": "switch 的颜色，同 css 的 color"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    }
   }
-]
+}

@@ -1,30 +1,21 @@
-[
-  {
-    "name": "nodes",
-    "type": [
-      "array",
-      "string"
-    ],
-    "defaultValue": "[]",
-    "description": "节点列表/HTML String",
-    "required": false
-  },
-  {
-    "name": "space",
-    "type": "string",
-    "options": [
-      "ensp",
-      "emsp",
-      "nbsp"
-    ],
-    "description": "显示连续空格",
-    "required": false
-  },
-  {
-    "name": "user-select",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "文本是否可选，该属性会使节点显示为 block",
-    "required": false
+{
+  "title": "rich-text",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": [
+        "array",
+        "string"
+      ],
+      "description": "节点列表/HTML String"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格"
+    },
+    "user-select": {
+      "type": "boolean",
+      "description": "文本是否可选，该属性会使节点显示为 block"
+    }
   }
-]
+}

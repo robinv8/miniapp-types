@@ -1,125 +1,74 @@
-[
-  {
-    "name": "indicator-dots",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否显示面板指示点",
-    "required": false
-  },
-  {
-    "name": "indicator-color",
-    "type": "color",
-    "defaultValue": "rgba(0, 0, 0, .3)",
-    "description": "指示点颜色",
-    "required": false
-  },
-  {
-    "name": "indicator-active-color",
-    "type": "color",
-    "defaultValue": "#000000",
-    "description": "当前选中的指示点颜色",
-    "required": false
-  },
-  {
-    "name": "autoplay",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否自动切换",
-    "required": false
-  },
-  {
-    "name": "current",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "当前所在滑块的 index",
-    "required": false
-  },
-  {
-    "name": "interval",
-    "type": "number",
-    "defaultValue": "5000",
-    "description": "自动切换时间间隔",
-    "required": false
-  },
-  {
-    "name": "duration",
-    "type": "number",
-    "defaultValue": "500",
-    "description": "滑动动画时长",
-    "required": false
-  },
-  {
-    "name": "circular",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否采用衔接滑动",
-    "required": false
-  },
-  {
-    "name": "vertical",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "滑动方向是否为纵向",
-    "required": false
-  },
-  {
-    "name": "previous-margin",
-    "type": "string",
-    "defaultValue": "\"0px\"",
-    "description": "前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值",
-    "required": false
-  },
-  {
-    "name": "next-margin",
-    "type": "string",
-    "defaultValue": "\"0px\"",
-    "description": "后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值",
-    "required": false
-  },
-  {
-    "name": "snap-to-edge",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素",
-    "required": false
-  },
-  {
-    "name": "display-multiple-items",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "同时显示的滑块数量",
-    "required": false
-  },
-  {
-    "name": "easing-function",
-    "type": "string",
-    "options": [
-      "default",
-      "linear",
-      "easeInCubic",
-      "easeOutCubic",
-      "easeInOutCubic"
-    ],
-    "defaultValue": "\"default\"",
-    "description": "指定 swiper 切换缓动动画类型",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "eventhandle",
-    "description": "current 改变时会触发 change 事件，event.detail = {current, source}",
-    "required": false
-  },
-  {
-    "name": "bindtransition",
-    "type": "eventhandle",
-    "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}",
-    "required": false
-  },
-  {
-    "name": "bindanimationfinish",
-    "type": "eventhandle",
-    "description": "动画结束时会触发 animationfinish 事件，event.detail 同上",
-    "required": false
+{
+  "title": "swiper",
+  "type": "object",
+  "properties": {
+    "indicator-dots": {
+      "type": "boolean",
+      "description": "是否显示面板指示点"
+    },
+    "indicator-color": {
+      "type": "color",
+      "description": "指示点颜色"
+    },
+    "indicator-active-color": {
+      "type": "color",
+      "description": "当前选中的指示点颜色"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "是否自动切换"
+    },
+    "current": {
+      "type": "number",
+      "description": "当前所在滑块的 index"
+    },
+    "interval": {
+      "type": "number",
+      "description": "自动切换时间间隔"
+    },
+    "duration": {
+      "type": "number",
+      "description": "滑动动画时长"
+    },
+    "circular": {
+      "type": "boolean",
+      "description": "是否采用衔接滑动"
+    },
+    "vertical": {
+      "type": "boolean",
+      "description": "滑动方向是否为纵向"
+    },
+    "previous-margin": {
+      "type": "string",
+      "description": "前边距，可用于露出前一项的一小部分，接受 px 和 rpx 值"
+    },
+    "next-margin": {
+      "type": "string",
+      "description": "后边距，可用于露出后一项的一小部分，接受 px 和 rpx 值"
+    },
+    "snap-to-edge": {
+      "type": "boolean",
+      "description": "当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素"
+    },
+    "display-multiple-items": {
+      "type": "number",
+      "description": "同时显示的滑块数量"
+    },
+    "easing-function": {
+      "type": "string",
+      "description": "指定 swiper 切换缓动动画类型"
+    },
+    "bindchange": {
+      "type": "eventhandle",
+      "description": "current 改变时会触发 change 事件，event.detail = {current, source}"
+    },
+    "bindtransition": {
+      "type": "eventhandle",
+      "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
+    },
+    "bindanimationfinish": {
+      "type": "eventhandle",
+      "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
+    }
   }
-]
+}

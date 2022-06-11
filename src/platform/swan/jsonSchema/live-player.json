@@ -1,6 +1,9 @@
-[
-  {
-    "name": "娱乐",
-    "type": "直播、直播答题"
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "娱乐": {
+      "type": "直播、直播答题"
+    }
   }
-]
+}

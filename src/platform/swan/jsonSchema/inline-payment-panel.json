@@ -1,54 +1,41 @@
-[
-  {
-    "name": "totalAmount",
-    "type": "String",
-    "description": "总金额，金额单位分，tip：仅支持整数型字符串",
-    "required": true
-  },
-  {
-    "name": "dealId",
-    "type": "String",
-    "description": "百度收银台的财务结算凭证，详见平台术语",
-    "required": true
-  },
-  {
-    "name": "appKey",
-    "type": "String",
-    "description": "支付能力开通后分配的支付 appKey，详见平台术语",
-    "required": true
-  },
-  {
-    "name": "promotionTag",
-    "type": [
-      "String",
-      "Array.<string>"
-    ],
-    "description": "平台营销信息，此处传当前订单中可使用平台券的spuid，同时需在支付能力中搭配使用传入该参数；注：仅与百度合作平台类目券的开发者需要填写该参数",
-    "required": false
-  },
-  {
-    "name": "enablePageBackModal",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否设置挽留弹窗",
-    "required": false
-  },
-  {
-    "name": "customStyle",
-    "type": "Object",
-    "description": "自定义样式设置",
-    "required": false
-  },
-  {
-    "name": "bindgetpaymentinfo",
-    "type": "EventHandle",
-    "description": "获取支付相关信息，具体信息在返回值的 detail 字段中",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "当发生错误时触发 error 事件，具体信息在返回值的 detail 字段中，例如 {detail: {errMsg: \"something is wrong\"}}",
-    "required": false
+{
+  "title": "inline-payment-panel",
+  "type": "object",
+  "properties": {
+    "totalAmount": {
+      "type": "string",
+      "description": "总金额，金额单位分，tip：仅支持整数型字符串"
+    },
+    "dealId": {
+      "type": "string",
+      "description": "百度收银台的财务结算凭证，详见平台术语"
+    },
+    "appKey": {
+      "type": "string",
+      "description": "支付能力开通后分配的支付 appKey，详见平台术语"
+    },
+    "promotionTag": {
+      "type": [
+        "String",
+        "Array.<string>"
+      ],
+      "description": "平台营销信息，此处传当前订单中可使用平台券的spuid，同时需在支付能力中搭配使用传入该参数；注：仅与百度合作平台类目券的开发者需要填写该参数"
+    },
+    "enablePageBackModal": {
+      "type": "boolean",
+      "description": "是否设置挽留弹窗"
+    },
+    "customStyle": {
+      "type": "object",
+      "description": "自定义样式设置"
+    },
+    "bindgetpaymentinfo": {
+      "type": "eventHandle",
+      "description": "获取支付相关信息，具体信息在返回值的 detail 字段中"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "当发生错误时触发 error 事件，具体信息在返回值的 detail 字段中，例如 {detail: {errMsg: \"something is wrong\"}}"
+    }
   }
-]
+}

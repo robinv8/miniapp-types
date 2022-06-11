@@ -1,150 +1,98 @@
-[
-  {
-    "name": "longitude",
-    "type": "Number",
-    "defaultValue": "北京经度",
-    "description": "gcj02 坐标系中心经度",
-    "required": true
-  },
-  {
-    "name": "latitude",
-    "type": "Number",
-    "defaultValue": "北京纬度",
-    "description": "gcj02 坐标系中心纬度",
-    "required": true
-  },
-  {
-    "name": "scale",
-    "type": "Number",
-    "defaultValue": "16",
-    "description": "缩放级别，取值范围为 4-21 。动态设置 scale 值用法：scale=\"{= scale =}\"",
-    "required": false
-  },
-  {
-    "name": "markers",
-    "type": "Array.<marker>",
-    "description": "标记点。详情请参考 marker",
-    "required": false
-  },
-  {
-    "name": "polyline",
-    "type": "Array.<polyline>",
-    "description": "路线。详情请参考 polyline",
-    "required": false
-  },
-  {
-    "name": "polygons",
-    "type": "Array.<polygon>",
-    "description": "多边形。详情请参考 polygon",
-    "required": false
-  },
-  {
-    "name": "circles",
-    "type": "Array.<circle>",
-    "description": "圆。详情请参考 circle",
-    "required": false
-  },
-  {
-    "name": "controls",
-    "type": "Array.<control>",
-    "description": "控件。详情请参考 control",
-    "required": false
-  },
-  {
-    "name": "include-points",
-    "type": "Array.<point>",
-    "description": "缩放视野以包含所有给定的坐标点",
-    "required": false
-  },
-  {
-    "name": "show-location",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "显示带有方向的当前定位点",
-    "required": false
-  },
-  {
-    "name": "enable-3D",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "显示 3D 楼块（工具暂不支持）",
-    "required": false
-  },
-  {
-    "name": "show-compass",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "显示指南针（工具暂不支持）",
-    "required": false
-  },
-  {
-    "name": "enable-overlooking",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "开启俯视（工具暂不支持）",
-    "required": false
-  },
-  {
-    "name": "enable-zoom",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "是否支持缩放（工具暂不支持）",
-    "required": false
-  },
-  {
-    "name": "enable-scroll",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "是否支持拖动（工具暂不支持）",
-    "required": false
-  },
-  {
-    "name": "enable-rotate",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否支持旋转（工具暂不支持）",
-    "required": false
-  },
-  {
-    "name": "bindmarkertap",
-    "type": "EventHandle",
-    "description": "点击标记点时触发",
-    "required": false
-  },
-  {
-    "name": "bindcallouttap",
-    "type": "EventHandle",
-    "description": "点击标记点对应的气泡时触发",
-    "required": false
-  },
-  {
-    "name": "bindcontroltap",
-    "type": "EventHandle",
-    "description": "点击控件时触发",
-    "required": false
-  },
-  {
-    "name": "bindregionchange",
-    "type": "EventHandle",
-    "description": "视野发生变化时触发",
-    "required": false
-  },
-  {
-    "name": "bindtap",
-    "type": "EventHandle",
-    "description": "点击地图时触发",
-    "required": false
-  },
-  {
-    "name": "bindupdated",
-    "type": "EventHandle",
-    "description": "在地图渲染更新完成时触发",
-    "required": false
-  },
-  {
-    "name": "bindpoitap",
-    "type": "EventHandle",
-    "description": "点击地图 poi 点时触发",
-    "required": false
+{
+  "title": "map",
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "description": "gcj02 坐标系中心经度"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "gcj02 坐标系中心纬度"
+    },
+    "scale": {
+      "type": "number",
+      "description": "缩放级别，取值范围为 4-21 。动态设置 scale 值用法：scale=\"{= scale =}\""
+    },
+    "markers": {
+      "type": "array.<marker>",
+      "description": "标记点。详情请参考 marker"
+    },
+    "polyline": {
+      "type": "array.<polyline>",
+      "description": "路线。详情请参考 polyline"
+    },
+    "polygons": {
+      "type": "array.<polygon>",
+      "description": "多边形。详情请参考 polygon"
+    },
+    "circles": {
+      "type": "array.<circle>",
+      "description": "圆。详情请参考 circle"
+    },
+    "controls": {
+      "type": "array.<control>",
+      "description": "控件。详情请参考 control"
+    },
+    "include-points": {
+      "type": "array.<point>",
+      "description": "缩放视野以包含所有给定的坐标点"
+    },
+    "show-location": {
+      "type": "boolean",
+      "description": "显示带有方向的当前定位点"
+    },
+    "enable-3D": {
+      "type": "boolean",
+      "description": "显示 3D 楼块（工具暂不支持）"
+    },
+    "show-compass": {
+      "type": "boolean",
+      "description": "显示指南针（工具暂不支持）"
+    },
+    "enable-overlooking": {
+      "type": "boolean",
+      "description": "开启俯视（工具暂不支持）"
+    },
+    "enable-zoom": {
+      "type": "boolean",
+      "description": "是否支持缩放（工具暂不支持）"
+    },
+    "enable-scroll": {
+      "type": "boolean",
+      "description": "是否支持拖动（工具暂不支持）"
+    },
+    "enable-rotate": {
+      "type": "boolean",
+      "description": "是否支持旋转（工具暂不支持）"
+    },
+    "bindmarkertap": {
+      "type": "eventHandle",
+      "description": "点击标记点时触发"
+    },
+    "bindcallouttap": {
+      "type": "eventHandle",
+      "description": "点击标记点对应的气泡时触发"
+    },
+    "bindcontroltap": {
+      "type": "eventHandle",
+      "description": "点击控件时触发"
+    },
+    "bindregionchange": {
+      "type": "eventHandle",
+      "description": "视野发生变化时触发"
+    },
+    "bindtap": {
+      "type": "eventHandle",
+      "description": "点击地图时触发"
+    },
+    "bindupdated": {
+      "type": "eventHandle",
+      "description": "在地图渲染更新完成时触发"
+    },
+    "bindpoitap": {
+      "type": "eventHandle",
+      "description": "点击地图 poi 点时触发"
+    }
   }
-]
+}

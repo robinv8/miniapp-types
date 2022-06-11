@@ -1,93 +1,63 @@
-[
-  {
-    "name": "percent",
-    "type": "number",
-    "description": "百分比0~100",
-    "required": false
-  },
-  {
-    "name": "show-info",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "在进度条右侧显示百分比",
-    "required": false
-  },
-  {
-    "name": "border-radius",
-    "type": [
-      "number",
-      "string"
-    ],
-    "defaultValue": "0",
-    "description": "圆角大小",
-    "required": false
-  },
-  {
-    "name": "font-size",
-    "type": [
-      "number",
-      "string"
-    ],
-    "defaultValue": "16",
-    "description": "右侧百分比字体大小",
-    "required": false
-  },
-  {
-    "name": "stroke-width",
-    "type": [
-      "number",
-      "string"
-    ],
-    "defaultValue": "6",
-    "description": "进度条线的宽度",
-    "required": false
-  },
-  {
-    "name": "color",
-    "type": "string",
-    "defaultValue": "#09BB07",
-    "description": "进度条颜色（请使用activeColor）",
-    "required": false
-  },
-  {
-    "name": "activeColor",
-    "type": "string",
-    "defaultValue": "#09BB07",
-    "description": "已选择的进度条的颜色",
-    "required": false
-  },
-  {
-    "name": "backgroundColor",
-    "type": "string",
-    "defaultValue": "#EBEBEB",
-    "description": "未选择的进度条的颜色",
-    "required": false
-  },
-  {
-    "name": "active",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "进度条从左往右的动画",
-    "required": false
-  },
-  {
-    "name": "active-mode",
-    "type": "string",
-    "defaultValue": "backwards",
-    "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
-    "required": false
-  },
-  {
-    "name": "duration",
-    "type": "number",
-    "defaultValue": "30",
-    "description": "进度增加1%所需毫秒数",
-    "required": false
-  },
-  {
-    "name": "bindactiveend",
-    "type": "eventhandle",
-    "description": "动画完成事件",
-    "required": false
+{
+  "title": "progress",
+  "type": "object",
+  "properties": {
+    "percent": {
+      "type": "number",
+      "description": "百分比0~100"
+    },
+    "show-info": {
+      "type": "boolean",
+      "description": "在进度条右侧显示百分比"
+    },
+    "border-radius": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "圆角大小"
+    },
+    "font-size": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "右侧百分比字体大小"
+    },
+    "stroke-width": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "进度条线的宽度"
+    },
+    "color": {
+      "type": "string",
+      "description": "进度条颜色（请使用activeColor）"
+    },
+    "activeColor": {
+      "type": "string",
+      "description": "已选择的进度条的颜色"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "description": "未选择的进度条的颜色"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "进度条从左往右的动画"
+    },
+    "active-mode": {
+      "type": "string",
+      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
+    },
+    "duration": {
+      "type": "number",
+      "description": "进度增加1%所需毫秒数"
+    },
+    "bindactiveend": {
+      "type": "eventhandle",
+      "description": "动画完成事件"
+    }
   }
-]
+}

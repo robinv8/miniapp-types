@@ -1,45 +1,34 @@
-[
-  {
-    "name": "value",
-    "type": "Array",
-    "defaultValue": "[]",
-    "description": "数组中的数字依次表示 picker-view 内的 picker-view-colume 选择的第几项（下标从 0 开始），数字大于 picker-view-column 可选项长度时，选择最后一项",
-    "required": false
-  },
-  {
-    "name": "indicator-style",
-    "type": "String",
-    "description": "设置选择器中间选中框的样式",
-    "required": false
-  },
-  {
-    "name": "indicator-class",
-    "type": "String",
-    "description": "设置选择器中间选中框的类名",
-    "required": false
-  },
-  {
-    "name": "mask-style",
-    "type": "String",
-    "description": "设置蒙层的样式",
-    "required": false
-  },
-  {
-    "name": "mask-class",
-    "type": "String",
-    "description": "设置蒙层的类名",
-    "required": false
-  },
-  {
-    "name": "title",
-    "type": "String",
-    "description": "选择器标题，建议标题控制在 12 个中文汉字长度内，避免出现截断现象, 截断部分将以 ... 形式展示",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "当滚动选择，value 改变时触发 change 事件，event.detail = {value: value};value 为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）",
-    "required": false
+{
+  "title": "picker-view",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "array",
+      "description": "数组中的数字依次表示 picker-view 内的 picker-view-colume 选择的第几项（下标从 0 开始），数字大于 picker-view-column 可选项长度时，选择最后一项"
+    },
+    "indicator-style": {
+      "type": "string",
+      "description": "设置选择器中间选中框的样式"
+    },
+    "indicator-class": {
+      "type": "string",
+      "description": "设置选择器中间选中框的类名"
+    },
+    "mask-style": {
+      "type": "string",
+      "description": "设置蒙层的样式"
+    },
+    "mask-class": {
+      "type": "string",
+      "description": "设置蒙层的类名"
+    },
+    "title": {
+      "type": "string",
+      "description": "选择器标题，建议标题控制在 12 个中文汉字长度内，避免出现截断现象, 截断部分将以 ... 形式展示"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "当滚动选择，value 改变时触发 change 事件，event.detail = {value: value};value 为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）"
+    }
   }
-]
+}

@@ -1,29 +1,22 @@
-[
-  {
-    "name": "value",
-    "type": "string",
-    "description": "checkbox标识，选中时触发checkbox-group的 change 事件，并携带 checkbox 的 value",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "checked",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "当前是否选中，可用来设置默认选中",
-    "required": false
-  },
-  {
-    "name": "color",
-    "type": "string",
-    "defaultValue": "#09BB07",
-    "description": "checkbox的颜色，同css的color",
-    "required": false
+{
+  "title": "checkbox",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "checkbox标识，选中时触发checkbox-group的 change 事件，并携带 checkbox 的 value"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "当前是否选中，可用来设置默认选中"
+    },
+    "color": {
+      "type": "string",
+      "description": "checkbox的颜色，同 css 的color"
+    }
   }
-]
+}

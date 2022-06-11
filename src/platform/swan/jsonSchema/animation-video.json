@@ -1,62 +1,42 @@
-[
-  {
-    "name": "resource-width",
-    "type": "Number",
-    "defaultValue": "800",
-    "description": "组件使用的 video 视频资源的宽度（单位：px）",
-    "required": false
-  },
-  {
-    "name": "resource-height",
-    "type": "Number",
-    "defaultValue": "400",
-    "description": "组件使用的 video 视频资源的高度（单位：px）",
-    "required": false
-  },
-  {
-    "name": "canvas-style",
-    "type": "String",
-    "defaultValue": "width: 400px;height: 400px",
-    "description": "用于设置动画画布的 CSS 样式",
-    "required": false
-  },
-  {
-    "name": "path",
-    "type": "String",
-    "description": "动画资源地址，支持相对路径以及远程地址。如果是远程路径，注意 response header 里需要设置 Access-Control-Allow-Origin 来防止跨域问题",
-    "required": true
-  },
-  {
-    "name": "loop",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "动画是否循环播放",
-    "required": false
-  },
-  {
-    "name": "autoplay",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "动画是否自动播放",
-    "required": false
-  },
-  {
-    "name": "alpha-direction",
-    "type": "String",
-    "defaultValue": "left",
-    "description": "视频资源中 alpha 通道的方向，left 表示 alpha 通道在资源的左边，right 表示 alpha 通道在资源的右边。详情请参考透明视频设计资源示例",
-    "required": false
-  },
-  {
-    "name": "bindstarted",
-    "type": "EventHandle",
-    "description": "动画开始播放的回调",
-    "required": false
-  },
-  {
-    "name": "bindended",
-    "type": "EventHandle",
-    "description": "当播放到末尾时触发 ended 事件（自然播放结束会触发回调，循环播放结束及暂停动画不会触发）",
-    "required": false
+{
+  "title": "animation-video",
+  "type": "object",
+  "properties": {
+    "resource-width": {
+      "type": "number",
+      "description": "组件使用的 video 视频资源的宽度（单位：px）"
+    },
+    "resource-height": {
+      "type": "number",
+      "description": "组件使用的 video 视频资源的高度（单位：px）"
+    },
+    "canvas-style": {
+      "type": "string",
+      "description": "用于设置动画画布的 CSS 样式"
+    },
+    "path": {
+      "type": "string",
+      "description": "动画资源地址，支持相对路径以及远程地址。如果是远程路径，注意 response header 里需要设置 Access-Control-Allow-Origin 来防止跨域问题"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "动画是否循环播放"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "动画是否自动播放"
+    },
+    "alpha-direction": {
+      "type": "string",
+      "description": "视频资源中 alpha 通道的方向，left 表示 alpha 通道在资源的左边，right 表示 alpha 通道在资源的右边。详情请参考透明视频设计资源示例"
+    },
+    "bindstarted": {
+      "type": "eventHandle",
+      "description": "动画开始播放的回调"
+    },
+    "bindended": {
+      "type": "eventHandle",
+      "description": "当播放到末尾时触发 ended 事件（自然播放结束会触发回调，循环播放结束及暂停动画不会触发）"
+    }
   }
-]
+}

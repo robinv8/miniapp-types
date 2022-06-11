@@ -1,40 +1,26 @@
-[
-  {
-    "name": "checked",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否选中",
-    "required": false
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "options": [
-      "switch",
-      "checkbox"
-    ],
-    "defaultValue": "switch",
-    "description": "样式，有效值：switch、checkbox",
-    "required": false
-  },
-  {
-    "name": "color",
-    "type": "Color",
-    "defaultValue": "#3388ff",
-    "description": "switch 的颜色，同 CSS 的 color",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "checked 改变时触发 change 事件，event.detail = {checked: true}",
-    "required": false
+{
+  "title": "switch",
+  "type": "object",
+  "properties": {
+    "checked": {
+      "type": "boolean",
+      "description": "是否选中"
+    },
+    "type": {
+      "type": "string",
+      "description": "样式，有效值：switch、checkbox"
+    },
+    "color": {
+      "type": "color",
+      "description": "switch 的颜色，同 CSS 的 color"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "checked 改变时触发 change 事件，event.detail = {checked: true}"
+    }
   }
-]
+}

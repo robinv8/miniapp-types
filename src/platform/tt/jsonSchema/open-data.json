@@ -1,41 +1,26 @@
-[
-  {
-    "name": "type",
-    "type": "string",
-    "options": [
-      "userNickName",
-      "userAvatarUrl",
-      "userGender",
-      "userCity",
-      "userProvince",
-      "userCountry"
-    ],
-    "description": "开放数据类型",
-    "required": true
-  },
-  {
-    "name": "default-text",
-    "type": "string",
-    "description": "文本数据为空时的默认内容",
-    "required": false
-  },
-  {
-    "name": "default-avatar",
-    "type": "string",
-    "description": "用户头像为空时的默认图片，支持相对路径和网络图片路径",
-    "required": false
-  },
-  {
-    "name": "use-empty-value",
-    "type": "string",
-    "defaultValue": "false",
-    "description": "当数据为空且未设置默认值时，是否显示官方默认值",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "出现错误时触发",
-    "required": false
+{
+  "title": "open-data",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "开放数据类型"
+    },
+    "default-text": {
+      "type": "string",
+      "description": "文本数据为空时的默认内容"
+    },
+    "default-avatar": {
+      "type": "string",
+      "description": "用户头像为空时的默认图片，支持相对路径和网络图片路径"
+    },
+    "use-empty-value": {
+      "type": "string",
+      "description": "当数据为空且未设置默认值时，是否显示官方默认值"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "出现错误时触发"
+    }
   }
-]
+}

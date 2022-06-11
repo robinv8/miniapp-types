@@ -1,124 +1,70 @@
-[
-  {
-    "name": "id",
-    "type": "String",
-    "description": "rtc-room 组件的唯一标识符",
-    "required": true
-  },
-  {
-    "name": "enable-camera",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "是否开启摄像头",
-    "required": false
-  },
-  {
-    "name": "enable-auto-focus",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "是否开启摄像头自动对焦",
-    "required": false
-  },
-  {
-    "name": "enable-zoom",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否支持双手滑动调整摄像头聚焦",
-    "required": false
-  },
-  {
-    "name": "device-position",
-    "type": "String",
-    "options": [
-      "front",
-      "back"
-    ],
-    "defaultValue": "front",
-    "description": "设置前置还是后置摄像头，有效值：front、back",
-    "required": false
-  },
-  {
-    "name": "enable-mic",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "是否开启麦克风",
-    "required": false
-  },
-  {
-    "name": "enable-agc",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否开启音频自动增益",
-    "required": false
-  },
-  {
-    "name": "enable-ans",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否开启音频噪声抑制",
-    "required": false
-  },
-  {
-    "name": "bitrate",
-    "type": "Number",
-    "defaultValue": "900",
-    "description": "最大码率",
-    "required": false
-  },
-  {
-    "name": "video-width",
-    "type": "Number",
-    "defaultValue": "360",
-    "description": "视频分辨率宽",
-    "required": false
-  },
-  {
-    "name": "video-height",
-    "type": "Number",
-    "defaultValue": "640",
-    "description": "视频分辨率高",
-    "required": false
-  },
-  {
-    "name": "enable-remote-mirror",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "设置远端看到的画面的镜像效果，该属性的变化不会影响到本地画面，仅影响远端看到的画面效果",
-    "required": false
-  },
-  {
-    "name": "local-mirror",
-    "type": "String",
-    "options": [
-      "auto",
-      "enable",
-      "disable"
-    ],
-    "defaultValue": "auto",
-    "description": "设置本地摄像头预览画面的镜像效果，有效值：auto、enable、disable",
-    "required": false
-  },
-  {
-    "name": "sound-mode",
-    "type": "String",
-    "options": [
-      "speaker",
-      "ear"
-    ],
-    "defaultValue": "speaker",
-    "description": "设置声音输出方式，有效值：speaker、ear",
-    "required": false
-  },
-  {
-    "name": "bindstatechange",
-    "type": "Eventhandle",
-    "description": "房间状态变化事件，参考下方状态码，detail = { code, msg, userInfo }",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "Eventhandle",
-    "description": "错误事件。参考下方错误码，detail = { errMsg, errCode }",
-    "required": false
+{
+  "title": "rtc-room",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "rtc-room 组件的唯一标识符"
+    },
+    "enable-camera": {
+      "type": "boolean",
+      "description": "是否开启摄像头"
+    },
+    "enable-auto-focus": {
+      "type": "boolean",
+      "description": "是否开启摄像头自动对焦"
+    },
+    "enable-zoom": {
+      "type": "boolean",
+      "description": "是否支持双手滑动调整摄像头聚焦"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "设置前置还是后置摄像头，有效值：front、back"
+    },
+    "enable-mic": {
+      "type": "boolean",
+      "description": "是否开启麦克风"
+    },
+    "enable-agc": {
+      "type": "boolean",
+      "description": "是否开启音频自动增益"
+    },
+    "enable-ans": {
+      "type": "boolean",
+      "description": "是否开启音频噪声抑制"
+    },
+    "bitrate": {
+      "type": "number",
+      "description": "最大码率"
+    },
+    "video-width": {
+      "type": "number",
+      "description": "视频分辨率宽"
+    },
+    "video-height": {
+      "type": "number",
+      "description": "视频分辨率高"
+    },
+    "enable-remote-mirror": {
+      "type": "boolean",
+      "description": "设置远端看到的画面的镜像效果，该属性的变化不会影响到本地画面，仅影响远端看到的画面效果"
+    },
+    "local-mirror": {
+      "type": "string",
+      "description": "设置本地摄像头预览画面的镜像效果，有效值：auto、enable、disable"
+    },
+    "sound-mode": {
+      "type": "string",
+      "description": "设置声音输出方式，有效值：speaker、ear"
+    },
+    "bindstatechange": {
+      "type": "eventhandle",
+      "description": "房间状态变化事件，参考下方状态码，detail = { code, msg, userInfo }"
+    },
+    "binderror": {
+      "type": "eventhandle",
+      "description": "错误事件。参考下方错误码，detail = { errMsg, errCode }"
+    }
   }
-]
+}

@@ -1,123 +1,70 @@
-[
-  {
-    "name": "target",
-    "type": "string",
-    "options": [
-      "self",
-      "miniProgram"
-    ],
-    "defaultValue": "self",
-    "description": "在哪个目标上发生跳转，默认当前小程序",
-    "required": false
-  },
-  {
-    "name": "url",
-    "type": "string",
-    "description": "当前小程序内的跳转链接",
-    "required": false
-  },
-  {
-    "name": "open-type",
-    "type": "string",
-    "options": [
-      "navigate",
-      "redirect",
-      "switchTab",
-      "reLaunch",
-      "navigateBack",
-      "exit"
-    ],
-    "defaultValue": "navigate",
-    "description": "跳转方式",
-    "required": false
-  },
-  {
-    "name": "delta",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数",
-    "required": false
-  },
-  {
-    "name": "app-id",
-    "type": "string",
-    "description": "当`target=\"miniProgram\"`时有效，要打开的小程序 appId",
-    "required": false
-  },
-  {
-    "name": "path",
-    "type": "string",
-    "description": "当`target=\"miniProgram\"`时有效，打开的页面路径，如果为空则打开首页",
-    "required": false
-  },
-  {
-    "name": "extra-data",
-    "type": "object",
-    "description": "当`target=\"miniProgram\"`时有效，需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch()`，`App.onShow()` 中获取到这份数据。详情",
-    "required": false
-  },
-  {
-    "name": "version",
-    "type": "string",
-    "options": [
-      "develop",
-      "trial",
-      "release"
-    ],
-    "defaultValue": "release",
-    "description": "当`target=\"miniProgram\"`时有效，要打开的小程序版本",
-    "required": false
-  },
-  {
-    "name": "short-link",
-    "type": "string",
-    "description": "当`target=\"miniProgram\"`时有效，当传递该参数后，可以不传 app-id 和 path。链接可以通过【小程序菜单】->【复制链接】获取。",
-    "required": false
-  },
-  {
-    "name": "hover-class",
-    "type": "string",
-    "defaultValue": "navigator-hover",
-    "description": "指定点击时的样式类，当`hover-class=\"none\"`时，没有点击态效果",
-    "required": false
-  },
-  {
-    "name": "hover-stop-propagation",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "指定是否阻止本节点的祖先节点出现点击态",
-    "required": false
-  },
-  {
-    "name": "hover-start-time",
-    "type": "number",
-    "defaultValue": "50",
-    "description": "按住后多久出现点击态，单位毫秒",
-    "required": false
-  },
-  {
-    "name": "hover-stay-time",
-    "type": "number",
-    "defaultValue": "600",
-    "description": "手指松开后点击态保留时间，单位毫秒",
-    "required": false
-  },
-  {
-    "name": "bindsuccess",
-    "type": "string",
-    "description": "当`target=\"miniProgram\"`时有效，跳转小程序成功",
-    "required": false
-  },
-  {
-    "name": "bindfail",
-    "type": "string",
-    "description": "当`target=\"miniProgram\"`时有效，跳转小程序失败",
-    "required": false
-  },
-  {
-    "name": "bindcomplete",
-    "type": "string",
-    "description": "当`target=\"miniProgram\"`时有效，跳转小程序完成",
-    "required": false
+{
+  "title": "navigator",
+  "type": "object",
+  "properties": {
+    "target": {
+      "type": "string",
+      "description": "在哪个目标上发生跳转，默认当前小程序"
+    },
+    "url": {
+      "type": "string",
+      "description": "当前小程序内的跳转链接"
+    },
+    "open-type": {
+      "type": "string",
+      "description": "跳转方式"
+    },
+    "delta": {
+      "type": "number",
+      "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数"
+    },
+    "app-id": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序 appId"
+    },
+    "path": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，打开的页面路径，如果为空则打开首页"
+    },
+    "extra-data": {
+      "type": "object",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效，需要传递给目标小程序的数据，目标小程序可在 App.onLaunch()，App.onShow() 中获取到这份数据。详情"
+    },
+    "version": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序版本"
+    },
+    "short-link": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"时有效，当传递该参数后，可以不传 app-id 和 path。链接可以通过【小程序菜单】->【复制链接】获取。"
+    },
+    "hover-class": {
+      "type": "string",
+      "description": "指定点击时的样式类，当hover-class=\"none\"时，没有点击态效果"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "指定是否阻止本节点的祖先节点出现点击态"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多久出现点击态，单位毫秒"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击态保留时间，单位毫秒"
+    },
+    "bindsuccess": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序成功"
+    },
+    "bindfail": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序失败"
+    },
+    "bindcomplete": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序完成"
+    }
   }
-]
+}

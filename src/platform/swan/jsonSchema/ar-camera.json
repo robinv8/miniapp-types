@@ -1,55 +1,34 @@
-[
-  {
-    "name": "key",
-    "type": "String",
-    "description": "AR 项目唯一标识，在 DuMixAR 内容开放平台上传生成 AR 项目后获取 AR Key",
-    "required": true
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "options": [
-      "0",
-      "5",
-      "8"
-    ],
-    "description": "AR 相机类型，在 DuMixAR 内容开放平台上传生成 AR 项目后获取 AR Type：\n2D 跟踪类型：0\nSLAM 类型：5\nIMU 类型：8",
-    "required": true
-  },
-  {
-    "name": "flash",
-    "type": "String",
-    "options": [
-      "auto",
-      "on",
-      "off"
-    ],
-    "defaultValue": "off",
-    "description": "闪光灯，值为 auto、on、off",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "EventHandle",
-    "description": "用户不允许使用摄像头或扫码失败时触发",
-    "required": false
-  },
-  {
-    "name": "bindload",
-    "type": "EventHandle",
-    "description": "AR 加载成功时触发",
-    "required": false
-  },
-  {
-    "name": "bindmessage",
-    "type": "EventHandle",
-    "description": "开发者制作 AR 项目时可自定义按键，用户点击时会收到事件和数据，用户自定义事件格式参见代码示例 2：用户自定义事件",
-    "required": false
-  },
-  {
-    "name": "bindscancode",
-    "type": "EventHandle",
-    "description": "扫描识图结束后触发",
-    "required": false
+{
+  "title": "ar-camera",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "AR 项目唯一标识，在 DuMixAR 内容开放平台上传生成 AR 项目后获取 AR Key"
+    },
+    "type": {
+      "type": "string",
+      "description": "AR 相机类型，在 DuMixAR 内容开放平台上传生成 AR 项目后获取 AR Type：\n2D 跟踪类型：0\nSLAM 类型：5\nIMU 类型：8"
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯，值为 auto、on、off"
+    },
+    "binderror": {
+      "type": "eventHandle",
+      "description": "用户不允许使用摄像头或扫码失败时触发"
+    },
+    "bindload": {
+      "type": "eventHandle",
+      "description": "AR 加载成功时触发"
+    },
+    "bindmessage": {
+      "type": "eventHandle",
+      "description": "开发者制作 AR 项目时可自定义按键，用户点击时会收到事件和数据，用户自定义事件格式参见代码示例 2：用户自定义事件"
+    },
+    "bindscancode": {
+      "type": "eventHandle",
+      "description": "扫描识图结束后触发"
+    }
   }
-]
+}

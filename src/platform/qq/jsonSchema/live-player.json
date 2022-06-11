@@ -1,109 +1,70 @@
-[
-  {
-    "name": "src",
-    "type": "string",
-    "description": "音视频地址。目前仅支持flv, rtmp格式",
-    "required": false
-  },
-  {
-    "name": "mode",
-    "type": "string",
-    "defaultValue": "live",
-    "description": "模式",
-    "required": false
-  },
-  {
-    "name": "autoplay",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "自动播放",
-    "required": false
-  },
-  {
-    "name": "muted",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否静音",
-    "required": false
-  },
-  {
-    "name": "orientation",
-    "type": "string",
-    "defaultValue": "vertical",
-    "description": "画面方向",
-    "required": false
-  },
-  {
-    "name": "object-fit",
-    "type": "string",
-    "defaultValue": "contain",
-    "description": "填充模式，可选值有contain, fillCrop",
-    "required": false
-  },
-  {
-    "name": "min-cache",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "最小缓冲区，单位s",
-    "required": false
-  },
-  {
-    "name": "max-cache",
-    "type": "number",
-    "defaultValue": "3",
-    "description": "最大缓冲区，单位s",
-    "required": false
-  },
-  {
-    "name": "sound-mode",
-    "type": "string",
-    "defaultValue": "speaker",
-    "description": "声音输出方式",
-    "required": false
-  },
-  {
-    "name": "auto-pause-if-navigate",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放",
-    "required": false
-  },
-  {
-    "name": "auto-pause-if-open-native",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放",
-    "required": false
-  },
-  {
-    "name": "enable-metadata",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否回调metadata",
-    "required": false
-  },
-  {
-    "name": "bindstatechange",
-    "type": "eventhandle",
-    "description": "播放状态变化事件，detail = {code}",
-    "required": false
-  },
-  {
-    "name": "bindfullscreenchange",
-    "type": "eventhandle",
-    "description": "全屏变化事件，detail = {direction, fullScreen}",
-    "required": false
-  },
-  {
-    "name": "bindnetstatus",
-    "type": "eventhandle",
-    "description": "网络状态通知，detail = {info}",
-    "required": false
-  },
-  {
-    "name": "bindmetadatachange",
-    "type": "eventhandle",
-    "description": "metadata通知，detail = {info}",
-    "required": false
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "音视频地址。目前仅支持flv, rtmp格式"
+    },
+    "mode": {
+      "type": "string",
+      "description": "模式"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "自动播放"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面方向"
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "填充模式，可选值有contain, fillCrop"
+    },
+    "min-cache": {
+      "type": "number",
+      "description": "最小缓冲区，单位s"
+    },
+    "max-cache": {
+      "type": "number",
+      "description": "最大缓冲区，单位s"
+    },
+    "sound-mode": {
+      "type": "string",
+      "description": "声音输出方式"
+    },
+    "auto-pause-if-navigate": {
+      "type": "boolean",
+      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放"
+    },
+    "auto-pause-if-open-native": {
+      "type": "boolean",
+      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放"
+    },
+    "enable-metadata": {
+      "type": "boolean",
+      "description": "是否回调metadata"
+    },
+    "bindstatechange": {
+      "type": "eventhandle",
+      "description": "播放状态变化事件，detail = {code}"
+    },
+    "bindfullscreenchange": {
+      "type": "eventhandle",
+      "description": "全屏变化事件，detail = {direction, fullScreen}"
+    },
+    "bindnetstatus": {
+      "type": "eventhandle",
+      "description": "网络状态通知，detail = {info}"
+    },
+    "bindmetadatachange": {
+      "type": "eventhandle",
+      "description": "metadata通知，detail = {info}"
+    }
   }
-]
+}

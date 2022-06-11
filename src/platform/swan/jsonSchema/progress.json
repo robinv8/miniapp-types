@@ -1,88 +1,59 @@
-[
-  {
-    "name": "percent",
-    "type": "Number",
-    "defaultValue": "0",
-    "description": "百分比 0~100%",
-    "required": false
-  },
-  {
-    "name": "show-info",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "在进度条右侧显示百分比",
-    "required": false
-  },
-  {
-    "name": "stroke-width",
-    "type": [
-      "Number",
-      "String"
-    ],
-    "defaultValue": "2",
-    "description": "进度条的高度（单位：px）",
-    "required": false
-  },
-  {
-    "name": "border-radius",
-    "type": [
-      "Number",
-      "String"
-    ],
-    "defaultValue": "0",
-    "description": "圆角大小（单位：px）",
-    "required": false
-  },
-  {
-    "name": "font-size",
-    "type": [
-      "Number",
-      "String"
-    ],
-    "defaultValue": "16",
-    "description": "右侧百分比字体大小（单位：px）",
-    "required": false
-  },
-  {
-    "name": "color",
-    "type": "Color",
-    "defaultValue": "#09BB07",
-    "description": "进度条颜色（推荐使用 active-color）",
-    "required": false
-  },
-  {
-    "name": "active-color",
-    "type": "Color",
-    "defaultValue": "#09BB07",
-    "description": "已选择的进度条的颜色",
-    "required": false
-  },
-  {
-    "name": "background-color",
-    "type": "Color",
-    "defaultValue": "#E6E6E6",
-    "description": "未选择的进度条的颜色",
-    "required": false
-  },
-  {
-    "name": "active",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "进度条从左往右的动画",
-    "required": false
-  },
-  {
-    "name": "active-mode",
-    "type": "String",
-    "defaultValue": "backwards",
-    "description": "backwards：动画从头播；forwards：动画从上次结束点接着播",
-    "required": false
-  },
-  {
-    "name": "duration",
-    "type": "Number",
-    "defaultValue": "20",
-    "description": "进度增加 1% 所需毫秒数",
-    "required": false
+{
+  "title": "progress",
+  "type": "object",
+  "properties": {
+    "percent": {
+      "type": "number",
+      "description": "百分比 0~100%"
+    },
+    "show-info": {
+      "type": "boolean",
+      "description": "在进度条右侧显示百分比"
+    },
+    "stroke-width": {
+      "type": [
+        "Number",
+        "String"
+      ],
+      "description": "进度条的高度（单位：px）"
+    },
+    "border-radius": {
+      "type": [
+        "Number",
+        "String"
+      ],
+      "description": "圆角大小（单位：px）"
+    },
+    "font-size": {
+      "type": [
+        "Number",
+        "String"
+      ],
+      "description": "右侧百分比字体大小（单位：px）"
+    },
+    "color": {
+      "type": "color",
+      "description": "进度条颜色（推荐使用 active-color）"
+    },
+    "active-color": {
+      "type": "color",
+      "description": "已选择的进度条的颜色"
+    },
+    "background-color": {
+      "type": "color",
+      "description": "未选择的进度条的颜色"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "进度条从左往右的动画"
+    },
+    "active-mode": {
+      "type": "string",
+      "description": "backwards：动画从头播；forwards：动画从上次结束点接着播"
+    },
+    "duration": {
+      "type": "number",
+      "description": "进度增加 1% 所需毫秒数"
+    }
   }
-]
+}

@@ -1,166 +1,93 @@
-[
-  {
-    "name": "size",
-    "type": "String",
-    "options": [
-      "default",
-      "mini"
-    ],
-    "defaultValue": "default",
-    "description": "大小",
-    "required": false
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "options": [
-      "primary",
-      "default",
-      "warn"
-    ],
-    "defaultValue": "default",
-    "description": "类型",
-    "required": false
-  },
-  {
-    "name": "plain",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "按钮是否镂空，背景色透明",
-    "required": false
-  },
-  {
-    "name": "form-type",
-    "type": "String",
-    "options": [
-      "buttonclick",
-      "submit",
-      "reset"
-    ],
-    "defaultValue": "buttonclick",
-    "description": "用于<form>组件，点击分别会触发<form>组件的 submit/reset 事件",
-    "required": false
-  },
-  {
-    "name": "open-type",
-    "type": "String",
-    "options": [
-      "share",
-      "getUserInfo",
-      "getPhoneNumber",
-      "openSetting",
-      "chooseAddress",
-      "chooseInvoiceTitle",
-      "contact",
-      "login",
-      "subscribe"
-    ],
-    "description": "百度 App 开放能力，比如分享、获取用户信息等等",
-    "required": false
-  },
-  {
-    "name": "hover-class",
-    "type": "String",
-    "defaultValue": "button-hover",
-    "description": "点击态。指定按钮按下去的样式类。当hover-class=\"none\"时，没有点击态效果。button-hover 默认为{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}",
-    "required": false
-  },
-  {
-    "name": "hover-stop-propagation",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "指定是否阻止本节点的祖先节点出现点击态",
-    "required": false
-  },
-  {
-    "name": "hover-start-time",
-    "type": "Number",
-    "defaultValue": "20",
-    "description": "按住后多久出现点击态（单位：毫秒）",
-    "required": false
-  },
-  {
-    "name": "hover-stay-time",
-    "type": "Number",
-    "defaultValue": "70",
-    "description": "手指松开后点击态保留时间（单位：毫秒）",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "loading",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "名称前是否带有 loading 图标",
-    "required": false
-  },
-  {
-    "name": "bindgetphonenumber",
-    "type": "EventHandle",
-    "description": "获取用户手机号回调。和 open-type 搭配使用， 使用时机：open-type=\"getPhoneNumber\"。具体申请方法请见：获取用户手机号权限申请",
-    "required": false
-  },
-  {
-    "name": "bindgetuserinfo",
-    "type": "EventHandle",
-    "description": "用户点击该按钮时，会返回获取到的用户信息，可以从返回参数的 detail 中获取到的值。当 errMsg 为getUserInfo:ok时即为获取成功；其中 userInfo 字段中包含获取到的用户头像地址（avatarUrl）、性别（gender）、昵称（nickName）。和 open-type 搭配使用， 使用时机：open-type=\"getUserInfo\"",
-    "required": false
-  },
-  {
-    "name": "bindopensetting",
-    "type": "EventHandle",
-    "description": "在打开授权设置页后回调，使用时机：open-type=\"openSetting\"",
-    "required": false
-  },
-  {
-    "name": "bindcontact",
-    "type": "EventHandle",
-    "description": "客服消息回调，使用时机：open-type=\"contact\"",
-    "required": false
-  },
-  {
-    "name": "bindchooseaddress",
-    "type": "EventHandle",
-    "description": "用户点击该按钮时，调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址，从返回参数的 detail 中获取，和 swan.chooseAddress 一样的。和 open-type 搭配使用，使用时机：open-type=\"chooseAddress\"",
-    "required": false
-  },
-  {
-    "name": "bindchooseinvoicetitle",
-    "type": "EventHandle",
-    "description": "用户点击该按钮时，选择用户的发票抬头，和 swan.chooseInvoiceTitle 一样的。和 open-type 搭配使用，使用时机：open-type=\"chooseInvoiceTitle\"",
-    "required": false
-  },
-  {
-    "name": "bindlogin",
-    "type": "EventHandle",
-    "description": "登录回调，和 open-type 搭配使用，使用时机：open-type=\"login\"。可以通过返回参数的 detail 判断是否登录成功，当 errMsg 为'login:ok'时即为成功。如想获取登录凭证请使用 swan.getLoginCode",
-    "required": false
-  },
-  {
-    "name": "template-id",
-    "type": [
-      "String",
-      "Array.<string>"
-    ],
-    "description": "发送订阅类模板消息所用的模板库标题 ID ，可通过 getTemplateLibraryList 获取\n当参数类型为 Array 时，可传递 1~3 个模板库标题 ID",
-    "required": false
-  },
-  {
-    "name": "subscribe-id",
-    "type": "String",
-    "description": "发送订阅类模板消息时所使用的唯一标识符，内容由开发者自定义，用来标识订阅场景\n注意：同一用户在同一 subscribe-id 下的多次授权不累积下发权限，只能下发一条。若要订阅多条，需要不同 subscribe-id",
-    "required": false
-  },
-  {
-    "name": "bindsubscribe",
-    "type": "EventHandle",
-    "description": "订阅消息授权回调，和 open-type 搭配使用，使用时机：open-type=\"subscribe\"",
-    "required": false
+{
+  "title": "button",
+  "type": "object",
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "大小"
+    },
+    "type": {
+      "type": "string",
+      "description": "类型"
+    },
+    "plain": {
+      "type": "boolean",
+      "description": "按钮是否镂空，背景色透明"
+    },
+    "form-type": {
+      "type": "string",
+      "description": "用于<form>组件，点击分别会触发<form>组件的 submit/reset 事件"
+    },
+    "open-type": {
+      "type": "string",
+      "description": "百度 App 开放能力，比如分享、获取用户信息等等"
+    },
+    "hover-class": {
+      "type": "string",
+      "description": "点击态。指定按钮按下去的样式类。当hover-class=\"none\"时，没有点击态效果。button-hover 默认为{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "指定是否阻止本节点的祖先节点出现点击态"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多久出现点击态（单位：毫秒）"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击态保留时间（单位：毫秒）"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "loading": {
+      "type": "boolean",
+      "description": "名称前是否带有 loading 图标"
+    },
+    "bindgetphonenumber": {
+      "type": "eventHandle",
+      "description": "获取用户手机号回调。和 open-type 搭配使用， 使用时机：open-type=\"getPhoneNumber\"。具体申请方法请见：获取用户手机号权限申请"
+    },
+    "bindgetuserinfo": {
+      "type": "eventHandle",
+      "description": "用户点击该按钮时，会返回获取到的用户信息，可以从返回参数的 detail 中获取到的值。当 errMsg 为getUserInfo:ok时即为获取成功；其中 userInfo 字段中包含获取到的用户头像地址（avatarUrl）、性别（gender）、昵称（nickName）。和 open-type 搭配使用， 使用时机：open-type=\"getUserInfo\""
+    },
+    "bindopensetting": {
+      "type": "eventHandle",
+      "description": "在打开授权设置页后回调，使用时机：open-type=\"openSetting\""
+    },
+    "bindcontact": {
+      "type": "eventHandle",
+      "description": "客服消息回调，使用时机：open-type=\"contact\""
+    },
+    "bindchooseaddress": {
+      "type": "eventHandle",
+      "description": "用户点击该按钮时，调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址，从返回参数的 detail 中获取，和 swan.chooseAddress 一样的。和 open-type 搭配使用，使用时机：open-type=\"chooseAddress\""
+    },
+    "bindchooseinvoicetitle": {
+      "type": "eventHandle",
+      "description": "用户点击该按钮时，选择用户的发票抬头，和 swan.chooseInvoiceTitle 一样的。和 open-type 搭配使用，使用时机：open-type=\"chooseInvoiceTitle\""
+    },
+    "bindlogin": {
+      "type": "eventHandle",
+      "description": "登录回调，和 open-type 搭配使用，使用时机：open-type=\"login\"。可以通过返回参数的 detail 判断是否登录成功，当 errMsg 为'login:ok'时即为成功。如想获取登录凭证请使用 swan.getLoginCode"
+    },
+    "template-id": {
+      "type": [
+        "String",
+        "Array.<string>"
+      ],
+      "description": "发送订阅类模板消息所用的模板库标题 ID ，可通过 getTemplateLibraryList 获取\n当参数类型为 Array 时，可传递 1~3 个模板库标题 ID"
+    },
+    "subscribe-id": {
+      "type": "string",
+      "description": "发送订阅类模板消息时所使用的唯一标识符，内容由开发者自定义，用来标识订阅场景\n注意：同一用户在同一 subscribe-id 下的多次授权不累积下发权限，只能下发一条。若要订阅多条，需要不同 subscribe-id"
+    },
+    "bindsubscribe": {
+      "type": "eventHandle",
+      "description": "订阅消息授权回调，和 open-type 搭配使用，使用时机：open-type=\"subscribe\""
+    }
   }
-]
+}

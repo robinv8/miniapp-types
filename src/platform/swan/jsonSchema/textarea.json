@@ -1,162 +1,98 @@
-[
-  {
-    "name": "value",
-    "type": "String",
-    "description": "输入框的内容，若要动态设置输入框内容，需设置value = \"{= value =}\"（注：若要取键盘输入后的 value 请通过 bindinput 获取）",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "maxlength",
-    "type": "Number",
-    "defaultValue": "140",
-    "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
-    "required": false
-  },
-  {
-    "name": "placeholder",
-    "type": "String",
-    "description": "输入框为空时占位符。其样式暂时只支持设置 text-align、font-size、font-weight、color",
-    "required": false
-  },
-  {
-    "name": "placeholder-style",
-    "type": "String",
-    "description": "指定 placeholder 的样式",
-    "required": false
-  },
-  {
-    "name": "placeholder-class",
-    "type": "String",
-    "description": "指定 placeholder 的样式类",
-    "required": false
-  },
-  {
-    "name": "auto-height",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "是否自动增高，设置 auto-height 时，style.height 不生效",
-    "required": false
-  },
-  {
-    "name": "cursor",
-    "type": "Number",
-    "defaultValue": "-1",
-    "description": "指定 focus 时的光标位置，自动聚焦时才会生效",
-    "required": false
-  },
-  {
-    "name": "auto-focus",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "自动聚焦，调起键盘",
-    "required": false
-  },
-  {
-    "name": "confirm-type",
-    "type": "String",
-    "options": [
-      "default",
-      "done",
-      "send",
-      "search",
-      "next",
-      "go"
-    ],
-    "defaultValue": "default",
-    "description": "设置键盘右下角按钮的文字",
-    "required": false
-  },
-  {
-    "name": "confirm-hold",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "点击键盘右下角按钮时是否保持键盘不收起",
-    "required": false
-  },
-  {
-    "name": "focus",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "获取焦点，调起键盘",
-    "required": false
-  },
-  {
-    "name": "fixed",
-    "type": "Boolean",
-    "defaultValue": "false",
-    "description": "如果 textarea 是在一个position: fixed的区域，需要显示指定属性 fixed 为 true",
-    "required": false
-  },
-  {
-    "name": "cursor-spacing",
-    "type": "Number",
-    "defaultValue": "0",
-    "description": "指定光标与键盘的距离（单位：px）。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
-    "required": false
-  },
-  {
-    "name": "show-confirm-bar",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "是否显示键盘上方带有“完成”按钮那一栏",
-    "required": false
-  },
-  {
-    "name": "selection-start",
-    "type": "Number",
-    "defaultValue": "-1",
-    "description": "光标起始位置，自动聚焦时有效，需与 selection-end 搭配使用",
-    "required": false
-  },
-  {
-    "name": "selection-end",
-    "type": "Number",
-    "defaultValue": "-1",
-    "description": "光标结束位置，自动聚焦时有效，需与 selection-start 搭配使用",
-    "required": false
-  },
-  {
-    "name": "adjust-position",
-    "type": "Boolean",
-    "defaultValue": "true",
-    "description": "键盘弹起时，是否自动上推页面",
-    "required": false
-  },
-  {
-    "name": "bindfocus",
-    "type": "EventHandle",
-    "description": "输入框聚焦时触发，event.detail = {value, height}，height 为键盘高度",
-    "required": false
-  },
-  {
-    "name": "bindblur",
-    "type": "EventHandle",
-    "description": "输入框失去焦点时触发，event.detail = {value, cursor}",
-    "required": false
-  },
-  {
-    "name": "bindlinechange",
-    "type": "EventHandle",
-    "description": "输入框行数变化时调用，event.detail = {height: 0, heightRpx: 0, lineCount: 0, lineHeight: 0}",
-    "required": false
-  },
-  {
-    "name": "bindinput",
-    "type": "EventHandle",
-    "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor}，bindinput 处理函数的返回值并不会反映到 textarea 上",
-    "required": false
-  },
-  {
-    "name": "bindconfirm",
-    "type": "EventHandle",
-    "description": "点击完成时，触发 confirm 事件，event.detail = {value: value}",
-    "required": false
+{
+  "title": "textarea",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "输入框的内容，若要动态设置输入框内容，需设置value = \"{= value =}\"（注：若要取键盘输入后的 value 请通过 bindinput 获取）"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "maxlength": {
+      "type": "number",
+      "description": "最大输入长度，设置为 -1 的时候不限制最大长度"
+    },
+    "placeholder": {
+      "type": "string",
+      "description": "输入框为空时占位符。其样式暂时只支持设置 text-align、font-size、font-weight、color"
+    },
+    "placeholder-style": {
+      "type": "string",
+      "description": "指定 placeholder 的样式"
+    },
+    "placeholder-class": {
+      "type": "string",
+      "description": "指定 placeholder 的样式类"
+    },
+    "auto-height": {
+      "type": "boolean",
+      "description": "是否自动增高，设置 auto-height 时，style.height 不生效"
+    },
+    "cursor": {
+      "type": "number",
+      "description": "指定 focus 时的光标位置，自动聚焦时才会生效"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "自动聚焦，调起键盘"
+    },
+    "confirm-type": {
+      "type": "string",
+      "description": "设置键盘右下角按钮的文字"
+    },
+    "confirm-hold": {
+      "type": "boolean",
+      "description": "点击键盘右下角按钮时是否保持键盘不收起"
+    },
+    "focus": {
+      "type": "boolean",
+      "description": "获取焦点，调起键盘"
+    },
+    "fixed": {
+      "type": "boolean",
+      "description": "如果 textarea 是在一个position: fixed的区域，需要显示指定属性 fixed 为 true"
+    },
+    "cursor-spacing": {
+      "type": "number",
+      "description": "指定光标与键盘的距离（单位：px）。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离"
+    },
+    "show-confirm-bar": {
+      "type": "boolean",
+      "description": "是否显示键盘上方带有“完成”按钮那一栏"
+    },
+    "selection-start": {
+      "type": "number",
+      "description": "光标起始位置，自动聚焦时有效，需与 selection-end 搭配使用"
+    },
+    "selection-end": {
+      "type": "number",
+      "description": "光标结束位置，自动聚焦时有效，需与 selection-start 搭配使用"
+    },
+    "adjust-position": {
+      "type": "boolean",
+      "description": "键盘弹起时，是否自动上推页面"
+    },
+    "bindfocus": {
+      "type": "eventHandle",
+      "description": "输入框聚焦时触发，event.detail = {value, height}，height 为键盘高度"
+    },
+    "bindblur": {
+      "type": "eventHandle",
+      "description": "输入框失去焦点时触发，event.detail = {value, cursor}"
+    },
+    "bindlinechange": {
+      "type": "eventHandle",
+      "description": "输入框行数变化时调用，event.detail = {height: 0, heightRpx: 0, lineCount: 0, lineHeight: 0}"
+    },
+    "bindinput": {
+      "type": "eventHandle",
+      "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor}，bindinput 处理函数的返回值并不会反映到 textarea 上"
+    },
+    "bindconfirm": {
+      "type": "eventHandle",
+      "description": "点击完成时，触发 confirm 事件，event.detail = {value: value}"
+    }
   }
-]
+}

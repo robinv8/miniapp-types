@@ -1,162 +1,89 @@
-[
-  {
-    "name": "src",
-    "type": "string",
-    "description": "音视频地址。目前仅支持 `flv`, `rtmp` 格式",
-    "required": false
-  },
-  {
-    "name": "mode",
-    "type": "string",
-    "options": [
-      "live",
-      "RTC"
-    ],
-    "defaultValue": "live",
-    "description": "模式",
-    "required": false
-  },
-  {
-    "name": "autoplay",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "自动播放",
-    "required": false
-  },
-  {
-    "name": "muted",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否静音",
-    "required": false
-  },
-  {
-    "name": "orientation",
-    "type": "string",
-    "options": [
-      "vertical",
-      "horizontal"
-    ],
-    "defaultValue": "vertical",
-    "description": "画面方向",
-    "required": false
-  },
-  {
-    "name": "object-fit",
-    "type": "string",
-    "options": [
-      "contain",
-      "fillCrop"
-    ],
-    "defaultValue": "contain",
-    "description": "填充模式，可选值有 `contain`，`fillCrop`",
-    "required": false
-  },
-  {
-    "name": "background-mute",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "进入后台时是否静音（已废弃，默认退后台静音）",
-    "required": false
-  },
-  {
-    "name": "min-cache",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "最小缓冲区，单位s（RTC 模式推荐 0.2s）",
-    "required": false
-  },
-  {
-    "name": "max-cache",
-    "type": "number",
-    "defaultValue": "3",
-    "description": "最大缓冲区，单位s（RTC 模式推荐 0.8s）。缓冲区用来抵抗网络波动，缓冲数据越多，网络抗性越好，但时延越大。",
-    "required": false
-  },
-  {
-    "name": "sound-mode",
-    "type": "string",
-    "options": [
-      "speaker",
-      "ear"
-    ],
-    "defaultValue": "speaker",
-    "description": "声音输出方式",
-    "required": false
-  },
-  {
-    "name": "auto-pause-if-navigate",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的实时音视频播放",
-    "required": false
-  },
-  {
-    "name": "auto-pause-if-open-native",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的实时音视频播放",
-    "required": false
-  },
-  {
-    "name": "picture-in-picture-mode",
-    "type": [
-      "string",
-      "Array"
-    ],
-    "options": [
-      "[]",
-      "push",
-      "pop"
-    ],
-    "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）",
-    "required": false
-  },
-  {
-    "name": "referrer-policy",
-    "type": "string",
-    "options": [
-      "origin",
-      "no-referrer"
-    ],
-    "defaultValue": "no-referrer",
-    "description": "格式固定为 `https://servicewechat.com/{appid}/{version}/page-frame.html`，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
-    "required": false
-  },
-  {
-    "name": "bindstatechange",
-    "type": "eventhandle",
-    "description": "播放状态变化事件，detail = {code}",
-    "required": false
-  },
-  {
-    "name": "bindfullscreenchange",
-    "type": "eventhandle",
-    "description": "全屏变化事件，detail = {direction, fullScreen}",
-    "required": false
-  },
-  {
-    "name": "bindnetstatus",
-    "type": "eventhandle",
-    "description": "网络状态通知，detail = {info}",
-    "required": false
-  },
-  {
-    "name": "bindaudiovolumenotify",
-    "type": "eventhandler",
-    "description": "播放音量大小通知，detail = {}",
-    "required": false
-  },
-  {
-    "name": "bindenterpictureinpicture",
-    "type": "eventhandler",
-    "description": "播放器进入小窗",
-    "required": false
-  },
-  {
-    "name": "bindleavepictureinpicture",
-    "type": "eventhandler",
-    "description": "播放器退出小窗",
-    "required": false
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "音视频地址。目前仅支持 flv, rtmp 格式"
+    },
+    "mode": {
+      "type": "string",
+      "description": "模式"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "自动播放"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面方向"
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "填充模式，可选值有 contain，fillCrop"
+    },
+    "background-mute": {
+      "type": "boolean",
+      "description": "进入后台时是否静音（已废弃，默认退后台静音）"
+    },
+    "min-cache": {
+      "type": "number",
+      "description": "最小缓冲区，单位s（RTC 模式推荐 0.2s）"
+    },
+    "max-cache": {
+      "type": "number",
+      "description": "最大缓冲区，单位s（RTC 模式推荐 0.8s）。缓冲区用来抵抗网络波动，缓冲数据越多，网络抗性越好，但时延越大。"
+    },
+    "sound-mode": {
+      "type": "string",
+      "description": "声音输出方式"
+    },
+    "auto-pause-if-navigate": {
+      "type": "boolean",
+      "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的实时音视频播放"
+    },
+    "auto-pause-if-open-native": {
+      "type": "boolean",
+      "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的实时音视频播放"
+    },
+    "picture-in-picture-mode": {
+      "type": [
+        "string",
+        "Array"
+      ],
+      "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）"
+    },
+    "referrer-policy": {
+      "type": "string",
+      "description": "格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；"
+    },
+    "bindstatechange": {
+      "type": "eventhandle",
+      "description": "播放状态变化事件，detail = {code}"
+    },
+    "bindfullscreenchange": {
+      "type": "eventhandle",
+      "description": "全屏变化事件，detail = {direction, fullScreen}"
+    },
+    "bindnetstatus": {
+      "type": "eventhandle",
+      "description": "网络状态通知，detail = {info}"
+    },
+    "bindaudiovolumenotify": {
+      "type": "eventhandler",
+      "description": "播放音量大小通知，detail = {}"
+    },
+    "bindenterpictureinpicture": {
+      "type": "eventhandler",
+      "description": "播放器进入小窗"
+    },
+    "bindleavepictureinpicture": {
+      "type": "eventhandler",
+      "description": "播放器退出小窗"
+    }
   }
-]
+}

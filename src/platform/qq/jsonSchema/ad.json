@@ -1,139 +1,54 @@
-[
-  {
-    "name": "unit-id",
-    "type": "String",
-    "description": "广告单元 id，可在QQ 小程序管理后台的流量主模块新建",
-    "required": true
-  },
-  {
-    "name": "type",
-    "type": "String",
-    "options": ["banner", "card", "feeds", "block"],
-    "defaultValue": "banner",
-    "description": "广告类型",
-    "required": false
-  },
-  {
-    "name": "ad-left",
-    "type": "Number",
-    "description": "type 为 feeds 时广告左边距（px），必须大于 0",
-    "required": false
-  },
-  {
-    "name": "ad-top",
-    "type": "Number",
-    "description": "type 为 feeds 时广告上边距（px），必须大于 0",
-    "required": false
-  },
-  {
-    "name": "ad-width",
-    "type": "Number",
-    "description": "type 为 feeds 时广告宽度（px），默认 100%，最大值为屏幕宽度，最小值为 265",
-    "required": false
-  },
-  {
-    "name": "ad-height",
-    "type": "Number",
-    "description": "type 为 feeds 时广告高度（px），最小 85，最大 160",
-    "required": false
-  },
-  {
-    "name": "block-size",
-    "type": "Number",
-    "defaultValue": "1",
-    "description": "type 为 block 时请求积木广告数量（展示以实际拉取广告数量为准）",
-    "required": false
-  },
-  {
-    "name": "block-orientation",
-    "type": "String",
-    "options": ["vertical", "landscape"],
-    "defaultValue": "landscape",
-    "description": "type 为 block 时请求积木广告排列方向",
-    "required": false
-  },
-  {
-    "name": "bindsize",
-    "type": "eventhandle",
-    "description": "type 为 feeds 时广告实际宽高回调，event.detail = {width:296,height:150}",
-    "required": false
-  },
-  {
-    "name": "bindload",
-    "type": "eventhandle",
-    "description": "广告加载成功的回调",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "eventhandle",
-    "description": "广告加载失败的回调，event.detail = {errCode: 1002}",
-    "required": false,
-    "others": {
-      "errCode": [
-        {
-          "code": "1000",
-          "illustrate": "广告单元无效",
-          "reason": "该项错误不是开发者的异常情况",
-          "solution": "一般情况下忽略一段时间即可恢复。"
-        },
-        {
-          "code": "1001",
-          "illustrate": "参数错误",
-          "reason": "使用方法错误",
-          "solution": "可以前往 q.qq.com 确认具体教程（小程序和小游戏分别有各自的教程，可以在顶部选项中，“设计”一栏的右侧进行切换。"
-        },
-        {
-          "code": "1002",
-          "illustrate": "广告单元无效",
-          "reason": "可能是拼写错误、或者误用了其他APP的广告ID",
-          "solution": "请重新前往 q.qq.com 确认广告位ID。"
-        },
-        {
-          "code": "1003",
-          "illustrate": "内部错误",
-          "reason": "该项错误不是开发者的异常情况",
-          "solution": "一般情况下忽略一段时间即可恢复。"
-        },
-        {
-          "code": "1004",
-          "illustrate": "无适合的广告",
-          "reason": "广告不是每一次都会出现，这次没有出现可能是由于该用户不适合浏览广告",
-          "solution": "属于正常情况，且开发者需要针对这种情况做形态上的兼容。"
-        },
-        {
-          "code": "1005",
-          "illustrate": "广告组件审核中",
-          "reason": "你的广告正在被审核，无法展现广告",
-          "solution": "请前往 q.qq.com 确认审核状态，且开发者需要针对这种情况做形态上的兼容。"
-        },
-        {
-          "code": "1006",
-          "illustrate": "广告组件被驳回",
-          "reason": "你的广告审核失败，无法展现广告",
-          "solution": "请前往 q.qq.com 确认审核状态，且开发者需要针对这种情况做形态上的兼容。"
-        },
-        {
-          "code": "1007",
-          "illustrate": "广告组件被驳回",
-          "reason": "你的广告能力已经被封禁，封禁期间无法展现广告",
-          "solution": "请前往 q.qq.com 确认小程序广告封禁状态。"
-        },
-        {
-          "code": "1008",
-          "illustrate": "广告单元已关闭",
-          "reason": "该广告位的广告能力已经被关闭",
-          "solution": "请前往 q.qq.com 重新打开对应广告位的展现。"
-        }
-      ]
+{
+  "title": "ad",
+  "type": "object",
+  "properties": {
+    "unit-id": {
+      "type": "string",
+      "description": "广告单元 id，可在QQ 小程序管理后台的流量主模块新建"
+    },
+    "type": {
+      "type": "string",
+      "description": "广告类型"
+    },
+    "ad-left": {
+      "type": "number",
+      "description": "type 为 feeds 时广告左边距（px），必须大于 0"
+    },
+    "ad-top": {
+      "type": "number",
+      "description": "type 为 feeds 时广告上边距（px），必须大于 0"
+    },
+    "ad-width": {
+      "type": "number",
+      "description": "type 为 feeds 时广告宽度（px），默认 100%，最大值为屏幕宽度，最小值为 265"
+    },
+    "ad-height": {
+      "type": "number",
+      "description": "type 为 feeds 时广告高度（px），最小 85，最大 160"
+    },
+    "block-size": {
+      "type": "number",
+      "description": "type 为 block 时请求积木广告数量（展示以实际拉取广告数量为准）"
+    },
+    "block-orientation": {
+      "type": "string",
+      "description": "type 为 block 时请求积木广告排列方向"
+    },
+    "bindsize": {
+      "type": "eventhandle",
+      "description": "type 为 feeds 时广告实际宽高回调，event.detail = {width:296,height:150}"
+    },
+    "bindload": {
+      "type": "eventhandle",
+      "description": "广告加载成功的回调"
+    },
+    "binderror": {
+      "type": "eventhandle",
+      "description": "广告加载失败的回调，event.detail = {errCode: 1002}"
+    },
+    "test-banner-type": {
+      "type": "string",
+      "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图"
     }
-  },
-  {
-    "name": "test-banner-type",
-    "type": "String",
-    "options": ["one", "three"],
-    "defaultValue": "three",
-    "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图",
-    "required": false
   }
-]
+}

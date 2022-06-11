@@ -1,175 +1,110 @@
-[
-  {
-    "name": "url",
-    "type": "string",
-    "description": "推流地址。目前仅支持 rtmp 格式",
-    "required": false
-  },
-  {
-    "name": "mode",
-    "type": "string",
-    "defaultValue": "RTC",
-    "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）",
-    "required": false
-  },
-  {
-    "name": "autopush",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "自动推流",
-    "required": false
-  },
-  {
-    "name": "muted",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否静音",
-    "required": false
-  },
-  {
-    "name": "enable-camera",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "开启摄像头",
-    "required": false
-  },
-  {
-    "name": "auto-focus",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "自动聚集",
-    "required": false
-  },
-  {
-    "name": "orientation",
-    "type": "string",
-    "defaultValue": "vertical",
-    "description": "画面方向",
-    "required": false
-  },
-  {
-    "name": "beauty",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "美颜，取值范围 0-9 ，0 表示关闭",
-    "required": false
-  },
-  {
-    "name": "whiteness",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "美白，取值范围 0-9 ，0 表示关闭",
-    "required": false
-  },
-  {
-    "name": "aspect",
-    "type": "string",
-    "defaultValue": "9:16",
-    "description": "宽高比，可选值有 3:4, 9:16",
-    "required": false
-  },
-  {
-    "name": "min-bitrate",
-    "type": "number",
-    "defaultValue": "200",
-    "description": "最小码率",
-    "required": false
-  },
-  {
-    "name": "max-bitrate",
-    "type": "number",
-    "defaultValue": "1000",
-    "description": "最大码率",
-    "required": false
-  },
-  {
-    "name": "audio-quality",
-    "type": "string",
-    "defaultValue": "high",
-    "description": "高音质(48KHz)或低音质(16KHz)，值为high, low",
-    "required": false
-  },
-  {
-    "name": "waiting-image",
-    "type": "string",
-    "description": "进入后台时推流的等待画面",
-    "required": false
-  },
-  {
-    "name": "waiting-image-hash",
-    "type": "string",
-    "description": "等待画面资源的MD5值",
-    "required": false
-  },
-  {
-    "name": "zoom",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "调整焦距",
-    "required": false
-  },
-  {
-    "name": "device-position",
-    "type": "string",
-    "defaultValue": "front",
-    "description": "前置或后置，值为front, back",
-    "required": false
-  },
-  {
-    "name": "background-mute",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "进入后台时是否静音",
-    "required": false
-  },
-  {
-    "name": "mirror",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到",
-    "required": false
-  },
-  {
-    "name": "bindstatechange",
-    "type": "eventhandle",
-    "description": "状态变化事件，detail = {code}",
-    "required": false
-  },
-  {
-    "name": "bindnetstatus",
-    "type": "eventhandle",
-    "description": "网络状态通知，detail = {info}",
-    "required": false
-  },
-  {
-    "name": "binderror",
-    "type": "eventhandle",
-    "description": "渲染错误事件，detail = {errMsg, errCode}",
-    "required": false
-  },
-  {
-    "name": "bindbgmstart",
-    "type": "eventhandle",
-    "description": "背景音开始播放时触发",
-    "required": false
-  },
-  {
-    "name": "bindbgmprogress",
-    "type": "eventhandle",
-    "description": "背景音进度变化时触发，detail = {progress, duration}",
-    "required": false
-  },
-  {
-    "name": "bindbgmcomplete",
-    "type": "eventhandle",
-    "description": "背景音播放完成时触发",
-    "required": false
-  },
-  {
-    "name": "audio-reverb-type",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "混响模式(0～6)：\"关闭混响\", \"KTV\", \"小房间\", \"大会堂\", \"低沉\", \"洪亮\", \"磁性\"",
-    "required": false
+{
+  "title": "live-pusher",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "推流地址。目前仅支持 rtmp 格式"
+    },
+    "mode": {
+      "type": "string",
+      "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）"
+    },
+    "autopush": {
+      "type": "boolean",
+      "description": "自动推流"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音"
+    },
+    "enable-camera": {
+      "type": "boolean",
+      "description": "开启摄像头"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "自动聚集"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面方向"
+    },
+    "beauty": {
+      "type": "number",
+      "description": "美颜，取值范围 0-9 ，0 表示关闭"
+    },
+    "whiteness": {
+      "type": "number",
+      "description": "美白，取值范围 0-9 ，0 表示关闭"
+    },
+    "aspect": {
+      "type": "string",
+      "description": "宽高比，可选值有 3:4, 9:16"
+    },
+    "min-bitrate": {
+      "type": "number",
+      "description": "最小码率"
+    },
+    "max-bitrate": {
+      "type": "number",
+      "description": "最大码率"
+    },
+    "audio-quality": {
+      "type": "string",
+      "description": "高音质(48KHz)或低音质(16KHz)，值为high, low"
+    },
+    "waiting-image": {
+      "type": "string",
+      "description": "进入后台时推流的等待画面"
+    },
+    "waiting-image-hash": {
+      "type": "string",
+      "description": "等待画面资源的MD5值"
+    },
+    "zoom": {
+      "type": "boolean",
+      "description": "调整焦距"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "前置或后置，值为front, back"
+    },
+    "background-mute": {
+      "type": "boolean",
+      "description": "进入后台时是否静音"
+    },
+    "mirror": {
+      "type": "boolean",
+      "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到"
+    },
+    "bindstatechange": {
+      "type": "eventhandle",
+      "description": "状态变化事件，detail = {code}"
+    },
+    "bindnetstatus": {
+      "type": "eventhandle",
+      "description": "网络状态通知，detail = {info}"
+    },
+    "binderror": {
+      "type": "eventhandle",
+      "description": "渲染错误事件，detail = {errMsg, errCode}"
+    },
+    "bindbgmstart": {
+      "type": "eventhandle",
+      "description": "背景音开始播放时触发"
+    },
+    "bindbgmprogress": {
+      "type": "eventhandle",
+      "description": "背景音进度变化时触发，detail = {progress, duration}"
+    },
+    "bindbgmcomplete": {
+      "type": "eventhandle",
+      "description": "背景音播放完成时触发"
+    },
+    "audio-reverb-type": {
+      "type": "number",
+      "description": "混响模式(0～6)：\"关闭混响\", \"KTV\", \"小房间\", \"大会堂\", \"低沉\", \"洪亮\", \"磁性\""
+    }
   }
-]
+}

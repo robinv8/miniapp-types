@@ -1,115 +1,74 @@
-[
-  {
-    "name": "direction",
-    "type": "string",
-    "defaultValue": "none",
-    "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none",
-    "required": false
-  },
-  {
-    "name": "inertia",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "movable-view 是否带有惯性",
-    "required": false
-  },
-  {
-    "name": "out-of-bounds",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "超过可移动区域后，movable-view 是否还可以移动",
-    "required": false
-  },
-  {
-    "name": "x",
-    "type": "number | string",
-    "description": "定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画",
-    "required": false
-  },
-  {
-    "name": "y",
-    "type": "number | string",
-    "description": "定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画",
-    "required": false
-  },
-  {
-    "name": "damping",
-    "type": "number",
-    "defaultValue": "20",
-    "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快",
-    "required": false
-  },
-  {
-    "name": "friction",
-    "type": "number",
-    "defaultValue": "2",
-    "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "scale",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内",
-    "required": false
-  },
-  {
-    "name": "scale-min",
-    "type": "number",
-    "defaultValue": "0.5",
-    "description": "定义缩放倍数最小值",
-    "required": false
-  },
-  {
-    "name": "scale-max",
-    "type": "number",
-    "defaultValue": "10",
-    "description": "定义缩放倍数最大值",
-    "required": false
-  },
-  {
-    "name": "scale-value",
-    "type": "number",
-    "defaultValue": "1",
-    "description": "定义缩放倍数，取值范围为 0.5 - 10",
-    "required": false
-  },
-  {
-    "name": "animation",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "是否使用动画",
-    "required": false
-  },
-  {
-    "name": "bindchange",
-    "type": "EventHandle",
-    "description": "拖动过程中触发的事件",
-    "required": false
-  },
-  {
-    "name": "bindscale",
-    "type": "EventHandle",
-    "description": "缩放过程中触发的事件",
-    "required": false
-  },
-  {
-    "name": "htouchmove",
-    "type": "EventHandle",
-    "description": "初次手指触摸后移动为横向的移动时触发",
-    "required": false
-  },
-  {
-    "name": "vtouchmove",
-    "type": "EventHandle",
-    "description": "初次手指触摸后移动为纵向的移动时触发",
-    "required": false
+{
+  "title": "movable-view",
+  "type": "object",
+  "properties": {
+    "direction": {
+      "type": "string",
+      "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none"
+    },
+    "inertia": {
+      "type": "boolean",
+      "description": "movable-view 是否带有惯性"
+    },
+    "out-of-bounds": {
+      "type": "boolean",
+      "description": "超过可移动区域后，movable-view 是否还可以移动"
+    },
+    "x": {
+      "type": "number|String",
+      "description": "定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画"
+    },
+    "y": {
+      "type": "number|String",
+      "description": "定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画"
+    },
+    "damping": {
+      "type": "number",
+      "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快"
+    },
+    "friction": {
+      "type": "number",
+      "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "scale": {
+      "type": "boolean",
+      "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内"
+    },
+    "scale-min": {
+      "type": "number",
+      "description": "定义缩放倍数最小值"
+    },
+    "scale-max": {
+      "type": "number",
+      "description": "定义缩放倍数最大值"
+    },
+    "scale-value": {
+      "type": "number",
+      "description": "定义缩放倍数，取值范围为 0.5 - 10"
+    },
+    "animation": {
+      "type": "boolean",
+      "description": "是否使用动画"
+    },
+    "bindchange": {
+      "type": "eventHandle",
+      "description": "拖动过程中触发的事件"
+    },
+    "bindscale": {
+      "type": "eventHandle",
+      "description": "缩放过程中触发的事件"
+    },
+    "htouchmove": {
+      "type": "eventHandle",
+      "description": "初次手指触摸后移动为横向的移动时触发"
+    },
+    "vtouchmove": {
+      "type": "eventHandle",
+      "description": "初次手指触摸后移动为纵向的移动时触发"
+    }
   }
-]
+}

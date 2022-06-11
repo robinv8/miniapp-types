@@ -1,8 +1,10 @@
-[
-  {
-    "name": "for",
-    "type": "string",
-    "description": "绑定控件的 id",
-    "required": false
+{
+  "title": "label",
+  "type": "object",
+  "properties": {
+    "for": {
+      "type": "string",
+      "description": "绑定控件的 id"
+    }
   }
-]
+}

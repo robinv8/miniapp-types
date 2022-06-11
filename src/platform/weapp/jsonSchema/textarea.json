@@ -1,183 +1,110 @@
-[
-  {
-    "name": "value",
-    "type": "string",
-    "description": "输入框的内容",
-    "required": false
-  },
-  {
-    "name": "placeholder",
-    "type": "string",
-    "description": "输入框为空时占位符",
-    "required": false
-  },
-  {
-    "name": "placeholder-style",
-    "type": "string",
-    "description": "指定 placeholder 的样式，目前仅支持color,font-size和font-weight",
-    "required": false
-  },
-  {
-    "name": "placeholder-class",
-    "type": "string",
-    "defaultValue": "textarea-placeholder",
-    "description": "指定 placeholder 的样式类",
-    "required": false
-  },
-  {
-    "name": "disabled",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否禁用",
-    "required": false
-  },
-  {
-    "name": "maxlength",
-    "type": "number",
-    "defaultValue": "140",
-    "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
-    "required": false
-  },
-  {
-    "name": "auto-focus",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "自动聚焦，拉起键盘。",
-    "required": false
-  },
-  {
-    "name": "focus",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "获取焦点",
-    "required": false
-  },
-  {
-    "name": "auto-height",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否自动增高，设置auto-height时，style.height不生效",
-    "required": false
-  },
-  {
-    "name": "fixed",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "如果 textarea 是在一个 `position:fixed` 的区域，需要显示指定属性 fixed 为 true",
-    "required": false
-  },
-  {
-    "name": "cursor-spacing",
-    "type": "number",
-    "defaultValue": "0",
-    "description": "指定光标与键盘的距离。取`textarea`距离底部的距离和`cursor-spacing`指定的距离的最小值作为光标与键盘的距离",
-    "required": false
-  },
-  {
-    "name": "cursor",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "指定focus时的光标位置",
-    "required": false
-  },
-  {
-    "name": "show-confirm-bar",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "是否显示键盘上方带有”完成“按钮那一栏",
-    "required": false
-  },
-  {
-    "name": "selection-start",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "光标起始位置，自动聚集时有效，需与`selection-end`搭配使用",
-    "required": false
-  },
-  {
-    "name": "selection-end",
-    "type": "number",
-    "defaultValue": "-1",
-    "description": "光标结束位置，自动聚集时有效，需与`selection-start`搭配使用",
-    "required": false
-  },
-  {
-    "name": "adjust-position",
-    "type": "boolean",
-    "defaultValue": "true",
-    "description": "键盘弹起时，是否自动上推页面",
-    "required": false
-  },
-  {
-    "name": "hold-keyboard",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "focus时，点击页面的时候不收起键盘",
-    "required": false
-  },
-  {
-    "name": "disable-default-padding",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "是否去掉 iOS 下的默认内边距",
-    "required": false
-  },
-  {
-    "name": "confirm-type",
-    "type": "string",
-    "options": [
-      "send",
-      "search",
-      "next",
-      "go",
-      "done",
-      "return"
-    ],
-    "defaultValue": "return",
-    "description": "设置键盘右下角按钮的文字",
-    "required": false
-  },
-  {
-    "name": "confirm-hold",
-    "type": "boolean",
-    "defaultValue": "false",
-    "description": "点击键盘右下角按钮时是否保持键盘不收起",
-    "required": false
-  },
-  {
-    "name": "bindfocus",
-    "type": "eventhandle",
-    "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持",
-    "required": false
-  },
-  {
-    "name": "bindblur",
-    "type": "eventhandle",
-    "description": "输入框失去焦点时触发，event.detail = {value, cursor}",
-    "required": false
-  },
-  {
-    "name": "bindlinechange",
-    "type": "eventhandle",
-    "description": "输入框行数变化时调用，event.detail = {height: 0, heightRpx: 0, lineCount: 0}",
-    "required": false
-  },
-  {
-    "name": "bindinput",
-    "type": "eventhandle",
-    "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值，目前工具还不支持返回keyCode参数。**bindinput 处理函数的返回值并不会反映到 textarea 上**",
-    "required": false
-  },
-  {
-    "name": "bindconfirm",
-    "type": "eventhandle",
-    "description": "点击完成时， 触发 confirm 事件，event.detail = {value: value}",
-    "required": false
-  },
-  {
-    "name": "bindkeyboardheightchange",
-    "type": "eventhandle",
-    "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}",
-    "required": false
+{
+  "title": "textarea",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "输入框的内容"
+    },
+    "placeholder": {
+      "type": "string",
+      "description": "输入框为空时占位符"
+    },
+    "placeholder-style": {
+      "type": "string",
+      "description": "指定 placeholder 的样式，目前仅支持 color ,font-size和font-weight"
+    },
+    "placeholder-class": {
+      "type": "string",
+      "description": "指定 placeholder 的样式类"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用"
+    },
+    "maxlength": {
+      "type": "number",
+      "description": "最大输入长度，设置为 -1 的时候不限制最大长度"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "自动聚焦，拉起键盘。"
+    },
+    "focus": {
+      "type": "boolean",
+      "description": "获取焦点"
+    },
+    "auto-height": {
+      "type": "boolean",
+      "description": "是否自动增高，设置 auto-height 时，style.height不生效"
+    },
+    "fixed": {
+      "type": "boolean",
+      "description": "如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true"
+    },
+    "cursor-spacing": {
+      "type": "number",
+      "description": "指定光标与键盘的距离。取textarea距离底部的距离和cursor-spacing指定的距离的最小值作为光标与键盘的距离"
+    },
+    "cursor": {
+      "type": "number",
+      "description": "指定 focus 时的光标位置"
+    },
+    "show-confirm-bar": {
+      "type": "boolean",
+      "description": "是否显示键盘上方带有”完成“按钮那一栏"
+    },
+    "selection-start": {
+      "type": "number",
+      "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用"
+    },
+    "selection-end": {
+      "type": "number",
+      "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用"
+    },
+    "adjust-position": {
+      "type": "boolean",
+      "description": "键盘弹起时，是否自动上推页面"
+    },
+    "hold-keyboard": {
+      "type": "boolean",
+      "description": "focus时，点击页面的时候不收起键盘"
+    },
+    "disable-default-padding": {
+      "type": "boolean",
+      "description": "是否去掉 iOS 下的默认内边距"
+    },
+    "confirm-type": {
+      "type": "string",
+      "description": "设置键盘右下角按钮的文字"
+    },
+    "confirm-hold": {
+      "type": "boolean",
+      "description": "点击键盘右下角按钮时是否保持键盘不收起"
+    },
+    "bindfocus": {
+      "type": "eventhandle",
+      "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持"
+    },
+    "bindblur": {
+      "type": "eventhandle",
+      "description": "输入框失去焦点时触发，event.detail = {value, cursor}"
+    },
+    "bindlinechange": {
+      "type": "eventhandle",
+      "description": "输入框行数变化时调用，event.detail = {height: 0, heightRpx: 0, lineCount: 0}"
+    },
+    "bindinput": {
+      "type": "eventhandle",
+      "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值，目前工具还不支持返回 keyCode 参数。**bindinput 处理函数的返回值并不会反映到 textarea 上**"
+    },
+    "bindconfirm": {
+      "type": "eventhandle",
+      "description": "点击完成时， 触发 confirm 事件，event.detail = {value: value}"
+    },
+    "bindkeyboardheightchange": {
+      "type": "eventhandle",
+      "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
+    }
   }
-]
+}
