@@ -1,0 +1,30 @@
+{
+  "title": "picker-view",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "numberArray",
+      "description": "数组中的数字表示 picker-view-column 中对应的 index （从 0 开始）。\n示例：value=“{{[2]}}”"
+    },
+    "indicator-style": {
+      "type": "string",
+      "description": "选中框样式。"
+    },
+    "indicator-class": {
+      "type": "string",
+      "description": "选中框的类名。\n版本要求： 基础库 1.10.0 及以上"
+    },
+    "mask-style": {
+      "type": "string",
+      "description": "蒙层的样式。\n版本要求： 基础库 1.10.0 及以上"
+    },
+    "mask-class": {
+      "type": "string",
+      "description": "蒙层的类名。\n版本要求： 基础库 1.10.0 及以上"
+    },
+    "onChange": {
+      "type": "eventHandle",
+      "description": "滚动选择 value 改变时触发，event.detail = {value: value} value为数组，表示 picker-view 内的 picker-view-column index 索引 ，从 0 开始。"
+    }
+  }
+}

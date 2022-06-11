@@ -1,0 +1,14 @@
+{
+  "title": "cover-image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图片地址，支持的地址格式同 image 一致。\n版本要求： 基础库 1.9.0 及以上"
+    },
+    "onTap": {
+      "type": "eventHandle",
+      "description": "点击事件回调。\n版本要求： 基础库 1.9.0 及以上"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "match-media",
+  "type": "object",
+  "properties": {
+    "min-width": {
+      "type": "number",
+      "description": "页面最小宽度。单位为 px。"
+    },
+    "max-width": {
+      "type": "number",
+      "description": "页面最大宽度。单位为 px。"
+    },
+    "width": {
+      "type": "number",
+      "description": "页面宽度。单位为 px。"
+    },
+    "min-height": {
+      "type": "number",
+      "description": "页面最小高度。单位为 px。"
+    },
+    "max-height": {
+      "type": "number",
+      "description": "页面最大高度。单位为 px。"
+    },
+    "height": {
+      "type": "number",
+      "description": "页面高度。单位为 px。"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "屏幕方向。\n\nlandscape：横向\nportrait：纵向"
+    }
+  }
+}

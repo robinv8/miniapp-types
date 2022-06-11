@@ -1,0 +1,22 @@
+{
+  "title": "radio",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "组件值，选中时 change 事件会携带的 value。"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "当前是否选中。\n默认值： false"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用。\n默认值： false"
+    },
+    "color": {
+      "type": "string",
+      "description": "radio 的颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
+    }
+  }
+}

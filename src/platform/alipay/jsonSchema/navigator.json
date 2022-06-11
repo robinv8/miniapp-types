@@ -1,0 +1,26 @@
+{
+  "title": "navigator",
+  "type": "object",
+  "properties": {
+    "open-type": {
+      "type": "String",
+      "description": "跳转方式。\n默认值： navigate"
+    },
+    "hover-class": {
+      "type": "String",
+      "description": "点击后的样式类。\n默认值： none"
+    },
+    "hover-start-time": {
+      "type": "Number",
+      "description": "按住后多少时间后出现点击状态，单位 ms。"
+    },
+    "hover-stay-time": {
+      "type": "Number",
+      "description": "手指松开后点击状态保留时间，单位 ms。"
+    },
+    "url": {
+      "type": "String",
+      "description": "当前小程序内的跳转链接。"
+    }
+  }
+}
