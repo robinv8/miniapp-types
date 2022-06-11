@@ -69,14 +69,17 @@ const fn = async () => {
       return attributes;
     }, componentList[index]);
     if (data.length > 0) {
-      const folder = path.join(__dirname, 'jsonScheam');
+      const folder = path.join(__dirname, 'jsonSchema');
       if (!fs.existsSync(folder)) {
         fs.mkdirSync(folder, { recursive: true });
       }
       const properties = {};
       data.forEach((item) => {
         properties[item.name] = {
-          type: humps.camelize(item.type),
+          type:
+            typeof item.type === 'string'
+              ? humps.camelize(item.type)
+              : item.type,
           description: item.description,
         };
       });

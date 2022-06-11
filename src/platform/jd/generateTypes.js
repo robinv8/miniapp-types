@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const componentList = require('./componentList.json');
+const humps = require('humps');
 
 const fn = async () => {
   const browser = await puppeteer.launch({
@@ -63,7 +64,7 @@ const fn = async () => {
       return attributes;
     }, componentList[index]);
     if (data.length > 0) {
-      const folder = path.join(__dirname, 'jsonScheam');
+      const folder = path.join(__dirname, 'jsonSchema');
       if (!fs.existsSync(folder)) {
         fs.mkdirSync(folder, { recursive: true });
       }
@@ -71,37 +72,28 @@ const fn = async () => {
         path.join(folder, `${name}.json`),
         JSON.stringify(data, null, 2),
       );
+      const properties = {};
+      data.forEach((item) => {
+        properties[item.name] = {
+          type:
+            typeof item.type === 'string'
+              ? humps.camelize(item.type)
+              : item.type,
+          description: item.description,
+        };
+      });
+
+      const result = {
+        title: name,
+        type: 'object',
+        properties,
+      };
+      fs.writeFileSync(
+        path.join(folder, `${name}.json`),
+        JSON.stringify(result, null, 2),
+      );
     }
 
-    // let tsCode =
-    //   'interface ' + humps.pascalize(componentList[index].name) + 'Props {\n';
-    // data.forEach((prop) => {
-    //   tsCode += `
-    //   /**
-    //    * @description ${prop.description}${
-    //     prop.defaultValue ? `\n* @default ${prop.defaultValue}` : ''
-    //   }
-    //    * @type ${humps.camelize(prop.type)}
-    //    */
-    //   ${humps.camelize(prop.name)}: ${
-    //     prop.options?.length > 0
-    //       ? prop.options.map((item) => `'${item}'`).join(' | ')
-    //       : humps.camelize(prop.type)
-    //   };
-    //   `;
-    // });
-    // tsCode += '}';
-    // if (!fs.existsSync('dist/qq')) {
-    //   fs.mkdirSync(path.join(process.cwd(), 'dist/qq'), { recursive: true });
-    // }
-
-    // fs.writeFileSync(
-    //   path.join(
-    //     process.cwd(),
-    //     `dist/qq/${humps.camelize(componentList[index].name)}.d.ts`,
-    //   ),
-    //   tsCode,
-    // );
     index++;
     const { url: nextUrl = '', name: nextName = '' } =
       componentList[index] || {};
