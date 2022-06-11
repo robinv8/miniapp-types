@@ -57,7 +57,7 @@ const fn = async () => {
       return attributes;
     }, componentList[index]);
     if (data.length > 0) {
-      const folder = path.join(__dirname, 'jsonScheam');
+      const folder = path.join(__dirname, 'jsonSchema');
       if (!fs.existsSync(folder)) {
         fs.mkdirSync(folder, { recursive: true });
       }

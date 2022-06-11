@@ -29,13 +29,13 @@ const fn = async () => {
         const options = [];
 
         if (len > 0) {
-          const prop =el.children[0]?.innerText
+          const prop = el.children[0]?.innerText;
           const optEl = document.getElementById(`${prop} 有效值`);
           if (optEl) {
             optEl.nextElementSibling
               .querySelectorAll('tbody tr')
               .forEach((el) => {
-                if(name === 'image' &&prop === 'mode') {
+                if (name === 'image' && prop === 'mode') {
                   options.push(el.children[1].innerText);
                 } else {
                   options.push(el.children[0].innerText);
@@ -62,7 +62,7 @@ const fn = async () => {
       return attributes;
     }, componentList[index]);
     if (data.length > 0) {
-      const folder = path.join(__dirname, 'jsonScheam');
+      const folder = path.join(__dirname, 'jsonSchema');
       if (!fs.existsSync(folder)) {
         fs.mkdirSync(folder, { recursive: true });
       }
