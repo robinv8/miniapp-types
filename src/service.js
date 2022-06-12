@@ -39,6 +39,7 @@ class Service {
         fs.mkdirSync(folder, { recursive: true });
       }
       const properties = {};
+      const required = [];
       data.forEach((item) => {
         properties[item.name] = {
           type:
@@ -47,12 +48,16 @@ class Service {
               : item.type,
           description: item.description,
         };
+        if (item.required) {
+          required.push(item.name);
+        }
       });
       const result = {
         title: name,
         type: 'object',
         properties,
         additionalProperties: false,
+        ...(required.length > 0 ? { required } : {}),
       };
       fs.writeFileSync(
         path.join(folder, `${name}.json`),
