@@ -1,4 +1,4 @@
-const Service = require('..');
+const Service = require('../service');
 
 const service = new Service({
   platform: 'jd',
