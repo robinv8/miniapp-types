@@ -225,5 +225,6 @@
       "type": "eventhandler",
       "description": "seek 完成时触发 (position iOS 单位 s, Android 单位 ms)"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -74,5 +74,6 @@
       "type": "eventHandle",
       "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明"
     }
-  }
+  },
+  "additionalProperties": false
 }

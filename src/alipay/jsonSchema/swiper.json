@@ -110,5 +110,6 @@
       "type": "boolean",
       "description": "vertical 为 true 时强制使 adjust-height 生效。\n默认值：false\n版本要求：基础库 2.6.4 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

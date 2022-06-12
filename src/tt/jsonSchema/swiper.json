@@ -70,5 +70,6 @@
       "type": "eventHandle",
       "description": "swiper-item 产生位移时触发 transition 事件"
     }
-  }
+  },
+  "additionalProperties": false
 }

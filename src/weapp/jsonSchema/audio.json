@@ -50,5 +50,6 @@
       "type": "eventhandle",
       "description": "当播放到末尾时触发 ended 事件"
     }
-  }
+  },
+  "additionalProperties": false
 }

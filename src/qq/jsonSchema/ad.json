@@ -50,5 +50,6 @@
       "type": "string",
       "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -66,5 +66,6 @@
       "type": "string",
       "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序完成"
     }
-  }
+  },
+  "additionalProperties": false
 }

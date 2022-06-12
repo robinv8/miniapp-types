@@ -42,5 +42,6 @@
       "type": "eventhandle",
       "description": "通过 Context 方法改变编辑器内样式时触发，返回选区已设置的样式"
     }
-  }
+  },
+  "additionalProperties": false
 }

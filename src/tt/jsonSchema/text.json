@@ -14,5 +14,6 @@
       "type": "boolean",
       "description": "是否转义"
     }
-  }
+  },
+  "additionalProperties": false
 }

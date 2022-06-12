@@ -70,5 +70,6 @@
       "type": "handler",
       "description": "在打开授权设置页后回调"
     }
-  }
+  },
+  "additionalProperties": false
 }

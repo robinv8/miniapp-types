@@ -66,5 +66,6 @@
       "type": "eventhandle",
       "description": "点击遮罩层时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

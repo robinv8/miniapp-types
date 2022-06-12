@@ -26,5 +26,6 @@
       "type": "boolean",
       "description": "是否添加从 0% 开始加载的入场动画。\n默认值： active=\"{{false}}\""
     }
-  }
+  },
+  "additionalProperties": false
 }

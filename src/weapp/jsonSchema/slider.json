@@ -58,5 +58,6 @@
       "type": "eventhandle",
       "description": "拖动过程中触发的事件，event.detail = {value}"
     }
-  }
+  },
+  "additionalProperties": false
 }

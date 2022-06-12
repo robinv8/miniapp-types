@@ -13,5 +13,6 @@
       "type": "string",
       "description": "显示连续空格"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -90,5 +90,6 @@
       "type": "string",
       "description": "发生滚动前，对滚动方向进行判断，当方向是底部/右边时，如果值为 always 将始终禁止滚动，如果值为 out-of-bounds 且当前已经滚动到底部/右边，禁止滚动。\n版本要求：基础库 2.6.2 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

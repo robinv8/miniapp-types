@@ -10,5 +10,6 @@
       "type": "eventHandle",
       "description": "表单重置时会触发 reset 事件"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -150,5 +150,6 @@
       "type": "eventhandle",
       "description": "返回麦克风采集的音量大小"
     }
-  }
+  },
+  "additionalProperties": false
 }

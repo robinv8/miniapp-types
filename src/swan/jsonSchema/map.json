@@ -94,5 +94,6 @@
       "type": "eventHandle",
       "description": "点击地图 poi 点时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

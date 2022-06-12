@@ -50,5 +50,6 @@
       "type": "eventHandle",
       "description": "拖动过程中触发的事件，event.detail = {value: value}"
     }
-  }
+  },
+  "additionalProperties": false
 }

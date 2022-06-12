@@ -102,5 +102,6 @@
       "type": "eventhandle",
       "description": "获取用户头像回调，open-type=chooseAvatar时有效"
     }
-  }
+  },
+  "additionalProperties": false
 }

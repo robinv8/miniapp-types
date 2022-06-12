@@ -33,5 +33,6 @@
       "type": "string",
       "description": "选填。该属性主要用于传递一些扩展信息给组件，以实现一些高级功能。该属性值的生成方式为：encodeURIComponent({\"字段名\":\"字段值\"})， 其中，字段名和字段值要根据实际使用的功能进行替换。\n目前通过传入扩展信息可支持的 3 个功能：\n1.访客名片。需传 cinfo 和 key 两个扩展字段，代码形如在云客服中进入 设置 > 服务窗配置 > 聊天窗 URL。点击操作栏中的 聊天窗 URL ，获取 tntInstId（企业编码）和 scene（聊天窗编码）。encodeURIComponent({\"cinfo\":\"生成的 cinfo\",\"key\":\"生成的key\"})，cinfo 和 key 的值说明 支付宝小程序接入访客名片；\n2.聊天窗默认带出用户的小程序订单数据。需传 appId 字段，代码形如encodeURIComponent({\"appId\":\"商户小程序appid\"})\n3.未读客服消息同步至\"我的小程序-我的\"。同样需传 appId 字段，代码形如 encodeURIComponent({\"appId\":\"商户小程序appid\"})。"
     }
-  }
+  },
+  "additionalProperties": false
 }

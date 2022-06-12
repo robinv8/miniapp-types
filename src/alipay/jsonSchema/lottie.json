@@ -70,5 +70,6 @@
       "type": "eventHandle",
       "description": "参数化时，数据准备完成，等待业务传入参数化值。\n版本要求：支付宝客户端 10.1.72 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

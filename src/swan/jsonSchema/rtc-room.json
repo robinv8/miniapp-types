@@ -66,5 +66,6 @@
       "type": "eventhandle",
       "description": "错误事件。参考下方错误码，detail = { errMsg, errCode }"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -106,5 +106,6 @@
       "type": "number",
       "description": "混响模式(0～6)：\"关闭混响\", \"KTV\", \"小房间\", \"大会堂\", \"低沉\", \"洪亮\", \"磁性\""
     }
-  }
+  },
+  "additionalProperties": false
 }

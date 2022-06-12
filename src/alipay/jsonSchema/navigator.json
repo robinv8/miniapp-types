@@ -22,5 +22,6 @@
       "type": "string",
       "description": "当前小程序内的跳转链接。"
     }
-  }
+  },
+  "additionalProperties": false
 }

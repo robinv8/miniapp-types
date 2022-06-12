@@ -55,5 +55,6 @@
       "type": "number",
       "description": "进度增加 1% 所需毫秒数"
     }
-  }
+  },
+  "additionalProperties": false
 }

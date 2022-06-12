@@ -22,5 +22,6 @@
       "type": "eventHandle",
       "description": "checked 改变时触发该事件，event.detail={value:checked}"
     }
-  }
+  },
+  "additionalProperties": false
 }

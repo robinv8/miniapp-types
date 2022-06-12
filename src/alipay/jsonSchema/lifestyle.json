@@ -14,5 +14,6 @@
       "type": "string",
       "description": "文案。支持商家自定义，最多展示一行。"
     }
-  }
+  },
+  "additionalProperties": false
 }

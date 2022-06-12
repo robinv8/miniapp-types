@@ -58,5 +58,6 @@
       "type": "eventHandle",
       "description": "点击点赞按钮，在点赞服务失败后将状态返回给使用组件者"
     }
-  }
+  },
+  "additionalProperties": false
 }

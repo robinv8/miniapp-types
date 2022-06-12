@@ -18,5 +18,6 @@
       "type": "number",
       "description": "手指松开后点击态保留的时间长度（单位：毫秒）"
     }
-  }
+  },
+  "additionalProperties": false
 }

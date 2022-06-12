@@ -22,5 +22,6 @@
       "type": "string",
       "description": "checkbox 的颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

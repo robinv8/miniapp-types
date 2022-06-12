@@ -42,5 +42,6 @@
       "type": "eventHandle",
       "description": "点击图片时触发，阻止事件冒泡。"
     }
-  }
+  },
+  "additionalProperties": false
 }

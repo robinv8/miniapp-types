@@ -85,5 +85,6 @@
       "type": "eventhandler",
       "description": "播放器退出小窗"
     }
-  }
+  },
+  "additionalProperties": false
 }

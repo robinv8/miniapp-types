@@ -18,5 +18,6 @@
       "type": "eventhandler",
       "description": "网页加载失败的时候触发此事件。e.detail = { src }"
     }
-  }
+  },
+  "additionalProperties": false
 }

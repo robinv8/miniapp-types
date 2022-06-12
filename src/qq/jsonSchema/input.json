@@ -97,5 +97,6 @@
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
     }
-  }
+  },
+  "additionalProperties": false
 }

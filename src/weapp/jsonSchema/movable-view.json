@@ -76,5 +76,6 @@
       "type": "eventhandle",
       "description": "初次手指触摸后移动为纵向的移动时触发，如果 catch 此事件，则意味着 touchmove 事件也被catch"
     }
-  }
+  },
+  "additionalProperties": false
 }

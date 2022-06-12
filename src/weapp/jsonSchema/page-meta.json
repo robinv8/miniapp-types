@@ -58,5 +58,6 @@
       "type": "eventhandle",
       "description": "如果通过改变 scroll-top 属性来使页面滚动，页面滚动结束后会触发 scrolldone 事件"
     }
-  }
+  },
+  "additionalProperties": false
 }

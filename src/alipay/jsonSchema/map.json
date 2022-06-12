@@ -146,5 +146,6 @@
       "type": "eventHandle",
       "description": "地图初始化完成即将开始渲染第一帧时触发。\n\n版本要求：基础库 2.7.2 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

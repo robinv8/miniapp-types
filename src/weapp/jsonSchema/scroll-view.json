@@ -138,5 +138,6 @@
       "type": "eventhandle",
       "description": "自定义下拉刷新被中止"
     }
-  }
+  },
+  "additionalProperties": false
 }

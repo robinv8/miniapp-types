@@ -122,5 +122,6 @@
       "type": "string",
       "description": "转发显示图片的链接，可以是网络图片路径（仅 QQ CDN 域名路径）或本地图片文件路径或相对代码包根目录的图片文件路径。显示图片长宽比是 5:4FriendInfo"
     }
-  }
+  },
+  "additionalProperties": false
 }

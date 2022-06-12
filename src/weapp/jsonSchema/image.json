@@ -30,5 +30,6 @@
       "type": "eventhandle",
       "description": "当图片载入完毕时触发，event.detail = {height, width}"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -10,5 +10,6 @@
       "type": "boolean",
       "description": "文本是否可选。true：可用于文本复制，粘贴，长按搜索等场景。3.150.1 以后版本只能通过字面量的方式设置，不支持变量"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -34,5 +34,6 @@
       "type": "string",
       "description": "当 type=*CloudStorage 时有效,开放数据请求或定向分享失败时触发，event.detail = {errMsg: \"getGroupCloudStorage:fail no data\"}"
     }
-  }
+  },
+  "additionalProperties": false
 }

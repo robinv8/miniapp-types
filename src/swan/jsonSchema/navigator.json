@@ -62,5 +62,6 @@
       "type": "eventHandle",
       "description": "当target=\"miniProgram\"时有效，跳转小程序完成时触发 complete 事件，event.detail 同上"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -6,5 +6,6 @@
       "type": "string",
       "description": "开放数据类型"
     }
-  }
+  },
+  "additionalProperties": false
 }

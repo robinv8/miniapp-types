@@ -22,5 +22,6 @@
       "type": "eventHandle",
       "description": "当图片载入完毕时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

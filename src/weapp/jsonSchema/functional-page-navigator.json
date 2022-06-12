@@ -26,5 +26,6 @@
       "type": "eventhandler",
       "description": "因用户操作从功能页返回时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

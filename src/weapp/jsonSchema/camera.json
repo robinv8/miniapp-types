@@ -38,5 +38,6 @@
       "type": "eventhandle",
       "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
     }
-  }
+  },
+  "additionalProperties": false
 }

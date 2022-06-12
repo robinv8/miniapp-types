@@ -78,5 +78,6 @@
       "type": "eventHandle",
       "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -30,5 +30,6 @@
       "type": "string",
       "description": "屏幕方向。\n\nlandscape：横向\nportrait：纵向"
     }
-  }
+  },
+  "additionalProperties": false
 }

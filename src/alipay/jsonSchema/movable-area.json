@@ -6,5 +6,6 @@
       "type": "boolean",
       "description": "否"
     }
-  }
+  },
+  "additionalProperties": false
 }

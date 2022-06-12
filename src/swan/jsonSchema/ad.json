@@ -34,5 +34,6 @@
       "type": "eventHandle",
       "description": "贴片类型广告播放期间触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

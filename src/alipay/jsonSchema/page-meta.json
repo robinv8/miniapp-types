@@ -42,5 +42,6 @@
       "type": "eventHandle",
       "description": "页面滚动时触发，event.detail = { scrollTop }"
     }
-  }
+  },
+  "additionalProperties": false
 }

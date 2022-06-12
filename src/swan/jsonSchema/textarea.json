@@ -94,5 +94,6 @@
       "type": "eventHandle",
       "description": "点击完成时，触发 confirm 事件，event.detail = {value: value}"
     }
-  }
+  },
+  "additionalProperties": false
 }

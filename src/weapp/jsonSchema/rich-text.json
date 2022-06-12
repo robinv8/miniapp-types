@@ -17,5 +17,6 @@
       "type": "boolean",
       "description": "文本是否可选，该属性会使节点显示为 block"
     }
-  }
+  },
+  "additionalProperties": false
 }

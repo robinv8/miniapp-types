@@ -82,5 +82,6 @@
       "type": "eventHandle",
       "description": "点击完成按钮时触发，event.detail = {value: value}"
     }
-  }
+  },
+  "additionalProperties": false
 }

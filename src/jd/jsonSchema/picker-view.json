@@ -20,5 +20,6 @@
     "bindchange": {
       "type": "eventHandle"
     }
-  }
+  },
+  "additionalProperties": false
 }

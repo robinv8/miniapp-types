@@ -14,5 +14,6 @@
       "type": "string",
       "description": "icon 颜色，同 CSS 色值。"
     }
-  }
+  },
+  "additionalProperties": false
 }

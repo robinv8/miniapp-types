@@ -14,5 +14,6 @@
       "type": "boolean",
       "description": "是否解码"
     }
-  }
+  },
+  "additionalProperties": false
 }

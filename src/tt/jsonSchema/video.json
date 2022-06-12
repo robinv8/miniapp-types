@@ -166,5 +166,6 @@
       "type": "eventHandle",
       "description": "离开小窗进入 app 事件时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -94,5 +94,6 @@
       "type": "eventHandle",
       "description": "缩放过程中触发的事件，event.detail = {x, y, scale}。\n版本要求： 基础库 1.20.0 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

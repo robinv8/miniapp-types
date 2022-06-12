@@ -58,5 +58,6 @@
       "type": "eventHandle",
       "description": "拖动过程中触发的事件，event.detail = {value: value}。\n版本要求： 基础库版本 1.5.0 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

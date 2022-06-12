@@ -68,5 +68,6 @@
       "type": "eventHandle",
       "description": "缩放过程中触发的事件，event.detail = {x: x, y: y, scale: scale}"
     }
-  }
+  },
+  "additionalProperties": false
 }

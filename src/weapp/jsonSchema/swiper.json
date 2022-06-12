@@ -70,5 +70,6 @@
       "type": "eventhandle",
       "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -26,5 +26,6 @@
       "type": "eventHandle",
       "description": "当错误发生时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

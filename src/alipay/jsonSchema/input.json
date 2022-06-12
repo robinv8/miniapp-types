@@ -90,5 +90,6 @@
       "type": "eventHandle",
       "description": "失去焦点时触发（仅支持真机），event.detail = {value: value}。"
     }
-  }
+  },
+  "additionalProperties": false
 }

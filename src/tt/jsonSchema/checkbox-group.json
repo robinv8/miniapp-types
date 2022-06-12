@@ -10,5 +10,6 @@
       "type": "eventHandle",
       "description": "checkbox-group 中选中项发生改变时触发 change 事件"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -46,5 +46,6 @@
       "type": "eventHandle",
       "description": "获取用户手机号回调，只在 open-type=getPhoneNumber 时有效"
     }
-  }
+  },
+  "additionalProperties": false
 }

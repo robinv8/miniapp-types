@@ -14,5 +14,6 @@
       "type": "number",
       "description": "item 展示画面的用户 id"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -38,5 +38,6 @@
       "type": "eventhandle",
       "description": "当发生错误时触发 error 事件，detail = {errMsg}"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -29,5 +29,6 @@
       "type": "boolean",
       "description": "是否禁用。\n默认值： false"
     }
-  }
+  },
+  "additionalProperties": false
 }

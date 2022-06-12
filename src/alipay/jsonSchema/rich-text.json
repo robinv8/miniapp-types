@@ -30,5 +30,6 @@
       "type": "eventHandle",
       "description": "触摸后，超过 500ms 再离开。"
     }
-  }
+  },
+  "additionalProperties": false
 }

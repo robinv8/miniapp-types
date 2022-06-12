@@ -70,5 +70,6 @@
       "type": "eventHandle",
       "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。\n版本要求：基础库 1.11.0 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

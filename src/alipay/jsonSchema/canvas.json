@@ -58,5 +58,6 @@
       "type": "eventHandle",
       "description": "canvas 组件初始化成功触发。\n版本要求：基础库 2.7.0 及以上"
     }
-  }
+  },
+  "additionalProperties": false
 }

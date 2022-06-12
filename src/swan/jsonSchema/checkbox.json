@@ -18,5 +18,6 @@
       "type": "color",
       "description": "checkbox 的颜色，同 CSS 的 color"
     }
-  }
+  },
+  "additionalProperties": false
 }

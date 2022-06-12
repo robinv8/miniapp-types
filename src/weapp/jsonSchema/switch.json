@@ -22,5 +22,6 @@
       "type": "eventhandle",
       "description": "点击导致 checked 改变时会触发 change 事件，event.detail={ value}"
     }
-  }
+  },
+  "additionalProperties": false
 }

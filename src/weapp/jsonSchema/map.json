@@ -154,5 +154,6 @@
       "type": "eventhandle",
       "description": "点击定位标时触发，e.detail = {longitude, latitude}"
     }
-  }
+  },
+  "additionalProperties": false
 }

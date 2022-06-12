@@ -62,5 +62,6 @@
       "type": "eventhandler",
       "description": "否"
     }
-  }
+  },
+  "additionalProperties": false
 }

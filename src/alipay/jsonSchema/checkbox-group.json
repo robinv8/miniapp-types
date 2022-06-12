@@ -10,5 +10,6 @@
       "type": "eventHandle",
       "description": "中选中项发生改变时触发， detail = {value: 选中的 checkbox 项 value 的值}。"
     }
-  }
+  },
+  "additionalProperties": false
 }

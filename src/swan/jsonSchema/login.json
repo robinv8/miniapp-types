@@ -22,5 +22,6 @@
       "type": "eventHandle",
       "description": "组件加载失败回调"
     }
-  }
+  },
+  "additionalProperties": false
 }

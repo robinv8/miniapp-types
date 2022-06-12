@@ -29,5 +29,6 @@
       "type": "eventHandle",
       "description": "取消选择或点遮罩层收起 picker 时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

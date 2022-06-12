@@ -6,5 +6,6 @@
       "type": "string",
       "description": "绑定控件的 ID"
     }
-  }
+  },
+  "additionalProperties": false
 }

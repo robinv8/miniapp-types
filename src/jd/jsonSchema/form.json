@@ -11,5 +11,6 @@
     "bindreset": {
       "type": "eventHandle"
     }
-  }
+  },
+  "additionalProperties": false
 }

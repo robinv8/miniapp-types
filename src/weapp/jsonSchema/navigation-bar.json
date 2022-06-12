@@ -26,5 +26,6 @@
       "type": "string",
       "description": "改变导航栏颜色时的动画方式，支持 linear 、 easeIn 、 easeOut 和 easeInOut"
     }
-  }
+  },
+  "additionalProperties": false
 }

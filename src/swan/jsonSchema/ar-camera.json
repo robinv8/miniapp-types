@@ -30,5 +30,6 @@
       "type": "eventHandle",
       "description": "扫描识图结束后触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

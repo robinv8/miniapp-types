@@ -89,5 +89,6 @@
       "type": "eventHandle",
       "description": "订阅消息授权回调，和 open-type 搭配使用，使用时机：open-type=\"subscribe\""
     }
-  }
+  },
+  "additionalProperties": false
 }

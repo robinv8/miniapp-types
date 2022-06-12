@@ -18,5 +18,6 @@
       "type": "string",
       "description": "badge-type 为 text 的时候，徽标内的数字，为空时badge-type=\"text\"不生效"
     }
-  }
+  },
+  "additionalProperties": false
 }

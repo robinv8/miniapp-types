@@ -54,5 +54,6 @@
       "type": "eventHandle",
       "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
     }
-  }
+  },
+  "additionalProperties": false
 }

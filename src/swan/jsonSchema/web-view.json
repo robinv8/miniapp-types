@@ -10,5 +10,6 @@
       "type": "eventHandle",
       "description": "网页向小程序 postMessage 时，会在特定时机（小程序后退、组件销毁、分享）触发并收到消息。e.detail = { data }"
     }
-  }
+  },
+  "additionalProperties": false
 }

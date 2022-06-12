@@ -52,6 +52,7 @@ class Service {
         title: name,
         type: 'object',
         properties,
+        additionalProperties: false,
       };
       fs.writeFileSync(
         path.join(folder, `${name}.json`),

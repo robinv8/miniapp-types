@@ -14,5 +14,6 @@
       "type": "eventHandle",
       "description": "关注和取消关注成功的回调，返回关注状态 {isFavor: true|false}"
     }
-  }
+  },
+  "additionalProperties": false
 }

@@ -26,5 +26,6 @@
       "type": "hexColor",
       "description": "异常状态次要文案的自定义颜色。"
     }
-  }
+  },
+  "additionalProperties": false
 }

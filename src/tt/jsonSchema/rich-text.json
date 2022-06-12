@@ -6,5 +6,6 @@
       "type": "(Node|Text)[]|String",
       "description": "节点列表 / HTML String"
     }
-  }
+  },
+  "additionalProperties": false
 }

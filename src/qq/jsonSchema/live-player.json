@@ -66,5 +66,6 @@
       "type": "eventhandle",
       "description": "metadata通知，detail = {info}"
     }
-  }
+  },
+  "additionalProperties": false
 }

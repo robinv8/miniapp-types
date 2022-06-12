@@ -26,5 +26,6 @@
       "type": "eventhandle",
       "description": "群名称或用户信息为空时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

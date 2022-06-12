@@ -70,5 +70,6 @@
       "type": "eventHandle",
       "description": "初次手指触摸后移动为纵向的移动时触发"
     }
-  }
+  },
+  "additionalProperties": false
 }

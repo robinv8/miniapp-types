@@ -38,5 +38,6 @@
       "type": "eventhandle",
       "description": "否"
     }
-  }
+  },
+  "additionalProperties": false
 }

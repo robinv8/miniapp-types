@@ -134,5 +134,6 @@
       "type": "eventHandle",
       "description": "加载进度变化时触发，只支持一段加载。event.detail = {buffered}，百分比"
     }
-  }
+  },
+  "additionalProperties": false
 }

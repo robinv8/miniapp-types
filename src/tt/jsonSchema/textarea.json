@@ -94,5 +94,6 @@
       "type": "eventHandle",
       "description": "输入框行数变化时触发，详情见 bindlinechange 说明"
     }
-  }
+  },
+  "additionalProperties": false
 }

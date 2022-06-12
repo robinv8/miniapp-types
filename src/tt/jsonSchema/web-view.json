@@ -22,5 +22,6 @@
       "type": "eventHandle",
       "description": "当网页加载失败时触发的消息"
     }
-  }
+  },
+  "additionalProperties": false
 }

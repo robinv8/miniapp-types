@@ -26,5 +26,6 @@
       "type": "eventHandle",
       "description": "[v2]手指触摸动作被打断"
     }
-  }
+  },
+  "additionalProperties": false
 }

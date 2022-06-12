@@ -10,5 +10,6 @@
       "type": "string",
       "description": "组件名字，用于表单提交获取数据。"
     }
-  }
+  },
+  "additionalProperties": false
 }
