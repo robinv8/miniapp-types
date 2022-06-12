@@ -3,59 +3,59 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "String",
+      "type": "string",
       "description": "组件唯一标识符。\n注意：同一页面中的 id 不可重复。"
     },
     "style": {
-      "type": "String",
+      "type": "string",
       "description": "-"
     },
     "class": {
-      "type": "String",
+      "type": "string",
       "description": "-"
     },
     "width": {
-      "type": "String",
+      "type": "string",
       "description": "默认值： 300px"
     },
     "height": {
-      "type": "String",
+      "type": "string",
       "description": "默认值： 225px"
     },
     "disable-scroll": {
-      "type": "Boolean",
+      "type": "boolean",
       "description": "禁止屏幕滚动以及下拉刷新。\n默认值： false"
     },
     "onTap": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "点击。"
     },
     "onTouchStart": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "触摸动作开始。"
     },
     "onTouchMove": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "触摸后移动。"
     },
     "onTouchEnd": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "触摸动作结束。"
     },
     "onTouchCancel": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "触摸动作被打断，如来电提醒，弹窗。"
     },
     "onLongTap": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "长按 500ms 之后触发，触发了长按事件后进行移动将不会触发屏幕的滚动。"
     },
     "type": {
-      "type": "String",
+      "type": "string",
       "description": "类型。设置 type 属性后，会渲染成 native canvas。\n可选值：2d、webgl\n版本要求：基础库 2.7.0 及以上"
     },
     "onReady": {
-      "type": "EventHandle",
+      "type": "eventHandle",
       "description": "canvas 组件初始化成功触发。\n版本要求：基础库 2.7.0 及以上"
     }
   }

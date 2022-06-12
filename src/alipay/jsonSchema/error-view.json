@@ -3,27 +3,27 @@
   "type": "object",
   "properties": {
     "fullscreen": {
-      "type": "Boolean",
+      "type": "boolean",
       "description": "是否展示全屏错误视图，状态图案及文案大小会有差异。"
     },
     "type": {
-      "type": "String",
+      "type": "string",
       "description": "异常类型。\n可选值：default、busy、error、network、trade\n默认值：default"
     },
     "title": {
-      "type": "String",
+      "type": "string",
       "description": "异常状态主要文案，详情可查看 默认界面及文案。"
     },
     "message": {
-      "type": "String",
+      "type": "string",
       "description": "异常状态次要文案，仅在全屏状态显示，详情可查看 全屏状态。"
     },
     "title-color": {
-      "type": "HexColor",
+      "type": "hexColor",
       "description": "异常状态主要文案的自定义颜色。"
     },
     "message-color": {
-      "type": "HexColor",
+      "type": "hexColor",
       "description": "异常状态次要文案的自定义颜色。"
     }
   }
