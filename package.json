@@ -4,6 +4,8 @@
   "description": "小程序类型生成器",
   "main": "index.js",
   "scripts": {
+    "build:schema": "node src/generateSchema.js",
+    "build:ts": "node src/generateTS.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "robin",
