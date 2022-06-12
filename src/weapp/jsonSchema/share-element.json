@@ -19,5 +19,8 @@
       "description": "css缓动函数"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "key"
+  ]
 }

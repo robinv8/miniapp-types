@@ -15,5 +15,8 @@
       "description": "icon 的颜色"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ]
 }

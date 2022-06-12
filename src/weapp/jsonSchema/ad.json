@@ -30,5 +30,8 @@
       "description": "广告关闭的回调"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "unit-id"
+  ]
 }

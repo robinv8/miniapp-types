@@ -39,5 +39,8 @@
       "description": "播放错误事件"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "src"
+  ]
 }

@@ -31,5 +31,8 @@
       "description": "图片加载失败时触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "src"
+  ]
 }

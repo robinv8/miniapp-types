@@ -35,5 +35,9 @@
       "description": "贴片类型广告播放期间触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "appid",
+    "apid"
+  ]
 }

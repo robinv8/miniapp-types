@@ -18,5 +18,8 @@
       "description": "icon的颜色，同 css 的color"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ]
 }

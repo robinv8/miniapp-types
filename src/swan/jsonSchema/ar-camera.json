@@ -31,5 +31,9 @@
       "description": "扫描识图结束后触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "key",
+    "type"
+  ]
 }

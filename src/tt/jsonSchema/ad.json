@@ -35,5 +35,8 @@
       "description": "广告的缩放比例，100 为标准尺寸"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "unit-id"
+  ]
 }

@@ -23,5 +23,8 @@
       "description": "出现错误时触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ]
 }

@@ -147,5 +147,8 @@
       "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "src"
+  ]
 }

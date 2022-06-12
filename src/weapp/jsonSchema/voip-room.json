@@ -19,5 +19,8 @@
       "description": "创建对话窗口失败时触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "openid"
+  ]
 }

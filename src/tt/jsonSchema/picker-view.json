@@ -19,5 +19,8 @@
       "description": "改变时触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "value"
+  ]
 }

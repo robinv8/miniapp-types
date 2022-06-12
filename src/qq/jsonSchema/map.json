@@ -115,5 +115,9 @@
       "description": "点击地图poi点时触发 e.detail = {name, longitude, latitude}"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "longitude",
+    "latitude"
+  ]
 }

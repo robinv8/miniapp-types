@@ -27,5 +27,8 @@
       "description": "当错误发生时触发"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "aweme-id"
+  ]
 }

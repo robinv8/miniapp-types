@@ -35,5 +35,8 @@
       "description": "当发生错误时触发 error 事件，detail = {errMsg: 'something wrong'}"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "canvas-id"
+  ]
 }
