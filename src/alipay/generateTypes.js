@@ -1,21 +1,10 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
-const path = require('path');
-const componentList = require('./componentList.json');
-const humps = require('humps');
+const Service = require('..');
 
-const fn = async () => {
-  const browser = await puppeteer.launch({
-    headless: false,
-    defaultViewport: null,
-  });
-  const page = await browser.newPage();
-
-  let index = 0;
-  const getComponentProps = async ({ page, url, name }) => {
-    await page.goto(url, { waitUntil: 'networkidle0' });
-
-    const data = await page.evaluate(({ name, tableIndex = 0, fields }) => {
+const service = new Service({
+  platform: 'alipay',
+  waitUntil: 'networkidle0',
+  evaluate: async (page, opts) => {
+    return await page.evaluate(({ tableIndex = 0, fields }) => {
       function handleType(str, char) {
         if (str.indexOf(char) === -1) {
           return str;
@@ -67,52 +56,8 @@ const fn = async () => {
       });
 
       return attributes;
-    }, componentList[index]);
-    if (data.length > 0) {
-      const folder = path.join(__dirname, 'jsonSchema');
-      if (!fs.existsSync(folder)) {
-        fs.mkdirSync(folder, { recursive: true });
-      }
-      const properties = {};
-      data.forEach((item) => {
-        properties[item.name] = {
-          type:
-            typeof item.type === 'string'
-              ? humps.camelize(item.type)
-              : item.type,
-          description: item.description,
-        };
-      });
-      const result = {
-        title: name,
-        type: 'object',
-        properties,
-      };
-      fs.writeFileSync(
-        path.join(folder, `${name}.json`),
-        JSON.stringify(result, null, 2),
-      );
-    }
-    index++;
-    const { url: nextUrl = '', name: nextName = '' } =
-      componentList[index] || {};
-    if (nextUrl) {
-      getComponentProps({
-        url: nextUrl,
-        name: nextName,
-        page,
-      });
-    } else {
-      await browser.close();
-    }
-  };
-  const { url = '', name } = componentList[index] || {};
+    }, opts);
+  },
+});
 
-  getComponentProps({
-    url,
-    name,
-    page,
-  });
-};
-
-fn();
+service.exec();
