@@ -307,15 +307,6 @@
     }
   },
   {
-    "name": "error-view",
-    "url": "https://opendocs.alipay.com/mini/component/error-view",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "description": 2
-    }
-  },
-  {
     "name": "aria-component",
     "url": "https://opendocs.alipay.com/mini/component/accessibility",
     "fields": {
