@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const humps = require('humps');
 
+const eventType = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent'];
 class Service {
   platform;
   waitUntil;
@@ -40,13 +41,18 @@ class Service {
       }
       const properties = {};
       const required = [];
+
       data.forEach((item) => {
+        const type =
+          typeof item.type === 'string' ? humps.camelize(item.type) : item.type;
+        let tsType = '';
+        if (eventType.includes(type)) {
+          tsType = '() => void';
+        }
         properties[item.name] = {
-          type:
-            typeof item.type === 'string'
-              ? humps.camelize(item.type)
-              : item.type,
+          ...(tsType ? { tsType } : { type }),
           description: item.description,
+          ...(item.options ? { enum: item.options } : {}),
         };
         if (item.required) {
           required.push(item.name);
