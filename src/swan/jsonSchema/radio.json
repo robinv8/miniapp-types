@@ -15,7 +15,7 @@
       "description": "是否禁用"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "radio 的颜色，同 CSS 的 color"
     }
   },

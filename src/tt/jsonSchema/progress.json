@@ -11,11 +11,11 @@
       "description": "进度条的垂直宽度"
     },
     "active-color": {
-      "type": "color",
+      "type": "string",
       "description": "进度条颜色"
     },
     "background-color": {
-      "type": "color",
+      "type": "string",
       "description": "未达到进度的颜色"
     },
     "active": {

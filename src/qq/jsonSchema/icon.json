@@ -14,7 +14,7 @@
       "description": "icon的大小，单位px"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "icon的颜色，同css的color"
     },
     "aria-label": {

@@ -32,15 +32,15 @@
       "description": "右侧百分比字体大小（单位：px）"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "进度条颜色（推荐使用 active-color）"
     },
     "active-color": {
-      "type": "color",
+      "type": "string",
       "description": "已选择的进度条的颜色"
     },
     "background-color": {
-      "type": "color",
+      "type": "string",
       "description": "未选择的进度条的颜色"
     },
     "active": {

@@ -15,7 +15,7 @@
       "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "switch 的颜色，同 css 的 color"
     }
   },

@@ -23,19 +23,19 @@
       "description": "当前取值"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "背景条的颜色（请使用 background-color）"
     },
     "selected-color": {
-      "type": "color",
+      "type": "string",
       "description": "已选择的颜色（请使用 active-color）"
     },
     "active-color": {
-      "type": "color",
+      "type": "string",
       "description": "已选择的颜色"
     },
     "background-color": {
-      "type": "color",
+      "type": "string",
       "description": "背景条的颜色"
     },
     "block-size": {
@@ -43,7 +43,7 @@
       "description": "滑块的大小，取值范围为 12 - 28"
     },
     "block-color": {
-      "type": "color",
+      "type": "string",
       "description": "滑块的颜色"
     },
     "show-value": {

@@ -15,7 +15,7 @@
       "description": "是否禁用"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "radio的颜色，同css的color"
     },
     "aria-label": {

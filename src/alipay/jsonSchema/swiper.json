@@ -7,11 +7,11 @@
       "description": "是否显示指示点。\n默认值： false"
     },
     "indicator-color": {
-      "type": "color",
+      "type": "string",
       "description": "指示点颜色。\n默认值： rgba(0, 0, 0, .3)"
     },
     "indicator-active-color": {
-      "type": "color",
+      "type": "string",
       "description": "当前选中的指示点颜色。\n默认值：#000"
     },
     "active-class": {

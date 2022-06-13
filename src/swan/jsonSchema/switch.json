@@ -15,7 +15,7 @@
       ]
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "switch 的颜色，同 CSS 的 color"
     },
     "disabled": {

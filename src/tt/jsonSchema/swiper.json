@@ -7,11 +7,11 @@
       "description": "是否显示面板指示点"
     },
     "indicator-color": {
-      "type": "color",
+      "type": "string",
       "description": "指示点颜色"
     },
     "indicator-active-color": {
-      "type": "color",
+      "type": "string",
       "description": "当前选中的指示点颜色"
     },
     "autoplay": {

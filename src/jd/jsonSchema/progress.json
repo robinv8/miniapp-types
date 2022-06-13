@@ -15,15 +15,15 @@
       "description": "进度条线的宽度，单位 px"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "进度条颜色 （请使用 activeColor）"
     },
     "activeColor": {
-      "type": "color",
+      "type": "string",
       "description": "已选择的进度条的颜色"
     },
     "backgroundColor": {
-      "type": "color",
+      "type": "string",
       "description": "未选择的进度条的颜色"
     },
     "active": {

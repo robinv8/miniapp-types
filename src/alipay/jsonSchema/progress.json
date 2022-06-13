@@ -15,11 +15,11 @@
       "description": "线的粗细，单位 px。\n默认值： 6"
     },
     "active-color": {
-      "type": "color",
+      "type": "string",
       "description": "已选择的进度条颜色。\n默认值： #09BB07"
     },
     "background-color": {
-      "type": "color",
+      "type": "string",
       "description": "未选择的进度条颜色。"
     },
     "active": {

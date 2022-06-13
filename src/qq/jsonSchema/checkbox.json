@@ -15,7 +15,7 @@
       "description": "当前是否选中，可用来设置默认选中"
     },
     "color": {
-      "type": "color",
+      "type": "string",
       "description": "checkbox的颜色，同css的color"
     },
     "aria-label": {
