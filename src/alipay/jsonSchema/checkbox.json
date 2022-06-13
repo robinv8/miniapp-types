@@ -15,7 +15,7 @@
       "description": "是否禁用。\n默认值： false"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "组件发生改变时触发，detail = {value: 该 checkbox 是否 checked }。"
     },
     "color": {

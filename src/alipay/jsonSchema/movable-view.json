@@ -55,43 +55,43 @@
       "description": "是否使用动画。\n默认值： false\n版本要求： 基础库 1.20.0 及以上"
     },
     "onTouchStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作开始，事件会向父节点传递。\n版本要求： 基础库 1.11.5 及以上"
     },
     "catchTouchStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作开始，事件仅作用于组件，不向父节点传递。\n版本要求： 基础库 1.11.5 及以上"
     },
     "onTouchMove": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸移动事件，事件会向父节点传递。\n版本要求： 基础库 1.11.5 及以上"
     },
     "catchTouchMove": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸移动事件，事件仅作用于组件，不向父节点传递。\n版本要求： 基础库 1.11.5 及以上"
     },
     "onTouchEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作结束，事件会向父节点传递。\n版本要求： 基础库 1.11.5 及以上"
     },
     "catchTouchEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作结束，事件仅作用于组件，不向父节点传递。\n版本要求： 基础库 1.11.5 及以上"
     },
     "onTouchCancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作被打断，如来电提醒、弹窗。\n版本要求： 基础库 1.11.5 及以上"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "拖动过程中触发的事件，event.detail = {x: x, y: y, source: source}，其中 source 表示产生移动的原因，值可为 touch（拖动）。"
     },
     "onChangeEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "拖动结束触发的事件，event.detail = {x: x, y: y}。"
     },
     "onScale": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "缩放过程中触发的事件，event.detail = {x, y, scale}。\n版本要求： 基础库 1.20.0 及以上"
     }
   },

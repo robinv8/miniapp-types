@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击事件回调。\n版本要求：基础库 1.9.0 及以上"
     }
   },

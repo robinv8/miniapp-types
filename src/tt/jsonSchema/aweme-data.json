@@ -27,7 +27,7 @@
       "description": "获取信息失败时显示的默认昵称文本"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当错误发生时触发"
     }
   },

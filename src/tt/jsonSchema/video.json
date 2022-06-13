@@ -101,83 +101,83 @@
       "description": "设置署名水印"
     },
     "bindplay": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当开始播放时触发 play 事件"
     },
     "bindpause": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当暂停播放时触发 pause 事件"
     },
     "bindended": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当播放到末尾时触发 ended 事件"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频播放出错时触发 error 事件"
     },
     "bindtimeupdate": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }"
     },
     "bindfullscreenchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频进入和退出全屏时触发"
     },
     "bindwaiting": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频出现缓冲时触发"
     },
     "bindadstart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindadended": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindadload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindadclose": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindaderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindloadedmetadata": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
     },
     "bindseekcomplete": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}"
     },
     "bindplaybackratechange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}"
     },
     "bindmutechange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}"
     },
     "bindcontroltap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值"
     },
     "bindenterbackground": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "进入小窗播放时触发"
     },
     "bindclosebackground": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "关闭小窗播放时触发"
     },
     "bindleavebackground": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "离开小窗进入 app 事件时触发"
     }
   },

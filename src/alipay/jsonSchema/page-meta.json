@@ -39,7 +39,7 @@
       "description": "页面的根字体大小，页面中的所有 rem 单位，将使用这个字体大小作为参考值，即 1rem 等于这个字体大小；\n\n可以设置为 system，表示使用当前用户设置的支付宝字体大小。"
     },
     "onScroll": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "页面滚动时触发，event.detail = { scrollTop }"
     }
   },

@@ -22,7 +22,7 @@
       "description": "是否禁用"
     },
     "bindcancel": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "取消选择时触发"
     }
   },

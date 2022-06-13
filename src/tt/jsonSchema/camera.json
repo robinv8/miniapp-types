@@ -45,19 +45,19 @@
       ]
     },
     "bindinitdone": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "相机初始化完成时触发，e.detail = {maxZoom}"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户不允许使用摄像头或相机异常时触发"
     },
     "bindstop": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "摄像头在非正常终止时触发，如退出后台/跳转页面/电话中断等情况"
     },
     "bindscancode": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
     }
   },

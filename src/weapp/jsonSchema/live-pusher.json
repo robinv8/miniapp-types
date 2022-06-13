@@ -164,31 +164,31 @@
       ]
     },
     "bindstatechange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "状态变化事件，detail = {code}"
     },
     "bindnetstatus": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "网络状态通知，detail = {info}"
     },
     "binderror": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "渲染错误事件，detail = {errMsg, errCode}"
     },
     "bindbgmstart": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "背景音开始播放时触发"
     },
     "bindbgmprogress": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "背景音进度变化时触发，detail = {progress, duration}"
     },
     "bindbgmcomplete": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "背景音播放完成时触发"
     },
     "bindaudiovolumenotify": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "返回麦克风采集的音量大小"
     }
   },

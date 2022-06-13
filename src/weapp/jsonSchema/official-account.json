@@ -3,10 +3,10 @@
   "type": "object",
   "properties": {
     "bindload": {
-      "type": "eventHandle"
+      "tsType": "() => void"
     },
     "binderror": {
-      "type": "eventHandle"
+      "tsType": "() => void"
     }
   },
   "additionalProperties": false

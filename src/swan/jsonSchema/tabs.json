@@ -31,7 +31,7 @@
       "description": "当前 tabs 视图中最多容纳的 tab-item 数量，低于此数量均分排列，超出此数量划屏。默认五个，开发者可根据业务需求调整"
     },
     "bindtabchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "tab 被点击的回调，可以在 e.detail.name 中取到当前点击的 tab-item 对应的 name 值"
     }
   },

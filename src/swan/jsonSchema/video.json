@@ -125,35 +125,35 @@
       "description": "是否进入无声视频模式，进入无声视频模式后，视频将静音播放且不响应系统物理音量变化，点击播放器提示无声视频，手势调节失效"
     },
     "bindplay": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当开始播放时触发 play 事件"
     },
     "bindpause": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当暂停播放时触发 pause 事件"
     },
     "bindended": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当播放到末尾时触发 ended 事件"
     },
     "bindtimeupdate": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "播放进度变化时触发。event.detail = {currentTime, duration}"
     },
     "bindfullscreenchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当视频进入和退出全屏时触发。event.detail = {fullscreen, direction}，direction 取为 vertical 或 horizontal"
     },
     "bindwaiting": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频出现缓冲时触发"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频播放出错时触发"
     },
     "bindloadedmetadata": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
     }
   },

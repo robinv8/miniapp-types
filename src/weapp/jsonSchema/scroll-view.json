@@ -99,43 +99,43 @@
       "description": "滑动减速速率控制 (同时开启 enhanced 属性后生效)"
     },
     "binddragstart": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "滑动开始事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft }"
     },
     "binddragging": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "滑动事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft }"
     },
     "binddragend": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "滑动结束事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft, velocity }"
     },
     "bindscrolltoupper": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "滚动到顶部/左边时触发"
     },
     "bindscrolltolower": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "滚动到底部/右边时触发"
     },
     "bindscroll": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
     },
     "bindrefresherpulling": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "自定义下拉刷新控件被下拉"
     },
     "bindrefresherrefresh": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "自定义下拉刷新被触发"
     },
     "bindrefresherrestore": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "自定义下拉刷新被复位"
     },
     "bindrefresherabort": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "自定义下拉刷新被中止"
     }
   },

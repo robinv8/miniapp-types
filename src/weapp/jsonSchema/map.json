@@ -119,39 +119,39 @@
       "description": "配置项"
     },
     "bindtap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击地图时触发，2.9.0起返回经纬度信息"
     },
     "bindmarkertap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击标记点时触发，e.detail = {markerId}"
     },
     "bindlabeltap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击 label 时触发，e.detail = {markerId}"
     },
     "bindcontroltap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击控件时触发，e.detail = {controlId}"
     },
     "bindcallouttap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击标记点对应的气泡时触发e.detail = {markerId}"
     },
     "bindupdated": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "在地图渲染更新完成时触发"
     },
     "bindregionchange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "视野发生变化时触发，"
     },
     "bindpoitap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击地图 poi 点时触发，e.detail = {name, longitude, latitude}"
     },
     "bindanchorpointtap": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "点击定位标时触发，e.detail = {longitude, latitude}"
     }
   },

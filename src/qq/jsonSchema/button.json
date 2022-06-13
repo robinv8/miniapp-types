@@ -80,7 +80,7 @@
       "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。"
     },
     "bindgetuserinfo": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与qq.getUserInfo返回的一致"
     },
     "app-parameter": {
@@ -100,15 +100,15 @@
       "description": "打开公众号资料卡时，传递的号码"
     },
     "binderror": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "当使用开放能力时，发生错误的回调"
     },
     "bindlaunchapp": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "打开 APP 成功的回调"
     },
     "bindopensetting": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "在打开授权设置页后回调"
     },
     "share-type": {
@@ -128,15 +128,15 @@
       "description": "添加好友时，对方的 openid"
     },
     "bindaddfriend": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "添加好友的回调"
     },
     "bindaddgroupapp": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "添加群应用的回调。errCode 错误码：41004（当前用户非管理员或群主，无权操作），41005（超过可添加群应用的群数量）"
     },
     "bindcontact": {
-      "type": "handler",
+      "tsType": "() => void",
       "description": "打开客服会话的回调。"
     },
     "share-message-friend-info": {

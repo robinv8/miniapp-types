@@ -72,31 +72,31 @@
       "description": "名称前是否带有 loading 图标"
     },
     "bindgetphonenumber": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "获取用户手机号回调。和 open-type 搭配使用， 使用时机：open-type=\"getPhoneNumber\"。具体申请方法请见：获取用户手机号权限申请"
     },
     "bindgetuserinfo": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户点击该按钮时，会返回获取到的用户信息，可以从返回参数的 detail 中获取到的值。当 errMsg 为getUserInfo:ok时即为获取成功；其中 userInfo 字段中包含获取到的用户头像地址（avatarUrl）、性别（gender）、昵称（nickName）。和 open-type 搭配使用， 使用时机：open-type=\"getUserInfo\""
     },
     "bindopensetting": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "在打开授权设置页后回调，使用时机：open-type=\"openSetting\""
     },
     "bindcontact": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "客服消息回调，使用时机：open-type=\"contact\""
     },
     "bindchooseaddress": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户点击该按钮时，调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址，从返回参数的 detail 中获取，和 swan.chooseAddress 一样的。和 open-type 搭配使用，使用时机：open-type=\"chooseAddress\""
     },
     "bindchooseinvoicetitle": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户点击该按钮时，选择用户的发票抬头，和 swan.chooseInvoiceTitle 一样的。和 open-type 搭配使用，使用时机：open-type=\"chooseInvoiceTitle\""
     },
     "bindlogin": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "登录回调，和 open-type 搭配使用，使用时机：open-type=\"login\"。可以通过返回参数的 detail 判断是否登录成功，当 errMsg 为'login:ok'时即为成功。如想获取登录凭证请使用 swan.getLoginCode"
     },
     "template-id": {
@@ -111,7 +111,7 @@
       "description": "发送订阅类模板消息时所使用的唯一标识符，内容由开发者自定义，用来标识订阅场景\n注意：同一用户在同一 subscribe-id 下的多次授权不累积下发权限，只能下发一条。若要订阅多条，需要不同 subscribe-id"
     },
     "bindsubscribe": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "订阅消息授权回调，和 open-type 搭配使用，使用时机：open-type=\"subscribe\""
     }
   },

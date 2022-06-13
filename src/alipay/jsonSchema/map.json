@@ -83,27 +83,27 @@
       "description": "设置。\n\n{\n\n  // 手势\n\n  gestureEnable: 1,\n\n  // 比例尺\n\n  showScale: 1,\n\n  // 指南针\n\n  showCompass: 1,\n\n  //双手下滑\n\n  tiltGesturesEnabled: 1,\n\n  // 交通路况展示\n\n  trafficEnabled: 0,\n\n  // 地图 POI 信息\n\n  showMapText: 0,\n\n  // 高德地图 logo 位置\n\n  logoPosition: {\n\n    centerX: 150,\n\n    centerY: 90\n\n  }\n\n// 自定义地图样式\n\n customMapStyleSrc: \"/resources/style/style_v7.data\"\n\n}"
     },
     "onMarkerTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击 Marker 时触发。\n\n{\n\n    markerId,\n\n    latitude,\n\n    longitude, \n\n}\n\n版本要求：基础库 1.10.0 及以上"
     },
     "onCalloutTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击 Marker 对应的 callout 时触发。\n\n{\n\n    markerId,\n\n    latitude,\n\n    longitude, \n\n}\n\n版本要求：基础库 1.10.0 及以上"
     },
     "onControlTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击 control 时触发。\n\n{\n\n    controlId\n\n}\n\n版本要求：基础库 1.10.0 及以上"
     },
     "onRegionChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视野发生变化时触发。\n\n基础库 1.24.0 版本新增 skew、rotate、causedBy 返回；\n\nbegin 阶段 causedBy 有效值为 update(接口触发)、gesture(手势触发)；\n\nend 阶段 causedBy 有效值为 update(接口触发)、drag/scale/skew/rotate (手势触发)。\n\n{\n\n    type: \"begin/end\", \n\n    latitude,\n\n    longitude, \n\n    scale,\n\n    skew,\n\n    rotate,\n\n    causedBy: \"update/gesture\"\n\n}\n\n版本要求：基础库 1.10.0 及以上"
     },
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击地图时触发。\n\n{\n\n    latitude,\n\n    longitude, \n\n}\n\n版本要求：基础库 1.10.0 及以上"
     },
     "onPanelTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击 panel 时触发。\n\n{ \n\n   panelId,\n\n   layoutId,\n\n}\n\n版本要求：基础库 1.23.0 及以上"
     },
     "show-compass": {
@@ -147,7 +147,7 @@
       "description": "是否开启卫星图。\n版本要求：基础库 2.7.2 及以上"
     },
     "onInitComplete": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "地图初始化完成即将开始渲染第一帧时触发。\n\n版本要求：基础库 2.7.2 及以上"
     }
   },

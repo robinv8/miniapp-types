@@ -18,7 +18,7 @@
       "description": "是否禁用"
     },
     "bindcancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "取消选择收起 picker 时触发"
     }
   },

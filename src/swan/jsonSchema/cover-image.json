@@ -23,11 +23,11 @@
       "description": "设置与容器左侧的固定距离，效果相当于在 CSS 中设置 position: fixed 和 left 值，该属性优先级高于 fixed-left，CSS 设置的 position、left、right 值"
     },
     "bindload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "图片加载成功时触发"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "图片加载失败时触发"
     }
   },

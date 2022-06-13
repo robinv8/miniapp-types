@@ -59,11 +59,11 @@
       "description": "是否停止响应用户 touchmove 操作"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}"
     },
     "bindanimationfinish": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
     }
   },

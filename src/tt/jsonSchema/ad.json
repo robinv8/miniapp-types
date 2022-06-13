@@ -7,15 +7,15 @@
       "description": "广告位 id，必填。需要预先在「小程序管理后台 > 流量主模块」配置生成。"
     },
     "bindload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "广告加载成功的回调方法"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "广告加载失败的回调方法，具体的错误信息可以参考广告错误码说明"
     },
     "bindclose": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "广告关闭的回调方法"
     },
     "ad-intervals": {

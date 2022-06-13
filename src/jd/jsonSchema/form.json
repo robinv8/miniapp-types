@@ -6,10 +6,10 @@
       "type": "boolean"
     },
     "bindsubmit": {
-      "type": "eventHandle"
+      "tsType": "() => void"
     },
     "bindreset": {
-      "type": "eventHandle"
+      "tsType": "() => void"
     }
   },
   "additionalProperties": false

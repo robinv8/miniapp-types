@@ -15,7 +15,7 @@
       "description": "仅在 mode 为 camera 时有效，前置或后置，值为front, back"
     },
     "binderror": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "创建对话窗口失败时触发"
     }
   },

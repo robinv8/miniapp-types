@@ -27,19 +27,19 @@
       "description": "默认图片地址，若设置默认图片地址，会先显示默认图片，等 src 对应的图片加载成功后，再渲染对应的图片。\n版本要求： 基础库 1.19.0 及以上"
     },
     "onLoad": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "图片载入完毕时触发，事件对象 event.detail = {height: '图片高度px', width: '图片宽度px'}。"
     },
     "onError": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当图片加载错误时触发，事件对象 event.detail = {errMsg: 'something wrong'。"
     },
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击图片时触发。"
     },
     "catchTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击图片时触发，阻止事件冒泡。"
     }
   },

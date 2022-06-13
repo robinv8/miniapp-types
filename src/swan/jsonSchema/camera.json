@@ -20,11 +20,11 @@
       ]
     },
     "bindstop": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "摄像头在非正常终止时触发，如退出后台等情况"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户不允许使用摄像头时触发"
     }
   },

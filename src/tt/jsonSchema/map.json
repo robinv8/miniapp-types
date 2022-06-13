@@ -35,19 +35,19 @@
       "description": "缩放视野以包含所有给定的坐标点；示例：[{latitude: 0, longitude: 0}]"
     },
     "bindtap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击地图时触发，e.detail = { latitude, longitude}"
     },
     "bindmarkertap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击标记点时触发，e.detail = {markerId, latitude, longitude}"
     },
     "bindcallouttap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击标记点对应的气泡时触发, e.detail = {markerId}"
     },
     "bindregionchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视野发生变化时触发"
     },
     "rotate": {
@@ -115,15 +115,15 @@
       "description": "是否展示建筑物"
     },
     "bindlabeltap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击 label 时触发，e.detail = {markerId}"
     },
     "bindupdated": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "在地图渲染更新完成时触发"
     },
     "bindanchorpointtap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击定位标时触发，e.detail = {longitude, latitude}"
     }
   },

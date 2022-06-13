@@ -47,11 +47,11 @@
       "description": "预览时显示的图片地址"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}"
     },
     "bindload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度 px', width:'图片宽度 px'}"
     }
   },

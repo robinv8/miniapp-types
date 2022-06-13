@@ -19,19 +19,19 @@
       "description": "更改该属性，可以触发广告刷新"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "广告组件加载失败时触发"
     },
     "bindload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "广告组件加载完成触发"
     },
     "bindclose": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "关闭广告组件时触发"
     },
     "bindstatus": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "贴片类型广告播放期间触发"
     }
   },

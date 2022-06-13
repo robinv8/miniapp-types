@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "选中项发生变化时触发，event.detail = {value: 选中项 radio 的 value}。"
     },
     "name": {

@@ -63,15 +63,15 @@
       "description": "是否禁用代码变动触发 swiper 切换时使用动画。\n默认值： false\n版本要求： 基础库 1.13.7 及以上"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "current 改变时会触发，event.detail = {current, isChanging}，其中 isChanging 需 acceleration 设置为 {{true}} 时才有值，当连续滑动多屏时，中间若干屏触发 onChange 事件时 isChanging 为 true，最后一屏返回 false。\n版本要求： 基础库 1.15.0 及以上"
     },
     "onTransition": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "swiper 中 swiper-item 的位置发生改变时会触发 transition 事件。\n其中{dx,dy} = event.detail 基础库 2.6.0 开始支持。"
     },
     "onAnimationEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画结束时会触发 animationEnd 事件，event.detail = {current, source}，其中 source 的值有 autoplay 和  touch。\n版本要求： 基础库 1.15.0 及以上"
     },
     "disable-touch": {

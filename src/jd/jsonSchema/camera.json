@@ -27,11 +27,11 @@
       ]
     },
     "bindstop": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "否"
     },
     "binderror": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "否"
     }
   },

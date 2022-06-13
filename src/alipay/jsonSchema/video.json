@@ -83,47 +83,47 @@
       "description": "移动网络提醒样式。\n\n0 - 不提醒\n1 - tip 提醒\n2 - 阻塞提醒(无消耗流量大小)\n3 - 阻塞提醒(有消耗流量大小提醒)\n\n默认值： 1\n版本要求： 基础库 1.13.0 及以上"
     },
     "onPlay": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当开始/继续播放时触发 play 事件。"
     },
     "onPause": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当暂停播放时触发 pause 事件。"
     },
     "onEnded": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当播放到末尾时触发 ended 事件。"
     },
     "onTimeUpdate": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "播放进度变化时触发，event.detail = {currentTime: '当前播放时间',userPlayDuration:'用户实际观看时长',videoDuration:'视频总时长'} 。\n版本要求： 基础库 1.9.0 及以上"
     },
     "onLoading": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频出现缓冲时触发。"
     },
     "onError": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频播放出错时触发（errorCode 见下面错误码表）。"
     },
     "onFullScreenChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction 取为 vertical 或 horizontal。\n版本要求： 基础库 1.12.0 及以上"
     },
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击视频 view 时触发，event.detail = {ptInView:{x:0,y:0}}。"
     },
     "onUserAction": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户操作事件，event.detail = {tag:\"mute\", value:0}，tag 为用户操作的元素，目前支持的 tag 有：play（底部播放按钮）、centerplay（中心播放按钮）、mute（静音按钮）、fullscreen（全屏按钮）、retry（重试按钮）、mobilenetplay（网络提醒的播放按钮）。"
     },
     "onStop": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频播放终止。\n版本要求： 基础库 1.9.0 及以上"
     },
     "onRenderStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当视频加载完真正开始播放时触发。\n版本要求： 基础库 1.13.6 及以上"
     },
     "floating-mode": {

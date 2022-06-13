@@ -31,11 +31,11 @@
       "description": "否"
     },
     "bindstatechange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindfullscreenchange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "否"
     }
   },

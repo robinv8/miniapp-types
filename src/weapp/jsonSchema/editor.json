@@ -23,23 +23,23 @@
       "description": "点击图片时显示修改尺寸控件"
     },
     "bindready": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "编辑器初始化完成时触发"
     },
     "bindfocus": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "编辑器聚焦时触发，event.detail = {html, text, delta}"
     },
     "bindblur": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "编辑器失去焦点时触发，detail = {html, text, delta}"
     },
     "bindinput": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "编辑器内容改变时触发，detail = {html, text, delta}"
     },
     "bindstatuschange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "通过 Context 方法改变编辑器内样式时触发，返回选区已设置的样式"
     }
   },

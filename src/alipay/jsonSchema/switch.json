@@ -19,7 +19,7 @@
       "description": "组件颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "checked 改变时触发，event.detail={ value:checked}。"
     },
     "controlled": {

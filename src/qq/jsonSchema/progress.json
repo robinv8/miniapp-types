@@ -52,7 +52,7 @@
       "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
     },
     "bindactiveend": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画完成事件"
     },
     "aria-label": {

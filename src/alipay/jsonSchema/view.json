@@ -39,55 +39,55 @@
       "description": "是否阻止当前元素的祖先元素出现点击态。\n默认值： false\n版本要求： 基础库 1.10.0 及以上"
     },
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击。"
     },
     "onTouchStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作开始。"
     },
     "onTouchMove": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸后移动。"
     },
     "onTouchEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作结束。"
     },
     "onTouchCancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作被打断，如来电提醒，弹窗。"
     },
     "onLongTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "长按 500ms 之后触发，触发了长按事件后进行移动将不会触发屏幕的滚动。"
     },
     "onTransitionEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "过渡（Transition）结束时触发。\n版本要求： 基础库 1.8.0 及以上"
     },
     "onAnimationIteration": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "每开启一次新的动画过程时触发。（第一次不触发）\n版本要求： 基础库 1.8.0 及以上"
     },
     "onAnimationStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画开始时触发。\n版本要求： 基础库 1.8.0 及以上"
     },
     "onAnimationEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画结束时触发。\n版本要求： 基础库 1.8.0 及以上"
     },
     "onAppear": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当前元素可见面积超过50%时触发。\n版本要求： 基础库 1.9.0 及以上"
     },
     "onDisappear": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当前元素不可见面积超过50%时触发。\n版本要求： 基础库 1.9.0 及以上"
     },
     "onFirstAppear": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当前元素首次可见面积达到50%时触发。\n版本要求： 基础库 1.9.4 及以上"
     },
     "role": {

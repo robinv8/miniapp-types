@@ -23,7 +23,7 @@
       "description": "是否禁用"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "checked 改变时触发 change 事件，event.detail = {checked: true}"
     }
   },

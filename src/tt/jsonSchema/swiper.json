@@ -66,15 +66,15 @@
       ]
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "current 改变时触发"
     },
     "bindanimationfinish": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画结束时会触发 animationfinish 事件"
     },
     "bindtransition": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "swiper-item 产生位移时触发 transition 事件"
     }
   },

@@ -95,23 +95,23 @@
       "description": "配置项"
     },
     "bindtap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击地图时触发，返回经纬度信息"
     },
     "bindmarkertap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击标记点时触发 e.detail = {markerId}"
     },
     "bindupdated": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "在地图渲染更新完成时触发"
     },
     "bindregionchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视野发生变化时触发 \b会触发两次，返回的type值分别为begin/end。"
     },
     "bindpoitap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击地图poi点时触发 e.detail = {name, longitude, latitude}"
     }
   },

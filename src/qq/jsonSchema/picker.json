@@ -18,7 +18,7 @@
       "description": "value 的值表示选择了 range 中的第几个（下标从 0 开始）"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "value 改变时触发 change 事件，event.detail = {value: value}"
     },
     "disabled": {
@@ -26,7 +26,7 @@
       "description": "是否禁用"
     },
     "bindcancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "取消选择或点遮罩层收起 picker 时触发"
     }
   },

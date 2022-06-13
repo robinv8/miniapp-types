@@ -35,15 +35,15 @@
       "description": "值应为某子元素 id（id 不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素"
     },
     "bindscroll": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "滚动时触发"
     },
     "bindscrolltoupper": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "滚动到顶部/左边"
     },
     "bindscrolltolower": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "滚动到底部/右边"
     }
   },

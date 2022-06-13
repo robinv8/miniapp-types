@@ -43,31 +43,31 @@
       "description": "降级。降级是指如遇低端设备，Lottie 会降级展示为 placeHolder。\n当 optimize 为 true ，并且传入了 placeHolder 时，在低端设备上只会展示 placeHolder，不展示 Lottie。\n低端设备如下所示：\n\niOS ：小于等于 iPhone6P\nAndroid：内存容量小于 3G\n默认值： false\n版本要求： 支付宝客户端 10.1.52 及以上"
     },
     "onDataReady": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当数据下载+视图创建完成时触发。"
     },
     "onDataFailed": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "数据加载失败时触发。"
     },
     "onAnimationStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画开始时触发。"
     },
     "onAnimationEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画结束时触发。"
     },
     "onAnimationRepeat": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画一次重播结束。\n版本要求：支付宝客户端 10.1.52 及以上"
     },
     "onAnimationCancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画取消。业务调用 Cancel 时回调。"
     },
     "onDataLoadReady": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "参数化时，数据准备完成，等待业务传入参数化值。\n版本要求：支付宝客户端 10.1.72 及以上"
     }
   },

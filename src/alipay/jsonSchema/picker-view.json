@@ -23,7 +23,7 @@
       "description": "蒙层的类名。\n版本要求： 基础库 1.10.0 及以上"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "滚动选择 value 改变时触发，event.detail = {value: value} value为数组，表示 picker-view 内的 picker-view-column index 索引 ，从 0 开始。"
     }
   },

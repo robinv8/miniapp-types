@@ -103,35 +103,35 @@
       "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的视频"
     },
     "bindplay": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当开始/继续播放时触发play事件"
     },
     "bindpause": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当暂停播放时触发 pause 事件"
     },
     "bindended": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当播放到末尾时触发 ended 事件"
     },
     "bindtimeupdate": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次"
     },
     "bindfullscreenchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction 有效值为 vertical 或 horizontal"
     },
     "bindwaiting": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频出现缓冲时触发"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "视频播放出错时触发"
     },
     "bindprogress": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "加载进度变化时触发，只支持一段加载。event.detail = {buffered}，百分比"
     }
   },

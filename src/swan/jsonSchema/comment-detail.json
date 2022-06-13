@@ -31,7 +31,7 @@
       "description": "用于调起评论发布器发布评论"
     },
     "binddelete": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "删除整体详情内容时触发，返回数据为{status, data:{srid}}"
     }
   },

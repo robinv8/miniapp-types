@@ -55,19 +55,19 @@
       "description": "是否使用动画"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "拖动过程中触发的事件"
     },
     "bindscale": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "缩放过程中触发的事件"
     },
     "htouchmove": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "初次手指触摸后移动为横向的移动时触发"
     },
     "vtouchmove": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "初次手指触摸后移动为纵向的移动时触发"
     }
   },

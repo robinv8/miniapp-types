@@ -35,15 +35,15 @@
       "description": "设置署名水印"
     },
     "bindstatechange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "播放状态变化事件，detail = {code}"
     },
     "bindfullscreenchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "全屏变化事件，detail = {direction, fullScreen}"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "播放错误事件"
     }
   },

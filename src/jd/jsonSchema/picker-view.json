@@ -18,7 +18,7 @@
       "type": "string"
     },
     "bindchange": {
-      "type": "eventHandle"
+      "tsType": "() => void"
     }
   },
   "additionalProperties": false

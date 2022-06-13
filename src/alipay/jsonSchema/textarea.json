@@ -47,19 +47,19 @@
       "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上"
     },
     "onInput": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "键盘输入时触发，event.detail = {value: value, cursor: cursor}。\n版本要求：cursor 字段基础库 1.17.0 及以上开始支持。"
     },
     "onFocus": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "输入框聚焦时触发 event.detail = {value: value}。"
     },
     "onBlur": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "输入框失去焦点时触发，event.detail = {value: value}。"
     },
     "onConfirm": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击完成时触发，event.detail = {value: value}。"
     }
   },

@@ -15,7 +15,7 @@
       "description": "样式，有效值：switch, checkbox"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
     },
     "color": {

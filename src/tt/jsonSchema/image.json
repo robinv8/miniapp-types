@@ -31,11 +31,11 @@
       "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载"
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当错误发生时触发"
     },
     "bindload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当图片载入完毕时触发"
     }
   },

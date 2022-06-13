@@ -61,19 +61,19 @@
       "description": "是否使用动画"
     },
     "bindchange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "拖动过程中触发的事件，event.detail = {x, y, source}"
     },
     "bindscale": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "缩放过程中触发的事件，event.detail = {x, y, scale}，x和 y 字段在2.1.0之后支持"
     },
     "htouchmove": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "初次手指触摸后移动为横向的移动时触发，如果 catch 此事件，则意味着 touchmove 事件也被catch"
     },
     "vtouchmove": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "初次手指触摸后移动为纵向的移动时触发，如果 catch 此事件，则意味着 touchmove 事件也被catch"
     }
   },

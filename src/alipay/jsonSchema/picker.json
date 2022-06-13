@@ -22,7 +22,7 @@
       "description": "表示选择了 range 中的第几个（下标从 0 开始）。"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "value 改变时触发，event.detail = {value: value}。"
     },
     "disabled": {

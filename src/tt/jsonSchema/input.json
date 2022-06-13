@@ -72,19 +72,19 @@
       ]
     },
     "bindinput": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明"
     },
     "bindfocus": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "输入框聚焦时触发，详情见 bindfocus 说明"
     },
     "bindblur": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "输入框失去焦点时触发，详情见 bindblur 说明"
     },
     "bindconfirm": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明"
     }
   },

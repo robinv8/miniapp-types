@@ -56,7 +56,7 @@
       "description": "进度增加1%所需毫秒数"
     },
     "bindactiveend": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "动画完成事件"
     }
   },

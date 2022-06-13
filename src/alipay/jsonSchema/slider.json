@@ -51,11 +51,11 @@
       "description": "滑块填充色，同 CSS 色值。\n默认值： #fff"
     },
     "onChange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "完成一次拖动后触发，event.detail = {value: value}。"
     },
     "onChanging": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "拖动过程中触发的事件，event.detail = {value: value}。\n版本要求： 基础库版本 1.5.0 及以上"
     }
   },

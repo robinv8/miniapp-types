@@ -72,11 +72,11 @@
       ]
     },
     "bindstatechange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "房间状态变化事件，参考下方状态码，detail = { code, msg, userInfo }"
     },
     "binderror": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "错误事件。参考下方错误码，detail = { errMsg, errCode }"
     }
   },

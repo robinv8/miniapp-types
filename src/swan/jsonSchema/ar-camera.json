@@ -25,19 +25,19 @@
       ]
     },
     "binderror": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "用户不允许使用摄像头或扫码失败时触发"
     },
     "bindload": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "AR 加载成功时触发"
     },
     "bindmessage": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "开发者制作 AR 项目时可自定义按键，用户点击时会收到事件和数据，用户自定义事件格式参见代码示例 2：用户自定义事件"
     },
     "bindscancode": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "扫描识图结束后触发"
     }
   },

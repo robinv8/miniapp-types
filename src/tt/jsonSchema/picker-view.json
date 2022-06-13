@@ -15,7 +15,7 @@
       "description": "设置蒙层的样式"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "改变时触发"
     }
   },

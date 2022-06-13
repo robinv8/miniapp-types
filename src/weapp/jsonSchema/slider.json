@@ -51,11 +51,11 @@
       "description": "是否显示当前 value"
     },
     "bindchange": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "完成一次拖动后触发的事件，event.detail = {value}"
     },
     "bindchanging": {
-      "type": "eventhandle",
+      "tsType": "() => void",
       "description": "拖动过程中触发的事件，event.detail = {value}"
     }
   },

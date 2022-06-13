@@ -75,19 +75,19 @@
       "description": "是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效。\n默认值：false\n版本要求：基础库 2.7.3 及以上"
     },
     "onInput": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "键盘输入时触发 input 事件，event.detail = {value: value,cursor: cursor}。\n版本要求：cursor 字段基础库 1.14.0 及以上开始支持。"
     },
     "onConfirm": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击键盘完成时触发，event.detail = {value: value}"
     },
     "onFocus": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "聚焦时触发，event.detail = {value: value}。"
     },
     "onBlur": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "失去焦点时触发（仅支持真机），event.detail = {value: value}。"
     }
   },

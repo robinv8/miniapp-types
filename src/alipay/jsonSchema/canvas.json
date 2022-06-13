@@ -27,27 +27,27 @@
       "description": "禁止屏幕滚动以及下拉刷新。\n默认值： false"
     },
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击。"
     },
     "onTouchStart": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作开始。"
     },
     "onTouchMove": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸后移动。"
     },
     "onTouchEnd": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作结束。"
     },
     "onTouchCancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "触摸动作被打断，如来电提醒，弹窗。"
     },
     "onLongTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "长按 500ms 之后触发，触发了长按事件后进行移动将不会触发屏幕的滚动。"
     },
     "type": {
@@ -55,7 +55,7 @@
       "description": "类型。设置 type 属性后，会渲染成 native canvas。\n可选值：2d、webgl\n版本要求：基础库 2.7.0 及以上"
     },
     "onReady": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "canvas 组件初始化成功触发。\n版本要求：基础库 2.7.0 及以上"
     }
   },

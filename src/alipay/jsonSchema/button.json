@@ -57,7 +57,7 @@
       "description": "当 open-type 为 getAuthorize 时有效。\n版本要求： 基础库 1.11.0 及以上"
     },
     "onTap": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "点击。\n说明： 每点击一次会触发一次事件，建议自行使用代码防止重复点击,可以使用 js 防抖和节流实现。"
     },
     "public-id": {
@@ -65,15 +65,15 @@
       "description": "生活号 id，必须是当前小程序同主体且已关联的生活号，open-type=\"lifestyle\" 时有效。"
     },
     "onGetAuthorize": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当 open-type 为 getAuthorize 时有效。\n当授权成功时触发。\n版本要求：基础库 1.11.0 及以上"
     },
     "onFollowLifestyle": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当 open-type 为 lifestyle 时有效。\n当点击按钮时触发。\nevent.detail = { followStatus }，folllowStatus 合法值有 1、2、3，其中 1 表示已关注。2 表示用户不允许关注。3 表示发生未知错误；\n已知问题：基础库 1.0，当用户在点击按钮前已关注生活号，event.detail.followStatus 的值为 true。\n版本要求：基础库 1.11.0 及以上"
     },
     "onError": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。\n版本要求：基础库 1.11.0 及以上"
     }
   },

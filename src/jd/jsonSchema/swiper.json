@@ -59,11 +59,11 @@
       "description": "是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息"
     },
     "bindchange": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "current改变时会触发 change 事件，event.detail = {current: current, source: source}"
     },
     "bindanimationfinish": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
     },
     "easing-function": {
@@ -82,7 +82,7 @@
       "description": "当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素"
     },
     "bindtransition": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
     }
   },

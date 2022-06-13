@@ -11,7 +11,7 @@
       "description": "是否禁用"
     },
     "bindcancel": {
-      "type": "eventHandle",
+      "tsType": "() => void",
       "description": "取消选择或点击遮罩层收起 picker 时触发"
     }
   },
