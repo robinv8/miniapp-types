@@ -4,7 +4,18 @@
   "properties": {
     "type": {
       "type": "string",
-      "description": "icon 的类型"
+      "description": "icon 的类型",
+      "enum": [
+        "success",
+        "success_no_circle",
+        "info",
+        "warn",
+        "waiting",
+        "clear",
+        "cancel",
+        "download",
+        "search"
+      ]
     },
     "size": {
       "type": "number",

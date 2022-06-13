@@ -4,11 +4,20 @@
   "properties": {
     "size": {
       "type": "string",
-      "description": "按钮的大小"
+      "description": "按钮的大小",
+      "enum": [
+        "default",
+        "mini"
+      ]
     },
     "type": {
       "type": "string",
-      "description": "按钮的样式类型"
+      "description": "按钮的样式类型",
+      "enum": [
+        "primary",
+        "default",
+        "warn"
+      ]
     },
     "plain": {
       "type": "boolean",
@@ -24,11 +33,25 @@
     },
     "form-type": {
       "type": "string",
-      "description": "用于 form 组件，点击分别会触发 form 组件的 submit/reset 事件"
+      "description": "用于 form 组件，点击分别会触发 form 组件的 submit/reset 事件",
+      "enum": [
+        "submit",
+        "reset"
+      ]
     },
     "open-type": {
       "type": "string",
-      "description": "微信开放能力"
+      "description": "微信开放能力",
+      "enum": [
+        "contact",
+        "share",
+        "getPhoneNumber",
+        "getUserInfo",
+        "launchApp",
+        "openSetting",
+        "feedback",
+        "chooseAvatar"
+      ]
     },
     "hover-class": {
       "type": "string",
@@ -48,7 +71,12 @@
     },
     "lang": {
       "type": "string",
-      "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。"
+      "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。",
+      "enum": [
+        "en",
+        "zh_CN",
+        "zh_TW"
+      ]
     },
     "session-from": {
       "type": "string",

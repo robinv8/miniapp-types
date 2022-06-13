@@ -4,7 +4,15 @@
   "properties": {
     "open-type": {
       "type": "string",
-      "description": "跳转方式。\n默认值： navigate"
+      "description": "跳转方式。\n默认值： navigate",
+      "enum": [
+        "navigate",
+        "redirect",
+        "switchTab",
+        "navigateBack",
+        "reLaunch",
+        "exit"
+      ]
     },
     "hover-class": {
       "type": "string",

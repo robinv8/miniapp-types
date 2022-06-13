@@ -12,7 +12,11 @@
     },
     "type": {
       "type": "string",
-      "description": "样式，详见 type 的合法值"
+      "description": "样式，详见 type 的合法值",
+      "enum": [
+        "switch",
+        "checkbox"
+      ]
     },
     "color": {
       "type": "color",

@@ -4,7 +4,11 @@
   "properties": {
     "target": {
       "type": "string",
-      "description": "在哪个目标上发生跳转，默认当前小程序"
+      "description": "在哪个目标上发生跳转，默认当前小程序",
+      "enum": [
+        "self",
+        "miniProgram"
+      ]
     },
     "url": {
       "type": "string",
@@ -12,7 +16,15 @@
     },
     "open-type": {
       "type": "string",
-      "description": "跳转方式"
+      "description": "跳转方式",
+      "enum": [
+        "navigate",
+        "redirect",
+        "switchTab",
+        "reLaunch",
+        "navigateBack",
+        "exit"
+      ]
     },
     "delta": {
       "type": "number",
@@ -32,7 +44,12 @@
     },
     "version": {
       "type": "string",
-      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序版本"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序版本",
+      "enum": [
+        "develop",
+        "trial",
+        "release"
+      ]
     },
     "short-link": {
       "type": "string",

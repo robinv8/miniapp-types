@@ -28,7 +28,14 @@
     },
     "type": {
       "type": "string",
-      "description": "广告的类型，详见 type 的合法值"
+      "description": "广告的类型，详见 type 的合法值",
+      "enum": [
+        "banner",
+        "video",
+        "large",
+        "lImg",
+        "rImg"
+      ]
     },
     "scale": {
       "type": "number",

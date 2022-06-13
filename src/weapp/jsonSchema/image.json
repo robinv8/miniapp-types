@@ -8,7 +8,23 @@
     },
     "mode": {
       "type": "string",
-      "description": "图片裁剪、缩放的模式"
+      "description": "图片裁剪、缩放的模式",
+      "enum": [
+        "scaleToFill",
+        "aspectFit",
+        "aspectFill",
+        "widthFix",
+        "heightFix",
+        "top",
+        "bottom",
+        "center",
+        "left",
+        "right",
+        "top left",
+        "top right",
+        "bottom left",
+        "bottom right"
+      ]
     },
     "webp": {
       "type": "boolean",

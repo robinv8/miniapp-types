@@ -16,11 +16,19 @@
     },
     "orientation": {
       "type": "string",
-      "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值"
+      "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
     },
     "object-fit": {
       "type": "string",
-      "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值"
+      "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值",
+      "enum": [
+        "contain",
+        "fillCrop"
+      ]
     },
     "signature": {
       "type": "signature",

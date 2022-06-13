@@ -28,7 +28,11 @@
     },
     "orientation": {
       "type": "string",
-      "description": "画面方向"
+      "description": "画面方向",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
     },
     "beauty": {
       "type": "number",
@@ -84,11 +88,26 @@
     },
     "local-mirror": {
       "type": "string",
-      "description": "控制本地预览画面是否镜像"
+      "description": "控制本地预览画面是否镜像",
+      "enum": [
+        "auto",
+        "enable",
+        "disable"
+      ]
     },
     "audio-reverb-type": {
       "type": "number",
-      "description": "音频混响类型"
+      "description": "音频混响类型",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
     },
     "enable-mic": {
       "type": "boolean",
@@ -104,7 +123,12 @@
     },
     "audio-volume-type": {
       "type": "string",
-      "description": "音量类型"
+      "description": "音量类型",
+      "enum": [
+        "auto",
+        "media",
+        "voicecall"
+      ]
     },
     "video-width": {
       "type": "number",
@@ -116,11 +140,28 @@
     },
     "beauty-style": {
       "type": "string",
-      "description": "设置美颜类型"
+      "description": "设置美颜类型",
+      "enum": [
+        "smooth",
+        "nature"
+      ]
     },
     "filter": {
       "type": "string",
-      "description": "设置色彩滤镜"
+      "description": "设置色彩滤镜",
+      "enum": [
+        "standard",
+        "pink",
+        "nostalgia",
+        "blues",
+        "romantic",
+        "cool",
+        "fresher",
+        "solor",
+        "aestheticism",
+        "whitening",
+        "cerisered"
+      ]
     },
     "bindstatechange": {
       "type": "eventhandle",

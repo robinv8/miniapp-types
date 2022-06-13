@@ -8,7 +8,13 @@
     },
     "type": {
       "type": "string",
-      "description": "input 的类型"
+      "description": "input 的类型",
+      "enum": [
+        "text",
+        "number",
+        "idcard",
+        "digit"
+      ]
     },
     "password": {
       "type": "boolean",
@@ -44,7 +50,14 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字。其最终表现与手机输入法本身的实现有关，部分安卓系统输入法和第三方输入法可能不支持或不完全支持"
+      "description": "设置键盘右下角按钮的文字。其最终表现与手机输入法本身的实现有关，部分安卓系统输入法和第三方输入法可能不支持或不完全支持",
+      "enum": [
+        "send",
+        "search",
+        "next",
+        "go",
+        "done"
+      ]
     },
     "confirm-hold": {
       "type": "boolean",

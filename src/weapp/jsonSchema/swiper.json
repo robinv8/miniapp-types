@@ -56,7 +56,14 @@
     },
     "easing-function": {
       "type": "string",
-      "description": "指定 swiper 切换缓动动画类型"
+      "description": "指定 swiper 切换缓动动画类型",
+      "enum": [
+        "default",
+        "linear",
+        "easeInCubic",
+        "easeOutCubic",
+        "easeInOutCubic"
+      ]
     },
     "bindchange": {
       "type": "eventhandle",

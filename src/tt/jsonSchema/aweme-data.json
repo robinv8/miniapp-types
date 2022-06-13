@@ -8,7 +8,11 @@
     },
     "type": {
       "type": "\"avatar\"|\"nickname\"",
-      "description": "类型，可以选择头像或昵称"
+      "description": "类型，可以选择头像或昵称",
+      "enum": [
+        "avatar",
+        "nickname"
+      ]
     },
     "disable-default": {
       "type": "boolean",

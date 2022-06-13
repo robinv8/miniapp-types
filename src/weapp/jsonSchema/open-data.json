@@ -4,7 +4,17 @@
   "properties": {
     "type": {
       "type": "string",
-      "description": "开放数据类型"
+      "description": "开放数据类型",
+      "enum": [
+        "groupName",
+        "userNickName",
+        "userAvatarUrl",
+        "userGender",
+        "userCity",
+        "userProvince",
+        "userCountry",
+        "userLanguage"
+      ]
     },
     "open-gid": {
       "type": "string",
@@ -12,7 +22,12 @@
     },
     "lang": {
       "type": "string",
-      "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo"
+      "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo",
+      "enum": [
+        "en",
+        "zh_CN",
+        "zh_TW"
+      ]
     },
     "default-text": {
       "type": "string",

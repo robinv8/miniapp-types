@@ -4,11 +4,19 @@
   "properties": {
     "size": {
       "type": "string",
-      "description": "按钮的大小，详情见 size 的合法值"
+      "description": "按钮的大小，详情见 size 的合法值",
+      "enum": [
+        "default",
+        "mini"
+      ]
     },
     "type": {
       "type": "string",
-      "description": "按钮的样式类型，详情见 type 的合法值"
+      "description": "按钮的样式类型，详情见 type 的合法值",
+      "enum": [
+        "primary",
+        "default"
+      ]
     },
     "disabled": {
       "type": "boolean",
@@ -20,11 +28,20 @@
     },
     "form-type": {
       "type": "string",
-      "description": "用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值"
+      "description": "用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值",
+      "enum": [
+        "submit",
+        "reset"
+      ]
     },
     "open-type": {
       "type": "string",
-      "description": "用于调用开放能力, 详情见 open-type 的合法值"
+      "description": "用于调用开放能力, 详情见 open-type 的合法值",
+      "enum": [
+        "share",
+        "getPhoneNumber",
+        "contact"
+      ]
     },
     "hover-class": {
       "type": "string",

@@ -8,7 +8,11 @@
     },
     "mode": {
       "type": "string",
-      "description": "模式"
+      "description": "模式",
+      "enum": [
+        "live",
+        "RTC"
+      ]
     },
     "autoplay": {
       "type": "boolean",
@@ -20,11 +24,19 @@
     },
     "orientation": {
       "type": "string",
-      "description": "画面方向"
+      "description": "画面方向",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
     },
     "object-fit": {
       "type": "string",
-      "description": "填充模式，可选值有 contain，fillCrop"
+      "description": "填充模式，可选值有 contain，fillCrop",
+      "enum": [
+        "contain",
+        "fillCrop"
+      ]
     },
     "background-mute": {
       "type": "boolean",
@@ -40,7 +52,11 @@
     },
     "sound-mode": {
       "type": "string",
-      "description": "声音输出方式"
+      "description": "声音输出方式",
+      "enum": [
+        "speaker",
+        "ear"
+      ]
     },
     "auto-pause-if-navigate": {
       "type": "boolean",
@@ -55,11 +71,20 @@
         "string",
         "Array"
       ],
-      "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）"
+      "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）",
+      "enum": [
+        "[]",
+        "push",
+        "pop"
+      ]
     },
     "referrer-policy": {
       "type": "string",
-      "description": "格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；"
+      "description": "格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
+      "enum": [
+        "origin",
+        "no-referrer"
+      ]
     },
     "bindstatechange": {
       "type": "eventhandle",

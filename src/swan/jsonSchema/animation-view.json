@@ -16,7 +16,12 @@
     },
     "action": {
       "type": "string",
-      "description": "动画操作，可取值 play、pause、stop"
+      "description": "动画操作，可取值 play、pause、stop",
+      "enum": [
+        "play",
+        "pause",
+        "stop"
+      ]
     },
     "hidden": {
       "type": "boolean",

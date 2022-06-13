@@ -4,11 +4,23 @@
   "properties": {
     "version": {
       "type": "string",
-      "description": "跳转到的小程序版本，**线上版本必须设置为 release**"
+      "description": "跳转到的小程序版本，**线上版本必须设置为 release**",
+      "enum": [
+        "develop",
+        "trial",
+        "release"
+      ]
     },
     "name": {
       "type": "string",
-      "description": "要跳转到的功能页"
+      "description": "要跳转到的功能页",
+      "enum": [
+        "loginAndGetUserInfo",
+        "requestPayment",
+        "chooseAddress",
+        "chooseInvoice",
+        "chooseInvoiceTitle"
+      ]
     },
     "args": {
       "type": "object",

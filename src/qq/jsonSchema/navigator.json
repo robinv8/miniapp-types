@@ -12,7 +12,15 @@
     },
     "open-type": {
       "type": "string",
-      "description": "跳转方式"
+      "description": "跳转方式",
+      "enum": [
+        "navigate",
+        "redirect",
+        "switchTab",
+        "reLaunch",
+        "navigateBack",
+        "exit"
+      ]
     },
     "delta": {
       "type": "number",

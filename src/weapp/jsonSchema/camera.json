@@ -4,23 +4,47 @@
   "properties": {
     "mode": {
       "type": "string",
-      "description": "应用模式，只在初始化时有效，不能动态变更"
+      "description": "应用模式，只在初始化时有效，不能动态变更",
+      "enum": [
+        "normal",
+        "scanCode"
+      ]
     },
     "resolution": {
       "type": "string",
-      "description": "分辨率，不支持动态修改"
+      "description": "分辨率，不支持动态修改",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
     },
     "device-position": {
       "type": "string",
-      "description": "摄像头朝向"
+      "description": "摄像头朝向",
+      "enum": [
+        "front",
+        "back"
+      ]
     },
     "flash": {
       "type": "string",
-      "description": "闪光灯，值为 auto , on, off"
+      "description": "闪光灯，值为 auto , on, off",
+      "enum": [
+        "auto",
+        "on",
+        "off",
+        "torch"
+      ]
     },
     "frame-size": {
       "type": "string",
-      "description": "指定期望的相机帧数据尺寸"
+      "description": "指定期望的相机帧数据尺寸",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
     },
     "bindstop": {
       "type": "eventhandle",

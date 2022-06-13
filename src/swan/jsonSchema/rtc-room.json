@@ -20,7 +20,11 @@
     },
     "device-position": {
       "type": "string",
-      "description": "设置前置还是后置摄像头，有效值：front、back"
+      "description": "设置前置还是后置摄像头，有效值：front、back",
+      "enum": [
+        "front",
+        "back"
+      ]
     },
     "enable-mic": {
       "type": "boolean",
@@ -52,11 +56,20 @@
     },
     "local-mirror": {
       "type": "string",
-      "description": "设置本地摄像头预览画面的镜像效果，有效值：auto、enable、disable"
+      "description": "设置本地摄像头预览画面的镜像效果，有效值：auto、enable、disable",
+      "enum": [
+        "auto",
+        "enable",
+        "disable"
+      ]
     },
     "sound-mode": {
       "type": "string",
-      "description": "设置声音输出方式，有效值：speaker、ear"
+      "description": "设置声音输出方式，有效值：speaker、ear",
+      "enum": [
+        "speaker",
+        "ear"
+      ]
     },
     "bindstatechange": {
       "type": "eventhandle",

@@ -44,7 +44,13 @@
     },
     "open-type": {
       "type": "string",
-      "description": "开放能力。\n版本要求： 基础库 1.1.0 及以上"
+      "description": "开放能力。\n版本要求： 基础库 1.1.0 及以上",
+      "enum": [
+        "share",
+        "getAuthorize",
+        "contactShare",
+        "lifestyle"
+      ]
     },
     "scope": {
       "type": "string",

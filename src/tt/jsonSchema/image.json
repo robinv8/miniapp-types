@@ -8,7 +8,23 @@
     },
     "mode": {
       "type": "string",
-      "description": "图片剪裁方式，详情见 mode 的合法值"
+      "description": "图片剪裁方式，详情见 mode 的合法值",
+      "enum": [
+        "scaleToFill",
+        "aspectFit",
+        "aspectFill",
+        "widthFix",
+        "heightFix",
+        "top",
+        "bottom",
+        "center",
+        "left",
+        "right",
+        "top left",
+        "top right",
+        "bottom left",
+        "bottom right"
+      ]
     },
     "lazy-load": {
       "type": "boolean",

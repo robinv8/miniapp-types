@@ -4,7 +4,13 @@
   "properties": {
     "direction": {
       "type": "string",
-      "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none"
+      "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none",
+      "enum": [
+        "all",
+        "vertical",
+        "horizontal",
+        "none"
+      ]
     },
     "inertia": {
       "type": "boolean",

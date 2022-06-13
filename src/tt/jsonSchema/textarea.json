@@ -64,7 +64,15 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字，详情见 confirm-type 的合法值"
+      "description": "设置键盘右下角按钮的文字，详情见 confirm-type 的合法值",
+      "enum": [
+        "send",
+        "search",
+        "next",
+        "go",
+        "done",
+        "return"
+      ]
     },
     "confirm-hold": {
       "type": "boolean",

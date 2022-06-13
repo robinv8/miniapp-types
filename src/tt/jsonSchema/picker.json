@@ -4,7 +4,14 @@
   "properties": {
     "mode": {
       "type": "string",
-      "description": "选择器类型，详见 mode 的合法值"
+      "description": "选择器类型，详见 mode 的合法值",
+      "enum": [
+        "selector",
+        "multiSelector",
+        "time",
+        "date",
+        "region"
+      ]
     },
     "disabled": {
       "type": "boolean",

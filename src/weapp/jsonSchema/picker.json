@@ -8,7 +8,14 @@
     },
     "mode": {
       "type": "string",
-      "description": "选择器类型"
+      "description": "选择器类型",
+      "enum": [
+        "selector",
+        "multiSelector",
+        "time",
+        "date",
+        "region"
+      ]
     },
     "disabled": {
       "type": "boolean",

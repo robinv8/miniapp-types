@@ -4,15 +4,27 @@
   "properties": {
     "mode": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "enum": [
+        "normal"
+      ]
     },
     "device-position": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "enum": [
+        "front",
+        "back"
+      ]
     },
     "flash": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "enum": [
+        "auto",
+        "on",
+        "off"
+      ]
     },
     "bindstop": {
       "type": "eventhandle",

@@ -40,7 +40,15 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字"
+      "description": "设置键盘右下角按钮的文字",
+      "enum": [
+        "default",
+        "done",
+        "send",
+        "search",
+        "next",
+        "go"
+      ]
     },
     "confirm-hold": {
       "type": "boolean",

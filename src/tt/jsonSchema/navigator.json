@@ -12,7 +12,14 @@
     },
     "open-type": {
       "type": "string",
-      "description": "跳转方式，详情见 open-type 的合法值"
+      "description": "跳转方式，详情见 open-type 的合法值",
+      "enum": [
+        "navigate",
+        "redirect",
+        "switchTab",
+        "navigateBack",
+        "reLaunch"
+      ]
     },
     "hover-class": {
       "type": "string",

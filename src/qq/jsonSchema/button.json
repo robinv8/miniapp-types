@@ -4,11 +4,20 @@
   "properties": {
     "size": {
       "type": "string",
-      "description": "按钮的大小"
+      "description": "按钮的大小",
+      "enum": [
+        "default",
+        "mini"
+      ]
     },
     "type": {
       "type": "string",
-      "description": "按钮的样式类型"
+      "description": "按钮的样式类型",
+      "enum": [
+        "primary",
+        "default",
+        "warn"
+      ]
     },
     "plain": {
       "type": "boolean",
@@ -24,11 +33,31 @@
     },
     "form-type": {
       "type": "string",
-      "description": "用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件"
+      "description": "用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件",
+      "enum": [
+        "submit",
+        "reset"
+      ]
     },
     "open-type": {
       "type": "string",
-      "description": "QQ 开放能力"
+      "description": "QQ 开放能力",
+      "enum": [
+        "share",
+        "getUserInfo",
+        "launchApp",
+        "openSetting",
+        "feedback",
+        "openGroupProfile",
+        "openGuildProfile",
+        "contact",
+        "addFriend",
+        "addColorSign",
+        "openPublicProfile",
+        "addGroupApp",
+        "shareMessageToFriend",
+        "addToFavorites"
+      ]
     },
     "hover-class": {
       "type": "string",

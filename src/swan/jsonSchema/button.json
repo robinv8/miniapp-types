@@ -4,11 +4,20 @@
   "properties": {
     "size": {
       "type": "string",
-      "description": "大小"
+      "description": "大小",
+      "enum": [
+        "default",
+        "mini"
+      ]
     },
     "type": {
       "type": "string",
-      "description": "类型"
+      "description": "类型",
+      "enum": [
+        "primary",
+        "default",
+        "warn"
+      ]
     },
     "plain": {
       "type": "boolean",
@@ -16,11 +25,27 @@
     },
     "form-type": {
       "type": "string",
-      "description": "用于<form>组件，点击分别会触发<form>组件的 submit/reset 事件"
+      "description": "用于<form>组件，点击分别会触发<form>组件的 submit/reset 事件",
+      "enum": [
+        "buttonclick",
+        "submit",
+        "reset"
+      ]
     },
     "open-type": {
       "type": "string",
-      "description": "百度 App 开放能力，比如分享、获取用户信息等等"
+      "description": "百度 App 开放能力，比如分享、获取用户信息等等",
+      "enum": [
+        "share",
+        "getUserInfo",
+        "getPhoneNumber",
+        "openSetting",
+        "chooseAddress",
+        "chooseInvoiceTitle",
+        "contact",
+        "login",
+        "subscribe"
+      ]
     },
     "hover-class": {
       "type": "string",

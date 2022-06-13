@@ -4,7 +4,15 @@
   "properties": {
     "type": {
       "type": "string",
-      "description": "开放数据类型"
+      "description": "开放数据类型",
+      "enum": [
+        "userNickName",
+        "userAvatarUrl",
+        "userGender",
+        "userCity",
+        "userProvince",
+        "userCountry"
+      ]
     },
     "default-text": {
       "type": "string",

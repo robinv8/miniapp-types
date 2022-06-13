@@ -8,7 +8,13 @@
     },
     "type": {
       "type": "string",
-      "description": "广告类型"
+      "description": "广告类型",
+      "enum": [
+        "banner",
+        "card",
+        "feeds",
+        "block"
+      ]
     },
     "ad-left": {
       "type": "number",
@@ -32,7 +38,11 @@
     },
     "block-orientation": {
       "type": "string",
-      "description": "type 为 block 时请求积木广告排列方向"
+      "description": "type 为 block 时请求积木广告排列方向",
+      "enum": [
+        "vertical",
+        "landscape"
+      ]
     },
     "bindsize": {
       "type": "eventhandle",
@@ -48,7 +58,11 @@
     },
     "test-banner-type": {
       "type": "string",
-      "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图"
+      "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图",
+      "enum": [
+        "one",
+        "three"
+      ]
     }
   },
   "additionalProperties": false,

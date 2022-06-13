@@ -8,7 +8,11 @@
     },
     "type": {
       "type": "string",
-      "description": "样式，有效值：switch、checkbox"
+      "description": "样式，有效值：switch、checkbox",
+      "enum": [
+        "switch",
+        "checkbox"
+      ]
     },
     "color": {
       "type": "color",

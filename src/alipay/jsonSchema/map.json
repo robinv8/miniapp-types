@@ -80,7 +80,7 @@
     },
     "setting": {
       "type": "object",
-      "description": "设置。\n\n{\n\n  // 手势\n\n  gestureEnable: 1,\n\n  // 比例尺\n\n  showScale: 1,\n\n  // 指南针\n\n  showCompass: 1,\n\n  //双手下滑\n\n  tiltGesturesEnabled: 1,\n\n  // 交通路况展示\n\n  trafficEnabled: 0,\n\n  // 地图 POI 信息\n\n  showMapText: 0,\n\n  // 高德地图 logo 位置\n\n  logoPosition: {\n\n    centerX: 150,\n\n    centerY: 90\n\n  }\n\n}"
+      "description": "设置。\n\n{\n\n  // 手势\n\n  gestureEnable: 1,\n\n  // 比例尺\n\n  showScale: 1,\n\n  // 指南针\n\n  showCompass: 1,\n\n  //双手下滑\n\n  tiltGesturesEnabled: 1,\n\n  // 交通路况展示\n\n  trafficEnabled: 0,\n\n  // 地图 POI 信息\n\n  showMapText: 0,\n\n  // 高德地图 logo 位置\n\n  logoPosition: {\n\n    centerX: 150,\n\n    centerY: 90\n\n  }\n\n// 自定义地图样式\n\n customMapStyleSrc: \"/resources/style/style_v7.data\"\n\n}"
     },
     "onMarkerTap": {
       "type": "eventHandle",
@@ -141,6 +141,10 @@
     "enable-building": {
       "type": "boolean",
       "description": "是否展示建筑物。\n\n版本要求：基础库 2.7.2 及以上"
+    },
+    "enable-satellite": {
+      "type": "boolean",
+      "description": "是否开启卫星图。\n版本要求：基础库 2.7.2 及以上"
     },
     "onInitComplete": {
       "type": "eventHandle",

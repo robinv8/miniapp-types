@@ -11,7 +11,12 @@
     },
     "space": {
       "type": "string",
-      "description": "显示连续空格"
+      "description": "显示连续空格",
+      "enum": [
+        "ensp",
+        "emsp",
+        "nbsp"
+      ]
     }
   },
   "additionalProperties": false

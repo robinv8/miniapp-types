@@ -8,7 +8,13 @@
     },
     "type": {
       "type": "string",
-      "description": "input 的类型，详情见 type 的合法值"
+      "description": "input 的类型，详情见 type 的合法值",
+      "enum": [
+        "text",
+        "number",
+        "idcard",
+        "digit"
+      ]
     },
     "password": {
       "type": "boolean",
@@ -56,7 +62,14 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值"
+      "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值",
+      "enum": [
+        "send",
+        "search",
+        "next",
+        "go",
+        "done"
+      ]
     },
     "bindinput": {
       "type": "eventHandle",

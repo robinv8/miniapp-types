@@ -48,7 +48,14 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字，仅在type='text'时生效"
+      "description": "设置键盘右下角按钮的文字，仅在type='text'时生效",
+      "enum": [
+        "send",
+        "search",
+        "next",
+        "go",
+        "done"
+      ]
     },
     "confirm-hold": {
       "type": "boolean",
