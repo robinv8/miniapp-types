@@ -3,8 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const humps = require('humps');
 
-const eventType = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent'];
-const omitType = ['color'];
+const eventTypes = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent'];
+const omitTypes = ['color'];
 class Service {
   platform;
   waitUntil;
@@ -47,10 +47,10 @@ class Service {
         let type =
           typeof item.type === 'string' ? humps.camelize(item.type) : item.type;
         let tsType = '';
-        if (eventType.includes(type)) {
+        if (eventTypes.includes(type)) {
           tsType = '() => void';
         }
-        if (omitType.includes(type)) {
+        if (omitTypes.includes(type)) {
           type = 'string';
         }
         properties[item.name] = {
