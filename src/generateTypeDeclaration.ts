@@ -1,6 +1,6 @@
-const { compileFromFile } = require('json-schema-to-typescript');
-const fs = require('fs');
-const path = require('path');
+import { compileFromFile } from "json-schema-to-typescript";
+import * as fs from "fs";
+import * as path from "path";
 const platforms = ['alipay', 'swan', 'weapp', 'jd', 'qq', 'tt'];
 platforms.forEach((platform) => {
   const jsonPath = path.join(__dirname, `${platform}/jsonSchema`);

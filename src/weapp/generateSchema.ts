@@ -1,4 +1,5 @@
-const Service = require('../service');
+import Service from "../service";
+import { Attribute } from "../types";
 
 const service = new Service({
   platform: 'weapp',
@@ -11,39 +12,46 @@ const service = new Service({
         }
         return str.split(char).map((item) => item.trim());
       }
-      const attributes = [];
+      const attributes: Attribute[] = [];
 
       const tablesEl = document.querySelectorAll('table')[tableIndex];
-      Array.from(tablesEl?.querySelector('tbody').children)?.forEach((el) => {
+      const children = tablesEl?.querySelector('tbody')?.children
+      if (!children) {
+        return attributes;
+      }
+      Array.from(children)?.forEach((el) => {
+        if (!(el instanceof HTMLElement)) {
+          return
+        }
         if (el?.className.indexOf('children-table') > -1) {
           return;
         }
-        const options = [];
+        const options: string[] = [];
 
         const nextTrEl = el.nextElementSibling;
-        if (nextTrEl?.className.indexOf('children-table') > -1) {
-          nextTrEl
-            .querySelector('tbody')
-            .querySelectorAll('tr')
+        if (nextTrEl && nextTrEl?.className.indexOf('children-table') > -1) {
+          nextTrEl?.querySelector('tbody')
+            ?.querySelectorAll('tr')
             .forEach((el) => {
-              options.push(el.children[0].innerText);
+              const innerText = (<HTMLElement>el.children[0])?.innerText
+              options.push(innerText);
             });
         }
 
         const hasChild = tablesEl.querySelector('.children-table');
+        const index = hasChild ? 1 : 0;
+        const name = (<HTMLElement>el.children[fields.name + index])?.innerText;
+        const type = handleType((<HTMLElement>el.children[fields.type + index])?.innerText, '/');
         const defaultValue =
-          el.children[fields.defaultValue + (hasChild ? 1 : 0)]?.innerText;
+          (<HTMLElement>el.children[fields.defaultValue + index])?.innerText;
         const description =
-          el.children[fields.description + (hasChild ? 1 : 0)]?.innerText;
+          (<HTMLElement>el.children[fields.description + index])?.innerText;
         const required =
-          el.children[fields.required + (hasChild ? 1 : 0)]?.innerText;
+          (<HTMLElement>el.children[fields.required + index])?.innerText;
 
         attributes.push({
-          name: el.children[fields.name + (hasChild ? 1 : 0)]?.innerText,
-          type: handleType(
-            el.children[fields.type + (hasChild ? 1 : 0)]?.innerText,
-            '/',
-          ),
+          name,
+          type,
           ...(options.length > 0 ? { options } : {}),
           ...(defaultValue ? { defaultValue } : {}),
           ...(description ? { description } : {}),

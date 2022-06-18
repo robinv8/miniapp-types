@@ -1,4 +1,5 @@
-const Service = require('../service');
+import Service from "../service";
+import { Attribute } from "../types";
 
 const service = new Service({
   platform: 'swan',
@@ -11,34 +12,35 @@ const service = new Service({
         }
         return str.split(char).map((item) => item.trim());
       }
-      const attributes = [];
+      const attributes: Attribute[] = [];
 
       const tablesEl = document.querySelectorAll('table')[tableIndex];
       tablesEl?.querySelectorAll('tbody tr')?.forEach((el) => {
         const len = el.children.length;
-        const options = [];
+        const options: string[] = [];
 
         if (len > 0) {
-          const prop = el.children[0]?.innerText;
-          const optEl = document.getElementById(`${prop} 有效值`);
+          const innerText = (<HTMLElement>el.children[0])?.innerText;
+          const optEl = document.getElementById(`${innerText} 有效值`);
+
+          const name = (<HTMLElement>el.children[fields.name])?.innerText;
+
           if (optEl) {
-            optEl.nextElementSibling
-              .querySelectorAll('tbody tr')
+            optEl.nextElementSibling?.querySelectorAll('tbody tr')
               .forEach((el) => {
-                if (name === 'image' && prop === 'mode') {
-                  options.push(el.children[1].innerText);
-                } else {
-                  options.push(el.children[0].innerText);
-                }
+                const index = name === 'image' && innerText === 'mode' ? 1 : 0;
+                const text = (<HTMLElement>el.children[index])?.innerText;
+                options.push(text);
               });
           }
-          const defaultValue = el.children[fields.defaultValue]?.innerText;
-          const description = el.children[fields.description]?.innerText;
-          const required = el.children[fields.required]?.innerText;
+          const type = handleType((<HTMLElement>el.children[fields.type])?.innerText, '/');
+          const defaultValue = (<HTMLElement>el.children[fields.defaultValue])?.innerText;
+          const description = (<HTMLElement>el.children[fields.description])?.innerText;
+          const required = (<HTMLElement>el.children[fields.required])?.innerText;
 
           attributes.push({
-            name: el.children[fields.name]?.innerText,
-            type: handleType(el.children[fields.type]?.innerText, '/'),
+            name,
+            type,
             ...(options.length > 0 ? { options } : {}),
             ...(defaultValue ? { defaultValue } : {}),
             ...(description ? { description } : {}),

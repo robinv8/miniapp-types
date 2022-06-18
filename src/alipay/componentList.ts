@@ -1,12 +1,13 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
-const path = require('path');
+import * as puppeteer from "puppeteer";
+import * as fs from "fs";
+import * as path from "path";
+import { ComponentInfo } from "../types";
 
 const getComponentList = async (url, page) => {
   await page.goto(url, { waitUntil: 'networkidle0' });
   const data = await page.evaluate(() => {
     const tableList = document.querySelectorAll('table');
-    const componentList = [];
+    const componentList: ComponentInfo[] = [];
     console.log(tableList);
     tableList.forEach((tableEle) => {
       tableEle.querySelectorAll('tr').forEach((el) => {
@@ -24,7 +25,7 @@ const getComponentList = async (url, page) => {
   return data;
 };
 
-const fn = async () => {
+const exec = async () => {
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
@@ -40,4 +41,4 @@ const fn = async () => {
   );
 };
 
-fn();
+export default exec;

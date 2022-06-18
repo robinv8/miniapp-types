@@ -1,7 +1,7 @@
-const puppeteer = require('puppeteer');
-const fs = require('fs');
-const path = require('path');
-const humps = require('humps');
+import * as puppeteer from "puppeteer";
+import * as fs from "fs";
+import * as path from "path";
+import * as humps from "humps";
 
 const eventTypes = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent'];
 const omitTypes = ['color'];
@@ -12,6 +12,7 @@ class Service {
   page;
   index = 0;
   evaluate;
+  componentList;
   constructor(options) {
     this.platform = options.platform;
     this.waitUntil = options.waitUntil;
@@ -41,7 +42,7 @@ class Service {
         fs.mkdirSync(folder, { recursive: true });
       }
       const properties = {};
-      const required = [];
+      const required: string[] = [];
 
       data.forEach((item) => {
         let type =
@@ -98,4 +99,4 @@ class Service {
     });
   }
 }
-module.exports = Service;
+export default Service;
