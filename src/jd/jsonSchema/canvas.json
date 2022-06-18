@@ -15,27 +15,27 @@
       "description": "当在 canvas 中移动时且有绑定手势事件时，禁止屏幕滚动以及下拉刷新"
     },
     "bindtouchstart": {
-      "type": "string",
+      "tsType": "() => void",
       "description": "手指触摸动作开始"
     },
     "bindtouchmove": {
-      "type": "string",
+      "tsType": "() => void",
       "description": "手指触摸后移动"
     },
     "bindtouchend": {
-      "type": "string",
+      "tsType": "() => void",
       "description": "手指触摸动作结束"
     },
     "bindtouchcancel": {
-      "type": "string",
+      "tsType": "() => void",
       "description": "手指触摸动作被打断，如来电提醒，弹窗"
     },
     "bindlongtap": {
-      "type": "string",
+      "tsType": "() => void",
       "description": "手指长按 500ms 之后触发，触发了长按事件后进行移动不会触发屏幕的滚动"
     },
     "binderror": {
-      "type": "string",
+      "tsType": "() => void",
       "description": "当发生错误时触发 error 事件，detail = {errMsg}"
     }
   },
