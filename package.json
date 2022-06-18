@@ -4,8 +4,14 @@
   "description": "小程序类型生成器",
   "main": "index.js",
   "scripts": {
-    "build:schema": "node src/generateSchema.js",
-    "build:ts": "node src/generateTS.js",
+    "build:schema-alipay": "ts-node src/alipay/generateSchema.ts",
+    "build:schema-jd": "ts-node src/jd/generateSchema.ts",
+    "build:schema-qq": "ts-node src/qq/generateSchema.ts",
+    "build:schema-swan": "ts-node src/swan/generateSchema.ts",
+    "build:schema-tt": "ts-node src/tt/generateSchema.ts",
+    "build:schema-weapp": "ts-node src/weapp/generateSchema.ts",
+    "build:schema": "ts-node src/generateSchema.ts",
+    "build:types": "ts-node src/generateTypeDeclaration.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "robin",
@@ -14,5 +20,12 @@
     "humps": "^2.0.1",
     "json-schema-to-typescript": "^10.1.5",
     "puppeteer": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/humps": "^2.0.1",
+    "@types/node": "^18.0.0",
+    "@types/puppeteer": "^5.4.6",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
   }
 }
