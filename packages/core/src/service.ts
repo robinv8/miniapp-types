@@ -17,7 +17,7 @@ class Service {
     this.platform = options.platform;
     this.waitUntil = options.waitUntil;
     this.evaluate = options.evaluate;
-    this.componentList = require(`./${this.platform}/componentList.json`);
+    this.componentList = options.componentList;
   }
   async init() {
     this.browser = await puppeteer.launch({

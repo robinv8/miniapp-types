@@ -7,8 +7,7 @@
     "skipLibCheck": true,
     "noImplicitAny": false,
     "downlevelIteration": true,
-    "sourceMap": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+    "sourceMap": true,
+    "declaration": true
+  }
 }

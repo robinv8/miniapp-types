@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "小程序类型生成器",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build:schema-alipay": "ts-node src/alipay/generateSchema.ts",
     "build:schema-jd": "ts-node src/jd/generateSchema.ts",
@@ -12,6 +15,7 @@
     "build:schema-weapp": "ts-node src/weapp/generateSchema.ts",
     "build:schema": "ts-node src/generateSchema.ts",
     "build:types": "ts-node src/generateTypeDeclaration.ts",
+    "clean": "rm -rf node_modules **/*/node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "robin",

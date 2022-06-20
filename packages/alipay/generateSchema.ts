@@ -1,9 +1,9 @@
-import Service from "../service";
+import Service from "@miniapp-types/core";
 import { Attribute } from "../types";
-
 const service = new Service({
   platform: 'alipay',
   waitUntil: 'networkidle0',
+  componentList: require('./componentList'),
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields }) => {
       function handleType(str, char) {
