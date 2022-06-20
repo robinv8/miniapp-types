@@ -57,6 +57,7 @@ class Service {
         properties[item.name] = {
           ...(tsType ? { tsType } : { type }),
           description: item.description,
+          defaultValue: item.defaultValue,
           ...(item.options ? { enum: item.options } : {}),
         };
         if (item.required) {
