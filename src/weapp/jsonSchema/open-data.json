@@ -23,6 +23,7 @@
     "lang": {
       "type": "string",
       "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo",
+      "defaultValue": "en",
       "enum": [
         "en",
         "zh_CN",

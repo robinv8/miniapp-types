@@ -8,15 +8,18 @@
     },
     "transform": {
       "type": "boolean",
-      "description": "是否进行动画"
+      "description": "是否进行动画",
+      "defaultValue": "false"
     },
     "duration": {
       "type": "number",
-      "description": "动画时长，单位毫秒"
+      "description": "动画时长，单位毫秒",
+      "defaultValue": "300"
     },
     "easing-function": {
       "type": "string",
-      "description": "css缓动函数"
+      "description": "css缓动函数",
+      "defaultValue": "ease-out"
     }
   },
   "additionalProperties": false,

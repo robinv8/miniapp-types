@@ -8,15 +8,18 @@
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "checked": {
       "type": "boolean",
-      "description": "当前是否选中，可用来设置默认选中"
+      "description": "当前是否选中，可用来设置默认选中",
+      "defaultValue": "false"
     },
     "color": {
       "type": "string",
-      "description": "checkbox的颜色，同 css 的color"
+      "description": "checkbox的颜色，同 css 的color",
+      "defaultValue": "#09BB07"
     }
   },
   "additionalProperties": false

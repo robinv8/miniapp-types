@@ -5,6 +5,7 @@
     "size": {
       "type": "string",
       "description": "按钮的大小",
+      "defaultValue": "default",
       "enum": [
         "default",
         "mini"
@@ -13,6 +14,7 @@
     "type": {
       "type": "string",
       "description": "按钮的样式类型",
+      "defaultValue": "default",
       "enum": [
         "primary",
         "default",
@@ -21,15 +23,18 @@
     },
     "plain": {
       "type": "boolean",
-      "description": "按钮是否镂空，背景色透明"
+      "description": "按钮是否镂空，背景色透明",
+      "defaultValue": "false"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "loading": {
       "type": "boolean",
-      "description": "名称前是否带 loading 图标"
+      "description": "名称前是否带 loading 图标",
+      "defaultValue": "false"
     },
     "form-type": {
       "type": "string",
@@ -61,23 +66,28 @@
     },
     "hover-class": {
       "type": "string",
-      "description": "指定按钮按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果"
+      "description": "指定按钮按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+      "defaultValue": "button-hover"
     },
     "hover-stop-propagation": {
       "type": "boolean",
-      "description": "指定是否阻止本节点的祖先节点出现点击态"
+      "description": "指定是否阻止本节点的祖先节点出现点击态",
+      "defaultValue": "false"
     },
     "hover-start-time": {
       "type": "number",
-      "description": "按住后多久出现点击态，单位毫秒"
+      "description": "按住后多久出现点击态，单位毫秒",
+      "defaultValue": "20"
     },
     "hover-stay-time": {
       "type": "number",
-      "description": "手指松开后点击态保留时间，单位毫秒"
+      "description": "手指松开后点击态保留时间，单位毫秒",
+      "defaultValue": "70"
     },
     "lang": {
       "type": "string",
-      "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。"
+      "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。",
+      "defaultValue": "en"
     },
     "bindgetuserinfo": {
       "tsType": "() => void",
@@ -113,11 +123,13 @@
     },
     "share-type": {
       "type": "number",
-      "description": "分享类型集合，请参考下面share-type有效值说明。share-type后续将不再维护，请更新为share-mode"
+      "description": "分享类型集合，请参考下面share-type有效值说明。share-type后续将不再维护，请更新为share-mode",
+      "defaultValue": "27"
     },
     "share-mode": {
       "type": "array<String>",
-      "description": "分享类型集合，请参考下面share-mode有效值说明"
+      "description": "分享类型集合，请参考下面share-mode有效值说明",
+      "defaultValue": "['qq', 'qzone']"
     },
     "aria-label": {
       "type": "string",

@@ -4,15 +4,18 @@
   "properties": {
     "resource-width": {
       "type": "number",
-      "description": "组件使用的 video 视频资源的宽度（单位：px）"
+      "description": "组件使用的 video 视频资源的宽度（单位：px）",
+      "defaultValue": "800"
     },
     "resource-height": {
       "type": "number",
-      "description": "组件使用的 video 视频资源的高度（单位：px）"
+      "description": "组件使用的 video 视频资源的高度（单位：px）",
+      "defaultValue": "400"
     },
     "canvas-style": {
       "type": "string",
-      "description": "用于设置动画画布的 CSS 样式"
+      "description": "用于设置动画画布的 CSS 样式",
+      "defaultValue": "width: 400px;height: 400px"
     },
     "path": {
       "type": "string",
@@ -20,15 +23,18 @@
     },
     "loop": {
       "type": "boolean",
-      "description": "动画是否循环播放"
+      "description": "动画是否循环播放",
+      "defaultValue": "false"
     },
     "autoplay": {
       "type": "boolean",
-      "description": "动画是否自动播放"
+      "description": "动画是否自动播放",
+      "defaultValue": "false"
     },
     "alpha-direction": {
       "type": "string",
-      "description": "视频资源中 alpha 通道的方向，left 表示 alpha 通道在资源的左边，right 表示 alpha 通道在资源的右边。详情请参考透明视频设计资源示例"
+      "description": "视频资源中 alpha 通道的方向，left 表示 alpha 通道在资源的左边，right 表示 alpha 通道在资源的右边。详情请参考透明视频设计资源示例",
+      "defaultValue": "left"
     },
     "bindstarted": {
       "tsType": "() => void",

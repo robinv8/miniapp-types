@@ -7,7 +7,8 @@
         "Array",
         "Object Array"
       ],
-      "description": "mode为 selector 或 multiSelector 时，range 有效"
+      "description": "mode为 selector 或 multiSelector 时，range 有效",
+      "defaultValue": "[]"
     },
     "range-key": {
       "type": "string",
@@ -15,7 +16,8 @@
     },
     "value": {
       "type": "number",
-      "description": "value 的值表示选择了 range 中的第几个（下标从 0 开始）"
+      "description": "value 的值表示选择了 range 中的第几个（下标从 0 开始）",
+      "defaultValue": "0"
     },
     "bindchange": {
       "tsType": "() => void",
@@ -23,7 +25,8 @@
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "bindcancel": {
       "tsType": "() => void",

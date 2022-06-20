@@ -8,7 +8,8 @@
     },
     "loading": {
       "type": "boolean",
-      "description": "是否在导航条显示 loading 加载提示"
+      "description": "是否在导航条显示 loading 加载提示",
+      "defaultValue": "false"
     },
     "front-color": {
       "type": "string",
@@ -20,11 +21,13 @@
     },
     "color-animation-duration": {
       "type": "number",
-      "description": "改变导航栏颜色时的动画时长，默认为 0 （即没有动画效果）"
+      "description": "改变导航栏颜色时的动画时长，默认为 0 （即没有动画效果）",
+      "defaultValue": "0"
     },
     "color-animation-timing-func": {
       "type": "string",
-      "description": "改变导航栏颜色时的动画方式，支持 linear 、 easeIn 、 easeOut 和 easeInOut"
+      "description": "改变导航栏颜色时的动画方式，支持 linear 、 easeIn 、 easeOut 和 easeInOut",
+      "defaultValue": "\"linear\""
     }
   },
   "additionalProperties": false

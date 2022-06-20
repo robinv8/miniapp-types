@@ -7,7 +7,8 @@
         "array",
         "string"
       ],
-      "description": "节点列表/HTML String"
+      "description": "节点列表/HTML String",
+      "defaultValue": "[]"
     },
     "space": {
       "type": "string",
@@ -20,7 +21,8 @@
     },
     "user-select": {
       "type": "boolean",
-      "description": "文本是否可选，该属性会使节点显示为 block"
+      "description": "文本是否可选，该属性会使节点显示为 block",
+      "defaultValue": "false"
     }
   },
   "additionalProperties": false

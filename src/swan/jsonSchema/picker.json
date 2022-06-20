@@ -4,11 +4,13 @@
   "properties": {
     "mode": {
       "type": "string",
-      "description": "选择器类型"
+      "description": "选择器类型",
+      "defaultValue": "selector"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "bindcancel": {
       "tsType": "() => void",

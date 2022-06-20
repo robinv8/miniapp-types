@@ -24,7 +24,8 @@
     },
     "controlled": {
       "type": "boolean",
-      "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上"
+      "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上",
+      "defaultValue": "false"
     }
   },
   "additionalProperties": false

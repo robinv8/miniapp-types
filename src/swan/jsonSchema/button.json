@@ -5,6 +5,7 @@
     "size": {
       "type": "string",
       "description": "大小",
+      "defaultValue": "default",
       "enum": [
         "default",
         "mini"
@@ -13,6 +14,7 @@
     "type": {
       "type": "string",
       "description": "类型",
+      "defaultValue": "default",
       "enum": [
         "primary",
         "default",
@@ -21,11 +23,13 @@
     },
     "plain": {
       "type": "boolean",
-      "description": "按钮是否镂空，背景色透明"
+      "description": "按钮是否镂空，背景色透明",
+      "defaultValue": "false"
     },
     "form-type": {
       "type": "string",
       "description": "用于<form>组件，点击分别会触发<form>组件的 submit/reset 事件",
+      "defaultValue": "buttonclick",
       "enum": [
         "buttonclick",
         "submit",
@@ -49,27 +53,33 @@
     },
     "hover-class": {
       "type": "string",
-      "description": "点击态。指定按钮按下去的样式类。当hover-class=\"none\"时，没有点击态效果。button-hover 默认为{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}"
+      "description": "点击态。指定按钮按下去的样式类。当hover-class=\"none\"时，没有点击态效果。button-hover 默认为{background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}",
+      "defaultValue": "button-hover"
     },
     "hover-stop-propagation": {
       "type": "boolean",
-      "description": "指定是否阻止本节点的祖先节点出现点击态"
+      "description": "指定是否阻止本节点的祖先节点出现点击态",
+      "defaultValue": "false"
     },
     "hover-start-time": {
       "type": "number",
-      "description": "按住后多久出现点击态（单位：毫秒）"
+      "description": "按住后多久出现点击态（单位：毫秒）",
+      "defaultValue": "20"
     },
     "hover-stay-time": {
       "type": "number",
-      "description": "手指松开后点击态保留时间（单位：毫秒）"
+      "description": "手指松开后点击态保留时间（单位：毫秒）",
+      "defaultValue": "70"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "loading": {
       "type": "boolean",
-      "description": "名称前是否带有 loading 图标"
+      "description": "名称前是否带有 loading 图标",
+      "defaultValue": "false"
     },
     "bindgetphonenumber": {
       "tsType": "() => void",

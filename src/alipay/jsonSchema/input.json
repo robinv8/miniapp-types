@@ -12,11 +12,13 @@
     },
     "type": {
       "type": "string",
-      "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。\n默认值： text\n版本要求：numberpad、digitpad、 idcardpad 支持基础库 1.13.0 客户端 10.1.50 及以上，可通过\nmy.canIUse(\"input.type.numberpad\") 来检测。\n注意： 当启用数字键盘时，Android 客户端会影响 position:fixed 并指定 bottom 属性的元素。"
+      "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。\n默认值： text\n版本要求：numberpad、digitpad、 idcardpad 支持基础库 1.13.0 客户端 10.1.50 及以上，可通过\nmy.canIUse(\"input.type.numberpad\") 来检测。\n注意： 当启用数字键盘时，Android 客户端会影响 position:fixed 并指定 bottom 属性的元素。",
+      "defaultValue": "text"
     },
     "password": {
       "type": "boolean",
-      "description": "是否是密码类型。\n默认值： false"
+      "description": "是否是密码类型。\n默认值： false",
+      "defaultValue": "false"
     },
     "placeholder": {
       "type": "string",
@@ -32,23 +34,28 @@
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false"
+      "description": "是否禁用。\n默认值： false",
+      "defaultValue": "false"
     },
     "maxlength": {
       "type": "number",
-      "description": "最大长度。\n默认值： 140"
+      "description": "最大长度。\n默认值： 140",
+      "defaultValue": "140"
     },
     "focus": {
       "type": "boolean",
-      "description": "获取焦点。\n默认值： false"
+      "description": "获取焦点。\n默认值： false",
+      "defaultValue": "false"
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字，有效值：done（显示“完成”）、go（显示“前往”）、next（显示“下一个”）、search（显示“搜索”）、send（显示“发送”），平台不同显示的文字略有差异。\n注意： 只有在 type=text 时有效。\n默认值： done\n版本要求： 基础库 1.7.0 及以上"
+      "description": "设置键盘右下角按钮的文字，有效值：done（显示“完成”）、go（显示“前往”）、next（显示“下一个”）、search（显示“搜索”）、send（显示“发送”），平台不同显示的文字略有差异。\n注意： 只有在 type=text 时有效。\n默认值： done\n版本要求： 基础库 1.7.0 及以上",
+      "defaultValue": "done"
     },
     "confirm-hold": {
       "type": "boolean",
-      "description": "点击键盘右下角按钮时是否保持键盘不收起状态。\n默认值： false\n版本要求： 基础库 1.7.0 及以上"
+      "description": "点击键盘右下角按钮时是否保持键盘不收起状态。\n默认值： false\n版本要求： 基础库 1.7.0 及以上",
+      "defaultValue": "false"
     },
     "cursor": {
       "type": "number",
@@ -64,11 +71,13 @@
     },
     "random-number": {
       "type": "boolean",
-      "description": "当 type 为 number, digit, idcard 数字键盘是否随机排列。\n默认值： false\n版本要求： 基础库 1.9.0 及以上"
+      "description": "当 type 为 number, digit, idcard 数字键盘是否随机排列。\n默认值： false\n版本要求： 基础库 1.9.0 及以上",
+      "defaultValue": "false"
     },
     "controlled": {
       "type": "boolean",
-      "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n建议当 type 值为 text 时不要将 controlled 设置为 true，详见 Bugs & Tips。\n\n默认值： false\n版本要求： 基础库 1.9.0 及以上"
+      "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n建议当 type 值为 text 时不要将 controlled 设置为 true，详见 Bugs & Tips。\n\n默认值： false\n版本要求： 基础库 1.9.0 及以上",
+      "defaultValue": "false"
     },
     "always-system": {
       "type": "boolean",

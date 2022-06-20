@@ -8,7 +8,8 @@
     },
     "size": {
       "type": "number",
-      "description": "icon 大小，单位 px。\n默认值： 23"
+      "description": "icon 大小，单位 px。\n默认值： 23",
+      "defaultValue": "23"
     },
     "color": {
       "type": "string",

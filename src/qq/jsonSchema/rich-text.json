@@ -7,7 +7,8 @@
         "Array",
         "String"
       ],
-      "description": "节点列表 / HTML String"
+      "description": "节点列表 / HTML String",
+      "defaultValue": "[]"
     },
     "space": {
       "type": "string",

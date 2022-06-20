@@ -8,7 +8,8 @@
     },
     "autoplay": {
       "type": "boolean",
-      "description": "是否自动播放"
+      "description": "是否自动播放",
+      "defaultValue": "false"
     },
     "poster": {
       "type": "string",
@@ -16,23 +17,28 @@
     },
     "loop": {
       "type": "boolean",
-      "description": "是否循环播放"
+      "description": "是否循环播放",
+      "defaultValue": "false"
     },
     "show-fullscreen-btn": {
       "type": "boolean",
-      "description": "是否显示全屏按钮"
+      "description": "是否显示全屏按钮",
+      "defaultValue": "true"
     },
     "show-play-btn": {
       "type": "boolean",
-      "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮"
+      "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮",
+      "defaultValue": "true"
     },
     "controls": {
       "type": "boolean",
-      "description": "是否显示全部播放控件"
+      "description": "是否显示全部播放控件",
+      "defaultValue": "true"
     },
     "object-fit": {
       "type": "string",
       "description": "当视频大小与 video 容器大小不一致时，视频的表现形式：contain（包含），fill（填充），cover（覆盖）",
+      "defaultValue": "contain",
       "enum": [
         "contain",
         "fill",
@@ -42,6 +48,7 @@
     "play-btn-position": {
       "type": "string",
       "description": "播放按钮的位置：center（视频中间），bottom（控制条上）",
+      "defaultValue": "center",
       "enum": [
         "center",
         "bottom"
@@ -57,35 +64,43 @@
     },
     "vslide-gesture": {
       "type": "boolean",
-      "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量"
+      "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+      "defaultValue": "false"
     },
     "vslide-gesture-in-fullscreen": {
       "type": "boolean",
-      "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量"
+      "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+      "defaultValue": "true"
     },
     "enable-progress-gesture": {
       "type": "boolean",
-      "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度"
+      "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度",
+      "defaultValue": "false"
     },
     "enable-play-gesture": {
       "type": "boolean",
-      "description": "是否开启播放手势，即双击切换播放/暂停"
+      "description": "是否开启播放手势，即双击切换播放/暂停",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音播放"
+      "description": "是否静音播放",
+      "defaultValue": "false"
     },
     "show-mute-btn": {
       "type": "boolean",
-      "description": "是否显示静音控件"
+      "description": "是否显示静音控件",
+      "defaultValue": "false"
     },
     "show-playback-rate-btn": {
       "type": "boolean",
-      "description": "是否显示倍速控件，点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2"
+      "description": "是否显示倍速控件，点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2",
+      "defaultValue": "false"
     },
     "direction": {
       "type": "number",
       "description": "设置全屏时视频的方向，详见 direction 的合法值",
+      "defaultValue": "-90",
       "enum": [
         "0",
         "90",
@@ -94,7 +109,8 @@
     },
     "enable-play-in-background": {
       "type": "boolean",
-      "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放"
+      "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放",
+      "defaultValue": "false"
     },
     "signature": {
       "type": "signature",

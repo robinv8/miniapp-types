@@ -4,7 +4,8 @@
   "properties": {
     "disable-scroll": {
       "type": "boolean",
-      "description": "是否阻止区域内滚动页面。\n默认值： false\n说明： 如果 view 中嵌套 view，外层 view 设置 disable-scroll 为 true 时禁止内部的滚动。"
+      "description": "是否阻止区域内滚动页面。\n默认值： false\n说明： 如果 view 中嵌套 view，外层 view 设置 disable-scroll 为 true 时禁止内部的滚动。",
+      "defaultValue": "false"
     },
     "hover-class": {
       "type": "string",
@@ -20,7 +21,8 @@
     },
     "hidden": {
       "type": "boolean",
-      "description": "是否隐藏。\n默认值： false"
+      "description": "是否隐藏。\n默认值： false",
+      "defaultValue": "false"
     },
     "class": {
       "type": "string",
@@ -36,7 +38,8 @@
     },
     "hover-stop-propagation": {
       "type": "boolean",
-      "description": "是否阻止当前元素的祖先元素出现点击态。\n默认值： false\n版本要求： 基础库 1.10.0 及以上"
+      "description": "是否阻止当前元素的祖先元素出现点击态。\n默认值： false\n版本要求： 基础库 1.10.0 及以上",
+      "defaultValue": "false"
     },
     "onTap": {
       "tsType": "() => void",

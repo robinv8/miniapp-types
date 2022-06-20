@@ -4,15 +4,18 @@
   "properties": {
     "direction": {
       "type": "string",
-      "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none"
+      "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none",
+      "defaultValue": "none"
     },
     "inertia": {
       "type": "boolean",
-      "description": "movable-view 是否带有惯性"
+      "description": "movable-view 是否带有惯性",
+      "defaultValue": "false"
     },
     "out-of-bounds": {
       "type": "boolean",
-      "description": "超过可移动区域后，movable-view 是否还可以移动"
+      "description": "超过可移动区域后，movable-view 是否还可以移动",
+      "defaultValue": "false"
     },
     "x": {
       "type": "number|String",
@@ -24,35 +27,43 @@
     },
     "damping": {
       "type": "number",
-      "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快"
+      "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快",
+      "defaultValue": "20"
     },
     "friction": {
       "type": "number",
-      "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值"
+      "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值",
+      "defaultValue": "2"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "scale": {
       "type": "boolean",
-      "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内"
+      "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内",
+      "defaultValue": "false"
     },
     "scale-min": {
       "type": "number",
-      "description": "定义缩放倍数最小值"
+      "description": "定义缩放倍数最小值",
+      "defaultValue": "0.5"
     },
     "scale-max": {
       "type": "number",
-      "description": "定义缩放倍数最大值"
+      "description": "定义缩放倍数最大值",
+      "defaultValue": "10"
     },
     "scale-value": {
       "type": "number",
-      "description": "定义缩放倍数，取值范围为 0.5 - 10"
+      "description": "定义缩放倍数，取值范围为 0.5 - 10",
+      "defaultValue": "1"
     },
     "animation": {
       "type": "boolean",
-      "description": "是否使用动画"
+      "description": "是否使用动画",
+      "defaultValue": "true"
     },
     "bindchange": {
       "tsType": "() => void",

@@ -4,36 +4,42 @@
   "properties": {
     "percent": {
       "type": "float",
-      "description": "百分比0~100"
+      "description": "百分比0~100",
+      "defaultValue": "无"
     },
     "show-info": {
       "type": "boolean",
-      "description": "在进度条右侧显示百分比"
+      "description": "在进度条右侧显示百分比",
+      "defaultValue": "false"
     },
     "border-radius": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "圆角大小，单位px"
+      "description": "圆角大小，单位px",
+      "defaultValue": "0"
     },
     "font-size": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "右侧百分比字体大小，单位px"
+      "description": "右侧百分比字体大小，单位px",
+      "defaultValue": "16"
     },
     "stroke-width": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "进度条线的宽度，单位px"
+      "description": "进度条线的宽度，单位px",
+      "defaultValue": "6"
     },
     "color": {
       "type": "string",
-      "description": "进度条颜色 （请使用 activeColor）"
+      "description": "进度条颜色 （请使用 activeColor）",
+      "defaultValue": "#09BB07"
     },
     "activeColor": {
       "type": "string",
@@ -45,11 +51,13 @@
     },
     "active": {
       "type": "boolean",
-      "description": "进度条从左往右的动画"
+      "description": "进度条从左往右的动画",
+      "defaultValue": "false"
     },
     "active-mode": {
       "type": "string",
-      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
+      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
+      "defaultValue": "backwards"
     },
     "bindactiveend": {
       "tsType": "() => void",

@@ -5,6 +5,7 @@
     "device-position": {
       "type": "string",
       "description": "前置或后置，值为 front、back",
+      "defaultValue": "back",
       "enum": [
         "front",
         "back"
@@ -13,6 +14,7 @@
     "flash": {
       "type": "string",
       "description": "闪光灯，值为 auto、on、off",
+      "defaultValue": "auto",
       "enum": [
         "auto",
         "on",

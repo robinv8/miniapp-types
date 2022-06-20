@@ -8,7 +8,8 @@
     },
     "disable-scroll": {
       "type": "boolean",
-      "description": "是否禁止屏幕滚动以及下拉刷新。当在 canvas 中同时绑定下列手势事件时，该属性不起作用"
+      "description": "是否禁止屏幕滚动以及下拉刷新。当在 canvas 中同时绑定下列手势事件时，该属性不起作用",
+      "defaultValue": "false"
     },
     "bindtouchstart": {
       "tsType": "() => void",

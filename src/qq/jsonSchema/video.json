@@ -12,7 +12,8 @@
     },
     "controls": {
       "type": "boolean",
-      "description": "是否显示默认播放控件（播放/暂停按钮、播放进度、时间）"
+      "description": "是否显示默认播放控件（播放/暂停按钮、播放进度、时间）",
+      "defaultValue": "true"
     },
     "danmu-list": {
       "type": "objectArray",
@@ -20,23 +21,28 @@
     },
     "danmu-btn": {
       "type": "boolean",
-      "description": "是否显示弹幕按钮，只在初始化时有效，不能动态变更"
+      "description": "是否显示弹幕按钮，只在初始化时有效，不能动态变更",
+      "defaultValue": "false"
     },
     "enable-danmu": {
       "type": "boolean",
-      "description": "是否展示弹幕，只在初始化时有效，不能动态变更"
+      "description": "是否展示弹幕，只在初始化时有效，不能动态变更",
+      "defaultValue": "false"
     },
     "autoplay": {
       "type": "boolean",
-      "description": "是否自动播放"
+      "description": "是否自动播放",
+      "defaultValue": "false"
     },
     "loop": {
       "type": "boolean",
-      "description": "是否循环播放"
+      "description": "是否循环播放",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音播放"
+      "description": "是否静音播放",
+      "defaultValue": "false"
     },
     "initial-time": {
       "type": "number",
@@ -44,7 +50,8 @@
     },
     "page-gesture": {
       "type": "boolean",
-      "description": "在非全屏模式下，是否开启亮度与音量调节手势"
+      "description": "在非全屏模式下，是否开启亮度与音量调节手势",
+      "defaultValue": "false"
     },
     "direction": {
       "type": "number",
@@ -52,27 +59,33 @@
     },
     "show-progress": {
       "type": "boolean",
-      "description": "若不设置，宽度大于240时才会显示"
+      "description": "若不设置，宽度大于240时才会显示",
+      "defaultValue": "true"
     },
     "show-fullscreen-btn": {
       "type": "boolean",
-      "description": "是否显示全屏按钮"
+      "description": "是否显示全屏按钮",
+      "defaultValue": "true"
     },
     "show-play-btn": {
       "type": "boolean",
-      "description": "是否显示视频底部控制栏的播放按钮"
+      "description": "是否显示视频底部控制栏的播放按钮",
+      "defaultValue": "true"
     },
     "show-center-play-btn": {
       "type": "boolean",
-      "description": "是否显示视频中间的播放按钮"
+      "description": "是否显示视频中间的播放按钮",
+      "defaultValue": "true"
     },
     "enable-progress-gesture": {
       "type": "boolean",
-      "description": "是否开启控制进度的手势"
+      "description": "是否开启控制进度的手势",
+      "defaultValue": "true"
     },
     "object-fit": {
       "type": "string",
-      "description": "当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖"
+      "description": "当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含，fill：填充，cover：覆盖",
+      "defaultValue": "contain"
     },
     "poster": {
       "type": "string",
@@ -80,7 +93,8 @@
     },
     "show-mute-btn": {
       "type": "boolean",
-      "description": "是否显示静音按钮"
+      "description": "是否显示静音按钮",
+      "defaultValue": "false"
     },
     "title": {
       "type": "string",
@@ -88,19 +102,23 @@
     },
     "play-btn-position": {
       "type": "string",
-      "description": "播放按钮的位置，有效值为：bottom（controls bar 上）、center（视频中间）"
+      "description": "播放按钮的位置，有效值为：bottom（controls bar 上）、center（视频中间）",
+      "defaultValue": "bottom"
     },
     "enable-play-gesture": {
       "type": "boolean",
-      "description": "是否开启播放手势，即双击切换播放/暂停"
+      "description": "是否开启播放手势，即双击切换播放/暂停",
+      "defaultValue": "false"
     },
     "auto-pause-if-navigate": {
       "type": "boolean",
-      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的视频"
+      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的视频",
+      "defaultValue": "true"
     },
     "auto-pause-if-open-native": {
       "type": "boolean",
-      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的视频"
+      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的视频",
+      "defaultValue": "true"
     },
     "bindplay": {
       "tsType": "() => void",

@@ -8,27 +8,33 @@
     },
     "mode": {
       "type": "string",
-      "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）"
+      "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）",
+      "defaultValue": "RTC"
     },
     "autopush": {
       "type": "boolean",
-      "description": "自动推流"
+      "description": "自动推流",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音。即将废弃，可用 enable-mic 替代"
+      "description": "是否静音。即将废弃，可用 enable-mic 替代",
+      "defaultValue": "false"
     },
     "enable-camera": {
       "type": "boolean",
-      "description": "开启摄像头"
+      "description": "开启摄像头",
+      "defaultValue": "true"
     },
     "auto-focus": {
       "type": "boolean",
-      "description": "自动聚集"
+      "description": "自动聚集",
+      "defaultValue": "true"
     },
     "orientation": {
       "type": "string",
       "description": "画面方向",
+      "defaultValue": "vertical",
       "enum": [
         "vertical",
         "horizontal"
@@ -36,27 +42,33 @@
     },
     "beauty": {
       "type": "number",
-      "description": "美颜，取值范围 0-9 ，0 表示关闭"
+      "description": "美颜，取值范围 0-9 ，0 表示关闭",
+      "defaultValue": "0"
     },
     "whiteness": {
       "type": "number",
-      "description": "美白，取值范围 0-9 ，0 表示关闭"
+      "description": "美白，取值范围 0-9 ，0 表示关闭",
+      "defaultValue": "0"
     },
     "aspect": {
       "type": "string",
-      "description": "宽高比，可选值有 3:4, 9:16"
+      "description": "宽高比，可选值有 3:4, 9:16",
+      "defaultValue": "9:16"
     },
     "min-bitrate": {
       "type": "number",
-      "description": "最小码率"
+      "description": "最小码率",
+      "defaultValue": "200"
     },
     "max-bitrate": {
       "type": "number",
-      "description": "最大码率"
+      "description": "最大码率",
+      "defaultValue": "1000"
     },
     "audio-quality": {
       "type": "string",
-      "description": "高音质(48KHz)或低音质(16KHz)，值为high, low"
+      "description": "高音质(48KHz)或低音质(16KHz)，值为high, low",
+      "defaultValue": "high"
     },
     "waiting-image": {
       "type": "string",
@@ -68,27 +80,33 @@
     },
     "zoom": {
       "type": "boolean",
-      "description": "调整焦距"
+      "description": "调整焦距",
+      "defaultValue": "false"
     },
     "device-position": {
       "type": "string",
-      "description": "前置或后置，值为front, back"
+      "description": "前置或后置，值为front, back",
+      "defaultValue": "front"
     },
     "background-mute": {
       "type": "boolean",
-      "description": "进入后台时是否静音（已废弃，默认退后台静音）"
+      "description": "进入后台时是否静音（已废弃，默认退后台静音）",
+      "defaultValue": "false"
     },
     "mirror": {
       "type": "boolean",
-      "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到"
+      "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到",
+      "defaultValue": "false"
     },
     "remote-mirror": {
       "type": "boolean",
-      "description": "同 mirror 属性，后续 mirror 将废弃"
+      "description": "同 mirror 属性，后续 mirror 将废弃",
+      "defaultValue": "false"
     },
     "local-mirror": {
       "type": "string",
       "description": "控制本地预览画面是否镜像",
+      "defaultValue": "auto",
       "enum": [
         "auto",
         "enable",
@@ -98,6 +116,7 @@
     "audio-reverb-type": {
       "type": "number",
       "description": "音频混响类型",
+      "defaultValue": "0",
       "enum": [
         "0",
         "1",
@@ -111,19 +130,23 @@
     },
     "enable-mic": {
       "type": "boolean",
-      "description": "开启或关闭麦克风"
+      "description": "开启或关闭麦克风",
+      "defaultValue": "true"
     },
     "enable-agc": {
       "type": "boolean",
-      "description": "是否开启音频自动增益"
+      "description": "是否开启音频自动增益",
+      "defaultValue": "false"
     },
     "enable-ans": {
       "type": "boolean",
-      "description": "是否开启音频噪声抑制"
+      "description": "是否开启音频噪声抑制",
+      "defaultValue": "false"
     },
     "audio-volume-type": {
       "type": "string",
       "description": "音量类型",
+      "defaultValue": "auto",
       "enum": [
         "auto",
         "media",
@@ -132,15 +155,18 @@
     },
     "video-width": {
       "type": "number",
-      "description": "上推的视频流的分辨率宽度"
+      "description": "上推的视频流的分辨率宽度",
+      "defaultValue": "360"
     },
     "video-height": {
       "type": "number",
-      "description": "上推的视频流的分辨率高度"
+      "description": "上推的视频流的分辨率高度",
+      "defaultValue": "640"
     },
     "beauty-style": {
       "type": "string",
       "description": "设置美颜类型",
+      "defaultValue": "smooth",
       "enum": [
         "smooth",
         "nature"
@@ -149,6 +175,7 @@
     "filter": {
       "type": "string",
       "description": "设置色彩滤镜",
+      "defaultValue": "standard",
       "enum": [
         "standard",
         "pink",

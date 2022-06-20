@@ -4,11 +4,13 @@
   "properties": {
     "report-submit": {
       "type": "boolean",
-      "description": "是否返回 formId 用于发送模板消息"
+      "description": "是否返回 formId 用于发送模板消息",
+      "defaultValue": "false"
     },
     "report-submit-timeout": {
       "type": "number",
-      "description": "等待一段时间（毫秒数）以确认 formId 是否生效。如果未指定这个参数，formId 有很小的概率是无效的（如遇到网络失败的情况）。指定这个参数将可以检测 formId 是否有效，以这个参数的时间作为这项检测的超时时间。如果失败，将返回 requestFormId:fail 开头的 formId"
+      "description": "等待一段时间（毫秒数）以确认 formId 是否生效。如果未指定这个参数，formId 有很小的概率是无效的（如遇到网络失败的情况）。指定这个参数将可以检测 formId 是否有效，以这个参数的时间作为这项检测的超时时间。如果失败，将返回 requestFormId:fail 开头的 formId",
+      "defaultValue": "0"
     },
     "bindsubmit": {
       "tsType": "() => void",

@@ -4,11 +4,13 @@
   "properties": {
     "selectable": {
       "type": "boolean",
-      "description": "文本是否可选"
+      "description": "文本是否可选",
+      "defaultValue": "false"
     },
     "space": {
       "type": "string",
       "description": "显示连续空格",
+      "defaultValue": "false",
       "enum": [
         "ensp",
         "emsp",
@@ -17,7 +19,8 @@
     },
     "decode": {
       "type": "boolean",
-      "description": "是否解码"
+      "description": "是否解码",
+      "defaultValue": "false"
     }
   },
   "additionalProperties": false

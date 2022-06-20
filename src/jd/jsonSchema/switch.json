@@ -4,11 +4,13 @@
   "properties": {
     "checked": {
       "type": "boolean",
-      "description": "是否选中"
+      "description": "是否选中",
+      "defaultValue": "false"
     },
     "type": {
       "type": "string",
-      "description": "样式，有效值：switch, checkbox"
+      "description": "样式，有效值：switch, checkbox",
+      "defaultValue": "switch"
     },
     "bindchange": {
       "tsType": "() => void",

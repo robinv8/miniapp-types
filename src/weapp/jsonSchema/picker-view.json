@@ -24,7 +24,8 @@
     },
     "immediate-change": {
       "type": "boolean",
-      "description": "是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件。"
+      "description": "是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件。",
+      "defaultValue": "false"
     },
     "bindchange": {
       "tsType": "() => void",

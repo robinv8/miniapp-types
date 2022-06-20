@@ -4,25 +4,29 @@
   "properties": {
     "scroll-x": {
       "type": "boolean",
-      "description": "允许横向滚动"
+      "description": "允许横向滚动",
+      "defaultValue": "false"
     },
     "scroll-y": {
       "type": "boolean",
-      "description": "允许纵向滚动"
+      "description": "允许纵向滚动",
+      "defaultValue": "false"
     },
     "upper-threshold": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "距顶部 / 左边多远时（单位 px），触发 scrolltoupper 事件"
+      "description": "距顶部 / 左边多远时（单位 px），触发 scrolltoupper 事件",
+      "defaultValue": "50"
     },
     "lower-threshold": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "距底部 / 右边多远时（单位 px），触发 scrolltolower 事件"
+      "description": "距底部 / 右边多远时（单位 px），触发 scrolltolower 事件",
+      "defaultValue": "50"
     },
     "scroll-top": {
       "type": [
@@ -44,11 +48,13 @@
     },
     "scroll-with-animation": {
       "type": "boolean",
-      "description": "在设置滚动条位置时使用动画过渡"
+      "description": "在设置滚动条位置时使用动画过渡",
+      "defaultValue": "false"
     },
     "enable-back-to-top": {
       "type": "boolean",
-      "description": "iOS 点击顶部导航栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向"
+      "description": "iOS 点击顶部导航栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
+      "defaultValue": "false"
     },
     "bindscrolltoupper": {
       "tsType": "() => void",

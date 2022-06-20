@@ -4,7 +4,8 @@
   "properties": {
     "nodes": {
       "type": "(Node|Text)[]|String",
-      "description": "节点列表 / HTML String"
+      "description": "节点列表 / HTML String",
+      "defaultValue": "[ ]"
     }
   },
   "additionalProperties": false

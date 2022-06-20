@@ -12,7 +12,8 @@
     },
     "scale": {
       "type": "number",
-      "description": "缩放级别，取值范围为 3-19"
+      "description": "缩放级别，取值范围为 3-19",
+      "defaultValue": "16"
     },
     "markers": {
       "type": "marker[]",
@@ -24,7 +25,8 @@
     },
     "show-location": {
       "type": "boolean",
-      "description": "是否显示当前位置"
+      "description": "是否显示当前位置",
+      "defaultValue": "false"
     },
     "polyline": {
       "type": "polyline[]",
@@ -52,11 +54,13 @@
     },
     "rotate": {
       "type": "number",
-      "description": "顺时针旋转角度，范围 0 ~ 360，旋转原点为地图容器中心点"
+      "description": "顺时针旋转角度，范围 0 ~ 360，旋转原点为地图容器中心点",
+      "defaultValue": "0"
     },
     "skew": {
       "type": "number",
-      "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角"
+      "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角",
+      "defaultValue": "0"
     },
     "polygons": {
       "type": "polygon[]",
@@ -64,55 +68,68 @@
     },
     "show-compass": {
       "type": "boolean",
-      "description": "显示指南针"
+      "description": "显示指南针",
+      "defaultValue": "false"
     },
     "enable-overlooking": {
       "type": "boolean",
-      "description": "开启俯视手势支持，双指上下滑调整俯仰角"
+      "description": "开启俯视手势支持，双指上下滑调整俯仰角",
+      "defaultValue": "false"
     },
     "enable-rotate": {
       "type": "boolean",
-      "description": "开启旋转手势支持，双指旋转调整旋转角度"
+      "description": "开启旋转手势支持，双指旋转调整旋转角度",
+      "defaultValue": "false"
     },
     "min-scale": {
       "type": "number",
-      "description": "最小缩放级别，取值范围为 3 - max-scale"
+      "description": "最小缩放级别，取值范围为 3 - max-scale",
+      "defaultValue": "3"
     },
     "max-scale": {
       "type": "number",
-      "description": "最大缩放级别，取值范围为 min-scale - 19"
+      "description": "最大缩放级别，取值范围为 min-scale - 19",
+      "defaultValue": "19"
     },
     "enable-3D": {
       "type": "boolean",
-      "description": "是否展示 3D 楼块，该属性 IOS 不支持"
+      "description": "是否展示 3D 楼块，该属性 IOS 不支持",
+      "defaultValue": "false"
     },
     "show-scale": {
       "type": "boolean",
-      "description": "是否显示比例尺"
+      "description": "是否显示比例尺",
+      "defaultValue": "false"
     },
     "enable-zoom": {
       "type": "boolean",
-      "description": "是否支持缩放"
+      "description": "是否支持缩放",
+      "defaultValue": "true"
     },
     "enable-scroll": {
       "type": "boolean",
-      "description": "是否支持拖动"
+      "description": "是否支持拖动",
+      "defaultValue": "true"
     },
     "enable-satellite": {
       "type": "boolean",
-      "description": "是否开启卫星图"
+      "description": "是否开启卫星图",
+      "defaultValue": "false"
     },
     "enable-traffic": {
       "type": "boolean",
-      "description": "是否开启实时路况，在该属性为 true 时，enable- building 和 enable-3D 无效"
+      "description": "是否开启实时路况，在该属性为 true 时，enable- building 和 enable-3D 无效",
+      "defaultValue": "false"
     },
     "enable-poi": {
       "type": "boolean",
-      "description": "是否显示地名"
+      "description": "是否显示地名",
+      "defaultValue": "true"
     },
     "enable-building": {
       "type": "boolean",
-      "description": "是否展示建筑物"
+      "description": "是否展示建筑物",
+      "defaultValue": "true"
     },
     "bindlabeltap": {
       "tsType": "() => void",

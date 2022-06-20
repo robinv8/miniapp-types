@@ -8,11 +8,13 @@
     },
     "checked-color": {
       "type": "string",
-      "description": "组件中用户授权勾选框选中时的颜色，同 CSS 的 color"
+      "description": "组件中用户授权勾选框选中时的颜色，同 CSS 的 color",
+      "defaultValue": "#3388FF"
     },
     "theme-color": {
       "type": "string",
-      "description": "主题颜色，设置后将应用于 “用户授权按钮背景色” 和 “用户授权勾选框选中时的颜色”\n注：theme-color 的优先级低于 button-class 和 checked-color，且当 button-class 存在时，theme-color 不生效"
+      "description": "主题颜色，设置后将应用于 “用户授权按钮背景色” 和 “用户授权勾选框选中时的颜色”\n注：theme-color 的优先级低于 button-class 和 checked-color，且当 button-class 存在时，theme-color 不生效",
+      "defaultValue": "#3388FF"
     },
     "bindgetphonenumber": {
       "tsType": "() => void",

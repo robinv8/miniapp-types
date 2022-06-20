@@ -5,6 +5,7 @@
     "open-type": {
       "type": "string",
       "description": "跳转方式。\n默认值： navigate",
+      "defaultValue": "navigate",
       "enum": [
         "navigate",
         "redirect",
@@ -16,7 +17,8 @@
     },
     "hover-class": {
       "type": "string",
-      "description": "点击后的样式类。\n默认值： none"
+      "description": "点击后的样式类。\n默认值： none",
+      "defaultValue": "none"
     },
     "hover-start-time": {
       "type": "number",

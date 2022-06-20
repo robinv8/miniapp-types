@@ -9,6 +9,7 @@
     "mode": {
       "type": "string",
       "description": "模式",
+      "defaultValue": "live",
       "enum": [
         "live",
         "RTC"
@@ -16,15 +17,18 @@
     },
     "autoplay": {
       "type": "boolean",
-      "description": "自动播放"
+      "description": "自动播放",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音"
+      "description": "是否静音",
+      "defaultValue": "false"
     },
     "orientation": {
       "type": "string",
       "description": "画面方向",
+      "defaultValue": "vertical",
       "enum": [
         "vertical",
         "horizontal"
@@ -33,6 +37,7 @@
     "object-fit": {
       "type": "string",
       "description": "填充模式，可选值有 contain，fillCrop",
+      "defaultValue": "contain",
       "enum": [
         "contain",
         "fillCrop"
@@ -40,19 +45,23 @@
     },
     "background-mute": {
       "type": "boolean",
-      "description": "进入后台时是否静音（已废弃，默认退后台静音）"
+      "description": "进入后台时是否静音（已废弃，默认退后台静音）",
+      "defaultValue": "false"
     },
     "min-cache": {
       "type": "number",
-      "description": "最小缓冲区，单位s（RTC 模式推荐 0.2s）"
+      "description": "最小缓冲区，单位s（RTC 模式推荐 0.2s）",
+      "defaultValue": "1"
     },
     "max-cache": {
       "type": "number",
-      "description": "最大缓冲区，单位s（RTC 模式推荐 0.8s）。缓冲区用来抵抗网络波动，缓冲数据越多，网络抗性越好，但时延越大。"
+      "description": "最大缓冲区，单位s（RTC 模式推荐 0.8s）。缓冲区用来抵抗网络波动，缓冲数据越多，网络抗性越好，但时延越大。",
+      "defaultValue": "3"
     },
     "sound-mode": {
       "type": "string",
       "description": "声音输出方式",
+      "defaultValue": "speaker",
       "enum": [
         "speaker",
         "ear"
@@ -60,11 +69,13 @@
     },
     "auto-pause-if-navigate": {
       "type": "boolean",
-      "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的实时音视频播放"
+      "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的实时音视频播放",
+      "defaultValue": "true"
     },
     "auto-pause-if-open-native": {
       "type": "boolean",
-      "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的实时音视频播放"
+      "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的实时音视频播放",
+      "defaultValue": "true"
     },
     "picture-in-picture-mode": {
       "type": [
@@ -81,6 +92,7 @@
     "referrer-policy": {
       "type": "string",
       "description": "格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
+      "defaultValue": "no-referrer",
       "enum": [
         "origin",
         "no-referrer"

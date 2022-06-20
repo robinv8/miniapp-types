@@ -4,7 +4,8 @@
   "properties": {
     "item-id": {
       "type": "string",
-      "description": "该 swiper-item 的标识符"
+      "description": "该 swiper-item 的标识符",
+      "defaultValue": ""
     }
   },
   "additionalProperties": false

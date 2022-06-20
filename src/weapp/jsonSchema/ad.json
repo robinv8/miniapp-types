@@ -12,10 +12,12 @@
     },
     "ad-type": {
       "type": "string",
-      "description": "广告类型，默认为展示banner，可通过设置该属性为video展示视频广告, grid为格子广告"
+      "description": "广告类型，默认为展示banner，可通过设置该属性为video展示视频广告, grid为格子广告",
+      "defaultValue": "banner"
     },
     "ad-theme": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "white"
     },
     "bindload": {
       "tsType": "() => void",

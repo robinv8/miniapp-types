@@ -23,7 +23,8 @@
     },
     "enablePageBackModal": {
       "type": "boolean",
-      "description": "是否设置挽留弹窗"
+      "description": "是否设置挽留弹窗",
+      "defaultValue": "false"
     },
     "customStyle": {
       "type": "object",

@@ -4,56 +4,67 @@
   "properties": {
     "percent": {
       "type": "number",
-      "description": "百分比 0~100%"
+      "description": "百分比 0~100%",
+      "defaultValue": "0"
     },
     "show-info": {
       "type": "boolean",
-      "description": "在进度条右侧显示百分比"
+      "description": "在进度条右侧显示百分比",
+      "defaultValue": "false"
     },
     "stroke-width": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "进度条的高度（单位：px）"
+      "description": "进度条的高度（单位：px）",
+      "defaultValue": "2"
     },
     "border-radius": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "圆角大小（单位：px）"
+      "description": "圆角大小（单位：px）",
+      "defaultValue": "0"
     },
     "font-size": {
       "type": [
         "Number",
         "String"
       ],
-      "description": "右侧百分比字体大小（单位：px）"
+      "description": "右侧百分比字体大小（单位：px）",
+      "defaultValue": "16"
     },
     "color": {
       "type": "string",
-      "description": "进度条颜色（推荐使用 active-color）"
+      "description": "进度条颜色（推荐使用 active-color）",
+      "defaultValue": "#09BB07"
     },
     "active-color": {
       "type": "string",
-      "description": "已选择的进度条的颜色"
+      "description": "已选择的进度条的颜色",
+      "defaultValue": "#09BB07"
     },
     "background-color": {
       "type": "string",
-      "description": "未选择的进度条的颜色"
+      "description": "未选择的进度条的颜色",
+      "defaultValue": "#E6E6E6"
     },
     "active": {
       "type": "boolean",
-      "description": "进度条从左往右的动画"
+      "description": "进度条从左往右的动画",
+      "defaultValue": "false"
     },
     "active-mode": {
       "type": "string",
-      "description": "backwards：动画从头播；forwards：动画从上次结束点接着播"
+      "description": "backwards：动画从头播；forwards：动画从上次结束点接着播",
+      "defaultValue": "backwards"
     },
     "duration": {
       "type": "number",
-      "description": "进度增加 1% 所需毫秒数"
+      "description": "进度增加 1% 所需毫秒数",
+      "defaultValue": "20"
     }
   },
   "additionalProperties": false

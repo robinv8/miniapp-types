@@ -9,6 +9,7 @@
     "type": {
       "type": "string",
       "description": "input 的类型",
+      "defaultValue": "text",
       "enum": [
         "text",
         "number",
@@ -20,7 +21,8 @@
     },
     "password": {
       "type": "boolean",
-      "description": "是否是密码类型"
+      "description": "是否是密码类型",
+      "defaultValue": "false"
     },
     "placeholder": {
       "type": "string",
@@ -32,31 +34,38 @@
     },
     "placeholder-class": {
       "type": "string",
-      "description": "指定 placeholder 的样式类"
+      "description": "指定 placeholder 的样式类",
+      "defaultValue": "input-placeholder"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "maxlength": {
       "type": "number",
-      "description": "最大输入长度，设置为 -1 的时候不限制最大长度"
+      "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
+      "defaultValue": "140"
     },
     "cursor-spacing": {
       "type": "number",
-      "description": "指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离"
+      "description": "指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
+      "defaultValue": "0"
     },
     "auto-focus": {
       "type": "boolean",
-      "description": "(即将废弃，请直接使用 focus )自动聚焦，拉起键盘"
+      "description": "(即将废弃，请直接使用 focus )自动聚焦，拉起键盘",
+      "defaultValue": "false"
     },
     "focus": {
       "type": "boolean",
-      "description": "获取焦点"
+      "description": "获取焦点",
+      "defaultValue": "false"
     },
     "confirm-type": {
       "type": "string",
       "description": "设置键盘右下角按钮的文字，仅在type='text'时生效",
+      "defaultValue": "done",
       "enum": [
         "send",
         "search",
@@ -67,11 +76,13 @@
     },
     "always-embed": {
       "type": "boolean",
-      "description": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)"
+      "description": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)",
+      "defaultValue": "false"
     },
     "confirm-hold": {
       "type": "boolean",
-      "description": "点击键盘右下角按钮时是否保持键盘不收起"
+      "description": "点击键盘右下角按钮时是否保持键盘不收起",
+      "defaultValue": "false"
     },
     "cursor": {
       "type": "number",
@@ -79,19 +90,23 @@
     },
     "selection-start": {
       "type": "number",
-      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用"
+      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+      "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用"
+      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+      "defaultValue": "-1"
     },
     "adjust-position": {
       "type": "boolean",
-      "description": "键盘弹起时，是否自动上推页面"
+      "description": "键盘弹起时，是否自动上推页面",
+      "defaultValue": "true"
     },
     "hold-keyboard": {
       "type": "boolean",
-      "description": "focus时，点击页面的时候不收起键盘"
+      "description": "focus时，点击页面的时候不收起键盘",
+      "defaultValue": "false"
     },
     "safe-password-cert-path": {
       "type": "string",

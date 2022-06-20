@@ -16,23 +16,28 @@
     },
     "controls": {
       "type": "boolean",
-      "description": "是否显示默认播放控件（播放/暂停按钮、播放进度、时间）"
+      "description": "是否显示默认播放控件（播放/暂停按钮、播放进度、时间）",
+      "defaultValue": "true"
     },
     "autoplay": {
       "type": "boolean",
-      "description": "是否自动播放"
+      "description": "是否自动播放",
+      "defaultValue": "false"
     },
     "loop": {
       "type": "boolean",
-      "description": "是否循环播放"
+      "description": "是否循环播放",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音播放"
+      "description": "是否静音播放",
+      "defaultValue": "false"
     },
     "objectFit": {
       "type": "string",
       "description": "当视频大小与 video 容器大小不一致时，视频的表现形式。contain：包含；fill：填充；cover：覆盖",
+      "defaultValue": "contain",
       "enum": [
         "contain",
         "fill",
@@ -45,7 +50,8 @@
     },
     "page-gesture": {
       "type": "boolean",
-      "description": "在非全屏模式下，是否开启使用手势调节亮度与音量，兼容 vslide-gesture 属性"
+      "description": "在非全屏模式下，是否开启使用手势调节亮度与音量，兼容 vslide-gesture 属性",
+      "defaultValue": "false"
     },
     "direction": {
       "type": "number",
@@ -58,15 +64,18 @@
     },
     "show-progress": {
       "type": "boolean",
-      "description": "若不设置，宽度大于 240 时才会显示"
+      "description": "若不设置，宽度大于 240 时才会显示",
+      "defaultValue": "true"
     },
     "show-fullscreen-btn": {
       "type": "boolean",
-      "description": "是否显示全屏按钮"
+      "description": "是否显示全屏按钮",
+      "defaultValue": "true"
     },
     "enable-progress-gesture": {
       "type": "boolean",
-      "description": "是否开启使用手势控制进度"
+      "description": "是否开启使用手势控制进度",
+      "defaultValue": "true"
     },
     "danmu-list": {
       "type": "array.<object>",
@@ -74,55 +83,68 @@
     },
     "danmu-btn": {
       "type": "boolean",
-      "description": "是否显示弹幕按钮，只在初始化时有效，不能动态变更"
+      "description": "是否显示弹幕按钮，只在初始化时有效，不能动态变更",
+      "defaultValue": "false"
     },
     "enable-danmu": {
       "type": "boolean",
-      "description": "是否展示弹幕，只在初始化时有效，不能动态变更"
+      "description": "是否展示弹幕，只在初始化时有效，不能动态变更",
+      "defaultValue": "false"
     },
     "show-play-btn": {
       "type": "boolean",
-      "description": "是否显示视频底部控制栏的播放按钮"
+      "description": "是否显示视频底部控制栏的播放按钮",
+      "defaultValue": "true"
     },
     "show-center-play-btn": {
       "type": "boolean",
-      "description": "是否显示视频中间的播放按钮"
+      "description": "是否显示视频中间的播放按钮",
+      "defaultValue": "true"
     },
     "show-mute-btn": {
       "type": "boolean",
-      "description": "是否显示静音按钮"
+      "description": "是否显示静音按钮",
+      "defaultValue": "false"
     },
     "show-no-wifi-tip": {
       "type": "boolean",
-      "description": "非 wifi 环境下是否显示继续播放浮层"
+      "description": "非 wifi 环境下是否显示继续播放浮层",
+      "defaultValue": "true"
     },
     "vslide-gesture": {
       "type": "boolean",
-      "description": "非全屏模式下，是否开启亮度与音量调节手势，兼容 page-gesture 属性"
+      "description": "非全屏模式下，是否开启亮度与音量调节手势，兼容 page-gesture 属性",
+      "defaultValue": "false"
     },
     "vslide-gesture-in-fullscreen": {
       "type": "boolean",
-      "description": "全屏模式下，是否开启亮度与音量调节手势"
+      "description": "全屏模式下，是否开启亮度与音量调节手势",
+      "defaultValue": "true"
     },
     "show-lock-btn": {
       "type": "boolean",
-      "description": "全屏模式下，是否显示锁屏按钮"
+      "description": "全屏模式下，是否显示锁屏按钮",
+      "defaultValue": "true"
     },
     "enable-play-gesture": {
       "type": "boolean",
-      "description": "是否开启播放手势，即双击切换播放/暂停"
+      "description": "是否开启播放手势，即双击切换播放/暂停",
+      "defaultValue": "false"
     },
     "show-rate-btn": {
       "type": "boolean",
-      "description": "是否显示倍速播放按钮"
+      "description": "是否显示倍速播放按钮",
+      "defaultValue": "false"
     },
     "show-vslide-btn-in-fullscreen": {
       "type": "boolean",
-      "description": "全屏模式下，是否显示侧边栏控制按钮"
+      "description": "全屏模式下，是否显示侧边栏控制按钮",
+      "defaultValue": "true"
     },
     "silent-play": {
       "type": "boolean",
-      "description": "是否进入无声视频模式，进入无声视频模式后，视频将静音播放且不响应系统物理音量变化，点击播放器提示无声视频，手势调节失效"
+      "description": "是否进入无声视频模式，进入无声视频模式后，视频将静音播放且不响应系统物理音量变化，点击播放器提示无声视频，手势调节失效",
+      "defaultValue": "false"
     },
     "bindplay": {
       "tsType": "() => void",

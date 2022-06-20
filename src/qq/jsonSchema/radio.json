@@ -8,11 +8,13 @@
     },
     "checked": {
       "type": "boolean",
-      "description": "当前是否选中"
+      "description": "当前是否选中",
+      "defaultValue": "false"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "color": {
       "type": "string",

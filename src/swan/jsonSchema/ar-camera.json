@@ -18,6 +18,7 @@
     "flash": {
       "type": "string",
       "description": "闪光灯，值为 auto、on、off",
+      "defaultValue": "off",
       "enum": [
         "auto",
         "on",

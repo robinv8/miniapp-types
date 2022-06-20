@@ -8,27 +8,33 @@
     },
     "mode": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "live"
     },
     "autoplay": {
       "type": "boolean",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "false"
     },
     "orientation": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "vertical"
     },
     "object-fit": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "contain"
     },
     "sound-mode": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "speaker"
     },
     "bindstatechange": {
       "tsType": "() => void",

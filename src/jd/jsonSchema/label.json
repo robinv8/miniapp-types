@@ -3,7 +3,8 @@
   "type": "object",
   "properties": {
     "for": {
-      "type": "string"
+      "type": "string",
+      "defaultValue": "绑定控件的 id"
     }
   },
   "additionalProperties": false

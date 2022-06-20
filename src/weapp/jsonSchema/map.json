@@ -12,15 +12,18 @@
     },
     "scale": {
       "type": "number",
-      "description": "缩放级别，取值范围为3-20"
+      "description": "缩放级别，取值范围为3-20",
+      "defaultValue": "16"
     },
     "min-scale": {
       "type": "number",
-      "description": "最小缩放级别"
+      "description": "最小缩放级别",
+      "defaultValue": "3"
     },
     "max-scale": {
       "type": "number",
-      "description": "最大缩放级别"
+      "description": "最大缩放级别",
+      "defaultValue": "20"
     },
     "markers": {
       "type": "array.<marker>",
@@ -48,7 +51,8 @@
     },
     "show-location": {
       "type": "boolean",
-      "description": "显示带有方向的当前定位点"
+      "description": "显示带有方向的当前定位点",
+      "defaultValue": "false"
     },
     "polygons": {
       "type": "array.<polygon>",
@@ -60,55 +64,68 @@
     },
     "layer-style": {
       "type": "number",
-      "description": "个性化地图配置的 style，不支持动态修改"
+      "description": "个性化地图配置的 style，不支持动态修改",
+      "defaultValue": "1"
     },
     "rotate": {
       "type": "number",
-      "description": "旋转角度，范围 0 ~ 360, 地图正北和设备 y 轴角度的夹角"
+      "description": "旋转角度，范围 0 ~ 360, 地图正北和设备 y 轴角度的夹角",
+      "defaultValue": "0"
     },
     "skew": {
       "type": "number",
-      "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角"
+      "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角",
+      "defaultValue": "0"
     },
     "enable-3D": {
       "type": "boolean",
-      "description": "展示3D楼块"
+      "description": "展示3D楼块",
+      "defaultValue": "false"
     },
     "show-compass": {
       "type": "boolean",
-      "description": "显示指南针"
+      "description": "显示指南针",
+      "defaultValue": "false"
     },
     "show-scale": {
       "type": "boolean",
-      "description": "显示比例尺，工具暂不支持"
+      "description": "显示比例尺，工具暂不支持",
+      "defaultValue": "false"
     },
     "enable-overlooking": {
       "type": "boolean",
-      "description": "开启俯视"
+      "description": "开启俯视",
+      "defaultValue": "false"
     },
     "enable-zoom": {
       "type": "boolean",
-      "description": "是否支持缩放"
+      "description": "是否支持缩放",
+      "defaultValue": "true"
     },
     "enable-scroll": {
       "type": "boolean",
-      "description": "是否支持拖动"
+      "description": "是否支持拖动",
+      "defaultValue": "true"
     },
     "enable-rotate": {
       "type": "boolean",
-      "description": "是否支持旋转"
+      "description": "是否支持旋转",
+      "defaultValue": "false"
     },
     "enable-satellite": {
       "type": "boolean",
-      "description": "是否开启卫星图"
+      "description": "是否开启卫星图",
+      "defaultValue": "false"
     },
     "enable-traffic": {
       "type": "boolean",
-      "description": "是否开启实时路况"
+      "description": "是否开启实时路况",
+      "defaultValue": "false"
     },
     "enable-poi": {
       "type": "boolean",
-      "description": "是否展示 POI 点"
+      "description": "是否展示 POI 点",
+      "defaultValue": "true"
     },
     "enable-building": {
       "type": "boolean",

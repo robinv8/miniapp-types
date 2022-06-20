@@ -5,6 +5,7 @@
     "mode": {
       "type": "string",
       "description": "模式，不支持动态修改，详情见 mode 的合法值",
+      "defaultValue": "normal",
       "enum": [
         "normal",
         "scanCode"
@@ -13,6 +14,7 @@
     "resolution": {
       "type": "string",
       "description": "分辨率，不支持动态修改，详情见 resolution 的合法值",
+      "defaultValue": "medium",
       "enum": [
         "low",
         "medium",
@@ -22,6 +24,7 @@
     "device-position": {
       "type": "string",
       "description": "摄像头朝向，详情见 device-position 的合法值",
+      "defaultValue": "back",
       "enum": [
         "front",
         "back"
@@ -30,6 +33,7 @@
     "flash": {
       "type": "string",
       "description": "闪光灯，详情见 flash 的合法值",
+      "defaultValue": "off",
       "enum": [
         "off",
         "torch"
@@ -38,6 +42,7 @@
     "frame-size": {
       "type": "string",
       "description": "指定期望的相机帧数据尺寸，详情见 frame-size 的合法值",
+      "defaultValue": "medium",
       "enum": [
         "small",
         "medium",

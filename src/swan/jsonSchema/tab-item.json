@@ -4,19 +4,23 @@
   "properties": {
     "label": {
       "type": "string",
-      "description": "tab-item 内显示的文字"
+      "description": "tab-item 内显示的文字",
+      "defaultValue": "无"
     },
     "name": {
       "type": "string",
-      "description": "tab-item 对应的 name 值"
+      "description": "tab-item 对应的 name 值",
+      "defaultValue": "无"
     },
     "badge-type": {
       "type": "string",
-      "description": "徽标类型 badge-type 分为圆点“dot”和文本“text”，不设置 badge-type 则不显示徽标"
+      "description": "徽标类型 badge-type 分为圆点“dot”和文本“text”，不设置 badge-type 则不显示徽标",
+      "defaultValue": "无"
     },
     "badge-text": {
       "type": "string",
-      "description": "badge-type 为 text 的时候，徽标内的数字，为空时badge-type=\"text\"不生效"
+      "description": "badge-type 为 text 的时候，徽标内的数字，为空时badge-type=\"text\"不生效",
+      "defaultValue": "无"
     }
   },
   "additionalProperties": false,

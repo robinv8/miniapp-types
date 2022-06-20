@@ -5,6 +5,7 @@
     "target": {
       "type": "string",
       "description": "在哪个目标上发生跳转，默认当前小程序",
+      "defaultValue": "self",
       "enum": [
         "self",
         "miniProgram"
@@ -17,6 +18,7 @@
     "open-type": {
       "type": "string",
       "description": "跳转方式",
+      "defaultValue": "navigate",
       "enum": [
         "navigate",
         "redirect",
@@ -28,7 +30,8 @@
     },
     "delta": {
       "type": "number",
-      "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数"
+      "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数",
+      "defaultValue": "1"
     },
     "app-id": {
       "type": "string",
@@ -45,6 +48,7 @@
     "version": {
       "type": "string",
       "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序版本",
+      "defaultValue": "release",
       "enum": [
         "develop",
         "trial",
@@ -57,19 +61,23 @@
     },
     "hover-class": {
       "type": "string",
-      "description": "指定点击时的样式类，当hover-class=\"none\"时，没有点击态效果"
+      "description": "指定点击时的样式类，当hover-class=\"none\"时，没有点击态效果",
+      "defaultValue": "navigator-hover"
     },
     "hover-stop-propagation": {
       "type": "boolean",
-      "description": "指定是否阻止本节点的祖先节点出现点击态"
+      "description": "指定是否阻止本节点的祖先节点出现点击态",
+      "defaultValue": "false"
     },
     "hover-start-time": {
       "type": "number",
-      "description": "按住后多久出现点击态，单位毫秒"
+      "description": "按住后多久出现点击态，单位毫秒",
+      "defaultValue": "50"
     },
     "hover-stay-time": {
       "type": "number",
-      "description": "手指松开后点击态保留时间，单位毫秒"
+      "description": "手指松开后点击态保留时间，单位毫秒",
+      "defaultValue": "600"
     },
     "bindsuccess": {
       "type": "string",

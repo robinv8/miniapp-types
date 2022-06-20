@@ -8,7 +8,8 @@
     },
     "progressbar-color": {
       "type": "string",
-      "description": "webview 的进度条颜色"
+      "description": "webview 的进度条颜色",
+      "defaultValue": "#51a0d8"
     },
     "bindmessage": {
       "tsType": "() => void",

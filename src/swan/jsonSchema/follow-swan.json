@@ -4,11 +4,13 @@
   "properties": {
     "size": {
       "type": "string",
-      "description": "组件大小"
+      "description": "组件大小",
+      "defaultValue": "default"
     },
     "type": {
       "type": "string",
-      "description": "组件样式"
+      "description": "组件样式",
+      "defaultValue": "primary"
     },
     "bindfavorstatuschange": {
       "tsType": "() => void",

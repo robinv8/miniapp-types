@@ -11,7 +11,8 @@
         "Number",
         "String"
       ],
-      "description": "icon的大小，单位px"
+      "description": "icon的大小，单位px",
+      "defaultValue": "23px"
     },
     "color": {
       "type": "string",

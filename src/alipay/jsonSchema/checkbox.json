@@ -8,11 +8,13 @@
     },
     "checked": {
       "type": "boolean",
-      "description": "当前是否选中，可用来设置默认选中。\n默认值： false"
+      "description": "当前是否选中，可用来设置默认选中。\n默认值： false",
+      "defaultValue": "false"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false"
+      "description": "是否禁用。\n默认值： false",
+      "defaultValue": "false"
     },
     "onChange": {
       "tsType": "() => void",

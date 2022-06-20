@@ -24,27 +24,33 @@
     },
     "scroll-top": {
       "type": "string",
-      "description": "滚动位置，可以使用 px 或者 rpx 为单位，在被设置时，页面会滚动到对应位置"
+      "description": "滚动位置，可以使用 px 或者 rpx 为单位，在被设置时，页面会滚动到对应位置",
+      "defaultValue": "\"\""
     },
     "scroll-duration": {
       "type": "number",
-      "description": "滚动动画时长"
+      "description": "滚动动画时长",
+      "defaultValue": "300"
     },
     "page-style": {
       "type": "string",
-      "description": "页面根节点样式，页面根节点是所有页面节点的祖先节点，相当于 HTML 中的 body 节点"
+      "description": "页面根节点样式，页面根节点是所有页面节点的祖先节点，相当于 HTML 中的 body 节点",
+      "defaultValue": "\"\""
     },
     "page-font-size": {
       "type": "string",
-      "description": "页面 page 的字体大小，可以设置为 system ，表示使用当前用户设置的微信字体大小"
+      "description": "页面 page 的字体大小，可以设置为 system ，表示使用当前用户设置的微信字体大小",
+      "defaultValue": "\"\""
     },
     "root-font-size": {
       "type": "string",
-      "description": "页面的根字体大小，页面中的所有 rem 单位，将使用这个字体大小作为参考值，即 1rem 等于这个字体大小；自小程序版本 2.11.0 起，也可以设置为 system"
+      "description": "页面的根字体大小，页面中的所有 rem 单位，将使用这个字体大小作为参考值，即 1rem 等于这个字体大小；自小程序版本 2.11.0 起，也可以设置为 system",
+      "defaultValue": "\"\""
     },
     "page-orientation": {
       "type": "string",
-      "description": "页面的方向，可为 auto portrait 或 landscape"
+      "description": "页面的方向，可为 auto portrait 或 landscape",
+      "defaultValue": "\"\""
     },
     "bindresize": {
       "tsType": "() => void",

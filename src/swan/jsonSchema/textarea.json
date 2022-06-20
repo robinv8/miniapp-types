@@ -8,11 +8,13 @@
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "maxlength": {
       "type": "number",
-      "description": "最大输入长度，设置为 -1 的时候不限制最大长度"
+      "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
+      "defaultValue": "140"
     },
     "placeholder": {
       "type": "string",
@@ -28,19 +30,23 @@
     },
     "auto-height": {
       "type": "boolean",
-      "description": "是否自动增高，设置 auto-height 时，style.height 不生效"
+      "description": "是否自动增高，设置 auto-height 时，style.height 不生效",
+      "defaultValue": "false"
     },
     "cursor": {
       "type": "number",
-      "description": "指定 focus 时的光标位置，自动聚焦时才会生效"
+      "description": "指定 focus 时的光标位置，自动聚焦时才会生效",
+      "defaultValue": "-1"
     },
     "auto-focus": {
       "type": "boolean",
-      "description": "自动聚焦，调起键盘"
+      "description": "自动聚焦，调起键盘",
+      "defaultValue": "false"
     },
     "confirm-type": {
       "type": "string",
       "description": "设置键盘右下角按钮的文字",
+      "defaultValue": "default",
       "enum": [
         "default",
         "done",
@@ -52,35 +58,43 @@
     },
     "confirm-hold": {
       "type": "boolean",
-      "description": "点击键盘右下角按钮时是否保持键盘不收起"
+      "description": "点击键盘右下角按钮时是否保持键盘不收起",
+      "defaultValue": "false"
     },
     "focus": {
       "type": "boolean",
-      "description": "获取焦点，调起键盘"
+      "description": "获取焦点，调起键盘",
+      "defaultValue": "false"
     },
     "fixed": {
       "type": "boolean",
-      "description": "如果 textarea 是在一个position: fixed的区域，需要显示指定属性 fixed 为 true"
+      "description": "如果 textarea 是在一个position: fixed的区域，需要显示指定属性 fixed 为 true",
+      "defaultValue": "false"
     },
     "cursor-spacing": {
       "type": "number",
-      "description": "指定光标与键盘的距离（单位：px）。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离"
+      "description": "指定光标与键盘的距离（单位：px）。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
+      "defaultValue": "0"
     },
     "show-confirm-bar": {
       "type": "boolean",
-      "description": "是否显示键盘上方带有“完成”按钮那一栏"
+      "description": "是否显示键盘上方带有“完成”按钮那一栏",
+      "defaultValue": "true"
     },
     "selection-start": {
       "type": "number",
-      "description": "光标起始位置，自动聚焦时有效，需与 selection-end 搭配使用"
+      "description": "光标起始位置，自动聚焦时有效，需与 selection-end 搭配使用",
+      "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "光标结束位置，自动聚焦时有效，需与 selection-start 搭配使用"
+      "description": "光标结束位置，自动聚焦时有效，需与 selection-start 搭配使用",
+      "defaultValue": "-1"
     },
     "adjust-position": {
       "type": "boolean",
-      "description": "键盘弹起时，是否自动上推页面"
+      "description": "键盘弹起时，是否自动上推页面",
+      "defaultValue": "true"
     },
     "bindfocus": {
       "tsType": "() => void",

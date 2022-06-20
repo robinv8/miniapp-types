@@ -8,7 +8,8 @@
     },
     "mode": {
       "type": "string",
-      "description": "图片模式。\n默认值： scaleToFill"
+      "description": "图片模式。\n默认值： scaleToFill",
+      "defaultValue": "scaleToFill"
     },
     "class": {
       "type": "string",
@@ -20,7 +21,8 @@
     },
     "lazy-load": {
       "type": "boolean",
-      "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。\n默认值： false\n版本要求： 基础库 1.9.0 及以上"
+      "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。\n默认值： false\n版本要求： 基础库 1.9.0 及以上",
+      "defaultValue": "false"
     },
     "default-source": {
       "type": "string",

@@ -19,7 +19,8 @@
     },
     "size": {
       "type": "number",
-      "description": "icon 的大小，单位 px"
+      "description": "icon 的大小，单位 px",
+      "defaultValue": "24"
     },
     "color": {
       "type": "string",

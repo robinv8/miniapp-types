@@ -29,6 +29,7 @@
     "type": {
       "type": "string",
       "description": "广告的类型，详见 type 的合法值",
+      "defaultValue": "\"banner\"",
       "enum": [
         "banner",
         "video",
@@ -39,7 +40,8 @@
     },
     "scale": {
       "type": "number",
-      "description": "广告的缩放比例，100 为标准尺寸"
+      "description": "广告的缩放比例，100 为标准尺寸",
+      "defaultValue": "100"
     }
   },
   "additionalProperties": false,

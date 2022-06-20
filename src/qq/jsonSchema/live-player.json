@@ -8,47 +8,58 @@
     },
     "mode": {
       "type": "string",
-      "description": "模式"
+      "description": "模式",
+      "defaultValue": "live"
     },
     "autoplay": {
       "type": "boolean",
-      "description": "自动播放"
+      "description": "自动播放",
+      "defaultValue": "false"
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音"
+      "description": "是否静音",
+      "defaultValue": "false"
     },
     "orientation": {
       "type": "string",
-      "description": "画面方向"
+      "description": "画面方向",
+      "defaultValue": "vertical"
     },
     "object-fit": {
       "type": "string",
-      "description": "填充模式，可选值有contain, fillCrop"
+      "description": "填充模式，可选值有contain, fillCrop",
+      "defaultValue": "contain"
     },
     "min-cache": {
       "type": "number",
-      "description": "最小缓冲区，单位s"
+      "description": "最小缓冲区，单位s",
+      "defaultValue": "1"
     },
     "max-cache": {
       "type": "number",
-      "description": "最大缓冲区，单位s"
+      "description": "最大缓冲区，单位s",
+      "defaultValue": "3"
     },
     "sound-mode": {
       "type": "string",
-      "description": "声音输出方式"
+      "description": "声音输出方式",
+      "defaultValue": "speaker"
     },
     "auto-pause-if-navigate": {
       "type": "boolean",
-      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放"
+      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放",
+      "defaultValue": "true"
     },
     "auto-pause-if-open-native": {
       "type": "boolean",
-      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放"
+      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放",
+      "defaultValue": "true"
     },
     "enable-metadata": {
       "type": "boolean",
-      "description": "是否回调metadata"
+      "description": "是否回调metadata",
+      "defaultValue": "false"
     },
     "bindstatechange": {
       "tsType": "() => void",

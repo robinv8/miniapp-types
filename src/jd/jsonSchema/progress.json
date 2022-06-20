@@ -4,19 +4,23 @@
   "properties": {
     "percent": {
       "type": "float",
-      "description": "百分比 0~100"
+      "description": "百分比 0~100",
+      "defaultValue": "无"
     },
     "show-info": {
       "type": "boolean",
-      "description": "在进度条右侧显示百分比"
+      "description": "在进度条右侧显示百分比",
+      "defaultValue": "false"
     },
     "stroke-width": {
       "type": "number",
-      "description": "进度条线的宽度，单位 px"
+      "description": "进度条线的宽度，单位 px",
+      "defaultValue": "6"
     },
     "color": {
       "type": "string",
-      "description": "进度条颜色 （请使用 activeColor）"
+      "description": "进度条颜色 （请使用 activeColor）",
+      "defaultValue": "#F0250F"
     },
     "activeColor": {
       "type": "string",
@@ -28,29 +32,34 @@
     },
     "active": {
       "type": "boolean",
-      "description": "进度条从左往右的动画"
+      "description": "进度条从左往右的动画",
+      "defaultValue": "false"
     },
     "active-mode": {
       "type": "string",
-      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播"
+      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
+      "defaultValue": "backwards"
     },
     "border-radius": {
       "type": [
         "number",
         "string"
       ],
-      "description": "圆角大小"
+      "description": "圆角大小",
+      "defaultValue": "0"
     },
     "font-size": {
       "type": [
         "number",
         "string"
       ],
-      "description": "右侧百分比字体大小"
+      "description": "右侧百分比字体大小",
+      "defaultValue": "16"
     },
     "duration": {
       "type": "number",
-      "description": "进度增加1%所需毫秒数"
+      "description": "进度增加1%所需毫秒数",
+      "defaultValue": "30"
     },
     "bindactiveend": {
       "tsType": "() => void",

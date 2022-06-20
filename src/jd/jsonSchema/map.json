@@ -12,15 +12,18 @@
     },
     "scale": {
       "type": "number",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "16"
     },
     "theme": {
       "type": "string",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "normal"
     },
     "showLocation": {
       "type": "boolean",
-      "description": "否"
+      "description": "否",
+      "defaultValue": "false"
     },
     "includePoints": {
       "type": "array（point)",

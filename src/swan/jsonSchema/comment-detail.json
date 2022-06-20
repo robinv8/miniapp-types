@@ -4,35 +4,43 @@
   "properties": {
     "comment-param": {
       "type": "object",
-      "description": "评论核心参数"
+      "description": "评论核心参数",
+      "defaultValue": "是"
     },
     "srid": {
       "type": "string",
-      "description": "评论 ID"
+      "description": "评论 ID",
+      "defaultValue": "是"
     },
     "is-page-scroll": {
       "type": "boolean",
-      "description": "滚动方式为页面滚动，若组件作为浮层使用，该参数需设为 false"
+      "description": "滚动方式为页面滚动，若组件作为浮层使用，该参数需设为 false",
+      "defaultValue": "否"
     },
     "need-toolbar": {
       "type": "boolean",
-      "description": "是否需要底部 toolbar，若使用开发者自定义的底部 toolbar，该参数需设为 false"
+      "description": "是否需要底部 toolbar，若使用开发者自定义的底部 toolbar，该参数需设为 false",
+      "defaultValue": "否"
     },
     "need-like-btn": {
       "type": "boolean",
-      "description": "是否需要详情顶部父级评论的点赞按钮，默认显示"
+      "description": "是否需要详情顶部父级评论的点赞按钮，默认显示",
+      "defaultValue": "否"
     },
     "back-list-after-delete": {
       "type": "boolean",
-      "description": "删除详情后是否返回列表项，默认一站式逻辑。若使用浮层，请设置改属性为 false"
+      "description": "删除详情后是否返回列表项，默认一站式逻辑。若使用浮层，请设置改属性为 false",
+      "defaultValue": "否"
     },
     "add-comment": {
       "type": "boolean",
-      "description": "用于调起评论发布器发布评论"
+      "description": "用于调起评论发布器发布评论",
+      "defaultValue": "否"
     },
     "binddelete": {
       "tsType": "() => void",
-      "description": "删除整体详情内容时触发，返回数据为{status, data:{srid}}"
+      "description": "删除整体详情内容时触发，返回数据为{status, data:{srid}}",
+      "defaultValue": "否"
     }
   },
   "additionalProperties": false

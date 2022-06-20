@@ -25,27 +25,33 @@
     },
     "lang": {
       "type": "string",
-      "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo，有效值有：en, zh_CN, zh_TW"
+      "description": "当 type=\"user*\" 时生效，以哪种语言展示 userInfo，有效值有：en, zh_CN, zh_TW",
+      "defaultValue": "en"
     },
     "share-ticket": {
       "type": "string",
-      "description": "当 type=groupCloudStorage 时有效，群分享对应的 shareTicket"
+      "description": "当 type=groupCloudStorage 时有效，群分享对应的 shareTicket",
+      "defaultValue": "en"
     },
     "key-list": {
       "type": "string",
-      "description": "当 type=*CloudStorage 时有效，指定要拉取的 key 列表"
+      "description": "当 type=*CloudStorage 时有效，指定要拉取的 key 列表",
+      "defaultValue": "en"
     },
     "component-data": {
       "type": "string",
-      "description": "当 type=*CloudStorage 时有效，从主域透传给开放数据域的数据，会自动注入到自定义开放数据域组件的 properties 中"
+      "description": "当 type=*CloudStorage 时有效，从主域透传给开放数据域的数据，会自动注入到自定义开放数据域组件的 properties 中",
+      "defaultValue": "en"
     },
     "generic:simple-component": {
       "type": "string",
-      "description": "当 type=*CloudStorage 时有效,指定使用哪个自定义开放数据域组件来渲染开放数据,具体说明见下方"
+      "description": "当 type=*CloudStorage 时有效,指定使用哪个自定义开放数据域组件来渲染开放数据,具体说明见下方",
+      "defaultValue": "en"
     },
     "binderror": {
       "type": "string",
-      "description": "当 type=*CloudStorage 时有效,开放数据请求或定向分享失败时触发，event.detail = {errMsg: \"getGroupCloudStorage:fail no data\"}"
+      "description": "当 type=*CloudStorage 时有效,开放数据请求或定向分享失败时触发，event.detail = {errMsg: \"getGroupCloudStorage:fail no data\"}",
+      "defaultValue": "en"
     }
   },
   "additionalProperties": false

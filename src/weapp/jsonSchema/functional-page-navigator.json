@@ -5,6 +5,7 @@
     "version": {
       "type": "string",
       "description": "跳转到的小程序版本，**线上版本必须设置为 release**",
+      "defaultValue": "release",
       "enum": [
         "develop",
         "trial",

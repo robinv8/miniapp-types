@@ -27,7 +27,8 @@
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false"
+      "description": "是否禁用。\n默认值： false",
+      "defaultValue": "false"
     }
   },
   "additionalProperties": false

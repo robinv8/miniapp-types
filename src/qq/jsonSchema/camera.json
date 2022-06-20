@@ -4,15 +4,18 @@
   "properties": {
     "mode": {
       "type": "string",
-      "description": "有效值为 normal, scanCode"
+      "description": "有效值为 normal, scanCode",
+      "defaultValue": "normal"
     },
     "device-position": {
       "type": "string",
-      "description": "前置或后置，值为front, back"
+      "description": "前置或后置，值为front, back",
+      "defaultValue": "back"
     },
     "flash": {
       "type": "string",
-      "description": "闪光灯，值为auto, on, off"
+      "description": "闪光灯，值为auto, on, off",
+      "defaultValue": "auto"
     },
     "bindstop": {
       "tsType": "() => void",

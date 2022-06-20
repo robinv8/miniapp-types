@@ -4,19 +4,23 @@
   "properties": {
     "checked": {
       "type": "boolean",
-      "description": "是否选中"
+      "description": "是否选中",
+      "defaultValue": "false"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用"
+      "description": "是否禁用",
+      "defaultValue": "false"
     },
     "type": {
       "type": "string",
-      "description": "样式，有效值：switch, checkbox"
+      "description": "样式，有效值：switch, checkbox",
+      "defaultValue": "switch"
     },
     "color": {
       "type": "string",
-      "description": "switch 的颜色，同 css 的 color"
+      "description": "switch 的颜色，同 css 的 color",
+      "defaultValue": "#04BE02"
     },
     "bindchange": {
       "tsType": "() => void",

@@ -12,7 +12,8 @@
     },
     "type": {
       "type": "string",
-      "description": "广告类型：banner、feed ，需和百青藤平台上的代码位类型相匹配"
+      "description": "广告类型：banner、feed ，需和百青藤平台上的代码位类型相匹配",
+      "defaultValue": "feed"
     },
     "updatetime": {
       "type": "string",

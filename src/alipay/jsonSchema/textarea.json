@@ -24,27 +24,33 @@
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false"
+      "description": "是否禁用。\n默认值： false",
+      "defaultValue": "false"
     },
     "maxlength": {
       "type": "number",
-      "description": "最大长度，当设置为 -1 时不限制最大长度。\n默认值： 140"
+      "description": "最大长度，当设置为 -1 时不限制最大长度。\n默认值： 140",
+      "defaultValue": "140"
     },
     "focus": {
       "type": "boolean",
-      "description": "获取焦点。\n默认值： false"
+      "description": "获取焦点。\n默认值： false",
+      "defaultValue": "false"
     },
     "auto-height": {
       "type": "boolean",
-      "description": "是否自动增高。\n默认值： false"
+      "description": "是否自动增高。\n默认值： false",
+      "defaultValue": "false"
     },
     "show-count": {
       "type": "boolean",
-      "description": "是否渲染字数统计功能（是否删除默认计数器/是否显示字数统计）。\n默认值： true\n版本要求： 基础库 1.8.0 及以上"
+      "description": "是否渲染字数统计功能（是否删除默认计数器/是否显示字数统计）。\n默认值： true\n版本要求： 基础库 1.8.0 及以上",
+      "defaultValue": "true"
     },
     "controlled": {
       "type": "boolean",
-      "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上"
+      "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上",
+      "defaultValue": "false"
     },
     "onInput": {
       "tsType": "() => void",

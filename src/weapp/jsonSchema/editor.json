@@ -4,7 +4,8 @@
   "properties": {
     "read-only": {
       "type": "boolean",
-      "description": "设置编辑器为只读"
+      "description": "设置编辑器为只读",
+      "defaultValue": "false"
     },
     "placeholder": {
       "type": "string",
@@ -12,15 +13,18 @@
     },
     "show-img-size": {
       "type": "boolean",
-      "description": "点击图片时显示图片大小控件"
+      "description": "点击图片时显示图片大小控件",
+      "defaultValue": "false"
     },
     "show-img-toolbar": {
       "type": "boolean",
-      "description": "点击图片时显示工具栏控件"
+      "description": "点击图片时显示工具栏控件",
+      "defaultValue": "false"
     },
     "show-img-resize": {
       "type": "boolean",
-      "description": "点击图片时显示修改尺寸控件"
+      "description": "点击图片时显示修改尺寸控件",
+      "defaultValue": "false"
     },
     "bindready": {
       "tsType": "() => void",

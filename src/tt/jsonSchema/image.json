@@ -9,6 +9,7 @@
     "mode": {
       "type": "string",
       "description": "图片剪裁方式，详情见 mode 的合法值",
+      "defaultValue": "scaleToFill",
       "enum": [
         "scaleToFill",
         "aspectFit",
@@ -28,7 +29,8 @@
     },
     "lazy-load": {
       "type": "boolean",
-      "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载"
+      "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载",
+      "defaultValue": "false"
     },
     "binderror": {
       "tsType": "() => void",
