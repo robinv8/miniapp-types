@@ -33,7 +33,7 @@ platforms.forEach((platform) => {
   });
   const index = path.join(dist, 'index.d.ts');
   const code = fileNames.map(fileName => {
-    return `export { default as ${humps.pascalize(fileName)}Prop } from './${fileName}';`
+    return `export { default as ${humps.pascalize(fileName)}Props } from './${fileName}';`
   }).join('\n');
   fs.writeFileSync(index, code);
 
