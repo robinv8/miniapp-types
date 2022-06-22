@@ -1,8 +1,8 @@
 {
   "name": "miniapp-types",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "小程序类型生成器",
-  "types": ".dist/types/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist/**"
   ],
