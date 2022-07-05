@@ -1,6 +1,6 @@
 {
   "name": "miniapp-types",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "小程序类型生成器",
   "types": "./dist/types/index.d.ts",
   "files": [
@@ -46,8 +46,7 @@
   "clean-package": {
     "indent": 2,
     "remove": [
-      "devDependencies",
-      "scripts"
+      "devDependencies"
     ]
   }
 }
