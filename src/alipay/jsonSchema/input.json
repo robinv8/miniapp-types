@@ -13,7 +13,17 @@
     "type": {
       "type": "string",
       "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。\n默认值： text\n版本要求：numberpad、digitpad、 idcardpad 支持基础库 1.13.0 客户端 10.1.50 及以上，可通过\nmy.canIUse(\"input.type.numberpad\") 来检测。\n注意： 当启用数字键盘时，Android 客户端会影响 position:fixed 并指定 bottom 属性的元素。",
-      "defaultValue": "text"
+      "defaultValue": "text",
+      "enum": [
+        "text",
+        "number",
+        "idcard",
+        "digit",
+        "numberpad",
+        "digitpad",
+        "idcardpad"
+      ]
+
     },
     "password": {
       "type": "boolean",

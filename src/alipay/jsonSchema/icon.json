@@ -4,7 +4,19 @@
   "properties": {
     "type": {
       "type": "string",
-      "description": "icon 类型。有效值： info、warn、waiting、cancel、download、search、clear、success、success_no_circle、loading。\n版本要求： loading 支持基础库 1.7.2 及以上"
+      "description": "icon 类型。有效值： info、warn、waiting、cancel、download、search、clear、success、success_no_circle、loading。\n版本要求： loading 支持基础库 1.7.2 及以上",
+      "enum": [
+        "info",
+        "warn",
+        "waiting",
+        "cancel",
+        "download",
+        "search",
+        "clear",
+        "success",
+        "success_no_circle",
+        "loading"
+      ]
     },
     "size": {
       "type": "number",

@@ -5,12 +5,21 @@
     "size": {
       "type": "string",
       "description": "有效值 default, mini（小尺寸）。\n默认值： default",
-      "defaultValue": "default"
+      "defaultValue": "default",
+      "enum": [
+        "default",
+        "mini"
+      ]
     },
     "type": {
       "type": "string",
       "description": "按钮的样式类型，有效值 primary、default、warn。\n默认值： default",
-      "defaultValue": "default"
+      "defaultValue": "default",
+      "enum": [
+        "primary",
+        "default",
+        "warn"
+      ]
     },
     "plain": {
       "type": "boolean",
@@ -49,7 +58,11 @@
     },
     "form-type": {
       "type": "string",
-      "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。"
+      "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。",
+      "enum": [
+        "submit",
+        "reset"
+      ]
     },
     "open-type": {
       "type": "string",
