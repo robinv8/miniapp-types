@@ -1,6 +1,6 @@
 {
   "name": "miniapp-types",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "小程序类型生成器",
   "types": "./dist/types/index.d.ts",
   "files": [
@@ -18,7 +18,8 @@
     "build:types": "yarn clean && ts-node src/generateTypeDeclaration.ts",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "clean-publish"
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
   },
   "author": "robin <robin@rnode.me> (https://github.com/robinv8)",
   "bugs": {
@@ -30,16 +31,23 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "fs-extra": "^10.1.0",
-    "humps": "^2.0.1",
-    "json-schema-to-typescript": "^10.1.5",
-    "puppeteer": "^13.7.0",
     "@types/fs-extra": "^9.0.13",
     "@types/humps": "^2.0.1",
     "@types/node": "^18.0.0",
     "@types/puppeteer": "^5.4.6",
-    "clean-publish": "^4.0.1",
+    "clean-package": "^2.1.1",
+    "fs-extra": "^10.1.0",
+    "humps": "^2.0.1",
+    "json-schema-to-typescript": "^10.1.5",
+    "puppeteer": "^13.7.0",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
+  },
+  "clean-package": {
+    "indent": 2,
+    "remove": [
+      "devDependencies",
+      "scripts"
+    ]
   }
 }
