@@ -1,7 +1,6 @@
 import { compileFromFile } from "json-schema-to-typescript";
 import * as fs from "fs-extra";
 import * as path from "path";
-import * as humps from "humps";
 
 const platforms = ['alipay', 'swan', 'weapp', 'jd', 'qq', 'tt'];
 platforms.forEach((platform) => {
