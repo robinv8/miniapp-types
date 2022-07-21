@@ -6,11 +6,11 @@
       "type": "boolean",
       "description": "是否返回 formId 用于发送模板消息 。formId有很小的概率是无效的（如遇到网络失败或因违规使用被封禁接口的情况），如果无效，将返回 requestFormId:fail 开头的 formId"
     },
-    "bindsubmit": {
+    "bindSubmit": {
       "tsType": "() => void",
       "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , formId: ''}"
     },
-    "bindreset": {
+    "bindReset": {
       "tsType": "() => void",
       "description": "表单重置时会触发 reset 事件"
     }

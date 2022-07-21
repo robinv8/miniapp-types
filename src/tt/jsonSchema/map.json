@@ -36,22 +36,6 @@
       "type": "lngLat[]",
       "description": "缩放视野以包含所有给定的坐标点；示例：[{latitude: 0, longitude: 0}]"
     },
-    "bindtap": {
-      "tsType": "() => void",
-      "description": "点击地图时触发，e.detail = { latitude, longitude}"
-    },
-    "bindmarkertap": {
-      "tsType": "() => void",
-      "description": "点击标记点时触发，e.detail = {markerId, latitude, longitude}"
-    },
-    "bindcallouttap": {
-      "tsType": "() => void",
-      "description": "点击标记点对应的气泡时触发, e.detail = {markerId}"
-    },
-    "bindregionchange": {
-      "tsType": "() => void",
-      "description": "视野发生变化时触发"
-    },
     "rotate": {
       "type": "number",
       "description": "顺时针旋转角度，范围 0 ~ 360，旋转原点为地图容器中心点",
@@ -131,15 +115,31 @@
       "description": "是否展示建筑物",
       "defaultValue": "true"
     },
-    "bindlabeltap": {
+    "bindTap": {
+      "tsType": "() => void",
+      "description": "点击地图时触发，e.detail = { latitude, longitude}"
+    },
+    "bindMarkerTap": {
+      "tsType": "() => void",
+      "description": "点击标记点时触发，e.detail = {markerId, latitude, longitude}"
+    },
+    "bindCallOutTap": {
+      "tsType": "() => void",
+      "description": "点击标记点对应的气泡时触发, e.detail = {markerId}"
+    },
+    "bindRegionChange": {
+      "tsType": "() => void",
+      "description": "视野发生变化时触发"
+    },
+    "bindLabelTap": {
       "tsType": "() => void",
       "description": "点击 label 时触发，e.detail = {markerId}"
     },
-    "bindupdated": {
+    "bindUpdated": {
       "tsType": "() => void",
       "description": "在地图渲染更新完成时触发"
     },
-    "bindanchorpointtap": {
+    "bindAnchorPointTap": {
       "tsType": "() => void",
       "description": "点击定位标时触发，e.detail = {longitude, latitude}"
     }

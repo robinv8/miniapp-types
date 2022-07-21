@@ -16,17 +16,17 @@
       "description": "图片懒加载。只针对page与scroll-view下的image有效",
       "defaultValue": "false"
     },
-    "binderror": {
-      "type": "handleEvent",
-      "description": "当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}"
-    },
-    "bindload": {
-      "type": "handleEvent",
-      "description": "当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}"
-    },
     "aria-label": {
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindError": {
+      "type": "handleEvent",
+      "description": "当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}"
+    },
+    "bindLoad": {
+      "type": "handleEvent",
+      "description": "当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}"
     }
   },
   "additionalProperties": false

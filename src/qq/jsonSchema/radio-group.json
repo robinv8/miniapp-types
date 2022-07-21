@@ -2,7 +2,7 @@
   "title": "radio-group",
   "type": "object",
   "properties": {
-    "bindchange": {
+    "bindChange": {
       "tsType": "() => void",
       "description": "<radio-group> 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项radio的value}"
     }

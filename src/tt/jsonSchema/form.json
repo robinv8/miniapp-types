@@ -2,11 +2,11 @@
   "title": "form",
   "type": "object",
   "properties": {
-    "bindsubmit": {
+    "bindSubmit": {
       "tsType": "() => void",
       "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}"
     },
-    "bindreset": {
+    "bindReset": {
       "tsType": "() => void",
       "description": "表单重置时会触发 reset 事件"
     }

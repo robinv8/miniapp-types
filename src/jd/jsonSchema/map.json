@@ -45,23 +45,23 @@
       "type": "array(control)",
       "description": "否"
     },
-    "bindmarkertap": {
+    "bindMarkerTap": {
       "type": "eventhandler",
       "description": "否"
     },
-    "bindcallouttap": {
+    "bindCallOutTap": {
       "type": "eventhandler",
       "description": "否"
     },
-    "bindcontroltap": {
+    "bindControlTap": {
       "type": "eventhandler",
       "description": "否"
     },
-    "bindregionchange": {
+    "bindRegionChange": {
       "type": "eventhandler",
       "description": "否"
     },
-    "bindtap": {
+    "bindTap": {
       "type": "eventhandler",
       "description": "否"
     }

@@ -6,18 +6,6 @@
       "type": "string",
       "description": "广告位 id，必填。需要预先在「小程序管理后台 > 流量主模块」配置生成。"
     },
-    "bindload": {
-      "tsType": "() => void",
-      "description": "广告加载成功的回调方法"
-    },
-    "binderror": {
-      "tsType": "() => void",
-      "description": "广告加载失败的回调方法，具体的错误信息可以参考广告错误码说明"
-    },
-    "bindclose": {
-      "tsType": "() => void",
-      "description": "广告关闭的回调方法"
-    },
     "ad-intervals": {
       "type": "number",
       "description": "广告自动刷新的间隔时间，只对 banner 型广告生效。单位为秒，参数值必须大于等于 30（该参数不传入时 banner 广告不会自动刷新）"
@@ -42,6 +30,18 @@
       "type": "number",
       "description": "广告的缩放比例，100 为标准尺寸",
       "defaultValue": "100"
+    },
+    "bindLoad": {
+      "tsType": "() => void",
+      "description": "广告加载成功的回调方法"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "广告加载失败的回调方法，具体的错误信息可以参考广告错误码说明"
+    },
+    "bindClose": {
+      "tsType": "() => void",
+      "description": "广告关闭的回调方法"
     }
   },
   "additionalProperties": false,

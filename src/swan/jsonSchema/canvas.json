@@ -11,27 +11,27 @@
       "description": "是否禁止屏幕滚动以及下拉刷新。当在 canvas 中同时绑定下列手势事件时，该属性不起作用",
       "defaultValue": "false"
     },
-    "bindtouchstart": {
+    "bindTouchStart": {
       "tsType": "() => void",
       "description": "手指触摸动作开始"
     },
-    "bindtouchmove": {
+    "bindTouchMove": {
       "tsType": "() => void",
       "description": "手指触摸后移动"
     },
-    "bindtouchend": {
+    "bindTouchEnd": {
       "tsType": "() => void",
       "description": "手指触摸动作结束"
     },
-    "bindtouchcancel": {
+    "bindTouchCancel": {
       "tsType": "() => void",
       "description": "手指触摸动作被打断，如来电提醒，弹窗"
     },
-    "bindlongtap": {
+    "bindLongTap": {
       "tsType": "() => void",
       "description": "手指长按 350ms 之后触发，触发了长按事件后进行移动不会触发屏幕的滚动"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "当发生错误时触发 error 事件，detail = {errMsg: 'something wrong'}"
     }

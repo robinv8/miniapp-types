@@ -99,29 +99,29 @@
       "description": "键盘弹起时，是否自动上推页面",
       "defaultValue": "true"
     },
-    "bindinput": {
-      "tsType": "() => void",
-      "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
-    },
-    "bindfocus": {
-      "tsType": "() => void",
-      "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度"
-    },
-    "bindblur": {
-      "tsType": "() => void",
-      "description": "输入框失去焦点时触发，event.detail = {value: value}"
-    },
-    "bindconfirm": {
-      "tsType": "() => void",
-      "description": "点击完成按钮时触发，event.detail = {value: value}"
-    },
-    "bindkeyboardheightchange": {
-      "tsType": "() => void",
-      "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
-    },
     "aria-label": {
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindInput": {
+      "tsType": "() => void",
+      "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
+    },
+    "bindFocus": {
+      "tsType": "() => void",
+      "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度"
+    },
+    "bindBlur": {
+      "tsType": "() => void",
+      "description": "输入框失去焦点时触发，event.detail = {value: value}"
+    },
+    "bindConfirm": {
+      "tsType": "() => void",
+      "description": "点击完成按钮时触发，event.detail = {value: value}"
+    },
+    "bindKeyBoardHeightChange": {
+      "tsType": "() => void",
+      "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
     }
   },
   "additionalProperties": false

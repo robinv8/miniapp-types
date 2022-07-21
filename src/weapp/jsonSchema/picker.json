@@ -23,7 +23,7 @@
       "description": "是否禁用",
       "defaultValue": "false"
     },
-    "bindcancel": {
+    "bindCancel": {
       "tsType": "() => void",
       "description": "取消选择时触发"
     }

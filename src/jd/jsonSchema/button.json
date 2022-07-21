@@ -80,23 +80,23 @@
       "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。",
       "defaultValue": "en"
     },
-    "bindgetuserinfo": {
-      "tsType": "() => void",
-      "description": "用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与jd.getUserInfo返回的一致"
-    },
-    "bindgetphonenumber": {
-      "tsType": "() => void",
-      "description": "获取用户手机号回调"
-    },
     "app-parameter": {
       "type": "string",
       "description": "打开 App 时，向 App 传递的参数"
     },
-    "binderror": {
+    "bindGetUserInfo": {
+      "tsType": "() => void",
+      "description": "用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与jd.getUserInfo返回的一致"
+    },
+    "bindGetPhoneNumber": {
+      "tsType": "() => void",
+      "description": "获取用户手机号回调"
+    },
+    "bindError": {
       "tsType": "() => void",
       "description": "当使用开放能力时，发生错误的回调"
     },
-    "bindopensetting": {
+    "bindOpenSetting": {
       "tsType": "() => void",
       "description": "在打开授权设置页后回调"
     }

@@ -74,15 +74,15 @@
       "description": "手指松开后点击态保留时间（单位：毫秒）",
       "defaultValue": "600"
     },
-    "bindsuccess": {
+    "bindSuccess": {
       "tsType": "() => void",
       "description": "当target=\"miniProgram\"时有效，跳转小程序成功时触发 success 事件,event.detail = {errMsg: errMsg}"
     },
-    "bindfail": {
+    "bindFail": {
       "tsType": "() => void",
       "description": "当target=\"miniProgram\"时有效，跳转小程序失败时触发 fail 事件，event.detail 同上"
     },
-    "bindcomplete": {
+    "bindComplete": {
       "tsType": "() => void",
       "description": "当target=\"miniProgram\"时有效，跳转小程序完成时触发 complete 事件，event.detail 同上"
     }

@@ -79,15 +79,15 @@
       "description": "手指松开后点击态保留时间，单位毫秒",
       "defaultValue": "600"
     },
-    "bindsuccess": {
+    "bindSuccess": {
       "type": "string",
       "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序成功"
     },
-    "bindfail": {
+    "bindFail": {
       "type": "string",
       "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序失败"
     },
-    "bindcomplete": {
+    "bindComplete": {
       "type": "string",
       "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序完成"
     }

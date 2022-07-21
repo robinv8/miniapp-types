@@ -36,11 +36,11 @@
       "description": "视频资源中 alpha 通道的方向，left 表示 alpha 通道在资源的左边，right 表示 alpha 通道在资源的右边。详情请参考透明视频设计资源示例",
       "defaultValue": "left"
     },
-    "bindstarted": {
+    "bindStarted": {
       "tsType": "() => void",
       "description": "动画开始播放的回调"
     },
-    "bindended": {
+    "bindEnded": {
       "tsType": "() => void",
       "description": "当播放到末尾时触发 ended 事件（自然播放结束会触发回调，循环播放结束及暂停动画不会触发）"
     }

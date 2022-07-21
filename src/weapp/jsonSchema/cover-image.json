@@ -15,11 +15,11 @@
         "no-referrer"
       ]
     },
-    "bindload": {
+    "bindLoad": {
       "tsType": "() => void",
       "description": "图片加载成功时触发"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "图片加载失败时触发"
     }

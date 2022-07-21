@@ -72,15 +72,15 @@
       "description": "是否跳过未显示的滑块布局，设为 true 可优化复杂情况下的滑动性能，但会丢失隐藏状态滑块的布局信息",
       "defaultValue": "false"
     },
-    "bindchange": {
+    "bindChange": {
       "tsType": "() => void",
       "description": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}"
     },
-    "bindtransition": {
+    "bindTransition": {
       "tsType": "() => void",
       "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
     },
-    "bindanimationfinish": {
+    "bindAnimationFinish": {
       "tsType": "() => void",
       "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
     }

@@ -29,11 +29,11 @@
         "off"
       ]
     },
-    "bindstop": {
+    "bindStop": {
       "tsType": "() => void",
       "description": "否"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "否"
     }

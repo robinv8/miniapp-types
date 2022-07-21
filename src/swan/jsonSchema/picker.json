@@ -12,7 +12,7 @@
       "description": "是否禁用",
       "defaultValue": "false"
     },
-    "bindcancel": {
+    "bindCancel": {
       "tsType": "() => void",
       "description": "取消选择或点击遮罩层收起 picker 时触发"
     }

@@ -26,54 +26,6 @@
       "description": "否",
       "defaultValue": "false"
     },
-    "bindplay": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindpause": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindended": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindtimeupdate": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindfullscreenchange": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "binderror": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindwaiting": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindloadeddata": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindloadedmetadata": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindloadstart": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindseeked": {
-      "type": "eventHandler",
-      "description": "否"
-    },
-    "bindseeking": {
-      "type": "eventHandler",
-      "description": "否"
-    },
     "objectFit": {
       "type": "string",
       "description": "否",
@@ -92,6 +44,54 @@
       "type": "number",
       "description": "否",
       "defaultValue": "1"
+    },
+    "bindPlay": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindPause": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindEnded": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindTimeUpdate": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindFullScreenChange": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindError": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindWaiting": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindLoadedData": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindLoadedMetaData": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindLoadStart": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindSeeked": {
+      "type": "eventHandler",
+      "description": "否"
+    },
+    "bindSeeking": {
+      "type": "eventHandler",
+      "description": "否"
     }
   },
   "additionalProperties": false

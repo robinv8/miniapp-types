@@ -61,19 +61,19 @@
       "description": "是否回调metadata",
       "defaultValue": "false"
     },
-    "bindstatechange": {
+    "bindStateChange": {
       "tsType": "() => void",
       "description": "播放状态变化事件，detail = {code}"
     },
-    "bindfullscreenchange": {
+    "bindFullScreenChange": {
       "tsType": "() => void",
       "description": "全屏变化事件，detail = {direction, fullScreen}"
     },
-    "bindnetstatus": {
+    "bindNetStatus": {
       "tsType": "() => void",
       "description": "网络状态通知，detail = {info}"
     },
-    "bindmetadatachange": {
+    "bindMetaDataChange": {
       "tsType": "() => void",
       "description": "metadata通知，detail = {info}"
     }

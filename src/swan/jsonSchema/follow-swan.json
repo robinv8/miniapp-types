@@ -12,7 +12,7 @@
       "description": "组件样式",
       "defaultValue": "primary"
     },
-    "bindfavorstatuschange": {
+    "bindFavorStatusChange": {
       "tsType": "() => void",
       "description": "关注和取消关注成功的回调，返回关注状态 {isFavor: true|false}"
     }

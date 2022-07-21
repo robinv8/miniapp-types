@@ -27,7 +27,7 @@
       "type": "string",
       "description": "选择器标题，建议标题控制在 12 个中文汉字长度内，避免出现截断现象, 截断部分将以 ... 形式展示"
     },
-    "bindchange": {
+    "bindChange": {
       "tsType": "() => void",
       "description": "当滚动选择，value 改变时触发 change 事件，event.detail = {value: value};value 为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）"
     }

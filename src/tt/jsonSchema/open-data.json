@@ -27,7 +27,7 @@
       "description": "当数据为空且未设置默认值时，是否显示官方默认值",
       "defaultValue": "false"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "出现错误时触发"
     }

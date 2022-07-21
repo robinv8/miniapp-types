@@ -27,15 +27,15 @@
       "type": "object",
       "description": "功能页参数，参数格式与具体功能页相关"
     },
-    "bindsuccess": {
+    "bindSuccess": {
       "type": "eventhandler",
       "description": "功能页返回，且操作成功时触发， detail 格式与具体功能页相关"
     },
-    "bindfail": {
+    "bindFail": {
       "type": "eventhandler",
       "description": "功能页返回，且操作失败时触发， detail 格式与具体功能页相关"
     },
-    "bindcancel": {
+    "bindCancel": {
       "type": "eventhandler",
       "description": "因用户操作从功能页返回时触发"
     }

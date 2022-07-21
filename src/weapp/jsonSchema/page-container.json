@@ -45,31 +45,31 @@
       "type": "string",
       "description": "自定义弹出层样式"
     },
-    "bind:beforeenter": {
+    "bindBeforeEnter": {
       "tsType": "() => void",
       "description": "进入前触发"
     },
-    "bind:enter": {
+    "bindEnter": {
       "tsType": "() => void",
       "description": "进入中触发"
     },
-    "bind:afterenter": {
+    "bindAfterEnter": {
       "tsType": "() => void",
       "description": "进入后触发"
     },
-    "bind:beforeleave": {
+    "bindBeforeLeave": {
       "tsType": "() => void",
       "description": "离开前触发"
     },
-    "bind:leave": {
+    "bindLeave": {
       "tsType": "() => void",
       "description": "离开中触发"
     },
-    "bind:afterleave": {
+    "bindAfterLeave": {
       "tsType": "() => void",
       "description": "离开后触发"
     },
-    "bind:clickoverlay": {
+    "bindClickOverlay": {
       "tsType": "() => void",
       "description": "点击遮罩层时触发"
     }

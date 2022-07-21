@@ -11,15 +11,15 @@
       "description": "webview 的进度条颜色",
       "defaultValue": "#51a0d8"
     },
-    "bindmessage": {
+    "bindMessage": {
       "tsType": "() => void",
       "description": "当网页通过 tt.miniProgram.postMessage 向小程序 postMessage 时，bindmessage 绑定的方法会在小程序的特定时机（小程序后退、组件销毁、分享）触发并收到消息。"
     },
-    "bindload": {
+    "bindLoad": {
       "tsType": "() => void",
       "description": "当网页加载完成时触发的消息"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "当网页加载失败时触发的消息"
     }

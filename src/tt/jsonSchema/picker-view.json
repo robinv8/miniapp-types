@@ -14,7 +14,7 @@
       "type": "string",
       "description": "设置蒙层的样式"
     },
-    "bindchange": {
+    "bindChange": {
       "tsType": "() => void",
       "description": "改变时触发"
     }

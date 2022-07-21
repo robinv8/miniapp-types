@@ -2,11 +2,11 @@
   "title": "official-account",
   "type": "object",
   "properties": {
-    "bindload": {
+    "bindLoad": {
       "tsType": "() => void",
       "defaultValue": "组件加载成功时触发"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "defaultValue": "组件加载失败时触发"
     }

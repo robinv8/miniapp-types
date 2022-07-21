@@ -42,11 +42,11 @@
       "description": "长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。",
       "defaultValue": "false"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "当错误发生时触发，event.detail = {errMsg}"
     },
-    "bindload": {
+    "bindLoad": {
       "tsType": "() => void",
       "description": "当图片载入完毕时触发，event.detail = {height, width}"
     }

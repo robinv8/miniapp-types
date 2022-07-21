@@ -10,19 +10,19 @@
       "type": "string",
       "description": "[v2]指定 canvas 类型，有效值为 \"2d\" 和 \"webgl\""
     },
-    "bindtouchstart": {
+    "bindTouchStart": {
       "tsType": "() => void",
       "description": "[v2]手指触摸动作开始"
     },
-    "bindtouchmove": {
+    "bindTouchMove": {
       "tsType": "() => void",
       "description": "[v2]手指触摸后移动"
     },
-    "bindtouchend": {
+    "bindTouchEnd": {
       "tsType": "() => void",
       "description": "[v2]手指触摸动作结束"
     },
-    "bindtouchcancel": {
+    "bindTouchCancel": {
       "tsType": "() => void",
       "description": "[v2]手指触摸动作被打断"
     }

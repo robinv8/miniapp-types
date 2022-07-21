@@ -79,15 +79,15 @@
         "easeInOutCubic"
       ]
     },
-    "bindchange": {
+    "bindChange": {
       "tsType": "() => void",
       "description": "current 改变时触发"
     },
-    "bindanimationfinish": {
+    "bindAnimationFinish": {
       "tsType": "() => void",
       "description": "动画结束时会触发 animationfinish 事件"
     },
-    "bindtransition": {
+    "bindTransition": {
       "tsType": "() => void",
       "description": "swiper-item 产生位移时触发 transition 事件"
     }

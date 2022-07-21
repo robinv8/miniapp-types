@@ -56,21 +56,21 @@
       "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
       "defaultValue": "false"
     },
-    "bindscrolltoupper": {
-      "tsType": "() => void",
-      "description": "滚动到顶部/左边，会触发 scrolltoupper 事件"
-    },
-    "bindscrolltolower": {
-      "tsType": "() => void",
-      "description": "滚动到底部/右边，会触发 scrolltolower 事件"
-    },
-    "bindscroll": {
-      "tsType": "() => void",
-      "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
-    },
     "aria-label": {
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindScrollToUpper": {
+      "tsType": "() => void",
+      "description": "滚动到顶部/左边，会触发 scrolltoupper 事件"
+    },
+    "bindScrollToLower": {
+      "tsType": "() => void",
+      "description": "滚动到底部/右边，会触发 scrolltolower 事件"
+    },
+    "bindScroll": {
+      "tsType": "() => void",
+      "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
     }
   },
   "additionalProperties": false

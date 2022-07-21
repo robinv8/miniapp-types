@@ -38,15 +38,15 @@
       "type": "signature",
       "description": "设置署名水印"
     },
-    "bindstatechange": {
+    "bindStateChange": {
       "tsType": "() => void",
       "description": "播放状态变化事件，detail = {code}"
     },
-    "bindfullscreenchange": {
+    "bindFullScreenChange": {
       "tsType": "() => void",
       "description": "全屏变化事件，detail = {direction, fullScreen}"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "播放错误事件"
     }

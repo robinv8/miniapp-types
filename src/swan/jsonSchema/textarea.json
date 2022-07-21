@@ -96,23 +96,23 @@
       "description": "键盘弹起时，是否自动上推页面",
       "defaultValue": "true"
     },
-    "bindfocus": {
+    "bindFocus": {
       "tsType": "() => void",
       "description": "输入框聚焦时触发，event.detail = {value, height}，height 为键盘高度"
     },
-    "bindblur": {
+    "bindBlur": {
       "tsType": "() => void",
       "description": "输入框失去焦点时触发，event.detail = {value, cursor}"
     },
-    "bindlinechange": {
+    "bindLineChange": {
       "tsType": "() => void",
       "description": "输入框行数变化时调用，event.detail = {height: 0, heightRpx: 0, lineCount: 0, lineHeight: 0}"
     },
-    "bindinput": {
+    "bindInput": {
       "tsType": "() => void",
       "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor}，bindinput 处理函数的返回值并不会反映到 textarea 上"
     },
-    "bindconfirm": {
+    "bindConfirm": {
       "tsType": "() => void",
       "description": "点击完成时，触发 confirm 事件，event.detail = {value: value}"
     }

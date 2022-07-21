@@ -36,11 +36,11 @@
       "description": "否",
       "defaultValue": "speaker"
     },
-    "bindstatechange": {
+    "bindStateChange": {
       "tsType": "() => void",
       "description": "否"
     },
-    "bindfullscreenchange": {
+    "bindFullScreenChange": {
       "tsType": "() => void",
       "description": "否"
     }

@@ -19,15 +19,15 @@
       "type": "string",
       "defaultValue": "white"
     },
-    "bindload": {
+    "bindLoad": {
       "tsType": "() => void",
       "description": "广告加载成功的回调"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "广告加载失败的回调，event.detail = {errCode: 1002}"
     },
-    "bindclose": {
+    "bindClose": {
       "tsType": "() => void",
       "description": "广告关闭的回调"
     }

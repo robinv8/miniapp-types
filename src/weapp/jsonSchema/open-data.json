@@ -38,7 +38,7 @@
       "type": "string",
       "description": "用户头像为空时的默认图片，支持相对路径和网络图片路径"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "群名称或用户信息为空时触发"
     }

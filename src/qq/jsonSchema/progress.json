@@ -59,13 +59,13 @@
       "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
       "defaultValue": "backwards"
     },
-    "bindactiveend": {
-      "tsType": "() => void",
-      "description": "动画完成事件"
-    },
     "aria-label": {
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindActivEend": {
+      "tsType": "() => void",
+      "description": "动画完成事件"
     }
   },
   "additionalProperties": false

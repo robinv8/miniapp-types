@@ -224,55 +224,55 @@
       "type": "string",
       "description": "DRM 获取加密信息 url，仅 is-drm 为 true 时生效"
     },
-    "bindplay": {
+    "bindPlay": {
       "tsType": "() => void",
       "description": "当开始/继续播放时触发 play 事件"
     },
-    "bindpause": {
+    "bindPause": {
       "tsType": "() => void",
       "description": "当暂停播放时触发 pause 事件"
     },
-    "bindended": {
+    "bindEnded": {
       "tsType": "() => void",
       "description": "当播放到末尾时触发 ended 事件"
     },
-    "bindtimeupdate": {
+    "bindTimeUpdate": {
       "tsType": "() => void",
       "description": "播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次"
     },
-    "bindfullscreenchange": {
+    "bindFullScreenChange": {
       "tsType": "() => void",
       "description": "视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction 有效值为 vertical 或 horizontal"
     },
-    "bindwaiting": {
+    "bindWaiting": {
       "tsType": "() => void",
       "description": "视频出现缓冲时触发"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "视频播放出错时触发"
     },
-    "bindprogress": {
+    "bindProgress": {
       "tsType": "() => void",
       "description": "加载进度变化时触发，只支持一段加载。event.detail = {buffered}，百分比"
     },
-    "bindloadedmetadata": {
+    "bindLoadedMetaData": {
       "tsType": "() => void",
       "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
     },
-    "bindcontrolstoggle": {
+    "bindControlStoggle": {
       "tsType": "() => void",
       "description": "切换 controls 显示隐藏时触发。event.detail = {show}"
     },
-    "bindenterpictureinpicture": {
+    "bindEnterPictureInPicture": {
       "type": "eventhandler",
       "description": "播放器进入小窗"
     },
-    "bindleavepictureinpicture": {
+    "bindLeavePictureInPicture": {
       "type": "eventhandler",
       "description": "播放器退出小窗"
     },
-    "bindseekcomplete": {
+    "bindSeekComplete": {
       "type": "eventhandler",
       "description": "seek 完成时触发 (position iOS 单位 s, Android 单位 ms)"
     }

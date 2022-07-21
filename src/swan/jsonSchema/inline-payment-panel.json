@@ -30,11 +30,11 @@
       "type": "object",
       "description": "自定义样式设置"
     },
-    "bindgetpaymentinfo": {
+    "bindGetPaymentInfo": {
       "tsType": "() => void",
       "description": "获取支付相关信息，具体信息在返回值的 detail 字段中"
     },
-    "binderror": {
+    "bindError": {
       "tsType": "() => void",
       "description": "当发生错误时触发 error 事件，具体信息在返回值的 detail 字段中，例如 {detail: {errMsg: \"something is wrong\"}}"
     }

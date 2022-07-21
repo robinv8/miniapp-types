@@ -57,15 +57,15 @@
       "description": "点赞服务需要的必要参数",
       "defaultValue": "是"
     },
-    "bind:error": {
+    "bindError": {
       "tsType": "() => void",
       "description": "使用 npm 方式引入点赞组件时，点击按钮时在用户未登录状态下会触发此事件；使用动态库方式引入点赞组件时，点击按钮时在用户未登录状态下不会触发此事件"
     },
-    "bind:success": {
+    "bindSuccess": {
       "tsType": "() => void",
       "description": "点击点赞按钮，在点赞服务成功后将状态返回给使用组件者"
     },
-    "bind:fail": {
+    "bindFail": {
       "tsType": "() => void",
       "description": "点击点赞按钮，在点赞服务失败后将状态返回给使用组件者"
     }

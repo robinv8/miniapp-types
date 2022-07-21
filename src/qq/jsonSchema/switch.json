@@ -17,10 +17,6 @@
       "description": "样式，有效值：switch, checkbox",
       "defaultValue": "switch"
     },
-    "bindchange": {
-      "tsType": "() => void",
-      "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
-    },
     "color": {
       "type": "string",
       "description": "switch 的颜色，同 css 的 color"
@@ -28,6 +24,10 @@
     "aria-label": {
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindChange": {
+      "tsType": "() => void",
+      "description": "checked 改变时触发 change 事件，event.detail={ value:checked}"
     }
   },
   "additionalProperties": false

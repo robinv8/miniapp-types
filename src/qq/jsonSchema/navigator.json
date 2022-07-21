@@ -65,21 +65,21 @@
       "description": "手指松开后点击态保留时间，单位毫秒",
       "defaultValue": "600"
     },
-    "bindsuccess": {
-      "type": "string",
-      "description": "当target=\"miniProgram\"时有效，跳转小程序成功"
-    },
-    "bindfail": {
-      "type": "string",
-      "description": "当target=\"miniProgram\"时有效，跳转小程序失败"
-    },
-    "bindcomplete": {
-      "type": "string",
-      "description": "当target=\"miniProgram\"时有效，跳转小程序完成"
-    },
     "aria-label": {
       "type": "string",
       "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindSuccess": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"时有效，跳转小程序成功"
+    },
+    "bindFail": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"时有效，跳转小程序失败"
+    },
+    "bindComplete": {
+      "type": "string",
+      "description": "当target=\"miniProgram\"时有效，跳转小程序完成"
     }
   },
   "additionalProperties": false

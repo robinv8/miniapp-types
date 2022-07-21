@@ -94,34 +94,34 @@
       "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到",
       "defaultValue": "false"
     },
-    "bindstatechange": {
-      "tsType": "() => void",
-      "description": "状态变化事件，detail = {code}"
-    },
-    "bindnetstatus": {
-      "tsType": "() => void",
-      "description": "网络状态通知，detail = {info}"
-    },
-    "binderror": {
-      "tsType": "() => void",
-      "description": "渲染错误事件，detail = {errMsg, errCode}"
-    },
-    "bindbgmstart": {
-      "tsType": "() => void",
-      "description": "背景音开始播放时触发"
-    },
-    "bindbgmprogress": {
-      "tsType": "() => void",
-      "description": "背景音进度变化时触发，detail = {progress, duration}"
-    },
-    "bindbgmcomplete": {
-      "tsType": "() => void",
-      "description": "背景音播放完成时触发"
-    },
     "audio-reverb-type": {
       "type": "number",
       "description": "混响模式(0～6)：\"关闭混响\", \"KTV\", \"小房间\", \"大会堂\", \"低沉\", \"洪亮\", \"磁性\"",
       "defaultValue": "0"
+    },
+    "bindStateChange": {
+      "tsType": "() => void",
+      "description": "状态变化事件，detail = {code}"
+    },
+    "bindNetStatus": {
+      "tsType": "() => void",
+      "description": "网络状态通知，detail = {info}"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "渲染错误事件，detail = {errMsg, errCode}"
+    },
+    "bindGgmStart": {
+      "tsType": "() => void",
+      "description": "背景音开始播放时触发"
+    },
+    "bindBgmProgress": {
+      "tsType": "() => void",
+      "description": "背景音进度变化时触发，detail = {progress, duration}"
+    },
+    "bindBgmComplete": {
+      "tsType": "() => void",
+      "description": "背景音播放完成时触发"
     }
   },
   "additionalProperties": false

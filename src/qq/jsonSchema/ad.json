@@ -47,18 +47,6 @@
         "landscape"
       ]
     },
-    "bindsize": {
-      "tsType": "() => void",
-      "description": "type 为 feeds 时广告实际宽高回调，event.detail = {width:296,height:150}"
-    },
-    "bindload": {
-      "tsType": "() => void",
-      "description": "广告加载成功的回调"
-    },
-    "binderror": {
-      "tsType": "() => void",
-      "description": "广告加载失败的回调，event.detail = {errCode: 1002}"
-    },
     "test-banner-type": {
       "type": "string",
       "description": "开发者工具下，type 为 banner 时，指定 banner 广告展示三图文还是单图",
@@ -67,6 +55,18 @@
         "one",
         "three"
       ]
+    },
+    "bindSize": {
+      "tsType": "() => void",
+      "description": "type 为 feeds 时广告实际宽高回调，event.detail = {width:296,height:150}"
+    },
+    "bindLoad": {
+      "tsType": "() => void",
+      "description": "广告加载成功的回调"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "广告加载失败的回调，event.detail = {errCode: 1002}"
     }
   },
   "additionalProperties": false,

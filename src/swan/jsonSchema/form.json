@@ -23,11 +23,11 @@
       "type": "string",
       "description": "发送订阅类模板消息时所使用的唯一标识符，内容由开发者自定义，用来标识订阅场景\n注意：同一用户在同一 subscribe-id 下的多次授权不累积下发权限，只能下发一条。若要订阅多条，需要不同 subscribe-id"
     },
-    "bindsubmit": {
+    "bindSubmit": {
       "tsType": "() => void",
       "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'}, formId: '', message: '', status: ''}，当 report-type 为 subscribe 时，status 和 message 中返回用户授权具体信息"
     },
-    "bindreset": {
+    "bindReset": {
       "tsType": "() => void",
       "description": "表单重置时会触发 reset 事件"
     }

@@ -48,7 +48,7 @@
       "description": "当 type=*CloudStorage 时有效,指定使用哪个自定义开放数据域组件来渲染开放数据,具体说明见下方",
       "defaultValue": "en"
     },
-    "binderror": {
+    "bindError": {
       "type": "string",
       "description": "当 type=*CloudStorage 时有效,开放数据请求或定向分享失败时触发，event.detail = {errMsg: \"getGroupCloudStorage:fail no data\"}",
       "defaultValue": "en"

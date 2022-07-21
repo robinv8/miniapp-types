@@ -26,7 +26,7 @@
       "description": "switch 的颜色，同 css 的 color",
       "defaultValue": "#f85959"
     },
-    "bindchange": {
+    "bindChange": {
       "tsType": "() => void",
       "description": "checked 改变时触发该事件，event.detail={value:checked}"
     }
