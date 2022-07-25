@@ -10,7 +10,7 @@ const service = new Service({
         if (str.indexOf(char) === -1) {
           return str;
         }
-        return str.split(char).map((item) => item.trim());
+        return str.split(char).map((item) => item.trim().replace(/\./,''));
       }
       const attributes: Attribute[] = [];
 
