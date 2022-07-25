@@ -16,6 +16,7 @@
     "build:schema-weapp": "ts-node src/weapp/generateSchema.ts",
     "build:schema": "ts-node src/generateSchema.ts",
     "build:types": "yarn clean && ts-node src/generateTypeDeclaration.ts",
+    "format": "ts-node src/formatter.ts",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "clean-package",
