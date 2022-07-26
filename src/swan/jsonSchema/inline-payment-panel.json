@@ -16,8 +16,8 @@
     },
     "promotion-tag": {
       "type": [
-        "String",
-        "Array<string>"
+        "string",
+        "Array.<string>"
       ],
       "description": "平台营销信息，此处传当前订单中可使用平台券的spuid，同时需在 支付能力中搭配使用传入该参数；注：仅与百度合作平台类目券的开发者需要填写该参数"
     },

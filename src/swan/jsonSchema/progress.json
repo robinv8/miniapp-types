@@ -14,24 +14,24 @@
     },
     "stroke-width": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "进度条的高度（单位：px）",
       "defaultValue": "2"
     },
     "border-radius": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "圆角大小（单位：px）",
       "defaultValue": "0"
     },
     "font-size": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "右侧百分比字体大小（单位：px）",
       "defaultValue": "16"

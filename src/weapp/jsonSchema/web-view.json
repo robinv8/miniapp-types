@@ -16,7 +16,7 @@
     },
     "bindError": {
       "type": "eventhandler",
-      "description": "网页加载失败的时候触发此事件。e.detail = { src }"
+      "description": "网页加载失败的时候触发此事件。e.detail = { url, fullUrl }，其中 fullUrl 为加载失败时的完整 url"
     }
   },
   "additionalProperties": false

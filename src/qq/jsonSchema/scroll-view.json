@@ -14,31 +14,31 @@
     },
     "upper-threshold": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件",
       "defaultValue": "50"
     },
     "lower-threshold": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件",
       "defaultValue": "50"
     },
     "scroll-top": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "设置竖向滚动条位置（单位px）"
     },
     "scroll-left": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "设置横向滚动条位置（单位px）"
     },

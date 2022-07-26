@@ -4,8 +4,8 @@
   "properties": {
     "nodes": {
       "type": [
-        "Array",
-        "String"
+        "any[]",
+        "string"
       ],
       "description": "节点列表 / HTML String",
       "defaultValue": "[]"

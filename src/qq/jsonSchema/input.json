@@ -47,8 +47,8 @@
     },
     "cursor-spacing": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "指定光标与键盘的距离，单位px（2.4.0起支持rpx）。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
       "defaultValue": "0"

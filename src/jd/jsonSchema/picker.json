@@ -4,8 +4,8 @@
   "properties": {
     "range": {
       "type": [
-        "Array",
-        "Object Array"
+        "any[]",
+        "Record<string, any>"
       ],
       "description": "mode 为 selector 或 multiSelector 时，range 有效",
       "defaultValue": "[]"

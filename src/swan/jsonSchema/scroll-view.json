@@ -14,31 +14,31 @@
     },
     "upper-threshold": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "距顶部 / 左边多远时（单位 px），触发 scrolltoupper 事件",
       "defaultValue": "50"
     },
     "lower-threshold": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "距底部 / 右边多远时（单位 px），触发 scrolltolower 事件",
       "defaultValue": "50"
     },
     "scroll-top": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "设置竖向滚动条位置。要动态设置滚动条位置，用法scroll-top=\"{= scrollTop =}\"。\n如果在设置组件渲染数据的同时设置了 scroll-top、scroll-left 值，需要在 swan.nextTick 回调中设置 scroll-top、scroll-left ，确保滚动条位置准确"
     },
     "scroll-left": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "设置横向滚动条位置。要动态设置滚动条位置，用法scroll-left=\"{= scrollLeft =}\"。\n如果在设置组件渲染数据的同时设置了 scroll-top、scroll-left 值，需要在 swan.nextTick 回调中设置 scroll-top、scroll-left ，确保滚动条位置准确"
     },

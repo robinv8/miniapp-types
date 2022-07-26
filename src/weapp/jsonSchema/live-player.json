@@ -80,7 +80,7 @@
     "picture-in-picture-mode": {
       "type": [
         "string",
-        "Array"
+        "any[]"
       ],
       "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）",
       "enum": [

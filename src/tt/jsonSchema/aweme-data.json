@@ -4,7 +4,7 @@
   "properties": {
     "aweme-id": {
       "type": "string",
-      "description": "用户的抖音号"
+      "description": "用户的抖音号，可以进入抖音 App 用户个人主页查看"
     },
     "type": {
       "type": "\"avatar\"|\"nickname\"",

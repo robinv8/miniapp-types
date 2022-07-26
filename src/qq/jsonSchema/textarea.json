@@ -51,8 +51,8 @@
     },
     "cursor-spacing": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "指定光标与键盘的距离，单位px。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
       "defaultValue": "0"

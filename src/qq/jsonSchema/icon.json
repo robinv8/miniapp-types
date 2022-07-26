@@ -8,8 +8,8 @@
     },
     "size": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "icon的大小，单位px",
       "defaultValue": "23px"

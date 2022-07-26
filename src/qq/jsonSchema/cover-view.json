@@ -4,8 +4,8 @@
   "properties": {
     "scroll-top": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "设置顶部滚动偏移量，仅在设置了 overflow-y: scroll 成为滚动元素后生效"
     },

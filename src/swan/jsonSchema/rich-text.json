@@ -4,8 +4,8 @@
   "properties": {
     "nodes": {
       "type": [
-        "Array",
-        "String"
+        "any[]",
+        "string"
       ],
       "description": "节点列表/HTML String 。推荐使用 Array 类型，由于组件会将 String 类型转换为 Array 类型，性能有所下降",
       "defaultValue": "[]"

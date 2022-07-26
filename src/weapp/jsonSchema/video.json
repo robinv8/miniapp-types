@@ -145,6 +145,11 @@
       "description": "在全屏模式下，是否开启亮度与音量调节手势",
       "defaultValue": "true"
     },
+    "show-bottom-progress": {
+      "type": "boolean",
+      "description": "是否展示底部进度条",
+      "defaultValue": "true"
+    },
     "ad-unit-id": {
       "type": "string",
       "description": "视频前贴广告单元ID，更多详情可参考开放能力视频前贴广告"
@@ -161,7 +166,7 @@
     "picture-in-picture-mode": {
       "type": [
         "string",
-        "Array"
+        "any[]"
       ],
       "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）",
       "enum": [
