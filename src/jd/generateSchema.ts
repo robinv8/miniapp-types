@@ -1,11 +1,12 @@
 import Service from "../service";
 import { Attribute } from "../types";
+const typeAlias = require('../typeAlias.json');
 
 const service = new Service({
   platform: 'jd',
   waitUntil: 'networkidle0',
   evaluate: async (page, opts) => {
-    return await page.evaluate(({ tableIndex = 0, fields }) => {
+    return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
       function handleType(str, char, name) {
         if (name.indexOf('bind') > -1 && !str) {
           return 'eventHandle'
@@ -13,7 +14,7 @@ const service = new Service({
         if (str.indexOf(char) === -1) {
           return str;
         }
-        return str.split(char).map((item) => item.trim());
+        return str.split(char).map((item) => typeAlias[item.trim()] || item.trim());
       }
       const attributes: Attribute[] = [];
 
@@ -61,7 +62,7 @@ const service = new Service({
       });
 
       return attributes;
-    }, opts);
+    }, { ...opts, typeAlias });
   },
 });
 
