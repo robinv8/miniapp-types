@@ -13,10 +13,12 @@ class Service {
   index = 0;
   evaluate;
   componentList;
+  waitTime
   constructor(options) {
     this.platform = options.platform;
     this.waitUntil = options.waitUntil;
     this.evaluate = options.evaluate;
+    this.waitTime = options.waitTime || 0;
     this.componentList = require(`./${this.platform}/componentList.json`);
   }
   async init() {
@@ -35,6 +37,7 @@ class Service {
   }
   async getComponentProps({ page, url, name }) {
     await this.page.goto(url, { waitUntil: this.waitUntil });
+    await this.page.waitFor(this.waitTime)
     const data = await this.evaluate(this.page, this.componentList[this.index]);
     if (data.length > 0) {
       const folder = path.join(__dirname, this.platform, 'jsonSchema');

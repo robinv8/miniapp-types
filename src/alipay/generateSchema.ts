@@ -4,7 +4,8 @@ const typeAlias = require('../typeAlias.json')
 
 const service = new Service({
   platform: 'alipay',
-  waitUntil: 'networkidle0',
+  waitUntil: 'load',
+  waitTime: 3000,
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
       function handleType(str, char) {
