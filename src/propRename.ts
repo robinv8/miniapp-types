@@ -1,6 +1,6 @@
 import * as path from "path";
 import * as fs from "fs-extra";
-const words = require('./words.json')
+const propAlias = require('./propAlias.json')
 const platforms = ['alipay', 'swan', 'weapp', 'jd', 'qq', 'tt'];
 const wordsSet: Set<string> = new Set();
 platforms.forEach((platform) => {
@@ -15,13 +15,13 @@ platforms.forEach((platform) => {
     })
 })
 const array: string[] = [...wordsSet]
-const json: { [key: string]: any }[] = words;
+const json: { [key: string]: any }[] = propAlias;
 array.forEach(item => {
     if (typeof json[item] !== 'string') {
         json[item] = item
     }
 })
-fs.writeFileSync(path.join(__dirname, 'words.json'), JSON.stringify(json))
+fs.writeFileSync(path.join(__dirname, 'propAlias.json'), JSON.stringify(json))
 
 platforms.forEach((platform) => {
     const jsonPath = path.join(__dirname, `${platform}/jsonSchema`);

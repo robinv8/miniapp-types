@@ -1,0 +1,10 @@
+{
+  "Object Array": "Record<string, any>",
+  "Array<string>": "string[]",
+  "String": "string",
+  "Number": "number",
+  "Boolean": "boolean",
+  "Null": "null",
+  "Undefined": "undefined",
+  "Array": "any[]"
+}
