@@ -12,8 +12,8 @@
     },
     "size": {
       "type": [
-        "Number",
-        "String"
+        "number",
+        "string"
       ],
       "description": "选填。咨询按钮大小，正方形设置边长（如25*25 px）。\n默认值： 25\n版本要求： 基础库 1.9.0 及以上、支付宝客户端 1.12.0 以及上支持 rpx 单位",
       "defaultValue": "25"
