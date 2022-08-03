@@ -119,7 +119,7 @@
       "tsType": "() => void",
       "description": "点击完成按钮时触发，event.detail = {value: value}"
     },
-    "bindKeyBoardHeightChange": {
+    "bindKeyboardHeightChange": {
       "tsType": "() => void",
       "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
     }
