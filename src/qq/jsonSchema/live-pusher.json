@@ -111,7 +111,7 @@
       "tsType": "() => void",
       "description": "渲染错误事件，detail = {errMsg, errCode}"
     },
-    "bindGgmStart": {
+    "bindBgmStart": {
       "tsType": "() => void",
       "description": "背景音开始播放时触发"
     },

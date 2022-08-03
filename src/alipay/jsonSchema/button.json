@@ -58,11 +58,7 @@
     },
     "form-type": {
       "type": "string",
-      "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。",
-      "enum": [
-        "submit",
-        "reset"
-      ]
+      "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。"
     },
     "open-type": {
       "type": "string",

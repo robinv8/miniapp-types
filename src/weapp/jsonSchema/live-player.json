@@ -4,7 +4,7 @@
   "properties": {
     "src": {
       "type": "string",
-      "description": "音视频地址。目前仅支持 flv, rtmp 格式"
+      "description": "音视频地址。目前仅支持 `flv`, `rtmp` 格式"
     },
     "mode": {
       "type": "string",
@@ -36,7 +36,7 @@
     },
     "object-fit": {
       "type": "string",
-      "description": "填充模式，可选值有 contain，fillCrop",
+      "description": "填充模式，可选值有 `contain`，`fillCrop`",
       "defaultValue": "contain",
       "enum": [
         "contain",
@@ -91,7 +91,7 @@
     },
     "referrer-policy": {
       "type": "string",
-      "description": "格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
+      "description": "格式固定为 `https://servicewechat.com/{appid}/{version}/page-frame.html`，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
       "defaultValue": "no-referrer",
       "enum": [
         "origin",

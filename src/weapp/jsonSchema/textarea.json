@@ -46,12 +46,12 @@
     },
     "fixed": {
       "type": "boolean",
-      "description": "如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true",
+      "description": "如果 textarea 是在一个 `position:fixed` 的区域，需要显示指定属性 fixed 为 true",
       "defaultValue": "false"
     },
     "cursor-spacing": {
       "type": "number",
-      "description": "指定光标与键盘的距离。取textarea距离底部的距离和cursor-spacing指定的距离的最小值作为光标与键盘的距离",
+      "description": "指定光标与键盘的距离。取`textarea`距离底部的距离和`cursor-spacing`指定的距离的最小值作为光标与键盘的距离",
       "defaultValue": "0"
     },
     "cursor": {
@@ -66,12 +66,12 @@
     },
     "selection-start": {
       "type": "number",
-      "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
+      "description": "光标起始位置，自动聚集时有效，需与`selection-end`搭配使用",
       "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用",
+      "description": "光标结束位置，自动聚集时有效，需与`selection-start`搭配使用",
       "defaultValue": "-1"
     },
     "adjust-position": {

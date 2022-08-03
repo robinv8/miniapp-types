@@ -13,7 +13,6 @@
       "enum": [
         "text",
         "number",
-        "idcard",
         "digit"
       ]
     },

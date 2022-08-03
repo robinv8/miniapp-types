@@ -60,7 +60,7 @@
     },
     "hover-class": {
       "type": "string",
-      "description": "指定按钮按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+      "description": "指定按钮按下去的样式类。当 `hover-class=\"none\"` 时，没有点击态效果",
       "defaultValue": "button-hover"
     },
     "hover-stop-propagation": {
