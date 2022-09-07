@@ -265,7 +265,7 @@
       "tsType": "() => void",
       "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
     },
-    "bindControlStoggle": {
+    "bindControlsToggle": {
       "tsType": "() => void",
       "description": "切换 controls 显示隐藏时触发。event.detail = {show}"
     },
