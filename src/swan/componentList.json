@@ -387,6 +387,7 @@
   {
     "name": "live-player",
     "url": "https://smartprogram.baidu.com/docs/develop/component/media_live-player/",
+    "tableIndex": 1,
     "fields": {
       "name": 0,
       "type": 1,
