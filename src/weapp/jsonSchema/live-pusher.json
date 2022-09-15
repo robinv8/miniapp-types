@@ -4,11 +4,11 @@
   "properties": {
     "url": {
       "type": "string",
-      "description": "推流地址。目前仅支持 `rtmp` 格式"
+      "description": "推流地址。目前仅支持 rtmp 格式"
     },
     "mode": {
       "type": "string",
-      "description": "`SD`（标清）, `HD`（高清）, `FHD`（超清）, `RTC`（实时通话）",
+      "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）",
       "defaultValue": "RTC"
     },
     "autopush": {
@@ -18,7 +18,7 @@
     },
     "muted": {
       "type": "boolean",
-      "description": "是否静音。即将废弃，可用 `enable-mic` 替代",
+      "description": "是否静音。即将废弃，可用 enable-mic 替代",
       "defaultValue": "false"
     },
     "enable-camera": {
@@ -52,7 +52,7 @@
     },
     "aspect": {
       "type": "string",
-      "description": "宽高比，可选值有 `3:4`, `9:16`",
+      "description": "宽高比，可选值有 3:4, 9:16",
       "defaultValue": "9:16"
     },
     "min-bitrate": {
@@ -67,7 +67,7 @@
     },
     "audio-quality": {
       "type": "string",
-      "description": "高音质(48KHz)或低音质(16KHz)，值为`high`, `low`",
+      "description": "高音质(48KHz)或低音质(16KHz)，值为high, low",
       "defaultValue": "high"
     },
     "waiting-image": {
@@ -85,7 +85,7 @@
     },
     "device-position": {
       "type": "string",
-      "description": "前置或后置，值为`front`, `back`",
+      "description": "前置或后置，值为front, back",
       "defaultValue": "front"
     },
     "background-mute": {

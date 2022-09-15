@@ -35,19 +35,19 @@
     },
     "app-id": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate\"`时有效，要打开的小程序 appId"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序 appId"
     },
     "path": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate\"`时有效，打开的页面路径，如果为空则打开首页"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，打开的页面路径，如果为空则打开首页"
     },
     "extra-data": {
       "type": "object",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate/navigateBack\"`时有效，需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch()`，`App.onShow()` 中获取到这份数据。详情"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效，需要传递给目标小程序的数据，目标小程序可在 App.onLaunch()，App.onShow() 中获取到这份数据。详情"
     },
     "version": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate\"`时有效，要打开的小程序版本",
+      "description": "当target=\"miniProgram\"且open-type=\"navigate\"时有效，要打开的小程序版本",
       "defaultValue": "release",
       "enum": [
         "develop",
@@ -57,11 +57,11 @@
     },
     "short-link": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`时有效，当传递该参数后，可以不传 app-id 和 path。链接可以通过【小程序菜单】->【复制链接】获取。"
+      "description": "当target=\"miniProgram\"时有效，当传递该参数后，可以不传 app-id 和 path。链接可以通过【小程序菜单】->【复制链接】获取。"
     },
     "hover-class": {
       "type": "string",
-      "description": "指定点击时的样式类，当`hover-class=\"none\"`时，没有点击态效果",
+      "description": "指定点击时的样式类，当hover-class=\"none\"时，没有点击态效果",
       "defaultValue": "navigator-hover"
     },
     "hover-stop-propagation": {
@@ -81,15 +81,15 @@
     },
     "bindSuccess": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate/navigateBack\"`时有效时有效，跳转小程序成功"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序成功"
     },
     "bindFail": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate/navigateBack\"`时有效时有效，跳转小程序失败"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序失败"
     },
     "bindComplete": {
       "type": "string",
-      "description": "当`target=\"miniProgram\"`且`open-type=\"navigate/navigateBack\"`时有效时有效，跳转小程序完成"
+      "description": "当target=\"miniProgram\"且open-type=\"navigate/navigateBack\"时有效时有效，跳转小程序完成"
     }
   },
   "additionalProperties": false

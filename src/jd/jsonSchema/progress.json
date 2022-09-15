@@ -61,7 +61,7 @@
       "description": "进度增加1%所需毫秒数",
       "defaultValue": "30"
     },
-    "bindActivEend": {
+    "bindActiveEnd": {
       "tsType": "() => void",
       "description": "动画完成事件"
     }

@@ -4,7 +4,7 @@
   "properties": {
     "src": {
       "type": "string",
-      "description": "web-view 要渲染的 H5 网页 URL ，需要在如下路径中 支付宝小程序管理中心 > 设置 > 开发设置 > H5域名配置 进行 H5 域名白名单配置。"
+      "description": "web-view 要渲染的 H5 网页 URL ，默认允许打开所有 https://render.alipay.com/p/ 开头的 URL（支付宝客户端 10.2.63 版本开始支持），其他网页需要在 开放平台控制台 > 对应小程序详情页 > 开发设置 > H5域名配置 进行 H5 域名白名单配置。"
     },
     "onMessage": {
       "tsType": "() => void",

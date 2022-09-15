@@ -36,7 +36,7 @@
     },
     "django-id": {
       "type": "string",
-      "description": "Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeHolder 图片。\n与 path 二选一\n版本要求： 支付宝客户端 10.1.52 及以上"
+      "description": "Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeholder 图片。\n与 path 二选一\n版本要求： 支付宝客户端 10.1.52 及以上"
     },
     "md5": {
       "type": "string",
@@ -44,7 +44,7 @@
     },
     "optimize": {
       "type": "boolean",
-      "description": "降级。降级是指如遇低端设备，Lottie 会降级展示为 placeHolder。\n当 optimize 为 true ，并且传入了 placeHolder 时，在低端设备上只会展示 placeHolder，不展示 Lottie。\n低端设备如下所示：\n\niOS ：小于等于 iPhone6P\nAndroid：内存容量小于 3G\n默认值： false\n版本要求： 支付宝客户端 10.1.52 及以上",
+      "description": "降级。降级是指如遇低端设备，Lottie 会降级展示为 placeholder。\n当 optimize 为 true ，并且传入了 placeholder 时，在低端设备上只会展示 placeholder，不展示 Lottie。\n低端设备如下所示：\n\niOS ：小于等于 iPhone6P\nAndroid：内存容量小于 3G\n默认值： false\n版本要求： 支付宝客户端 10.1.52 及以上",
       "defaultValue": "false"
     },
     "onDataReady": {

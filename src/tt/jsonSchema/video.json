@@ -171,6 +171,11 @@
       "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
       "defaultValue": "\n"
     },
+    "bindAdload": {
+      "tsType": "() => void",
+      "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
+      "defaultValue": "\n"
+    },
     "bindAdClose": {
       "tsType": "() => void",
       "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }",

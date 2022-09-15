@@ -206,7 +206,7 @@
     },
     "referrer-policy": {
       "type": "string",
-      "description": "格式固定为 `https://servicewechat.com/{appid}/{version}/page-frame.html`，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
+      "description": "格式固定为 https://servicewechat.com/{appid}/{version}/page-frame.html，其中 {appid} 为小程序的 appid，{version} 为小程序的版本号，版本号为 0 表示为开发版、体验版以及审核版本，版本号为 devtools 表示为开发者工具，其余为正式版本；",
       "defaultValue": "no-referrer",
       "enum": [
         "origin",
@@ -228,6 +228,10 @@
     "license-url": {
       "type": "string",
       "description": "DRM 获取加密信息 url，仅 is-drm 为 true 时生效"
+    },
+    "preferred-peak-bit-rate": {
+      "type": "number",
+      "description": "指定码率上界，单位为比特每秒"
     },
     "bindPlay": {
       "tsType": "() => void",

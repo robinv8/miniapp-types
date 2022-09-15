@@ -2,10 +2,6 @@
   "title": "canvas",
   "type": "object",
   "properties": {
-    "type": {
-      "type": "string",
-      "description": "指定 canvas 类型，支持 2d，基础库版本1.10.11开始支持2d和webgl"
-    },
     "canvas-id": {
       "type": "string",
       "description": "canvas 组件的唯一标识符"
