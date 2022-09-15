@@ -11,6 +11,9 @@ const service = new Service({
         if (name.indexOf('bind') > -1 && !str) {
           return 'eventHandle'
         }
+        if(str === 'eventHandler') {
+          return 'eventHandle'
+        }
         if (str.indexOf(char) === -1) {
           return str;
         }
