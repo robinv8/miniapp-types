@@ -46,51 +46,51 @@
       "defaultValue": "1"
     },
     "bindPlay": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindPause": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindEnded": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindTimeUpdate": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindFullScreenChange": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindError": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindWaiting": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindLoadedData": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindLoadedMetaData": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindLoadStart": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindSeeked": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindSeeking": {
-      "type": "eventHandler",
+      "tsType": "() => void",
       "description": "否"
     }
   },
