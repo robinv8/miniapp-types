@@ -27,11 +27,9 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git checkout -b sync-types
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+    - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 6.0.2
     - run: npm install
     - run: npm ci
     - run: npm run build:schema
