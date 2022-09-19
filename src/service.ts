@@ -36,8 +36,8 @@ class Service {
     return str.split(char).map((item) => item.trim());
   }
   async getComponentProps({ page, url, name }) {
-    await this.page.goto(url, { waitUntil: this.waitUntil });
-    await this.page.waitFor(this.waitTime)
+    await this.page.goto(url, { waitUntil: this.waitUntil, debugger: true });
+    await this.page.waitForTimeout(this.waitTime)
     const data = await this.evaluate(this.page, this.componentList[this.index]);
     if (data.length > 0) {
       const folder = path.join(__dirname, this.platform, 'jsonSchema');

@@ -8,7 +8,7 @@ const service = new Service({
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
       function handleType(str, char) {
-        if(str === 'eventHandler') {
+        if (str === 'eventHandler') {
           return '() => void'
         }
         if (str.indexOf(char) === -1) {
@@ -29,15 +29,21 @@ const service = new Service({
 
         const innerText = (<HTMLElement>el.children[0])?.innerText;
         document.querySelectorAll('table').forEach((table) => {
-          const text = table.previousElementSibling?.getAttribute('id');
-          if (text === `${innerText}-的合法值`) {
+          const text = table.previousElementSibling?.innerHTML;
+          if (text === `${innerText} 的合法值`) {
             table.querySelectorAll('tbody tr').forEach((el) => {
               const innerText = (<HTMLElement>el.children[0])?.innerText;
-              options.push(innerText);
+              if(!innerText.match(/[\u4e00-\u9fa5]/)) {
+                options.push(innerText);
+              }
             });
           }
         });
         const name = (<HTMLElement>el.children[fields.name])?.innerText;
+
+        if (name.match(/[\u4e00-\u9fa5]/)) {
+          return
+        }
         const type = handleType((<HTMLElement>el.children[fields.type])?.innerText, '/');
         const defaultValue = (<HTMLElement>el.children[fields.defaultValue])?.innerText;
         const description = (<HTMLElement>el.children[fields.description])?.innerText;
@@ -47,7 +53,7 @@ const service = new Service({
           name,
           type,
           ...(options.length > 0 ? { options } : {}),
-          ...(defaultValue ? { defaultValue } : {}),
+          ...(defaultValue && defaultValue !== '\n' ? { defaultValue } : {}),
           ...(description ? { description } : {}),
           ...(required !== undefined && required !== null
             ? { required: required === '是' }

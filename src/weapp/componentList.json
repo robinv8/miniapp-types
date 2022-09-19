@@ -69,11 +69,11 @@
     "name": "scroll-view",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/scroll-view.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {

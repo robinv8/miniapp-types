@@ -16,7 +16,7 @@ const getComponentList = async (url, page) => {
         const aEl = el.children[0].querySelector('a')
         if (aEl) {
           componentList.push({
-            name: aEl.innerText,
+            name: aEl.innerText.split(' ')[0],
             url: aEl.href
           })
         }
@@ -34,7 +34,7 @@ const fn = async () => {
     defaultViewport: null,
   })
   const page = await browser.newPage();
-  const componentList = await getComponentList('https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/all', page)
+  const componentList = await getComponentList('https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/overview', page)
   fs.writeFileSync(path.resolve(__dirname, './componentList.json'), JSON.stringify(componentList, null, 2))
 }
 

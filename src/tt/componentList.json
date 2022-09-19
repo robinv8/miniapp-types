@@ -1,260 +1,7 @@
 [
   {
-    "name": "ad",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/ad/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "aweme-data",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/aweme-data/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "button",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/button/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "camera",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/camera/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "canvas",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/canvas/canvas/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "checkbox",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/checkbox/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "checkbox-group",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/checkbox-group/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "form",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/form/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "icon",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/icon/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "image",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/image/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "input",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/input/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "label",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/label/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "live-player",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/live-player/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "map",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/map/map/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "movable-area",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/movable-area/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "movable-view",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/movable-view/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "navigator",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/navigation/navigator/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "open-data",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/open-data/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "picker",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/picker/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "picker-view",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/picker-view/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "picker-view-column 嵌入页面的滚动选择器子项",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/picker-view-column/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "progress",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/progress/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "radio",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/radio/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "radio-group",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/radio-group/",
+    "name": "text",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/basic-content/text",
     "fields": {
       "name": 0,
       "type": 1,
@@ -265,7 +12,7 @@
   },
   {
     "name": "rich-text",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/rich-text/",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/basic-content/rich-text",
     "fields": {
       "name": 0,
       "type": 1,
@@ -275,8 +22,8 @@
     }
   },
   {
-    "name": "scroll-view",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/scroll-view/",
+    "name": "progress",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/basic-content/progress",
     "fields": {
       "name": 0,
       "type": 1,
@@ -286,74 +33,8 @@
     }
   },
   {
-    "name": "slider",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/slider/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "swiper",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/swiper/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "swiper-item",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/swiper-item/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "switch",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/switch/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "text",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/basic-content/text/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "textarea",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/list/textarea/",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
-  },
-  {
-    "name": "video",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/media-component/video/",
+    "name": "icon",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/basic-content/icon",
     "fields": {
       "name": 0,
       "type": 1,
@@ -364,7 +45,282 @@
   },
   {
     "name": "view",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/view-container/view/",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/view-container/view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "scroll-view",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/view-container/scroll-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "swiper",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/view-container/swiper",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "swiper-item",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/view-container/swiper-item",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "movable-area",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/view-container/movable-area",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "movable-view",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/view-container/movable-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "button",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/button",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "checkbox",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/checkbox",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "checkbox-group",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/checkbox-group",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "form",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/form",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "input",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/input",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "label",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/label",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "picker",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/picker",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "picker-view",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/picker-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "picker-view-column",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/picker-view-column",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "radio",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/radio",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "radio-group",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/radio-group",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "slider",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/slider",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "switch",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/switch",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "textarea",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/list/textarea",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "navigator",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/navigation/navigator",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "image",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/media-component/image",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "video",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/media-component/video",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "live-player",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/media-component/live-player",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "camera",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/media-component/camera",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "canvas",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/canvas/canvas",
     "fields": {
       "name": 0,
       "type": 1,
@@ -375,7 +331,40 @@
   },
   {
     "name": "web-view",
-    "url": "https://microapp.bytedance.com/docs/zh-CN/mini-app/develop/component/open-capacity/web-view/",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/open-capacity/web-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "ad",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/open-capacity/ad",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "open-data",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/open-capacity/open-data",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
+  },
+  {
+    "name": "aweme-data",
+    "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/component/open-capacity/aweme-data",
     "fields": {
       "name": 0,
       "type": 1,
