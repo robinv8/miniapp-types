@@ -14,10 +14,6 @@
         "region"
       ]
     },
-    "header-text": {
-      "type": "string",
-      "description": "选择器的标题"
-    },
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
@@ -25,7 +21,7 @@
     },
     "bindCancel": {
       "tsType": "() => void",
-      "description": "取消选择，收起 picker 时触发"
+      "description": "取消选择收起 picker 时触发"
     }
   },
   "additionalProperties": false

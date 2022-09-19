@@ -29,10 +29,6 @@
       "type": "string",
       "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color 三个 css 特性"
     },
-    "placeholder-class": {
-      "type": "string",
-      "description": "指定 placeholder 的样式类"
-    },
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
@@ -84,16 +80,6 @@
         "go",
         "done"
       ]
-    },
-    "confirm-hold": {
-      "type": "boolean",
-      "description": "点击键盘右下角按钮时是否保持键盘不收起",
-      "defaultValue": "false"
-    },
-    "hold-keyboard": {
-      "type": "boolean",
-      "description": "focus 时，点击页面的时候不收起键盘",
-      "defaultValue": "false"
     },
     "bindInput": {
       "tsType": "() => void",

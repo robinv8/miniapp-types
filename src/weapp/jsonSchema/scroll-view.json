@@ -58,12 +58,17 @@
     },
     "enable-flex": {
       "type": "boolean",
-      "description": "启用 flexbox 布局。开启后，当前节点声明了 display: flex 就会成为 flex container，并作用于其孩子节点。",
+      "description": "启用 flexbox 布局。开启后，当前节点声明了 `display: flex` 就会成为 flex container，并作用于其孩子节点。",
       "defaultValue": "false"
     },
     "scroll-anchoring": {
       "type": "boolean",
-      "description": "开启 scroll anchoring 特性，即控制滚动位置不随内容变化而抖动，仅在 iOS 下生效，安卓下可参考 CSS overflow-anchor 属性。",
+      "description": "开启 scroll anchoring 特性，即控制滚动位置不随内容变化而抖动，仅在 iOS 下生效，安卓下可参考 CSS `overflow-anchor` 属性。",
+      "defaultValue": "false"
+    },
+    "enable-passive": {
+      "type": "boolean",
+      "description": "开启 passive 特性，能优化一定的滚动性能",
       "defaultValue": "false"
     },
     "refresher-enabled": {
@@ -78,7 +83,7 @@
     },
     "refresher-default-style": {
       "type": "string",
-      "description": "设置自定义下拉刷新默认样式，支持设置 black | white | none， none 表示不使用默认样式",
+      "description": "设置自定义下拉刷新默认样式，支持设置 `black | white | none`， none 表示不使用默认样式",
       "defaultValue": "\"black\""
     },
     "refresher-background": {
@@ -124,7 +129,7 @@
       "tsType": "() => void",
       "description": "滑动事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft }"
     },
-    "bindDragend": {
+    "bindDragEnd": {
       "tsType": "() => void",
       "description": "滑动结束事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft, velocity }"
     },

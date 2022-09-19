@@ -4,8 +4,7 @@
   "properties": {
     "src": {
       "type": "string",
-      "description": "要播放的视频资源地址",
-      "defaultValue": "\n"
+      "description": "要播放的视频资源地址"
     },
     "autoplay": {
       "type": "boolean",
@@ -14,8 +13,7 @@
     },
     "poster": {
       "type": "string",
-      "description": "视频封面的图片网络资源地址",
-      "defaultValue": "\n"
+      "description": "视频封面的图片网络资源地址"
     },
     "loop": {
       "type": "boolean",
@@ -49,7 +47,7 @@
     },
     "play-btn-position": {
       "type": "string",
-      "description": "播放按钮的位置：center（视频中间），bottom（控制条上）",
+      "description": "播放按钮的位置：center（视频中间），bottom（控制条上）。投屏页面需要为 bottom 才会展示播放按钮",
       "defaultValue": "center",
       "enum": [
         "center",
@@ -58,13 +56,11 @@
     },
     "pre-roll-unit-id": {
       "type": "string",
-      "description": "前贴广告的 unit id",
-      "defaultValue": "\n"
+      "description": "前贴广告的 unit id"
     },
     "post-roll-unit-id": {
       "type": "string",
-      "description": "后贴广告的 unit id",
-      "defaultValue": "\n"
+      "description": "后贴广告的 unit id"
     },
     "vslide-gesture": {
       "type": "boolean",
@@ -118,113 +114,91 @@
     },
     "signature": {
       "type": "signature",
-      "description": "设置署名水印",
-      "defaultValue": "\n"
+      "description": "设置署名水印"
     },
     "bindPlay": {
       "tsType": "() => void",
-      "description": "当开始播放时触发 play 事件",
-      "defaultValue": "\n"
+      "description": "当开始播放时触发 play 事件"
     },
     "bindPause": {
       "tsType": "() => void",
-      "description": "当暂停播放时触发 pause 事件",
-      "defaultValue": "\n"
+      "description": "当暂停播放时触发 pause 事件"
     },
     "bindEnded": {
       "tsType": "() => void",
-      "description": "当播放到末尾时触发 ended 事件",
-      "defaultValue": "\n"
+      "description": "当播放到末尾时触发 ended 事件"
     },
     "bindError": {
       "tsType": "() => void",
-      "description": "视频播放出错时触发 error 事件",
-      "defaultValue": "\n"
+      "description": "视频播放出错时触发 error 事件"
     },
     "bindTimeUpdate": {
       "tsType": "() => void",
-      "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }",
-      "defaultValue": "\n"
+      "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }"
     },
     "bindProgress": {
       "tsType": "() => void",
-      "description": "视频缓冲进度更新时触发，event.detail = { buffered }。其中 buffered 是百分比，取值是 [0, 100] 中的整数，如 buffered 为 50 表示当前视频缓冲了 50%。",
-      "defaultValue": "\n"
+      "description": "视频缓冲进度更新时触发，event.detail = { buffered }。其中 buffered 是百分比，取值是 [0, 100] 中的整数，如 buffered 为 50 表示当前视频缓冲了 50%。"
     },
     "bindFullScreenChange": {
       "tsType": "() => void",
-      "description": "视频进入和退出全屏时触发",
-      "defaultValue": "\n"
+      "description": "视频进入和退出全屏时触发"
     },
     "bindWaiting": {
       "tsType": "() => void",
-      "description": "视频出现缓冲时触发",
-      "defaultValue": "\n"
+      "description": "视频出现缓冲时触发"
     },
     "bindAdStart": {
       "tsType": "() => void",
-      "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
-      "defaultValue": "\n"
+      "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindAdEnded": {
       "tsType": "() => void",
-      "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
-      "defaultValue": "\n"
+      "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
-    "bindAdload": {
+    "bindAdLoad": {
       "tsType": "() => void",
-      "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
-      "defaultValue": "\n"
+      "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindAdClose": {
       "tsType": "() => void",
-      "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
-      "defaultValue": "\n"
+      "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindAdError": {
       "tsType": "() => void",
-      "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }",
-      "defaultValue": "\n"
+      "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
     },
     "bindLoadedMetaData": {
       "tsType": "() => void",
-      "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}",
-      "defaultValue": "\n"
+      "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
     },
     "bindSeekComplete": {
       "tsType": "() => void",
-      "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}",
-      "defaultValue": "\n"
+      "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}"
     },
     "bindPlayBackRateChange": {
       "tsType": "() => void",
-      "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}",
-      "defaultValue": "\n"
+      "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}"
     },
     "bindMuteChange": {
       "tsType": "() => void",
-      "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}",
-      "defaultValue": "\n"
+      "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}"
     },
     "bindControlTap": {
       "tsType": "() => void",
-      "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值",
-      "defaultValue": "\n"
+      "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值"
     },
     "bindEnterBackground": {
       "tsType": "() => void",
-      "description": "进入小窗播放时触发",
-      "defaultValue": "\n"
+      "description": "进入小窗播放时触发"
     },
     "bindCloseBackground": {
       "tsType": "() => void",
-      "description": "关闭小窗播放时触发",
-      "defaultValue": "\n"
+      "description": "关闭小窗播放时触发"
     },
     "bindLeaveBackground": {
       "tsType": "() => void",
-      "description": "离开小窗进入 app 事件时触发",
-      "defaultValue": "\n"
+      "description": "离开小窗进入 app 事件时触发"
     }
   },
   "additionalProperties": false,

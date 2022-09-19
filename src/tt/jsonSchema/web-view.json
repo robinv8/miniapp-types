@@ -4,7 +4,7 @@
   "properties": {
     "src": {
       "type": "string",
-      "description": "组件指向网页的链接。网页链接需登录字节小程序开发者平台配置业务域名。只支持 https 协议。"
+      "description": "组件指向网页的链接。网页链接需登录字节小程序开发者平台配置业务域名。只支持 https 和 wss 协议。"
     },
     "progressbar-color": {
       "type": "string",

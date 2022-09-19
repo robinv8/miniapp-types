@@ -4,28 +4,23 @@
   "properties": {
     "value": {
       "type": "number[]",
-      "description": "设置选择器中被选中的元素，value[i] 表示 picker-view 内的第 i 个 picker-view-column 选中第 value[i] 项元素（下标从 0 开始）。如果 value[i] 大于 picker-view-colum 可选项长度时，选择最后一项。",
-      "defaultValue": "\n"
+      "description": "设置选择器中被选中的元素，value[i] 表示 picker-view 内的第 i 个 picker-view-column 选中第 value[i] 项元素（下标从 0 开始）。如果 value[i] 大于 picker-view-colum 可选项长度时，选择最后一项。"
     },
     "indicator-style": {
       "type": "string",
-      "description": "设置选择器中选中框的样式",
-      "defaultValue": "\n"
+      "description": "设置选择器中选中框的样式"
     },
     "indicator-class": {
       "type": "string",
-      "description": "设置选择器中间选中框的类名",
-      "defaultValue": "\n"
+      "description": "设置选择器中间选中框的类名"
     },
     "mask-style": {
       "type": "string",
-      "description": "设置蒙层的样式",
-      "defaultValue": "\n"
+      "description": "设置蒙层的样式"
     },
     "mask-class": {
       "type": "string",
-      "description": "设置蒙层的类名",
-      "defaultValue": "\n"
+      "description": "设置蒙层的类名"
     },
     "immediate-change": {
       "type": "boolean",
@@ -34,18 +29,15 @@
     },
     "bindChange": {
       "tsType": "() => void",
-      "description": "滚动选择时触发 change 事件回调",
-      "defaultValue": "\n"
+      "description": "滚动选择时触发 change 事件回调"
     },
     "bindPickStart": {
       "tsType": "() => void",
-      "description": "当滚动选择开始时触发 pickstart 事件回调",
-      "defaultValue": "\n"
+      "description": "当滚动选择开始时触发 pickstart 事件回调"
     },
     "bindPickEnd": {
       "tsType": "() => void",
-      "description": "当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）",
-      "defaultValue": "\n"
+      "description": "当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）"
     }
   },
   "additionalProperties": false,
