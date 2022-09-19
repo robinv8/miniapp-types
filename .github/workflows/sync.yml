@@ -54,27 +54,27 @@ jobs:
       - run: pnpm format
       - run: pnpm build:types
 
-    - name: Commit changes
-      run: |
-        git add .
-        git commit -m "Sync types"
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Sync types"
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: sync-types
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: sync-types
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: Sync types
-        title: Sync types
-        body: |
-          Sync types
-        labels: |
-          types
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Sync types
+          title: Sync types
+          body: |
+            Sync types
+          labels: |
+            types
 
 
 
