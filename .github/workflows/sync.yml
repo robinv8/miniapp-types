@@ -3,7 +3,7 @@ name: Sync Types
 on:
   schedule:
     - cron: "0 0 * * 5"
-    - cron: "40 0 * * *"
+    - cron: "42 0 * * *"
 
 jobs:
   build:
