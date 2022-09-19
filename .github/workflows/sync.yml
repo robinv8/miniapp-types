@@ -1,0 +1,65 @@
+name: Sync Types
+
+on:
+  schedule:
+    - cron: "0 0 * * 5"
+    - cron: "40 0 * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Create new branch
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git checkout -b sync-types
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Sync types
+    - run: npm ci
+    - run: npm run build:schema
+    - run: npm run format
+    - run: npm run build:types
+
+    - name: Commit changes
+      run: |
+        git add .
+        git commit -m "Sync types"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: sync-types
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: Sync types
+        title: Sync types
+        body: |
+          Sync types
+        labels: |
+          types
+
+
+
