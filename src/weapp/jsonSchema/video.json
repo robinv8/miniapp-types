@@ -274,15 +274,15 @@
       "description": "切换 controls 显示隐藏时触发。event.detail = {show}"
     },
     "bindEnterPictureInPicture": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "播放器进入小窗"
     },
     "bindLeavePictureInPicture": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "播放器退出小窗"
     },
     "bindSeekComplete": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "seek 完成时触发 (position iOS 单位 s, Android 单位 ms)"
     }
   },

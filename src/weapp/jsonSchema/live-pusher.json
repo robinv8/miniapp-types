@@ -231,11 +231,11 @@
       "description": "返回麦克风采集的音量大小"
     },
     "bindEnterPictureInPicture": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "进入小窗"
     },
     "bindLeavePictureInPicture": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "退出小窗"
     }
   },

@@ -93,6 +93,14 @@
     "onError": {
       "tsType": "() => void",
       "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。\n版本要求：基础库 1.11.0 及以上"
+    },
+    "onGetUserInfo": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 getAuthorize 且 scope 为 userInfo 时有效。\n当授权成功时触发。\n版本要求 ：基础库  2.8.0 及以上\nevent.detail = {\n    userInfo: {\n        avatar, // 头像\n        nickName,  // 昵称\n  }\n}，"
+    },
+    "onGetPhoneNumber": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 getAuthorize 且 scope 为 phoneNumber 时有效。\n当授权成功时触发。\n版本要求 :基础库 2.8.0 及以上\n成功获取用户信息后返回\nevent.detail = {\n    encryptedData: '',  // 加密后的手机号\n    sign: '',  //  签名信息，如果在开放平台后台配置了加签方式后有此字段\n}，"
     }
   },
   "additionalProperties": false

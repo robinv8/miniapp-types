@@ -28,15 +28,15 @@
       "description": "功能页参数，参数格式与具体功能页相关"
     },
     "bindSuccess": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "功能页返回，且操作成功时触发， detail 格式与具体功能页相关"
     },
     "bindFail": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "功能页返回，且操作失败时触发， detail 格式与具体功能页相关"
     },
     "bindCancel": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "因用户操作从功能页返回时触发"
     }
   },

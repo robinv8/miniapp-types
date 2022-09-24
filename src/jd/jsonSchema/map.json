@@ -46,23 +46,23 @@
       "description": "否"
     },
     "bindMarkerTap": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindCallOutTap": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindControlTap": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindRegionChange": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "否"
     },
     "bindTap": {
-      "type": "eventhandler",
+      "tsType": "() => void",
       "description": "否"
     }
   },

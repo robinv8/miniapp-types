@@ -12,7 +12,7 @@
     },
     "src": {
       "type": "string",
-      "description": "要播放视频的资源地址，支持优酷视频编码（支付宝客户端 10.1.75）。\nsrc 支持的协议如下：\nvid/showId: XMzg2Mzc5MzMwMA==\napFilePath: https://resource/xxx.video。"
+      "description": "要播放视频的资源地址，支持网络地址，支持优酷视频编码（支付宝客户端 10.1.75）。\nsrc 支持的协议如下：\nvid/showId: XMzg2Mzc5MzMwMA==\napFilePath: https://resource/xxx.video。"
     },
     "poster": {
       "type": "string",
@@ -48,7 +48,7 @@
     },
     "direction": {
       "type": "number",
-      "description": "设置全屏时视频的方向，不指定则根据宽高比自动判断。有效值为 0（正常竖向）, 90（屏幕逆时针90度）, -90（屏幕顺时针90度）\n版本要求： 基础库 1.12.0 及以上"
+      "description": "设置全屏时视频的方向，不指定则根据宽高比自动判断。有效值为 0（正常竖向）, 90（屏幕逆时针 90 度）, -90（屏幕顺时针 90 度）\n版本要求： 基础库 1.12.0 及以上"
     },
     "loop": {
       "type": "boolean",
@@ -109,7 +109,7 @@
     },
     "onTimeUpdate": {
       "tsType": "() => void",
-      "description": "播放进度变化时触发，event.detail = {currentTime: '当前播放时间',userPlayDuration:'用户实际观看时长',videoDuration:'视频总时长'} 。\n版本要求： 基础库 1.9.0 及以上"
+      "description": "播放进度变化时触发，event.detail = {currentTime: '当前播放时间',userPlayDuration:'用户实际观看时长',videoDuration:'视频总时长'}。\n版本要求： 基础库 1.9.0 及以上"
     },
     "onLoading": {
       "tsType": "() => void",
