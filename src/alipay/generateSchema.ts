@@ -9,8 +9,8 @@ const service = new Service({
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
       function handleType(str, char) {
-        if(str === 'eventHandler') {
-          return '() => void'
+        if(str.toLowerCase() === 'eventhandler') {
+          return 'eventHandle'
         }
         if (str.indexOf(char) === -1) {
           return str;

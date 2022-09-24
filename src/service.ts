@@ -3,7 +3,7 @@ import * as fs from "fs";
 import * as path from "path";
 import * as humps from "humps";
 
-const eventTypes = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent'];
+const eventTypes = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent', 'eventHandler'];
 const omitTypes = ['color'];
 class Service {
   platform;
