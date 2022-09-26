@@ -11,13 +11,20 @@ const service = new Service({
         if (name.indexOf('bind') > -1 && !str) {
           return 'eventHandle'
         }
-        if(str.toLowerCase() === 'eventhandler') {
+        if (str.toLowerCase() === 'eventhandler') {
           return 'eventHandle'
         }
         if (str.indexOf(char) === -1) {
           return str;
         }
         return str.split(char).map((item) => typeAlias[item.trim()] || item.trim());
+      }
+
+      function handleDescription(str) {
+        let result = str;
+        result = result.replace(/\n?默认值： .*\n?/g, '');
+        result = result.replace(/\n?版本要求： .*\n?/g, '');
+        return result;
       }
       const attributes: Attribute[] = [];
 
@@ -49,6 +56,7 @@ const service = new Service({
         const defaultValue = (<HTMLElement>el.children[fields.defaultValue])?.innerText;
         const description = (<HTMLElement>el.children[fields.description])?.innerText;
         const required = (<HTMLElement>el.children[fields.required])?.innerText;
+        const filteredDescription = handleDescription(description);
 
         attributes.push({
           name,
@@ -57,7 +65,7 @@ const service = new Service({
           ...(defaultValue
             ? { defaultValue: defaultValue.replace(/\"/g, '') }
             : {}),
-          ...(description ? { description } : {}),
+          ...(filteredDescription ? { description: filteredDescription } : {}),
           ...(required !== undefined && required !== null
             ? { required: required === '是' }
             : {}),

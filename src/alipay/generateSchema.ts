@@ -9,13 +9,19 @@ const service = new Service({
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
       function handleType(str, char) {
-        if(str.toLowerCase() === 'eventhandler') {
+        if (str.toLowerCase() === 'eventhandler') {
           return 'eventHandle'
         }
         if (str.indexOf(char) === -1) {
           return str;
         }
         return str.split(char).map((item) => typeAlias[item.trim()] || item.trim());
+      }
+      function handleDescription(str) {
+        let result = str;
+        result = result.replace(/\n?默认值： .*\n?/g, '');
+        result = result.replace(/\n?版本要求： .*\n?/g, '');
+        return result;
       }
       const attributes: Attribute[] = [];
 
@@ -57,12 +63,13 @@ const service = new Service({
           description.match(/默认值： (\w+)/)?.[1];
         const required = (<HTMLElement>el.children[fields.required])?.innerText;
 
+        const filteredDescription = handleDescription(description);
         attributes.push({
           name,
           type,
           ...(options.length > 0 ? { options } : {}),
           ...(defaultValue ? { defaultValue } : {}),
-          ...(description ? { description } : {}),
+          ...(filteredDescription ? { description: filteredDescription } : {}),
           ...(required !== undefined && required !== null
             ? { required: required === '是' }
             : {}),
