@@ -15,16 +15,16 @@
         "number",
         "string"
       ],
-      "description": "选填。咨询按钮大小，正方形设置边长（如25*25 px）。\n默认值： 25\n版本要求： 基础库 1.9.0 及以上、支付宝客户端 1.12.0 以及上支持 rpx 单位",
+      "description": "选填。咨询按钮大小，正方形设置边长（如25*25 px）。",
       "defaultValue": "25"
     },
     "color": {
       "type": "string",
-      "description": "选填。咨询按钮颜色，默认白底蓝色。\n默认值： #00A3FF\n版本要求： 基础库 1.9.0 及以上"
+      "description": "选填。咨询按钮颜色，默认白底蓝色。"
     },
     "icon": {
       "type": "imgUrl",
-      "description": "选填。咨询按钮头像。\n版本要求： 基础库 1.9.0 及以上"
+      "description": "选填。咨询按钮头像。"
     },
     "alipay-card-no": {
       "type": "string",

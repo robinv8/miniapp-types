@@ -4,7 +4,7 @@
   "properties": {
     "disable-scroll": {
       "type": "boolean",
-      "description": "是否阻止区域内滚动页面。\n默认值： false\n说明： 如果 view 中嵌套 view，外层 view 设置 disable-scroll 为 true 时禁止内部的滚动。",
+      "description": "是否阻止区域内滚动页面。说明： 如果 view 中嵌套 view，外层 view 设置 disable-scroll 为 true 时禁止内部的滚动。",
       "defaultValue": "false"
     },
     "hover-class": {
@@ -21,7 +21,7 @@
     },
     "hidden": {
       "type": "boolean",
-      "description": "是否隐藏。\n默认值： false",
+      "description": "是否隐藏。",
       "defaultValue": "false"
     },
     "class": {
@@ -38,7 +38,7 @@
     },
     "hover-stop-propagation": {
       "type": "boolean",
-      "description": "是否阻止当前元素的祖先元素出现点击态。\n默认值： false\n版本要求： 基础库 1.10.0 及以上",
+      "description": "是否阻止当前元素的祖先元素出现点击态。",
       "defaultValue": "false"
     },
     "onTap": {
@@ -67,31 +67,31 @@
     },
     "onTransitionEnd": {
       "tsType": "() => void",
-      "description": "过渡（Transition）结束时触发。\n版本要求： 基础库 1.8.0 及以上"
+      "description": "过渡（Transition）结束时触发。"
     },
     "onAnimationIteration": {
       "tsType": "() => void",
-      "description": "每开启一次新的动画过程时触发。（第一次不触发）\n版本要求： 基础库 1.8.0 及以上"
+      "description": "每开启一次新的动画过程时触发。（第一次不触发）"
     },
     "onAnimationStart": {
       "tsType": "() => void",
-      "description": "动画开始时触发。\n版本要求： 基础库 1.8.0 及以上"
+      "description": "动画开始时触发。"
     },
     "onAnimationEnd": {
       "tsType": "() => void",
-      "description": "动画结束时触发。\n版本要求： 基础库 1.8.0 及以上"
+      "description": "动画结束时触发。"
     },
     "onAppear": {
       "tsType": "() => void",
-      "description": "当前元素可见面积超过50%时触发。\n版本要求： 基础库 1.9.0 及以上"
+      "description": "当前元素可见面积超过50%时触发。"
     },
     "onDisappear": {
       "tsType": "() => void",
-      "description": "当前元素不可见面积超过50%时触发。\n版本要求： 基础库 1.9.0 及以上"
+      "description": "当前元素不可见面积超过50%时触发。"
     },
     "onFirstAppear": {
       "tsType": "() => void",
-      "description": "当前元素首次可见面积达到50%时触发。\n版本要求： 基础库 1.9.4 及以上"
+      "description": "当前元素首次可见面积达到50%时触发。"
     },
     "role": {
       "type": "",

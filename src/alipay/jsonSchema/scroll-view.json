@@ -12,22 +12,22 @@
     },
     "scroll-x": {
       "type": "boolean",
-      "description": "允许横向滚动。\n默认值： false",
+      "description": "允许横向滚动。",
       "defaultValue": "false"
     },
     "scroll-y": {
       "type": "boolean",
-      "description": "允许纵向滚动。\n默认值： false",
+      "description": "允许纵向滚动。",
       "defaultValue": "false"
     },
     "upper-threshold": {
       "type": "number",
-      "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件。\n默认值： 50",
+      "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件。",
       "defaultValue": "50"
     },
     "lower-threshold": {
       "type": "number",
-      "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件。\n默认值： 50",
+      "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件。",
       "defaultValue": "50"
     },
     "scroll-top": {
@@ -44,21 +44,21 @@
     },
     "scroll-with-animation": {
       "type": "boolean",
-      "description": "在设置滚动条位置时使用动画过渡。\n默认值： false",
+      "description": "在设置滚动条位置时使用动画过渡。",
       "defaultValue": "false"
     },
     "scroll-animation-duration": {
       "type": "number",
-      "description": "当 scroll-with-animation设置为 true 时，可以设置 scroll-animation-duration 来控制动画的执行时间，单位 ms。\n版本要求： 基础库 1.9.0 及以上"
+      "description": "当 scroll-with-animation设置为 true 时，可以设置 scroll-animation-duration 来控制动画的执行时间，单位 ms。"
     },
     "enable-back-to-top": {
       "type": "boolean",
-      "description": "当点击 iOS 顶部状态栏或者双击 Android 标题栏时，滚动条返回顶部，只支持竖向。\n默认值： false\n版本要求： 基础库 1.11.0 及以上",
+      "description": "当点击 iOS 顶部状态栏或者双击 Android 标题栏时，滚动条返回顶部，只支持竖向。",
       "defaultValue": "false"
     },
     "trap-scroll": {
       "type": "boolean",
-      "description": "纵向滚动时，当滚动到顶部或底部时，强制禁止触发页面滚动，仍然只触发 scroll-view 自身的滚动。\n默认值： false\n版本要求： 基础库 1.11.2 及以上",
+      "description": "纵向滚动时，当滚动到顶部或底部时，强制禁止触发页面滚动，仍然只触发 scroll-view 自身的滚动。",
       "defaultValue": "false"
     },
     "onScrollToUpper": {
@@ -75,19 +75,19 @@
     },
     "onTouchStart": {
       "tsType": "() => void",
-      "description": "触摸动作开始。\n版本要求： 基础库 1.15.0 及以上"
+      "description": "触摸动作开始。"
     },
     "onTouchMove": {
       "tsType": "() => void",
-      "description": "触摸后移动。\n版本要求： 基础库 1.15.0 及以上"
+      "description": "触摸后移动。"
     },
     "onTouchEnd": {
       "tsType": "() => void",
-      "description": "触摸动作结束。\n版本要求： 基础库 1.15.0 及以上"
+      "description": "触摸动作结束。"
     },
     "onTouchCancel": {
       "tsType": "() => void",
-      "description": "触摸动作被打断，如来电提醒、弹窗。\n版本要求： 基础库 1.15.0 及以上"
+      "description": "触摸动作被打断，如来电提醒、弹窗。"
     },
     "disable-lower-scroll": {
       "type": "string",

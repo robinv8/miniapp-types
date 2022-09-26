@@ -12,15 +12,15 @@
     },
     "indicator-class": {
       "type": "string",
-      "description": "选中框的类名。\n版本要求： 基础库 1.10.0 及以上"
+      "description": "选中框的类名。"
     },
     "mask-style": {
       "type": "string",
-      "description": "蒙层的样式。\n版本要求： 基础库 1.10.0 及以上"
+      "description": "蒙层的样式。"
     },
     "mask-class": {
       "type": "string",
-      "description": "蒙层的类名。\n版本要求： 基础库 1.10.0 及以上"
+      "description": "蒙层的类名。"
     },
     "onChange": {
       "tsType": "() => void",
@@ -28,11 +28,11 @@
     },
     "onPickStart": {
       "tsType": "() => void",
-      "description": "当滚动选择开始时候触发事件。\n版本要求： 基础库 2.8.0 及以上。"
+      "description": "当滚动选择开始时候触发事件。"
     },
     "onPickEnd": {
       "tsType": "() => void",
-      "description": "当滚动选择结束时候触发事件。\n版本要求： 基础库 2.8.0 及以上。"
+      "description": "当滚动选择结束时候触发事件。"
     }
   },
   "additionalProperties": false

@@ -16,45 +16,45 @@
     },
     "placeholder-style": {
       "type": "string",
-      "description": "指定 placeholder 的样式。\n版本要求： 基础库 1.6.0 及以上"
+      "description": "指定 placeholder 的样式。"
     },
     "placeholder-class": {
       "type": "string",
-      "description": "指定 placeholder 的样式类。\n版本要求： 基础库 1.6.0 及以上"
+      "description": "指定 placeholder 的样式类。"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false",
+      "description": "是否禁用。",
       "defaultValue": "false"
     },
     "maxlength": {
       "type": "number",
-      "description": "最大长度，当设置为 -1 时不限制最大长度。\n默认值： 140",
+      "description": "最大长度，当设置为 -1 时不限制最大长度。",
       "defaultValue": "140"
     },
     "focus": {
       "type": "boolean",
-      "description": "获取焦点。\n默认值： false",
+      "description": "获取焦点。",
       "defaultValue": "false"
     },
     "auto-height": {
       "type": "boolean",
-      "description": "是否自动增高。\n默认值： false",
+      "description": "是否自动增高。",
       "defaultValue": "false"
     },
     "show-count": {
       "type": "boolean",
-      "description": "是否渲染字数统计功能（是否删除默认计数器/是否显示字数统计）。\n默认值： true\n版本要求： 基础库 1.8.0 及以上",
+      "description": "是否渲染字数统计功能（是否删除默认计数器/是否显示字数统计）。",
       "defaultValue": "true"
     },
     "controlled": {
       "type": "boolean",
-      "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上",
+      "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。",
       "defaultValue": "false"
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字。有效值：return（显示“换行”）、done（显示“完成”）、go（显示“前往”）、next（显示“下一个”）、search（显示“搜索”）、send（显示“发送”）。\n注意： 仅支持 Android。\n默认值： return。\n版本要求： 基础库 2.7.23 及以上、支付宝客户端 10.2.80 及以上",
+      "description": "设置键盘右下角按钮的文字。有效值：return（显示“换行”）、done（显示“完成”）、go（显示“前往”）、next（显示“下一个”）、search（显示“搜索”）、send（显示“发送”）。\n注意： 仅支持 Android。",
       "defaultValue": "return"
     },
     "onInput": {

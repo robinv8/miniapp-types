@@ -4,7 +4,7 @@
   "properties": {
     "autoplay": {
       "type": "boolean",
-      "description": "是否自动播放。\n默认值： false",
+      "description": "是否自动播放。",
       "defaultValue": "false"
     },
     "path": {
@@ -13,38 +13,38 @@
     },
     "speed": {
       "type": "float",
-      "description": "播放速度。正数为正向播放，负数负向播放。\n默认值： 1.0",
+      "description": "播放速度。正数为正向播放，负数负向播放。",
       "defaultValue": "1"
     },
     "repeat-count": {
       "type": "number",
-      "description": "循环次数。\n\n如果是负数表示无限次。\n如果是 0 表示不循环，播放一次。\n如果是 1 表示循环一次，播放两次。\n默认值： 0\n版本要求： 支付宝客户端 10.1.80 及以上",
+      "description": "循环次数。\n\n如果是负数表示无限次。\n如果是 0 表示不循环，播放一次。\n如果是 1 表示循环一次，播放两次。",
       "defaultValue": "0"
     },
     "auto-reverse": {
       "type": "boolean",
-      "description": "是否自动回播。\n默认值： false",
+      "description": "是否自动回播。",
       "defaultValue": "false"
     },
     "assets-path": {
       "type": "string",
-      "description": "资源地址。\"/\" 表明是小程序根目录。\n版本要求： 支付宝客户端 10.1.50 及以上"
+      "description": "资源地址。\"/\" 表明是小程序根目录。"
     },
     "placeholder": {
       "type": "string",
-      "description": "兜底图或者降级图地址。\n\n1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。\n支持 http 的 cdn 地址、近端地址。\n小程序场景不支持 djangoId。\n版本要求： 支付宝客户端 10.1.52 及以上"
+      "description": "兜底图或者降级图地址。\n\n1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。\n支持 http 的 cdn 地址、近端地址。\n小程序场景不支持 djangoId。"
     },
     "django-id": {
       "type": "string",
-      "description": "Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeholder 图片。\n与 path 二选一\n版本要求： 支付宝客户端 10.1.52 及以上"
+      "description": "Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeholder 图片。\n与 path 二选一"
     },
     "md5": {
       "type": "string",
-      "description": "在线资源的 md5 校验。\ndjangoId=https://b.zip。\n可以使用 b.zip 加密 获取 md5 值\nmd5=\"77c6c86fc89ba94cc0a9271b77ae77d2\"\n版本要求： 支付宝客户端 10.1.52 及以上"
+      "description": "在线资源的 md5 校验。\ndjangoId=https://b.zip。\n可以使用 b.zip 加密 获取 md5 值\nmd5=\"77c6c86fc89ba94cc0a9271b77ae77d2\""
     },
     "optimize": {
       "type": "boolean",
-      "description": "降级。降级是指如遇低端设备，Lottie 会降级展示为 placeholder。\n当 optimize 为 true ，并且传入了 placeholder 时，在低端设备上只会展示 placeholder，不展示 Lottie。\n低端设备如下所示：\n\niOS ：小于等于 iPhone6P\nAndroid：内存容量小于 3G\n默认值： false\n版本要求： 支付宝客户端 10.1.52 及以上",
+      "description": "降级。降级是指如遇低端设备，Lottie 会降级展示为 placeholder。\n当 optimize 为 true ，并且传入了 placeholder 时，在低端设备上只会展示 placeholder，不展示 Lottie。\n低端设备如下所示：\n\niOS ：小于等于 iPhone6P\nAndroid：内存容量小于 3G",
       "defaultValue": "false"
     },
     "onDataReady": {

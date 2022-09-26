@@ -16,7 +16,7 @@
     },
     "color": {
       "type": "string",
-      "description": "组件颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
+      "description": "组件颜色，同 CSS 色值。"
     },
     "onChange": {
       "tsType": "() => void",
@@ -24,7 +24,7 @@
     },
     "controlled": {
       "type": "boolean",
-      "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。\n默认值： false\n版本要求： 基础库 1.8.0 及以上",
+      "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。",
       "defaultValue": "false"
     }
   },

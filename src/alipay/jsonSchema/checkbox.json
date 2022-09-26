@@ -8,12 +8,12 @@
     },
     "checked": {
       "type": "boolean",
-      "description": "当前是否选中，可用来设置默认选中。\n默认值： false",
+      "description": "当前是否选中，可用来设置默认选中。",
       "defaultValue": "false"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false",
+      "description": "是否禁用。",
       "defaultValue": "false"
     },
     "onChange": {
@@ -22,7 +22,7 @@
     },
     "color": {
       "type": "string",
-      "description": "checkbox 的颜色，同 CSS 色值。\n版本要求： 基础库 1.10.0 及以上"
+      "description": "checkbox 的颜色，同 CSS 色值。"
     }
   },
   "additionalProperties": false

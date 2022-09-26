@@ -8,7 +8,7 @@
     },
     "mode": {
       "type": "string",
-      "description": "图片模式。\n默认值： scaleToFill",
+      "description": "图片模式。",
       "defaultValue": "scaleToFill"
     },
     "class": {
@@ -21,12 +21,12 @@
     },
     "lazy-load": {
       "type": "boolean",
-      "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。\n默认值： false\n版本要求： 基础库 1.9.0 及以上",
+      "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。",
       "defaultValue": "false"
     },
     "default-source": {
       "type": "string",
-      "description": "默认图片地址，若设置默认图片地址，会先显示默认图片，等 src 对应的图片加载成功后，再渲染对应的图片。\n版本要求： 基础库 1.19.0 及以上"
+      "description": "默认图片地址，若设置默认图片地址，会先显示默认图片，等 src 对应的图片加载成功后，再渲染对应的图片。"
     },
     "onLoad": {
       "tsType": "() => void",

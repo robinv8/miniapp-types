@@ -4,7 +4,7 @@
   "properties": {
     "size": {
       "type": "string",
-      "description": "有效值 default, mini（小尺寸）。\n默认值： default",
+      "description": "有效值 default, mini（小尺寸）。",
       "defaultValue": "default",
       "enum": [
         "default",
@@ -13,7 +13,7 @@
     },
     "type": {
       "type": "string",
-      "description": "按钮的样式类型，有效值 primary、default、warn。\n默认值： default",
+      "description": "按钮的样式类型，有效值 primary、default、warn。",
       "defaultValue": "default",
       "enum": [
         "primary",
@@ -23,37 +23,37 @@
     },
     "plain": {
       "type": "boolean",
-      "description": "是否镂空（ghost 与 plain 等效）。\n默认值： false",
+      "description": "是否镂空（ghost 与 plain 等效）。",
       "defaultValue": "false"
     },
     "disabled": {
       "type": "boolean",
-      "description": "是否禁用。\n默认值： false",
+      "description": "是否禁用。",
       "defaultValue": "false"
     },
     "loading": {
       "type": "boolean",
-      "description": "按钮文字前是否带 loading 图标。\n默认值： false",
+      "description": "按钮文字前是否带 loading 图标。",
       "defaultValue": "false"
     },
     "hover-class": {
       "type": "string",
-      "description": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。\n默认值： button-hover",
+      "description": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。",
       "defaultValue": "button"
     },
     "hover-start-time": {
       "type": "number",
-      "description": "按住后多少时间后出现点击状态，单位毫秒。\n默认值： 20",
+      "description": "按住后多少时间后出现点击状态，单位毫秒。",
       "defaultValue": "20"
     },
     "hover-stay-time": {
       "type": "number",
-      "description": "手指松开后点击状态保留时间，单位毫秒。\n默认值： 70",
+      "description": "手指松开后点击状态保留时间，单位毫秒。",
       "defaultValue": "70"
     },
     "hover-stop-propagation": {
       "type": "boolean",
-      "description": "是否阻止当前元素的祖先元素出现被点击样式。\n默认值： false\n版本要求： 基础库 1.10.0 及以上",
+      "description": "是否阻止当前元素的祖先元素出现被点击样式。",
       "defaultValue": "false"
     },
     "form-type": {
@@ -62,7 +62,7 @@
     },
     "open-type": {
       "type": "string",
-      "description": "开放能力。\n版本要求： 基础库 1.1.0 及以上",
+      "description": "开放能力。",
       "enum": [
         "share",
         "getAuthorize",
@@ -72,7 +72,7 @@
     },
     "scope": {
       "type": "string",
-      "description": "当 open-type 为 getAuthorize 时有效。\n版本要求： 基础库 1.11.0 及以上"
+      "description": "当 open-type 为 getAuthorize 时有效。"
     },
     "onTap": {
       "tsType": "() => void",

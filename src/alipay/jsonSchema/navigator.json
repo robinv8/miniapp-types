@@ -4,7 +4,7 @@
   "properties": {
     "open-type": {
       "type": "string",
-      "description": "跳转方式。\n默认值： navigate",
+      "description": "跳转方式。",
       "defaultValue": "navigate",
       "enum": [
         "navigate",
@@ -17,7 +17,7 @@
     },
     "hover-class": {
       "type": "string",
-      "description": "点击后的样式类。\n默认值： none",
+      "description": "点击后的样式类。",
       "defaultValue": "none"
     },
     "hover-start-time": {
