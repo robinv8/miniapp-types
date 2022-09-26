@@ -18,6 +18,9 @@ const service = new Service({
       }
 
       function handleDescription(str) {
+        if (!str) {
+          return ''
+        }
         let result = str;
         result = result.replace(/\n?默认值： .*\n?/g, '');
         result = result.replace(/\n?版本要求： .*\n?/g, '');
