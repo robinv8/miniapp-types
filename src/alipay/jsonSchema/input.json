@@ -12,7 +12,7 @@
     },
     "type": {
       "type": "string",
-      "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。版本要求：numberpad、digitpad、 idcardpad 支持基础库 1.13.0 客户端 10.1.50 及以上，可通过\nmy.canIUse(\"input.type.numberpad\") 来检测。\n注意： 当启用数字键盘时，在 Android 客户端上，脱离文档流（如设置了 float 或 position: fixed 等样式）并指定了 bottom 属性的元素会被影响（该元素会被键盘顶起）。可以采用如下方法来暂且避免这个问题：当 input 框聚焦后隐藏被影响的元素。",
+      "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。",
       "defaultValue": "text",
       "enum": [
         "text",
@@ -90,11 +90,11 @@
     },
     "always-system": {
       "type": "boolean",
-      "description": "是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效。\n默认值：false\n版本要求：基础库 2.7.3 及以上"
+      "description": "是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效。\n默认值：false"
     },
     "onInput": {
       "tsType": "() => void",
-      "description": "键盘输入时触发 input 事件，event.detail = {value: value,cursor: cursor}。\n版本要求：cursor 字段基础库 1.14.0 及以上开始支持。"
+      "description": "键盘输入时触发 input 事件，event.detail = {value: value,cursor: cursor}。"
     },
     "onConfirm": {
       "tsType": "() => void",

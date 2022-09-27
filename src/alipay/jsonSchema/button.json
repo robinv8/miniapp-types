@@ -84,23 +84,23 @@
     },
     "onGetAuthorize": {
       "tsType": "() => void",
-      "description": "当 open-type 为 getAuthorize 时有效。\n当授权成功时触发。\n版本要求：基础库 1.11.0 及以上"
+      "description": "当 open-type 为 getAuthorize 时有效。\n当授权成功时触发。"
     },
     "onFollowLifestyle": {
       "tsType": "() => void",
-      "description": "当 open-type 为 lifestyle 时有效。\n当点击按钮时触发。\nevent.detail = { followStatus }，folllowStatus 合法值有 1、2、3，其中 1 表示已关注。2 表示用户不允许关注。3 表示发生未知错误；\n已知问题：基础库 1.0，当用户在点击按钮前已关注生活号，event.detail.followStatus 的值为 true。\n版本要求：基础库 1.11.0 及以上"
+      "description": "当 open-type 为 lifestyle 时有效。\n当点击按钮时触发。\nevent.detail = { followStatus }，folllowStatus 合法值有 1、2、3，其中 1 表示已关注。2 表示用户不允许关注。3 表示发生未知错误；\n已知问题：基础库 1.0，当用户在点击按钮前已关注生活号，event.detail.followStatus 的值为 true。"
     },
     "onError": {
       "tsType": "() => void",
-      "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。\n版本要求：基础库 1.11.0 及以上"
+      "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。"
     },
     "onGetUserInfo": {
       "tsType": "() => void",
-      "description": "当 open-type 为 getAuthorize 且 scope 为 userInfo 时有效。\n当授权成功时触发。\n版本要求 ：基础库  2.8.0 及以上\nevent.detail = {\n    userInfo: {\n        avatar, // 头像\n        nickName,  // 昵称\n  }\n}，"
+      "description": "当 open-type 为 getAuthorize 且 scope 为 userInfo 时有效。\n当授权成功时触发。"
     },
     "onGetPhoneNumber": {
       "tsType": "() => void",
-      "description": "当 open-type 为 getAuthorize 且 scope 为 phoneNumber 时有效。\n当授权成功时触发。\n版本要求 :基础库 2.8.0 及以上\n成功获取用户信息后返回\nevent.detail = {\n    encryptedData: '',  // 加密后的手机号\n    sign: '',  //  签名信息，如果在开放平台后台配置了加签方式后有此字段\n}，"
+      "description": "当 open-type 为 getAuthorize 且 scope 为 phoneNumber 时有效。\n当授权成功时触发。"
     }
   },
   "additionalProperties": false

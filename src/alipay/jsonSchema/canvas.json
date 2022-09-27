@@ -53,11 +53,11 @@
     },
     "type": {
       "type": "string",
-      "description": "类型。设置 type 属性后，会渲染成 native canvas。\n可选值：2d、webgl\n版本要求：基础库 2.7.0 及以上"
+      "description": "类型。设置 type 属性后，会渲染成 native canvas。\n可选值：2d、webgl"
     },
     "onReady": {
       "tsType": "() => void",
-      "description": "canvas 组件初始化成功触发。\n版本要求：基础库 2.7.0 及以上"
+      "description": "canvas 组件初始化成功触发。"
     }
   },
   "additionalProperties": false

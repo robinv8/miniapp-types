@@ -12,11 +12,11 @@
     },
     "onLoad": {
       "tsType": "() => void",
-      "description": "网页加载成功时触发此事件。e.detail = { src }\n版本要求：基础库 2.7.3 及以上"
+      "description": "网页加载成功时触发此事件。e.detail = { src }"
     },
     "onError": {
       "tsType": "() => void",
-      "description": "网页加载失败时触发此事件。e.detail = { src }\n版本要求：基础库 2.7.3 及以上"
+      "description": "网页加载失败时触发此事件。e.detail = { src }"
     }
   },
   "additionalProperties": false

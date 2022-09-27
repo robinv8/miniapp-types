@@ -93,35 +93,35 @@
     },
     "swipe-ratio": {
       "type": "number",
-      "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。\n默认值：0.2\n版本要求：基础库 1.24.11 及以上"
+      "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。\n默认值：0.2"
     },
     "swipe-speed": {
       "type": "number",
-      "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。\n默认值：0.05\n版本要求：基础库 1.24.11 及以上"
+      "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。"
     },
     "touch-angle": {
       "type": "number",
-      "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。\n默认值：45\n版本要求：基础库 1.24.11 及以上"
+      "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。\n默认值：45"
     },
     "display-multiple-items": {
       "type": "number",
-      "description": "同时显示的滑块数量。\n默认值：1\n版本要求：基础库 2.6.4 及以上"
+      "description": "同时显示的滑块数量。"
     },
     "easing-function": {
       "type": "string",
-      "description": "切换缓动动画类型。\n默认值：default\n版本要求：基础库 2.6.4 及以上"
+      "description": "切换缓动动画类型。"
     },
     "snap-to-edge": {
       "type": "boolean",
-      "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。\n默认值：false\n版本要求：基础库 2.6.4 及以上"
+      "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。"
     },
     "adjust-height": {
       "type": "string",
-      "description": "自动以指定滑块的高度为整个容器的高度。当 vertical 为 true 时，默认不调整。可选值为：\n\nfirst：第一个滑块。\ncurrent：实时的当前滑块。\nhighest：高度最大的滑块。\nnone：不根据滑块调整高度，容器高度取决于自身样式。\n默认值：first\n版本要求：基础库 2.6.4 及以上"
+      "description": "自动以指定滑块的高度为整个容器的高度。当 vertical 为 true 时，默认不调整。可选值为：\n\nfirst：第一个滑块。\ncurrent：实时的当前滑块。\nhighest：高度最大的滑块。\nnone：不根据滑块调整高度，容器高度取决于自身样式。"
     },
     "adjust-vertical-height": {
       "type": "boolean",
-      "description": "vertical 为 true 时强制使 adjust-height 生效。\n默认值：false\n版本要求：基础库 2.6.4 及以上"
+      "description": "vertical 为 true 时强制使 adjust-height 生效。"
     }
   },
   "additionalProperties": false
