@@ -32,11 +32,6 @@
       "description": "是否显示圆角",
       "defaultValue": "false"
     },
-    "close-on-slideDown": {
-      "type": "boolean",
-      "description": "是否在下滑一段距离后关闭",
-      "defaultValue": "false"
-    },
     "overlay-style": {
       "type": "string",
       "description": "自定义遮罩层样式"
@@ -72,6 +67,11 @@
     "bindClickOverlay": {
       "tsType": "() => void",
       "description": "点击遮罩层时触发"
+    },
+    "closeOnSlideDown": {
+      "type": "boolean",
+      "description": "是否在下滑一段距离后关闭",
+      "defaultValue": "false"
     }
   },
   "additionalProperties": false
