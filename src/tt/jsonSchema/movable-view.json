@@ -65,14 +65,6 @@
       "description": "是否使用动画",
       "defaultValue": "true"
     },
-    "htouchmove": {
-      "tsType": "() => void",
-      "description": "初次手指触摸后移动为横向的移动时触发"
-    },
-    "vtouchmove": {
-      "tsType": "() => void",
-      "description": "初次手指触摸后移动为纵向的移动时触发"
-    },
     "bindChange": {
       "tsType": "() => void",
       "description": "拖动过程中触发的事件"
@@ -80,6 +72,14 @@
     "bindScale": {
       "tsType": "() => void",
       "description": "缩放过程中触发的事件"
+    },
+    "bindHTouchMove": {
+      "tsType": "() => void",
+      "description": "初次手指触摸后移动为横向的移动时触发"
+    },
+    "bindVTouchMove": {
+      "tsType": "() => void",
+      "description": "初次手指触摸后移动为纵向的移动时触发"
     }
   },
   "additionalProperties": false

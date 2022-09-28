@@ -2,10 +2,6 @@
   "title": "voip-room",
   "type": "object",
   "properties": {
-    "openid": {
-      "type": "string",
-      "description": "进入房间用户的 openid"
-    },
     "mode": {
       "type": "string",
       "description": "对话窗口类型，自身传入 camera，其它用户传入 video",
@@ -19,6 +15,10 @@
     "bindError": {
       "tsType": "() => void",
       "description": "创建对话窗口失败时触发"
+    },
+    "openId": {
+      "type": "string",
+      "description": "进入房间用户的 openid"
     }
   },
   "additionalProperties": false,
