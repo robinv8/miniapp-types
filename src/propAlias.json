@@ -124,7 +124,5 @@
   "bindclosebackground": "bindCloseBackground",
   "bindleavebackground": "bindLeaveBackground",
   "close-on-slideDown": "closeOnSlideDown",
-  "auto-pause-if-navigate": "autoPauseIfNavigate",
-  "auto-pause-if-open-native": "autoPauseIfOpenNavigate",
   "openid": "openId"
 }
