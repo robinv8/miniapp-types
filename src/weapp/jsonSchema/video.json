@@ -125,6 +125,16 @@
       "description": "是否开启播放手势，即双击切换播放/暂停",
       "defaultValue": "false"
     },
+    "auto-pause-if-navigate": {
+      "type": "boolean",
+      "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的视频播放",
+      "defaultValue": "true"
+    },
+    "auto-pause-if-open-native": {
+      "type": "boolean",
+      "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的视频",
+      "defaultValue": "true"
+    },
     "vslide-gesture": {
       "type": "boolean",
       "description": "在非全屏模式下，是否开启亮度与音量调节手势（同 page-gesture）",
@@ -274,16 +284,6 @@
     "bindSeekComplete": {
       "tsType": "() => void",
       "description": "seek 完成时触发 (position iOS 单位 s, Android 单位 ms)"
-    },
-    "autoPauseIfNavigate": {
-      "type": "boolean",
-      "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的视频播放",
-      "defaultValue": "true"
-    },
-    "autoPauseIfOpenNavigate": {
-      "type": "boolean",
-      "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的视频",
-      "defaultValue": "true"
     }
   },
   "additionalProperties": false,

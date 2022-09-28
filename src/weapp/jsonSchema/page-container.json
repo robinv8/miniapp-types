@@ -40,6 +40,11 @@
       "type": "string",
       "description": "自定义弹出层样式"
     },
+    "closeOnSlideDown": {
+      "type": "boolean",
+      "description": "是否在下滑一段距离后关闭",
+      "defaultValue": "false"
+    },
     "bindBeforeEnter": {
       "tsType": "() => void",
       "description": "进入前触发"
@@ -67,11 +72,6 @@
     "bindClickOverlay": {
       "tsType": "() => void",
       "description": "点击遮罩层时触发"
-    },
-    "closeOnSlideDown": {
-      "type": "boolean",
-      "description": "是否在下滑一段距离后关闭",
-      "defaultValue": "false"
     }
   },
   "additionalProperties": false

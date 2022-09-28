@@ -110,6 +110,16 @@
       "description": "是否开启播放手势，即双击切换播放/暂停",
       "defaultValue": "false"
     },
+    "auto-pause-if-navigate": {
+      "type": "boolean",
+      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的视频",
+      "defaultValue": "true"
+    },
+    "auto-pause-if-open-native": {
+      "type": "boolean",
+      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的视频",
+      "defaultValue": "true"
+    },
     "bindPlay": {
       "tsType": "() => void",
       "description": "当开始/继续播放时触发play事件"
@@ -141,16 +151,6 @@
     "bindProgress": {
       "tsType": "() => void",
       "description": "加载进度变化时触发，只支持一段加载。event.detail = {buffered}，百分比"
-    },
-    "autoPauseIfNavigate": {
-      "type": "boolean",
-      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的视频",
-      "defaultValue": "true"
-    },
-    "autoPauseIfOpenNavigate": {
-      "type": "boolean",
-      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的视频",
-      "defaultValue": "true"
     }
   },
   "additionalProperties": false

@@ -46,6 +46,16 @@
       "description": "声音输出方式",
       "defaultValue": "speaker"
     },
+    "auto-pause-if-navigate": {
+      "type": "boolean",
+      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放",
+      "defaultValue": "true"
+    },
+    "auto-pause-if-open-native": {
+      "type": "boolean",
+      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放",
+      "defaultValue": "true"
+    },
     "enable-metadata": {
       "type": "boolean",
       "description": "是否回调metadata",
@@ -66,16 +76,6 @@
     "bindMetaDataChange": {
       "tsType": "() => void",
       "description": "metadata通知，detail = {info}"
-    },
-    "autoPauseIfNavigate": {
-      "type": "boolean",
-      "description": "当跳转到其它小程序页面时，是否自动暂停本页面的实时音视频播放",
-      "defaultValue": "true"
-    },
-    "autoPauseIfOpenNavigate": {
-      "type": "boolean",
-      "description": "当跳转到其它QQ原生页面时，是否自动暂停本页面的实时音视频播放",
-      "defaultValue": "true"
     }
   },
   "additionalProperties": false

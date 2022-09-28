@@ -12,13 +12,13 @@
       "description": "仅在 mode 为 camera 时有效，前置或后置，值为front, back",
       "defaultValue": "front"
     },
-    "bindError": {
-      "tsType": "() => void",
-      "description": "创建对话窗口失败时触发"
-    },
     "openId": {
       "type": "string",
       "description": "进入房间用户的 openid"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "创建对话窗口失败时触发"
     }
   },
   "additionalProperties": false,
