@@ -28,7 +28,12 @@ platforms.forEach((platform) => {
     const files = fs.readdirSync(jsonPath)
     files.forEach(file => {
         const jsonSchema = require(path.join(jsonPath, file))
-        const keys = Object.keys(jsonSchema.properties).filter(key => key.match(/^bind/) && key === key.toLowerCase())
+        const keys = Object.keys(jsonSchema.properties).filter(key => {
+            if (propAlias[key]) {
+                return true
+            }
+            return key.match(/^bind/) && key === key.toLowerCase()
+        })
         if (keys.length === 0) {
             return
         }
