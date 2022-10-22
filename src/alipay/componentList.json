@@ -271,6 +271,15 @@
     }
   },
   {
+    "name": "camera",
+    "url": "https://opendocs.alipay.com/mini/03qegu",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
+  },
+  {
     "name": "map",
     "url": "https://opendocs.alipay.com/mini/component/map",
     "fields": {

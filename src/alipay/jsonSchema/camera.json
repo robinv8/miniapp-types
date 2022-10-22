@@ -1,0 +1,73 @@
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "应用模式。",
+      "defaultValue": "normal",
+      "enum": [
+        "normal",
+        "scanCode"
+      ]
+    },
+    "device-position": {
+      "type": "string",
+      "description": "摄像头朝向，前置或后置。",
+      "defaultValue": "back",
+      "enum": [
+        "front",
+        "back"
+      ]
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯。",
+      "defaultValue": "auto",
+      "enum": [
+        "auto",
+        "on",
+        "off"
+      ]
+    },
+    "output-dimension": {
+      "type": "string",
+      "description": "相机拍照，录制的分辨率。",
+      "defaultValue": "720P",
+      "enum": [
+        "360P",
+        "540P",
+        "720P",
+        "1080P",
+        "max"
+      ]
+    },
+    "frame-size": {
+      "type": "string",
+      "description": "指定期望的相机帧数据尺寸。",
+      "defaultValue": "medium",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "onReady": {
+      "tsType": "() => void",
+      "description": "相机初始化成功时触发。"
+    },
+    "onStop": {
+      "tsType": "() => void",
+      "description": "摄像头在非正常终止时触发，如退出后台等情况。"
+    },
+    "onError": {
+      "tsType": "() => void",
+      "description": "用户不允许使用摄像头时触发。event.detail = { errorCode, errorMessage }。"
+    },
+    "onScanCode": {
+      "tsType": "() => void",
+      "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效。"
+    }
+  },
+  "additionalProperties": false
+}
