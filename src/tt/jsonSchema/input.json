@@ -8,7 +8,7 @@
     },
     "type": {
       "type": "string",
-      "description": "input 的类型，详情见 type 的合法值",
+      "description": "input 的类型，详情见 type 的合法值\n",
       "defaultValue": "text",
       "enum": [
         "text",
@@ -29,6 +29,10 @@
       "type": "string",
       "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color 三个 css 特性"
     },
+    "placeholder-class": {
+      "type": "string",
+      "description": "指定 placeholder 的样式类"
+    },
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
@@ -46,22 +50,22 @@
     },
     "focus": {
       "type": "boolean",
-      "description": "获取焦点，详情见 Bug & Tip",
+      "description": "获取焦点，详情见 Bug & Tip\n",
       "defaultValue": "false"
     },
     "cursor": {
       "type": "number",
-      "description": "指定 focus 时的光标位置，详情见光标位置说明",
+      "description": "指定 focus 时的光标位置，详情见光标位置说明\n",
       "defaultValue": "-1"
     },
     "selection-start": {
       "type": "number",
-      "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明",
+      "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明\n",
       "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明",
+      "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明\n",
       "defaultValue": "-1"
     },
     "adjust-position": {
@@ -71,7 +75,7 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值",
+      "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值\n",
       "defaultValue": "done",
       "enum": [
         "send",
@@ -81,21 +85,31 @@
         "done"
       ]
     },
+    "confirm-hold": {
+      "type": "boolean",
+      "description": "点击键盘右下角按钮时是否保持键盘不收起",
+      "defaultValue": "false"
+    },
+    "hold-keyboard": {
+      "type": "boolean",
+      "description": "focus 时，点击页面的时候不收起键盘",
+      "defaultValue": "false"
+    },
     "bindInput": {
       "tsType": "() => void",
-      "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明"
+      "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明\n"
     },
     "bindFocus": {
       "tsType": "() => void",
-      "description": "输入框聚焦时触发，详情见 bindfocus 说明"
+      "description": "输入框聚焦时触发，详情见 bindfocus 说明\n"
     },
     "bindBlur": {
       "tsType": "() => void",
-      "description": "输入框失去焦点时触发，详情见 bindblur 说明"
+      "description": "输入框失去焦点时触发，详情见 bindblur 说明\n"
     },
     "bindConfirm": {
       "tsType": "() => void",
-      "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明"
+      "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明\n"
     }
   },
   "additionalProperties": false
