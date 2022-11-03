@@ -2,6 +2,23 @@
 
 同步小程序组件文档生成 types 类型声明
 
+## 安装
+
+* npm 方式
+```
+npm i miniapp-types
+```
+* yarn 方式
+```
+yarn add miniapp-types
+```
+
+* pnpm 方式
+```
+pnpm install miniapp-types
+```
+
+
 ## 支持小程序平台
 * [百度小程序](https://smartprogram.baidu.com/docs/develop/component/component/)
 * [京东小程序](https://mp-docs.jd.com/component/)
