@@ -1,0 +1,112 @@
+{
+  "title": "movable-view",
+  "type": "object",
+  "properties": {
+    "direction": {
+      "type": "string",
+      "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none。",
+      "defaultValue": "none"
+    },
+    "inertia": {
+      "type": "boolean",
+      "description": "movable-view 是否带有惯性。",
+      "defaultValue": "false"
+    },
+    "out-of-bounds": {
+      "type": "boolean",
+      "description": "超过可移动区域后，movable-view 是否还可以移动。",
+      "defaultValue": "false"
+    },
+    "x": {
+      "type": "number",
+      "description": "定义 x 轴方向的偏移，会换算为 left 属性，如果 x 的值不在可移动范围内，会自动移动到可移动范围。",
+      "defaultValue": "0"
+    },
+    "y": {
+      "type": "number",
+      "description": "定义 y 轴方向的偏移，会换算为 top 属性，如果 y 的值不在可移动范围内，会自动移动到可移动范围。",
+      "defaultValue": "0"
+    },
+    "damping": {
+      "type": "number",
+      "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快。",
+      "defaultValue": "20"
+    },
+    "friction": {
+      "type": "number",
+      "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值。",
+      "defaultValue": "2"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用。",
+      "defaultValue": "false"
+    },
+    "scale": {
+      "type": "boolean",
+      "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内。",
+      "defaultValue": "false"
+    },
+    "scale-min": {
+      "type": "number",
+      "description": "定义缩放倍数最小值。",
+      "defaultValue": "0"
+    },
+    "scale-max": {
+      "type": "number",
+      "description": "定义缩放倍数最大值。",
+      "defaultValue": "10"
+    },
+    "scale-value": {
+      "type": "number",
+      "description": "定义缩放倍数，取值范围为 0.5 - 10。",
+      "defaultValue": "1"
+    },
+    "animation": {
+      "type": "boolean",
+      "description": "是否使用动画。",
+      "defaultValue": "false"
+    },
+    "onTouchStart": {
+      "tsType": "() => void",
+      "description": "触摸动作开始，事件会向父节点传递。"
+    },
+    "catchTouchStart": {
+      "tsType": "() => void",
+      "description": "触摸动作开始，事件仅作用于组件，不向父节点传递。"
+    },
+    "onTouchMove": {
+      "tsType": "() => void",
+      "description": "触摸移动事件，事件会向父节点传递。"
+    },
+    "catchTouchMove": {
+      "tsType": "() => void",
+      "description": "触摸移动事件，事件仅作用于组件，不向父节点传递。"
+    },
+    "onTouchEnd": {
+      "tsType": "() => void",
+      "description": "触摸动作结束，事件会向父节点传递。"
+    },
+    "catchTouchEnd": {
+      "tsType": "() => void",
+      "description": "触摸动作结束，事件仅作用于组件，不向父节点传递。"
+    },
+    "onTouchCancel": {
+      "tsType": "() => void",
+      "description": "触摸动作被打断，如来电提醒、弹窗。"
+    },
+    "onChange": {
+      "tsType": "() => void",
+      "description": "拖动过程中触发的事件，event.detail = {x: x, y: y, source: source}，其中 source 表示产生移动的原因，值可为 touch（拖动）。"
+    },
+    "onChangeEnd": {
+      "tsType": "() => void",
+      "description": "拖动结束触发的事件，event.detail = {x: x, y: y}。"
+    },
+    "onScale": {
+      "tsType": "() => void",
+      "description": "缩放过程中触发的事件，event.detail = {x, y, scale}。"
+    }
+  },
+  "additionalProperties": false
+}

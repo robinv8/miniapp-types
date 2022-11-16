@@ -1,0 +1,98 @@
+{
+  "title": "video",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "是"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "否",
+      "defaultValue": "false"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "否",
+      "defaultValue": "false"
+    },
+    "controls": {
+      "type": "boolean",
+      "description": "否",
+      "defaultValue": "true"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "否",
+      "defaultValue": "false"
+    },
+    "objectFit": {
+      "type": "string",
+      "description": "否",
+      "defaultValue": "contain"
+    },
+    "initialTime": {
+      "type": "number",
+      "description": "否",
+      "defaultValue": "0"
+    },
+    "poster": {
+      "type": "string",
+      "description": "否"
+    },
+    "mobilenet-hint-type": {
+      "type": "number",
+      "description": "否",
+      "defaultValue": "1"
+    },
+    "bindPlay": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindPause": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindEnded": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindTimeUpdate": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindFullScreenChange": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindWaiting": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindLoadedData": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindLoadedMetaData": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindLoadStart": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindSeeked": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindSeeking": {
+      "tsType": "() => void",
+      "description": "否"
+    }
+  },
+  "additionalProperties": false
+}

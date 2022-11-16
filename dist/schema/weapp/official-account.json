@@ -1,0 +1,15 @@
+{
+  "title": "official-account",
+  "type": "object",
+  "properties": {
+    "bindLoad": {
+      "tsType": "() => void",
+      "defaultValue": "组件加载成功时触发"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "defaultValue": "组件加载失败时触发"
+    }
+  },
+  "additionalProperties": false
+}

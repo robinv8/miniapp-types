@@ -1,0 +1,70 @@
+{
+  "title": "map",
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "description": "是"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "是"
+    },
+    "scale": {
+      "type": "number",
+      "description": "否",
+      "defaultValue": "16"
+    },
+    "theme": {
+      "type": "string",
+      "description": "否",
+      "defaultValue": "normal"
+    },
+    "showLocation": {
+      "type": "boolean",
+      "description": "否",
+      "defaultValue": "false"
+    },
+    "includePoints": {
+      "type": "array（point)",
+      "description": "否"
+    },
+    "markers": {
+      "type": "array(marker)",
+      "description": "否"
+    },
+    "polyline": {
+      "type": "array(polyline)",
+      "description": "否"
+    },
+    "circles": {
+      "type": "array(circle)",
+      "description": "否"
+    },
+    "controls": {
+      "type": "array(control)",
+      "description": "否"
+    },
+    "bindMarkerTap": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindCallOutTap": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindControlTap": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindRegionChange": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindTap": {
+      "tsType": "() => void",
+      "description": "否"
+    }
+  },
+  "additionalProperties": false
+}

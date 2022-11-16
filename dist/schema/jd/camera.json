@@ -1,0 +1,42 @@
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "否",
+      "defaultValue": "normal",
+      "enum": [
+        "normal"
+      ]
+    },
+    "device-position": {
+      "type": "string",
+      "description": "否",
+      "defaultValue": "back",
+      "enum": [
+        "front",
+        "back"
+      ]
+    },
+    "flash": {
+      "type": "string",
+      "description": "否",
+      "defaultValue": "auto",
+      "enum": [
+        "auto",
+        "on",
+        "off"
+      ]
+    },
+    "bindStop": {
+      "tsType": "() => void",
+      "description": "否"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "否"
+    }
+  },
+  "additionalProperties": false
+}

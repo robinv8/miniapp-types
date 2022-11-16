@@ -1,0 +1,11 @@
+{
+  "title": "cover-view",
+  "type": "object",
+  "properties": {
+    "onTap": {
+      "tsType": "() => void",
+      "description": "点击事件回调。"
+    }
+  },
+  "additionalProperties": false
+}

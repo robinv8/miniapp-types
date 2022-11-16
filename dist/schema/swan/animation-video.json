@@ -1,0 +1,52 @@
+{
+  "title": "animation-video",
+  "type": "object",
+  "properties": {
+    "resource-width": {
+      "type": "number",
+      "description": "组件使用的 video 视频资源的宽度（单位：px）",
+      "defaultValue": "800"
+    },
+    "resource-height": {
+      "type": "number",
+      "description": "组件使用的 video 视频资源的高度（单位：px）",
+      "defaultValue": "400"
+    },
+    "canvas-style": {
+      "type": "string",
+      "description": "用于设置动画画布的 CSS 样式",
+      "defaultValue": "width: 400px;height: 400px"
+    },
+    "path": {
+      "type": "string",
+      "description": "动画资源地址，支持相对路径以及远程地址。如果是远程路径，注意 response header 里需要设置 Access-Control-Allow-Origin 来防止跨域问题"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "动画是否循环播放",
+      "defaultValue": "false"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "动画是否自动播放",
+      "defaultValue": "false"
+    },
+    "alpha-direction": {
+      "type": "string",
+      "description": "视频资源中 alpha 通道的方向，left 表示 alpha 通道在资源的左边，right 表示 alpha 通道在资源的右边。详情请参考透明视频设计资源示例",
+      "defaultValue": "left"
+    },
+    "bindStarted": {
+      "tsType": "() => void",
+      "description": "动画开始播放的回调"
+    },
+    "bindEnded": {
+      "tsType": "() => void",
+      "description": "当播放到末尾时触发 ended 事件（自然播放结束会触发回调，循环播放结束及暂停动画不会触发）"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "path"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "icon",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "icon 的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear"
+    },
+    "size": {
+      "type": "number",
+      "description": "icon 的大小，单位 px",
+      "defaultValue": "23"
+    },
+    "color": {
+      "type": "string",
+      "description": "icon 的颜色，同 css 的 color"
+    }
+  },
+  "additionalProperties": false
+}

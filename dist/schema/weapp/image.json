@@ -1,0 +1,55 @@
+{
+  "title": "image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图片资源地址"
+    },
+    "mode": {
+      "type": "string",
+      "description": "图片裁剪、缩放的模式",
+      "defaultValue": "scaleToFill",
+      "enum": [
+        "scaleToFill",
+        "aspectFit",
+        "aspectFill",
+        "widthFix",
+        "heightFix",
+        "top",
+        "bottom",
+        "center",
+        "left",
+        "right",
+        "top left",
+        "top right",
+        "bottom left",
+        "bottom right"
+      ]
+    },
+    "webp": {
+      "type": "boolean",
+      "description": "默认不解析 webP 格式，只支持网络资源",
+      "defaultValue": "false"
+    },
+    "lazy-load": {
+      "type": "boolean",
+      "description": "图片懒加载，在即将进入一定范围（上下三屏）时才开始加载",
+      "defaultValue": "false"
+    },
+    "show-menu-by-longpress": {
+      "type": "boolean",
+      "description": "长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。",
+      "defaultValue": "false"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "当错误发生时触发，event.detail = {errMsg}"
+    },
+    "bindLoad": {
+      "tsType": "() => void",
+      "description": "当图片载入完毕时触发，event.detail = {height, width}"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,50 @@
+{
+  "title": "ar-camera",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "AR 项目唯一标识，在 DuMixAR 内容开放平台上传生成 AR 项目后获取 AR Key"
+    },
+    "type": {
+      "type": "string",
+      "description": "AR 相机类型，在 DuMixAR 内容开放平台上传生成 AR 项目后获取 AR Type：\n2D 跟踪类型：0\nSLAM 类型：5\nIMU 类型：8",
+      "enum": [
+        "0",
+        "5",
+        "8"
+      ]
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯，值为 auto、on、off",
+      "defaultValue": "off",
+      "enum": [
+        "auto",
+        "on",
+        "off"
+      ]
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "用户不允许使用摄像头或扫码失败时触发"
+    },
+    "bindLoad": {
+      "tsType": "() => void",
+      "description": "AR 加载成功时触发"
+    },
+    "bindMessage": {
+      "tsType": "() => void",
+      "description": "开发者制作 AR 项目时可自定义按键，用户点击时会收到事件和数据，用户自定义事件格式参见代码示例 2：用户自定义事件"
+    },
+    "bindScanCode": {
+      "tsType": "() => void",
+      "description": "扫描识图结束后触发"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "key",
+    "type"
+  ]
+}

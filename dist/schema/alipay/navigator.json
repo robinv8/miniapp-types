@@ -1,0 +1,37 @@
+{
+  "title": "navigator",
+  "type": "object",
+  "properties": {
+    "open-type": {
+      "type": "string",
+      "description": "跳转方式。",
+      "defaultValue": "navigate",
+      "enum": [
+        "navigate",
+        "redirect",
+        "switchTab",
+        "navigateBack",
+        "reLaunch",
+        "exit"
+      ]
+    },
+    "hover-class": {
+      "type": "string",
+      "description": "点击后的样式类。",
+      "defaultValue": "none"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多少时间后出现点击状态，单位 ms。"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击状态保留时间，单位 ms。"
+    },
+    "url": {
+      "type": "string",
+      "description": "当前小程序内的跳转链接。"
+    }
+  },
+  "additionalProperties": false
+}

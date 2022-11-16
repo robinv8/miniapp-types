@@ -1,0 +1,84 @@
+{
+  "title": "swiper",
+  "type": "object",
+  "properties": {
+    "indicator-dots": {
+      "type": "boolean",
+      "description": "是否显示面板指示点",
+      "defaultValue": "false"
+    },
+    "indicator-color": {
+      "type": "string",
+      "description": "指示点颜色",
+      "defaultValue": "rgba(0, 0, 0, .3)"
+    },
+    "indicator-active-color": {
+      "type": "string",
+      "description": "当前选中的指示点颜色",
+      "defaultValue": "#333"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "是否自动切换",
+      "defaultValue": "false"
+    },
+    "current": {
+      "type": "number",
+      "description": "当前所在页面的 index",
+      "defaultValue": "0"
+    },
+    "current-item-id": {
+      "type": "string",
+      "description": "当前所在滑块的 item-id ，不能与 current 被同时指定"
+    },
+    "interval": {
+      "type": "number",
+      "description": "自动切换时间间隔（单位：ms）",
+      "defaultValue": "5000"
+    },
+    "duration": {
+      "type": "number",
+      "description": "滑动动画时长（单位：ms）",
+      "defaultValue": "500"
+    },
+    "circular": {
+      "type": "boolean",
+      "description": "是否采用衔接滑动",
+      "defaultValue": "false"
+    },
+    "vertical": {
+      "type": "boolean",
+      "description": "滑动方向是否为纵向",
+      "defaultValue": "false"
+    },
+    "previous-margin": {
+      "type": "string",
+      "description": "前边距，可用于露出前一项的一小部分，支持 px 和 rpx",
+      "defaultValue": "\"0px\""
+    },
+    "next-margin": {
+      "type": "string",
+      "description": "后边距，可用于露出后一项的一小部分，支持 px 和 rpx",
+      "defaultValue": "\"0px\""
+    },
+    "display-multiple-items": {
+      "type": "number",
+      "description": "同时显示的滑块数量",
+      "defaultValue": "1"
+    },
+    "disable-touchmove": {
+      "type": "boolean",
+      "description": "是否停止响应用户 touchmove 操作",
+      "defaultValue": "false"
+    },
+    "bindChange": {
+      "tsType": "() => void",
+      "description": "current 改变时会触发 change 事件，event.detail = {current: current, source: source}"
+    },
+    "bindAnimationFinish": {
+      "tsType": "() => void",
+      "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
+    }
+  },
+  "additionalProperties": false
+}

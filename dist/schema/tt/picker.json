@@ -1,0 +1,28 @@
+{
+  "title": "picker",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "选择器类型，详见 mode 的合法值",
+      "defaultValue": "\"selector\"",
+      "enum": [
+        "selector",
+        "multiSelector",
+        "time",
+        "date",
+        "region"
+      ]
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "bindCancel": {
+      "tsType": "() => void",
+      "description": "取消选择收起 picker 时触发"
+    }
+  },
+  "additionalProperties": false
+}

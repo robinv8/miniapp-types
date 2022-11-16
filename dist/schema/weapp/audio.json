@@ -1,0 +1,59 @@
+{
+  "title": "audio",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "audio 组件的唯一标识符"
+    },
+    "src": {
+      "type": "string",
+      "description": "要播放音频的资源地址"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "是否循环播放",
+      "defaultValue": "false"
+    },
+    "controls": {
+      "type": "boolean",
+      "description": "是否显示默认控件",
+      "defaultValue": "false"
+    },
+    "poster": {
+      "type": "string",
+      "description": "默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效"
+    },
+    "name": {
+      "type": "string",
+      "description": "默认控件上的音频名字，如果 controls 属性值为 false 则设置 name 无效",
+      "defaultValue": "未知音频"
+    },
+    "author": {
+      "type": "string",
+      "description": "默认控件上的作者名字，如果 controls 属性值为 false 则设置 author 无效",
+      "defaultValue": "未知作者"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "当发生错误时触发 error 事件，detail = {errMsg:MediaError.code}"
+    },
+    "bindPlay": {
+      "tsType": "() => void",
+      "description": "当开始/继续播放时触发 play 事件"
+    },
+    "bindPause": {
+      "tsType": "() => void",
+      "description": "当暂停播放时触发 pause 事件"
+    },
+    "bindTimeUpdate": {
+      "tsType": "() => void",
+      "description": "当播放进度改变时触发 timeupdate 事件，detail = {currentTime, duration}"
+    },
+    "bindEnded": {
+      "tsType": "() => void",
+      "description": "当播放到末尾时触发 ended 事件"
+    }
+  },
+  "additionalProperties": false
+}

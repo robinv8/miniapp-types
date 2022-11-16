@@ -1,0 +1,166 @@
+{
+  "title": "scroll-view",
+  "type": "object",
+  "properties": {
+    "scroll-x": {
+      "type": "boolean",
+      "description": "允许横向滚动",
+      "defaultValue": "false"
+    },
+    "scroll-y": {
+      "type": "boolean",
+      "description": "允许纵向滚动",
+      "defaultValue": "false"
+    },
+    "upper-threshold": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "距顶部/左边多远时，触发 scrolltoupper 事件",
+      "defaultValue": "50"
+    },
+    "lower-threshold": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "距底部/右边多远时，触发 scrolltolower 事件",
+      "defaultValue": "50"
+    },
+    "scroll-top": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "设置竖向滚动条位置"
+    },
+    "scroll-left": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "设置横向滚动条位置"
+    },
+    "scroll-into-view": {
+      "type": "string",
+      "description": "值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素"
+    },
+    "scroll-with-animation": {
+      "type": "boolean",
+      "description": "在设置滚动条位置时使用动画过渡",
+      "defaultValue": "false"
+    },
+    "enable-back-to-top": {
+      "type": "boolean",
+      "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
+      "defaultValue": "false"
+    },
+    "enable-flex": {
+      "type": "boolean",
+      "description": "启用 flexbox 布局。开启后，当前节点声明了 `display: flex` 就会成为 flex container，并作用于其孩子节点。",
+      "defaultValue": "false"
+    },
+    "scroll-anchoring": {
+      "type": "boolean",
+      "description": "开启 scroll anchoring 特性，即控制滚动位置不随内容变化而抖动，仅在 iOS 下生效，安卓下可参考 CSS `overflow-anchor` 属性。",
+      "defaultValue": "false"
+    },
+    "enable-passive": {
+      "type": "boolean",
+      "description": "开启 passive 特性，能优化一定的滚动性能",
+      "defaultValue": "false"
+    },
+    "refresher-enabled": {
+      "type": "boolean",
+      "description": "开启自定义下拉刷新",
+      "defaultValue": "false"
+    },
+    "refresher-threshold": {
+      "type": "number",
+      "description": "设置自定义下拉刷新阈值",
+      "defaultValue": "45"
+    },
+    "refresher-default-style": {
+      "type": "string",
+      "description": "设置自定义下拉刷新默认样式，支持设置 `black | white | none`， none 表示不使用默认样式",
+      "defaultValue": "\"black\""
+    },
+    "refresher-background": {
+      "type": "string",
+      "description": "设置自定义下拉刷新区域背景颜色",
+      "defaultValue": "\"#FFF\""
+    },
+    "refresher-triggered": {
+      "type": "boolean",
+      "description": "设置当前下拉刷新状态，true 表示下拉刷新已经被触发，false 表示下拉刷新未被触发",
+      "defaultValue": "false"
+    },
+    "enhanced": {
+      "type": "boolean",
+      "description": "启用 scroll-view 增强特性，启用后可通过 ScrollViewContext 操作 scroll-view",
+      "defaultValue": "false"
+    },
+    "bounces": {
+      "type": "boolean",
+      "description": "iOS 下 scroll-view 边界弹性控制 (同时开启 enhanced 属性后生效)",
+      "defaultValue": "true"
+    },
+    "show-scrollbar": {
+      "type": "boolean",
+      "description": "滚动条显隐控制 (同时开启 enhanced 属性后生效)",
+      "defaultValue": "true"
+    },
+    "paging-enabled": {
+      "type": "boolean",
+      "description": "分页滑动效果 (同时开启 enhanced 属性后生效)",
+      "defaultValue": "false"
+    },
+    "fast-deceleration": {
+      "type": "boolean",
+      "description": "滑动减速速率控制 (同时开启 enhanced 属性后生效)",
+      "defaultValue": "false"
+    },
+    "bindDragStart": {
+      "tsType": "() => void",
+      "description": "滑动开始事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft }"
+    },
+    "bindDragging": {
+      "tsType": "() => void",
+      "description": "滑动事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft }"
+    },
+    "bindDragEnd": {
+      "tsType": "() => void",
+      "description": "滑动结束事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft, velocity }"
+    },
+    "bindScrollToUpper": {
+      "tsType": "() => void",
+      "description": "滚动到顶部/左边时触发"
+    },
+    "bindScrollToLower": {
+      "tsType": "() => void",
+      "description": "滚动到底部/右边时触发"
+    },
+    "bindScroll": {
+      "tsType": "() => void",
+      "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
+    },
+    "bindRefresherPulling": {
+      "tsType": "() => void",
+      "description": "自定义下拉刷新控件被下拉"
+    },
+    "bindRefresherRefresh": {
+      "tsType": "() => void",
+      "description": "自定义下拉刷新被触发"
+    },
+    "bindRefresherRestore": {
+      "tsType": "() => void",
+      "description": "自定义下拉刷新被复位"
+    },
+    "bindRefresherAbort": {
+      "tsType": "() => void",
+      "description": "自定义下拉刷新被中止"
+    }
+  },
+  "additionalProperties": false
+}

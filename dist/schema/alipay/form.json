@@ -1,0 +1,19 @@
+{
+  "title": "form",
+  "type": "object",
+  "properties": {
+    "report-submit": {
+      "type": "boolean",
+      "description": "onSubmit 回调是否返回 formId。用于发送 消息，使用前可使用 canIUse ('form.report-submit')判断是否支持。\n注意： formId 需要真机调试才会有返回值。"
+    },
+    "onSubmit": {
+      "tsType": "() => void",
+      "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'slider': '80'}, buttonTarget: {'dataset': 'buttonDataset'} } (可以在 submit 按钮上添加自定义参数)。"
+    },
+    "onReset": {
+      "tsType": "() => void",
+      "description": "表单重置时会触发 reset 事件。"
+    }
+  },
+  "additionalProperties": false
+}

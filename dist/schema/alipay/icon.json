@@ -1,0 +1,32 @@
+{
+  "title": "icon",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "icon 类型。有效值： info、warn、waiting、cancel、download、search、clear、success、success_no_circle、loading。",
+      "enum": [
+        "info",
+        "warn",
+        "waiting",
+        "cancel",
+        "download",
+        "search",
+        "clear",
+        "success",
+        "success_no_circle",
+        "loading"
+      ]
+    },
+    "size": {
+      "type": "number",
+      "description": "icon 大小，单位 px。",
+      "defaultValue": "23"
+    },
+    "color": {
+      "type": "string",
+      "description": "icon 颜色，同 CSS 色值。"
+    }
+  },
+  "additionalProperties": false
+}

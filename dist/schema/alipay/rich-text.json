@@ -1,0 +1,35 @@
+{
+  "title": "rich-text",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "description": "节点列表。目前仅支持使用 Array 类型，如果需要支持 HTML String，则需要自己将 HTML String 转化为 nodes 数组，可使用 mini-html-parser2 转换。"
+    },
+    "onTap": {
+      "tsType": "() => void",
+      "description": "触摸。"
+    },
+    "onTouchstart": {
+      "tsType": "() => void",
+      "description": "触摸动作开始。"
+    },
+    "onTouchmove": {
+      "tsType": "() => void",
+      "description": "触摸移动事件。"
+    },
+    "onTouchcancel": {
+      "tsType": "() => void",
+      "description": "触摸动作被打断。"
+    },
+    "onTouchend": {
+      "tsType": "() => void",
+      "description": "触摸动作结束。"
+    },
+    "onLongtap": {
+      "tsType": "() => void",
+      "description": "触摸后，超过 500ms 再离开。"
+    }
+  },
+  "additionalProperties": false
+}

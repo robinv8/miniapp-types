@@ -1,0 +1,159 @@
+{
+  "title": "map",
+  "type": "object",
+  "properties": {
+    "style": {
+      "type": "string",
+      "description": "内联样式。"
+    },
+    "class": {
+      "type": "string",
+      "description": "样式名。"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "中心纬度。"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "中心经度。"
+    },
+    "scale": {
+      "type": "number",
+      "description": "缩放级别，取值范围为 5-18。"
+    },
+    "skew": {
+      "type": "number",
+      "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角。"
+    },
+    "rotate": {
+      "type": "number",
+      "description": "顺时针旋转的角度，范围 0 ~ 360。"
+    },
+    "markers": {
+      "type": "array",
+      "description": "覆盖物，在地图上的一个点绘制图标。"
+    },
+    "polyline": {
+      "type": "array",
+      "description": "覆盖物，多个连贯点的集合（路线）。"
+    },
+    "circles": {
+      "type": "array",
+      "description": "覆盖物，圆。"
+    },
+    "controls": {
+      "type": "array",
+      "description": "在地图 View 之上的一个控件。"
+    },
+    "polygon": {
+      "type": "array",
+      "description": "覆盖物，多边形。"
+    },
+    "show-location": {
+      "type": "boolean",
+      "description": "是否显示带有方向的当前定位点。"
+    },
+    "include-points": {
+      "type": "array",
+      "description": "视野将进行小范围延伸包含传入的坐标。\n\n[{\n\n   latitude: 30.279383,\n\n   longitude: 120.131441,\n\n}]"
+    },
+    "include-padding": {
+      "type": "object",
+      "description": "视野在地图 padding 范围内展示。\n\n{\n\n    left:0, right:0,\n\n    top:0, bottom:0\n\n}"
+    },
+    "ground-overlays": {
+      "type": "array",
+      "description": "覆盖物，自定义贴图。\n\n[{\n\n    // 刷新的时候需要变更id值\n\n    id:'0', \n\n    // 右上，左下\n\n    'include-points':[{\n\n        latitude: 39.935029,\n\n        longitude: 116.384377,\n\n    },{\n\n        latitude: 39.939577,\n\n        longitude: 116.388331,\n\n    }],\n\n    image:'/image/overlay.png',\n\n    alpha:0.25,\n\n    zIndex:1\n\n}]"
+    },
+    "tile-overlay": {
+      "type": "object",
+      "description": "覆盖物，网格贴图。\n\n{\n\n    url:'http://xxx',\n\n    type:0, // url类型\n\n    tileWidth:256,\n\n    tileHeight:256,\n\n    zIndex:1,\n\n}"
+    },
+    "custom-map-style": {
+      "type": "string",
+      "description": "设置地图样式。\n\ndefault：默认样式\nlight：精简样式"
+    },
+    "panels": {
+      "type": "array",
+      "description": "基于 map 高级定制渲染，设置覆盖在地图上的 view。"
+    },
+    "setting": {
+      "type": "object",
+      "description": "设置。\n\n{\n\n  // 手势\n\n  gestureEnable: 1,\n\n  // 比例尺\n\n  showScale: 1,\n\n  // 指南针\n\n  showCompass: 1,\n\n  //双手下滑\n\n  tiltGesturesEnabled: 1,\n\n  // 交通路况展示\n\n  trafficEnabled: 0,\n\n  // 地图 POI 信息\n\n  showMapText: 0,\n\n  // 高德地图 logo 位置\n\n  logoPosition: {\n\n    centerX: 150,\n\n    centerY: 90\n\n  }\n\n// 自定义地图样式\n\n customMapStyleSrc: \"/resources/style/style_v7.data\"\n\n}"
+    },
+    "optimize": {
+      "type": "string",
+      "description": "内联样式。"
+    },
+    "onMarkerTap": {
+      "tsType": "() => void",
+      "description": "点击 Marker 时触发。\n\n{\n\n    markerId,\n\n    latitude,\n\n    longitude, \n\n}"
+    },
+    "onCalloutTap": {
+      "tsType": "() => void",
+      "description": "点击 Marker 对应的 callout 时触发。\n\n{\n\n    markerId,\n\n    latitude,\n\n    longitude, \n\n}"
+    },
+    "onControlTap": {
+      "tsType": "() => void",
+      "description": "点击 control 时触发。\n\n{\n\n    controlId\n\n}"
+    },
+    "onRegionChange": {
+      "tsType": "() => void",
+      "description": "视野发生变化时触发。\n\n基础库 1.24.0 版本新增 skew、rotate、causedBy 返回；\n\nbegin 阶段 causedBy 有效值为 update(接口触发)、gesture(手势触发)；\n\nend 阶段 causedBy 有效值为 update(接口触发)、drag/scale/skew/rotate (手势触发)。\n\n{\n\n    type: \"begin/end\", \n\n    latitude,\n\n    longitude, \n\n    scale,\n\n    skew,\n\n    rotate,\n\n    causedBy: \"update/gesture\"\n\n}"
+    },
+    "onTap": {
+      "tsType": "() => void",
+      "description": "点击地图时触发。\n\n{\n\n    latitude,\n\n    longitude, \n\n}"
+    },
+    "onPanelTap": {
+      "tsType": "() => void",
+      "description": "点击 panel 时触发。\n\n{ \n\n   panelId,\n\n   layoutId,\n\n}"
+    },
+    "show-compass": {
+      "type": "boolean",
+      "description": "显示指南针。"
+    },
+    "show-scale": {
+      "type": "boolean",
+      "description": "显示比例尺。"
+    },
+    "enable-overlooking": {
+      "type": "boolean",
+      "description": "开启俯视。"
+    },
+    "enable-zoom": {
+      "type": "boolean",
+      "description": "是否支持缩放。"
+    },
+    "enable-scroll": {
+      "type": "boolean",
+      "description": "是否支持拖动。"
+    },
+    "enable-rotate": {
+      "type": "boolean",
+      "description": "是否支持旋转。"
+    },
+    "enable-traffic": {
+      "type": "boolean",
+      "description": "是否开启实时路况。"
+    },
+    "enable-poi": {
+      "type": "boolean",
+      "description": "是否展示 POI 点。"
+    },
+    "enable-building": {
+      "type": "boolean",
+      "description": "是否展示建筑物。"
+    },
+    "enable-satellite": {
+      "type": "boolean",
+      "description": "是否开启卫星图。"
+    },
+    "onInitComplete": {
+      "tsType": "() => void",
+      "description": "地图初始化完成即将开始渲染第一帧时触发。"
+    }
+  },
+  "additionalProperties": false
+}

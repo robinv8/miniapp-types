@@ -1,0 +1,24 @@
+{
+  "title": "rich-text",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": [
+        "any[]",
+        "string"
+      ],
+      "description": "节点列表 / HTML String",
+      "defaultValue": "[]"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格",
+      "enum": [
+        "ensp",
+        "emsp",
+        "nbsp"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,37 @@
+{
+  "title": "picker",
+  "type": "object",
+  "properties": {
+    "range": {
+      "type": [
+        "any[]",
+        "Record<string, any>"
+      ],
+      "description": "mode 为 selector 或 multiSelector 时，range 有效",
+      "defaultValue": "[]"
+    },
+    "range-key": {
+      "type": "string",
+      "description": "当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容"
+    },
+    "value": {
+      "type": "number",
+      "description": "value 的值表示选择了 range 中的第几个（下标从 0 开始）",
+      "defaultValue": "0"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "bindChange": {
+      "tsType": "() => void",
+      "description": "value 改变时触发 change 事件，event.detail = {value: value}"
+    },
+    "bindCancel": {
+      "tsType": "() => void",
+      "description": "取消选择或点遮罩层收起 picker 时触发"
+    }
+  },
+  "additionalProperties": false
+}

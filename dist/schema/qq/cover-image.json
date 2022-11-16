@@ -1,0 +1,27 @@
+{
+  "title": "cover-image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图标路径，支持临时路径、网络地址、云文件ID。暂不支持base64格式。"
+    },
+    "aria-role": {
+      "type": "string",
+      "description": "无障碍访问，（角色）标识元素的作用"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindLoad": {
+      "tsType": "() => void",
+      "description": "图片加载成功时触发"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "图片加载失败时触发"
+    }
+  },
+  "additionalProperties": false
+}

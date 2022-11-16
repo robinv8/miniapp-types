@@ -1,0 +1,24 @@
+{
+  "title": "image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图片资源地址"
+    },
+    "mode": {
+      "type": "string",
+      "description": "图片裁剪、缩放的模式",
+      "defaultValue": "'scaleToFill'"
+    },
+    "bindError": {
+      "type": "handleEvent",
+      "description": "当错误发生时，发布到 AppService 的事件名，事件对象 event.detail = {errMsg: 'something wrong'}"
+    },
+    "bindLoad": {
+      "type": "handleEvent",
+      "description": "当图片载入完毕时，发布到 AppService 的事件名，事件对象 event.detail = {height:'图片高度px', width:'图片宽度px'}"
+    }
+  },
+  "additionalProperties": false
+}

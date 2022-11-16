@@ -1,0 +1,49 @@
+{
+  "title": "image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图片地址。"
+    },
+    "mode": {
+      "type": "string",
+      "description": "图片模式。",
+      "defaultValue": "scaleToFill"
+    },
+    "class": {
+      "type": "string",
+      "description": "外部样式。"
+    },
+    "style": {
+      "type": "string",
+      "description": "内联样式。"
+    },
+    "lazy-load": {
+      "type": "boolean",
+      "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。",
+      "defaultValue": "false"
+    },
+    "default-source": {
+      "type": "string",
+      "description": "默认图片地址，若设置默认图片地址，会先显示默认图片，等 src 对应的图片加载成功后，再渲染对应的图片。"
+    },
+    "onLoad": {
+      "tsType": "() => void",
+      "description": "图片载入完毕时触发，事件对象 event.detail = {height: '图片高度px', width: '图片宽度px'}。"
+    },
+    "onError": {
+      "tsType": "() => void",
+      "description": "当图片加载错误时触发，事件对象 event.detail = {errMsg: 'something wrong'。"
+    },
+    "onTap": {
+      "tsType": "() => void",
+      "description": "点击图片时触发。"
+    },
+    "catchTap": {
+      "tsType": "() => void",
+      "description": "点击图片时触发，阻止事件冒泡。"
+    }
+  },
+  "additionalProperties": false
+}

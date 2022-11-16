@@ -1,0 +1,128 @@
+{
+  "title": "live-pusher",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "推流地址。目前仅支持 rtmp 格式"
+    },
+    "mode": {
+      "type": "string",
+      "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）",
+      "defaultValue": "RTC"
+    },
+    "autopush": {
+      "type": "boolean",
+      "description": "自动推流",
+      "defaultValue": "false"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音",
+      "defaultValue": "false"
+    },
+    "enable-camera": {
+      "type": "boolean",
+      "description": "开启摄像头",
+      "defaultValue": "true"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "自动聚集",
+      "defaultValue": "true"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面方向",
+      "defaultValue": "vertical"
+    },
+    "beauty": {
+      "type": "number",
+      "description": "美颜，取值范围 0-9 ，0 表示关闭",
+      "defaultValue": "0"
+    },
+    "whiteness": {
+      "type": "number",
+      "description": "美白，取值范围 0-9 ，0 表示关闭",
+      "defaultValue": "0"
+    },
+    "aspect": {
+      "type": "string",
+      "description": "宽高比，可选值有 3:4, 9:16",
+      "defaultValue": "9:16"
+    },
+    "min-bitrate": {
+      "type": "number",
+      "description": "最小码率",
+      "defaultValue": "200"
+    },
+    "max-bitrate": {
+      "type": "number",
+      "description": "最大码率",
+      "defaultValue": "1000"
+    },
+    "audio-quality": {
+      "type": "string",
+      "description": "高音质(48KHz)或低音质(16KHz)，值为high, low",
+      "defaultValue": "high"
+    },
+    "waiting-image": {
+      "type": "string",
+      "description": "进入后台时推流的等待画面"
+    },
+    "waiting-image-hash": {
+      "type": "string",
+      "description": "等待画面资源的MD5值"
+    },
+    "zoom": {
+      "type": "boolean",
+      "description": "调整焦距",
+      "defaultValue": "false"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "前置或后置，值为front, back",
+      "defaultValue": "front"
+    },
+    "background-mute": {
+      "type": "boolean",
+      "description": "进入后台时是否静音",
+      "defaultValue": "false"
+    },
+    "mirror": {
+      "type": "boolean",
+      "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到",
+      "defaultValue": "false"
+    },
+    "audio-reverb-type": {
+      "type": "number",
+      "description": "混响模式(0～6)：\"关闭混响\", \"KTV\", \"小房间\", \"大会堂\", \"低沉\", \"洪亮\", \"磁性\"",
+      "defaultValue": "0"
+    },
+    "bindStateChange": {
+      "tsType": "() => void",
+      "description": "状态变化事件，detail = {code}"
+    },
+    "bindNetStatus": {
+      "tsType": "() => void",
+      "description": "网络状态通知，detail = {info}"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "渲染错误事件，detail = {errMsg, errCode}"
+    },
+    "bindBgmStart": {
+      "tsType": "() => void",
+      "description": "背景音开始播放时触发"
+    },
+    "bindBgmProgress": {
+      "tsType": "() => void",
+      "description": "背景音进度变化时触发，detail = {progress, duration}"
+    },
+    "bindBgmComplete": {
+      "tsType": "() => void",
+      "description": "背景音播放完成时触发"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,208 @@
+{
+  "title": "video",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "要播放的视频资源地址"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "是否自动播放",
+      "defaultValue": "false"
+    },
+    "poster": {
+      "type": "string",
+      "description": "视频封面的图片网络资源地址"
+    },
+    "loop": {
+      "type": "boolean",
+      "description": "是否循环播放",
+      "defaultValue": "false"
+    },
+    "show-fullscreen-btn": {
+      "type": "boolean",
+      "description": "是否显示全屏按钮",
+      "defaultValue": "true"
+    },
+    "show-play-btn": {
+      "type": "boolean",
+      "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮",
+      "defaultValue": "true"
+    },
+    "controls": {
+      "type": "boolean",
+      "description": "是否显示全部播放控件",
+      "defaultValue": "true"
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "当视频大小与 video 容器大小不一致时，视频的表现形式：contain（包含），fill（填充），cover（覆盖）",
+      "defaultValue": "contain",
+      "enum": [
+        "contain",
+        "fill",
+        "cover"
+      ]
+    },
+    "play-btn-position": {
+      "type": "string",
+      "description": "播放按钮的位置：center（视频中间），bottom（控制条上）。投屏页面需要为 bottom 才会展示播放按钮",
+      "defaultValue": "center",
+      "enum": [
+        "center",
+        "bottom"
+      ]
+    },
+    "pre-roll-unit-id": {
+      "type": "string",
+      "description": "前贴广告的 unit id"
+    },
+    "post-roll-unit-id": {
+      "type": "string",
+      "description": "后贴广告的 unit id"
+    },
+    "vslide-gesture": {
+      "type": "boolean",
+      "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+      "defaultValue": "false"
+    },
+    "vslide-gesture-in-fullscreen": {
+      "type": "boolean",
+      "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+      "defaultValue": "true"
+    },
+    "enable-progress-gesture": {
+      "type": "boolean",
+      "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度",
+      "defaultValue": "false"
+    },
+    "enable-play-gesture": {
+      "type": "boolean",
+      "description": "是否开启播放手势，即双击切换播放/暂停",
+      "defaultValue": "false"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音播放",
+      "defaultValue": "false"
+    },
+    "show-mute-btn": {
+      "type": "boolean",
+      "description": "是否显示静音控件",
+      "defaultValue": "false"
+    },
+    "show-playback-rate-btn": {
+      "type": "boolean",
+      "description": "是否显示倍速控件，点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2",
+      "defaultValue": "false"
+    },
+    "direction": {
+      "type": "number",
+      "description": "设置全屏时视频的方向，详见 direction 的合法值",
+      "defaultValue": "-90",
+      "enum": [
+        "0",
+        "90",
+        "-90"
+      ]
+    },
+    "enable-play-in-background": {
+      "type": "boolean",
+      "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放",
+      "defaultValue": "false"
+    },
+    "signature": {
+      "type": "signature",
+      "description": "设置署名水印"
+    },
+    "bindPlay": {
+      "tsType": "() => void",
+      "description": "当开始播放时触发 play 事件"
+    },
+    "bindPause": {
+      "tsType": "() => void",
+      "description": "当暂停播放时触发 pause 事件"
+    },
+    "bindEnded": {
+      "tsType": "() => void",
+      "description": "当播放到末尾时触发 ended 事件"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "视频播放出错时触发 error 事件"
+    },
+    "bindTimeUpdate": {
+      "tsType": "() => void",
+      "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }"
+    },
+    "bindProgress": {
+      "tsType": "() => void",
+      "description": "视频缓冲进度更新时触发，event.detail = { buffered }。其中 buffered 是百分比，取值是 [0, 100] 中的整数，如 buffered 为 50 表示当前视频缓冲了 50%。"
+    },
+    "bindFullScreenChange": {
+      "tsType": "() => void",
+      "description": "视频进入和退出全屏时触发"
+    },
+    "bindWaiting": {
+      "tsType": "() => void",
+      "description": "视频出现缓冲时触发"
+    },
+    "bindAdStart": {
+      "tsType": "() => void",
+      "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+    },
+    "bindAdEnded": {
+      "tsType": "() => void",
+      "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+    },
+    "bindAdLoad": {
+      "tsType": "() => void",
+      "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+    },
+    "bindAdClose": {
+      "tsType": "() => void",
+      "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+    },
+    "bindAdError": {
+      "tsType": "() => void",
+      "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+    },
+    "bindLoadedMetaData": {
+      "tsType": "() => void",
+      "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
+    },
+    "bindSeekComplete": {
+      "tsType": "() => void",
+      "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}"
+    },
+    "bindPlayBackRateChange": {
+      "tsType": "() => void",
+      "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}"
+    },
+    "bindMuteChange": {
+      "tsType": "() => void",
+      "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}"
+    },
+    "bindControlTap": {
+      "tsType": "() => void",
+      "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值"
+    },
+    "bindEnterBackground": {
+      "tsType": "() => void",
+      "description": "进入小窗播放时触发"
+    },
+    "bindCloseBackground": {
+      "tsType": "() => void",
+      "description": "关闭小窗播放时触发"
+    },
+    "bindLeaveBackground": {
+      "tsType": "() => void",
+      "description": "离开小窗进入 app 事件时触发"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "src"
+  ]
+}

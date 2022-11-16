@@ -1,0 +1,34 @@
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "有效值为 normal, scanCode",
+      "defaultValue": "normal"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "前置或后置，值为front, back",
+      "defaultValue": "back"
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯，值为auto, on, off",
+      "defaultValue": "auto"
+    },
+    "bindStop": {
+      "tsType": "() => void",
+      "description": "摄像头在非正常终止时触发，如退出后台等情况"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "用户不允许使用摄像头时触发"
+    },
+    "bindScanCode": {
+      "tsType": "() => void",
+      "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
+    }
+  },
+  "additionalProperties": false
+}

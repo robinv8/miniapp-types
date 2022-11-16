@@ -1,0 +1,11 @@
+{
+  "title": "movable-area",
+  "type": "object",
+  "properties": {
+    "scale-area": {
+      "type": "boolean",
+      "description": "否"
+    }
+  },
+  "additionalProperties": false
+}

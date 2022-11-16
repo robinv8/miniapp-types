@@ -1,0 +1,29 @@
+{
+  "title": "checkbox",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "组件值，选中时 change 事件会携带的 value。"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "当前是否选中，可用来设置默认选中。",
+      "defaultValue": "false"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用。",
+      "defaultValue": "false"
+    },
+    "onChange": {
+      "tsType": "() => void",
+      "description": "组件发生改变时触发，detail = {value: 该 checkbox 是否 checked }。"
+    },
+    "color": {
+      "type": "string",
+      "description": "checkbox 的颜色，同 CSS 色值。"
+    }
+  },
+  "additionalProperties": false
+}

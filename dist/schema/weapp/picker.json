@@ -1,0 +1,32 @@
+{
+  "title": "picker",
+  "type": "object",
+  "properties": {
+    "header-text": {
+      "type": "string",
+      "description": "选择器的标题，仅安卓可用"
+    },
+    "mode": {
+      "type": "string",
+      "description": "选择器类型",
+      "defaultValue": "selector",
+      "enum": [
+        "selector",
+        "multiSelector",
+        "time",
+        "date",
+        "region"
+      ]
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "bindCancel": {
+      "tsType": "() => void",
+      "description": "取消选择时触发"
+    }
+  },
+  "additionalProperties": false
+}

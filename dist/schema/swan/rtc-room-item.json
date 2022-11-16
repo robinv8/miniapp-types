@@ -1,0 +1,23 @@
+{
+  "title": "rtc-room-item",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "rtc-room-item 组件的唯一标识符"
+    },
+    "type": {
+      "type": "string",
+      "description": "指定 item 展示本地 / 远端画面，有效值：local、remote ，不可动态变更"
+    },
+    "user-id": {
+      "type": "number",
+      "description": "item 展示画面的用户 id"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "user-id"
+  ]
+}

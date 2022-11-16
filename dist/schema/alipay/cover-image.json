@@ -1,0 +1,15 @@
+{
+  "title": "cover-image",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "图片地址，支持的地址格式同 image 一致。"
+    },
+    "onTap": {
+      "tsType": "() => void",
+      "description": "点击事件回调。"
+    }
+  },
+  "additionalProperties": false
+}

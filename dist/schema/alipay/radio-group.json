@@ -1,0 +1,15 @@
+{
+  "title": "radio-group",
+  "type": "object",
+  "properties": {
+    "onChange": {
+      "tsType": "() => void",
+      "description": "选中项发生变化时触发，event.detail = {value: 选中项 radio 的 value}。"
+    },
+    "name": {
+      "type": "string",
+      "description": "组件名字，用于表单提交获取数据。"
+    }
+  },
+  "additionalProperties": false
+}

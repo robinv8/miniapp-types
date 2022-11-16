@@ -1,0 +1,128 @@
+{
+  "title": "input",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "输入框的初始内容"
+    },
+    "type": {
+      "type": "string",
+      "description": "input 的类型",
+      "defaultValue": "\"text\"",
+      "enum": [
+        "text",
+        "number",
+        "idcard",
+        "digit"
+      ]
+    },
+    "password": {
+      "type": "boolean",
+      "description": "是否是密码类型",
+      "defaultValue": "false"
+    },
+    "placeholder": {
+      "type": "string",
+      "description": "输入框为空时占位符"
+    },
+    "placeholder-style": {
+      "type": "string",
+      "description": "指定 placeholder 的样式"
+    },
+    "placeholder-class": {
+      "type": "string",
+      "description": "指定 placeholder 的样式类",
+      "defaultValue": "\"input-placeholder\""
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "maxlength": {
+      "type": "number",
+      "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
+      "defaultValue": "140"
+    },
+    "cursor-spacing": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "指定光标与键盘的距离，单位px（2.4.0起支持rpx）。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
+      "defaultValue": "0"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "(即将废弃，请直接使用 focus )自动聚焦，拉起键盘",
+      "defaultValue": "false"
+    },
+    "focus": {
+      "type": "boolean",
+      "description": "获取焦点",
+      "defaultValue": "false"
+    },
+    "confirm-type": {
+      "type": "string",
+      "description": "设置键盘右下角按钮的文字，仅在type='text'时生效",
+      "defaultValue": "\"done\"",
+      "enum": [
+        "send",
+        "search",
+        "next",
+        "go",
+        "done"
+      ]
+    },
+    "confirm-hold": {
+      "type": "boolean",
+      "description": "点击键盘右下角按钮时是否保持键盘不收起",
+      "defaultValue": "false"
+    },
+    "cursor": {
+      "type": "number",
+      "description": "指定focus时的光标位置"
+    },
+    "selection-start": {
+      "type": "number",
+      "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
+      "defaultValue": "-1"
+    },
+    "selection-end": {
+      "type": "number",
+      "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用",
+      "defaultValue": "-1"
+    },
+    "adjust-position": {
+      "type": "boolean",
+      "description": "键盘弹起时，是否自动上推页面",
+      "defaultValue": "true"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "bindInput": {
+      "tsType": "() => void",
+      "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
+    },
+    "bindFocus": {
+      "tsType": "() => void",
+      "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度"
+    },
+    "bindBlur": {
+      "tsType": "() => void",
+      "description": "输入框失去焦点时触发，event.detail = {value: value}"
+    },
+    "bindConfirm": {
+      "tsType": "() => void",
+      "description": "点击完成按钮时触发，event.detail = {value: value}"
+    },
+    "bindKeyboardHeightChange": {
+      "tsType": "() => void",
+      "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
+    }
+  },
+  "additionalProperties": false
+}

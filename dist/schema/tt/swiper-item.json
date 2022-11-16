@@ -1,0 +1,11 @@
+{
+  "title": "swiper-item",
+  "type": "object",
+  "properties": {
+    "item-id": {
+      "type": "string",
+      "description": "该 swiper-item 的标识符"
+    }
+  },
+  "additionalProperties": false
+}

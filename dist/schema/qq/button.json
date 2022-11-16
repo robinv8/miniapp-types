@@ -1,0 +1,168 @@
+{
+  "title": "button",
+  "type": "object",
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "按钮的大小",
+      "defaultValue": "default",
+      "enum": [
+        "default",
+        "mini"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "description": "按钮的样式类型",
+      "defaultValue": "default",
+      "enum": [
+        "primary",
+        "default",
+        "warn"
+      ]
+    },
+    "plain": {
+      "type": "boolean",
+      "description": "按钮是否镂空，背景色透明",
+      "defaultValue": "false"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "loading": {
+      "type": "boolean",
+      "description": "名称前是否带 loading 图标",
+      "defaultValue": "false"
+    },
+    "form-type": {
+      "type": "string",
+      "description": "用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件",
+      "enum": [
+        "submit",
+        "reset"
+      ]
+    },
+    "open-type": {
+      "type": "string",
+      "description": "QQ 开放能力",
+      "enum": [
+        "share",
+        "getUserInfo",
+        "launchApp",
+        "openSetting",
+        "feedback",
+        "openGroupProfile",
+        "openGuildProfile",
+        "contact",
+        "addFriend",
+        "addColorSign",
+        "openPublicProfile",
+        "addGroupApp",
+        "shareMessageToFriend",
+        "addToFavorites"
+      ]
+    },
+    "hover-class": {
+      "type": "string",
+      "description": "指定按钮按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+      "defaultValue": "button-hover"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "指定是否阻止本节点的祖先节点出现点击态",
+      "defaultValue": "false"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多久出现点击态，单位毫秒",
+      "defaultValue": "20"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击态保留时间，单位毫秒",
+      "defaultValue": "70"
+    },
+    "lang": {
+      "type": "string",
+      "description": "指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。",
+      "defaultValue": "en"
+    },
+    "app-parameter": {
+      "type": "string",
+      "description": "打开 APP 时，向 APP 传递的参数"
+    },
+    "group-id": {
+      "type": "string",
+      "description": "打开群资料卡时，传递的群号"
+    },
+    "guild-id": {
+      "type": "string",
+      "description": "打开频道页面时，传递的频道号"
+    },
+    "public-id": {
+      "type": "string",
+      "description": "打开公众号资料卡时，传递的号码"
+    },
+    "share-type": {
+      "type": "number",
+      "description": "分享类型集合，请参考下面share-type有效值说明。share-type后续将不再维护，请更新为share-mode",
+      "defaultValue": "27"
+    },
+    "share-mode": {
+      "type": "array<String>",
+      "description": "分享类型集合，请参考下面share-mode有效值说明",
+      "defaultValue": "['qq', 'qzone']"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    },
+    "open-id": {
+      "type": "string",
+      "description": "添加好友时，对方的 openid"
+    },
+    "share-message-friend-info": {
+      "type": "friendInfo",
+      "description": "发送对象的 FriendInfo"
+    },
+    "share-message-title": {
+      "type": "string",
+      "description": "转发标题，不传则默认使用当前小程序的昵称。 FriendInfo"
+    },
+    "share-message-img": {
+      "type": "string",
+      "description": "转发显示图片的链接，可以是网络图片路径（仅 QQ CDN 域名路径）或本地图片文件路径或相对代码包根目录的图片文件路径。显示图片长宽比是 5:4FriendInfo"
+    },
+    "bindGetUserInfo": {
+      "tsType": "() => void",
+      "description": "用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与qq.getUserInfo返回的一致"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "当使用开放能力时，发生错误的回调"
+    },
+    "bindLaunchApp": {
+      "tsType": "() => void",
+      "description": "打开 APP 成功的回调"
+    },
+    "bindOpenSetting": {
+      "tsType": "() => void",
+      "description": "在打开授权设置页后回调"
+    },
+    "bindAddFriend": {
+      "tsType": "() => void",
+      "description": "添加好友的回调"
+    },
+    "bindAddGroupApp": {
+      "tsType": "() => void",
+      "description": "添加群应用的回调。errCode 错误码：41004（当前用户非管理员或群主，无权操作），41005（超过可添加群应用的群数量）"
+    },
+    "bindContact": {
+      "tsType": "() => void",
+      "description": "打开客服会话的回调。"
+    }
+  },
+  "additionalProperties": false
+}

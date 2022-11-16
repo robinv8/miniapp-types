@@ -1,0 +1,73 @@
+{
+  "title": "scroll-view",
+  "type": "object",
+  "properties": {
+    "scroll-x": {
+      "type": "boolean",
+      "description": "允许横向滚动",
+      "defaultValue": "false"
+    },
+    "scroll-y": {
+      "type": "boolean",
+      "description": "允许纵向滚动",
+      "defaultValue": "false"
+    },
+    "upper-threshold": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "距顶部 / 左边多远时（单位 px），触发 scrolltoupper 事件",
+      "defaultValue": "50"
+    },
+    "lower-threshold": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "距底部 / 右边多远时（单位 px），触发 scrolltolower 事件",
+      "defaultValue": "50"
+    },
+    "scroll-top": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "设置竖向滚动条位置。要动态设置滚动条位置，用法scroll-top=\"{= scrollTop =}\"。\n如果在设置组件渲染数据的同时设置了 scroll-top、scroll-left 值，需要在 swan.nextTick 回调中设置 scroll-top、scroll-left ，确保滚动条位置准确"
+    },
+    "scroll-left": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "description": "设置横向滚动条位置。要动态设置滚动条位置，用法scroll-left=\"{= scrollLeft =}\"。\n如果在设置组件渲染数据的同时设置了 scroll-top、scroll-left 值，需要在 swan.nextTick 回调中设置 scroll-top、scroll-left ，确保滚动条位置准确"
+    },
+    "scroll-into-view": {
+      "type": "string",
+      "description": "值应为某子元素 id（id 不能以数字开头）。设置滚动方向后，按方向滚动到该元素，动态设置用法scroll-into-view=\"{= scrollIntoView =}\""
+    },
+    "scroll-with-animation": {
+      "type": "boolean",
+      "description": "在设置滚动条位置时使用动画过渡",
+      "defaultValue": "false"
+    },
+    "enable-back-to-top": {
+      "type": "boolean",
+      "description": "iOS 点击顶部导航栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
+      "defaultValue": "false"
+    },
+    "bindScrollToUpper": {
+      "tsType": "() => void",
+      "description": "滚动到顶部 / 左边，会触发 scrolltoupper 事件"
+    },
+    "bindScrollToLower": {
+      "tsType": "() => void",
+      "description": "滚动到底部 / 右边，会触发 scrolltolower 事件"
+    },
+    "bindScroll": {
+      "tsType": "() => void",
+      "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
+    }
+  },
+  "additionalProperties": false
+}

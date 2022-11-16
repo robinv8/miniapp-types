@@ -1,0 +1,11 @@
+{
+  "title": "checkbox-group",
+  "type": "object",
+  "properties": {
+    "bindChange": {
+      "tsType": "() => void",
+      "description": "checkbox-group 中选中项发生改变时触发 change 事件，detail = {value:[选中的 checkbox 的 value 的数组]}"
+    }
+  },
+  "additionalProperties": false
+}

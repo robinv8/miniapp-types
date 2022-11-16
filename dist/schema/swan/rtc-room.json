@@ -1,0 +1,100 @@
+{
+  "title": "rtc-room",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "rtc-room 组件的唯一标识符"
+    },
+    "enable-camera": {
+      "type": "boolean",
+      "description": "是否开启摄像头",
+      "defaultValue": "true"
+    },
+    "enable-auto-focus": {
+      "type": "boolean",
+      "description": "是否开启摄像头自动对焦",
+      "defaultValue": "true"
+    },
+    "enable-zoom": {
+      "type": "boolean",
+      "description": "是否支持双手滑动调整摄像头聚焦",
+      "defaultValue": "false"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "设置前置还是后置摄像头，有效值：front、back",
+      "defaultValue": "front",
+      "enum": [
+        "front",
+        "back"
+      ]
+    },
+    "enable-mic": {
+      "type": "boolean",
+      "description": "是否开启麦克风",
+      "defaultValue": "true"
+    },
+    "enable-agc": {
+      "type": "boolean",
+      "description": "是否开启音频自动增益",
+      "defaultValue": "false"
+    },
+    "enable-ans": {
+      "type": "boolean",
+      "description": "是否开启音频噪声抑制",
+      "defaultValue": "false"
+    },
+    "bitrate": {
+      "type": "number",
+      "description": "最大码率",
+      "defaultValue": "900"
+    },
+    "video-width": {
+      "type": "number",
+      "description": "视频分辨率宽",
+      "defaultValue": "360"
+    },
+    "video-height": {
+      "type": "number",
+      "description": "视频分辨率高",
+      "defaultValue": "640"
+    },
+    "enable-remote-mirror": {
+      "type": "boolean",
+      "description": "设置远端看到的画面的镜像效果，该属性的变化不会影响到本地画面，仅影响远端看到的画面效果",
+      "defaultValue": "false"
+    },
+    "local-mirror": {
+      "type": "string",
+      "description": "设置本地摄像头预览画面的镜像效果，有效值：auto、enable、disable",
+      "defaultValue": "auto",
+      "enum": [
+        "auto",
+        "enable",
+        "disable"
+      ]
+    },
+    "sound-mode": {
+      "type": "string",
+      "description": "设置声音输出方式，有效值：speaker、ear",
+      "defaultValue": "speaker",
+      "enum": [
+        "speaker",
+        "ear"
+      ]
+    },
+    "bindStateChange": {
+      "tsType": "() => void",
+      "description": "房间状态变化事件，参考下方状态码，detail = { code, msg, userInfo }"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "错误事件。参考下方错误码，detail = { errMsg, errCode }"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id"
+  ]
+}

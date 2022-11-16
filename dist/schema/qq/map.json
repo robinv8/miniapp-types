@@ -1,0 +1,137 @@
+{
+  "title": "map",
+  "type": "object",
+  "properties": {
+    "longitude": {
+      "type": "number",
+      "description": "中心经度"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "中心纬度"
+    },
+    "scale": {
+      "type": "number",
+      "description": "缩放级别，取值范围为3～20",
+      "defaultValue": "16"
+    },
+    "markers": {
+      "type": "array.<marker>",
+      "description": "标记点"
+    },
+    "polyline": {
+      "type": "array.<polyline>",
+      "description": "路线"
+    },
+    "circles": {
+      "type": "array.<circle>",
+      "description": "圆"
+    },
+    "include-points": {
+      "type": "array.<point>",
+      "description": "缩放视野以包含所有给定的坐标点"
+    },
+    "show-location": {
+      "type": "boolean",
+      "description": "显示带有方向的当前定位点",
+      "defaultValue": "false"
+    },
+    "polygons": {
+      "type": "array.<polygon>",
+      "description": "多边形"
+    },
+    "subkey": {
+      "type": "string",
+      "description": "个性化地图使用的key"
+    },
+    "layer-style": {
+      "type": "number",
+      "description": "个性化地图配置的style，不支持动态修改",
+      "defaultValue": "1"
+    },
+    "rotate": {
+      "type": "number",
+      "description": "旋转角度，范围0～360，地图正北与设备y轴\b的夹角角度",
+      "defaultValue": "0"
+    },
+    "skew": {
+      "type": "number",
+      "description": "倾斜角度，范围0～40，关于z轴的倾角",
+      "defaultValue": "0"
+    },
+    "enable-3D": {
+      "type": "boolean",
+      "description": "展示3D楼块（工具暂不支持）",
+      "defaultValue": "false"
+    },
+    "show-compass": {
+      "type": "boolean",
+      "description": "显示指南针",
+      "defaultValue": "false"
+    },
+    "show-scale": {
+      "type": "boolean",
+      "description": "显示比例尺（工具暂不支持）",
+      "defaultValue": "false"
+    },
+    "enable-overlooking": {
+      "type": "boolean",
+      "description": "开启俯视",
+      "defaultValue": "false"
+    },
+    "enable-zoom": {
+      "type": "boolean",
+      "description": "是否支持缩放",
+      "defaultValue": "false"
+    },
+    "enable-scroll": {
+      "type": "boolean",
+      "description": "是否支持拖动",
+      "defaultValue": "false"
+    },
+    "enable-rotate": {
+      "type": "boolean",
+      "description": "是否支持旋转",
+      "defaultValue": "false"
+    },
+    "enable-satellite": {
+      "type": "boolean",
+      "description": "是否开启卫星图",
+      "defaultValue": "false"
+    },
+    "enable-traffic": {
+      "type": "boolean",
+      "description": "是否开启实时路况",
+      "defaultValue": "false"
+    },
+    "setting": {
+      "type": "object",
+      "description": "配置项"
+    },
+    "bindTap": {
+      "tsType": "() => void",
+      "description": "点击地图时触发，返回经纬度信息"
+    },
+    "bindMarkerTap": {
+      "tsType": "() => void",
+      "description": "点击标记点时触发 e.detail = {markerId}"
+    },
+    "bindUpdated": {
+      "tsType": "() => void",
+      "description": "在地图渲染更新完成时触发"
+    },
+    "bindRegionChange": {
+      "tsType": "() => void",
+      "description": "视野发生变化时触发 \b会触发两次，返回的type值分别为begin/end。"
+    },
+    "bindPoiTap": {
+      "tsType": "() => void",
+      "description": "点击地图poi点时触发 e.detail = {name, longitude, latitude}"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "longitude",
+    "latitude"
+  ]
+}

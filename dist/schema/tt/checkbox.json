@@ -1,0 +1,25 @@
+{
+  "title": "checkbox",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "当前是否选中，可用来设置默认选中",
+      "defaultValue": "false"
+    },
+    "color": {
+      "type": "string",
+      "description": "checkbox 的颜色，同 css 的 color"
+    }
+  },
+  "additionalProperties": false
+}

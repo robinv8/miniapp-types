@@ -1,0 +1,243 @@
+{
+  "title": "live-pusher",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "推流地址。目前仅支持 rtmp 格式"
+    },
+    "mode": {
+      "type": "string",
+      "description": "SD（标清）, HD（高清）, FHD（超清）, RTC（实时通话）",
+      "defaultValue": "RTC"
+    },
+    "autopush": {
+      "type": "boolean",
+      "description": "自动推流",
+      "defaultValue": "false"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音。即将废弃，可用 enable-mic 替代",
+      "defaultValue": "false"
+    },
+    "enable-camera": {
+      "type": "boolean",
+      "description": "开启摄像头",
+      "defaultValue": "true"
+    },
+    "auto-focus": {
+      "type": "boolean",
+      "description": "自动聚集",
+      "defaultValue": "true"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面方向",
+      "defaultValue": "vertical",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "beauty": {
+      "type": "number",
+      "description": "美颜，取值范围 0-9 ，0 表示关闭",
+      "defaultValue": "0"
+    },
+    "whiteness": {
+      "type": "number",
+      "description": "美白，取值范围 0-9 ，0 表示关闭",
+      "defaultValue": "0"
+    },
+    "aspect": {
+      "type": "string",
+      "description": "宽高比，可选值有 3:4, 9:16",
+      "defaultValue": "9:16"
+    },
+    "min-bitrate": {
+      "type": "number",
+      "description": "最小码率",
+      "defaultValue": "200"
+    },
+    "max-bitrate": {
+      "type": "number",
+      "description": "最大码率",
+      "defaultValue": "1000"
+    },
+    "audio-quality": {
+      "type": "string",
+      "description": "高音质(48KHz)或低音质(16KHz)，值为high, low",
+      "defaultValue": "high"
+    },
+    "waiting-image": {
+      "type": "string",
+      "description": "进入后台时推流的等待画面"
+    },
+    "waiting-image-hash": {
+      "type": "string",
+      "description": "等待画面资源的MD5值"
+    },
+    "zoom": {
+      "type": "boolean",
+      "description": "调整焦距",
+      "defaultValue": "false"
+    },
+    "device-position": {
+      "type": "string",
+      "description": "前置或后置，值为front, back",
+      "defaultValue": "front"
+    },
+    "background-mute": {
+      "type": "boolean",
+      "description": "进入后台时是否静音（已废弃，默认退后台静音）",
+      "defaultValue": "false"
+    },
+    "mirror": {
+      "type": "boolean",
+      "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到",
+      "defaultValue": "false"
+    },
+    "remote-mirror": {
+      "type": "boolean",
+      "description": "同 mirror 属性，后续 mirror 将废弃",
+      "defaultValue": "false"
+    },
+    "local-mirror": {
+      "type": "string",
+      "description": "控制本地预览画面是否镜像",
+      "defaultValue": "auto",
+      "enum": [
+        "auto",
+        "enable",
+        "disable"
+      ]
+    },
+    "audio-reverb-type": {
+      "type": "number",
+      "description": "音频混响类型",
+      "defaultValue": "0",
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "enable-mic": {
+      "type": "boolean",
+      "description": "开启或关闭麦克风",
+      "defaultValue": "true"
+    },
+    "enable-agc": {
+      "type": "boolean",
+      "description": "是否开启音频自动增益",
+      "defaultValue": "false"
+    },
+    "enable-ans": {
+      "type": "boolean",
+      "description": "是否开启音频噪声抑制",
+      "defaultValue": "false"
+    },
+    "audio-volume-type": {
+      "type": "string",
+      "description": "音量类型",
+      "defaultValue": "auto",
+      "enum": [
+        "auto",
+        "media",
+        "voicecall"
+      ]
+    },
+    "video-width": {
+      "type": "number",
+      "description": "上推的视频流的分辨率宽度",
+      "defaultValue": "360"
+    },
+    "video-height": {
+      "type": "number",
+      "description": "上推的视频流的分辨率高度",
+      "defaultValue": "640"
+    },
+    "beauty-style": {
+      "type": "string",
+      "description": "设置美颜类型",
+      "defaultValue": "smooth",
+      "enum": [
+        "smooth",
+        "nature"
+      ]
+    },
+    "filter": {
+      "type": "string",
+      "description": "设置色彩滤镜",
+      "defaultValue": "standard",
+      "enum": [
+        "standard",
+        "pink",
+        "nostalgia",
+        "blues",
+        "romantic",
+        "cool",
+        "fresher",
+        "solor",
+        "aestheticism",
+        "whitening",
+        "cerisered"
+      ]
+    },
+    "picture-in-picture-mode": {
+      "type": [
+        "string",
+        "any[]"
+      ],
+      "description": "设置小窗模式： push, pop，空字符串或通过数组形式设置多种模式（如： [\"push\", \"pop\"]）",
+      "enum": [
+        "[]",
+        "push",
+        "pop"
+      ]
+    },
+    "bindStateChange": {
+      "tsType": "() => void",
+      "description": "状态变化事件，detail = {code}"
+    },
+    "bindNetStatus": {
+      "tsType": "() => void",
+      "description": "网络状态通知，detail = {info}"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "渲染错误事件，detail = {errMsg, errCode}"
+    },
+    "bindBgmStart": {
+      "tsType": "() => void",
+      "description": "背景音开始播放时触发"
+    },
+    "bindBgmProgress": {
+      "tsType": "() => void",
+      "description": "背景音进度变化时触发，detail = {progress, duration}"
+    },
+    "bindBgmComplete": {
+      "tsType": "() => void",
+      "description": "背景音播放完成时触发"
+    },
+    "bindAudioVolumeNotify": {
+      "tsType": "() => void",
+      "description": "返回麦克风采集的音量大小"
+    },
+    "bindEnterPictureInPicture": {
+      "tsType": "() => void",
+      "description": "进入小窗"
+    },
+    "bindLeavePictureInPicture": {
+      "tsType": "() => void",
+      "description": "退出小窗"
+    }
+  },
+  "additionalProperties": false
+}

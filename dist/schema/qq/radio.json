@@ -1,0 +1,29 @@
+{
+  "title": "radio",
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "description": "<radio> 标识。当该<radio> 选中时，<radio-group> 的 change 事件会携带<radio>的value"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "当前是否选中",
+      "defaultValue": "false"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "color": {
+      "type": "string",
+      "description": "radio的颜色，同css的color"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    }
+  },
+  "additionalProperties": false
+}

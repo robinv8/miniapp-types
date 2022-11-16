@@ -1,0 +1,19 @@
+{
+  "title": "lifestyle",
+  "type": "object",
+  "properties": {
+    "public-id": {
+      "type": "string",
+      "description": "必填，生活号 ID（即生活号 APPID），必须是当前小程序同账号主体且已关联的生活号。"
+    },
+    "onFollow": {
+      "tsType": "() => void",
+      "description": "当用户关注生活号成功后执行。"
+    },
+    "memo": {
+      "type": "string",
+      "description": "文案。支持商家自定义，最多展示一行。"
+    }
+  },
+  "additionalProperties": false
+}

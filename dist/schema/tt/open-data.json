@@ -1,0 +1,39 @@
+{
+  "title": "open-data",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "开放数据类型",
+      "enum": [
+        "userNickName",
+        "userAvatarUrl",
+        "userGender",
+        "userCity",
+        "userProvince",
+        "userCountry"
+      ]
+    },
+    "default-text": {
+      "type": "string",
+      "description": "文本数据为空时的默认内容"
+    },
+    "default-avatar": {
+      "type": "string",
+      "description": "用户头像为空时的默认图片，支持相对路径和网络图片路径"
+    },
+    "use-empty-value": {
+      "type": "string",
+      "description": "当数据为空且未设置默认值时，是否显示官方默认值",
+      "defaultValue": "false"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "出现错误时触发"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "navigation-bar",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "导航条标题"
+    },
+    "loading": {
+      "type": "boolean",
+      "description": "是否在导航条显示 loading 加载提示",
+      "defaultValue": "false"
+    },
+    "front-color": {
+      "type": "string",
+      "description": "导航条前景颜色值，包括按钮、标题、状态栏的颜色，仅支持 #ffffff 和 #000000"
+    },
+    "background-color": {
+      "type": "string",
+      "description": "导航条背景颜色值，有效值为十六进制颜色"
+    },
+    "color-animation-duration": {
+      "type": "number",
+      "description": "改变导航栏颜色时的动画时长，默认为 0 （即没有动画效果）",
+      "defaultValue": "0"
+    },
+    "color-animation-timing-func": {
+      "type": "string",
+      "description": "改变导航栏颜色时的动画方式，支持 linear 、 easeIn 、 easeOut 和 easeInOut",
+      "defaultValue": "\"linear\""
+    }
+  },
+  "additionalProperties": false
+}

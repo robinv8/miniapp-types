@@ -1,0 +1,74 @@
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "live-player 属性的唯一标志符"
+    },
+    "src": {
+      "type": "string",
+      "description": "音视频地址，详见下方主流格式支持"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "自动播放",
+      "defaultValue": "false"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音",
+      "defaultValue": "false"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面方向，有效值有 vertical、horizontal 。目前仅支持安卓端使用该属性",
+      "defaultValue": "vertical",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "填充模式，有效值：contain、fillCrop",
+      "defaultValue": "contain",
+      "enum": [
+        "contain",
+        "fillCrop"
+      ]
+    },
+    "background-mute": {
+      "type": "boolean",
+      "description": "进入后台时是否静音（已废弃，默认退台静音）",
+      "defaultValue": "false"
+    },
+    "min-cache": {
+      "type": "number",
+      "description": "最小缓冲区（单位：s）",
+      "defaultValue": "1"
+    },
+    "max-cache": {
+      "type": "number",
+      "description": "最大缓冲区（单位：s）",
+      "defaultValue": "3"
+    },
+    "bindStateChange": {
+      "tsType": "() => void",
+      "description": "播放状态变化事件，参考下方状态码，detail = {code}"
+    },
+    "bindNetStatus": {
+      "tsType": "() => void",
+      "description": "网络状态变化通知，参考下方网络状态数据，detail = {info}"
+    },
+    "bindFullScreenChange": {
+      "tsType": "() => void",
+      "description": "全屏变化事件，detail = {direction, fullscreen}"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "src"
+  ]
+}

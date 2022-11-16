@@ -1,0 +1,107 @@
+{
+  "title": "button",
+  "type": "object",
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "有效值 default, mini（小尺寸）。",
+      "defaultValue": "default",
+      "enum": [
+        "default",
+        "mini"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "description": "按钮的样式类型，有效值 primary、default、warn。",
+      "defaultValue": "default",
+      "enum": [
+        "primary",
+        "default",
+        "warn"
+      ]
+    },
+    "plain": {
+      "type": "boolean",
+      "description": "是否镂空（ghost 与 plain 等效）。",
+      "defaultValue": "false"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用。",
+      "defaultValue": "false"
+    },
+    "loading": {
+      "type": "boolean",
+      "description": "按钮文字前是否带 loading 图标。",
+      "defaultValue": "false"
+    },
+    "hover-class": {
+      "type": "string",
+      "description": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。",
+      "defaultValue": "button"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多少时间后出现点击状态，单位毫秒。",
+      "defaultValue": "20"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击状态保留时间，单位毫秒。",
+      "defaultValue": "70"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "是否阻止当前元素的祖先元素出现被点击样式。",
+      "defaultValue": "false"
+    },
+    "form-type": {
+      "type": "string",
+      "description": "有效值：submit、 reset，用于 form 表单 组件，点击分别会触发 submit/reset 事件。"
+    },
+    "open-type": {
+      "type": "string",
+      "description": "开放能力。",
+      "enum": [
+        "share",
+        "getAuthorize",
+        "contactShare",
+        "lifestyle"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "description": "当 open-type 为 getAuthorize 时有效。"
+    },
+    "onTap": {
+      "tsType": "() => void",
+      "description": "点击。\n说明： 每点击一次会触发一次事件，建议自行使用代码防止重复点击,可以使用 js 防抖和节流实现。"
+    },
+    "public-id": {
+      "type": "string",
+      "description": "生活号 id，必须是当前小程序同主体且已关联的生活号，open-type=\"lifestyle\" 时有效。"
+    },
+    "onGetAuthorize": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 getAuthorize 时有效。\n当授权成功时触发。"
+    },
+    "onFollowLifestyle": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 lifestyle 时有效。\n当点击按钮时触发。\nevent.detail = { followStatus }，folllowStatus 合法值有 1、2、3，其中 1 表示已关注。2 表示用户不允许关注。3 表示发生未知错误；\n已知问题：基础库 1.0，当用户在点击按钮前已关注生活号，event.detail.followStatus 的值为 true。"
+    },
+    "onError": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 getAuthorize 时有效。\n当授权失败时触发。event.detail = {type, errorMessage}，此时 type 的值为 getAuthorize。"
+    },
+    "onGetUserInfo": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 getAuthorize 且 scope 为 userInfo 时有效。\n当授权成功时触发。"
+    },
+    "onGetPhoneNumber": {
+      "tsType": "() => void",
+      "description": "当 open-type 为 getAuthorize 且 scope 为 phoneNumber 时有效。\n当授权成功时触发。"
+    }
+  },
+  "additionalProperties": false
+}

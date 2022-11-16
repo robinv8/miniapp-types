@@ -1,0 +1,34 @@
+{
+  "title": "progress",
+  "type": "object",
+  "properties": {
+    "percent": {
+      "type": "float",
+      "description": "百分比(0~100)。"
+    },
+    "show-info": {
+      "type": "boolean",
+      "description": "在右侧显示百分比值。",
+      "defaultValue": "show"
+    },
+    "stroke-width": {
+      "type": "number",
+      "description": "线的粗细，单位 px。",
+      "defaultValue": "6"
+    },
+    "active-color": {
+      "type": "string",
+      "description": "已选择的进度条颜色。"
+    },
+    "background-color": {
+      "type": "string",
+      "description": "未选择的进度条颜色。"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "是否添加从 0% 开始加载的入场动画。",
+      "defaultValue": "active"
+    }
+  },
+  "additionalProperties": false
+}

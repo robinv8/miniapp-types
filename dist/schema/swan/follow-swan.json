@@ -1,0 +1,21 @@
+{
+  "title": "follow-swan",
+  "type": "object",
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "组件大小",
+      "defaultValue": "default"
+    },
+    "type": {
+      "type": "string",
+      "description": "组件样式",
+      "defaultValue": "primary"
+    },
+    "bindFavorStatusChange": {
+      "tsType": "() => void",
+      "description": "关注和取消关注成功的回调，返回关注状态 {isFavor: true|false}"
+    }
+  },
+  "additionalProperties": false
+}

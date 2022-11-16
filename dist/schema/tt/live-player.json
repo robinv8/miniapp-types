@@ -1,0 +1,58 @@
+{
+  "title": "live-player",
+  "type": "object",
+  "properties": {
+    "src": {
+      "type": "string",
+      "description": "视频地址。目前支持 flv、rtmp 和 hls，支持跨域"
+    },
+    "autoplay": {
+      "type": "boolean",
+      "description": "是否自动播放",
+      "defaultValue": "false"
+    },
+    "muted": {
+      "type": "boolean",
+      "description": "是否静音",
+      "defaultValue": "false"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值",
+      "defaultValue": "vertical",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ]
+    },
+    "object-fit": {
+      "type": "string",
+      "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值",
+      "defaultValue": "contain",
+      "enum": [
+        "contain",
+        "fillCrop"
+      ]
+    },
+    "signature": {
+      "type": "signature",
+      "description": "设置署名水印"
+    },
+    "bindStateChange": {
+      "tsType": "() => void",
+      "description": "播放状态变化事件，detail = {code}"
+    },
+    "bindFullScreenChange": {
+      "tsType": "() => void",
+      "description": "全屏变化事件，detail = {direction, fullScreen}"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "播放错误事件"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "src"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "canvas",
+  "type": "object",
+  "properties": {
+    "canvas-id": {
+      "type": "string",
+      "description": "[v1]canvas 组件的标识"
+    },
+    "type": {
+      "type": "string",
+      "description": "[v2]指定 canvas 类型，有效值为 \"2d\" 和 \"webgl\""
+    },
+    "bindTouchStart": {
+      "tsType": "() => void",
+      "description": "[v2]手指触摸动作开始"
+    },
+    "bindTouchMove": {
+      "tsType": "() => void",
+      "description": "[v2]手指触摸后移动"
+    },
+    "bindTouchEnd": {
+      "tsType": "() => void",
+      "description": "[v2]手指触摸动作结束"
+    },
+    "bindTouchCancel": {
+      "tsType": "() => void",
+      "description": "[v2]手指触摸动作被打断"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "canvas-id",
+    "type"
+  ]
+}

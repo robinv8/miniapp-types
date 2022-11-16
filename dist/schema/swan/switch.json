@@ -1,0 +1,35 @@
+{
+  "title": "switch",
+  "type": "object",
+  "properties": {
+    "checked": {
+      "type": "boolean",
+      "description": "是否选中",
+      "defaultValue": "false"
+    },
+    "type": {
+      "type": "string",
+      "description": "样式，有效值：switch、checkbox",
+      "defaultValue": "switch",
+      "enum": [
+        "switch",
+        "checkbox"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "description": "switch 的颜色，同 CSS 的 color",
+      "defaultValue": "#3388ff"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "bindChange": {
+      "tsType": "() => void",
+      "description": "checked 改变时触发 change 事件，event.detail = {checked: true}"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,75 @@
+{
+  "title": "slider",
+  "type": "object",
+  "properties": {
+    "min": {
+      "type": "number",
+      "description": "最小值",
+      "defaultValue": "0"
+    },
+    "max": {
+      "type": "number",
+      "description": "最大值",
+      "defaultValue": "100"
+    },
+    "step": {
+      "type": "number",
+      "description": "步长，取值必须大于 0，并且可被 (max - min) 整除",
+      "defaultValue": "1"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用",
+      "defaultValue": "false"
+    },
+    "value": {
+      "type": "number",
+      "description": "当前取值",
+      "defaultValue": "0"
+    },
+    "color": {
+      "type": "string",
+      "description": "背景条的颜色（请使用 backgroundColor）",
+      "defaultValue": "#e9e9e9"
+    },
+    "selected-color": {
+      "type": "string",
+      "description": "已选择的颜色（请使用 activeColor）",
+      "defaultValue": "#F0250F"
+    },
+    "activeColor": {
+      "type": "string",
+      "description": "已选择的颜色",
+      "defaultValue": "#F0250F"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "description": "背景条的颜色",
+      "defaultValue": "#e9e9e9"
+    },
+    "block-size": {
+      "type": "number",
+      "description": "滑块的大小，取值范围为 12 - 28",
+      "defaultValue": "28"
+    },
+    "block-color": {
+      "type": "string",
+      "description": "滑块的颜色",
+      "defaultValue": "#ffffff"
+    },
+    "show-value": {
+      "type": "boolean",
+      "description": "是否显示当前 value",
+      "defaultValue": "false"
+    },
+    "bindChange": {
+      "tsType": "() => void",
+      "description": "完成一次拖动后触发的事件，event.detail = {value: value}"
+    },
+    "bindChanging": {
+      "tsType": "() => void",
+      "description": "拖动过程中触发的事件，event.detail = {value: value}"
+    }
+  },
+  "additionalProperties": false
+}

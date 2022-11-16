@@ -1,0 +1,19 @@
+{
+  "title": "open-data",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "开放数据类型",
+      "enum": [
+        "userNickName",
+        "userAvatarUrl",
+        "userGender"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ]
+}

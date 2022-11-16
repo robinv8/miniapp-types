@@ -1,0 +1,66 @@
+{
+  "title": "scroll-view",
+  "type": "object",
+  "properties": {
+    "scroll-x": {
+      "type": "boolean",
+      "description": "允许横向滚动",
+      "defaultValue": "false"
+    },
+    "scroll-y": {
+      "type": "boolean",
+      "description": "允许纵向滚动",
+      "defaultValue": "false"
+    },
+    "upper-threshold": {
+      "type": "number",
+      "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件",
+      "defaultValue": "50"
+    },
+    "lower-threshold": {
+      "type": "number",
+      "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件",
+      "defaultValue": "50"
+    },
+    "scroll-top": {
+      "type": "number",
+      "description": "设置竖向滚动条位置"
+    },
+    "scroll-left": {
+      "type": "number",
+      "description": "设置横向滚动条位置"
+    },
+    "scroll-into-view": {
+      "type": "string",
+      "description": "值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素"
+    },
+    "scroll-with-animation": {
+      "type": "boolean",
+      "description": "在设置滚动条位置时使用动画过渡",
+      "defaultValue": "false"
+    },
+    "enable-back-to-top": {
+      "type": "boolean",
+      "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
+      "defaultValue": "false"
+    },
+    "enable-flex": {
+      "type": "boolean",
+      "description": "启用 flexbox 布局。开启后，当前节点声明了 display: flex 就会成为 flex container，并作用于其孩子节点。",
+      "defaultValue": "false"
+    },
+    "bindScrollToUpper": {
+      "tsType": "() => void",
+      "description": "滚动到顶部/左边，会触发 scrolltoupper 事件"
+    },
+    "bindScrollToLower": {
+      "tsType": "() => void",
+      "description": "滚动到底部/右边，会触发 scrolltolower 事件"
+    },
+    "bindScroll": {
+      "tsType": "() => void",
+      "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
+    }
+  },
+  "additionalProperties": false
+}

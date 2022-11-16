@@ -1,0 +1,32 @@
+{
+  "title": "switch",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "组件名字，用于表单提交获取数据。"
+    },
+    "checked": {
+      "type": "boolean",
+      "description": "是否选中。"
+    },
+    "disabled": {
+      "type": "boolean",
+      "description": "是否禁用。"
+    },
+    "color": {
+      "type": "string",
+      "description": "组件颜色，同 CSS 色值。"
+    },
+    "onChange": {
+      "tsType": "() => void",
+      "description": "checked 改变时触发，event.detail={ value:checked}。"
+    },
+    "controlled": {
+      "type": "boolean",
+      "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。",
+      "defaultValue": "false"
+    }
+  },
+  "additionalProperties": false
+}

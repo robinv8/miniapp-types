@@ -1,0 +1,35 @@
+{
+  "title": "view",
+  "type": "object",
+  "properties": {
+    "hover-class": {
+      "type": "string",
+      "description": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+      "defaultValue": "none"
+    },
+    "hover-stop-propagation": {
+      "type": "boolean",
+      "description": "指定是否阻止本节点的祖先节点出现点击态",
+      "defaultValue": "false"
+    },
+    "hover-start-time": {
+      "type": "number",
+      "description": "按住后多久出现点击态，单位毫秒",
+      "defaultValue": "50"
+    },
+    "hover-stay-time": {
+      "type": "number",
+      "description": "手指松开后点击态保留时间，单位毫秒",
+      "defaultValue": "400"
+    },
+    "aria-role": {
+      "type": "string",
+      "description": "无障碍访问，（角色）标识元素的作用"
+    },
+    "aria-label": {
+      "type": "string",
+      "description": "无障碍访问，（属性）元素的额外描述"
+    }
+  },
+  "additionalProperties": false
+}

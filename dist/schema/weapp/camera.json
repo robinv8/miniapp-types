@@ -1,0 +1,72 @@
+{
+  "title": "camera",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string",
+      "description": "应用模式，只在初始化时有效，不能动态变更",
+      "defaultValue": "normal",
+      "enum": [
+        "normal",
+        "scanCode"
+      ]
+    },
+    "resolution": {
+      "type": "string",
+      "description": "分辨率，不支持动态修改",
+      "defaultValue": "medium",
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "device-position": {
+      "type": "string",
+      "description": "摄像头朝向",
+      "defaultValue": "back",
+      "enum": [
+        "front",
+        "back"
+      ]
+    },
+    "flash": {
+      "type": "string",
+      "description": "闪光灯，值为 auto , on, off",
+      "defaultValue": "auto",
+      "enum": [
+        "auto",
+        "on",
+        "off",
+        "torch"
+      ]
+    },
+    "frame-size": {
+      "type": "string",
+      "description": "指定期望的相机帧数据尺寸",
+      "defaultValue": "medium",
+      "enum": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "bindStop": {
+      "tsType": "() => void",
+      "description": "摄像头在非正常终止时触发，如退出后台等情况"
+    },
+    "bindError": {
+      "tsType": "() => void",
+      "description": "用户不允许使用摄像头时触发"
+    },
+    "bindInitDone": {
+      "tsType": "() => void",
+      "description": "相机初始化完成时触发，e.detail = {maxZoom}"
+    },
+    "bindScanCode": {
+      "tsType": "() => void",
+      "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
+    }
+  },
+  "additionalProperties": false
+}

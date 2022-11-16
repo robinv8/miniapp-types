@@ -1,0 +1,36 @@
+{
+  "title": "form",
+  "type": "object",
+  "properties": {
+    "report-submit": {
+      "type": "boolean",
+      "description": "是否返回 formId 用于发送模板消息（工具上 formId 为''，请在真机上测试），订阅消息详细说明请参考订阅消息接入",
+      "defaultValue": "false"
+    },
+    "report-type": {
+      "type": "string",
+      "description": "模板消息的类型，report-submit 为 true 时填写有效\n取值：default / subscribe",
+      "defaultValue": "'default'"
+    },
+    "template-id": {
+      "type": [
+        "string",
+        "Array.<string>"
+      ],
+      "description": "发送订阅类模板消息所用的模板库标题 ID ，可通过 getTemplateLibraryList 获取\n当参数类型为 Array 时，可传递 1~3 个模板库标题 ID （注：此处填写模板库id。示例：BD0001）"
+    },
+    "subscribe-id": {
+      "type": "string",
+      "description": "发送订阅类模板消息时所使用的唯一标识符，内容由开发者自定义，用来标识订阅场景\n注意：同一用户在同一 subscribe-id 下的多次授权不累积下发权限，只能下发一条。若要订阅多条，需要不同 subscribe-id"
+    },
+    "bindSubmit": {
+      "tsType": "() => void",
+      "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'}, formId: '', message: '', status: ''}，当 report-type 为 subscribe 时，status 和 message 中返回用户授权具体信息"
+    },
+    "bindReset": {
+      "tsType": "() => void",
+      "description": "表单重置时会触发 reset 事件"
+    }
+  },
+  "additionalProperties": false
+}
