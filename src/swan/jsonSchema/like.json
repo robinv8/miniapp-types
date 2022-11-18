@@ -5,57 +5,56 @@
     "is-liked": {
       "type": "boolean",
       "description": "是否已被点赞",
-      "defaultValue": "否"
+      "defaultValue": "false"
     },
     "mode": {
       "type": "string",
       "description": "按钮模式。icon：表示仅有图标；mixture：表示图标文字结合",
-      "defaultValue": "否"
+      "defaultValue": "icon"
     },
     "icon-type": {
       "type": "string",
       "description": "图标类型。hand：表示手形；heart：表示心形",
-      "defaultValue": "否"
+      "defaultValue": "hand"
     },
     "style": {
       "type": "string",
       "description": "仅在 mode 为 mixture 时可配置。none：无边框；border：有边框",
-      "defaultValue": "否"
+      "defaultValue": "none"
     },
     "like-text": {
       "type": "string",
       "description": "点赞按钮上的文案。默认为赞，仅在 mode 属性值为'mixture'时有效",
-      "defaultValue": "否"
+      "defaultValue": "赞"
     },
     "like-num": {
       "type": "number",
       "description": "点赞数量",
-      "defaultValue": "否"
+      "defaultValue": "0"
     },
     "like-type": {
       "type": "number",
       "description": "被点赞的对象类型。0：表示对文章内容进行点赞；1：表示对评论内容进行点赞",
-      "defaultValue": "否"
+      "defaultValue": "0"
     },
     "animation-type": {
       "type": "number",
       "description": "点赞动效形式。0：无动效；1：轻动效；2：强动效",
-      "defaultValue": "否"
+      "defaultValue": "1"
     },
     "is-show-toast": {
       "type": "boolean",
       "description": "点赞后是否弹出 toast 提示",
-      "defaultValue": "否"
+      "defaultValue": "false"
     },
     "toast-text": {
       "type": "array",
       "description": "toast 文案，默认为已点赞、已取消",
-      "defaultValue": "否"
+      "defaultValue": "['已点赞', '已取消']"
     },
     "like-param": {
       "type": "object",
-      "description": "点赞服务需要的必要参数",
-      "defaultValue": "是"
+      "description": "点赞服务需要的必要参数"
     },
     "bindError": {
       "tsType": "() => void",
@@ -70,5 +69,8 @@
       "description": "点击点赞按钮，在点赞服务失败后将状态返回给使用组件者"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "like-param"
+  ]
 }
