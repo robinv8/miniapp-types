@@ -1,6 +1,6 @@
 {
   "name": "miniapp-types",
-  "version": "1.1.17",
+  "version": "1.1.18",
   "description": "小程序类型生成器",
   "types": "./dist/types/index.d.ts",
   "files": [
@@ -16,6 +16,7 @@
     "build:schema-weapp": "ts-node src/weapp/generateSchema.ts",
     "build:schema": "ts-node src/generateSchema.ts",
     "build:types": "yarn clean && ts-node src/generateTypeDeclaration.ts",
+    "build:json": "ts-node src/generateJson.ts",
     "format": "ts-node src/propRename.ts",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
