@@ -49,7 +49,7 @@ export interface Like {
   /**
    * 点赞服务需要的必要参数
    */
-  "like-param"?: {
+  "like-param": {
     [k: string]: unknown;
   };
   /**
