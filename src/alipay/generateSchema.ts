@@ -22,9 +22,21 @@ const service = new Service({
           return ''
         }
         let result = str;
-        result = result.replace(/\n?默认值： .*\n?/g, '');
-        result = result.replace(/\n?版本要求： .*\n?/g, '');
+        result = result.replace(/\n?默认值： ?.*\n?/g, '');
+        result = result.replace(/\n?版本要求： ?.*\n?/g, '');
         return result;
+      }
+
+      function nextAll(element) {
+        const nextElements: HTMLElement[] = []
+        let nextElement = element
+
+        while (nextElement.nextElementSibling) {
+          nextElements.push(nextElement.nextElementSibling)
+          nextElement = nextElement.nextElementSibling
+        }
+
+        return nextElements
       }
       const attributes: Attribute[] = [];
 
@@ -46,7 +58,13 @@ const service = new Service({
           `.lake-engine-view>a[name='${text}-有效值']`,
         );
         if (optEl instanceof HTMLElement) {
-          optEl?.nextElementSibling?.nextElementSibling?.querySelectorAll('tbody tr')
+          const tableEl = nextAll(optEl).find((item: HTMLElement) => item.querySelector('table'));
+          if (!tableEl) {
+            return
+          }
+
+
+          (tableEl as HTMLTableElement).querySelectorAll('tbody tr')
             .forEach((el, index) => {
               if (index === 0) {
                 return;
@@ -61,9 +79,11 @@ const service = new Service({
         const type = handleType((<HTMLElement>el.children[fields.type])?.innerText, '/')
         const description = (<HTMLElement>el.children[fields.description])?.innerText;
 
-        const defaultValue =
-          (<HTMLElement>el.children[fields.defaultValue])?.innerText ||
-          description.match(/默认值： (\w+)/)?.[1];
+
+        const defaultValue = ((<HTMLElement>el.children[fields.defaultValue])?.innerText ||
+          description).split('\n').filter(item => item.indexOf('默认值：') > -1)[0]?.replace(/^默认值： /, '')
+
+       
         const required = (<HTMLElement>el.children[fields.required])?.innerText;
 
         const filteredDescription = handleDescription(description);
