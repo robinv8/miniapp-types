@@ -141,7 +141,8 @@
     },
     "floating-mode": {
       "type": "string",
-      "description": "浮窗设置。暂时不支持全局浮窗。\n可选值：\n\nnone：无浮窗。\npage：页面内浮窗。"
+      "description": "浮窗设置。暂时不支持全局浮窗。\n可选值：\n\nnone：无浮窗。\npage：页面内浮窗。",
+      "defaultValue": "none"
     }
   },
   "additionalProperties": false

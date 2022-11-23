@@ -9,12 +9,12 @@
     },
     "path": {
       "type": "string",
-      "description": "Lottie 资源地址。包含近端（包内地址）和远端（网络）的 JSON 文件地址。\n与 djangoId 二选一。"
+      "description": "Lottie 资源地址。包含近端（包内地址）和远端（网络）的 JSON 文件地址。"
     },
     "speed": {
       "type": "float",
       "description": "播放速度。正数为正向播放，负数负向播放。",
-      "defaultValue": "1"
+      "defaultValue": "1.0"
     },
     "repeat-count": {
       "type": "number",
@@ -32,15 +32,11 @@
     },
     "placeholder": {
       "type": "string",
-      "description": "兜底图或者降级图地址。\n\n1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。\n支持 http 的 cdn 地址、近端地址。\n小程序场景不支持 djangoId。"
-    },
-    "django-id": {
-      "type": "string",
-      "description": "Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeholder 图片。\n与 path 二选一"
+      "description": "兜底图或者降级图地址。\n\n1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。\n支持 http 的 cdn 地址、近端地址。"
     },
     "md5": {
       "type": "string",
-      "description": "在线资源的 md5 校验。\ndjangoId=https://b.zip。\n可以使用 b.zip 加密 获取 md5 值\nmd5=\"77c6c86fc89ba94cc0a9271b77ae77d2\""
+      "description": "在线资源的 md5 校验。\n可以使用 b.zip 加密 获取 md5 值\nmd5=\"77c6c86fc89ba94cc0a9271b77ae77d2\""
     },
     "optimize": {
       "type": "boolean",

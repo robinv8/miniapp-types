@@ -39,7 +39,7 @@
     "hover-class": {
       "type": "string",
       "description": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。",
-      "defaultValue": "button"
+      "defaultValue": "button-hover"
     },
     "hover-start-time": {
       "type": "number",
@@ -72,7 +72,11 @@
     },
     "scope": {
       "type": "string",
-      "description": "当 open-type 为 getAuthorize 时有效。"
+      "description": "当 open-type 为 getAuthorize 时有效。",
+      "enum": [
+        "phoneNumber",
+        "userInfo"
+      ]
     },
     "onTap": {
       "tsType": "() => void",

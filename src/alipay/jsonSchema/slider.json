@@ -38,11 +38,13 @@
     },
     "active-color": {
       "type": "string",
-      "description": "已选择的颜色，同 CSS 色值。"
+      "description": "已选择的颜色，同 CSS 色值。",
+      "defaultValue": "#108ee9"
     },
     "background-color": {
       "type": "string",
-      "description": "背景条颜色，同 CSS 色值。"
+      "description": "背景条颜色，同 CSS 色值。",
+      "defaultValue": "#ddd"
     },
     "track-size": {
       "type": "number",
@@ -56,7 +58,8 @@
     },
     "handle-color": {
       "type": "string",
-      "description": "滑块填充色，同 CSS 色值。"
+      "description": "滑块填充色，同 CSS 色值。",
+      "defaultValue": "#fff"
     },
     "onChange": {
       "tsType": "() => void",
