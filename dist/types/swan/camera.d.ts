@@ -11,9 +11,9 @@ export interface Camera {
    */
   "device-position"?: "front" | "back";
   /**
-   * 闪光灯，值为 auto、on、off
+   * 闪光灯，值为 auto、on、off、torch
    */
-  flash?: "auto" | "on" | "off";
+  flash?: "auto" | "on" | "off" | "torch";
   /**
    * 摄像头在非正常终止时触发，如退出后台等情况
    */

@@ -2496,12 +2496,13 @@
             },
             "flash": {
               "type": "string",
-              "description": "闪光灯，值为 auto、on、off",
+              "description": "闪光灯，值为 auto、on、off、torch",
               "defaultValue": "auto",
               "enum": [
                 "auto",
                 "on",
-                "off"
+                "off",
+                "torch"
               ]
             },
             "bindStop": {
