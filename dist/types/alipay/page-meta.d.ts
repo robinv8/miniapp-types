@@ -28,8 +28,6 @@ export interface PageMeta {
   "scroll-top"?: string;
   /**
    * 滚动动画时长。
-   *
-   * 默认值：300
    */
   "scroll-duration"?: number;
   /**

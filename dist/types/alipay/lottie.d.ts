@@ -12,7 +12,6 @@ export interface Lottie {
   autoplay?: boolean;
   /**
    * Lottie 资源地址。包含近端（包内地址）和远端（网络）的 JSON 文件地址。
-   * 与 djangoId 二选一。
    */
   path?: string;
   /**
@@ -41,18 +40,11 @@ export interface Lottie {
    * 兜底图或者降级图地址。
    *
    * 1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。
-   * 支持 http 的 cdn 地址、近端地址。
-   * 小程序场景不支持 djangoId。
+   * 支持 http 的 cdn 地址、近端地址。
    */
   placeholder?: string;
   /**
-   * Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeholder 图片。
-   * 与 path 二选一
-   */
-  "django-id"?: string;
-  /**
    * 在线资源的 md5 校验。
-   * djangoId=https://b.zip。
    * 可以使用 b.zip 加密 获取 md5 值
    * md5="77c6c86fc89ba94cc0a9271b77ae77d2"
    */

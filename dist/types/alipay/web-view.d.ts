@@ -8,6 +8,7 @@
 export interface WebView {
   /**
    * web-view 要渲染的 H5 网页 URL ，默认允许打开所有 https://render.alipay.com/p/ 开头的 URL（支付宝客户端 10.2.63 版本开始支持），其他网页需要在 开放平台控制台 > 对应小程序详情页 > 开发设置 > H5域名配置 进行 H5 域名白名单配置。
+   * 说明：src必须是标准的 H5 链接，任何包含例如 alipays://xx... 的链接都会导致重定向出错，从而无法展示页面，即使是 https://render.alipay.com 开头的 URL 也不能包含 alipays://xx... 此类内容。
    */
   src?: string;
   /**

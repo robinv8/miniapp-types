@@ -11,7 +11,8 @@
         "String[]",
         "Object[]"
       ],
-      "description": "String[] 时表示可选择的字符串列表；Object[] 时需指定 range-key 表示可选择的字段。"
+      "description": "String[] 时表示可选择的字符串列表；Object[] 时需指定 range-key 表示可选择的字段。",
+      "defaultValue": "[]"
     },
     "range-key": {
       "type": "string",

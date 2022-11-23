@@ -45,7 +45,7 @@
             "hover-class": {
               "type": "string",
               "description": "按钮按下去的样式类。button-hover 默认为 {background-color: rgba(0, 0, 0, 0.1); opacity: 0.7;}，hover-class=\"none\" 时表示没有被点击效果。",
-              "defaultValue": "button"
+              "defaultValue": "button-hover"
             },
             "hover-start-time": {
               "type": "number",
@@ -78,7 +78,11 @@
             },
             "scope": {
               "type": "string",
-              "description": "当 open-type 为 getAuthorize 时有效。"
+              "description": "当 open-type 为 getAuthorize 时有效。",
+              "enum": [
+                "phoneNumber",
+                "userInfo"
+              ]
             },
             "onTap": {
               "tsType": "() => void",
@@ -324,12 +328,13 @@
                 "number",
                 "string"
               ],
-              "description": "选填。咨询按钮大小，正方形设置边长（如25*25 px）。",
+              "description": "选填。咨询按钮大小，正方形设置边长（如 25*25 px）。",
               "defaultValue": "25"
             },
             "color": {
               "type": "string",
-              "description": "选填。咨询按钮颜色，默认白底蓝色。"
+              "description": "选填。咨询按钮颜色，默认白底蓝色。",
+              "defaultValue": "#00A3FF"
             },
             "icon": {
               "type": "imgUrl",
@@ -337,11 +342,11 @@
             },
             "alipay-card-no": {
               "type": "string",
-              "description": "选填。支付宝访客用户ID（2088开头）。\n说明： 客服回答问题时，如客户已离开咨询窗口，则通过推送消息到支付宝 card 中提醒客户。"
+              "description": "选填。支付宝访客用户 ID（2088 开头）。\n说明： 客服回答问题时，如客户已离开咨询窗口，则通过推送消息到支付宝 card 中提醒客户。"
             },
             "ext-info": {
               "type": "string",
-              "description": "选填。该属性主要用于传递一些扩展信息给组件，以实现一些高级功能。该属性值的生成方式为：encodeURIComponent({\"字段名\":\"字段值\"})， 其中，字段名和字段值要根据实际使用的功能进行替换。\n目前通过传入扩展信息可支持的 3 个功能：\n1.访客名片。需传 cinfo 和 key 两个扩展字段，代码形如在云客服中进入 设置 > 服务窗配置 > 聊天窗 URL。点击操作栏中的 聊天窗 URL ，获取 tntInstId（企业编码）和 scene（聊天窗编码）。encodeURIComponent({\"cinfo\":\"生成的 cinfo\",\"key\":\"生成的key\"})，cinfo 和 key 的值说明 支付宝小程序接入访客名片；\n2.聊天窗默认带出用户的小程序订单数据。需传 appId 字段，代码形如encodeURIComponent({\"appId\":\"商户小程序appid\"})\n3.未读客服消息同步至\"我的小程序-我的\"。同样需传 appId 字段，代码形如 encodeURIComponent({\"appId\":\"商户小程序appid\"})。"
+              "description": "选填。该属性主要用于传递一些扩展信息给组件，以实现一些高级功能。该属性值的生成方式为：encodeURIComponent({\"字段名\":\"字段值\"})， 其中，字段名和字段值要根据实际使用的功能进行替换。\n目前通过传入扩展信息可支持的 3 个功能：\n1.访客名片。需传 cinfo 和 key 两个扩展字段，代码形如在云客服中进入 设置 > 服务窗配置，点击操作栏中的 部署 ，获取 tntInstId（企业编码）和 scene（聊天窗编码）。encodeURIComponent({\"cinfo\":\"生成的 cinfo\",\"key\":\"生成的key\"})，cinfo 和 key 的值说明 支付宝小程序接入访客名片；\n2.聊天窗默认带出用户的小程序订单数据。需传 appId 字段，代码形如encodeURIComponent({\"appId\":\"商户小程序appid\"})\n3.未读客服消息同步至\"我的小程序-我的\"。同样需传 appId 字段，代码形如 encodeURIComponent({\"appId\":\"商户小程序appid\"})。"
             }
           },
           "additionalProperties": false
@@ -653,12 +658,12 @@
             },
             "path": {
               "type": "string",
-              "description": "Lottie 资源地址。包含近端（包内地址）和远端（网络）的 JSON 文件地址。\n与 djangoId 二选一。"
+              "description": "Lottie 资源地址。包含近端（包内地址）和远端（网络）的 JSON 文件地址。"
             },
             "speed": {
               "type": "float",
               "description": "播放速度。正数为正向播放，负数负向播放。",
-              "defaultValue": "1"
+              "defaultValue": "1.0"
             },
             "repeat-count": {
               "type": "number",
@@ -676,15 +681,11 @@
             },
             "placeholder": {
               "type": "string",
-              "description": "兜底图或者降级图地址。\n\n1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。\n支持 http 的 cdn 地址、近端地址。\n小程序场景不支持 djangoId。"
-            },
-            "django-id": {
-              "type": "string",
-              "description": "Lottie 在线资源。远端的 Zip 文件地址。Lottie 组件会执行 MD5 校验、解压、获取等过程，在过程中显示 placeholder 图片。\n与 path 二选一"
+              "description": "兜底图或者降级图地址。\n\n1. 支持本地资源，案例：'/image/lottie/lottie2_default.png'。\n支持 http 的 cdn 地址、近端地址。"
             },
             "md5": {
               "type": "string",
-              "description": "在线资源的 md5 校验。\ndjangoId=https://b.zip。\n可以使用 b.zip 加密 获取 md5 值\nmd5=\"77c6c86fc89ba94cc0a9271b77ae77d2\""
+              "description": "在线资源的 md5 校验。\n可以使用 b.zip 加密 获取 md5 值\nmd5=\"77c6c86fc89ba94cc0a9271b77ae77d2\""
             },
             "optimize": {
               "type": "boolean",
@@ -747,15 +748,18 @@
             },
             "scale": {
               "type": "number",
-              "description": "缩放级别，取值范围为 5-18。"
+              "description": "缩放级别，取值范围为 5-18。",
+              "defaultValue": "16"
             },
             "skew": {
               "type": "number",
-              "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角。"
+              "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角。",
+              "defaultValue": "0"
             },
             "rotate": {
               "type": "number",
-              "description": "顺时针旋转的角度，范围 0 ~ 360。"
+              "description": "顺时针旋转的角度，范围 0 ~ 360。",
+              "defaultValue": "0"
             },
             "markers": {
               "type": "array",
@@ -1120,7 +1124,8 @@
             },
             "scroll-duration": {
               "type": "number",
-              "description": "滚动动画时长。\n\n默认值：300"
+              "description": "滚动动画时长。",
+              "defaultValue": "300"
             },
             "page-style": {
               "type": "string",
@@ -1199,7 +1204,8 @@
                 "String[]",
                 "Object[]"
               ],
-              "description": "String[] 时表示可选择的字符串列表；Object[] 时需指定 range-key 表示可选择的字段。"
+              "description": "String[] 时表示可选择的字符串列表；Object[] 时需指定 range-key 表示可选择的字段。",
+              "defaultValue": "[]"
             },
             "range-key": {
               "type": "string",
@@ -1490,11 +1496,13 @@
             },
             "active-color": {
               "type": "string",
-              "description": "已选择的颜色，同 CSS 色值。"
+              "description": "已选择的颜色，同 CSS 色值。",
+              "defaultValue": "#108ee9"
             },
             "background-color": {
               "type": "string",
-              "description": "背景条颜色，同 CSS 色值。"
+              "description": "背景条颜色，同 CSS 色值。",
+              "defaultValue": "#ddd"
             },
             "track-size": {
               "type": "number",
@@ -1508,7 +1516,8 @@
             },
             "handle-color": {
               "type": "string",
-              "description": "滑块填充色，同 CSS 色值。"
+              "description": "滑块填充色，同 CSS 色值。",
+              "defaultValue": "#fff"
             },
             "onChange": {
               "tsType": "() => void",
@@ -1942,7 +1951,8 @@
             },
             "floating-mode": {
               "type": "string",
-              "description": "浮窗设置。暂时不支持全局浮窗。\n可选值：\n\nnone：无浮窗。\npage：页面内浮窗。"
+              "description": "浮窗设置。暂时不支持全局浮窗。\n可选值：\n\nnone：无浮窗。\npage：页面内浮窗。",
+              "defaultValue": "none"
             }
           },
           "additionalProperties": false
@@ -2061,7 +2071,7 @@
           "properties": {
             "src": {
               "type": "string",
-              "description": "web-view 要渲染的 H5 网页 URL ，默认允许打开所有 https://render.alipay.com/p/ 开头的 URL（支付宝客户端 10.2.63 版本开始支持），其他网页需要在 开放平台控制台 > 对应小程序详情页 > 开发设置 > H5域名配置 进行 H5 域名白名单配置。"
+              "description": "web-view 要渲染的 H5 网页 URL ，默认允许打开所有 https://render.alipay.com/p/ 开头的 URL（支付宝客户端 10.2.63 版本开始支持），其他网页需要在 开放平台控制台 > 对应小程序详情页 > 开发设置 > H5域名配置 进行 H5 域名白名单配置。\n说明：src必须是标准的 H5 链接，任何包含例如 alipays://xx... 的链接都会导致重定向出错，从而无法展示页面，即使是 https://render.alipay.com 开头的 URL 也不能包含 alipays://xx... 此类内容。"
             },
             "onMessage": {
               "tsType": "() => void",

@@ -53,7 +53,7 @@ export interface Button {
   /**
    * 当 open-type 为 getAuthorize 时有效。
    */
-  scope?: string;
+  scope?: "phoneNumber" | "userInfo";
   /**
    * 点击。
    * 说明： 每点击一次会触发一次事件，建议自行使用代码防止重复点击,可以使用 js 防抖和节流实现。
