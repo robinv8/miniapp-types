@@ -376,9 +376,100 @@
           "title": "cover-view",
           "type": "object",
           "properties": {
-            "onTap": {
+            "class": {
+              "type": "string",
+              "description": "外部样式名。"
+            },
+            "style": {
+              "type": "string",
+              "description": "内联样式名。"
+            },
+            "scroll-x": {
+              "type": "boolean",
+              "description": "允许横向滚动。",
+              "defaultValue": "false"
+            },
+            "scroll-y": {
+              "type": "boolean",
+              "description": "允许纵向滚动。",
+              "defaultValue": "false"
+            },
+            "upper-threshold": {
+              "type": "number",
+              "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件。",
+              "defaultValue": "50"
+            },
+            "lower-threshold": {
+              "type": "number",
+              "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件。",
+              "defaultValue": "50"
+            },
+            "scroll-top": {
+              "type": "number",
+              "description": "设置竖向滚动条位置。"
+            },
+            "scroll-left": {
+              "type": "number",
+              "description": "设置横向滚动条位置。"
+            },
+            "scroll-into-view": {
+              "type": "string",
+              "description": "滚动到子元素，值应为某子元素的 id。当滚动到该元素时，元素顶部对齐滚动区域顶部。\n说明：scroll-into-view 的优先级高于 scroll-top。"
+            },
+            "scroll-with-animation": {
+              "type": "boolean",
+              "description": "在设置滚动条位置时使用动画过渡。",
+              "defaultValue": "false"
+            },
+            "scroll-animation-duration": {
+              "type": "number",
+              "description": "当 scroll-with-animation设置为 true 时，可以设置 scroll-animation-duration 来控制动画的执行时间，单位 ms。"
+            },
+            "enable-back-to-top": {
+              "type": "boolean",
+              "description": "当点击 iOS 顶部状态栏或者双击 Android 标题栏时，滚动条返回顶部，只支持竖向。",
+              "defaultValue": "false"
+            },
+            "trap-scroll": {
+              "type": "boolean",
+              "description": "纵向滚动时，当滚动到顶部或底部时，强制禁止触发页面滚动，仍然只触发 scroll-view 自身的滚动。",
+              "defaultValue": "false"
+            },
+            "onScrollToUpper": {
               "tsType": "() => void",
-              "description": "点击事件回调。"
+              "description": "滚动到顶部/左边，会触发 scrolltoupper 事件。"
+            },
+            "onScrollToLower": {
+              "tsType": "() => void",
+              "description": "滚动到底部/右边，会触发 scrolltolower事件。"
+            },
+            "onScroll": {
+              "tsType": "() => void",
+              "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth}。"
+            },
+            "onTouchStart": {
+              "tsType": "() => void",
+              "description": "触摸动作开始。"
+            },
+            "onTouchMove": {
+              "tsType": "() => void",
+              "description": "触摸后移动。"
+            },
+            "onTouchEnd": {
+              "tsType": "() => void",
+              "description": "触摸动作结束。"
+            },
+            "onTouchCancel": {
+              "tsType": "() => void",
+              "description": "触摸动作被打断，如来电提醒、弹窗。"
+            },
+            "disable-lower-scroll": {
+              "type": "string",
+              "description": "发生滚动前，对滚动方向进行判断，当方向是顶部/左边时，如果值为 always 将始终禁止滚动，如果值为 out-of-bounds 且当前已经滚动到顶部/左边，禁止滚动。"
+            },
+            "disable-upper-scroll": {
+              "type": "string",
+              "description": "发生滚动前，对滚动方向进行判断，当方向是底部/右边时，如果值为 always 将始终禁止滚动，如果值为 out-of-bounds 且当前已经滚动到底部/右边，禁止滚动。"
             }
           },
           "additionalProperties": false
@@ -995,7 +1086,7 @@
             "scale-min": {
               "type": "number",
               "description": "定义缩放倍数最小值。",
-              "defaultValue": "0"
+              "defaultValue": "0.5"
             },
             "scale-max": {
               "type": "number",
@@ -1091,6 +1182,101 @@
             "url": {
               "type": "string",
               "description": "当前小程序内的跳转链接。"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "key": "page-container",
+        "value": {
+          "title": "page-container",
+          "type": "object",
+          "properties": {
+            "show": {
+              "type": "boolean",
+              "description": "是否显示容器组件。",
+              "defaultValue": "false"
+            },
+            "duration": {
+              "type": "number",
+              "description": "动画时长，单位毫秒。",
+              "defaultValue": "300"
+            },
+            "z-index": {
+              "type": "number",
+              "description": "z-index 层级。",
+              "defaultValue": "100"
+            },
+            "overlay": {
+              "type": "boolean",
+              "description": "是否显示遮罩层。",
+              "defaultValue": "true"
+            },
+            "position": {
+              "type": "string",
+              "description": "弹出位置。",
+              "defaultValue": "bottom",
+              "enum": [
+                "top",
+                "bottom",
+                "right",
+                "center"
+              ]
+            },
+            "round": {
+              "type": "boolean",
+              "description": "是否显示圆角。",
+              "defaultValue": "false"
+            },
+            "close-on-slide-down": {
+              "type": "boolean",
+              "description": "是否在下滑一段距离后关闭。",
+              "defaultValue": "false"
+            },
+            "overlay-style": {
+              "type": "string",
+              "description": "自定义遮罩层样式。"
+            },
+            "custom-style": {
+              "type": "string",
+              "description": "自定义弹出层样式。"
+            },
+            "onBeforeEnter": {
+              "tsType": "() => void",
+              "description": "进入前触发。"
+            },
+            "onEnter": {
+              "tsType": "() => void",
+              "description": "进入中触发。"
+            },
+            "onEnterCancelled": {
+              "tsType": "() => void",
+              "description": "进入被打断时触发（通过 a: if 打断时不会触发）。"
+            },
+            "onAfterEnter": {
+              "tsType": "() => void",
+              "description": "进入后触发。"
+            },
+            "onBeforeLeave": {
+              "tsType": "() => void",
+              "description": "离开前触发。"
+            },
+            "onLeave": {
+              "tsType": "() => void",
+              "description": "离开中触发。"
+            },
+            "onLeaveCancelled": {
+              "tsType": "() => void",
+              "description": "离开被打断时触发（通过 a: if 打断时不会触发）。"
+            },
+            "onAfterLeave": {
+              "tsType": "() => void",
+              "description": "离开后触发。"
+            },
+            "onClickOverlay": {
+              "tsType": "() => void",
+              "description": "点击遮罩层时触发。"
             }
           },
           "additionalProperties": false
@@ -1455,6 +1641,35 @@
         }
       },
       {
+        "key": "share-element",
+        "value": {
+          "title": "share-element",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "映射标记。"
+            },
+            "transform": {
+              "type": "boolean",
+              "description": "是否进行动画。",
+              "defaultValue": "false"
+            },
+            "duration": {
+              "type": "number",
+              "description": "动画时长，单位毫秒。",
+              "defaultValue": "300"
+            },
+            "easing-function": {
+              "type": "string",
+              "description": "CSS 缓动函数。",
+              "defaultValue": "ease-out"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
         "key": "slider",
         "value": {
           "title": "slider",
@@ -1545,11 +1760,12 @@
             "indicator-color": {
               "type": "string",
               "description": "指示点颜色。",
-              "defaultValue": "rgba"
+              "defaultValue": "rgba(0, 0, 0, .3)"
             },
             "indicator-active-color": {
               "type": "string",
-              "description": "当前选中的指示点颜色。\n默认值：#000"
+              "description": "当前选中的指示点颜色。",
+              "defaultValue": "#000"
             },
             "active-class": {
               "type": "string",
@@ -1628,35 +1844,43 @@
             },
             "swipe-ratio": {
               "type": "number",
-              "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。\n默认值：0.2"
+              "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。",
+              "defaultValue": "0.2"
             },
             "swipe-speed": {
               "type": "number",
-              "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。"
+              "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。",
+              "defaultValue": "0.05"
             },
             "touch-angle": {
               "type": "number",
-              "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。\n默认值：45"
+              "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。",
+              "defaultValue": "45"
             },
             "display-multiple-items": {
               "type": "number",
-              "description": "同时显示的滑块数量。"
+              "description": "同时显示的滑块数量。",
+              "defaultValue": "1"
             },
             "easing-function": {
               "type": "string",
-              "description": "切换缓动动画类型。"
+              "description": "切换缓动动画类型。",
+              "defaultValue": "default"
             },
             "snap-to-edge": {
               "type": "boolean",
-              "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。"
+              "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。",
+              "defaultValue": "false"
             },
             "adjust-height": {
               "type": "string",
-              "description": "自动以指定滑块的高度为整个容器的高度。当 vertical 为 true 时，默认不调整。可选值为：\n\nfirst：第一个滑块。\ncurrent：实时的当前滑块。\nhighest：高度最大的滑块。\nnone：不根据滑块调整高度，容器高度取决于自身样式。"
+              "description": "自动以指定滑块的高度为整个容器的高度。当 vertical 为 true 时，默认不调整。可选值为：\n\nfirst：第一个滑块。\ncurrent：实时的当前滑块。\nhighest：高度最大的滑块。\nnone：不根据滑块调整高度，容器高度取决于自身样式。",
+              "defaultValue": "first"
             },
             "adjust-vertical-height": {
               "type": "boolean",
-              "description": "vertical 为 true 时强制使 adjust-height 生效。"
+              "description": "vertical 为 true 时强制使 adjust-height 生效。",
+              "defaultValue": "false"
             }
           },
           "additionalProperties": false
@@ -1710,7 +1934,12 @@
             },
             "space": {
               "type": "string",
-              "description": "以何种方式显示连续空格。"
+              "description": "以何种方式显示连续空格。",
+              "enum": [
+                "nbsp",
+                "ensp",
+                "emsp"
+              ]
             },
             "decode": {
               "type": "boolean",
@@ -1996,7 +2225,8 @@
             },
             "animation": {
               "type": "object",
-              "description": "用于动画，详见 my.createAnimation 。使用 my.createAnimation 生成的动画是通过过渡（Transition）实现的，只会触发 onTransitionEnd，不会触发 onAnimationStart, onAnimationIteration, onAnimationEnd。\n默认值：{}"
+              "description": "用于动画，详见 my.createAnimation 。使用 my.createAnimation 生成的动画是通过过渡（Transition）实现的，只会触发 onTransitionEnd，不会触发 onAnimationStart, onAnimationIteration, onAnimationEnd。",
+              "defaultValue": "{}"
             },
             "hover-stop-propagation": {
               "type": "boolean",

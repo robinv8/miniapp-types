@@ -34,7 +34,8 @@
     },
     "animation": {
       "type": "object",
-      "description": "用于动画，详见 my.createAnimation 。使用 my.createAnimation 生成的动画是通过过渡（Transition）实现的，只会触发 onTransitionEnd，不会触发 onAnimationStart, onAnimationIteration, onAnimationEnd。\n默认值：{}"
+      "description": "用于动画，详见 my.createAnimation 。使用 my.createAnimation 生成的动画是通过过渡（Transition）实现的，只会触发 onTransitionEnd，不会触发 onAnimationStart, onAnimationIteration, onAnimationEnd。",
+      "defaultValue": "{}"
     },
     "hover-stop-propagation": {
       "type": "boolean",

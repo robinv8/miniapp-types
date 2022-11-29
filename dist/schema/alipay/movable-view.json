@@ -50,7 +50,7 @@
     "scale-min": {
       "type": "number",
       "description": "定义缩放倍数最小值。",
-      "defaultValue": "0"
+      "defaultValue": "0.5"
     },
     "scale-max": {
       "type": "number",

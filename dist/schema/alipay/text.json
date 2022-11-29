@@ -9,7 +9,12 @@
     },
     "space": {
       "type": "string",
-      "description": "以何种方式显示连续空格。"
+      "description": "以何种方式显示连续空格。",
+      "enum": [
+        "nbsp",
+        "ensp",
+        "emsp"
+      ]
     },
     "decode": {
       "type": "boolean",

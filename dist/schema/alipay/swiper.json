@@ -10,11 +10,12 @@
     "indicator-color": {
       "type": "string",
       "description": "指示点颜色。",
-      "defaultValue": "rgba"
+      "defaultValue": "rgba(0, 0, 0, .3)"
     },
     "indicator-active-color": {
       "type": "string",
-      "description": "当前选中的指示点颜色。\n默认值：#000"
+      "description": "当前选中的指示点颜色。",
+      "defaultValue": "#000"
     },
     "active-class": {
       "type": "string",
@@ -93,35 +94,43 @@
     },
     "swipe-ratio": {
       "type": "number",
-      "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。\n默认值：0.2"
+      "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。",
+      "defaultValue": "0.2"
     },
     "swipe-speed": {
       "type": "number",
-      "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。"
+      "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。",
+      "defaultValue": "0.05"
     },
     "touch-angle": {
       "type": "number",
-      "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。\n默认值：45"
+      "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。",
+      "defaultValue": "45"
     },
     "display-multiple-items": {
       "type": "number",
-      "description": "同时显示的滑块数量。"
+      "description": "同时显示的滑块数量。",
+      "defaultValue": "1"
     },
     "easing-function": {
       "type": "string",
-      "description": "切换缓动动画类型。"
+      "description": "切换缓动动画类型。",
+      "defaultValue": "default"
     },
     "snap-to-edge": {
       "type": "boolean",
-      "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。"
+      "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。",
+      "defaultValue": "false"
     },
     "adjust-height": {
       "type": "string",
-      "description": "自动以指定滑块的高度为整个容器的高度。当 vertical 为 true 时，默认不调整。可选值为：\n\nfirst：第一个滑块。\ncurrent：实时的当前滑块。\nhighest：高度最大的滑块。\nnone：不根据滑块调整高度，容器高度取决于自身样式。"
+      "description": "自动以指定滑块的高度为整个容器的高度。当 vertical 为 true 时，默认不调整。可选值为：\n\nfirst：第一个滑块。\ncurrent：实时的当前滑块。\nhighest：高度最大的滑块。\nnone：不根据滑块调整高度，容器高度取决于自身样式。",
+      "defaultValue": "first"
     },
     "adjust-vertical-height": {
       "type": "boolean",
-      "description": "vertical 为 true 时强制使 adjust-height 生效。"
+      "description": "vertical 为 true 时强制使 adjust-height 生效。",
+      "defaultValue": "false"
     }
   },
   "additionalProperties": false

@@ -16,7 +16,6 @@ export interface Swiper {
   "indicator-color"?: string;
   /**
    * 当前选中的指示点颜色。
-   * 默认值：#000
    */
   "indicator-active-color"?: string;
   /**
@@ -86,7 +85,6 @@ export interface Swiper {
   "disable-touch"?: boolean;
   /**
    * 滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。
-   * 默认值：0.2
    */
   "swipe-ratio"?: number;
   /**
@@ -95,7 +93,6 @@ export interface Swiper {
   "swipe-speed"?: number;
   /**
    * 计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。
-   * 默认值：45
    */
   "touch-angle"?: number;
   /**

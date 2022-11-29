@@ -13,7 +13,7 @@ export interface Text {
   /**
    * 以何种方式显示连续空格。
    */
-  space?: string;
+  space?: "nbsp" | "ensp" | "emsp";
   /**
    * 是否解码。为 true 时表示对文本内容进行解码，可解析的 HTML 实体字符有：&nbsp;&lt;&gt;&amp;&apos;&ensp;&emsp;。
    */

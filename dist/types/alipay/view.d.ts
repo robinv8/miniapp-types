@@ -36,7 +36,6 @@ export interface View {
   style?: string;
   /**
    * 用于动画，详见 my.createAnimation 。使用 my.createAnimation 生成的动画是通过过渡（Transition）实现的，只会触发 onTransitionEnd，不会触发 onAnimationStart, onAnimationIteration, onAnimationEnd。
-   * 默认值：{}
    */
   animation?: {
     [k: string]: unknown;
