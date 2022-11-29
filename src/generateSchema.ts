@@ -1,4 +1,4 @@
-// import './alipay/generateSchema';
+import './alipay/generateSchema';
 import './swan/generateSchema';
 import './weapp/generateSchema';
 import './jd/generateSchema';

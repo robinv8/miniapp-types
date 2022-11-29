@@ -28,7 +28,7 @@ const getComponentList = async (url, page) => {
   return data
 }
 
-const fn = async () => {
+const exec = async () => {
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
@@ -38,4 +38,4 @@ const fn = async () => {
   fs.writeFileSync(path.resolve(__dirname, './componentList.json'), JSON.stringify(componentList, null, 2))
 }
 
-fn()
+exec()

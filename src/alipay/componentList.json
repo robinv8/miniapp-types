@@ -72,6 +72,24 @@
     }
   },
   {
+    "name": "page-container",
+    "url": "https://opendocs.alipay.com/mini/04ne6j",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
+  },
+  {
+    "name": "share-element",
+    "url": "https://opendocs.alipay.com/mini/04y2ya",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
+  },
+  {
     "name": "text",
     "url": "https://opendocs.alipay.com/mini/component/text",
     "fields": {

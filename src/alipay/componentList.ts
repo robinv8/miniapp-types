@@ -41,4 +41,4 @@ const exec = async () => {
   );
 };
 
-export default exec;
+exec();
