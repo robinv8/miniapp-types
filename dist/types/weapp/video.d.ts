@@ -169,9 +169,13 @@ export interface Video {
    */
   "referrer-policy"?: "origin" | "no-referrer";
   /**
-   * 是否是 DRM 视频源
+   * 是否为 DRM 视频源
    */
   "is-drm"?: boolean;
+  /**
+   * 是否为直播源
+   */
+  "is-live"?: boolean;
   /**
    * DRM 设备身份认证 url，仅 is-drm 为 true 时生效 (Android)
    */

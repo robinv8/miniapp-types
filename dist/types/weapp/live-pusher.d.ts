@@ -19,6 +19,10 @@ export interface LivePusher {
    */
   autopush?: boolean;
   /**
+   * 自定义渲染，允许开发者自行处理所采集的视频帧，详见LivePusherContext
+   */
+  enableVideoCustomRender?: boolean;
+  /**
    * 是否静音。即将废弃，可用 enable-mic 替代
    */
   muted?: boolean;

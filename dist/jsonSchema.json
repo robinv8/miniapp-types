@@ -6089,6 +6089,11 @@
               "description": "自动推流",
               "defaultValue": "false"
             },
+            "enableVideoCustomRender": {
+              "type": "boolean",
+              "description": "自定义渲染，允许开发者自行处理所采集的视频帧，详见LivePusherContext",
+              "defaultValue": "false"
+            },
             "muted": {
               "type": "boolean",
               "description": "是否静音。即将废弃，可用 enable-mic 替代",
@@ -8060,7 +8065,11 @@
             },
             "is-drm": {
               "type": "boolean",
-              "description": "是否是 DRM 视频源"
+              "description": "是否为 DRM 视频源"
+            },
+            "is-live": {
+              "type": "boolean",
+              "description": "是否为直播源"
             },
             "provision-url": {
               "type": "string",
