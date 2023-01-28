@@ -7,13 +7,17 @@
 
 export interface VoipRoom {
   /**
-   * 对话窗口类型，自身传入 camera，其它用户传入 video
+   * 对话窗口类型
    */
-  mode?: string;
+  mode: "camera" | "video";
   /**
-   * 仅在 mode 为 camera 时有效，前置或后置，值为front, back
+   * 摄像头方向，仅在 mode 为 camera 时有效
    */
-  "device-position"?: string;
+  "device-position": "front" | "back";
+  /**
+   * 画面与容器比例不一致时，画面的表现形式
+   */
+  "object-fit": "fill" | "contain" | "cover";
   /**
    * 进入房间用户的 openid
    */

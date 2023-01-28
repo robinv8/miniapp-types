@@ -97,6 +97,11 @@
       "description": "开启俯视",
       "defaultValue": "false"
     },
+    "enable-auto-max-overlooking": {
+      "type": "boolean",
+      "description": "开启最大俯视角，俯视角度从 45 度拓展到 75 度",
+      "defaultValue": "false"
+    },
     "enable-zoom": {
       "type": "boolean",
       "description": "是否支持缩放",

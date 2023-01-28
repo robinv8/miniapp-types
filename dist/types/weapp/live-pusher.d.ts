@@ -150,6 +150,26 @@ export interface LivePusher {
         [k: string]: unknown;
       };
   /**
+   * 是否启动自定义特效，设定后不能更改
+   */
+  "custom-effect"?: boolean;
+  /**
+   * 自定义特效美白效果，取值 0~1。需要开启 custom-effect
+   */
+  "skin-whiteness"?: number;
+  /**
+   * 自定义特效磨皮效果，取值 0~1。需要开启 custom-effect
+   */
+  "skin-smoothness"?: number;
+  /**
+   * 自定义特效瘦脸效果，取值 0~1。需要开启 custom-effect
+   */
+  "face-thinness"?: number;
+  /**
+   * 自定义特效大眼效果，取值 0~1。需要开启 custom-effect
+   */
+  "eye-bigness"?: number;
+  /**
    * 状态变化事件，detail = {code}
    */
   bindStateChange?: () => void;

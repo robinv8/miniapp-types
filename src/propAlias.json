@@ -124,5 +124,6 @@
   "bindclosebackground": "bindCloseBackground",
   "bindleavebackground": "bindLeaveBackground",
   "close-on-slideDown": "closeOnSlideDown",
-  "openid": "openId"
+  "openid": "openId",
+  "bindnicknamereview": "bindNickNameReview"
 }

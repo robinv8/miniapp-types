@@ -7,9 +7,9 @@
 
 export interface Video {
   /**
-   * 要播放的视频资源地址
+   * 要播放的视频资源地址。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src
    */
-  src: string;
+  src?: string;
   /**
    * 是否自动播放
    */
@@ -39,7 +39,7 @@ export interface Video {
    */
   "object-fit"?: "contain" | "fill" | "cover";
   /**
-   * 播放按钮的位置：center（视频中间），bottom（控制条上）。投屏页面需要为 bottom 才会展示播放按钮
+   * 播放按钮的位置：center（视频中间），bottom（控制条上）
    */
   "play-btn-position"?: "center" | "bottom";
   /**
@@ -71,11 +71,11 @@ export interface Video {
    */
   muted?: boolean;
   /**
-   * 是否显示静音控件
+   * 是否显示静音控件，仅在全屏时显示
    */
   "show-mute-btn"?: boolean;
   /**
-   * 是否显示倍速控件，点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2
+   * 是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2
    */
   "show-playback-rate-btn"?: boolean;
   /**
@@ -87,9 +87,23 @@ export interface Video {
    */
   "enable-play-in-background"?: boolean;
   /**
-   * 设置署名水印
+   * 设置署名水印，属性说明详见 Signature 类型说明
    */
   signature?: {
+    [k: string]: unknown;
+  };
+  /**
+   * 指定视频的初始播放位置
+   */
+  "initial-time"?: number;
+  /**
+   * 是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作
+   */
+  "show-screen-lock-button"?: boolean;
+  /**
+   * 清晰度，设置清晰度列表和默认播放的清晰度。切换清晰度按钮仅在全屏时展示，属性说明详见 Definition 类型说明。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src
+   */
+  definition?: {
     [k: string]: unknown;
   };
   /**

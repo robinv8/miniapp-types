@@ -4971,6 +4971,10 @@
             "bindLoadedMetaData": {
               "tsType": "() => void",
               "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
+            },
+            "bindControlsToggle": {
+              "tsType": "() => void",
+              "description": "切换controls控件显示隐藏时触发。event.detail = {show}"
             }
           },
           "additionalProperties": false,
@@ -6280,6 +6284,31 @@
                 "pop"
               ]
             },
+            "custom-effect": {
+              "type": "boolean",
+              "description": "是否启动自定义特效，设定后不能更改",
+              "defaultValue": "false"
+            },
+            "skin-whiteness": {
+              "type": "number",
+              "description": "自定义特效美白效果，取值 0~1。需要开启 custom-effect",
+              "defaultValue": "0"
+            },
+            "skin-smoothness": {
+              "type": "number",
+              "description": "自定义特效磨皮效果，取值 0~1。需要开启 custom-effect",
+              "defaultValue": "0"
+            },
+            "face-thinness": {
+              "type": "number",
+              "description": "自定义特效瘦脸效果，取值 0~1。需要开启 custom-effect",
+              "defaultValue": "0"
+            },
+            "eye-bigness": {
+              "type": "number",
+              "description": "自定义特效大眼效果，取值 0~1。需要开启 custom-effect",
+              "defaultValue": "0"
+            },
             "bindStateChange": {
               "tsType": "() => void",
               "description": "状态变化事件，detail = {code}"
@@ -6419,6 +6448,11 @@
             "enable-overlooking": {
               "type": "boolean",
               "description": "开启俯视",
+              "defaultValue": "false"
+            },
+            "enable-auto-max-overlooking": {
+              "type": "boolean",
+              "description": "开启最大俯视角，俯视角度从 45 度拓展到 75 度",
               "defaultValue": "false"
             },
             "enable-zoom": {
@@ -8186,13 +8220,31 @@
           "properties": {
             "mode": {
               "type": "string",
-              "description": "对话窗口类型，自身传入 camera，其它用户传入 video",
-              "defaultValue": "camera"
+              "description": "对话窗口类型",
+              "defaultValue": "camera",
+              "enum": [
+                "camera",
+                "video"
+              ]
             },
             "device-position": {
               "type": "string",
-              "description": "仅在 mode 为 camera 时有效，前置或后置，值为front, back",
-              "defaultValue": "front"
+              "description": "摄像头方向，仅在 mode 为 camera 时有效",
+              "defaultValue": "front",
+              "enum": [
+                "front",
+                "back"
+              ]
+            },
+            "object-fit": {
+              "type": "string",
+              "description": "画面与容器比例不一致时，画面的表现形式",
+              "defaultValue": "fill",
+              "enum": [
+                "fill",
+                "contain",
+                "cover"
+              ]
             },
             "openId": {
               "type": "string",
@@ -8205,7 +8257,10 @@
           },
           "additionalProperties": false,
           "required": [
-            "openid"
+            "openid",
+            "mode",
+            "device-position",
+            "object-fit"
           ]
         }
       },
@@ -13340,7 +13395,7 @@
           "properties": {
             "src": {
               "type": "string",
-              "description": "要播放的视频资源地址"
+              "description": "要播放的视频资源地址。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src"
             },
             "autoplay": {
               "type": "boolean",
@@ -13383,7 +13438,7 @@
             },
             "play-btn-position": {
               "type": "string",
-              "description": "播放按钮的位置：center（视频中间），bottom（控制条上）。投屏页面需要为 bottom 才会展示播放按钮",
+              "description": "播放按钮的位置：center（视频中间），bottom（控制条上）",
               "defaultValue": "center",
               "enum": [
                 "center",
@@ -13425,12 +13480,12 @@
             },
             "show-mute-btn": {
               "type": "boolean",
-              "description": "是否显示静音控件",
+              "description": "是否显示静音控件，仅在全屏时显示",
               "defaultValue": "false"
             },
             "show-playback-rate-btn": {
               "type": "boolean",
-              "description": "是否显示倍速控件，点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2",
+              "description": "是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2",
               "defaultValue": "false"
             },
             "direction": {
@@ -13450,7 +13505,21 @@
             },
             "signature": {
               "type": "signature",
-              "description": "设置署名水印"
+              "description": "设置署名水印，属性说明详见 Signature 类型说明"
+            },
+            "initial-time": {
+              "type": "number",
+              "description": "指定视频的初始播放位置",
+              "defaultValue": "0"
+            },
+            "show-screen-lock-button": {
+              "type": "boolean",
+              "description": "是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作",
+              "defaultValue": "false"
+            },
+            "definition": {
+              "type": "definition",
+              "description": "清晰度，设置清晰度列表和默认播放的清晰度。切换清晰度按钮仅在全屏时展示，属性说明详见 Definition 类型说明。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src"
             },
             "bindPlay": {
               "tsType": "() => void",
@@ -13537,10 +13606,7 @@
               "description": "离开小窗进入 app 事件时触发"
             }
           },
-          "additionalProperties": false,
-          "required": [
-            "src"
-          ]
+          "additionalProperties": false
         }
       },
       {

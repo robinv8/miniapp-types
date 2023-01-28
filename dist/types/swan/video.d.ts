@@ -152,4 +152,8 @@ export interface Video {
    * 视频元数据加载完成时触发。event.detail = {width, height, duration}
    */
   bindLoadedMetaData?: () => void;
+  /**
+   * 切换controls控件显示隐藏时触发。event.detail = {show}
+   */
+  bindControlsToggle?: () => void;
 }

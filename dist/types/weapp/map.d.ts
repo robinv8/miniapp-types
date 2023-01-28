@@ -105,6 +105,10 @@ export interface Map {
    */
   "enable-overlooking"?: boolean;
   /**
+   * 开启最大俯视角，俯视角度从 45 度拓展到 75 度
+   */
+  "enable-auto-max-overlooking"?: boolean;
+  /**
    * 是否支持缩放
    */
   "enable-zoom"?: boolean;
