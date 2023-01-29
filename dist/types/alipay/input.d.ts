@@ -82,6 +82,10 @@ export interface Input {
    */
   "always-system"?: boolean;
   /**
+   * 是否启用原生键盘。
+   */
+  "enable-native"?: boolean;
+  /**
    * 键盘输入时触发 input 事件，event.detail = {value: value,cursor: cursor}。
    */
   onInput?: () => void;
