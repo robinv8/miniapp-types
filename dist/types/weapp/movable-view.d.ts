@@ -51,7 +51,7 @@ export interface MovableView {
    */
   "scale-max"?: number;
   /**
-   * 定义缩放倍数，取值范围为 0.5 - 10
+   * 定义缩放倍数，取值范围为 0.1 - 10
    */
   "scale-value"?: number;
   /**

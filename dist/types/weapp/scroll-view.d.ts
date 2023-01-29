@@ -39,7 +39,7 @@ export interface ScrollView {
    */
   "scroll-with-animation"?: boolean;
   /**
-   * iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向
+   * iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向。自 2.27.3 版本开始，若非显式设置为 false，则在显示尺寸大于屏幕 90% 时自动开启。
    */
   "enable-back-to-top"?: boolean;
   /**
@@ -91,7 +91,7 @@ export interface ScrollView {
    */
   "paging-enabled"?: boolean;
   /**
-   * 滑动减速速率控制 (同时开启 enhanced 属性后生效)
+   * 滑动减速速率控制, 仅在 iOS 下生效 (同时开启 enhanced 属性后生效)
    */
   "fast-deceleration"?: boolean;
   /**

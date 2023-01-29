@@ -5447,6 +5447,79 @@
         }
       },
       {
+        "key": "channel-live",
+        "value": {
+          "title": "channel-live",
+          "type": "object",
+          "properties": {
+            "feed-id": {
+              "type": "string",
+              "description": "视频 feedId"
+            },
+            "finder-user-name": {
+              "type": "string",
+              "description": "视频号 id，以“sph”开头的id，可在视频号助手获取。视频号必须与当前小程序相同主体。"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "feed-id",
+            "finder-user-name"
+          ]
+        }
+      },
+      {
+        "key": "channel-video",
+        "value": {
+          "title": "channel-video",
+          "type": "object",
+          "properties": {
+            "feed-id": {
+              "type": "string",
+              "description": "视频 feedId"
+            },
+            "finder-user-name": {
+              "type": "string",
+              "description": "视频号 id，以“sph”开头的id，可在视频号助手获取。视频号必须与当前小程序相同主体。"
+            },
+            "autoplay": {
+              "type": "boolean",
+              "description": "是否自动播放",
+              "defaultValue": "false"
+            },
+            "loop": {
+              "type": "boolean",
+              "description": "是否循环播放",
+              "defaultValue": "false"
+            },
+            "muted": {
+              "type": "boolean",
+              "description": "是否静音播放",
+              "defaultValue": "false"
+            },
+            "object-fit": {
+              "type": "boolean",
+              "description": "当视频大小与 video 容器大小不一致时，视频的表现形式",
+              "defaultValue": "contain",
+              "enum": [
+                "contain",
+                "fill",
+                "cover"
+              ]
+            },
+            "bindError": {
+              "tsType": "() => void",
+              "description": "视频播放出错时触发"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "feed-id",
+            "finder-user-name"
+          ]
+        }
+      },
+      {
         "key": "checkbox-group",
         "value": {
           "title": "checkbox-group",
@@ -5664,6 +5737,48 @@
             }
           },
           "additionalProperties": false
+        }
+      },
+      {
+        "key": "grid-view",
+        "value": {
+          "title": "grid-view",
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "布局方式",
+              "defaultValue": "aligned",
+              "enum": [
+                "aligned",
+                "masonry"
+              ]
+            },
+            "cross-axis-count": {
+              "type": "number",
+              "description": "交叉轴元素数量",
+              "defaultValue": "2"
+            },
+            "max-cross-axis-extent": {
+              "type": "number",
+              "description": "交叉轴元素最大范围",
+              "defaultValue": "0"
+            },
+            "main-axis-gap": {
+              "type": "number",
+              "description": "主轴方向间隔",
+              "defaultValue": "0"
+            },
+            "cross-axis-gap": {
+              "type": "number",
+              "description": "交叉轴方向间隔",
+              "defaultValue": "0"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ]
         }
       },
       {
@@ -5891,7 +6006,7 @@
             },
             "bindInput": {
               "tsType": "() => void",
-              "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
+              "description": "键盘输入时或内容改变时触发。event.detail = { value: string, cursor?: number, keyCode?: number }，cursor 为光标位置，keyCode 为键值。2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
             },
             "bindFocus": {
               "tsType": "() => void",
@@ -5908,6 +6023,10 @@
             "bindKeyboardHeightChange": {
               "tsType": "() => void",
               "description": "键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}"
+            },
+            "bindNickNameReview": {
+              "tsType": "() => void",
+              "description": "用户昵称审核完毕后触发，仅在 type 为 \"nickname\" 时有效，event.detail = { pass, timeout }"
             }
           },
           "additionalProperties": false,
@@ -5920,7 +6039,8 @@
             "bindfocus",
             "bindblur",
             "bindconfirm",
-            "bindkeyboardheightchange"
+            "bindkeyboardheightchange",
+            "bindnicknamereview"
           ]
         }
       },
@@ -6648,7 +6768,7 @@
             "scale-min": {
               "type": "number",
               "description": "定义缩放倍数最小值",
-              "defaultValue": "0.5"
+              "defaultValue": "0.1"
             },
             "scale-max": {
               "type": "number",
@@ -6657,7 +6777,7 @@
             },
             "scale-value": {
               "type": "number",
-              "description": "定义缩放倍数，取值范围为 0.5 - 10",
+              "description": "定义缩放倍数，取值范围为 0.1 - 10",
               "defaultValue": "1"
             },
             "animation": {
@@ -7277,6 +7397,21 @@
         }
       },
       {
+        "key": "root-portal",
+        "value": {
+          "title": "root-portal",
+          "type": "object",
+          "properties": {
+            "enable": {
+              "type": "boolean",
+              "description": "是否从页面中脱离出来",
+              "defaultValue": "true"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
         "key": "scroll-view",
         "value": {
           "title": "scroll-view",
@@ -7333,7 +7468,7 @@
             },
             "enable-back-to-top": {
               "type": "boolean",
-              "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
+              "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向。自 2.27.3 版本开始，若非显式设置为 false，则在显示尺寸大于屏幕 90% 时自动开启。",
               "defaultValue": "false"
             },
             "enable-flex": {
@@ -7398,7 +7533,7 @@
             },
             "fast-deceleration": {
               "type": "boolean",
-              "description": "滑动减速速率控制 (同时开启 enhanced 属性后生效)",
+              "description": "滑动减速速率控制, 仅在 iOS 下生效 (同时开启 enhanced 属性后生效)",
               "defaultValue": "false"
             },
             "bindDragStart": {
@@ -8534,6 +8669,42 @@
         }
       },
       {
+        "key": "cover-image",
+        "value": {
+          "title": "cover-image",
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string",
+              "description": "图标路径，支持临时路径、网络地址。暂不支持 base64 格式。"
+            },
+            "bindLoad": {
+              "tsType": "() => void",
+              "description": "图片加载成功时触发"
+            },
+            "bindError": {
+              "tsType": "() => void",
+              "description": "图片加载失败时触发"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "key": "cover-view",
+        "value": {
+          "title": "cover-view",
+          "type": "object",
+          "properties": {
+            "scroll-top": {
+              "type": "number",
+              "description": "设置顶部滚动偏移量，仅在设置了 overflow-y: scroll 成为滚动元素后生效"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
         "key": "form",
         "value": {
           "title": "form",
@@ -8859,6 +9030,21 @@
         }
       },
       {
+        "key": "movable-area",
+        "value": {
+          "title": "movable-area",
+          "type": "object",
+          "properties": {
+            "scale-area": {
+              "type": "boolean",
+              "description": "当里面的movable-view设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个movable-area",
+              "defaultValue": "false"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
         "key": "navigator",
         "value": {
           "title": "navigator",
@@ -9056,14 +9242,43 @@
         }
       },
       {
-        "key": "radio",
+        "key": "radio-group",
         "value": {
-          "title": "radio",
+          "title": "radio-group",
           "type": "object",
           "properties": {
             "bindChange": {
               "tsType": "() => void",
               "description": "<radio-group/> 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项radio的value}"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "key": "radio",
+        "value": {
+          "title": "radio",
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "<radio/> 标识。当该 <radio/> 选中时，<radio-group/> 的 change 事件会携带 <radio/> 的 value"
+            },
+            "checked": {
+              "type": "boolean",
+              "description": "当前是否选中",
+              "defaultValue": "false"
+            },
+            "disabled": {
+              "type": "boolean",
+              "description": "是否禁用",
+              "defaultValue": "false"
+            },
+            "color": {
+              "type": "string",
+              "description": "radio 的颜色，同 css 的 color",
+              "defaultValue": "#F0250F"
             }
           },
           "additionalProperties": false
@@ -9115,11 +9330,6 @@
             "enable-back-to-top": {
               "type": "boolean",
               "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
-              "defaultValue": "false"
-            },
-            "enable-flex": {
-              "type": "boolean",
-              "description": "启用 flexbox 布局。开启后，当前节点声明了 display: flex 就会成为 flex container，并作用于其孩子节点。",
               "defaultValue": "false"
             },
             "bindScrollToUpper": {
@@ -9319,11 +9529,6 @@
                 "easeInOutCubic"
               ]
             },
-            "snap-to-edge": {
-              "type": "boolean",
-              "description": "当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素",
-              "defaultValue": "false"
-            },
             "bindChange": {
               "tsType": "() => void",
               "description": "current改变时会触发 change 事件，event.detail = {current: current, source: source}"
@@ -9331,10 +9536,6 @@
             "bindAnimationFinish": {
               "tsType": "() => void",
               "description": "动画结束时会触发 animationfinish 事件，event.detail 同上"
-            },
-            "bindTransition": {
-              "tsType": "() => void",
-              "description": "swiper-item 的位置发生改变时会触发 transition 事件，event.detail = {dx: dx, dy: dy}"
             }
           },
           "additionalProperties": false
@@ -9393,6 +9594,112 @@
               "type": "boolean",
               "description": "是否解码",
               "defaultValue": "false"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "key": "textarea",
+        "value": {
+          "title": "textarea",
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "输入框的内容"
+            },
+            "placeholder": {
+              "type": "string",
+              "description": "输入框为空时占位符"
+            },
+            "placeholder-style": {
+              "type": "string",
+              "description": "指定 placeholder 的样式"
+            },
+            "placeholder-class": {
+              "type": "string",
+              "description": "指定 placeholder 的样式类",
+              "defaultValue": "textarea-placeholder"
+            },
+            "disabled": {
+              "type": "boolean",
+              "description": "是否禁用",
+              "defaultValue": "false"
+            },
+            "maxlength": {
+              "type": "number",
+              "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
+              "defaultValue": "140"
+            },
+            "auto-focus": {
+              "type": "boolean",
+              "description": "自动聚焦，拉起键盘。",
+              "defaultValue": "false"
+            },
+            "focus": {
+              "type": "boolean",
+              "description": "获取焦点",
+              "defaultValue": "false"
+            },
+            "auto-height": {
+              "type": "boolean",
+              "description": "是否自动增高，设置 auto-height 时，style.height 不生效",
+              "defaultValue": "false"
+            },
+            "fixed": {
+              "type": "boolean",
+              "description": "如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true",
+              "defaultValue": "false"
+            },
+            "cursor-spacing": {
+              "type": "number",
+              "description": "指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
+              "defaultValue": "0"
+            },
+            "cursor": {
+              "type": "number",
+              "description": "指定 focus 时的光标位置"
+            },
+            "show-confirm-bar": {
+              "type": "boolean",
+              "description": "是否显示键盘上方带有\"完成\"按钮那一栏",
+              "defaultValue": "true"
+            },
+            "selection-start": {
+              "type": "number",
+              "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+              "defaultValue": "-1"
+            },
+            "selection-end": {
+              "type": "number",
+              "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+              "defaultValue": "-1"
+            },
+            "adjust-position": {
+              "type": "boolean",
+              "description": "键盘弹起时，是否自动上推页面",
+              "defaultValue": "true"
+            },
+            "bindFocus": {
+              "tsType": "() => void",
+              "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度"
+            },
+            "bindBlur": {
+              "tsType": "() => void",
+              "description": "输入框失去焦点时触发，event.detail = {value, cursor}"
+            },
+            "bindLineChange": {
+              "tsType": "() => void",
+              "description": "输入框行数变化时调用，event.detail = {height: 0, heightRpx: 0, lineCount: 0}"
+            },
+            "bindInput": {
+              "tsType": "() => void",
+              "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor}，bindinput 处理函数的返回值并不会反映到 textarea 上"
+            },
+            "bindConfirm": {
+              "tsType": "() => void",
+              "description": "点击完成时， 触发 confirm 事件，event.detail = {value: value}"
             }
           },
           "additionalProperties": false

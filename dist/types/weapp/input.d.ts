@@ -107,7 +107,7 @@ export interface Input {
    */
   "safe-password-custom-hash"?: string;
   /**
-   * 键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。
+   * 键盘输入时或内容改变时触发。event.detail = { value: string, cursor?: number, keyCode?: number }，cursor 为光标位置，keyCode 为键值。2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。
    */
   bindInput?: () => void;
   /**
@@ -126,4 +126,8 @@ export interface Input {
    * 键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}
    */
   bindKeyboardHeightChange?: () => void;
+  /**
+   * 用户昵称审核完毕后触发，仅在 type 为 "nickname" 时有效，event.detail = { pass, timeout }
+   */
+  bindNickNameReview?: () => void;
 }

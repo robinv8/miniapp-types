@@ -7,7 +7,19 @@
 
 export interface Radio {
   /**
-   * <radio-group/> 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项radio的value}
+   * <radio/> 标识。当该 <radio/> 选中时，<radio-group/> 的 change 事件会携带 <radio/> 的 value
    */
-  bindChange?: () => void;
+  value?: string;
+  /**
+   * 当前是否选中
+   */
+  checked?: boolean;
+  /**
+   * 是否禁用
+   */
+  disabled?: boolean;
+  /**
+   * radio 的颜色，同 css 的 color
+   */
+  color?: string;
 }

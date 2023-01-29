@@ -1,0 +1,12 @@
+{
+  "title": "root-portal",
+  "type": "object",
+  "properties": {
+    "enable": {
+      "type": "boolean",
+      "description": "是否从页面中脱离出来",
+      "defaultValue": "true"
+    }
+  },
+  "additionalProperties": false
+}

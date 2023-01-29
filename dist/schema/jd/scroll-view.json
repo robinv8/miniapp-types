@@ -44,11 +44,6 @@
       "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
       "defaultValue": "false"
     },
-    "enable-flex": {
-      "type": "boolean",
-      "description": "启用 flexbox 布局。开启后，当前节点声明了 display: flex 就会成为 flex container，并作用于其孩子节点。",
-      "defaultValue": "false"
-    },
     "bindScrollToUpper": {
       "tsType": "() => void",
       "description": "滚动到顶部/左边，会触发 scrolltoupper 事件"
