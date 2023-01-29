@@ -23,11 +23,14 @@
   },
   {
     "name": "grid-view",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/grid-view.html"
-  },
-  {
-    "name": "list-view",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/list-view.html"
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/grid-view.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "match-media",
@@ -75,7 +78,14 @@
   },
   {
     "name": "root-portal",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/root-portal.html"
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/root-portal.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "scroll-view",
@@ -98,14 +108,6 @@
       "required": 3,
       "description": 4
     }
-  },
-  {
-    "name": "sticky-header",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/sticky-header.html"
-  },
-  {
-    "name": "sticky-section",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/sticky-section.html"
   },
   {
     "name": "swiper",
@@ -251,10 +253,6 @@
     }
   },
   {
-    "name": "keyboard-accessory",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/keyboard-accessory.html"
-  },
-  {
     "name": "label",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/label.html",
     "fields": {
@@ -286,10 +284,6 @@
       "required": 3,
       "description": 4
     }
-  },
-  {
-    "name": "picker-view-column",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/picker-view-column.html"
   },
   {
     "name": "radio",
@@ -392,11 +386,25 @@
   },
   {
     "name": "channel-live",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/channel-live.html"
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/channel-live.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "channel-video",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/channel-video.html"
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/channel-video.html",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "required": 3,
+      "description": 4
+    }
   },
   {
     "name": "image",
@@ -530,14 +538,6 @@
       "required": 3,
       "description": 4
     }
-  },
-  {
-    "name": "native-component",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/native-component.html"
-  },
-  {
-    "name": "aria-component",
-    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/aria-component.html"
   },
   {
     "name": "navigation-bar",
