@@ -35,6 +35,19 @@ const exec = async () => {
     'https://opendocs.alipay.com/mini/component/',
     page,
   );
+  const componentListStr = fs.readFileSync(
+    path.resolve(__dirname, './componentList.json'),
+    'utf-8',
+  );
+  const componentListJSON = JSON.parse(componentListStr);
+  componentList.forEach((item) => {
+    const component = componentListJSON.find(
+      (component) => component.name === item.name,
+    );
+    if (component) {
+      item = Object.assign(item, component);
+    }
+  });
   fs.writeFileSync(
     path.resolve(__dirname, './componentList.json'),
     JSON.stringify(componentList, null, 2),

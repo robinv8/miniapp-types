@@ -1,7 +1,7 @@
 [
   {
     "name": "view",
-    "url": "https://mp-docs.jd.com/component/view/view.html#view",
+    "url": "https://mp-docs.jd.com/doc/dev/component/549",
     "fields": {
       "name": 0,
       "type": 1,
@@ -11,7 +11,7 @@
   },
   {
     "name": "scroll-view",
-    "url": "https://mp-docs.jd.com/component/view/scroll-view.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/550",
     "fields": {
       "name": 0,
       "type": 1,
@@ -21,7 +21,7 @@
   },
   {
     "name": "swiper",
-    "url": "https://mp-docs.jd.com/component/view/swiper.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/551",
     "fields": {
       "name": 0,
       "type": 1,
@@ -31,7 +31,7 @@
   },
   {
     "name": "swiper-item",
-    "url": "https://mp-docs.jd.com/component/view/swiper.html#swiper-item",
+    "url": "https://mp-docs.jd.com/doc/dev/component/551#swiper-item",
     "tableIndex": 2,
     "fields": {
       "name": 0,
@@ -41,8 +41,44 @@
     }
   },
   {
+    "name": "movable-area",
+    "url": "https://mp-docs.jd.com/doc/dev/component/552",
+    "tables": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
+    "name": "cover-image",
+    "url": "https://mp-docs.jd.com/doc/dev/component/553",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
+    "name": "cover-view",
+    "url": "https://mp-docs.jd.com/doc/dev/component/548",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
     "name": "icon",
-    "url": "https://mp-docs.jd.com/component/content/icon.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/554",
     "fields": {
       "name": 0,
       "type": 1,
@@ -52,7 +88,17 @@
   },
   {
     "name": "text",
-    "url": "https://mp-docs.jd.com/component/content/text.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/555",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
+    "name": "textarea",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1684",
     "fields": {
       "name": 0,
       "type": 1,
@@ -62,7 +108,7 @@
   },
   {
     "name": "progress",
-    "url": "https://mp-docs.jd.com/component/content/progress.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/556",
     "fields": {
       "name": 0,
       "type": 1,
@@ -72,7 +118,7 @@
   },
   {
     "name": "button",
-    "url": "https://mp-docs.jd.com/component/form/button.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1682",
     "fields": {
       "name": 0,
       "type": 1,
@@ -82,7 +128,7 @@
   },
   {
     "name": "form",
-    "url": "https://mp-docs.jd.com/component/form/form.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1681#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -92,7 +138,7 @@
   },
   {
     "name": "input",
-    "url": "https://mp-docs.jd.com/component/form/input.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1678",
     "fields": {
       "name": 0,
       "type": 1,
@@ -102,7 +148,7 @@
   },
   {
     "name": "checkbox-group",
-    "url": "https://mp-docs.jd.com/component/form/checkbox.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1683#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -112,7 +158,7 @@
   },
   {
     "name": "checkbox",
-    "url": "https://mp-docs.jd.com/component/form/checkbox.html#checkbox",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1683#checkbox",
     "tableIndex": 1,
     "fields": {
       "name": 0,
@@ -122,8 +168,19 @@
     }
   },
   {
+    "name": "radio-group",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1679",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "defaultValue": 2,
+      "description": 3
+    }
+  },
+  {
     "name": "radio",
-    "url": "https://mp-docs.jd.com/component/form/radio.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1679#radio",
+    "tableIndex": 1,
     "fields": {
       "name": 0,
       "type": 1,
@@ -133,7 +190,7 @@
   },
   {
     "name": "picker",
-    "url": "https://mp-docs.jd.com/component/form/picker.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1685#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -143,7 +200,7 @@
   },
   {
     "name": "picker-view",
-    "url": "https://mp-docs.jd.com/component/form/picker-view.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1686",
     "fields": {
       "name": 0,
       "type": 1,
@@ -153,7 +210,7 @@
   },
   {
     "name": "slider",
-    "url": "https://mp-docs.jd.com/component/form/slider.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1680",
     "fields": {
       "name": 0,
       "type": 1,
@@ -163,7 +220,7 @@
   },
   {
     "name": "switch",
-    "url": "https://mp-docs.jd.com/component/form/switch.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1687#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -173,7 +230,7 @@
   },
   {
     "name": "label",
-    "url": "https://mp-docs.jd.com/component/form/label.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1677#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -183,7 +240,7 @@
   },
   {
     "name": "navigator",
-    "url": "https://mp-docs.jd.com/component/navigation.html#navigator",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1674#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -193,7 +250,7 @@
   },
   {
     "name": "image",
-    "url": "https://mp-docs.jd.com/component/media/media.html#image",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1672",
     "fields": {
       "name": 0,
       "type": 1,
@@ -203,7 +260,7 @@
   },
   {
     "name": "live-player",
-    "url": "https://mp-docs.jd.com/component/media/live-player.html#live-player",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1670",
     "fields": {
       "name": 0,
       "type": 1,
@@ -213,7 +270,7 @@
   },
   {
     "name": "video",
-    "url": "https://mp-docs.jd.com/component/media/video.html#video",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1673",
     "fields": {
       "name": 0,
       "type": 1,
@@ -223,7 +280,7 @@
   },
   {
     "name": "camera",
-    "url": "https://mp-docs.jd.com/component/media/camera.html#camera",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1671",
     "fields": {
       "name": 0,
       "type": 1,
@@ -233,7 +290,7 @@
   },
   {
     "name": "map",
-    "url": "https://mp-docs.jd.com/component/map.html#map",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1676",
     "fields": {
       "name": 0,
       "type": 1,
@@ -243,7 +300,7 @@
   },
   {
     "name": "canvas",
-    "url": "https://mp-docs.jd.com/component/canvas.html#canvas",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1675#heading-0",
     "fields": {
       "name": 0,
       "type": 1,
@@ -254,7 +311,7 @@
   },
   {
     "name": "web-view",
-    "url": "https://mp-docs.jd.com/component/ability.html",
+    "url": "https://mp-docs.jd.com/doc/dev/component/1694",
     "fields": {
       "name": 0,
       "type": 1,

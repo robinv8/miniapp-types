@@ -35,6 +35,19 @@ const exec = async () => {
   })
   const page = await browser.newPage();
   const componentList = await getComponentList('https://mp-docs.jd.com/component/', page)
+  const componentListStr = fs.readFileSync(
+    path.resolve(__dirname, './componentList.json'),
+    'utf-8',
+  );
+  const componentListJSON = JSON.parse(componentListStr);
+  componentList.forEach((item) => {
+    const component = componentListJSON.find(
+      (component) => component.name === item.name,
+    );
+    if (component) {
+      item = Object.assign(item, component);
+    }
+  });
   fs.writeFileSync(path.resolve(__dirname, './componentList.json'), JSON.stringify(componentList, null, 2))
 }
 
