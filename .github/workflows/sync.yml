@@ -27,9 +27,8 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git checkout -b sync-types
 
-    - uses: pnpm/action-setup@v2.0.1
-        name: Install pnpm
-        id: pnpm-install
+    - name: install
+        uses: pnpm/action-setup@v2.0.1
         with:
           version: 7
           run_install: false
@@ -49,9 +48,6 @@ jobs:
 
       - name: Install dependencies
       - run: pnpm install
-      - run: pnpm ci
-      - run: pnpm build:schema
-      - run: pnpm format
       - run: pnpm build:types
 
       - name: Commit changes
