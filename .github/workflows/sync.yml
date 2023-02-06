@@ -31,6 +31,7 @@ jobs:
 
       - name: execute sync script
         run: |
+          pnpm install ts-node -g
           pnpm run build:types
           pnpm run build:json
 
