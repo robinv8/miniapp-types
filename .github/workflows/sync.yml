@@ -31,7 +31,7 @@ jobs:
 
       - name: execute sync script
         run: |
-          pnpm run build:type
+          pnpm run build:types
           pnpm run build:json
 
       - name: Create Pull Request
