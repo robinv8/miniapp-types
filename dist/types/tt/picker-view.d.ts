@@ -13,35 +13,35 @@ export interface PickerView {
     [k: string]: unknown;
   };
   /**
-   * 设置选择器中选中框的样式
+   * 设置选择器中选中框的样式。
    */
   "indicator-style"?: string;
   /**
-   * 设置选择器中间选中框的类名
+   * 设置选择器中间选中框的类名。
    */
   "indicator-class"?: string;
   /**
-   * 设置蒙层的样式
+   * 设置蒙层的样式。
    */
   "mask-style"?: string;
   /**
-   * 设置蒙层的类名
+   * 设置蒙层的类名。
    */
   "mask-class"?: string;
   /**
-   * 设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件
+   * 设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件。
    */
   "immediate-change"?: boolean;
   /**
-   * 滚动选择时触发 change 事件回调
+   * 滚动选择时触发 change 事件回调。
    */
   bindChange?: () => void;
   /**
-   * 当滚动选择开始时触发 pickstart 事件回调
+   * 当滚动选择开始时触发 pickstart 事件回调。
    */
   bindPickStart?: () => void;
   /**
-   * 当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）
+   * 当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）。
    */
   bindPickEnd?: () => void;
 }

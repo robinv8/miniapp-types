@@ -14,7 +14,7 @@
     },
     "step": {
       "type": "number",
-      "description": "步长，取值必须大于 0，并且可被(max-min)整除",
+      "description": "步长，取值必须大于 0，并且可被（max-min）整除。",
       "defaultValue": "1"
     },
     "disabled": {
@@ -49,7 +49,7 @@
     },
     "block-size": {
       "type": "number",
-      "description": "滑块的大小，取值范围为 12 - 28",
+      "description": "滑块的大小，取值范围为 12 ~ 28。",
       "defaultValue": "28"
     },
     "block-color": {
@@ -64,11 +64,11 @@
     },
     "bindChange": {
       "tsType": "() => void",
-      "description": "完成一次拖动后触发的事件，event.detail = {value: value}"
+      "description": "完成一次拖动后触发的事件，event.detail = {value: value}。"
     },
     "bindChanging": {
       "tsType": "() => void",
-      "description": "拖动过程中触发的事件，event.detail = {value: value}"
+      "description": "拖动过程中触发的事件，event.detail = {value: value}。"
     }
   },
   "additionalProperties": false

@@ -4,11 +4,11 @@
   "properties": {
     "bindSubmit": {
       "tsType": "() => void",
-      "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}"
+      "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}。"
     },
     "bindReset": {
       "tsType": "() => void",
-      "description": "表单重置时会触发 reset 事件"
+      "description": "表单重置时会触发 reset 事件。"
     }
   },
   "additionalProperties": false

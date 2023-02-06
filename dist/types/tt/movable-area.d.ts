@@ -7,7 +7,7 @@
 
 export interface MovableArea {
   /**
-   * 当里面的 movable-view 设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个 movable-area
+   * 当里面的 movable-view 设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个 movable-area。
    */
   "scale-area"?: boolean;
 }

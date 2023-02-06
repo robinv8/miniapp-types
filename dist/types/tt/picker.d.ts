@@ -7,7 +7,7 @@
 
 export interface Picker {
   /**
-   * 选择器类型，详见 mode 的合法值
+   * 选择器类型，详见 mode 的合法值。
    */
   mode?: "selector" | "multiSelector" | "time" | "date" | "region";
   /**

@@ -7,7 +7,7 @@
 
 export interface LivePlayer {
   /**
-   * 视频地址。目前支持 flv、rtmp 和 hls，支持跨域
+   * 视频地址。目前支持 flv、rtmp 和 hls，支持跨域。
    */
   src: string;
   /**
@@ -19,11 +19,11 @@ export interface LivePlayer {
    */
   muted?: boolean;
   /**
-   * 画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值
+   * 画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值。
    */
   orientation?: "vertical" | "horizontal";
   /**
-   * 填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值
+   * 填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值。
    */
   "object-fit"?: "contain" | "fillCrop";
   /**
@@ -33,11 +33,11 @@ export interface LivePlayer {
     [k: string]: unknown;
   };
   /**
-   * 播放状态变化事件，detail = {code}
+   * 播放状态变化事件，detail = {code}。
    */
   bindStateChange?: () => void;
   /**
-   * 全屏变化事件，detail = {direction, fullScreen}
+   * 全屏变化事件，detail = {direction, fullScreen}。
    */
   bindFullScreenChange?: () => void;
   /**

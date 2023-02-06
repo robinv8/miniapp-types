@@ -4,12 +4,12 @@
   "properties": {
     "selectable": {
       "type": "boolean",
-      "description": "是否可以选中文字",
+      "description": "是否可以选中文字。",
       "defaultValue": "false"
     },
     "space": {
       "type": "string",
-      "description": "是否显示连续的空格，可以取值enspemspnbsp，详见 space 的合法值",
+      "description": "是否显示连续的空格，可以取值ensp emsp nbsp，详见 space 的合法值。",
       "enum": [
         "ensp",
         "emsp",
@@ -18,7 +18,7 @@
     },
     "decode": {
       "type": "boolean",
-      "description": "是否转义",
+      "description": "是否转义。",
       "defaultValue": "false"
     }
   },

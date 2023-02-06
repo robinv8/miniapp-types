@@ -7,11 +7,14 @@
 
 export interface RadioGroup {
   /**
-   * 用于 <form /> 组件，在表单提交事件中作为提交数据的 key 值
+   * 用于 form 组件，在表单提交事件中作为提交数据的 key 值。
+   *
+   *
+   *
    */
   name?: string;
   /**
-   * <radio-group/> 中的选中项发生变化时触发 change 事件
+   * radio-group 中的选中项发生变化时触发 change 事件。
    */
   bindChange?: () => void;
 }

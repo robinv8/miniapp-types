@@ -7,11 +7,11 @@
 
 export interface Form {
   /**
-   * 携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}
+   * 携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}。
    */
   bindSubmit?: () => void;
   /**
-   * 表单重置时会触发 reset 事件
+   * 表单重置时会触发 reset 事件。
    */
   bindReset?: () => void;
 }

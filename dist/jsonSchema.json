@@ -12165,7 +12165,7 @@
             },
             "disable-default": {
               "type": "boolean",
-              "description": "禁用默认行为。点击头像时，如果用户处于直播状态下默认会跳转到直播间，非直播状态下跳转到个人主页。如果为 true，点击头像时不会有默认行为。",
+              "description": "是否禁用头像点击的默认行为。\n如果为false，点击头像时，如果用户处于直播状态下会跳转到直播间，非直播状态下跳转到个人主页。\n如果为 true，点击头像将不会有任何的跳转行为。",
               "defaultValue": "false"
             },
             "default-avatar": {
@@ -12195,7 +12195,7 @@
           "properties": {
             "size": {
               "type": "string",
-              "description": "按钮的大小，详情见 size 的合法值",
+              "description": "按钮的大小，详情见 size 的合法值。",
               "defaultValue": "default",
               "enum": [
                 "default",
@@ -12204,7 +12204,7 @@
             },
             "type": {
               "type": "string",
-              "description": "按钮的样式类型，详情见 type 的合法值",
+              "description": "按钮的样式类型，详情见 type 的合法值。",
               "defaultValue": "default",
               "enum": [
                 "primary",
@@ -12213,17 +12213,17 @@
             },
             "disabled": {
               "type": "boolean",
-              "description": "是否禁用",
+              "description": "是否禁用。",
               "defaultValue": "false"
             },
             "loading": {
               "type": "boolean",
-              "description": "是否带 loading 图标",
+              "description": "是否带 loading 图标。",
               "defaultValue": "false"
             },
             "form-type": {
               "type": "string",
-              "description": "用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值",
+              "description": "用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值。",
               "enum": [
                 "submit",
                 "reset"
@@ -12231,7 +12231,7 @@
             },
             "open-type": {
               "type": "string",
-              "description": "用于调用开放能力, 详情见 open-type 的合法值",
+              "description": "用于调用开放能力, 详情见 open-type 的合法值。",
               "enum": [
                 "share",
                 "getPhoneNumber",
@@ -12240,27 +12240,27 @@
             },
             "hover-class": {
               "type": "string",
-              "description": "点击状态的样式类",
+              "description": "点击状态的样式类。",
               "defaultValue": "button-hover"
             },
             "hover-start-time": {
               "type": "number",
-              "description": "按住后多久出现点击态，单位毫秒",
+              "description": "按住后多久出现点击态，单位毫秒。",
               "defaultValue": "20"
             },
             "hover-stay-time": {
               "type": "number",
-              "description": "手指松开后点击态保留时间，单位毫秒",
+              "description": "手指松开后点击态保留时间，单位毫秒。",
               "defaultValue": "70"
             },
             "hover-stop-propagation": {
               "type": "boolean",
-              "description": "指定是否阻止本节点的祖先节点出现点击态",
+              "description": "指定是否阻止本节点的祖先节点出现点击态。",
               "defaultValue": "false"
             },
             "bindGetPhoneNumber": {
               "tsType": "() => void",
-              "description": "获取用户手机号回调，只在 open-type=getPhoneNumber 时有效"
+              "description": "获取用户手机号回调，只在 open-type=getPhoneNumber 时有效。"
             }
           },
           "additionalProperties": false
@@ -12274,7 +12274,7 @@
           "properties": {
             "mode": {
               "type": "string",
-              "description": "模式，不支持动态修改，详情见 mode 的合法值",
+              "description": "模式，不支持动态修改，详情见 mode 的合法值。",
               "defaultValue": "normal",
               "enum": [
                 "normal",
@@ -12283,7 +12283,7 @@
             },
             "resolution": {
               "type": "string",
-              "description": "分辨率，不支持动态修改，详情见 resolution 的合法值",
+              "description": "分辨率，不支持动态修改，详情见 resolution 的合法值。",
               "defaultValue": "medium",
               "enum": [
                 "low",
@@ -12293,7 +12293,7 @@
             },
             "device-position": {
               "type": "string",
-              "description": "摄像头朝向，详情见 device-position 的合法值",
+              "description": "摄像头朝向，详情见 device-position 的合法值。",
               "defaultValue": "back",
               "enum": [
                 "front",
@@ -12302,7 +12302,7 @@
             },
             "flash": {
               "type": "string",
-              "description": "闪光灯，详情见 flash 的合法值",
+              "description": "闪光灯，详情见 flash 的合法值。",
               "defaultValue": "off",
               "enum": [
                 "off",
@@ -12311,7 +12311,7 @@
             },
             "frame-size": {
               "type": "string",
-              "description": "指定期望的相机帧数据尺寸，详情见 frame-size 的合法值",
+              "description": "指定期望的相机帧数据尺寸，详情见 frame-size 的合法值。",
               "defaultValue": "medium",
               "enum": [
                 "small",
@@ -12321,19 +12321,19 @@
             },
             "bindInitDone": {
               "tsType": "() => void",
-              "description": "相机初始化完成时触发，e.detail = {maxZoom}"
+              "description": "相机初始化完成时触发，e.detail = {maxZoom}。"
             },
             "bindError": {
               "tsType": "() => void",
-              "description": "用户不允许使用摄像头或相机异常时触发"
+              "description": "用户不允许使用摄像头或相机异常时触发。"
             },
             "bindStop": {
               "tsType": "() => void",
-              "description": "摄像头在非正常终止时触发，如退出后台/跳转页面/电话中断等情况"
+              "description": "摄像头在非正常终止时触发，如退出后台/跳转页面/电话中断等情况。"
             },
             "bindScanCode": {
               "tsType": "() => void",
-              "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效"
+              "description": "在扫码识别成功时触发，仅在 mode=\"scanCode\" 时生效。"
             }
           },
           "additionalProperties": false
@@ -12385,11 +12385,11 @@
           "properties": {
             "name": {
               "type": "string",
-              "description": "用于 <form /> 组件，在表单提交事件中作为提交数据的 key 值"
+              "description": "用于 form 组件，在表单提交事件中作为提交数据的 key 值。\n\n\n"
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "checkbox-group 中选中项发生改变时触发 change 事件"
+              "description": "checkbox-group 中选中项发生改变时触发 change 事件。"
             }
           },
           "additionalProperties": false
@@ -12403,21 +12403,21 @@
           "properties": {
             "value": {
               "type": "string",
-              "description": "checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value"
+              "description": "checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value。"
             },
             "disabled": {
               "type": "boolean",
-              "description": "是否禁用",
+              "description": "是否禁用。",
               "defaultValue": "false"
             },
             "checked": {
               "type": "boolean",
-              "description": "当前是否选中，可用来设置默认选中",
+              "description": "当前是否选中，可用来设置默认选中。",
               "defaultValue": "false"
             },
             "color": {
               "type": "string",
-              "description": "checkbox 的颜色，同 css 的 color"
+              "description": "checkbox 的颜色，同 CSS 的 color。"
             }
           },
           "additionalProperties": false
@@ -12431,11 +12431,11 @@
           "properties": {
             "bindSubmit": {
               "tsType": "() => void",
-              "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}"
+              "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}。"
             },
             "bindReset": {
               "tsType": "() => void",
-              "description": "表单重置时会触发 reset 事件"
+              "description": "表单重置时会触发 reset 事件。"
             }
           },
           "additionalProperties": false
@@ -12486,11 +12486,11 @@
           "properties": {
             "src": {
               "type": "string",
-              "description": "图片资源地址"
+              "description": "图片资源地址。"
             },
             "mode": {
               "type": "string",
-              "description": "图片剪裁方式，详情见 mode 的合法值",
+              "description": "图片剪裁方式，详情见 mode 的合法值。",
               "defaultValue": "scaleToFill",
               "enum": [
                 "scaleToFill",
@@ -12511,16 +12511,16 @@
             },
             "lazy-load": {
               "type": "boolean",
-              "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载",
+              "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载。",
               "defaultValue": "false"
             },
             "bindError": {
               "tsType": "() => void",
-              "description": "当错误发生时触发"
+              "description": "当错误发生时触发。"
             },
             "bindLoad": {
               "tsType": "() => void",
-              "description": "当图片载入完毕时触发"
+              "description": "当图片载入完毕时触发。"
             }
           },
           "additionalProperties": false
@@ -12534,11 +12534,11 @@
           "properties": {
             "value": {
               "type": "string",
-              "description": "输入框的初始值"
+              "description": "输入框的初始值。"
             },
             "type": {
               "type": "string",
-              "description": "input 的类型，详情见 type 的合法值\n",
+              "description": "input 的类型，详情见 type 的合法值。",
               "defaultValue": "text",
               "enum": [
                 "text",
@@ -12548,64 +12548,64 @@
             },
             "password": {
               "type": "boolean",
-              "description": "是否是密码类型",
+              "description": "是否是密码类型。",
               "defaultValue": "false"
             },
             "placeholder": {
               "type": "string",
-              "description": "输入框为空时占位符"
+              "description": "输入框为空时占位符。"
             },
             "placeholder-style": {
               "type": "string",
-              "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color 三个 css 特性"
+              "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color 三个 CSS 特性。"
             },
             "placeholder-class": {
               "type": "string",
-              "description": "指定 placeholder 的样式类"
+              "description": "指定 placeholder 的样式类。"
             },
             "disabled": {
               "type": "boolean",
-              "description": "是否禁用",
+              "description": "是否禁用。",
               "defaultValue": "false"
             },
             "maxlength": {
               "type": "number",
-              "description": "最大输入长度",
+              "description": "最大输入长度。",
               "defaultValue": "140"
             },
             "cursor-spacing": {
               "type": "number",
-              "description": "指定软键盘弹出时，与光标的距离是多少，单位是 px",
+              "description": "指定软键盘弹出时，与光标的距离是多少，单位是 px。",
               "defaultValue": "0"
             },
             "focus": {
               "type": "boolean",
-              "description": "获取焦点，详情见 Bug & Tip\n",
+              "description": "获取焦点，详情见 Bug & Tip。",
               "defaultValue": "false"
             },
             "cursor": {
               "type": "number",
-              "description": "指定 focus 时的光标位置，详情见光标位置说明\n",
+              "description": "指定 focus 时的光标位置，详情见光标位置说明。",
               "defaultValue": "-1"
             },
             "selection-start": {
               "type": "number",
-              "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明\n",
+              "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明。",
               "defaultValue": "-1"
             },
             "selection-end": {
               "type": "number",
-              "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明\n",
+              "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明。",
               "defaultValue": "-1"
             },
             "adjust-position": {
               "type": "boolean",
-              "description": "键盘弹起时，是否自动上推页面",
+              "description": "键盘弹起时，是否自动上推页面。",
               "defaultValue": "true"
             },
             "confirm-type": {
               "type": "string",
-              "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值\n",
+              "description": "设置键盘右下角按钮的文字，仅在 type='text' 时生效，详情见 confirm-type 的合法值。",
               "defaultValue": "done",
               "enum": [
                 "send",
@@ -12617,29 +12617,29 @@
             },
             "confirm-hold": {
               "type": "boolean",
-              "description": "点击键盘右下角按钮时是否保持键盘不收起",
+              "description": "点击键盘右下角按钮时是否保持键盘不收起。",
               "defaultValue": "false"
             },
             "hold-keyboard": {
               "type": "boolean",
-              "description": "focus 时，点击页面的时候不收起键盘",
+              "description": "focus 时，点击页面的时候不收起键盘。",
               "defaultValue": "false"
             },
             "bindInput": {
               "tsType": "() => void",
-              "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明\n"
+              "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明。"
             },
             "bindFocus": {
               "tsType": "() => void",
-              "description": "输入框聚焦时触发，详情见 bindfocus 说明\n"
+              "description": "输入框聚焦时触发，详情见 bindfocus 说明。"
             },
             "bindBlur": {
               "tsType": "() => void",
-              "description": "输入框失去焦点时触发，详情见 bindblur 说明\n"
+              "description": "输入框失去焦点时触发，详情见 bindblur 说明。"
             },
             "bindConfirm": {
               "tsType": "() => void",
-              "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明\n"
+              "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明。"
             }
           },
           "additionalProperties": false
@@ -12667,7 +12667,7 @@
           "properties": {
             "src": {
               "type": "string",
-              "description": "视频地址。目前支持 flv、rtmp 和 hls，支持跨域"
+              "description": "视频地址。目前支持 flv、rtmp 和 hls，支持跨域。"
             },
             "autoplay": {
               "type": "boolean",
@@ -12681,7 +12681,7 @@
             },
             "orientation": {
               "type": "string",
-              "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值",
+              "description": "画面朝向，vertical 为竖直，horizontal 为水平，详情见 orientation 的合法值。",
               "defaultValue": "vertical",
               "enum": [
                 "vertical",
@@ -12690,7 +12690,7 @@
             },
             "object-fit": {
               "type": "string",
-              "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值",
+              "description": "填充模式，可选值有 contain，fillCrop，详情见 object-fit 的合法值。",
               "defaultValue": "contain",
               "enum": [
                 "contain",
@@ -12703,11 +12703,11 @@
             },
             "bindStateChange": {
               "tsType": "() => void",
-              "description": "播放状态变化事件，detail = {code}"
+              "description": "播放状态变化事件，detail = {code}。"
             },
             "bindFullScreenChange": {
               "tsType": "() => void",
-              "description": "全屏变化事件，detail = {direction, fullScreen}"
+              "description": "全屏变化事件，detail = {direction, fullScreen}。"
             },
             "bindError": {
               "tsType": "() => void",
@@ -12883,7 +12883,7 @@
           "properties": {
             "scale-area": {
               "type": "boolean",
-              "description": "当里面的 movable-view 设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个 movable-area",
+              "description": "当里面的 movable-view 设置为支持双指缩放时，设置此值可将缩放手势生效区域修改为整个 movable-area。",
               "defaultValue": "false"
             }
           },
@@ -12898,82 +12898,82 @@
           "properties": {
             "direction": {
               "type": "string",
-              "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none",
+              "description": "movable-view 的移动方向，属性值有 all、vertical、horizontal、none。",
               "defaultValue": "none"
             },
             "inertia": {
               "type": "boolean",
-              "description": "movable-view 是否带有惯性",
+              "description": "movable-view 是否带有惯性。",
               "defaultValue": "false"
             },
             "out-of-bounds": {
               "type": "boolean",
-              "description": "超过可移动区域后，movable-view 是否还可以移动",
+              "description": "超过可移动区域后，movable-view 是否还可以移动。",
               "defaultValue": "false"
             },
             "x": {
               "type": "number|String",
-              "description": "定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画"
+              "description": "定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画。"
             },
             "y": {
               "type": "number|String",
-              "description": "定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画"
+              "description": "定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画。"
             },
             "damping": {
               "type": "number",
-              "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快",
+              "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快。",
               "defaultValue": "20"
             },
             "friction": {
               "type": "number",
-              "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值",
+              "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值。",
               "defaultValue": "2"
             },
             "disabled": {
               "type": "boolean",
-              "description": "是否禁用",
+              "description": "是否禁用。",
               "defaultValue": "false"
             },
             "scale": {
               "type": "boolean",
-              "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内",
+              "description": "是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内。",
               "defaultValue": "false"
             },
             "scale-min": {
               "type": "number",
-              "description": "定义缩放倍数最小值",
+              "description": "定义缩放倍数最小值。",
               "defaultValue": "0.5"
             },
             "scale-max": {
               "type": "number",
-              "description": "定义缩放倍数最大值",
+              "description": "定义缩放倍数最大值。",
               "defaultValue": "10"
             },
             "scale-value": {
               "type": "number",
-              "description": "定义缩放倍数，取值范围为 0.5 - 10",
+              "description": "定义缩放倍数，取值范围为 0.5 ~ 10。",
               "defaultValue": "1"
             },
             "animation": {
               "type": "boolean",
-              "description": "是否使用动画",
+              "description": "是否使用动画。",
               "defaultValue": "true"
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "拖动过程中触发的事件"
+              "description": "拖动过程中触发的事件。"
             },
             "bindScale": {
               "tsType": "() => void",
-              "description": "缩放过程中触发的事件"
+              "description": "缩放过程中触发的事件。"
             },
             "bindHTouchMove": {
               "tsType": "() => void",
-              "description": "初次手指触摸后移动为横向的移动时触发"
+              "description": "初次手指触摸后移动为横向的移动时触发。"
             },
             "bindVTouchMove": {
               "tsType": "() => void",
-              "description": "初次手指触摸后移动为纵向的移动时触发"
+              "description": "初次手指触摸后移动为纵向的移动时触发。"
             }
           },
           "additionalProperties": false
@@ -12987,16 +12987,16 @@
           "properties": {
             "url": {
               "type": "string",
-              "description": "跳转地址"
+              "description": "跳转地址。"
             },
             "delta": {
               "type": "number",
-              "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数",
+              "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数。",
               "defaultValue": "1"
             },
             "open-type": {
               "type": "string",
-              "description": "跳转方式，详情见 open-type 的合法值",
+              "description": "跳转方式，详情见 open-type 的合法值。",
               "defaultValue": "navigate",
               "enum": [
                 "navigate",
@@ -13008,22 +13008,22 @@
             },
             "hover-class": {
               "type": "string",
-              "description": "指定点击时的样式类，当 hover-class=\"none\"时，没有点击态效果类",
+              "description": "指定点击时的样式类，当 hover-class=\"none\" 时，没有点击态效果类。",
               "defaultValue": "navigator-hover"
             },
             "hover-start-time": {
               "type": "number",
-              "description": "按住后多久出现点击态，单位毫秒",
+              "description": "按住后多久出现点击态，单位毫秒。",
               "defaultValue": "50"
             },
             "hover-stay-time": {
               "type": "number",
-              "description": "手指松开后点击态保留时间，单位毫秒",
+              "description": "手指松开后点击态保留时间，单位毫秒。",
               "defaultValue": "400"
             },
             "hover-stop-propagation": {
               "type": "boolean",
-              "description": "指定是否阻止本节点的祖先节点出现点击态",
+              "description": "指定是否阻止本节点的祖先节点出现点击态。",
               "defaultValue": "false"
             }
           },
@@ -13087,36 +13087,36 @@
             },
             "indicator-style": {
               "type": "string",
-              "description": "设置选择器中选中框的样式"
+              "description": "设置选择器中选中框的样式。"
             },
             "indicator-class": {
               "type": "string",
-              "description": "设置选择器中间选中框的类名"
+              "description": "设置选择器中间选中框的类名。"
             },
             "mask-style": {
               "type": "string",
-              "description": "设置蒙层的样式"
+              "description": "设置蒙层的样式。"
             },
             "mask-class": {
               "type": "string",
-              "description": "设置蒙层的类名"
+              "description": "设置蒙层的类名。"
             },
             "immediate-change": {
               "type": "boolean",
-              "description": "设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件",
+              "description": "设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件。",
               "defaultValue": "false"
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "滚动选择时触发 change 事件回调"
+              "description": "滚动选择时触发 change 事件回调。"
             },
             "bindPickStart": {
               "tsType": "() => void",
-              "description": "当滚动选择开始时触发 pickstart 事件回调"
+              "description": "当滚动选择开始时触发 pickstart 事件回调。"
             },
             "bindPickEnd": {
               "tsType": "() => void",
-              "description": "当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）"
+              "description": "当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）。"
             }
           },
           "additionalProperties": false,
@@ -13133,8 +13133,8 @@
           "properties": {
             "mode": {
               "type": "string",
-              "description": "选择器类型，详见 mode 的合法值",
-              "defaultValue": "\"selector\"",
+              "description": "选择器类型，详见 mode 的合法值。",
+              "defaultValue": "selector",
               "enum": [
                 "selector",
                 "multiSelector",
@@ -13189,7 +13189,7 @@
             },
             "active-mode": {
               "type": "string",
-              "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
+              "description": "backwards：动画从头播\nforwards：动画从上次结束点接着播",
               "defaultValue": "backwards"
             }
           },
@@ -13204,11 +13204,11 @@
           "properties": {
             "name": {
               "type": "string",
-              "description": "用于 <form /> 组件，在表单提交事件中作为提交数据的 key 值"
+              "description": "用于 form 组件，在表单提交事件中作为提交数据的 key 值。\n\n\n"
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "<radio-group/> 中的选中项发生变化时触发 change 事件"
+              "description": "radio-group 中的选中项发生变化时触发 change 事件。"
             }
           },
           "additionalProperties": false
@@ -13222,21 +13222,21 @@
           "properties": {
             "value": {
               "type": "string",
-              "description": "<radio/> 标识。当该 <radio/> 选中时，<radio-group/> 的 change 事件会携带 <radio/> 的 value"
+              "description": "标识。当该 选中时， 的 change 事件会携带 的 value。"
             },
             "checked": {
               "type": "boolean",
-              "description": "当前是否选中",
+              "description": "当前是否选中。",
               "defaultValue": "false"
             },
             "disabled": {
               "type": "boolean",
-              "description": "是否禁用",
+              "description": "是否禁用。",
               "defaultValue": "false"
             },
             "color": {
               "type": "string",
-              "description": "radio 的颜色，同 css 的 color",
+              "description": "radio 的颜色，同 CSS 的 color 。",
               "defaultValue": "#F85959"
             }
           },
@@ -13266,52 +13266,52 @@
           "properties": {
             "scroll-x": {
               "type": "boolean",
-              "description": "允许横向滚动",
+              "description": "允许横向滚动。",
               "defaultValue": "false"
             },
             "scroll-y": {
               "type": "boolean",
-              "description": "允许竖向滚动",
+              "description": "允许竖向滚动。",
               "defaultValue": "false"
             },
             "scroll-with-animation": {
               "type": "boolean",
-              "description": "在设置滚动条位置时使用动画过渡",
+              "description": "在设置滚动条位置时使用动画过渡。",
               "defaultValue": "false"
             },
             "upper-threshold": {
               "type": "number",
-              "description": "距顶部/左边多远时（单位 px），触发 scrolltoupper 事件",
+              "description": "距顶部/左边多远时（单位 px），触发 scrolltoupper 事件。",
               "defaultValue": "50"
             },
             "lower-threshold": {
               "type": "number",
-              "description": "距底部/右边多远时（单位 px），触发 scrolltolower 事件",
+              "description": "距底部/右边多远时（单位 px），触发 scrolltolower 事件。",
               "defaultValue": "50"
             },
             "scroll-top": {
               "type": "number",
-              "description": "设置内容垂直滚动的像素数"
+              "description": "设置内容垂直滚动的像素数。"
             },
             "scroll-left": {
               "type": "number",
-              "description": "设置内容水平滚动的像素数"
+              "description": "设置内容水平滚动的像素数。"
             },
             "scroll-into-view": {
               "type": "string",
-              "description": "值应为某子元素 id（id 不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素"
+              "description": "值应为某子元素 id（id 不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素。"
             },
             "bindScroll": {
               "tsType": "() => void",
-              "description": "滚动时触发"
+              "description": "滚动时触发。"
             },
             "bindScrollToUpper": {
               "tsType": "() => void",
-              "description": "滚动到顶部/左边"
+              "description": "滚动到顶部/左边。"
             },
             "bindScrollToLower": {
               "tsType": "() => void",
-              "description": "滚动到底部/右边"
+              "description": "滚动到底部/右边。"
             }
           },
           "additionalProperties": false
@@ -13335,7 +13335,7 @@
             },
             "step": {
               "type": "number",
-              "description": "步长，取值必须大于 0，并且可被(max-min)整除",
+              "description": "步长，取值必须大于 0，并且可被（max-min）整除。",
               "defaultValue": "1"
             },
             "disabled": {
@@ -13370,7 +13370,7 @@
             },
             "block-size": {
               "type": "number",
-              "description": "滑块的大小，取值范围为 12 - 28",
+              "description": "滑块的大小，取值范围为 12 ~ 28。",
               "defaultValue": "28"
             },
             "block-color": {
@@ -13385,11 +13385,11 @@
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "完成一次拖动后触发的事件，event.detail = {value: value}"
+              "description": "完成一次拖动后触发的事件，event.detail = {value: value}。"
             },
             "bindChanging": {
               "tsType": "() => void",
-              "description": "拖动过程中触发的事件，event.detail = {value: value}"
+              "description": "拖动过程中触发的事件，event.detail = {value: value}。"
             }
           },
           "additionalProperties": false
@@ -13417,72 +13417,72 @@
           "properties": {
             "indicator-dots": {
               "type": "boolean",
-              "description": "是否显示面板指示点",
+              "description": "是否显示面板指示点。",
               "defaultValue": "false"
             },
             "indicator-color": {
               "type": "string",
-              "description": "指示点颜色",
+              "description": "指示点颜色。",
               "defaultValue": "rgba(0, 0, 0, .3)"
             },
             "indicator-active-color": {
               "type": "string",
-              "description": "当前选中的指示点颜色",
+              "description": "当前选中的指示点颜色。",
               "defaultValue": "rgba(0, 0, 0, 0)"
             },
             "autoplay": {
               "type": "boolean",
-              "description": "是否自动切换",
+              "description": "是否自动切换。",
               "defaultValue": "false"
             },
             "current": {
               "type": "number",
-              "description": "当前选中滑块的索引",
+              "description": "当前选中滑块的索引。",
               "defaultValue": "0"
             },
             "current-item-id": {
               "type": "string",
-              "description": "当前选中滑块的组件 id，不能与 current 属性同时指定",
+              "description": "当前选中滑块的组件 id，不能与 current 属性同时指定。",
               "defaultValue": "\"\""
             },
             "interval": {
               "type": "number",
-              "description": "自动切换时间间隔（ms）",
+              "description": "自动切换时间间隔（ms）。",
               "defaultValue": "5000"
             },
             "previous-margin": {
               "type": "string",
-              "description": "前边距，可以用露出前一项的一小部分，支持 px 和 rpx，默认单位是 px",
+              "description": "前边距，可以用露出前一项的一小部分，支持 px 和 rpx，默认单位是 px。",
               "defaultValue": "\"\""
             },
             "next-margin": {
               "type": "string",
-              "description": "后边距，可用于露出后一项的一小部分，支持 px 和 rpx，默认单位是 px",
+              "description": "后边距，可用于露出后一项的一小部分，支持 px 和 rpx，默认单位是 px。",
               "defaultValue": "\"\""
             },
             "display-multiple-items": {
               "type": "number",
-              "description": "同时显示的滑块数量",
+              "description": "同时显示的滑块数量。",
               "defaultValue": "1"
             },
             "duration": {
               "type": "number",
-              "description": "滑动动画时长（ms）",
+              "description": "滑动动画时长（ms）。",
               "defaultValue": "500"
             },
             "circular": {
               "type": "boolean",
-              "description": "是否循环播放（首尾衔接）",
+              "description": "是否循环播放（首尾衔接）。",
               "defaultValue": "false"
             },
             "vertical": {
               "type": "boolean",
-              "description": "滑块放置方向是否为竖直",
+              "description": "滑块放置方向是否为竖直。",
               "defaultValue": "false"
             },
             "easing-function": {
               "type": "string",
-              "description": "指定 swiper 切换缓动动画类型，详情见 easing-function 的合法值",
+              "description": "指定 swiper 切换缓动动画类型，详情见 easing-function 的合法值。",
               "defaultValue": "\"default\"",
               "enum": [
                 "default",
@@ -13494,15 +13494,15 @@
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "current 改变时触发"
+              "description": "current 改变时触发。"
             },
             "bindAnimationFinish": {
               "tsType": "() => void",
-              "description": "动画结束时会触发 animationfinish 事件"
+              "description": "动画结束时会触发 animationfinish 事件。"
             },
             "bindTransition": {
               "tsType": "() => void",
-              "description": "swiper-item 产生位移时触发 transition 事件"
+              "description": "swiper-item 产生位移时触发 transition 事件。"
             }
           },
           "additionalProperties": false
@@ -13526,7 +13526,7 @@
             },
             "type": {
               "type": "string",
-              "description": "样式，详见 type 的合法值",
+              "description": "样式，详见 type 的合法值。",
               "defaultValue": "switch",
               "enum": [
                 "switch",
@@ -13535,12 +13535,12 @@
             },
             "color": {
               "type": "string",
-              "description": "switch 的颜色，同 css 的 color",
+              "description": "switch 的颜色，同 CSS 的 color。",
               "defaultValue": "#f85959"
             },
             "bindChange": {
               "tsType": "() => void",
-              "description": "checked 改变时触发该事件，event.detail={value:checked}"
+              "description": "checked 改变时触发该事件，event.detail={value:checked}。"
             }
           },
           "additionalProperties": false
@@ -13554,12 +13554,12 @@
           "properties": {
             "selectable": {
               "type": "boolean",
-              "description": "是否可以选中文字",
+              "description": "是否可以选中文字。",
               "defaultValue": "false"
             },
             "space": {
               "type": "string",
-              "description": "是否显示连续的空格，可以取值enspemspnbsp，详见 space 的合法值",
+              "description": "是否显示连续的空格，可以取值ensp emsp nbsp，详见 space 的合法值。",
               "enum": [
                 "ensp",
                 "emsp",
@@ -13568,7 +13568,7 @@
             },
             "decode": {
               "type": "boolean",
-              "description": "是否转义",
+              "description": "是否转义。",
               "defaultValue": "false"
             }
           },
@@ -13591,7 +13591,7 @@
             },
             "placeholder-style": {
               "type": "string",
-              "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color"
+              "description": "指定 placeholder 的样式，只支持 font-size、font-weight、color 三个 CSS 特性。"
             },
             "placeholder-class": {
               "type": "string",
@@ -13604,57 +13604,57 @@
             },
             "maxlength": {
               "type": "number",
-              "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
+              "description": "最大输入长度，设置为 -1 的时候不限制最大长度。",
               "defaultValue": "140"
             },
             "focus": {
               "type": "boolean",
-              "description": "是否获得焦点，详情见 Bug & Tip",
+              "description": "是否获得焦点，详情见 Bug & Tip。",
               "defaultValue": "false"
             },
             "auto-height": {
               "type": "boolean",
-              "description": "是否自动增高，设置 auto-height 时，设置 height 样式不生效",
+              "description": "是否自动增高，设置 auto-height 时，设置 height 样式不生效。",
               "defaultValue": "false"
             },
             "cursor-spacing": {
               "type": "number",
-              "description": "指定软键盘弹出时，与光标的距离是多少，单位是 px",
+              "description": "指定软键盘弹出时，与光标的距离是多少，单位是 px。",
               "defaultValue": "0"
             },
             "cursor": {
               "type": "number",
-              "description": "指定 focus 时的光标位置，详情见光标位置说明",
+              "description": "指定 focus 时的光标位置，详情见光标位置说明。",
               "defaultValue": "-1"
             },
             "selection-start": {
               "type": "number",
-              "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明",
+              "description": "指定 focus 时选中片段的起始位置，详情见光标位置说明。",
               "defaultValue": "-1"
             },
             "selection-end": {
               "type": "number",
-              "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明",
+              "description": "指定 focus 时选中片段的结束位置，详情见光标位置说明，",
               "defaultValue": "-1"
             },
             "adjust-position": {
               "type": "boolean",
-              "description": "键盘弹起时，是否自动上推页面",
+              "description": "键盘弹起时，是否自动上推页面。",
               "defaultValue": "true"
             },
             "hold-keyboard": {
               "type": "boolean",
-              "description": "focus 时，点击页面的时候不收起键盘",
+              "description": "focus 时，点击页面的时候不收起键盘。",
               "defaultValue": "false"
             },
             "disable-default-padding": {
               "type": "boolean",
-              "description": "是否去掉 iOS 下的默认内边距",
+              "description": "是否去掉 iOS 下的默认内边距。",
               "defaultValue": "true"
             },
             "confirm-type": {
               "type": "string",
-              "description": "设置键盘右下角按钮的文字，详情见 confirm-type 的合法值",
+              "description": "设置键盘右下角按钮的文字，详情见 confirm-type 的合法值。",
               "defaultValue": "return",
               "enum": [
                 "send",
@@ -13667,33 +13667,33 @@
             },
             "confirm-hold": {
               "type": "boolean",
-              "description": "点击键盘右下角按钮时是否保持键盘不收起",
+              "description": "点击键盘右下角按钮时是否保持键盘不收起。",
               "defaultValue": "false"
             },
             "show-confirm-bar": {
               "type": "boolean",
-              "description": "是否显示键盘上方带有”完成“按钮那一栏",
+              "description": "是否显示键盘上方带有”完成“按钮那一栏。",
               "defaultValue": "true"
             },
             "bindInput": {
               "tsType": "() => void",
-              "description": "键盘输入时触发，详情见 bindinput 说明"
+              "description": "键盘输入时触发，详情见 bindinput 说明。"
             },
             "bindFocus": {
               "tsType": "() => void",
-              "description": "输入框聚焦时触发，详情见 bindfocus 说明"
+              "description": "输入框聚焦时触发，详情见 bindfocus 说明。"
             },
             "bindBlur": {
               "tsType": "() => void",
-              "description": "输入框失去焦点时触发，详情见 bindblur 说明"
+              "description": "输入框失去焦点时触发，详情见 bindblur 说明。"
             },
             "bindConfirm": {
               "tsType": "() => void",
-              "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明"
+              "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明。"
             },
             "bindLineChange": {
               "tsType": "() => void",
-              "description": "输入框行数变化时触发，详情见 bindlinechange 说明"
+              "description": "输入框行数变化时触发，详情见 bindlinechange 说明。"
             }
           },
           "additionalProperties": false
@@ -13707,40 +13707,40 @@
           "properties": {
             "src": {
               "type": "string",
-              "description": "要播放的视频资源地址。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src"
+              "description": "要播放的视频资源地址。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src。"
             },
             "autoplay": {
               "type": "boolean",
-              "description": "是否自动播放",
+              "description": "是否自动播放。",
               "defaultValue": "false"
             },
             "poster": {
               "type": "string",
-              "description": "视频封面的图片网络资源地址"
+              "description": "视频封面的图片网络资源地址。"
             },
             "loop": {
               "type": "boolean",
-              "description": "是否循环播放",
+              "description": "是否循环播放。",
               "defaultValue": "false"
             },
             "show-fullscreen-btn": {
               "type": "boolean",
-              "description": "是否显示全屏按钮",
+              "description": "是否显示全屏按钮。",
               "defaultValue": "true"
             },
             "show-play-btn": {
               "type": "boolean",
-              "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮",
+              "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮。",
               "defaultValue": "true"
             },
             "controls": {
               "type": "boolean",
-              "description": "是否显示全部播放控件",
+              "description": "是否显示全部播放控件。",
               "defaultValue": "true"
             },
             "object-fit": {
               "type": "string",
-              "description": "当视频大小与 video 容器大小不一致时，视频的表现形式：contain（包含），fill（填充），cover（覆盖）",
+              "description": "当视频大小与 video 容器大小不一致时，视频的表现形式。\n\ncontain（包含）\nfill（填充）\ncover（覆盖）",
               "defaultValue": "contain",
               "enum": [
                 "contain",
@@ -13750,7 +13750,7 @@
             },
             "play-btn-position": {
               "type": "string",
-              "description": "播放按钮的位置：center（视频中间），bottom（控制条上）",
+              "description": "播放按钮的位置。\n\ncenter（视频中间）\nbottom（控制条上）",
               "defaultValue": "center",
               "enum": [
                 "center",
@@ -13759,50 +13759,50 @@
             },
             "pre-roll-unit-id": {
               "type": "string",
-              "description": "前贴广告的 unit id"
+              "description": "前贴广告的 unit id。"
             },
             "post-roll-unit-id": {
               "type": "string",
-              "description": "后贴广告的 unit id"
+              "description": "后贴广告的 unit id。"
             },
             "vslide-gesture": {
               "type": "boolean",
-              "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+              "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量。",
               "defaultValue": "false"
             },
             "vslide-gesture-in-fullscreen": {
               "type": "boolean",
-              "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量",
+              "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量。",
               "defaultValue": "true"
             },
             "enable-progress-gesture": {
               "type": "boolean",
-              "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度",
+              "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度。",
               "defaultValue": "false"
             },
             "enable-play-gesture": {
               "type": "boolean",
-              "description": "是否开启播放手势，即双击切换播放/暂停",
+              "description": "是否开启播放手势，即双击切换播放/暂停。",
               "defaultValue": "false"
             },
             "muted": {
               "type": "boolean",
-              "description": "是否静音播放",
+              "description": "是否静音播放。",
               "defaultValue": "false"
             },
             "show-mute-btn": {
               "type": "boolean",
-              "description": "是否显示静音控件，仅在全屏时显示",
+              "description": "是否显示静音控件，仅在全屏时显示。",
               "defaultValue": "false"
             },
             "show-playback-rate-btn": {
               "type": "boolean",
-              "description": "是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2",
+              "description": "是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2。",
               "defaultValue": "false"
             },
             "direction": {
               "type": "number",
-              "description": "设置全屏时视频的方向，详见 direction 的合法值",
+              "description": "设置全屏时视频的方向，详见 direction 的合法值。",
               "defaultValue": "-90",
               "enum": [
                 "0",
@@ -13812,46 +13812,46 @@
             },
             "enable-play-in-background": {
               "type": "boolean",
-              "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放",
+              "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放。",
               "defaultValue": "false"
             },
             "signature": {
               "type": "signature",
-              "description": "设置署名水印，属性说明详见 Signature 类型说明"
+              "description": "设置署名水印，属性说明详见 Signature 类型说明。"
             },
             "initial-time": {
               "type": "number",
-              "description": "指定视频的初始播放位置",
+              "description": "指定视频的初始播放位置。",
               "defaultValue": "0"
             },
             "show-screen-lock-button": {
               "type": "boolean",
-              "description": "是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作",
+              "description": "是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作。",
               "defaultValue": "false"
             },
             "definition": {
               "type": "definition",
-              "description": "清晰度，设置清晰度列表和默认播放的清晰度。切换清晰度按钮仅在全屏时展示，属性说明详见 Definition 类型说明。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src"
+              "description": "清晰度，设置清晰度列表和默认播放的清晰度。切换清晰度按钮仅在全屏时展示，属性说明详见 Definition 类型说明。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src。"
             },
             "bindPlay": {
               "tsType": "() => void",
-              "description": "当开始播放时触发 play 事件"
+              "description": "当开始播放时触发 play 事件。"
             },
             "bindPause": {
               "tsType": "() => void",
-              "description": "当暂停播放时触发 pause 事件"
+              "description": "当暂停播放时触发 pause 事件。"
             },
             "bindEnded": {
               "tsType": "() => void",
-              "description": "当播放到末尾时触发 ended 事件"
+              "description": "当播放到末尾时触发 ended 事件。"
             },
             "bindError": {
               "tsType": "() => void",
-              "description": "视频播放出错时触发 error 事件"
+              "description": "视频播放出错时触发 error 事件。"
             },
             "bindTimeUpdate": {
               "tsType": "() => void",
-              "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }"
+              "description": "播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }。"
             },
             "bindProgress": {
               "tsType": "() => void",
@@ -13859,63 +13859,63 @@
             },
             "bindFullScreenChange": {
               "tsType": "() => void",
-              "description": "视频进入和退出全屏时触发"
+              "description": "视频进入和退出全屏时触发。"
             },
             "bindWaiting": {
               "tsType": "() => void",
-              "description": "视频出现缓冲时触发"
+              "description": "视频出现缓冲时触发。"
             },
             "bindAdStart": {
               "tsType": "() => void",
-              "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+              "description": "贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。"
             },
             "bindAdEnded": {
               "tsType": "() => void",
-              "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+              "description": "贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。"
             },
             "bindAdLoad": {
               "tsType": "() => void",
-              "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+              "description": "贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。"
             },
             "bindAdClose": {
               "tsType": "() => void",
-              "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+              "description": "贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }。"
             },
             "bindAdError": {
               "tsType": "() => void",
-              "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }"
+              "description": "贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。"
             },
             "bindLoadedMetaData": {
               "tsType": "() => void",
-              "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}"
+              "description": "视频元数据加载完成时触发。event.detail = {width, height, duration}。"
             },
             "bindSeekComplete": {
               "tsType": "() => void",
-              "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}"
+              "description": "seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}。"
             },
             "bindPlayBackRateChange": {
               "tsType": "() => void",
-              "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}"
+              "description": "视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}。"
             },
             "bindMuteChange": {
               "tsType": "() => void",
-              "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}"
+              "description": "静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}。"
             },
             "bindControlTap": {
               "tsType": "() => void",
-              "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值"
+              "description": "点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值。"
             },
             "bindEnterBackground": {
               "tsType": "() => void",
-              "description": "进入小窗播放时触发"
+              "description": "进入小窗播放时触发。"
             },
             "bindCloseBackground": {
               "tsType": "() => void",
-              "description": "关闭小窗播放时触发"
+              "description": "关闭小窗播放时触发。"
             },
             "bindLeaveBackground": {
               "tsType": "() => void",
-              "description": "离开小窗进入 app 事件时触发"
+              "description": "离开小窗进入 app 事件时触发。"
             }
           },
           "additionalProperties": false
@@ -13929,22 +13929,22 @@
           "properties": {
             "hover-class": {
               "type": "string",
-              "description": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果",
+              "description": "指定按下去的样式类。当 hover-class=\"none\" 时，没有点击态效果。",
               "defaultValue": "none"
             },
             "hover-stop-propagation": {
               "type": "boolean",
-              "description": "指定是否阻止本节点的祖先节点出现点击态",
+              "description": "指定是否阻止本节点的祖先节点出现点击态。",
               "defaultValue": "false"
             },
             "hover-start-time": {
               "type": "number",
-              "description": "按住后多久出现点击态，单位毫秒",
+              "description": "按住后多久出现点击态，单位毫秒。",
               "defaultValue": "50"
             },
             "hover-stay-time": {
               "type": "number",
-              "description": "手指松开后点击态保留时间，单位毫秒",
+              "description": "手指松开后点击态保留时间，单位毫秒。",
               "defaultValue": "400"
             }
           },
