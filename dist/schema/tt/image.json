@@ -4,11 +4,11 @@
   "properties": {
     "src": {
       "type": "string",
-      "description": "图片资源地址"
+      "description": "图片资源地址。"
     },
     "mode": {
       "type": "string",
-      "description": "图片剪裁方式，详情见 mode 的合法值",
+      "description": "图片剪裁方式，详情见 mode 的合法值。",
       "defaultValue": "scaleToFill",
       "enum": [
         "scaleToFill",
@@ -29,16 +29,16 @@
     },
     "lazy-load": {
       "type": "boolean",
-      "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载",
+      "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载。",
       "defaultValue": "false"
     },
     "bindError": {
       "tsType": "() => void",
-      "description": "当错误发生时触发"
+      "description": "当错误发生时触发。"
     },
     "bindLoad": {
       "tsType": "() => void",
-      "description": "当图片载入完毕时触发"
+      "description": "当图片载入完毕时触发。"
     }
   },
   "additionalProperties": false

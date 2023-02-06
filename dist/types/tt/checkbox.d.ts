@@ -7,19 +7,19 @@
 
 export interface Checkbox {
   /**
-   * checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value
+   * checkbox 标识，选中时触发 checkbox-group 的 change 事件，并携带 checkbox 的 value。
    */
   value?: string;
   /**
-   * 是否禁用
+   * 是否禁用。
    */
   disabled?: boolean;
   /**
-   * 当前是否选中，可用来设置默认选中
+   * 当前是否选中，可用来设置默认选中。
    */
   checked?: boolean;
   /**
-   * checkbox 的颜色，同 css 的 color
+   * checkbox 的颜色，同 CSS 的 color。
    */
   color?: string;
 }

@@ -15,7 +15,7 @@ export interface Slider {
    */
   max?: number;
   /**
-   * 步长，取值必须大于 0，并且可被(max-min)整除
+   * 步长，取值必须大于 0，并且可被（max-min）整除。
    */
   step?: number;
   /**
@@ -43,7 +43,7 @@ export interface Slider {
    */
   "background-color"?: string;
   /**
-   * 滑块的大小，取值范围为 12 - 28
+   * 滑块的大小，取值范围为 12 ~ 28。
    */
   "block-size"?: number;
   /**
@@ -55,11 +55,11 @@ export interface Slider {
    */
   "show-value"?: boolean;
   /**
-   * 完成一次拖动后触发的事件，event.detail = {value: value}
+   * 完成一次拖动后触发的事件，event.detail = {value: value}。
    */
   bindChange?: () => void;
   /**
-   * 拖动过程中触发的事件，event.detail = {value: value}
+   * 拖动过程中触发的事件，event.detail = {value: value}。
    */
   bindChanging?: () => void;
 }

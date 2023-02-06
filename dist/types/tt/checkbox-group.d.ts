@@ -7,11 +7,14 @@
 
 export interface CheckboxGroup {
   /**
-   * 用于 <form /> 组件，在表单提交事件中作为提交数据的 key 值
+   * 用于 form 组件，在表单提交事件中作为提交数据的 key 值。
+   *
+   *
+   *
    */
   name?: string;
   /**
-   * checkbox-group 中选中项发生改变时触发 change 事件
+   * checkbox-group 中选中项发生改变时触发 change 事件。
    */
   bindChange?: () => void;
 }

@@ -7,47 +7,47 @@
 
 export interface Button {
   /**
-   * 按钮的大小，详情见 size 的合法值
+   * 按钮的大小，详情见 size 的合法值。
    */
   size?: "default" | "mini";
   /**
-   * 按钮的样式类型，详情见 type 的合法值
+   * 按钮的样式类型，详情见 type 的合法值。
    */
   type?: "primary" | "default";
   /**
-   * 是否禁用
+   * 是否禁用。
    */
   disabled?: boolean;
   /**
-   * 是否带 loading 图标
+   * 是否带 loading 图标。
    */
   loading?: boolean;
   /**
-   * 用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值
+   * 用于嵌在 form 组件中，控制 submit/reset，详情见 form-type 的合法值。
    */
   "form-type"?: "submit" | "reset";
   /**
-   * 用于调用开放能力, 详情见 open-type 的合法值
+   * 用于调用开放能力, 详情见 open-type 的合法值。
    */
   "open-type"?: "share" | "getPhoneNumber" | "contact";
   /**
-   * 点击状态的样式类
+   * 点击状态的样式类。
    */
   "hover-class"?: string;
   /**
-   * 按住后多久出现点击态，单位毫秒
+   * 按住后多久出现点击态，单位毫秒。
    */
   "hover-start-time"?: number;
   /**
-   * 手指松开后点击态保留时间，单位毫秒
+   * 手指松开后点击态保留时间，单位毫秒。
    */
   "hover-stay-time"?: number;
   /**
-   * 指定是否阻止本节点的祖先节点出现点击态
+   * 指定是否阻止本节点的祖先节点出现点击态。
    */
   "hover-stop-propagation"?: boolean;
   /**
-   * 获取用户手机号回调，只在 open-type=getPhoneNumber 时有效
+   * 获取用户手机号回调，只在 open-type=getPhoneNumber 时有效。
    */
   bindGetPhoneNumber?: () => void;
 }

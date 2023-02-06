@@ -7,15 +7,15 @@
 
 export interface Text {
   /**
-   * 是否可以选中文字
+   * 是否可以选中文字。
    */
   selectable?: boolean;
   /**
-   * 是否显示连续的空格，可以取值enspemspnbsp，详见 space 的合法值
+   * 是否显示连续的空格，可以取值ensp emsp nbsp，详见 space 的合法值。
    */
   space?: "ensp" | "emsp" | "nbsp";
   /**
-   * 是否转义
+   * 是否转义。
    */
   decode?: boolean;
 }

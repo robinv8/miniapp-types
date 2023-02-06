@@ -27,7 +27,8 @@ export interface Progress {
    */
   active?: boolean;
   /**
-   * backwards: 动画从头播；forwards：动画从上次结束点接着播
+   * backwards：动画从头播
+   * forwards：动画从上次结束点接着播
    */
   "active-mode"?: string;
 }

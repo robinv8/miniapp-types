@@ -7,11 +7,11 @@
 
 export interface Image {
   /**
-   * 图片资源地址
+   * 图片资源地址。
    */
   src?: string;
   /**
-   * 图片剪裁方式，详情见 mode 的合法值
+   * 图片剪裁方式，详情见 mode 的合法值。
    */
   mode?:
     | "scaleToFill"
@@ -29,15 +29,15 @@ export interface Image {
     | "bottom left"
     | "bottom right";
   /**
-   * 图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载
+   * 图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载。
    */
   "lazy-load"?: boolean;
   /**
-   * 当错误发生时触发
+   * 当错误发生时触发。
    */
   bindError?: () => void;
   /**
-   * 当图片载入完毕时触发
+   * 当图片载入完毕时触发。
    */
   bindLoad?: () => void;
 }

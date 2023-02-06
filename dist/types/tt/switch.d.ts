@@ -15,15 +15,15 @@ export interface Switch {
    */
   disabled?: boolean;
   /**
-   * 样式，详见 type 的合法值
+   * 样式，详见 type 的合法值。
    */
   type?: "switch" | "checkbox";
   /**
-   * switch 的颜色，同 css 的 color
+   * switch 的颜色，同 CSS 的 color。
    */
   color?: string;
   /**
-   * checked 改变时触发该事件，event.detail={value:checked}
+   * checked 改变时触发该事件，event.detail={value:checked}。
    */
   bindChange?: () => void;
 }

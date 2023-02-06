@@ -29,7 +29,7 @@
     },
     "active-mode": {
       "type": "string",
-      "description": "backwards: 动画从头播；forwards：动画从上次结束点接着播",
+      "description": "backwards：动画从头播\nforwards：动画从上次结束点接着播",
       "defaultValue": "backwards"
     }
   },

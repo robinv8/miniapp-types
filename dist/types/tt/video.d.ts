@@ -7,123 +7,130 @@
 
 export interface Video {
   /**
-   * 要播放的视频资源地址。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src
+   * 要播放的视频资源地址。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src。
    */
   src?: string;
   /**
-   * 是否自动播放
+   * 是否自动播放。
    */
   autoplay?: boolean;
   /**
-   * 视频封面的图片网络资源地址
+   * 视频封面的图片网络资源地址。
    */
   poster?: string;
   /**
-   * 是否循环播放
+   * 是否循环播放。
    */
   loop?: boolean;
   /**
-   * 是否显示全屏按钮
+   * 是否显示全屏按钮。
    */
   "show-fullscreen-btn"?: boolean;
   /**
-   * 是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮
+   * 是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮。
    */
   "show-play-btn"?: boolean;
   /**
-   * 是否显示全部播放控件
+   * 是否显示全部播放控件。
    */
   controls?: boolean;
   /**
-   * 当视频大小与 video 容器大小不一致时，视频的表现形式：contain（包含），fill（填充），cover（覆盖）
+   * 当视频大小与 video 容器大小不一致时，视频的表现形式。
+   *
+   * contain（包含）
+   * fill（填充）
+   * cover（覆盖）
    */
   "object-fit"?: "contain" | "fill" | "cover";
   /**
-   * 播放按钮的位置：center（视频中间），bottom（控制条上）
+   * 播放按钮的位置。
+   *
+   * center（视频中间）
+   * bottom（控制条上）
    */
   "play-btn-position"?: "center" | "bottom";
   /**
-   * 前贴广告的 unit id
+   * 前贴广告的 unit id。
    */
   "pre-roll-unit-id"?: string;
   /**
-   * 后贴广告的 unit id
+   * 后贴广告的 unit id。
    */
   "post-roll-unit-id"?: string;
   /**
-   * 在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量
+   * 在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量。
    */
   "vslide-gesture"?: boolean;
   /**
-   * 在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量
+   * 在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量。
    */
   "vslide-gesture-in-fullscreen"?: boolean;
   /**
-   * 是否开启控制进度的手势，开启后表现详见手势响应-播放进度
+   * 是否开启控制进度的手势，开启后表现详见手势响应-播放进度。
    */
   "enable-progress-gesture"?: boolean;
   /**
-   * 是否开启播放手势，即双击切换播放/暂停
+   * 是否开启播放手势，即双击切换播放/暂停。
    */
   "enable-play-gesture"?: boolean;
   /**
-   * 是否静音播放
+   * 是否静音播放。
    */
   muted?: boolean;
   /**
-   * 是否显示静音控件，仅在全屏时显示
+   * 是否显示静音控件，仅在全屏时显示。
    */
   "show-mute-btn"?: boolean;
   /**
-   * 是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2
+   * 是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2。
    */
   "show-playback-rate-btn"?: boolean;
   /**
-   * 设置全屏时视频的方向，详见 direction 的合法值
+   * 设置全屏时视频的方向，详见 direction 的合法值。
    */
   direction?: "0" | "90" | "-90";
   /**
-   * video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放
+   * video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放。
    */
   "enable-play-in-background"?: boolean;
   /**
-   * 设置署名水印，属性说明详见 Signature 类型说明
+   * 设置署名水印，属性说明详见 Signature 类型说明。
    */
   signature?: {
     [k: string]: unknown;
   };
   /**
-   * 指定视频的初始播放位置
+   * 指定视频的初始播放位置。
    */
   "initial-time"?: number;
   /**
-   * 是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作
+   * 是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作。
    */
   "show-screen-lock-button"?: boolean;
   /**
-   * 清晰度，设置清晰度列表和默认播放的清晰度。切换清晰度按钮仅在全屏时展示，属性说明详见 Definition 类型说明。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src
+   * 清晰度，设置清晰度列表和默认播放的清晰度。切换清晰度按钮仅在全屏时展示，属性说明详见 Definition 类型说明。需要保证 src 和 definition 中有一个为必填，若同时设置了 src 和 definition，definition 优先级高于 src。
    */
   definition?: {
     [k: string]: unknown;
   };
   /**
-   * 当开始播放时触发 play 事件
+   * 当开始播放时触发 play 事件。
    */
   bindPlay?: () => void;
   /**
-   * 当暂停播放时触发 pause 事件
+   * 当暂停播放时触发 pause 事件。
    */
   bindPause?: () => void;
   /**
-   * 当播放到末尾时触发 ended 事件
+   * 当播放到末尾时触发 ended 事件。
    */
   bindEnded?: () => void;
   /**
-   * 视频播放出错时触发 error 事件
+   * 视频播放出错时触发 error 事件。
    */
   bindError?: () => void;
   /**
-   * 播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }
+   * 播放进度变化时触发，返回当前播放时间点及视频总时长，单位：秒(s)。event.detail = { currentTime, duration }。
    */
   bindTimeUpdate?: () => void;
   /**
@@ -131,63 +138,63 @@ export interface Video {
    */
   bindProgress?: () => void;
   /**
-   * 视频进入和退出全屏时触发
+   * 视频进入和退出全屏时触发。
    */
   bindFullScreenChange?: () => void;
   /**
-   * 视频出现缓冲时触发
+   * 视频出现缓冲时触发。
    */
   bindWaiting?: () => void;
   /**
-   * 贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }
+   * 贴片广告开始播放时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。
    */
   bindAdStart?: () => void;
   /**
-   * 贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }
+   * 贴片广告播放结束时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。
    */
   bindAdEnded?: () => void;
   /**
-   * 贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }
+   * 贴片广告加载成功时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。
    */
   bindAdLoad?: () => void;
   /**
-   * 贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }
+   * 贴片广告非自然结束时触发，如：用户关闭广告或广告播放过程中 video 组件被销毁，event.detail = { adType: 'preRollAd' | 'postRollAd' }。
    */
   bindAdClose?: () => void;
   /**
-   * 贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }
+   * 贴片广告加载失败时触发，event.detail = { adType: 'preRollAd' | 'postRollAd' }。
    */
   bindAdError?: () => void;
   /**
-   * 视频元数据加载完成时触发。event.detail = {width, height, duration}
+   * 视频元数据加载完成时触发。event.detail = {width, height, duration}。
    */
   bindLoadedMetaData?: () => void;
   /**
-   * seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}
+   * seek 完成时触发。返回 seek 完成后的播放时间点，单位：秒(s)。event.detail={position}。
    */
   bindSeekComplete?: () => void;
   /**
-   * 视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}
+   * 视频倍速改变完成时触发。返回改变后的倍速值。event.detail={playbackRate}。
    */
   bindPlayBackRateChange?: () => void;
   /**
-   * 静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}
+   * 静音状态改变完成时触发。返回当前是否静音。event.detail={isMuted}。
    */
   bindMuteChange?: () => void;
   /**
-   * 点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值
+   * 点击控件时触发。返回当前点击的控件类型。event.detail={controlType}，取值见表 controlType 的合法值。
    */
   bindControlTap?: () => void;
   /**
-   * 进入小窗播放时触发
+   * 进入小窗播放时触发。
    */
   bindEnterBackground?: () => void;
   /**
-   * 关闭小窗播放时触发
+   * 关闭小窗播放时触发。
    */
   bindCloseBackground?: () => void;
   /**
-   * 离开小窗进入 app 事件时触发
+   * 离开小窗进入 app 事件时触发。
    */
   bindLeaveBackground?: () => void;
 }

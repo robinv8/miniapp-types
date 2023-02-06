@@ -7,71 +7,71 @@
 
 export interface Swiper {
   /**
-   * 是否显示面板指示点
+   * 是否显示面板指示点。
    */
   "indicator-dots"?: boolean;
   /**
-   * 指示点颜色
+   * 指示点颜色。
    */
   "indicator-color"?: string;
   /**
-   * 当前选中的指示点颜色
+   * 当前选中的指示点颜色。
    */
   "indicator-active-color"?: string;
   /**
-   * 是否自动切换
+   * 是否自动切换。
    */
   autoplay?: boolean;
   /**
-   * 当前选中滑块的索引
+   * 当前选中滑块的索引。
    */
   current?: number;
   /**
-   * 当前选中滑块的组件 id，不能与 current 属性同时指定
+   * 当前选中滑块的组件 id，不能与 current 属性同时指定。
    */
   "current-item-id"?: string;
   /**
-   * 自动切换时间间隔（ms）
+   * 自动切换时间间隔（ms）。
    */
   interval?: number;
   /**
-   * 前边距，可以用露出前一项的一小部分，支持 px 和 rpx，默认单位是 px
+   * 前边距，可以用露出前一项的一小部分，支持 px 和 rpx，默认单位是 px。
    */
   "previous-margin"?: string;
   /**
-   * 后边距，可用于露出后一项的一小部分，支持 px 和 rpx，默认单位是 px
+   * 后边距，可用于露出后一项的一小部分，支持 px 和 rpx，默认单位是 px。
    */
   "next-margin"?: string;
   /**
-   * 同时显示的滑块数量
+   * 同时显示的滑块数量。
    */
   "display-multiple-items"?: number;
   /**
-   * 滑动动画时长（ms）
+   * 滑动动画时长（ms）。
    */
   duration?: number;
   /**
-   * 是否循环播放（首尾衔接）
+   * 是否循环播放（首尾衔接）。
    */
   circular?: boolean;
   /**
-   * 滑块放置方向是否为竖直
+   * 滑块放置方向是否为竖直。
    */
   vertical?: boolean;
   /**
-   * 指定 swiper 切换缓动动画类型，详情见 easing-function 的合法值
+   * 指定 swiper 切换缓动动画类型，详情见 easing-function 的合法值。
    */
   "easing-function"?: "default" | "linear" | "easeInCubic" | "easeOutCubic" | "easeInOutCubic";
   /**
-   * current 改变时触发
+   * current 改变时触发。
    */
   bindChange?: () => void;
   /**
-   * 动画结束时会触发 animationfinish 事件
+   * 动画结束时会触发 animationfinish 事件。
    */
   bindAnimationFinish?: () => void;
   /**
-   * swiper-item 产生位移时触发 transition 事件
+   * swiper-item 产生位移时触发 transition 事件。
    */
   bindTransition?: () => void;
 }
