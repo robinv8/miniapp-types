@@ -8,36 +8,36 @@
     },
     "indicator-style": {
       "type": "string",
-      "description": "设置选择器中选中框的样式"
+      "description": "设置选择器中选中框的样式。"
     },
     "indicator-class": {
       "type": "string",
-      "description": "设置选择器中间选中框的类名"
+      "description": "设置选择器中间选中框的类名。"
     },
     "mask-style": {
       "type": "string",
-      "description": "设置蒙层的样式"
+      "description": "设置蒙层的样式。"
     },
     "mask-class": {
       "type": "string",
-      "description": "设置蒙层的类名"
+      "description": "设置蒙层的类名。"
     },
     "immediate-change": {
       "type": "boolean",
-      "description": "设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件",
+      "description": "设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件。",
       "defaultValue": "false"
     },
     "bindChange": {
       "tsType": "() => void",
-      "description": "滚动选择时触发 change 事件回调"
+      "description": "滚动选择时触发 change 事件回调。"
     },
     "bindPickStart": {
       "tsType": "() => void",
-      "description": "当滚动选择开始时触发 pickstart 事件回调"
+      "description": "当滚动选择开始时触发 pickstart 事件回调。"
     },
     "bindPickEnd": {
       "tsType": "() => void",
-      "description": "当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）"
+      "description": "当滚动动画结束时触发 pickend 事件回调（在 change 事件回调之后触发）。"
     }
   },
   "additionalProperties": false,

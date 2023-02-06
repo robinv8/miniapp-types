@@ -4,8 +4,8 @@
   "properties": {
     "mode": {
       "type": "string",
-      "description": "选择器类型，详见 mode 的合法值",
-      "defaultValue": "\"selector\"",
+      "description": "选择器类型，详见 mode 的合法值。",
+      "defaultValue": "selector",
       "enum": [
         "selector",
         "multiSelector",
