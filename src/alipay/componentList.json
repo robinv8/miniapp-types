@@ -91,7 +91,13 @@
   },
   {
     "name": "root-portal",
-    "url": "https://opendocs.alipay.com/mini/05snwp"
+    "url": "https://opendocs.alipay.com/mini/05snwp",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 3,
+      "required": 2
+    }
   },
   {
     "name": "text",
@@ -311,10 +317,6 @@
     }
   },
   {
-    "name": "map 高级定制渲染",
-    "url": "https://opendocs.alipay.com/mini/component/00n21l"
-  },
-  {
     "name": "web-view",
     "url": "https://opendocs.alipay.com/mini/component/web-view",
     "fields": {
@@ -343,15 +345,31 @@
   },
   {
     "name": "error-view",
-    "url": "https://opendocs.alipay.com/mini/component/error-view"
+    "url": "https://opendocs.alipay.com/mini/component/error-view",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "join-group-chat",
-    "url": "https://opendocs.alipay.com/mini/05snwq"
+    "url": "https://opendocs.alipay.com/mini/05snwq",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 2
+    }
   },
   {
     "name": "subscribe-message",
-    "url": "https://opendocs.alipay.com/mini/05z9mt"
+    "url": "https://opendocs.alipay.com/mini/05z9mt",
+    "fields": {
+      "name": 0,
+      "type": 1,
+      "description": 3,
+      "required": 2
+    }
   },
   {
     "name": "aria-component",
