@@ -11,12 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
       - uses: actions/checkout@v3
 
@@ -35,39 +29,20 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: install
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v2.2.4
         with:
           version: 7
           run_install: false
 
-      - name: Get pnpm store directory
-        id: pnpm-cache
+      - name: execute sync script
         run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-
-      - name: Install dependencies
-        run: |
-          pnpm install
-          pnpm build:types
-
-      - name: Commit changes
-        run: |
-          git add .
-          git commit -m "Sync types"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: sync-types
+          pnpm run build:type
+          pnpm run build:json
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Sync types
-          title: Sync types
-          body: |
-            Sync types
-          labels: |
-            types
+          commit-message: "refactor(types): build types"
+          title: "refactor(types): build types"
+          body: "build types"
