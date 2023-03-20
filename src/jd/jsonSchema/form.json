@@ -4,7 +4,7 @@
   "properties": {
     "report-submit": {
       "type": "boolean",
-      "defaultValue": "是否返回 formId 用于发送模板消息"
+      "defaultValue": false
     },
     "bindSubmit": {
       "tsType": "() => void",

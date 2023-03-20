@@ -13,7 +13,7 @@
     "scale": {
       "type": "number",
       "description": "否",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "theme": {
       "type": "string",

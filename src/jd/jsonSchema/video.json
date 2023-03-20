@@ -34,7 +34,7 @@
     "initialTime": {
       "type": "number",
       "description": "否",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "poster": {
       "type": "string",
@@ -43,7 +43,7 @@
     "mobilenet-hint-type": {
       "type": "number",
       "description": "否",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "bindPlay": {
       "tsType": "() => void",

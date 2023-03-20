@@ -27,7 +27,7 @@
     "maxlength": {
       "type": "number",
       "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
-      "defaultValue": "140"
+      "defaultValue": 140
     },
     "auto-focus": {
       "type": "boolean",
@@ -52,7 +52,7 @@
     "cursor-spacing": {
       "type": "number",
       "description": "指定光标与键盘的距离，单位 px 。取 textarea 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "cursor": {
       "type": "number",
@@ -66,12 +66,12 @@
     "selection-start": {
       "type": "number",
       "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
-      "defaultValue": "-1"
+      "defaultValue": -1
     },
     "selection-end": {
       "type": "number",
       "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
-      "defaultValue": "-1"
+      "defaultValue": -1
     },
     "adjust-position": {
       "type": "boolean",
