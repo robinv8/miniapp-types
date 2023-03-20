@@ -1,0 +1,18 @@
+{
+  "title": "subscribe-message",
+  "type": "object",
+  "properties": {
+    "template-id": {
+      "type": "string",
+      "description": "组件 ID。可查看 调用订阅组件 获取。"
+    },
+    "onComplete": {
+      "tsType": "() => void",
+      "description": "订阅完成后触发。"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "template-id"
+  ]
+}

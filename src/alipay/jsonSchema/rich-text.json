@@ -3,8 +3,15 @@
   "type": "object",
   "properties": {
     "nodes": {
-      "type": "array",
-      "description": "节点列表。目前仅支持使用 Array 类型，如果需要支持 HTML String，则需要自己将 HTML String 转化为 nodes 数组，可使用 mini-html-parser2 转换。"
+      "type": [
+        "any[]",
+        "string"
+      ],
+      "description": "节点列表。基础库 2.8.5 开始支持 HTML String，2.8.5 以下版本可使用 mini-html-parser2 将 HTML String 转化为 nodes 数组。"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格。\n有效值：\nnbsp：根据字体设置的空格大小。\nemsp：中文字符空格大小。\nensp：中文字符空格一半大小。"
     },
     "onTap": {
       "tsType": "() => void",

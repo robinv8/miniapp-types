@@ -24,14 +24,8 @@
     },
     "position": {
       "type": "string",
-      "description": "弹出位置。",
-      "defaultValue": "bottom",
-      "enum":[
-        "top",
-        "bottom",
-        "right",
-        "center"
-      ]
+      "description": "弹出位置。\n可选值： top、bottom、right、center。",
+      "defaultValue": "bottom"
     },
     "round": {
       "type": "boolean",

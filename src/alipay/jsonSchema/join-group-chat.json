@@ -1,0 +1,11 @@
+{
+  "title": "join-group-chat",
+  "type": "object",
+  "properties": {
+    "template-id": {
+      "type": "string",
+      "description": "必填，组件模板 ID，在商家平台生成。详情可查看下方 生成模板ID。"
+    }
+  },
+  "additionalProperties": false
+}

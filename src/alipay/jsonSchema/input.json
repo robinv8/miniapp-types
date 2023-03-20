@@ -72,11 +72,13 @@
     },
     "selection-start": {
       "type": "number",
-      "description": "获取光标时，选中文本对应的焦点光标起始位置，需要和 selection-end 配合使用。"
+      "description": "获取光标时，选中文本对应的焦点光标起始位置，需要和 selection-end 配合使用。",
+      "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "获取光标时，选中文本对应的焦点光标结束位置，需要和 selection-start 配合使用。"
+      "description": "获取光标时，选中文本对应的焦点光标结束位置，需要和 selection-start 配合使用。",
+      "defaultValue": "-1"
     },
     "random-number": {
       "type": "boolean",
