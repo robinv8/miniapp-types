@@ -29,8 +29,7 @@
     },
     "current-item-id": {
       "type": "string",
-      "description": "当前所在滑块的 item-id ，不能与 current 被同时指定",
-      "defaultValue": "\"\""
+      "description": "当前所在滑块的 item-id ，不能与 current 被同时指定"
     },
     "interval": {
       "type": "number",

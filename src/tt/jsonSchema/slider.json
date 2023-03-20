@@ -5,17 +5,17 @@
     "min": {
       "type": "number",
       "description": "最小值",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "max": {
       "type": "number",
       "description": "最大值",
-      "defaultValue": "100"
+      "defaultValue": 100
     },
     "step": {
       "type": "number",
       "description": "步长，取值必须大于 0，并且可被（max-min）整除。",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "disabled": {
       "type": "boolean",
@@ -25,7 +25,7 @@
     "value": {
       "type": "number",
       "description": "当前取值",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "color": {
       "type": "string",
@@ -50,7 +50,7 @@
     "block-size": {
       "type": "number",
       "description": "滑块的大小，取值范围为 12 ~ 28。",
-      "defaultValue": "28"
+      "defaultValue": 28
     },
     "block-color": {
       "type": "string",

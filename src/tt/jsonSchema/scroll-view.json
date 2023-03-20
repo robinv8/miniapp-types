@@ -20,20 +20,22 @@
     "upper-threshold": {
       "type": "number",
       "description": "距顶部/左边多远时（单位 px），触发 scrolltoupper 事件。",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "lower-threshold": {
       "type": "number",
       "description": "距底部/右边多远时（单位 px），触发 scrolltolower 事件。",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "scroll-top": {
       "type": "number",
-      "description": "设置内容垂直滚动的像素数。"
+      "description": "设置内容垂直滚动的像素数。",
+      "defaultValue": 0
     },
     "scroll-left": {
       "type": "number",
-      "description": "设置内容水平滚动的像素数。"
+      "description": "设置内容水平滚动的像素数。",
+      "defaultValue": 0
     },
     "scroll-into-view": {
       "type": "string",
