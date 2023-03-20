@@ -64,10 +64,10 @@ const service = new Service({
               : {}),
           }
 
-          if (type === 'number' && defaultValue) {
+          if ((type === 'number' || type === 'Number') && defaultValue) {
             obj.defaultValue = Number(defaultValue || 0);
           }
-          if (type === 'boolean' && defaultValue) {
+          if ((type === 'boolean' || type === 'Boolean') && defaultValue) {
             obj.defaultValue = defaultValue === 'true';
           }
           
