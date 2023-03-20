@@ -50,7 +50,7 @@
         "number",
         "string"
       ],
-      "description": "指定光标与键盘的距离，单位px（2.4.0起支持rpx）。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
+      "description": "指定光标与键盘的距离，单位 px（2.4.0 起支持 rpx）。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离",
       "defaultValue": "0"
     },
     "auto-focus": {
@@ -65,7 +65,7 @@
     },
     "confirm-type": {
       "type": "string",
-      "description": "设置键盘右下角按钮的文字，仅在type='text'时生效",
+      "description": "设置键盘右下角按钮的文字，仅在 type='text'时生效",
       "defaultValue": "\"done\"",
       "enum": [
         "send",
@@ -82,16 +82,16 @@
     },
     "cursor": {
       "type": "number",
-      "description": "指定focus时的光标位置"
+      "description": "指定 focus 时的光标位置"
     },
     "selection-start": {
       "type": "number",
-      "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
+      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
       "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用",
+      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
       "defaultValue": "-1"
     },
     "adjust-position": {
