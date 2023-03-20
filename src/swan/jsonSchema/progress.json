@@ -5,7 +5,7 @@
     "percent": {
       "type": "number",
       "description": "百分比 0~100%",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "show-info": {
       "type": "boolean",
@@ -64,7 +64,7 @@
     "duration": {
       "type": "number",
       "description": "进度增加 1% 所需毫秒数",
-      "defaultValue": "20"
+      "defaultValue": 20
     }
   },
   "additionalProperties": false

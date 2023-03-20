@@ -4,18 +4,17 @@
   "properties": {
     "longitude": {
       "type": "number",
-      "description": "gcj02 坐标系中心经度",
-      "defaultValue": "北京经度"
+      "description": "gcj02 坐标系中心经度"
+
     },
     "latitude": {
       "type": "number",
-      "description": "gcj02 坐标系中心纬度",
-      "defaultValue": "北京纬度"
+      "description": "gcj02 坐标系中心纬度"
     },
     "scale": {
       "type": "number",
       "description": "缩放级别，取值范围为 4-21 。动态设置 scale 值用法：scale=\"{= scale =}\"",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "markers": {
       "type": "array.<marker>",

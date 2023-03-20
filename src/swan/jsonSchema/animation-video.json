@@ -5,12 +5,12 @@
     "resource-width": {
       "type": "number",
       "description": "组件使用的 video 视频资源的宽度（单位：px）",
-      "defaultValue": "800"
+      "defaultValue": 800
     },
     "resource-height": {
       "type": "number",
       "description": "组件使用的 video 视频资源的高度（单位：px）",
-      "defaultValue": "400"
+      "defaultValue": 400
     },
     "canvas-style": {
       "type": "string",

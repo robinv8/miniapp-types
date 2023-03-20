@@ -48,17 +48,17 @@
     "bitrate": {
       "type": "number",
       "description": "最大码率",
-      "defaultValue": "900"
+      "defaultValue": 900
     },
     "video-width": {
       "type": "number",
       "description": "视频分辨率宽",
-      "defaultValue": "360"
+      "defaultValue": 360
     },
     "video-height": {
       "type": "number",
       "description": "视频分辨率高",
-      "defaultValue": "640"
+      "defaultValue": 640
     },
     "enable-remote-mirror": {
       "type": "boolean",

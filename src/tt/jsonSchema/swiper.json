@@ -29,7 +29,7 @@
     },
     "current-item-id": {
       "type": "string",
-      "description": "当前选中滑块的组件 id，不能与 current 属性同时指定。",
+      "description": "当前选中滑块的组件 id，不能与 current 属性同时指定。"
     },
     "interval": {
       "type": "number",

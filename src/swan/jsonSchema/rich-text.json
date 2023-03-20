@@ -13,7 +13,7 @@
     "selectable": {
       "type": "boolean",
       "description": "富文本是否可以长按选中，可用于复制，粘贴，长按搜索等场景",
-      "defaultValue": "false（基础库 3.150.1 以前版本）\ntrue（基础库 3.150.1 及以后版本）"
+      "defaultValue": false
     },
     "image-menu-prevent": {
       "type": "boolean",

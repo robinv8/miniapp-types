@@ -34,12 +34,12 @@
     "damping": {
       "type": "number",
       "description": "阻尼系数，用于控制 x 或 y 改变时的动画和过界回弹的动画，值越大移动越快",
-      "defaultValue": "20"
+      "defaultValue": 20
     },
     "friction": {
       "type": "number",
       "description": "摩擦系数，用于控制惯性滑动的动画，值越大摩擦力越大，滑动越快停止；必须大于 0，否则会被设置成默认值",
-      "defaultValue": "2"
+      "defaultValue": 2
     },
     "disabled": {
       "type": "boolean",
@@ -54,17 +54,17 @@
     "scale-min": {
       "type": "number",
       "description": "定义缩放倍数最小值",
-      "defaultValue": "0.5"
+      "defaultValue": 0.5
     },
     "scale-max": {
       "type": "number",
       "description": "定义缩放倍数最大值",
-      "defaultValue": "10"
+      "defaultValue": 10
     },
     "scale-value": {
       "type": "number",
       "description": "定义缩放倍数，取值范围为 0.5-10",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "animation": {
       "type": "boolean",

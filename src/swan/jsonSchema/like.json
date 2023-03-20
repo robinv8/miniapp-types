@@ -30,17 +30,17 @@
     "like-num": {
       "type": "number",
       "description": "点赞数量",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "like-type": {
       "type": "number",
       "description": "被点赞的对象类型。0：表示对文章内容进行点赞；1：表示对评论内容进行点赞",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "animation-type": {
       "type": "number",
       "description": "点赞动效形式。0：无动效；1：轻动效；2：强动效",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "is-show-toast": {
       "type": "boolean",

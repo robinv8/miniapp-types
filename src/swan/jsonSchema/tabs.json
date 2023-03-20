@@ -35,7 +35,7 @@
     "max-tab-item-amount": {
       "type": "number",
       "description": "当前 tabs 视图中最多容纳的 tab-item 数量，低于此数量均分排列，超出此数量划屏。默认五个，开发者可根据业务需求调整",
-      "defaultValue": "5"
+      "defaultValue": 5
     },
     "bindTabChange": {
       "tsType": "() => void",
