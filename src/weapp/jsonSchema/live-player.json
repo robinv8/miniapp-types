@@ -51,12 +51,12 @@
     "min-cache": {
       "type": "number",
       "description": "最小缓冲区，单位s（RTC 模式推荐 0.2s）",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "max-cache": {
       "type": "number",
       "description": "最大缓冲区，单位s（RTC 模式推荐 0.8s）。缓冲区用来抵抗网络波动，缓冲数据越多，网络抗性越好，但时延越大。",
-      "defaultValue": "3"
+      "defaultValue": 3
     },
     "sound-mode": {
       "type": "string",

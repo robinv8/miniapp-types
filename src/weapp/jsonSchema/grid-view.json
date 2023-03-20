@@ -14,22 +14,22 @@
     "cross-axis-count": {
       "type": "number",
       "description": "交叉轴元素数量",
-      "defaultValue": "2"
+      "defaultValue": 2
     },
     "max-cross-axis-extent": {
       "type": "number",
       "description": "交叉轴元素最大范围",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "main-axis-gap": {
       "type": "number",
       "description": "主轴方向间隔",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "cross-axis-gap": {
       "type": "number",
       "description": "交叉轴方向间隔",
-      "defaultValue": "0"
+      "defaultValue": 0
     }
   },
   "additionalProperties": false,

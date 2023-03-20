@@ -13,17 +13,17 @@
     "scale": {
       "type": "number",
       "description": "缩放级别，取值范围为3-20",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "min-scale": {
       "type": "number",
       "description": "最小缩放级别",
-      "defaultValue": "3"
+      "defaultValue": 3
     },
     "max-scale": {
       "type": "number",
       "description": "最大缩放级别",
-      "defaultValue": "20"
+      "defaultValue": 20
     },
     "markers": {
       "type": "array.<marker>",
@@ -65,17 +65,17 @@
     "layer-style": {
       "type": "number",
       "description": "个性化地图配置的 style，不支持动态修改",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "rotate": {
       "type": "number",
       "description": "旋转角度，范围 0 ~ 360, 地图正北和设备 y 轴角度的夹角",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "skew": {
       "type": "number",
       "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "enable-3D": {
       "type": "boolean",

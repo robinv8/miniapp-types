@@ -25,17 +25,17 @@
     "current": {
       "type": "number",
       "description": "当前所在滑块的 index",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "interval": {
       "type": "number",
       "description": "自动切换时间间隔",
-      "defaultValue": "5000"
+      "defaultValue": 5000
     },
     "duration": {
       "type": "number",
       "description": "滑动动画时长",
-      "defaultValue": "500"
+      "defaultValue": 500
     },
     "circular": {
       "type": "boolean",
@@ -65,7 +65,7 @@
     "display-multiple-items": {
       "type": "number",
       "description": "同时显示的滑块数量",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "easing-function": {
       "type": "string",

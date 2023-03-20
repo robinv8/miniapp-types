@@ -79,7 +79,7 @@
     "refresher-threshold": {
       "type": "number",
       "description": "设置自定义下拉刷新阈值",
-      "defaultValue": "45"
+      "defaultValue": 45
     },
     "refresher-default-style": {
       "type": "string",

@@ -22,7 +22,7 @@
     "color-animation-duration": {
       "type": "number",
       "description": "改变导航栏颜色时的动画时长，默认为 0 （即没有动画效果）",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "color-animation-timing-func": {
       "type": "string",

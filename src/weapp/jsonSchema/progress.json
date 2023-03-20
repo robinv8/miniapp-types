@@ -63,7 +63,7 @@
     "duration": {
       "type": "number",
       "description": "进度增加1%所需毫秒数",
-      "defaultValue": "30"
+      "defaultValue": 30
     },
     "bindActiveEnd": {
       "tsType": "() => void",

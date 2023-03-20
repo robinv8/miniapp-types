@@ -48,12 +48,12 @@
     "beauty": {
       "type": "number",
       "description": "美颜，取值范围 0-9 ，0 表示关闭",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "whiteness": {
       "type": "number",
       "description": "美白，取值范围 0-9 ，0 表示关闭",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "aspect": {
       "type": "string",
@@ -63,12 +63,12 @@
     "min-bitrate": {
       "type": "number",
       "description": "最小码率",
-      "defaultValue": "200"
+      "defaultValue": 200
     },
     "max-bitrate": {
       "type": "number",
       "description": "最大码率",
-      "defaultValue": "1000"
+      "defaultValue": 1000
     },
     "audio-quality": {
       "type": "string",
@@ -121,7 +121,7 @@
     "audio-reverb-type": {
       "type": "number",
       "description": "音频混响类型",
-      "defaultValue": "0",
+      "defaultValue": 0,
       "enum": [
         "0",
         "1",
@@ -161,12 +161,12 @@
     "video-width": {
       "type": "number",
       "description": "上推的视频流的分辨率宽度",
-      "defaultValue": "360"
+      "defaultValue": 360
     },
     "video-height": {
       "type": "number",
       "description": "上推的视频流的分辨率高度",
-      "defaultValue": "640"
+      "defaultValue": 640
     },
     "beauty-style": {
       "type": "string",
@@ -215,22 +215,22 @@
     "skin-whiteness": {
       "type": "number",
       "description": "自定义特效美白效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "skin-smoothness": {
       "type": "number",
       "description": "自定义特效磨皮效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "face-thinness": {
       "type": "number",
       "description": "自定义特效瘦脸效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "eye-bigness": {
       "type": "number",
       "description": "自定义特效大眼效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "bindStateChange": {
       "tsType": "() => void",

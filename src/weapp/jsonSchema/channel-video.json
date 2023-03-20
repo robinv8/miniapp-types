@@ -26,7 +26,7 @@
       "defaultValue": false
     },
     "object-fit": {
-      "type": "boolean",
+      "type": "string",
       "description": "当视频大小与 video 容器大小不一致时，视频的表现形式",
       "defaultValue": "contain",
       "enum": [
