@@ -10,7 +10,6 @@
     "space": {
       "type": "string",
       "description": "显示连续空格",
-      "defaultValue": false,
       "enum": [
         "ensp",
         "emsp",

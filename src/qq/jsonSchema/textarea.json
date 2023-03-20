@@ -27,7 +27,7 @@
     "maxlength": {
       "type": "number",
       "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
-      "defaultValue": "140"
+      "defaultValue": 140
     },
     "auto-focus": {
       "type": "boolean",
@@ -69,12 +69,12 @@
     "selection-start": {
       "type": "number",
       "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
-      "defaultValue": "-1"
+      "defaultValue": -1
     },
     "selection-end": {
       "type": "number",
       "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用",
-      "defaultValue": "-1"
+      "defaultValue": -1
     },
     "adjust-position": {
       "type": "boolean",

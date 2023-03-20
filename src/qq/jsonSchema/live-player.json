@@ -34,12 +34,12 @@
     "min-cache": {
       "type": "number",
       "description": "最小缓冲区，单位s",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "max-cache": {
       "type": "number",
       "description": "最大缓冲区，单位s",
-      "defaultValue": "3"
+      "defaultValue": 3
     },
     "sound-mode": {
       "type": "string",

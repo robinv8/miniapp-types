@@ -39,12 +39,12 @@
     "beauty": {
       "type": "number",
       "description": "美颜，取值范围 0-9 ，0 表示关闭",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "whiteness": {
       "type": "number",
       "description": "美白，取值范围 0-9 ，0 表示关闭",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "aspect": {
       "type": "string",
@@ -54,12 +54,12 @@
     "min-bitrate": {
       "type": "number",
       "description": "最小码率",
-      "defaultValue": "200"
+      "defaultValue": 200
     },
     "max-bitrate": {
       "type": "number",
       "description": "最大码率",
-      "defaultValue": "1000"
+      "defaultValue": 1000
     },
     "audio-quality": {
       "type": "string",
@@ -97,7 +97,7 @@
     "audio-reverb-type": {
       "type": "number",
       "description": "混响模式(0～6)：\"关闭混响\", \"KTV\", \"小房间\", \"大会堂\", \"低沉\", \"洪亮\", \"磁性\"",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "bindStateChange": {
       "tsType": "() => void",

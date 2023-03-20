@@ -13,7 +13,7 @@
     "scale": {
       "type": "number",
       "description": "缩放级别，取值范围为3～20",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "markers": {
       "type": "array.<marker>",
@@ -47,17 +47,17 @@
     "layer-style": {
       "type": "number",
       "description": "个性化地图配置的style，不支持动态修改",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "rotate": {
       "type": "number",
       "description": "旋转角度，范围0～360，地图正北与设备y轴\b的夹角角度",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "skew": {
       "type": "number",
       "description": "倾斜角度，范围0～40，关于z轴的倾角",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "enable-3D": {
       "type": "boolean",
