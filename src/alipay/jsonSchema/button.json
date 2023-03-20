@@ -44,12 +44,12 @@
     "hover-start-time": {
       "type": "number",
       "description": "按住后多少时间后出现点击状态，单位毫秒。",
-      "defaultValue": "20"
+      "defaultValue": 20
     },
     "hover-stay-time": {
       "type": "number",
       "description": "手指松开后点击状态保留时间，单位毫秒。",
-      "defaultValue": "70"
+      "defaultValue": 70
     },
     "hover-stop-propagation": {
       "type": "boolean",

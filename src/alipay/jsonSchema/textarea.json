@@ -30,7 +30,7 @@
     "maxlength": {
       "type": "number",
       "description": "最大长度，当设置为 -1 时不限制最大长度。",
-      "defaultValue": "140"
+      "defaultValue": 140
     },
     "focus": {
       "type": "boolean",
@@ -55,7 +55,7 @@
     "confirm-type": {
       "type": "string",
       "description": "设置键盘右下角按钮的文字。有效值：return（显示“换行”）、done（显示“完成”）、go（显示“前往”）、next（显示“下一个”）、search（显示“搜索”）、send（显示“发送”）。\n注意： 仅支持 Android。",
-      "defaultValue": "return"
+      "defaultValue": "return。"
     },
     "onInput": {
       "tsType": "() => void",

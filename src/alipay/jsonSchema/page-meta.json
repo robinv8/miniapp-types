@@ -25,7 +25,7 @@
     "scroll-duration": {
       "type": "number",
       "description": "滚动动画时长。",
-      "defaultValue": "300"
+      "defaultValue": 300
     },
     "page-style": {
       "type": "string",

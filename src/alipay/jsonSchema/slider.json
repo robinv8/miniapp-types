@@ -9,17 +9,17 @@
     "min": {
       "type": "number",
       "description": "最小值。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "max": {
       "type": "number",
       "description": "最大值。",
-      "defaultValue": "100"
+      "defaultValue": 100
     },
     "step": {
       "type": "number",
       "description": "步长，值必须大于 0，并可被（max-min）整除。",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "disabled": {
       "type": "boolean",
@@ -29,7 +29,7 @@
     "value": {
       "type": "number",
       "description": "当前取值。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "show-value": {
       "type": "boolean",
@@ -49,12 +49,12 @@
     "track-size": {
       "type": "number",
       "description": "轨道线条高度。",
-      "defaultValue": "4"
+      "defaultValue": 4
     },
     "handle-size": {
       "type": "number",
       "description": "滑块大小。",
-      "defaultValue": "22"
+      "defaultValue": 22
     },
     "handle-color": {
       "type": "string",

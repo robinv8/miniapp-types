@@ -33,17 +33,17 @@
     "current": {
       "type": "number",
       "description": "当前页面的 index，可以增加左右箭头来控制轮播滚动。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "duration": {
       "type": "number",
       "description": "滑动动画时长。",
-      "defaultValue": "500"
+      "defaultValue": null
     },
     "interval": {
       "type": "number",
       "description": "自动切换时间间隔。",
-      "defaultValue": "5000"
+      "defaultValue": null
     },
     "circular": {
       "type": "boolean",
@@ -95,22 +95,22 @@
     "swipe-ratio": {
       "type": "number",
       "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。",
-      "defaultValue": "0.2"
+      "defaultValue": 0.2
     },
     "swipe-speed": {
       "type": "number",
       "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。",
-      "defaultValue": "0.05"
+      "defaultValue": 0.05
     },
     "touch-angle": {
       "type": "number",
       "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。",
-      "defaultValue": "45"
+      "defaultValue": 45
     },
     "display-multiple-items": {
       "type": "number",
       "description": "同时显示的滑块数量。",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "easing-function": {
       "type": "string",

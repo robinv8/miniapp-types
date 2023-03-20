@@ -21,17 +21,17 @@
     "scale": {
       "type": "number",
       "description": "缩放级别，取值范围为 5-18。",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "skew": {
       "type": "number",
       "description": "倾斜角度，范围 0 ~ 40 , 关于 z 轴的倾角。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "rotate": {
       "type": "number",
       "description": "顺时针旋转的角度，范围 0 ~ 360。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "markers": {
       "type": "array",

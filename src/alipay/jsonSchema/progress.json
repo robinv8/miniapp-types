@@ -14,7 +14,7 @@
     "stroke-width": {
       "type": "number",
       "description": "线的粗细，单位 px。",
-      "defaultValue": "6"
+      "defaultValue": 6
     },
     "active-color": {
       "type": "string",

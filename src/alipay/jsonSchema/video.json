@@ -93,7 +93,7 @@
     "mobilenet-hint-type": {
       "type": "number",
       "description": "移动网络提醒样式。\n\n0 - 不提醒\n1 - tip 提醒\n2 - 阻塞提醒(无消耗流量大小)\n3 - 阻塞提醒(有消耗流量大小提醒)",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "onPlay": {
       "tsType": "() => void",

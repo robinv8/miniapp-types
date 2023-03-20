@@ -10,12 +10,12 @@
     "duration": {
       "type": "number",
       "description": "动画时长，单位毫秒。",
-      "defaultValue": "300"
+      "defaultValue": 300
     },
     "z-index": {
       "type": "number",
       "description": "z-index 层级。",
-      "defaultValue": "100"
+      "defaultValue": 100
     },
     "overlay": {
       "type": "boolean",
