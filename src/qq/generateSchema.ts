@@ -1,9 +1,11 @@
 import Service from "../service";
 import { Attribute } from "../types";
+
 const typeAlias = require('../typeAlias.json')
 
 const service = new Service({
   platform: 'qq',
+  debugger: true,
   waitUntil: 'domcontentloaded',
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
@@ -56,10 +58,10 @@ const service = new Service({
             : {}),
         }
 
-        if (type === 'number' && defaultValue) {
+        if ((type === 'number' || type === 'Number') && defaultValue) {
           obj.defaultValue = Number(defaultValue || 0);
         }
-        if (type === 'boolean' && defaultValue) {
+        if ((type === 'boolean' || type === 'Boolean') && defaultValue) {
           obj.defaultValue = defaultValue === 'true';
         }
 
