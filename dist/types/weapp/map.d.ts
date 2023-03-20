@@ -151,7 +151,7 @@ export interface Map {
    */
   bindMarkerTap?: () => void;
   /**
-   * 点击 label 时触发，e.detail = {markerId}
+   * 点击label时触发，e.detail = {markerId}
    */
   bindLabelTap?: () => void;
   /**
@@ -171,7 +171,7 @@ export interface Map {
    */
   bindRegionChange?: () => void;
   /**
-   * 点击地图 poi 点时触发，e.detail = {name, longitude, latitude}
+   * 点击地图poi点时触发，e.detail = {name, longitude, latitude}
    */
   bindPoiTap?: () => void;
   /**

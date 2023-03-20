@@ -24,7 +24,7 @@
     "enable-page-back-modal": {
       "type": "boolean",
       "description": "是否设置挽留弹窗",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "custom-style": {
       "type": "object",

@@ -39,12 +39,12 @@
     "controls": {
       "type": "boolean",
       "description": "是否显示默认播放控件（底部工具条，包括播放/暂停按钮、播放进度、时间）。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "direction": {
       "type": "number",
@@ -53,47 +53,47 @@
     "loop": {
       "type": "boolean",
       "description": "是否循环播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-fullscreen-btn": {
       "type": "boolean",
       "description": "是否显示全屏按钮。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-play-btn": {
       "type": "boolean",
       "description": "是否显示视频底部控制栏的播放按钮。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-center-play-btn": {
       "type": "boolean",
       "description": "是否显示视频中间的播放按钮。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-mute-btn": {
       "type": "boolean",
       "description": "是否展示工具栏上的静音按钮。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-thin-progress-bar": {
       "type": "boolean",
       "description": "当底部工具条隐藏时，是否显示细进度条（controls=false 时设置无效）。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-progress-gesture": {
       "type": "boolean",
       "description": "全屏模式下是否开启控制进度的手势。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "mobilenet-hint-type": {
       "type": "number",
       "description": "移动网络提醒样式。\n\n0 - 不提醒\n1 - tip 提醒\n2 - 阻塞提醒(无消耗流量大小)\n3 - 阻塞提醒(有消耗流量大小提醒)",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "onPlay": {
       "tsType": "() => void",

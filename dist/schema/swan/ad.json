@@ -17,7 +17,7 @@
     },
     "updatetime": {
       "type": "string",
-      "description": "更改该属性，可以触发广告刷新"
+      "description": "更改该属性，可以触发广告刷新;单位毫秒"
     },
     "bindError": {
       "tsType": "() => void",

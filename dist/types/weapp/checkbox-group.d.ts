@@ -7,7 +7,7 @@
 
 export interface CheckboxGroup {
   /**
-   * checkbox-group中选中项发生改变时触发 change 事件，detail = {value:[选中的 checkbox 的value的数组]}
+   * checkbox-group中选中项发生改变时触发 change 事件，detail = {value:[选中的checkbox的value的数组]}
    */
   bindChange?: () => void;
 }

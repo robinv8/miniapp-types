@@ -9,22 +9,22 @@
     "autoplay": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "controls": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "loop": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "objectFit": {
       "type": "string",
@@ -34,7 +34,7 @@
     "initialTime": {
       "type": "number",
       "description": "否",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "poster": {
       "type": "string",
@@ -43,7 +43,7 @@
     "mobilenet-hint-type": {
       "type": "number",
       "description": "否",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "bindPlay": {
       "tsType": "() => void",

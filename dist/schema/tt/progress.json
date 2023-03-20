@@ -5,12 +5,12 @@
     "percent": {
       "type": "number",
       "description": "进度",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "stroke-width": {
       "type": "number",
       "description": "进度条的垂直宽度",
-      "defaultValue": "6"
+      "defaultValue": 6
     },
     "active-color": {
       "type": "string",
@@ -25,7 +25,7 @@
     "active": {
       "type": "boolean",
       "description": "进度条动画",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "active-mode": {
       "type": "string",

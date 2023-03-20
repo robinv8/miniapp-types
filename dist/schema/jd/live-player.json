@@ -14,12 +14,12 @@
     "autoplay": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "orientation": {
       "type": "string",

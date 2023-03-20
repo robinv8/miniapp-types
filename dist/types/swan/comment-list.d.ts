@@ -60,4 +60,8 @@ export interface CommentList {
    * 绑定点击更多事件，若除了页面跳转还需要其他操作，可通过该回调执行；若为浮层，也可使用该回调自定义交互逻辑
    */
   bindViewMore?: () => void;
+  /**
+   * 评论发布成功时触发，返回数据为 {status, data:{srid}}
+   */
+  bindReply?: () => void;
 }

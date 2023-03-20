@@ -40,4 +40,8 @@ export interface CommentDetail {
    * 删除整体详情内容时触发，返回数据为{status, data:{srid}}
    */
   bindDelete?: () => void;
+  /**
+   * 评论发布成功时触发，返回数据为 {status, data:{srid}}
+   */
+  bindReply?: () => void;
 }

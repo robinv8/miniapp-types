@@ -16,7 +16,7 @@
     },
     "color": {
       "type": "string",
-      "description": "icon的颜色，同 css 的color"
+      "description": "icon的颜色，同css的color"
     }
   },
   "additionalProperties": false,

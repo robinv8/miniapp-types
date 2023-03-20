@@ -4,18 +4,17 @@
   "properties": {
     "longitude": {
       "type": "number",
-      "description": "gcj02 坐标系中心经度",
-      "defaultValue": "北京经度"
+      "description": "gcj02 坐标系中心经度"
+
     },
     "latitude": {
       "type": "number",
-      "description": "gcj02 坐标系中心纬度",
-      "defaultValue": "北京纬度"
+      "description": "gcj02 坐标系中心纬度"
     },
     "scale": {
       "type": "number",
       "description": "缩放级别，取值范围为 4-21 。动态设置 scale 值用法：scale=\"{= scale =}\"",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "markers": {
       "type": "array.<marker>",
@@ -44,37 +43,37 @@
     "show-location": {
       "type": "boolean",
       "description": "显示带有方向的当前定位点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-3D": {
       "type": "boolean",
       "description": "显示 3D 楼块（工具暂不支持）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-compass": {
       "type": "boolean",
       "description": "显示指南针（工具暂不支持）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-overlooking": {
       "type": "boolean",
       "description": "开启俯视（工具暂不支持）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-zoom": {
       "type": "boolean",
       "description": "是否支持缩放（工具暂不支持）",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-scroll": {
       "type": "boolean",
       "description": "是否支持拖动（工具暂不支持）",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-rotate": {
       "type": "boolean",
       "description": "是否支持旋转（工具暂不支持）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindMarkerTap": {
       "tsType": "() => void",

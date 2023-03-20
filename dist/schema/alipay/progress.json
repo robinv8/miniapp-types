@@ -9,16 +9,17 @@
     "show-info": {
       "type": "boolean",
       "description": "在右侧显示百分比值。",
-      "defaultValue": "show"
+      "defaultValue": false
     },
     "stroke-width": {
       "type": "number",
       "description": "线的粗细，单位 px。",
-      "defaultValue": "6"
+      "defaultValue": 6
     },
     "active-color": {
       "type": "string",
-      "description": "已选择的进度条颜色。"
+      "description": "已选择的进度条颜色。",
+      "defaultValue": "#09BB07"
     },
     "background-color": {
       "type": "string",
@@ -27,7 +28,7 @@
     "active": {
       "type": "boolean",
       "description": "是否添加从 0% 开始加载的入场动画。",
-      "defaultValue": "active"
+      "defaultValue": false
     }
   },
   "additionalProperties": false

@@ -39,7 +39,7 @@ export interface Audio {
    */
   bindError?: () => void;
   /**
-   * 当开始/继续播放时触发 play 事件
+   * 当开始/继续播放时触发play事件
    */
   bindPlay?: () => void;
   /**

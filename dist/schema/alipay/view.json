@@ -5,7 +5,7 @@
     "disable-scroll": {
       "type": "boolean",
       "description": "是否阻止区域内滚动页面。说明： 如果 view 中嵌套 view，外层 view 设置 disable-scroll 为 true 时禁止内部的滚动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "hover-class": {
       "type": "string",
@@ -22,7 +22,7 @@
     "hidden": {
       "type": "boolean",
       "description": "是否隐藏。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "class": {
       "type": "string",
@@ -40,7 +40,7 @@
     "hover-stop-propagation": {
       "type": "boolean",
       "description": "是否阻止当前元素的祖先元素出现点击态。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "onTap": {
       "tsType": "() => void",

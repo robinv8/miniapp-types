@@ -19,7 +19,7 @@ export interface Checkbox {
    */
   checked?: boolean;
   /**
-   * checkbox的颜色，同 css 的color
+   * checkbox的颜色，同css的color
    */
   color?: string;
 }

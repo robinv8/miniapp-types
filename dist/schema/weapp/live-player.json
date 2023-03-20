@@ -18,12 +18,12 @@
     "autoplay": {
       "type": "boolean",
       "description": "自动播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "orientation": {
       "type": "string",
@@ -46,17 +46,17 @@
     "background-mute": {
       "type": "boolean",
       "description": "进入后台时是否静音（已废弃，默认退后台静音）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "min-cache": {
       "type": "number",
       "description": "最小缓冲区，单位s（RTC 模式推荐 0.2s）",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "max-cache": {
       "type": "number",
       "description": "最大缓冲区，单位s（RTC 模式推荐 0.8s）。缓冲区用来抵抗网络波动，缓冲数据越多，网络抗性越好，但时延越大。",
-      "defaultValue": "3"
+      "defaultValue": 3
     },
     "sound-mode": {
       "type": "string",
@@ -70,12 +70,12 @@
     "auto-pause-if-navigate": {
       "type": "boolean",
       "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的实时音视频播放",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "auto-pause-if-open-native": {
       "type": "boolean",
       "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的实时音视频播放",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "picture-in-picture-mode": {
       "type": [
@@ -92,7 +92,7 @@
     "enable-auto-rotation": {
       "type": "boolean",
       "description": "是否开启手机横屏时自动全屏，当系统设置开启自动旋转时生效",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "referrer-policy": {
       "type": "string",

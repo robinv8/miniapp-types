@@ -5,12 +5,12 @@
     "scroll-x": {
       "type": "boolean",
       "description": "允许横向滚动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-y": {
       "type": "boolean",
       "description": "允许纵向滚动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "upper-threshold": {
       "type": [
@@ -49,37 +49,37 @@
     "scroll-with-animation": {
       "type": "boolean",
       "description": "在设置滚动条位置时使用动画过渡",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-back-to-top": {
       "type": "boolean",
       "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向。自 2.27.3 版本开始，若非显式设置为 false，则在显示尺寸大于屏幕 90% 时自动开启。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-flex": {
       "type": "boolean",
       "description": "启用 flexbox 布局。开启后，当前节点声明了 `display: flex` 就会成为 flex container，并作用于其孩子节点。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-anchoring": {
       "type": "boolean",
       "description": "开启 scroll anchoring 特性，即控制滚动位置不随内容变化而抖动，仅在 iOS 下生效，安卓下可参考 CSS `overflow-anchor` 属性。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-passive": {
       "type": "boolean",
       "description": "开启 passive 特性，能优化一定的滚动性能",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "refresher-enabled": {
       "type": "boolean",
       "description": "开启自定义下拉刷新",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "refresher-threshold": {
       "type": "number",
       "description": "设置自定义下拉刷新阈值",
-      "defaultValue": "45"
+      "defaultValue": 45
     },
     "refresher-default-style": {
       "type": "string",
@@ -94,32 +94,32 @@
     "refresher-triggered": {
       "type": "boolean",
       "description": "设置当前下拉刷新状态，true 表示下拉刷新已经被触发，false 表示下拉刷新未被触发",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enhanced": {
       "type": "boolean",
       "description": "启用 scroll-view 增强特性，启用后可通过 ScrollViewContext 操作 scroll-view",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bounces": {
       "type": "boolean",
       "description": "iOS 下 scroll-view 边界弹性控制 (同时开启 enhanced 属性后生效)",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-scrollbar": {
       "type": "boolean",
       "description": "滚动条显隐控制 (同时开启 enhanced 属性后生效)",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "paging-enabled": {
       "type": "boolean",
       "description": "分页滑动效果 (同时开启 enhanced 属性后生效)",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "fast-deceleration": {
       "type": "boolean",
       "description": "滑动减速速率控制, 仅在 iOS 下生效 (同时开启 enhanced 属性后生效)",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindDragStart": {
       "tsType": "() => void",

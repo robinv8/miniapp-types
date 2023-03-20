@@ -41,7 +41,8 @@ export interface ScrollView {
    */
   "scroll-with-animation"?: boolean;
   /**
-   * iOS 点击顶部导航栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向
+   * 安卓双击标题栏时，滚动条返回顶部，只支持竖向
+   * 注：iOS 端暂不支持
    */
   "enable-back-to-top"?: boolean;
   /**

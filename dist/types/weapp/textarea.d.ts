@@ -15,7 +15,7 @@ export interface Textarea {
    */
   placeholder?: string;
   /**
-   * 指定 placeholder 的样式，目前仅支持 color ,font-size和font-weight
+   * 指定 placeholder 的样式，目前仅支持color,font-size和font-weight
    */
   "placeholder-style"?: string;
   /**
@@ -39,7 +39,7 @@ export interface Textarea {
    */
   focus?: boolean;
   /**
-   * 是否自动增高，设置 auto-height 时，style.height不生效
+   * 是否自动增高，设置auto-height时，style.height不生效
    */
   "auto-height"?: boolean;
   /**
@@ -51,7 +51,7 @@ export interface Textarea {
    */
   "cursor-spacing"?: number;
   /**
-   * 指定 focus 时的光标位置
+   * 指定focus时的光标位置
    */
   cursor?: number;
   /**
@@ -99,7 +99,7 @@ export interface Textarea {
    */
   bindLineChange?: () => void;
   /**
-   * 当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值，目前工具还不支持返回 keyCode 参数。**bindinput 处理函数的返回值并不会反映到 textarea 上**
+   * 当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值，目前工具还不支持返回keyCode参数。**bindinput 处理函数的返回值并不会反映到 textarea 上**
    */
   bindInput?: () => void;
   /**

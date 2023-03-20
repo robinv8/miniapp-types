@@ -15,7 +15,7 @@ export interface Image {
    */
   mode?: "缩放" | "裁剪";
   /**
-   * 只针对 iOS 端，且 iOS 系统默认不解析 WEBP 格式，只支持网络资源
+   * 只针对 iOS 端；且 iOS 系统默认不解析 WEBP 格式，但该属性设为 true 时，只支持网络资源 WEBP 格式
    */
   webp?: boolean;
   /**

@@ -21,7 +21,7 @@
     "size": {
       "type": "number",
       "description": "icon 大小，单位 px。",
-      "defaultValue": "23"
+      "defaultValue": 23
     },
     "color": {
       "type": "string",

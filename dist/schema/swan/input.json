@@ -20,7 +20,7 @@
     "password": {
       "type": "boolean",
       "description": "是否是密码类型",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "placeholder": {
       "type": "string",
@@ -38,22 +38,22 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
       "description": "最大输入长度，设置为 -1 的时候不限制最大长度",
-      "defaultValue": "140"
+      "defaultValue": 140
     },
     "cursor-spacing": {
       "type": "number",
       "description": "指定光标与键盘的距离（单位：px）。当键盘弹出时， 如果需要页面上滑才能完整显示 input 组件, 那么此时光标与键盘的距离为设定的 cursor-spacing 值； 如果 input 组件处于屏幕上方，键盘弹出时不会挡住 input， 则忽略该属性",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "focus": {
       "type": "boolean",
       "description": "获取焦点，调起键盘\n开发者工具暂不支持自动获取焦点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-type": {
       "type": "string",
@@ -70,7 +70,7 @@
     "confirm-hold": {
       "type": "boolean",
       "description": "点击键盘右下角按钮时是否保持键盘不收起",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "cursor": {
       "type": "number",
@@ -79,17 +79,17 @@
     "selection-start": {
       "type": "number",
       "description": "光标起始位置，自动聚焦时有效，需与 selection-end 搭配使用",
-      "defaultValue": "-1"
+      "defaultValue": -1
     },
     "selection-end": {
       "type": "number",
       "description": "光标结束位置，自动聚焦时有效，需与 selection-start 搭配使用",
-      "defaultValue": "-1"
+      "defaultValue": -1
     },
     "adjust-position": {
       "type": "boolean",
       "description": "键盘弹起时，是否自动上推页面",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "bindInput": {
       "tsType": "() => void",

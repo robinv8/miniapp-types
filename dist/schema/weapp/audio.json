@@ -13,12 +13,12 @@
     "loop": {
       "type": "boolean",
       "description": "是否循环播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "controls": {
       "type": "boolean",
       "description": "是否显示默认控件",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "poster": {
       "type": "string",
@@ -40,7 +40,7 @@
     },
     "bindPlay": {
       "tsType": "() => void",
-      "description": "当开始/继续播放时触发 play 事件"
+      "description": "当开始/继续播放时触发play事件"
     },
     "bindPause": {
       "tsType": "() => void",

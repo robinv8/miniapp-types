@@ -19,15 +19,15 @@ export interface MovableView {
    */
   "out-of-bounds"?: boolean;
   /**
-   * 定义 x 轴方向的偏移，如果 x 的值不在可移动范围内，会自动移动到可移动范围；改变 x 的值会触发动画；单位支持px（默认）、rpx；
+   * 定义x轴方向的偏移，如果x的值不在可移动范围内，会自动移动到可移动范围；改变x的值会触发动画；单位支持px（默认）、rpx；
    */
   x?: number | string;
   /**
-   * 定义 y 轴方向的偏移，如果 y 的值不在可移动范围内，会自动移动到可移动范围；改变 y 的值会触发动画；单位支持px（默认）、rpx；
+   * 定义y轴方向的偏移，如果y的值不在可移动范围内，会自动移动到可移动范围；改变y的值会触发动画；单位支持px（默认）、rpx；
    */
   y?: number | string;
   /**
-   * 阻尼系数，用于控制 x 或y改变时的动画和过界回弹的动画，值越大移动越快
+   * 阻尼系数，用于控制x或y改变时的动画和过界回弹的动画，值越大移动越快
    */
   damping?: number;
   /**
@@ -39,7 +39,7 @@ export interface MovableView {
    */
   disabled?: boolean;
   /**
-   * 是否支持双指缩放，默认缩放手势生效区域是在 movable-view 内
+   * 是否支持双指缩放，默认缩放手势生效区域是在movable-view内
    */
   scale?: boolean;
   /**
@@ -63,15 +63,15 @@ export interface MovableView {
    */
   bindChange?: () => void;
   /**
-   * 缩放过程中触发的事件，event.detail = {x, y, scale}，x和 y 字段在2.1.0之后支持
+   * 缩放过程中触发的事件，event.detail = {x, y, scale}，x和y字段在2.1.0之后支持
    */
   bindScale?: () => void;
   /**
-   * 初次手指触摸后移动为横向的移动时触发，如果 catch 此事件，则意味着 touchmove 事件也被catch
+   * 初次手指触摸后移动为横向的移动时触发，如果catch此事件，则意味着touchmove事件也被catch
    */
   bindHTouchMove?: () => void;
   /**
-   * 初次手指触摸后移动为纵向的移动时触发，如果 catch 此事件，则意味着 touchmove 事件也被catch
+   * 初次手指触摸后移动为纵向的移动时触发，如果catch此事件，则意味着touchmove事件也被catch
    */
   bindVTouchMove?: () => void;
 }

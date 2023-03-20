@@ -13,20 +13,20 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "loop": {
       "type": "boolean",
       "description": "是否循环播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "object-fit": {
-      "type": "boolean",
+      "type": "string",
       "description": "当视频大小与 video 容器大小不一致时，视频的表现形式",
       "defaultValue": "contain",
       "enum": [

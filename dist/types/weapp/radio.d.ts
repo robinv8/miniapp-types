@@ -19,7 +19,7 @@ export interface Radio {
    */
   disabled?: boolean;
   /**
-   * radio的颜色，同 css 的color
+   * radio的颜色，同css的color
    */
   color?: string;
 }

@@ -15,7 +15,7 @@ export interface Icon {
    */
   size?: number | string;
   /**
-   * icon的颜色，同 css 的color
+   * icon的颜色，同css的color
    */
   color?: string;
 }

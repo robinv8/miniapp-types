@@ -19,7 +19,7 @@ export interface Camera {
    */
   "device-position"?: "front" | "back";
   /**
-   * 闪光灯，值为 auto , on, off
+   * 闪光灯，值为auto, on, off
    */
   flash?: "auto" | "on" | "off" | "torch";
   /**

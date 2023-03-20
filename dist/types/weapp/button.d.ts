@@ -87,7 +87,7 @@ export interface Button {
    */
   "show-message-card"?: boolean;
   /**
-   * 用户点击该按钮时，会返回获取到的用户信息，回调的 detail 数据与wx.getUserInfo返回的一致，open-type="getUserInfo"时有效
+   * 用户点击该按钮时，会返回获取到的用户信息，回调的detail数据与wx.getUserInfo返回的一致，open-type="getUserInfo"时有效
    */
   bindGetUserInfo?: () => void;
   /**

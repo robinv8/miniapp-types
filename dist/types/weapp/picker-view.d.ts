@@ -33,7 +33,7 @@ export interface PickerView {
    */
   "immediate-change"?: boolean;
   /**
-   * 滚动选择时触发 change 事件，event.detail = {value}；value为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）
+   * 滚动选择时触发change事件，event.detail = {value}；value为数组，表示 picker-view 内的 picker-view-column 当前选择的是第几项（下标从 0 开始）
    */
   bindChange?: () => void;
   /**

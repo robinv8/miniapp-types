@@ -9,16 +9,16 @@
     "checked": {
       "type": "boolean",
       "description": "当前是否选中",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "color": {
       "type": "string",
-      "description": "radio的颜色，同 css 的color",
+      "description": "radio的颜色，同css的color",
       "defaultValue": "#09BB07"
     }
   },

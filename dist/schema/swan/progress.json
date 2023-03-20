@@ -5,12 +5,12 @@
     "percent": {
       "type": "number",
       "description": "百分比 0~100%",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "show-info": {
       "type": "boolean",
       "description": "在进度条右侧显示百分比",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "stroke-width": {
       "type": [
@@ -54,7 +54,7 @@
     "active": {
       "type": "boolean",
       "description": "进度条从左往右的动画",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "active-mode": {
       "type": "string",
@@ -64,7 +64,7 @@
     "duration": {
       "type": "number",
       "description": "进度增加 1% 所需毫秒数",
-      "defaultValue": "20"
+      "defaultValue": 20
     }
   },
   "additionalProperties": false

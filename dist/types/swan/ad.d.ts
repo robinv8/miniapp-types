@@ -19,7 +19,7 @@ export interface Ad {
    */
   type?: string;
   /**
-   * 更改该属性，可以触发广告刷新
+   * 更改该属性，可以触发广告刷新;单位毫秒
    */
   updatetime?: string;
   /**

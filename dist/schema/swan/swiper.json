@@ -5,7 +5,7 @@
     "indicator-dots": {
       "type": "boolean",
       "description": "是否显示面板指示点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "indicator-color": {
       "type": "string",
@@ -20,12 +20,12 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动切换",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "current": {
       "type": "number",
       "description": "当前所在页面的 index",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "current-item-id": {
       "type": "string",
@@ -34,22 +34,22 @@
     "interval": {
       "type": "number",
       "description": "自动切换时间间隔（单位：ms）",
-      "defaultValue": "5000"
+      "defaultValue": 5000
     },
     "duration": {
       "type": "number",
       "description": "滑动动画时长（单位：ms）",
-      "defaultValue": "500"
+      "defaultValue": 500
     },
     "circular": {
       "type": "boolean",
       "description": "是否采用衔接滑动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "vertical": {
       "type": "boolean",
       "description": "滑动方向是否为纵向",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "previous-margin": {
       "type": "string",
@@ -64,12 +64,12 @@
     "display-multiple-items": {
       "type": "number",
       "description": "同时显示的滑块数量",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "disable-touchmove": {
       "type": "boolean",
       "description": "是否停止响应用户 touchmove 操作",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindChange": {
       "tsType": "() => void",

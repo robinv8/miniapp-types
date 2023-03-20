@@ -5,22 +5,22 @@
     "scroll-x": {
       "type": "boolean",
       "description": "允许横向滚动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-y": {
       "type": "boolean",
       "description": "允许纵向滚动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "upper-threshold": {
       "type": "number",
       "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "lower-threshold": {
       "type": "number",
       "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "scroll-top": {
       "type": "number",
@@ -37,12 +37,12 @@
     "scroll-with-animation": {
       "type": "boolean",
       "description": "在设置滚动条位置时使用动画过渡",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-back-to-top": {
       "type": "boolean",
       "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindScrollToUpper": {
       "tsType": "() => void",

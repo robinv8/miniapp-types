@@ -24,8 +24,9 @@ export interface PageContainer {
   overlay?: boolean;
   /**
    * 弹出位置。
+   * 可选值： top、bottom、right、center。
    */
-  position?: "top" | "bottom" | "right" | "center";
+  position?: string;
   /**
    * 是否显示圆角。
    */

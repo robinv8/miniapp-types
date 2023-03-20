@@ -63,15 +63,15 @@ export interface Input {
    */
   "confirm-hold"?: boolean;
   /**
-   * 指定 focus 时的光标位置
+   * 指定focus时的光标位置
    */
   cursor: number;
   /**
-   * 光标起始位置，自动聚集时有效，需与 selection-end 搭配使用
+   * 光标起始位置，自动聚集时有效，需与selection-end搭配使用
    */
   "selection-start"?: number;
   /**
-   * 光标结束位置，自动聚集时有效，需与 selection-start 搭配使用
+   * 光标结束位置，自动聚集时有效，需与selection-start搭配使用
    */
   "selection-end"?: number;
   /**
@@ -99,15 +99,15 @@ export interface Input {
    */
   "safe-password-nonce"?: string;
   /**
-   * 安全键盘计算 hash 盐值，若指定custom-hash 则无效
+   * 安全键盘计算hash盐值，若指定custom-hash 则无效
    */
   "safe-password-salt"?: string;
   /**
-   * 安全键盘计算 hash 的算法表达式，如 `md5(sha1('foo' + sha256(sm3(password + 'bar'))))`
+   * 安全键盘计算hash的算法表达式，如 `md5(sha1('foo' + sha256(sm3(password + 'bar'))))`
    */
   "safe-password-custom-hash"?: string;
   /**
-   * 键盘输入时或内容改变时触发。event.detail = { value: string, cursor?: number, keyCode?: number }，cursor 为光标位置，keyCode 为键值。2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。
+   * 键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。
    */
   bindInput?: () => void;
   /**

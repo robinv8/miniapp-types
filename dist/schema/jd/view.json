@@ -10,17 +10,17 @@
     "hover-stop-propagation": {
       "type": "boolean",
       "description": "指定是否阻止本节点的祖先节点出现点击态",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "hover-start-time": {
       "type": "number",
       "description": "按住后多久出现点击态，单位毫秒",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "hover-stay-time": {
       "type": "number",
       "description": "手指松开后点击态保留时间，单位毫秒",
-      "defaultValue": "400"
+      "defaultValue": 400
     }
   },
   "additionalProperties": false

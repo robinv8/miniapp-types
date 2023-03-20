@@ -15,9 +15,10 @@ export interface Input {
    */
   name?: string;
   /**
-   * input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。
+   * input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。my.canIUse("input.type.numberpad") 来检测。
+   * 注意： 当启用数字键盘时，在 Android 客户端上，脱离文档流（如设置了 float 或 position: fixed 等样式）并指定了 bottom 属性的元素会被影响（该元素会被键盘顶起）。可以采用如下方法来暂且避免这个问题：当 input 框聚焦后隐藏被影响的元素。
    */
-  type?: "text" | "number" | "idcard" | "digit" | "numberpad" | "digitpad" | "idcardpad";
+  type?: string;
   /**
    * 是否是密码类型。
    */
@@ -78,13 +79,8 @@ export interface Input {
   controlled?: boolean;
   /**
    * 是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效。
-   * 默认值：false
    */
   "always-system"?: boolean;
-  /**
-   * 是否启用原生键盘。
-   */
-  "enable-native"?: boolean;
   /**
    * 键盘输入时触发 input 事件，event.detail = {value: value,cursor: cursor}。
    */

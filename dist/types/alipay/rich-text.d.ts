@@ -7,9 +7,21 @@
 
 export interface RichText {
   /**
-   * 节点列表。目前仅支持使用 Array 类型，如果需要支持 HTML String，则需要自己将 HTML String 转化为 nodes 数组，可使用 mini-html-parser2 转换。
+   * 节点列表。基础库 2.8.5 开始支持 HTML String，2.8.5 以下版本可使用 mini-html-parser2 将 HTML String 转化为 nodes 数组。
    */
-  nodes?: unknown[];
+  nodes?:
+    | {
+        [k: string]: unknown;
+      }
+    | string;
+  /**
+   * 显示连续空格。
+   * 有效值：
+   * nbsp：根据字体设置的空格大小。
+   * emsp：中文字符空格大小。
+   * ensp：中文字符空格一半大小。
+   */
+  space?: string;
   /**
    * 触摸。
    */

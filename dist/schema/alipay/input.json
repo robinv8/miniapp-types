@@ -12,22 +12,13 @@
     },
     "type": {
       "type": "string",
-      "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。",
-      "defaultValue": "text",
-      "enum": [
-        "text",
-        "number",
-        "idcard",
-        "digit",
-        "numberpad",
-        "digitpad",
-        "idcardpad"
-      ]
+      "description": "input 的类型，有效值：text、 number、 idcard、 digit(可以唤起带有小数点的数字键盘)、numberpad、digitpad、 idcardpad。my.canIUse(\"input.type.numberpad\") 来检测。\n注意： 当启用数字键盘时，在 Android 客户端上，脱离文档流（如设置了 float 或 position: fixed 等样式）并指定了 bottom 属性的元素会被影响（该元素会被键盘顶起）。可以采用如下方法来暂且避免这个问题：当 input 框聚焦后隐藏被影响的元素。",
+      "defaultValue": "text"
     },
     "password": {
       "type": "boolean",
       "description": "是否是密码类型。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "placeholder": {
       "type": "string",
@@ -44,17 +35,17 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
       "description": "最大长度。",
-      "defaultValue": "140"
+      "defaultValue": 140
     },
     "focus": {
       "type": "boolean",
       "description": "获取焦点。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-type": {
       "type": "string",
@@ -64,7 +55,7 @@
     "confirm-hold": {
       "type": "boolean",
       "description": "点击键盘右下角按钮时是否保持键盘不收起状态。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "cursor": {
       "type": "number",
@@ -72,30 +63,28 @@
     },
     "selection-start": {
       "type": "number",
-      "description": "获取光标时，选中文本对应的焦点光标起始位置，需要和 selection-end 配合使用。"
+      "description": "获取光标时，选中文本对应的焦点光标起始位置，需要和 selection-end 配合使用。",
+      "defaultValue": -1
     },
     "selection-end": {
       "type": "number",
-      "description": "获取光标时，选中文本对应的焦点光标结束位置，需要和 selection-start 配合使用。"
+      "description": "获取光标时，选中文本对应的焦点光标结束位置，需要和 selection-start 配合使用。",
+      "defaultValue": -1
     },
     "random-number": {
       "type": "boolean",
       "description": "当 type 为 number, digit, idcard 数字键盘是否随机排列。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "controlled": {
       "type": "boolean",
       "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n建议当 type 值为 text 时不要将 controlled 设置为 true，详见 Bugs & Tips。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "always-system": {
       "type": "boolean",
-      "description": "是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效。\n默认值：false"
-    },
-    "enable-native": {
-      "type": "boolean",
-      "description": "是否启用原生键盘。",
-      "defaultValue": "true"
+      "description": "是否强制使用系统键盘和 Web-view 创建的 input 元素。为 true 时，confirm-type、confirm-hold 可能失效。",
+      "defaultValue": false
     },
     "onInput": {
       "tsType": "() => void",

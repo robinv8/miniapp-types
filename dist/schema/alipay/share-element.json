@@ -9,12 +9,12 @@
     "transform": {
       "type": "boolean",
       "description": "是否进行动画。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "duration": {
       "type": "number",
       "description": "动画时长，单位毫秒。",
-      "defaultValue": "300"
+      "defaultValue": 300
     },
     "easing-function": {
       "type": "string",

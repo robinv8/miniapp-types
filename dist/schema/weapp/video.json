@@ -13,7 +13,7 @@
     "controls": {
       "type": "boolean",
       "description": "是否显示默认播放控件（播放/暂停按钮、播放进度、时间）",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "danmu-list": {
       "type": "array.<object>",
@@ -22,37 +22,37 @@
     "danmu-btn": {
       "type": "boolean",
       "description": "是否显示弹幕按钮，只在初始化时有效，不能动态变更",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-danmu": {
       "type": "boolean",
       "description": "是否展示弹幕，只在初始化时有效，不能动态变更",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "loop": {
       "type": "boolean",
       "description": "是否循环播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "initial-time": {
       "type": "number",
       "description": "指定视频初始播放位置",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "page-gesture": {
       "type": "boolean",
       "description": "在非全屏模式下，是否开启亮度与音量调节手势（废弃，见 vslide-gesture）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "direction": {
       "type": "number",
@@ -66,27 +66,27 @@
     "show-progress": {
       "type": "boolean",
       "description": "若不设置，宽度大于240时才会显示",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-fullscreen-btn": {
       "type": "boolean",
       "description": "是否显示全屏按钮",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-play-btn": {
       "type": "boolean",
       "description": "是否显示视频底部控制栏的播放按钮",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-center-play-btn": {
       "type": "boolean",
       "description": "是否显示视频中间的播放按钮",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-progress-gesture": {
       "type": "boolean",
       "description": "是否开启控制进度的手势",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "object-fit": {
       "type": "string",
@@ -105,7 +105,7 @@
     "show-mute-btn": {
       "type": "boolean",
       "description": "是否显示静音按钮",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "title": {
       "type": "string",
@@ -123,32 +123,32 @@
     "enable-play-gesture": {
       "type": "boolean",
       "description": "是否开启播放手势，即双击切换播放/暂停",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "auto-pause-if-navigate": {
       "type": "boolean",
       "description": "当跳转到本小程序的其他页面时，是否自动暂停本页面的视频播放",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "auto-pause-if-open-native": {
       "type": "boolean",
       "description": "当跳转到其它微信原生页面时，是否自动暂停本页面的视频",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "vslide-gesture": {
       "type": "boolean",
       "description": "在非全屏模式下，是否开启亮度与音量调节手势（同 page-gesture）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "vslide-gesture-in-fullscreen": {
       "type": "boolean",
       "description": "在全屏模式下，是否开启亮度与音量调节手势",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-bottom-progress": {
       "type": "boolean",
       "description": "是否展示底部进度条",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "ad-unit-id": {
       "type": "string",
@@ -161,7 +161,7 @@
     "show-casting-button": {
       "type": "boolean",
       "description": "显示投屏按钮。安卓在同层渲染下生效，支持 DLNA 协议；iOS 支持 AirPlay 和 DLNA 协议",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "picture-in-picture-mode": {
       "type": [
@@ -178,27 +178,27 @@
     "picture-in-picture-show-progress": {
       "type": "boolean",
       "description": "是否在小窗模式下显示播放进度",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-auto-rotation": {
       "type": "boolean",
       "description": "是否开启手机横屏时自动全屏，当系统设置开启自动旋转时生效",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-screen-lock-button": {
       "type": "boolean",
       "description": "是否显示锁屏按钮，仅在全屏时显示，锁屏后控制栏的操作",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-snapshot-button": {
       "type": "boolean",
       "description": "是否显示截屏按钮，仅在全屏时显示",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-background-playback-button": {
       "type": "boolean",
       "description": "是否展示后台音频播放按钮",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "background-poster": {
       "type": "string",
@@ -239,7 +239,7 @@
     },
     "bindPlay": {
       "tsType": "() => void",
-      "description": "当开始/继续播放时触发 play 事件"
+      "description": "当开始/继续播放时触发play事件"
     },
     "bindPause": {
       "tsType": "() => void",

@@ -22,7 +22,7 @@
     "user-select": {
       "type": "boolean",
       "description": "文本是否可选，该属性会使节点显示为 block",
-      "defaultValue": "false"
+      "defaultValue": false
     }
   },
   "additionalProperties": false

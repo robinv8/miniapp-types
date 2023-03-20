@@ -30,6 +30,10 @@ export interface PickerView {
    */
   "mask-class"?: string;
   /**
+   * 是否在手指松开时立即触发 change 事件，若不开启则会在滚动动画结束后触发 change 事件。
+   */
+  "immediate-change"?: boolean;
+  /**
    * 滚动选择 value 改变时触发，event.detail = {value: value} value 为数组，表示 picker-view 内的 picker-view-column index 索引 ，从 0 开始。
    */
   onChange?: () => void;

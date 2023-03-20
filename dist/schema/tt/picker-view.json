@@ -25,7 +25,7 @@
     "immediate-change": {
       "type": "boolean",
       "description": "设置是否在手指松开时立即触发 change 事件。若将 immediate-change 设置为 false，则会在滚动动画结束时触发 change 事件。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindChange": {
       "tsType": "() => void",

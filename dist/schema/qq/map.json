@@ -13,7 +13,7 @@
     "scale": {
       "type": "number",
       "description": "缩放级别，取值范围为3～20",
-      "defaultValue": "16"
+      "defaultValue": 16
     },
     "markers": {
       "type": "array.<marker>",
@@ -34,7 +34,7 @@
     "show-location": {
       "type": "boolean",
       "description": "显示带有方向的当前定位点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "polygons": {
       "type": "array.<polygon>",
@@ -47,62 +47,62 @@
     "layer-style": {
       "type": "number",
       "description": "个性化地图配置的style，不支持动态修改",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "rotate": {
       "type": "number",
       "description": "旋转角度，范围0～360，地图正北与设备y轴\b的夹角角度",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "skew": {
       "type": "number",
       "description": "倾斜角度，范围0～40，关于z轴的倾角",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "enable-3D": {
       "type": "boolean",
       "description": "展示3D楼块（工具暂不支持）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-compass": {
       "type": "boolean",
       "description": "显示指南针",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-scale": {
       "type": "boolean",
       "description": "显示比例尺（工具暂不支持）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-overlooking": {
       "type": "boolean",
       "description": "开启俯视",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-zoom": {
       "type": "boolean",
       "description": "是否支持缩放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-scroll": {
       "type": "boolean",
       "description": "是否支持拖动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-rotate": {
       "type": "boolean",
       "description": "是否支持旋转",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-satellite": {
       "type": "boolean",
       "description": "是否开启卫星图",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-traffic": {
       "type": "boolean",
       "description": "是否开启实时路况",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "setting": {
       "type": "object",

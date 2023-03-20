@@ -5,7 +5,7 @@
     "report-submit": {
       "type": "boolean",
       "description": "是否返回 formId 用于发送模板消息（工具上 formId 为''，请在真机上测试），订阅消息详细说明请参考订阅消息接入",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "report-type": {
       "type": "string",

@@ -5,7 +5,7 @@
     "indicator-dots": {
       "type": "boolean",
       "description": "是否显示指示点。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "indicator-color": {
       "type": "string",
@@ -28,32 +28,32 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动切换。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "current": {
       "type": "number",
       "description": "当前页面的 index，可以增加左右箭头来控制轮播滚动。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "duration": {
       "type": "number",
       "description": "滑动动画时长。",
-      "defaultValue": "500"
+      "defaultValue": null
     },
     "interval": {
       "type": "number",
       "description": "自动切换时间间隔。",
-      "defaultValue": "5000"
+      "defaultValue": null
     },
     "circular": {
       "type": "boolean",
       "description": "是否启用无限滑动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "vertical": {
       "type": "boolean",
       "description": "滑动方向是否为纵向。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "previous-margin": {
       "type": "string",
@@ -68,12 +68,12 @@
     "acceleration": {
       "type": "boolean",
       "description": "当开启时，会根据滑动速度，连续滑动多屏。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "disable-programmatic-animation": {
       "type": "boolean",
       "description": "是否禁用代码变动触发 swiper 切换时使用动画。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "onChange": {
       "tsType": "() => void",
@@ -90,27 +90,27 @@
     "disable-touch": {
       "type": "boolean",
       "description": "是否禁止用户 touch 操作。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "swipe-ratio": {
       "type": "number",
       "description": "滑动距离阈值，当滑动距离超过阈值时进行 swiper-item 切换。",
-      "defaultValue": "0.2"
+      "defaultValue": 0.2
     },
     "swipe-speed": {
       "type": "number",
       "description": "滑动综合速度阈值，当超过阈值时进行 swiper-item 切换，数值越小越敏感。",
-      "defaultValue": "0.05"
+      "defaultValue": 0.05
     },
     "touch-angle": {
       "type": "number",
       "description": "计算用户手势时所依赖的滑动角度。角度根据 touchstart 事件和首次 touchmove 事件的坐标计算得出。数值越小越对用户的滑动方向准确度要求越高。",
-      "defaultValue": "45"
+      "defaultValue": 45
     },
     "display-multiple-items": {
       "type": "number",
       "description": "同时显示的滑块数量。",
-      "defaultValue": "1"
+      "defaultValue": 1
     },
     "easing-function": {
       "type": "string",
@@ -120,7 +120,7 @@
     "snap-to-edge": {
       "type": "boolean",
       "description": "当 swiper-item 个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 时，可以指定这个边距是否应用到第一个、最后一个元素。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "adjust-height": {
       "type": "string",
@@ -130,7 +130,7 @@
     "adjust-vertical-height": {
       "type": "boolean",
       "description": "vertical 为 true 时强制使 adjust-height 生效。",
-      "defaultValue": "false"
+      "defaultValue": false
     }
   },
   "additionalProperties": false

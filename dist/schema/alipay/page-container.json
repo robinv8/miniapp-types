@@ -5,43 +5,37 @@
     "show": {
       "type": "boolean",
       "description": "是否显示容器组件。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "duration": {
       "type": "number",
       "description": "动画时长，单位毫秒。",
-      "defaultValue": "300"
+      "defaultValue": 300
     },
     "z-index": {
       "type": "number",
       "description": "z-index 层级。",
-      "defaultValue": "100"
+      "defaultValue": 100
     },
     "overlay": {
       "type": "boolean",
       "description": "是否显示遮罩层。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "position": {
       "type": "string",
-      "description": "弹出位置。",
-      "defaultValue": "bottom",
-      "enum":[
-        "top",
-        "bottom",
-        "right",
-        "center"
-      ]
+      "description": "弹出位置。\n可选值： top、bottom、right、center。",
+      "defaultValue": "bottom"
     },
     "round": {
       "type": "boolean",
       "description": "是否显示圆角。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "close-on-slide-down": {
       "type": "boolean",
       "description": "是否在下滑一段距离后关闭。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "overlay-style": {
       "type": "string",

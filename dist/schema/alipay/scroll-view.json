@@ -13,22 +13,22 @@
     "scroll-x": {
       "type": "boolean",
       "description": "允许横向滚动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-y": {
       "type": "boolean",
       "description": "允许纵向滚动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "upper-threshold": {
       "type": "number",
       "description": "距顶部/左边多远时（单位px），触发 scrolltoupper 事件。",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "lower-threshold": {
       "type": "number",
       "description": "距底部/右边多远时（单位px），触发 scrolltolower 事件。",
-      "defaultValue": "50"
+      "defaultValue": 50
     },
     "scroll-top": {
       "type": "number",
@@ -45,7 +45,7 @@
     "scroll-with-animation": {
       "type": "boolean",
       "description": "在设置滚动条位置时使用动画过渡。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-animation-duration": {
       "type": "number",
@@ -54,12 +54,12 @@
     "enable-back-to-top": {
       "type": "boolean",
       "description": "当点击 iOS 顶部状态栏或者双击 Android 标题栏时，滚动条返回顶部，只支持竖向。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "trap-scroll": {
       "type": "boolean",
       "description": "纵向滚动时，当滚动到顶部或底部时，强制禁止触发页面滚动，仍然只触发 scroll-view 自身的滚动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "onScrollToUpper": {
       "tsType": "() => void",

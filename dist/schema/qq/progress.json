@@ -10,7 +10,7 @@
     "show-info": {
       "type": "boolean",
       "description": "在进度条右侧显示百分比",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "border-radius": {
       "type": [
@@ -52,7 +52,7 @@
     "active": {
       "type": "boolean",
       "description": "进度条从左往右的动画",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "active-mode": {
       "type": "string",

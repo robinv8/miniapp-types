@@ -24,17 +24,17 @@
     "plain": {
       "type": "boolean",
       "description": "是否镂空（ghost 与 plain 等效）。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "disabled": {
       "type": "boolean",
       "description": "是否禁用。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "loading": {
       "type": "boolean",
       "description": "按钮文字前是否带 loading 图标。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "hover-class": {
       "type": "string",
@@ -44,17 +44,17 @@
     "hover-start-time": {
       "type": "number",
       "description": "按住后多少时间后出现点击状态，单位毫秒。",
-      "defaultValue": "20"
+      "defaultValue": 20
     },
     "hover-stay-time": {
       "type": "number",
       "description": "手指松开后点击状态保留时间，单位毫秒。",
-      "defaultValue": "70"
+      "defaultValue": 70
     },
     "hover-stop-propagation": {
       "type": "boolean",
       "description": "是否阻止当前元素的祖先元素出现被点击样式。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "form-type": {
       "type": "string",

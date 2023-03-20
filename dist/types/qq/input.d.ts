@@ -39,7 +39,7 @@ export interface Input {
    */
   maxlength?: number;
   /**
-   * 指定光标与键盘的距离，单位px（2.4.0起支持rpx）。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离
+   * 指定光标与键盘的距离，单位 px（2.4.0 起支持 rpx）。取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离
    */
   "cursor-spacing"?: number | string;
   /**
@@ -51,7 +51,7 @@ export interface Input {
    */
   focus?: boolean;
   /**
-   * 设置键盘右下角按钮的文字，仅在type='text'时生效
+   * 设置键盘右下角按钮的文字，仅在 type='text'时生效
    */
   "confirm-type"?: "send" | "search" | "next" | "go" | "done";
   /**
@@ -59,15 +59,15 @@ export interface Input {
    */
   "confirm-hold"?: boolean;
   /**
-   * 指定focus时的光标位置
+   * 指定 focus 时的光标位置
    */
   cursor?: number;
   /**
-   * 光标起始位置，自动聚集时有效，需与selection-end搭配使用
+   * 光标起始位置，自动聚集时有效，需与 selection-end 搭配使用
    */
   "selection-start"?: number;
   /**
-   * 光标结束位置，自动聚集时有效，需与selection-start搭配使用
+   * 光标结束位置，自动聚集时有效，需与 selection-start 搭配使用
    */
   "selection-end"?: number;
   /**

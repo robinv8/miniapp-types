@@ -14,27 +14,27 @@
     "autopush": {
       "type": "boolean",
       "description": "自动推流",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enableVideoCustomRender": {
       "type": "boolean",
       "description": "自定义渲染，允许开发者自行处理所采集的视频帧，详见LivePusherContext",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音。即将废弃，可用 enable-mic 替代",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-camera": {
       "type": "boolean",
       "description": "开启摄像头",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "auto-focus": {
       "type": "boolean",
       "description": "自动聚集",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "orientation": {
       "type": "string",
@@ -48,12 +48,12 @@
     "beauty": {
       "type": "number",
       "description": "美颜，取值范围 0-9 ，0 表示关闭",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "whiteness": {
       "type": "number",
       "description": "美白，取值范围 0-9 ，0 表示关闭",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "aspect": {
       "type": "string",
@@ -63,12 +63,12 @@
     "min-bitrate": {
       "type": "number",
       "description": "最小码率",
-      "defaultValue": "200"
+      "defaultValue": 200
     },
     "max-bitrate": {
       "type": "number",
       "description": "最大码率",
-      "defaultValue": "1000"
+      "defaultValue": 1000
     },
     "audio-quality": {
       "type": "string",
@@ -86,7 +86,7 @@
     "zoom": {
       "type": "boolean",
       "description": "调整焦距",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "device-position": {
       "type": "string",
@@ -96,17 +96,17 @@
     "background-mute": {
       "type": "boolean",
       "description": "进入后台时是否静音（已废弃，默认退后台静音）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "mirror": {
       "type": "boolean",
       "description": "设置推流画面是否镜像，产生的效果在 live-player 反应到",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "remote-mirror": {
       "type": "boolean",
       "description": "同 mirror 属性，后续 mirror 将废弃",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "local-mirror": {
       "type": "string",
@@ -121,7 +121,7 @@
     "audio-reverb-type": {
       "type": "number",
       "description": "音频混响类型",
-      "defaultValue": "0",
+      "defaultValue": 0,
       "enum": [
         "0",
         "1",
@@ -136,17 +136,17 @@
     "enable-mic": {
       "type": "boolean",
       "description": "开启或关闭麦克风",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-agc": {
       "type": "boolean",
       "description": "是否开启音频自动增益",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-ans": {
       "type": "boolean",
       "description": "是否开启音频噪声抑制",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "audio-volume-type": {
       "type": "string",
@@ -161,12 +161,12 @@
     "video-width": {
       "type": "number",
       "description": "上推的视频流的分辨率宽度",
-      "defaultValue": "360"
+      "defaultValue": 360
     },
     "video-height": {
       "type": "number",
       "description": "上推的视频流的分辨率高度",
-      "defaultValue": "640"
+      "defaultValue": 640
     },
     "beauty-style": {
       "type": "string",
@@ -210,27 +210,27 @@
     "custom-effect": {
       "type": "boolean",
       "description": "是否启动自定义特效，设定后不能更改",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "skin-whiteness": {
       "type": "number",
       "description": "自定义特效美白效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "skin-smoothness": {
       "type": "number",
       "description": "自定义特效磨皮效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "face-thinness": {
       "type": "number",
       "description": "自定义特效瘦脸效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "eye-bigness": {
       "type": "number",
       "description": "自定义特效大眼效果，取值 0~1。需要开启 custom-effect",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "bindStateChange": {
       "tsType": "() => void",

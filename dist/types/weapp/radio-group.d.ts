@@ -7,7 +7,7 @@
 
 export interface RadioGroup {
   /**
-   * radio-group中选中项发生改变时触发 change 事件，detail = {value:[选中的 radio 的value的数组]}
+   * radio-group中选中项发生改变时触发 change 事件，detail = {value:[选中的radio的value的数组]}
    */
   bindChange?: () => void;
 }

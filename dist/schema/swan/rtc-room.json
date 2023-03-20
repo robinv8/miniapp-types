@@ -9,17 +9,17 @@
     "enable-camera": {
       "type": "boolean",
       "description": "是否开启摄像头",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-auto-focus": {
       "type": "boolean",
       "description": "是否开启摄像头自动对焦",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-zoom": {
       "type": "boolean",
       "description": "是否支持双手滑动调整摄像头聚焦",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "device-position": {
       "type": "string",
@@ -33,37 +33,37 @@
     "enable-mic": {
       "type": "boolean",
       "description": "是否开启麦克风",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-agc": {
       "type": "boolean",
       "description": "是否开启音频自动增益",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-ans": {
       "type": "boolean",
       "description": "是否开启音频噪声抑制",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bitrate": {
       "type": "number",
       "description": "最大码率",
-      "defaultValue": "900"
+      "defaultValue": 900
     },
     "video-width": {
       "type": "number",
       "description": "视频分辨率宽",
-      "defaultValue": "360"
+      "defaultValue": 360
     },
     "video-height": {
       "type": "number",
       "description": "视频分辨率高",
-      "defaultValue": "640"
+      "defaultValue": 640
     },
     "enable-remote-mirror": {
       "type": "boolean",
       "description": "设置远端看到的画面的镜像效果，该属性的变化不会影响到本地画面，仅影响远端看到的画面效果",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "local-mirror": {
       "type": "string",

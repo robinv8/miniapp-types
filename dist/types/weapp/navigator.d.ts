@@ -23,29 +23,29 @@ export interface Navigator {
    */
   delta?: number;
   /**
-   * 当target="miniProgram"且open-type="navigate"时有效，要打开的小程序 appId
+   * 当`target="miniProgram"`且`open-type="navigate"`时有效，要打开的小程序 appId
    */
   "app-id"?: string;
   /**
-   * 当target="miniProgram"且open-type="navigate"时有效，打开的页面路径，如果为空则打开首页
+   * 当`target="miniProgram"`且`open-type="navigate"`时有效，打开的页面路径，如果为空则打开首页
    */
   path?: string;
   /**
-   * 当target="miniProgram"且open-type="navigate/navigateBack"时有效，需要传递给目标小程序的数据，目标小程序可在 App.onLaunch()，App.onShow() 中获取到这份数据。详情
+   * 当`target="miniProgram"`且`open-type="navigate/navigateBack"`时有效，需要传递给目标小程序的数据，目标小程序可在 `App.onLaunch()`，`App.onShow()` 中获取到这份数据。详情
    */
   "extra-data"?: {
     [k: string]: unknown;
   };
   /**
-   * 当target="miniProgram"且open-type="navigate"时有效，要打开的小程序版本
+   * 当`target="miniProgram"`且`open-type="navigate"`时有效，要打开的小程序版本
    */
   version?: "develop" | "trial" | "release";
   /**
-   * 当target="miniProgram"时有效，当传递该参数后，可以不传 app-id 和 path。链接可以通过【小程序菜单】->【复制链接】获取。
+   * 当`target="miniProgram"`时有效，当传递该参数后，可以不传 app-id 和 path。链接可以通过【小程序菜单】->【复制链接】获取。
    */
   "short-link"?: string;
   /**
-   * 指定点击时的样式类，当hover-class="none"时，没有点击态效果
+   * 指定点击时的样式类，当`hover-class="none"`时，没有点击态效果
    */
   "hover-class"?: string;
   /**
@@ -61,15 +61,15 @@ export interface Navigator {
    */
   "hover-stay-time"?: number;
   /**
-   * 当target="miniProgram"且open-type="navigate/navigateBack"时有效时有效，跳转小程序成功
+   * 当`target="miniProgram"`且`open-type="navigate/navigateBack"`时有效时有效，跳转小程序成功
    */
   bindSuccess?: string;
   /**
-   * 当target="miniProgram"且open-type="navigate/navigateBack"时有效时有效，跳转小程序失败
+   * 当`target="miniProgram"`且`open-type="navigate/navigateBack"`时有效时有效，跳转小程序失败
    */
   bindFail?: string;
   /**
-   * 当target="miniProgram"且open-type="navigate/navigateBack"时有效时有效，跳转小程序完成
+   * 当`target="miniProgram"`且`open-type="navigate/navigateBack"`时有效时有效，跳转小程序完成
    */
   bindComplete?: string;
 }

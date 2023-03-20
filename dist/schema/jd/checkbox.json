@@ -9,12 +9,12 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "checked": {
       "type": "boolean",
       "description": "当前是否选中，可用来设置默认选中",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "color": {
       "type": "string",

@@ -9,7 +9,7 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "poster": {
       "type": "string",
@@ -18,22 +18,22 @@
     "loop": {
       "type": "boolean",
       "description": "是否循环播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-fullscreen-btn": {
       "type": "boolean",
       "description": "是否显示全屏按钮。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "show-play-btn": {
       "type": "boolean",
       "description": "是否显示播放、暂停、重播按钮，不包括视频封面的播放按钮。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "controls": {
       "type": "boolean",
       "description": "是否显示全部播放控件。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "object-fit": {
       "type": "string",
@@ -65,37 +65,37 @@
     "vslide-gesture": {
       "type": "boolean",
       "description": "在非全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "vslide-gesture-in-fullscreen": {
       "type": "boolean",
       "description": "在全屏模式下，是否开启亮度与音量调节手势，开启后表现详见手势响应-亮度与音量。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-progress-gesture": {
       "type": "boolean",
       "description": "是否开启控制进度的手势，开启后表现详见手势响应-播放进度。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-play-gesture": {
       "type": "boolean",
       "description": "是否开启播放手势，即双击切换播放/暂停。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-mute-btn": {
       "type": "boolean",
       "description": "是否显示静音控件，仅在全屏时显示。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-playback-rate-btn": {
       "type": "boolean",
       "description": "是否显示倍速控件，仅在全屏时显示。点击倍速控件后可选择倍速，可选值： 0.75/1.0/1.25/1.5/2。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "direction": {
       "type": "number",
@@ -110,7 +110,7 @@
     "enable-play-in-background": {
       "type": "boolean",
       "description": "video 播放时宿主退出后台后开启小窗播放，iOS 14 及以上版本支持。开启时首次退出后台后给予弹窗提示用户授权，授权完成后可以到小程序「设置」中重设。支持场景见后台小窗播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "signature": {
       "type": "signature",
@@ -124,7 +124,7 @@
     "show-screen-lock-button": {
       "type": "boolean",
       "description": "是否展示锁屏按钮，仅在全屏时展示，锁屏后会锁定播控/手势的操作。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "definition": {
       "type": "definition",
