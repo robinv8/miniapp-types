@@ -64,7 +64,7 @@ const service = new Service({
           (<HTMLElement>el.children[fields.required + index])?.innerText;
         const filteredDescription = handleDescription(description);
 
-        attributes.push({
+        const obj: Attribute = {
           name,
           type,
           ...(options.length > 0 ? { options } : {}),
@@ -73,7 +73,14 @@ const service = new Service({
           ...(required !== undefined && required !== null
             ? { required: required === '是' }
             : {}),
-        });
+        }
+        if (type === 'number' && defaultValue) {
+          obj.defaultValue = Number(defaultValue || 0);
+        }
+        if (type === 'boolean' && defaultValue) {
+          obj.defaultValue = defaultValue === 'true';
+        }
+        attributes.push(obj);
       });
 
       return attributes;

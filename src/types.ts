@@ -2,7 +2,7 @@ export interface Attribute {
     name,
     type,
     description?,
-    defaultValue?,
+    defaultValue?: string | number | boolean,
     required?,
 }
 export interface ComponentInfo {

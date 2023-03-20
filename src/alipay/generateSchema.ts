@@ -87,30 +87,39 @@ const service = new Service({
           const description = (<HTMLElement>el.children[fields.description])
             ?.innerText;
 
-          const defaultValue = (
+          let defaultValue = (
             (<HTMLElement>el.children[fields.defaultValue])?.innerText ||
             description
           )
             .split('\n')
             .filter((item) => item.indexOf('默认值：') > -1)[0]
-            ?.replace(/^默认值：/, '');
+            ?.replace(/^默认值：/, '')
+            .trim();
 
           const required = (<HTMLElement>el.children[fields.required])
             ?.innerText;
 
           const filteredDescription = handleDescription(description);
-          attributes.push({
+
+          const obj: Attribute = {
             name,
             type,
             ...(options.length > 0 ? { options } : {}),
-            ...(defaultValue ? { defaultValue: defaultValue.trim() } : {}),
+            ...(defaultValue ? { defaultValue } : {}),
             ...(filteredDescription
               ? { description: filteredDescription.trim() }
               : {}),
             ...(required !== undefined && required !== null
               ? { required: required === '是' }
               : {}),
-          });
+          }
+          if (type === 'number' && defaultValue) {
+            obj.defaultValue = Number(defaultValue || 0);
+          }
+          if (type === 'boolean' && defaultValue) {
+            obj.defaultValue = defaultValue === 'true';
+          }
+          attributes.push(obj);
         });
 
         return attributes;

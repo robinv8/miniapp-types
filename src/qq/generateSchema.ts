@@ -8,7 +8,7 @@ const service = new Service({
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
       function handleType(str, char) {
-        if(str.toLowerCase() === 'eventhandler') {
+        if (str.toLowerCase() === 'eventhandler') {
           return 'eventHandle'
         }
         if (str.indexOf(char) === -1) {
@@ -45,7 +45,7 @@ const service = new Service({
         const description = (<HTMLElement>el.children[fields.description])?.innerText;
         const required = (<HTMLElement>el.children[fields.required])?.innerText;
 
-        attributes.push({
+        const obj: Attribute = {
           name,
           type,
           ...(options.length > 0 ? { options } : {}),
@@ -54,11 +54,20 @@ const service = new Service({
           ...(required !== undefined && required !== null
             ? { required: required === '是' }
             : {}),
-        });
+        }
+
+        if (type === 'number' && defaultValue) {
+          obj.defaultValue = Number(defaultValue || 0);
+        }
+        if (type === 'boolean' && defaultValue) {
+          obj.defaultValue = defaultValue === 'true';
+        }
+
+        attributes.push(obj);
       });
 
       return attributes;
-    }, {...opts, typeAlias});
+    }, { ...opts, typeAlias });
   },
 });
 
