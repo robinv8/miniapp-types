@@ -5,7 +5,6 @@ const typeAlias = require('../typeAlias.json')
 
 const service = new Service({
   platform: 'qq',
-  debugger: true,
   waitUntil: 'domcontentloaded',
   evaluate: async (page, opts) => {
     return await page.evaluate(({ tableIndex = 0, fields, typeAlias }) => {
