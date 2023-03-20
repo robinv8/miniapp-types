@@ -150,7 +150,7 @@
     },
     "bindLabelTap": {
       "tsType": "() => void",
-      "description": "点击 label 时触发，e.detail = {markerId}"
+      "description": "点击label时触发，e.detail = {markerId}"
     },
     "bindControlTap": {
       "tsType": "() => void",
@@ -170,7 +170,7 @@
     },
     "bindPoiTap": {
       "tsType": "() => void",
-      "description": "点击地图 poi 点时触发，e.detail = {name, longitude, latitude}"
+      "description": "点击地图poi点时触发，e.detail = {name, longitude, latitude}"
     },
     "bindAnchorPointTap": {
       "tsType": "() => void",

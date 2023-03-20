@@ -40,7 +40,7 @@
     },
     "bindPlay": {
       "tsType": "() => void",
-      "description": "当开始/继续播放时触发 play 事件"
+      "description": "当开始/继续播放时触发play事件"
     },
     "bindPause": {
       "tsType": "() => void",

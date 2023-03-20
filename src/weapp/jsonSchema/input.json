@@ -86,16 +86,16 @@
     },
     "cursor": {
       "type": "number",
-      "description": "指定 focus 时的光标位置"
+      "description": "指定focus时的光标位置"
     },
     "selection-start": {
       "type": "number",
-      "description": "光标起始位置，自动聚集时有效，需与 selection-end 搭配使用",
+      "description": "光标起始位置，自动聚集时有效，需与selection-end搭配使用",
       "defaultValue": "-1"
     },
     "selection-end": {
       "type": "number",
-      "description": "光标结束位置，自动聚集时有效，需与 selection-start 搭配使用",
+      "description": "光标结束位置，自动聚集时有效，需与selection-start搭配使用",
       "defaultValue": "-1"
     },
     "adjust-position": {
@@ -126,15 +126,15 @@
     },
     "safe-password-salt": {
       "type": "string",
-      "description": "安全键盘计算 hash 盐值，若指定custom-hash 则无效"
+      "description": "安全键盘计算hash盐值，若指定custom-hash 则无效"
     },
     "safe-password-custom-hash": {
       "type": "string",
-      "description": "安全键盘计算 hash 的算法表达式，如 `md5(sha1('foo' + sha256(sm3(password + 'bar'))))`"
+      "description": "安全键盘计算hash的算法表达式，如 `md5(sha1('foo' + sha256(sm3(password + 'bar'))))`"
     },
     "bindInput": {
       "tsType": "() => void",
-      "description": "键盘输入时或内容改变时触发。event.detail = { value: string, cursor?: number, keyCode?: number }，cursor 为光标位置，keyCode 为键值。2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
+      "description": "键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。"
     },
     "bindFocus": {
       "tsType": "() => void",

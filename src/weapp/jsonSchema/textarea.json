@@ -12,7 +12,7 @@
     },
     "placeholder-style": {
       "type": "string",
-      "description": "指定 placeholder 的样式，目前仅支持 color ,font-size和font-weight"
+      "description": "指定 placeholder 的样式，目前仅支持color,font-size和font-weight"
     },
     "placeholder-class": {
       "type": "string",
@@ -41,7 +41,7 @@
     },
     "auto-height": {
       "type": "boolean",
-      "description": "是否自动增高，设置 auto-height 时，style.height不生效",
+      "description": "是否自动增高，设置auto-height时，style.height不生效",
       "defaultValue": "false"
     },
     "fixed": {
@@ -56,7 +56,7 @@
     },
     "cursor": {
       "type": "number",
-      "description": "指定 focus 时的光标位置",
+      "description": "指定focus时的光标位置",
       "defaultValue": "-1"
     },
     "show-confirm-bar": {
@@ -121,7 +121,7 @@
     },
     "bindInput": {
       "tsType": "() => void",
-      "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值，目前工具还不支持返回 keyCode 参数。**bindinput 处理函数的返回值并不会反映到 textarea 上**"
+      "description": "当键盘输入时，触发 input 事件，event.detail = {value, cursor, keyCode}，keyCode 为键值，目前工具还不支持返回keyCode参数。**bindinput 处理函数的返回值并不会反映到 textarea 上**"
     },
     "bindConfirm": {
       "tsType": "() => void",
