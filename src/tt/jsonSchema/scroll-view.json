@@ -5,17 +5,17 @@
     "scroll-x": {
       "type": "boolean",
       "description": "允许横向滚动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-y": {
       "type": "boolean",
       "description": "允许竖向滚动。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scroll-with-animation": {
       "type": "boolean",
       "description": "在设置滚动条位置时使用动画过渡。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "upper-threshold": {
       "type": "number",

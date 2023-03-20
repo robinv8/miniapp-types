@@ -27,7 +27,7 @@
     "password": {
       "type": "boolean",
       "description": "是否是密码类型。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "placeholder": {
       "type": "string",
@@ -44,7 +44,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
@@ -54,7 +54,7 @@
     "focus": {
       "type": "boolean",
       "description": "获取焦点。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-type": {
       "type": "string",
@@ -64,7 +64,7 @@
     "confirm-hold": {
       "type": "boolean",
       "description": "点击键盘右下角按钮时是否保持键盘不收起状态。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "cursor": {
       "type": "number",
@@ -83,12 +83,12 @@
     "random-number": {
       "type": "boolean",
       "description": "当 type 为 number, digit, idcard 数字键盘是否随机排列。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "controlled": {
       "type": "boolean",
       "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。\n建议当 type 值为 text 时不要将 controlled 设置为 true，详见 Bugs & Tips。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "always-system": {
       "type": "boolean",
@@ -97,7 +97,7 @@
     "enable-native": {
       "type": "boolean",
       "description": "是否启用原生键盘。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "onInput": {
       "tsType": "() => void",

@@ -5,7 +5,7 @@
     "indicator-dots": {
       "type": "boolean",
       "description": "是否显示面板指示点。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "indicator-color": {
       "type": "string",
@@ -20,7 +20,7 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动切换。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "current": {
       "type": "number",
@@ -60,12 +60,12 @@
     "circular": {
       "type": "boolean",
       "description": "是否循环播放（首尾衔接）。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "vertical": {
       "type": "boolean",
       "description": "滑块放置方向是否为竖直。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "easing-function": {
       "type": "string",

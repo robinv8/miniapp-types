@@ -24,7 +24,7 @@
     "plain": {
       "type": "boolean",
       "description": "按钮是否镂空，背景色透明",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "form-type": {
       "type": "string",
@@ -59,7 +59,7 @@
     "hover-stop-propagation": {
       "type": "boolean",
       "description": "指定是否阻止本节点的祖先节点出现点击态",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "hover-start-time": {
       "type": "number",
@@ -74,12 +74,12 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "loading": {
       "type": "boolean",
       "description": "名称前是否带有 loading 图标",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "template-id": {
       "type": [

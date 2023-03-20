@@ -10,7 +10,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindCancel": {
       "tsType": "() => void",

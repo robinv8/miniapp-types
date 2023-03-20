@@ -52,7 +52,7 @@
     "show-location": {
       "type": "boolean",
       "description": "显示带有方向的当前定位点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "polygons": {
       "type": "array.<polygon>",
@@ -80,57 +80,57 @@
     "enable-3D": {
       "type": "boolean",
       "description": "展示3D楼块",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-compass": {
       "type": "boolean",
       "description": "显示指南针",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-scale": {
       "type": "boolean",
       "description": "显示比例尺，工具暂不支持",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-overlooking": {
       "type": "boolean",
       "description": "开启俯视",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-auto-max-overlooking": {
       "type": "boolean",
       "description": "开启最大俯视角，俯视角度从 45 度拓展到 75 度",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-zoom": {
       "type": "boolean",
       "description": "是否支持缩放",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-scroll": {
       "type": "boolean",
       "description": "是否支持拖动",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-rotate": {
       "type": "boolean",
       "description": "是否支持旋转",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-satellite": {
       "type": "boolean",
       "description": "是否开启卫星图",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-traffic": {
       "type": "boolean",
       "description": "是否开启实时路况",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-poi": {
       "type": "boolean",
       "description": "是否展示 POI 点",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-building": {
       "type": "boolean",

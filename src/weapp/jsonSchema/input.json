@@ -22,7 +22,7 @@
     "password": {
       "type": "boolean",
       "description": "是否是密码类型",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "placeholder": {
       "type": "string",
@@ -40,7 +40,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
@@ -55,12 +55,12 @@
     "auto-focus": {
       "type": "boolean",
       "description": "(即将废弃，请直接使用 focus )自动聚焦，拉起键盘",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "focus": {
       "type": "boolean",
       "description": "获取焦点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-type": {
       "type": "string",
@@ -77,12 +77,12 @@
     "always-embed": {
       "type": "boolean",
       "description": "强制 input 处于同层状态，默认 focus 时 input 会切到非同层状态 (仅在 iOS 下生效)",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-hold": {
       "type": "boolean",
       "description": "点击键盘右下角按钮时是否保持键盘不收起",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "cursor": {
       "type": "number",
@@ -101,12 +101,12 @@
     "adjust-position": {
       "type": "boolean",
       "description": "键盘弹起时，是否自动上推页面",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "hold-keyboard": {
       "type": "boolean",
       "description": "focus时，点击页面的时候不收起键盘",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "safe-password-cert-path": {
       "type": "string",

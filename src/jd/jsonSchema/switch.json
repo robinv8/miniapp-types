@@ -5,7 +5,7 @@
     "checked": {
       "type": "boolean",
       "description": "是否选中",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "type": {
       "type": "string",

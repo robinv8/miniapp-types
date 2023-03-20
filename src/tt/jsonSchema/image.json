@@ -30,7 +30,7 @@
     "lazy-load": {
       "type": "boolean",
       "description": "图片懒加载，在即将进入一定范围（上下左右三屏）时才开始加载。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "bindError": {
       "tsType": "() => void",

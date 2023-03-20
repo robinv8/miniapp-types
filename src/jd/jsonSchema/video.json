@@ -9,22 +9,22 @@
     "autoplay": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "controls": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "loop": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "objectFit": {
       "type": "string",

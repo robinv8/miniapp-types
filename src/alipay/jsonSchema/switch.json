@@ -25,7 +25,7 @@
     "controlled": {
       "type": "boolean",
       "description": "是否为受控组件，为 true 时，checked 会完全受 setData 控制。",
-      "defaultValue": "false"
+      "defaultValue": false
     }
   },
   "additionalProperties": false

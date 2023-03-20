@@ -13,17 +13,17 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "loop": {
       "type": "boolean",
       "description": "是否循环播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "object-fit": {
       "type": "boolean",

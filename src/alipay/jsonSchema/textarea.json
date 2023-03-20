@@ -25,7 +25,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
@@ -35,22 +35,22 @@
     "focus": {
       "type": "boolean",
       "description": "获取焦点。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "auto-height": {
       "type": "boolean",
       "description": "是否自动增高。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-count": {
       "type": "boolean",
       "description": "是否渲染字数统计功能（是否删除默认计数器/是否显示字数统计）。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "controlled": {
       "type": "boolean",
       "description": "是否为受控组件。为 true 时，value 内容会完全受 setData 控制。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-type": {
       "type": "string",

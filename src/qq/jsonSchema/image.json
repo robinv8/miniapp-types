@@ -14,7 +14,7 @@
     "lazy-load": {
       "type": "boolean",
       "description": "图片懒加载。只针对page与scroll-view下的image有效",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "aria-label": {
       "type": "string",

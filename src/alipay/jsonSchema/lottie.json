@@ -5,7 +5,7 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "path": {
       "type": "string",
@@ -24,7 +24,7 @@
     "auto-reverse": {
       "type": "boolean",
       "description": "是否自动回播。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "assets-path": {
       "type": "string",
@@ -41,7 +41,7 @@
     "optimize": {
       "type": "boolean",
       "description": "降级。降级是指如遇低端设备，Lottie 会降级展示为 placeholder。\n当 optimize 为 true ，并且传入了 placeholder 时，在低端设备上只会展示 placeholder，不展示 Lottie。\n低端设备如下所示：\n\niOS ：小于等于 iPhone6P\nAndroid：内存容量小于 3G",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "onDataReady": {
       "tsType": "() => void",

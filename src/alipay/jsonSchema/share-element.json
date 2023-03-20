@@ -9,7 +9,7 @@
     "transform": {
       "type": "boolean",
       "description": "是否进行动画。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "duration": {
       "type": "number",

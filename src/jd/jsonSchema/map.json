@@ -23,7 +23,7 @@
     "showLocation": {
       "type": "boolean",
       "description": "否",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "includePoints": {
       "type": "array（point)",

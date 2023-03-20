@@ -26,7 +26,7 @@
     "show-location": {
       "type": "boolean",
       "description": "是否显示当前位置",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "polyline": {
       "type": "polyline[]",
@@ -53,17 +53,17 @@
     "show-compass": {
       "type": "boolean",
       "description": "显示指南针",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-overlooking": {
       "type": "boolean",
       "description": "开启俯视手势支持，双指上下滑调整俯仰角",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-rotate": {
       "type": "boolean",
       "description": "开启旋转手势支持，双指旋转调整旋转角度",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "min-scale": {
       "type": "number",
@@ -78,42 +78,42 @@
     "enable-3D": {
       "type": "boolean",
       "description": "是否展示 3D 楼块，该属性 IOS 不支持",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "show-scale": {
       "type": "boolean",
       "description": "是否显示比例尺",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-zoom": {
       "type": "boolean",
       "description": "是否支持缩放",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-scroll": {
       "type": "boolean",
       "description": "是否支持拖动",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-satellite": {
       "type": "boolean",
       "description": "是否开启卫星图",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-traffic": {
       "type": "boolean",
       "description": "是否开启实时路况，在该属性为 true 时，enable- building 和 enable-3D 无效",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "enable-poi": {
       "type": "boolean",
       "description": "是否显示地名",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "enable-building": {
       "type": "boolean",
       "description": "是否展示建筑物",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "bindTap": {
       "tsType": "() => void",

@@ -22,7 +22,7 @@
     "lazy-load": {
       "type": "boolean",
       "description": "支持图片懒加载，不支持通过 css 来控制 image 展示隐藏的场景。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "default-source": {
       "type": "string",

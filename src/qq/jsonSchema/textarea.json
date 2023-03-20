@@ -22,7 +22,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
@@ -32,22 +32,22 @@
     "auto-focus": {
       "type": "boolean",
       "description": "自动聚焦，拉起键盘。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "focus": {
       "type": "boolean",
       "description": "获取焦点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "auto-height": {
       "type": "boolean",
       "description": "是否自动增高，设置auto-height时，style.height不生效",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "fixed": {
       "type": "boolean",
       "description": "如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "cursor-spacing": {
       "type": [
@@ -64,7 +64,7 @@
     "show-confirm-bar": {
       "type": "boolean",
       "description": "是否显示键盘上方带有”完成“按钮那一栏",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "selection-start": {
       "type": "number",
@@ -79,7 +79,7 @@
     "adjust-position": {
       "type": "boolean",
       "description": "键盘弹起时，是否自动上推页面",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "aria-label": {
       "type": "string",

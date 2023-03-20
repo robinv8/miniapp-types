@@ -5,7 +5,7 @@
     "selectable": {
       "type": "boolean",
       "description": "是否可以选中文字。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "space": {
       "type": "string",
@@ -19,7 +19,7 @@
     "decode": {
       "type": "boolean",
       "description": "是否转义。",
-      "defaultValue": "false"
+      "defaultValue": false
     }
   },
   "additionalProperties": false

@@ -5,7 +5,7 @@
     "report-submit": {
       "type": "boolean",
       "description": "是否返回 formId 用于发送模板消息",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "report-submit-timeout": {
       "type": "number",

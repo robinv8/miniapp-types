@@ -9,7 +9,7 @@
     "loading": {
       "type": "boolean",
       "description": "是否在导航条显示 loading 加载提示",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "front-color": {
       "type": "string",

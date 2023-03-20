@@ -10,12 +10,12 @@
     "inertia": {
       "type": "boolean",
       "description": "movable-view是否带有惯性",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "out-of-bounds": {
       "type": "boolean",
       "description": "超过可移动区域后，movable-view是否还可以移动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "x": {
       "type": [
@@ -44,12 +44,12 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scale": {
       "type": "boolean",
       "description": "是否支持双指缩放，默认缩放手势生效区域是在movable-view内",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "scale-min": {
       "type": "number",
@@ -69,7 +69,7 @@
     "animation": {
       "type": "boolean",
       "description": "是否使用动画",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "bindChange": {
       "tsType": "() => void",

@@ -125,5 +125,6 @@
   "bindleavebackground": "bindLeaveBackground",
   "close-on-slideDown": "closeOnSlideDown",
   "openid": "openId",
-  "bindnicknamereview": "bindNickNameReview"
+  "bindnicknamereview": "bindNickNameReview",
+  "bindreply": "bindReply"
 }

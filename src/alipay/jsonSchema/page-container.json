@@ -5,7 +5,7 @@
     "show": {
       "type": "boolean",
       "description": "是否显示容器组件。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "duration": {
       "type": "number",
@@ -20,7 +20,7 @@
     "overlay": {
       "type": "boolean",
       "description": "是否显示遮罩层。",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "position": {
       "type": "string",
@@ -30,12 +30,12 @@
     "round": {
       "type": "boolean",
       "description": "是否显示圆角。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "close-on-slide-down": {
       "type": "boolean",
       "description": "是否在下滑一段距离后关闭。",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "overlay-style": {
       "type": "string",

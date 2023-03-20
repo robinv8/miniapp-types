@@ -9,12 +9,12 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "orientation": {
       "type": "string",

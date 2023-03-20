@@ -13,12 +13,12 @@
     "loop": {
       "type": "boolean",
       "description": "是否循环播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "controls": {
       "type": "boolean",
       "description": "是否显示默认控件",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "poster": {
       "type": "string",

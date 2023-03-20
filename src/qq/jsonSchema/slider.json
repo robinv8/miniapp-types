@@ -20,7 +20,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "value": {
       "type": "number",
@@ -60,7 +60,7 @@
     "show-value": {
       "type": "boolean",
       "description": "是否显示当前 value",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "aria-label": {
       "type": "string",

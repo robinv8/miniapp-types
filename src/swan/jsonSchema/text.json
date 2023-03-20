@@ -5,7 +5,7 @@
     "space": {
       "type": "string",
       "description": "显示连续空格",
-      "defaultValue": "false",
+      "defaultValue": false,
       "enum": [
         "ensp",
         "emsp",

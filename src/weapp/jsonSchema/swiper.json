@@ -5,7 +5,7 @@
     "indicator-dots": {
       "type": "boolean",
       "description": "是否显示面板指示点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "indicator-color": {
       "type": "string",
@@ -20,7 +20,7 @@
     "autoplay": {
       "type": "boolean",
       "description": "是否自动切换",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "current": {
       "type": "number",
@@ -40,12 +40,12 @@
     "circular": {
       "type": "boolean",
       "description": "是否采用衔接滑动",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "vertical": {
       "type": "boolean",
       "description": "滑动方向是否为纵向",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "previous-margin": {
       "type": "string",
@@ -60,7 +60,7 @@
     "snap-to-edge": {
       "type": "boolean",
       "description": "当 swiper-item 的个数大于等于 2，关闭 circular 并且开启 previous-margin 或 next-margin 的时候，可以指定这个边距是否应用到第一个、最后一个元素",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "display-multiple-items": {
       "type": "number",

@@ -13,12 +13,12 @@
     "autoplay": {
       "type": "boolean",
       "description": "自动播放",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "muted": {
       "type": "boolean",
       "description": "是否静音",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "orientation": {
       "type": "string",
@@ -41,7 +41,7 @@
     "background-mute": {
       "type": "boolean",
       "description": "进入后台时是否静音（已废弃，默认退台静音）",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "min-cache": {
       "type": "number",

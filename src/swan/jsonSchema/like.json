@@ -5,7 +5,7 @@
     "is-liked": {
       "type": "boolean",
       "description": "是否已被点赞",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "mode": {
       "type": "string",
@@ -45,7 +45,7 @@
     "is-show-toast": {
       "type": "boolean",
       "description": "点赞后是否弹出 toast 提示",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "toast-text": {
       "type": "array",

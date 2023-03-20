@@ -20,7 +20,7 @@
     "password": {
       "type": "boolean",
       "description": "是否是密码类型",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "placeholder": {
       "type": "string",
@@ -38,7 +38,7 @@
     "disabled": {
       "type": "boolean",
       "description": "是否禁用",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "maxlength": {
       "type": "number",
@@ -53,7 +53,7 @@
     "focus": {
       "type": "boolean",
       "description": "获取焦点，调起键盘\n开发者工具暂不支持自动获取焦点",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "confirm-type": {
       "type": "string",
@@ -70,7 +70,7 @@
     "confirm-hold": {
       "type": "boolean",
       "description": "点击键盘右下角按钮时是否保持键盘不收起",
-      "defaultValue": "false"
+      "defaultValue": false
     },
     "cursor": {
       "type": "number",
@@ -89,7 +89,7 @@
     "adjust-position": {
       "type": "boolean",
       "description": "键盘弹起时，是否自动上推页面",
-      "defaultValue": "true"
+      "defaultValue": true
     },
     "bindInput": {
       "tsType": "() => void",

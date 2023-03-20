@@ -5,7 +5,7 @@
     "enable": {
       "type": "boolean",
       "description": "是否从页面中脱离出来",
-      "defaultValue": "true"
+      "defaultValue": true
     }
   },
   "additionalProperties": false
