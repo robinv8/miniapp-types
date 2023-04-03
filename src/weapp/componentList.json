@@ -90,13 +90,28 @@
   {
     "name": "scroll-view",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/scroll-view.html",
-    "fields": {
-      "name": 1,
-      "type": 2,
-      "defaultValue": 3,
-      "required": 4,
-      "description": 5
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "share-element",
