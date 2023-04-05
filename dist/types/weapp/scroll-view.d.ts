@@ -39,15 +39,15 @@ export interface ScrollView {
    */
   "scroll-with-animation"?: boolean;
   /**
-   * iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向。自 2.27.3 版本开始，若非显式设置为 false，则在显示尺寸大于屏幕 90% 时自动开启。
+   * 暂未支持
    */
   "enable-back-to-top"?: boolean;
   /**
-   * 启用 flexbox 布局。开启后，当前节点声明了 `display: flex` 就会成为 flex container，并作用于其孩子节点。
+   * 不支持，默认 flex
    */
   "enable-flex"?: boolean;
   /**
-   * 开启 scroll anchoring 特性，即控制滚动位置不随内容变化而抖动，仅在 iOS 下生效，安卓下可参考 CSS `overflow-anchor` 属性。
+   * 暂未支持
    */
   "scroll-anchoring"?: boolean;
   /**
@@ -75,7 +75,7 @@ export interface ScrollView {
    */
   "refresher-triggered"?: boolean;
   /**
-   * 启用 scroll-view 增强特性，启用后可通过 ScrollViewContext 操作 scroll-view
+   * 不支持，默认开启
    */
   enhanced?: boolean;
   /**
@@ -87,13 +87,33 @@ export interface ScrollView {
    */
   "show-scrollbar"?: boolean;
   /**
-   * 分页滑动效果 (同时开启 enhanced 属性后生效)
+   * 不支持，可用 Skyline 手势系统实现
    */
   "paging-enabled"?: boolean;
   /**
    * 滑动减速速率控制, 仅在 iOS 下生效 (同时开启 enhanced 属性后生效)
    */
   "fast-deceleration"?: boolean;
+  /**
+   * 渲染模式
+   */
+  type: "list" | "custom";
+  /**
+   * 是否反向滚动。一般初始滚动位置是在顶部，反向滚动则是在底部。
+   */
+  reverse?: boolean;
+  /**
+   * 指定视口外渲染区域的距离，默认情况下视口外节点不渲染。指定 cache-extent 可优化滚动体验和加载速度，但会提高内存占用且影响首屏速度，可按需启用。
+   */
+  "cache-extent"?: number;
+  /**
+   * 只 scroll-into-view 到 cacheExtent 以内的目标节点，性能更佳
+   */
+  "scroll-into-view-within-extent"?: boolean;
+  /**
+   * 指定 scroll-into-view 目标节点在视口内的位置
+   */
+  "scroll-into-view-alignment"?: "start" | "center" | "end" | "nearest";
   /**
    * 滑动开始事件 (同时开启 enhanced 属性后生效) detail { scrollTop, scrollLeft }
    */
@@ -115,7 +135,7 @@ export interface ScrollView {
    */
   bindScrollToLower?: () => void;
   /**
-   * 滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}
+   * 滚动事件，多返回 isDrag 字段。event.detail = { isDrag }
    */
   bindScroll?: () => void;
   /**
@@ -134,4 +154,16 @@ export interface ScrollView {
    * 自定义下拉刷新被中止
    */
   bindRefresherAbort?: () => void;
+  /**
+   * 滚动开始事件。event.detail = { isDrag }
+   */
+  bindScrollStart?: () => void;
+  /**
+   * 滚动结束事件。event.detail = { isDrag }
+   */
+  bindScrollEnd?: () => void;
+  /**
+   * 自定义下拉刷新即将触发刷新（拖动超过 refresher-threshold 时）的事件
+   */
+  bindRefresherWillRefresh?: () => void;
 }

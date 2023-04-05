@@ -5295,7 +5295,7 @@
             },
             "loading": {
               "type": "boolean",
-              "description": "名称前是否带 loading 图标",
+              "description": "loading 动画样式暂未支持",
               "defaultValue": false
             },
             "form-type": {
@@ -7549,17 +7549,17 @@
             },
             "enable-back-to-top": {
               "type": "boolean",
-              "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向。自 2.27.3 版本开始，若非显式设置为 false，则在显示尺寸大于屏幕 90% 时自动开启。",
+              "description": "暂未支持",
               "defaultValue": false
             },
             "enable-flex": {
               "type": "boolean",
-              "description": "启用 flexbox 布局。开启后，当前节点声明了 `display: flex` 就会成为 flex container，并作用于其孩子节点。",
+              "description": "不支持，默认 flex",
               "defaultValue": false
             },
             "scroll-anchoring": {
               "type": "boolean",
-              "description": "开启 scroll anchoring 特性，即控制滚动位置不随内容变化而抖动，仅在 iOS 下生效，安卓下可参考 CSS `overflow-anchor` 属性。",
+              "description": "暂未支持",
               "defaultValue": false
             },
             "enable-passive": {
@@ -7594,7 +7594,7 @@
             },
             "enhanced": {
               "type": "boolean",
-              "description": "启用 scroll-view 增强特性，启用后可通过 ScrollViewContext 操作 scroll-view",
+              "description": "不支持，默认开启",
               "defaultValue": false
             },
             "bounces": {
@@ -7609,13 +7609,47 @@
             },
             "paging-enabled": {
               "type": "boolean",
-              "description": "分页滑动效果 (同时开启 enhanced 属性后生效)",
+              "description": "不支持，可用 Skyline 手势系统实现",
               "defaultValue": false
             },
             "fast-deceleration": {
               "type": "boolean",
               "description": "滑动减速速率控制, 仅在 iOS 下生效 (同时开启 enhanced 属性后生效)",
               "defaultValue": false
+            },
+            "type": {
+              "type": "string",
+              "description": "渲染模式",
+              "defaultValue": "list",
+              "enum": [
+                "list",
+                "custom"
+              ]
+            },
+            "reverse": {
+              "type": "boolean",
+              "description": "是否反向滚动。一般初始滚动位置是在顶部，反向滚动则是在底部。",
+              "defaultValue": false
+            },
+            "cache-extent": {
+              "type": "number",
+              "description": "指定视口外渲染区域的距离，默认情况下视口外节点不渲染。指定 cache-extent 可优化滚动体验和加载速度，但会提高内存占用且影响首屏速度，可按需启用。"
+            },
+            "scroll-into-view-within-extent": {
+              "type": "boolean",
+              "description": "只 scroll-into-view 到 cacheExtent 以内的目标节点，性能更佳",
+              "defaultValue": false
+            },
+            "scroll-into-view-alignment": {
+              "type": "string",
+              "description": "指定 scroll-into-view 目标节点在视口内的位置",
+              "defaultValue": "start",
+              "enum": [
+                "start",
+                "center",
+                "end",
+                "nearest"
+              ]
             },
             "bindDragStart": {
               "tsType": "() => void",
@@ -7639,7 +7673,7 @@
             },
             "bindScroll": {
               "tsType": "() => void",
-              "description": "滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}"
+              "description": "滚动事件，多返回 isDrag 字段。event.detail = { isDrag }"
             },
             "bindRefresherPulling": {
               "tsType": "() => void",
@@ -7656,9 +7690,24 @@
             "bindRefresherAbort": {
               "tsType": "() => void",
               "description": "自定义下拉刷新被中止"
+            },
+            "bindScrollStart": {
+              "tsType": "() => void",
+              "description": "滚动开始事件。event.detail = { isDrag }"
+            },
+            "bindScrollEnd": {
+              "tsType": "() => void",
+              "description": "滚动结束事件。event.detail = { isDrag }"
+            },
+            "bindRefresherWillRefresh": {
+              "tsType": "() => void",
+              "description": "自定义下拉刷新即将触发刷新（拖动超过 refresher-threshold 时）的事件"
             }
           },
-          "additionalProperties": false
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ]
         }
       },
       {
@@ -7669,7 +7718,7 @@
           "properties": {
             "key": {
               "type": "string",
-              "description": "映射标记"
+              "description": "映射标记，页面内唯一"
             },
             "transform": {
               "type": "boolean",
@@ -7683,8 +7732,50 @@
             },
             "easing-function": {
               "type": "string",
-              "description": "css缓动函数",
+              "description": "`css`缓动函数",
               "defaultValue": "ease-out"
+            },
+            "transition-on-gesture": {
+              "type": "boolean",
+              "description": "手势返回时是否进行动画",
+              "defaultValue": false
+            },
+            "shuttle-on-push": {
+              "type": "string",
+              "description": "指定 push 阶段的飞跃物",
+              "defaultValue": "to",
+              "enum": [
+                "from",
+                "to",
+                "from",
+                "to"
+              ]
+            },
+            "shuttle-on-pop": {
+              "type": "string",
+              "description": "指定 pop 阶段的飞跃物",
+              "defaultValue": "to"
+            },
+            "on-frame": {
+              "type": "function",
+              "description": "动画帧回调"
+            },
+            "rect-tween-type": {
+              "type": "string",
+              "description": "动画插值曲线",
+              "defaultValue": "materialRectArc",
+              "enum": [
+                "materialRectArc",
+                "materialRectCenterArc",
+                "linear",
+                "elasticIn",
+                "elasticOut",
+                "elasticInOut",
+                "bounceIn",
+                "bounceOut",
+                "bounceInOut",
+                "cubic-bezier(x1,"
+              ]
             }
           },
           "additionalProperties": false,
@@ -7766,6 +7857,21 @@
             "bindChanging": {
               "tsType": "() => void",
               "description": "拖动过程中触发的事件，event.detail = {value}"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      {
+        "key": "sticky-section",
+        "value": {
+          "title": "sticky-section",
+          "type": "object",
+          "properties": {
+            "push-pinned-header": {
+              "type": "boolean",
+              "description": "吸顶元素重叠时是否继续上推",
+              "defaultValue": true
             }
           },
           "additionalProperties": false
@@ -7872,6 +7978,16 @@
                 "easeOutCubic",
                 "easeInOutCubic"
               ]
+            },
+            "scroll-with-animation": {
+              "type": "boolean",
+              "description": "改变 current 时使用动画过渡",
+              "defaultValue": true
+            },
+            "cache-extent": {
+              "type": "number",
+              "description": "缓存区域大小，值为 1 表示提前渲染上下各一屏区域（swiper 容器大小）",
+              "defaultValue": 0
             },
             "bindChange": {
               "tsType": "() => void",
@@ -8067,6 +8183,15 @@
               "type": "boolean",
               "description": "点击键盘右下角按钮时是否保持键盘不收起",
               "defaultValue": false
+            },
+            "adjust-keyboard-to": {
+              "type": "boolean",
+              "description": "键盘对齐位置",
+              "defaultValue": false,
+              "enum": [
+                "cursor",
+                "bottom"
+              ]
             },
             "bindFocus": {
               "tsType": "() => void",

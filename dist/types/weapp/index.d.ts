@@ -40,6 +40,7 @@ export * from './root-portal';
 export * from './scroll-view';
 export * from './share-element';
 export * from './slider';
+export * from './sticky-section';
 export * from './swiper-item';
 export * from './swiper';
 export * from './switch';

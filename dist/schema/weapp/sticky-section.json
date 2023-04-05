@@ -1,0 +1,12 @@
+{
+  "title": "sticky-section",
+  "type": "object",
+  "properties": {
+    "push-pinned-header": {
+      "type": "boolean",
+      "description": "吸顶元素重叠时是否继续上推",
+      "defaultValue": true
+    }
+  },
+  "additionalProperties": false
+}
