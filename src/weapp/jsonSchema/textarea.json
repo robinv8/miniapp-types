@@ -107,6 +107,15 @@
       "description": "点击键盘右下角按钮时是否保持键盘不收起",
       "defaultValue": false
     },
+    "adjust-keyboard-to": {
+      "type": "boolean",
+      "description": "键盘对齐位置",
+      "defaultValue": false,
+      "enum": [
+        "cursor",
+        "bottom"
+      ]
+    },
     "bindFocus": {
       "tsType": "() => void",
       "description": "输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持"

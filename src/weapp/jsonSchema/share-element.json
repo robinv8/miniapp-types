@@ -4,7 +4,7 @@
   "properties": {
     "key": {
       "type": "string",
-      "description": "映射标记"
+      "description": "映射标记，页面内唯一"
     },
     "transform": {
       "type": "boolean",
@@ -18,8 +18,50 @@
     },
     "easing-function": {
       "type": "string",
-      "description": "css缓动函数",
+      "description": "`css`缓动函数",
       "defaultValue": "ease-out"
+    },
+    "transition-on-gesture": {
+      "type": "boolean",
+      "description": "手势返回时是否进行动画",
+      "defaultValue": false
+    },
+    "shuttle-on-push": {
+      "type": "string",
+      "description": "指定 push 阶段的飞跃物",
+      "defaultValue": "to",
+      "enum": [
+        "from",
+        "to",
+        "from",
+        "to"
+      ]
+    },
+    "shuttle-on-pop": {
+      "type": "string",
+      "description": "指定 pop 阶段的飞跃物",
+      "defaultValue": "to"
+    },
+    "on-frame": {
+      "type": "function",
+      "description": "动画帧回调"
+    },
+    "rect-tween-type": {
+      "type": "string",
+      "description": "动画插值曲线",
+      "defaultValue": "materialRectArc",
+      "enum": [
+        "materialRectArc",
+        "materialRectCenterArc",
+        "linear",
+        "elasticIn",
+        "elasticOut",
+        "elasticInOut",
+        "bounceIn",
+        "bounceOut",
+        "bounceInOut",
+        "cubic-bezier(x1,"
+      ]
     }
   },
   "additionalProperties": false,
