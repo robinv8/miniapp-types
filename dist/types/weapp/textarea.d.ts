@@ -87,6 +87,10 @@ export interface Textarea {
    */
   "confirm-hold"?: boolean;
   /**
+   * 键盘对齐位置
+   */
+  "adjust-keyboard-to"?: "cursor" | "bottom";
+  /**
    * 输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，在基础库 1.9.90 起支持
    */
   bindFocus?: () => void;

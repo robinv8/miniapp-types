@@ -7,7 +7,7 @@
 
 export interface ShareElement {
   /**
-   * 映射标记
+   * 映射标记，页面内唯一
    */
   key: string;
   /**
@@ -19,7 +19,39 @@ export interface ShareElement {
    */
   duration?: number;
   /**
-   * css缓动函数
+   * `css`缓动函数
    */
   "easing-function"?: string;
+  /**
+   * 手势返回时是否进行动画
+   */
+  "transition-on-gesture"?: boolean;
+  /**
+   * 指定 push 阶段的飞跃物
+   */
+  "shuttle-on-push"?: "from" | "to";
+  /**
+   * 指定 pop 阶段的飞跃物
+   */
+  "shuttle-on-pop"?: string;
+  /**
+   * 动画帧回调
+   */
+  "on-frame"?: {
+    [k: string]: unknown;
+  };
+  /**
+   * 动画插值曲线
+   */
+  "rect-tween-type"?:
+    | "materialRectArc"
+    | "materialRectCenterArc"
+    | "linear"
+    | "elasticIn"
+    | "elasticOut"
+    | "elasticInOut"
+    | "bounceIn"
+    | "bounceOut"
+    | "bounceInOut"
+    | "cubic-bezier(x1,";
 }

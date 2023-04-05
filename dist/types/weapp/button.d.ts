@@ -23,7 +23,7 @@ export interface Button {
    */
   disabled?: boolean;
   /**
-   * 名称前是否带 loading 图标
+   * loading 动画样式暂未支持
    */
   loading?: boolean;
   /**

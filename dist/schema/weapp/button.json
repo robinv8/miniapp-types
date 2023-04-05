@@ -33,7 +33,7 @@
     },
     "loading": {
       "type": "boolean",
-      "description": "名称前是否带 loading 图标",
+      "description": "loading 动画样式暂未支持",
       "defaultValue": false
     },
     "form-type": {
