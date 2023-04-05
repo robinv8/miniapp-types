@@ -21,7 +21,8 @@
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "clean-package",
-    "postpack": "clean-package restore"
+    "postpack": "clean-package restore",
+    "release": "release-it"
   },
   "author": "robin <robin@rnode.me> (https://github.com/robinv8)",
   "bugs": {
@@ -42,6 +43,7 @@
     "humps": "^2.0.1",
     "json-schema-to-typescript": "^10.1.5",
     "puppeteer": "^13.7.0",
+    "release-it": "^15.10.1",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
   },
