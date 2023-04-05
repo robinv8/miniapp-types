@@ -126,5 +126,8 @@
   "close-on-slideDown": "closeOnSlideDown",
   "openid": "openId",
   "bindnicknamereview": "bindNickNameReview",
-  "bindreply": "bindReply"
+  "bindreply": "bindReply",
+  "bindscrollstart": "bindScrollStart",
+  "bindscrollend": "bindScrollEnd",
+  "bindrefresherwillrefresh": "bindRefresherWillRefresh"
 }

@@ -42,17 +42,14 @@ const service = new Service({
         handleTable(tableIndex, fields)
       }
 
-
-
-
       function handleTable(tIndex, fields) {
-        console.log(tIndex, fields)
-        const tablesEl = document.querySelectorAll('table')[tIndex];
+        const tablesEl = document.querySelectorAll('.table-wrp')[tIndex];
         const children = tablesEl?.querySelector('tbody')?.children
         if (!children) {
           return;
         }
-        Array.from(children)?.forEach((el) => {
+
+        Array.from(children)?.forEach((el, index) => {
           if (!(el instanceof HTMLElement)) {
             return
           }
@@ -71,16 +68,14 @@ const service = new Service({
               });
           }
 
-          const hasChild = tablesEl.querySelector('.children-table');
-          const index = hasChild ? 1 : 0;
-          const name = (<HTMLElement>el.children[fields.name + index])?.innerText;
-          const type = handleType((<HTMLElement>el.children[fields.type + index])?.innerText, '/');
+          const name = (<HTMLElement>el.children[fields.name])?.innerText;
+          const type = handleType((<HTMLElement>el.children[fields.type])?.innerText, '/');
           const defaultValue =
-            (<HTMLElement>el.children[fields.defaultValue + index])?.innerText;
+            (<HTMLElement>el.children[fields.defaultValue])?.innerText;
           const description =
-            (<HTMLElement>el.children[fields.description + index])?.innerText;
+            (<HTMLElement>el.children[fields.description])?.innerText;
           const required =
-            (<HTMLElement>el.children[fields.required + index])?.innerText;
+            (<HTMLElement>el.children[fields.required])?.innerText;
           const filteredDescription = handleDescription(description);
 
           const obj: Attribute = {

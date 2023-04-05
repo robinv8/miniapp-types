@@ -3,11 +3,11 @@
     "name": "cover-image",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/cover-image.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -25,11 +25,11 @@
     "name": "grid-view",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/grid-view.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -116,6 +116,32 @@
   {
     "name": "share-element",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/share-element.html",
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
+  },
+  {
+    "name": "sticky-section",
+    "url": "https://developers.weixin.qq.com/miniprogram/dev/component/sticky-section.html",
     "fields": {
       "name": 0,
       "type": 1,
@@ -127,13 +153,28 @@
   {
     "name": "swiper",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/swiper.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "swiper-item",
@@ -183,34 +224,64 @@
     "name": "rich-text",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/rich-text.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
     "name": "text",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/text.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "button",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/button.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "checkbox",
@@ -259,13 +330,28 @@
   {
     "name": "input",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/input.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "label",
@@ -282,11 +368,11 @@
     "name": "picker",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/picker.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -347,35 +433,65 @@
   {
     "name": "textarea",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/textarea.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "functional-page-navigator",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/functional-page-navigator.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
     "name": "navigator",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/navigator.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "audio",
@@ -392,11 +508,11 @@
     "name": "camera",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/camera.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -414,34 +530,49 @@
     "name": "channel-video",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/channel-video.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
     "name": "image",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/image.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   },
   {
     "name": "live-player",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/live-player.html",
     "tableIndex": 1,
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -449,22 +580,22 @@
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/live-pusher.html",
     "tableIndex": 1,
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
     "name": "video",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/video.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -472,11 +603,11 @@
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/voip-room.html",
     "tableIndex": 1,
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -547,11 +678,11 @@
     "name": "open-data",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/open-data.html",
     "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
+      "name": 1,
+      "type": 2,
+      "defaultValue": 3,
+      "required": 4,
+      "description": 5
     }
   },
   {
@@ -568,12 +699,27 @@
   {
     "name": "page-meta",
     "url": "https://developers.weixin.qq.com/miniprogram/dev/component/page-meta.html",
-    "fields": {
-      "name": 0,
-      "type": 1,
-      "defaultValue": 2,
-      "required": 3,
-      "description": 4
-    }
+    "props": [
+      {
+        "tableIndex": 0,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      },
+      {
+        "tableIndex": 1,
+        "fields": {
+          "name": 1,
+          "type": 2,
+          "defaultValue": 3,
+          "required": 4,
+          "description": 5
+        }
+      }
+    ]
   }
 ]
