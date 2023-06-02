@@ -71,6 +71,10 @@ export interface LivePlayer {
    */
   "referrer-policy"?: "origin" | "no-referrer";
   /**
+   * 是否支持投屏。开启后，可以通过 LivePlayerContext 上相关方法进行操作。
+   */
+  "enable-casting"?: boolean;
+  /**
    * 播放状态变化事件，detail = {code}
    */
   bindStateChange?: () => void;
@@ -94,4 +98,16 @@ export interface LivePlayer {
    * 播放器退出小窗
    */
   bindLeavePictureInPicture?: () => void;
+  /**
+   * 用户选择投屏设备时触发 detail = { state: "success"/"fail" }
+   */
+  bindCastingUserSelect?: () => void;
+  /**
+   * 投屏成功/失败时触发 detail = { type, state: "success"/"fail" }
+   */
+  bindCastingStateChange?: () => void;
+  /**
+   * 投屏被中断时触发
+   */
+  bindCastingInterrupt?: () => void;
 }

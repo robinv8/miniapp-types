@@ -31,6 +31,15 @@
       "type": "string",
       "description": "backwards：动画从头播\nforwards：动画从上次结束点接着播",
       "defaultValue": "backwards"
+    },
+    "duration": {
+      "type": "number",
+      "description": "进度增加1%所需毫秒数，仅在 active 为 true 时生效",
+      "defaultValue": 30
+    },
+    "bindActiveEnd": {
+      "tsType": "() => void",
+      "description": "动画完成后执行的事件，仅在 active 为 true 时执行"
     }
   },
   "additionalProperties": false

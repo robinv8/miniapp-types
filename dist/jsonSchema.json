@@ -2758,6 +2758,30 @@
               "description": "名称前是否带有 loading 图标",
               "defaultValue": false
             },
+            "session-from": {
+              "type": "string",
+              "description": "会话来源，open-type=\"contact\" 时有效"
+            },
+            "send-message-title": {
+              "type": "string",
+              "description": "会话内消息卡片标题，open-type=\"contact\" 时有效",
+              "defaultValue": "当前标题"
+            },
+            "send-message-path": {
+              "type": "string",
+              "description": "会话内消息卡片点击跳转小程序路径，open-type=\"contact\" 时有效",
+              "defaultValue": "当前页面路径"
+            },
+            "send-message-img": {
+              "type": "string",
+              "description": "会话内消息卡片图片，open-type=\"contact\" 时有效",
+              "defaultValue": "默认图片"
+            },
+            "show-message-card": {
+              "type": "boolean",
+              "description": "是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示\"可能要发送的小程序\"提示，用户点击后可以快速发送小程序消息，open-type=\"contact\" 时有效",
+              "defaultValue": false
+            },
             "template-id": {
               "type": [
                 "string",
@@ -4394,6 +4418,16 @@
               "description": "距底部 / 右边多远时（单位 px），触发 scrolltolower 事件",
               "defaultValue": "50"
             },
+            "enhanced": {
+              "type": "boolean",
+              "description": "启用 scroll-view 增强特性",
+              "defaultValue": false
+            },
+            "bounces": {
+              "type": "boolean",
+              "description": "iOS 下 scroll-view 边界弹性控制 (同时开启 enhanced 属性后生效)",
+              "defaultValue": true
+            },
             "scroll-top": {
               "type": [
                 "number",
@@ -5562,11 +5596,15 @@
           "properties": {
             "feed-id": {
               "type": "string",
-              "description": "视频 feedId"
+              "description": "仅视频号视频与小程序同主体时生效。若内嵌非同主体视频，请使用 feed-token。"
             },
             "finder-user-name": {
               "type": "string",
-              "description": "视频号 id，以“sph”开头的id，可在视频号助手获取。视频号必须与当前小程序相同主体。"
+              "description": "视频号 id，以“sph”开头的id，可在视频号助手获取。"
+            },
+            "feed-token": {
+              "type": "string",
+              "description": "仅内嵌小程序非同主体视频号视频时使用，获取方式参考本指引。"
             },
             "autoplay": {
               "type": "boolean",
@@ -5601,7 +5639,9 @@
           "additionalProperties": false,
           "required": [
             "feed-id",
-            "finder-user-name"
+            "finder-user-name",
+            "feed-token",
+            "autoplay"
           ]
         }
       },
@@ -5929,17 +5969,22 @@
             },
             "webp": {
               "type": "boolean",
-              "description": "默认不解析 webP 格式，只支持网络资源",
+              "description": "无需指定，默认支持",
               "defaultValue": false
             },
             "lazy-load": {
               "type": "boolean",
-              "description": "图片懒加载，在即将进入一定范围（上下三屏）时才开始加载",
+              "description": "受 scroll-view 按需渲染影响，默认生效",
               "defaultValue": false
             },
             "show-menu-by-longpress": {
               "type": "boolean",
               "description": "长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。",
+              "defaultValue": false
+            },
+            "fade-in": {
+              "type": "boolean",
+              "description": "是否渐显",
               "defaultValue": false
             },
             "bindError": {
@@ -6126,7 +6171,8 @@
             "bindblur",
             "bindconfirm",
             "bindkeyboardheightchange",
-            "bindnicknamereview"
+            "bindnicknamereview",
+            "placeholder-style"
           ]
         }
       },
@@ -6251,6 +6297,11 @@
                 "no-referrer"
               ]
             },
+            "enable-casting": {
+              "type": "boolean",
+              "description": "是否支持投屏。开启后，可以通过 LivePlayerContext 上相关方法进行操作。",
+              "defaultValue": false
+            },
             "bindStateChange": {
               "tsType": "() => void",
               "description": "播放状态变化事件，detail = {code}"
@@ -6274,6 +6325,18 @@
             "bindLeavePictureInPicture": {
               "tsType": "() => void",
               "description": "播放器退出小窗"
+            },
+            "bindCastingUserSelect": {
+              "tsType": "() => void",
+              "description": "用户选择投屏设备时触发 detail = { state: \"success\"/\"fail\" }"
+            },
+            "bindCastingStateChange": {
+              "tsType": "() => void",
+              "description": "投屏成功/失败时触发 detail = { type, state: \"success\"/\"fail\" }"
+            },
+            "bindCastingInterrupt": {
+              "tsType": "() => void",
+              "description": "投屏被中断时触发"
             }
           },
           "additionalProperties": false
@@ -6490,6 +6553,24 @@
                 "pop"
               ]
             },
+            "voice-changer-type": {
+              "type": "number",
+              "description": "0：关闭变声；1：熊孩子；2：萝莉；3：大叔；4：重金属；6：外国人；7：困兽；8：死肥仔；9：强电流；10：重机械；11：空灵",
+              "defaultValue": 0,
+              "enum": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ]
+            },
             "custom-effect": {
               "type": "boolean",
               "description": "是否启动自定义特效，设定后不能更改",
@@ -6514,6 +6595,11 @@
               "type": "number",
               "description": "自定义特效大眼效果，取值 0~1。需要开启 custom-effect",
               "defaultValue": 0
+            },
+            "fps": {
+              "type": "number",
+              "description": "帧率，有效值为 1~30",
+              "defaultValue": 15
             },
             "bindStateChange": {
               "tsType": "() => void",
@@ -7774,7 +7860,7 @@
                 "bounceIn",
                 "bounceOut",
                 "bounceInOut",
-                "cubic-bezier(x1,"
+                "cubic-bezier(x1, y1, x2, y2)"
               ]
             }
           },
@@ -8068,9 +8154,16 @@
               "type": "boolean",
               "description": "是否解码",
               "defaultValue": false
+            },
+            "max-lines": {
+              "type": "number",
+              "description": "限制文本最大行数"
             }
           },
-          "additionalProperties": false
+          "additionalProperties": false,
+          "required": [
+            "max-lines"
+          ]
         }
       },
       {
@@ -8385,7 +8478,7 @@
             },
             "show-casting-button": {
               "type": "boolean",
-              "description": "显示投屏按钮。安卓在同层渲染下生效，支持 DLNA 协议；iOS 支持 AirPlay 和 DLNA 协议",
+              "description": "显示投屏按钮。安卓在同层渲染下生效，支持 DLNA 协议；iOS 支持 AirPlay 和 DLNA 协议。可以通过VideoContext的相关方法进行操作。",
               "defaultValue": false
             },
             "picture-in-picture-mode": {
@@ -8513,6 +8606,18 @@
             "bindSeekComplete": {
               "tsType": "() => void",
               "description": "seek 完成时触发 (position iOS 单位 s, Android 单位 ms)"
+            },
+            "bindCastingUserSelect": {
+              "tsType": "() => void",
+              "description": "用户选择投屏设备时触发 detail = { state: \"success\"/\"fail\" }"
+            },
+            "bindCastingStateChange": {
+              "tsType": "() => void",
+              "description": "投屏成功/失败时触发 detail = { type, state: \"success\"/\"fail\" }"
+            },
+            "bindCastingInterrupt": {
+              "tsType": "() => void",
+              "description": "投屏被中断时触发"
             }
           },
           "additionalProperties": false,
@@ -8617,7 +8722,7 @@
             },
             "bindMessage": {
               "tsType": "() => void",
-              "description": "网页向小程序 postMessage 时，会在特定时机（小程序后退、组件销毁、分享）触发并收到消息。e.detail = { data }，data是多次 postMessage 的参数组成的数组"
+              "description": "网页向小程序 postMessage 时，会在以下特定时机触发并收到消息：小程序后退、组件销毁、分享、复制链接（2.31.1）。e.detail = { data }，data是多次 postMessage 的参数组成的数组。"
             },
             "bindLoad": {
               "tsType": "() => void",
@@ -9538,6 +9643,11 @@
               "description": "iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向",
               "defaultValue": false
             },
+            "enable-flex": {
+              "type": "boolean",
+              "description": "启用 flexbox 布局。开启后，当前节点声明了 display: flex 就会成为 flex container，并作用于其孩子节点。",
+              "defaultValue": false
+            },
             "bindScrollToUpper": {
               "tsType": "() => void",
               "description": "滚动到顶部/左边，会触发 scrolltoupper 事件"
@@ -9588,7 +9698,7 @@
             "color": {
               "type": "string",
               "description": "背景条的颜色（请使用 backgroundColor）",
-              "defaultValue": "#e9e9e9"
+              "defaultValue": "#DADADA"
             },
             "selected-color": {
               "type": "string",
@@ -9603,7 +9713,7 @@
             "backgroundColor": {
               "type": "string",
               "description": "背景条的颜色",
-              "defaultValue": "#e9e9e9"
+              "defaultValue": "#DADADA"
             },
             "block-size": {
               "type": "number",
@@ -9613,7 +9723,7 @@
             "block-color": {
               "type": "string",
               "description": "滑块的颜色",
-              "defaultValue": "#ffffff"
+              "defaultValue": "#FFFFFF"
             },
             "show-value": {
               "type": "boolean",
@@ -12434,7 +12544,8 @@
                 "share",
                 "getPhoneNumber",
                 "contact",
-                "im"
+                "im",
+                "openSetting"
               ]
             },
             "hover-class": {
@@ -12459,7 +12570,11 @@
             },
             "bindGetPhoneNumber": {
               "tsType": "() => void",
-              "description": "获取用户手机号回调，只在 open-type=getPhoneNumber 时有效"
+              "description": "获取用户手机号回调，只在 open-type=\"getPhoneNumber\" 时有效"
+            },
+            "bindOpenSetting": {
+              "tsType": "() => void",
+              "description": "在打开授权设置页后回调。只在open-type=\"openSetting\"时有效"
             }
           },
           "additionalProperties": false
@@ -12628,6 +12743,16 @@
           "title": "form",
           "type": "object",
           "properties": {
+            "conversion-target": {
+              "type": "number",
+              "description": "用于分发目的。取值：0 或 1，其中 0 表示默认，1 表示留资目标，需要和留资分发配置一起使用，详情见留资分发配置",
+              "defaultValue": 0
+            },
+            "clue-component-id": {
+              "type": "string",
+              "description": "用于分发目的。开发者在【小程序开发者后台 -> 进入目标小程序 -> 运营 -> 流量配置 -> 抖音 -> 留资分发配置】复制创建的配置 ID，需要和留资分发配置一起使用，详情见留资分发配置\n",
+              "defaultValue": "\"\""
+            },
             "bindSubmit": {
               "tsType": "() => void",
               "description": "携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}。"
@@ -12824,6 +12949,11 @@
               "description": "focus 时，点击页面的时候不收起键盘。",
               "defaultValue": false
             },
+            "clue-type": {
+              "type": "number",
+              "description": "用于分发目的。取值：0 和 1，其中 0 表示默认，1 表示手机号，需要和留资分发配置一起使用，详情见留资分发配置。",
+              "defaultValue": 0
+            },
             "bindInput": {
               "tsType": "() => void",
               "description": "键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明。"
@@ -12839,6 +12969,10 @@
             "bindConfirm": {
               "tsType": "() => void",
               "description": "用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明。"
+            },
+            "bindKeyboardHeightChange": {
+              "tsType": "() => void",
+              "description": "键盘高度发生变化的时候触发此事件，详情见 bindkeyboardheightchange 说明。"
             }
           },
           "additionalProperties": false
@@ -13191,7 +13325,7 @@
             "delta": {
               "type": "number",
               "description": "当 open-type 为 'navigateBack' 时有效，表示回退的层数。",
-              "defaultValue": "1"
+              "defaultValue": 1
             },
             "open-type": {
               "type": "string",
@@ -13213,12 +13347,12 @@
             "hover-start-time": {
               "type": "number",
               "description": "按住后多久出现点击态，单位毫秒。",
-              "defaultValue": "50"
+              "defaultValue": 50
             },
             "hover-stay-time": {
               "type": "number",
               "description": "手指松开后点击态保留时间，单位毫秒。",
-              "defaultValue": "400"
+              "defaultValue": 400
             },
             "hover-stop-propagation": {
               "type": "boolean",
@@ -13390,6 +13524,15 @@
               "type": "string",
               "description": "backwards：动画从头播\nforwards：动画从上次结束点接着播",
               "defaultValue": "backwards"
+            },
+            "duration": {
+              "type": "number",
+              "description": "进度增加1%所需毫秒数，仅在 active 为 true 时生效",
+              "defaultValue": 30
+            },
+            "bindActiveEnd": {
+              "tsType": "() => void",
+              "description": "动画完成后执行的事件，仅在 active 为 true 时执行"
             }
           },
           "additionalProperties": false
@@ -13421,7 +13564,7 @@
           "properties": {
             "value": {
               "type": "string",
-              "description": "标识。当该 选中时， 的 change 事件会携带 的 value。"
+              "description": "radio 标识。当该 radio 选中时，radio-group 的 change 事件会携带 radio 的 value。"
             },
             "checked": {
               "type": "boolean",
@@ -13452,6 +13595,10 @@
               "type": "(Node|Text)[]|String",
               "description": "节点列表 / HTML String",
               "defaultValue": "[ ]"
+            },
+            "space": {
+              "type": "string",
+              "description": "显示连续空格。\n\n有效值：\n\nensp：中文字符空格一半大小。\nemsp：中文字符空格大小。\nnbsp：根据字体设置的空格大小。"
             }
           },
           "additionalProperties": false
@@ -13892,6 +14039,10 @@
             "bindLineChange": {
               "tsType": "() => void",
               "description": "输入框行数变化时触发，详情见 bindlinechange 说明。"
+            },
+            "bindKeyboardHeightChange": {
+              "tsType": "() => void",
+              "description": "键盘高度发生变化的时候触发此事件，详情见 bindkeyboardheightchange 说明。"
             }
           },
           "additionalProperties": false
@@ -13957,11 +14108,11 @@
             },
             "pre-roll-unit-id": {
               "type": "string",
-              "description": "前贴广告的 unit id。"
+              "description": "前贴广告的 unit id，仅头条支持"
             },
             "post-roll-unit-id": {
               "type": "string",
-              "description": "后贴广告的 unit id。"
+              "description": "后贴广告的 unit id，仅头条支持"
             },
             "vslide-gesture": {
               "type": "boolean",
@@ -14001,7 +14152,7 @@
             "direction": {
               "type": "number",
               "description": "设置全屏时视频的方向，详见 direction 的合法值。",
-              "defaultValue": "-90",
+              "defaultValue": -90,
               "enum": [
                 "0",
                 "90",
@@ -14020,7 +14171,7 @@
             "initial-time": {
               "type": "number",
               "description": "指定视频的初始播放位置。",
-              "defaultValue": "0"
+              "defaultValue": 0
             },
             "show-screen-lock-button": {
               "type": "boolean",

@@ -23,6 +23,14 @@ export interface ScrollView {
    */
   "lower-threshold"?: number | string;
   /**
+   * 启用 scroll-view 增强特性
+   */
+  enhanced?: boolean;
+  /**
+   * iOS 下 scroll-view 边界弹性控制 (同时开启 enhanced 属性后生效)
+   */
+  bounces?: boolean;
+  /**
    * 设置竖向滚动条位置。要动态设置滚动条位置，用法scroll-top="{= scrollTop =}"。
    * 如果在设置组件渲染数据的同时设置了 scroll-top、scroll-left 值，需要在 swan.nextTick 回调中设置 scroll-top、scroll-left ，确保滚动条位置准确
    */

@@ -129,7 +129,7 @@ export interface Video {
    */
   "poster-for-crawler": string;
   /**
-   * 显示投屏按钮。安卓在同层渲染下生效，支持 DLNA 协议；iOS 支持 AirPlay 和 DLNA 协议
+   * 显示投屏按钮。安卓在同层渲染下生效，支持 DLNA 协议；iOS 支持 AirPlay 和 DLNA 协议。可以通过VideoContext的相关方法进行操作。
    */
   "show-casting-button"?: boolean;
   /**
@@ -244,4 +244,16 @@ export interface Video {
    * seek 完成时触发 (position iOS 单位 s, Android 单位 ms)
    */
   bindSeekComplete?: () => void;
+  /**
+   * 用户选择投屏设备时触发 detail = { state: "success"/"fail" }
+   */
+  bindCastingUserSelect?: () => void;
+  /**
+   * 投屏成功/失败时触发 detail = { type, state: "success"/"fail" }
+   */
+  bindCastingStateChange?: () => void;
+  /**
+   * 投屏被中断时触发
+   */
+  bindCastingInterrupt?: () => void;
 }

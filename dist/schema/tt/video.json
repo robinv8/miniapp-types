@@ -56,11 +56,11 @@
     },
     "pre-roll-unit-id": {
       "type": "string",
-      "description": "前贴广告的 unit id。"
+      "description": "前贴广告的 unit id，仅头条支持"
     },
     "post-roll-unit-id": {
       "type": "string",
-      "description": "后贴广告的 unit id。"
+      "description": "后贴广告的 unit id，仅头条支持"
     },
     "vslide-gesture": {
       "type": "boolean",
@@ -100,7 +100,7 @@
     "direction": {
       "type": "number",
       "description": "设置全屏时视频的方向，详见 direction 的合法值。",
-      "defaultValue": "-90",
+      "defaultValue": -90,
       "enum": [
         "0",
         "90",
@@ -119,7 +119,7 @@
     "initial-time": {
       "type": "number",
       "description": "指定视频的初始播放位置。",
-      "defaultValue": "0"
+      "defaultValue": 0
     },
     "show-screen-lock-button": {
       "type": "boolean",

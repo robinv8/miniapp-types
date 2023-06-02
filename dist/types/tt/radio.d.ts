@@ -7,7 +7,7 @@
 
 export interface Radio {
   /**
-   * 标识。当该 选中时， 的 change 事件会携带 的 value。
+   * radio 标识。当该 radio 选中时，radio-group 的 change 事件会携带 radio 的 value。
    */
   value?: string;
   /**

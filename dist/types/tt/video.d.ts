@@ -50,11 +50,11 @@ export interface Video {
    */
   "play-btn-position"?: "center" | "bottom";
   /**
-   * 前贴广告的 unit id。
+   * 前贴广告的 unit id，仅头条支持
    */
   "pre-roll-unit-id"?: string;
   /**
-   * 后贴广告的 unit id。
+   * 后贴广告的 unit id，仅头条支持
    */
   "post-roll-unit-id"?: string;
   /**

@@ -60,6 +60,26 @@ export interface Button {
    */
   loading?: boolean;
   /**
+   * 会话来源，open-type="contact" 时有效
+   */
+  "session-from"?: string;
+  /**
+   * 会话内消息卡片标题，open-type="contact" 时有效
+   */
+  "send-message-title"?: string;
+  /**
+   * 会话内消息卡片点击跳转小程序路径，open-type="contact" 时有效
+   */
+  "send-message-path"?: string;
+  /**
+   * 会话内消息卡片图片，open-type="contact" 时有效
+   */
+  "send-message-img"?: string;
+  /**
+   * 是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示"可能要发送的小程序"提示，用户点击后可以快速发送小程序消息，open-type="contact" 时有效
+   */
+  "show-message-card"?: boolean;
+  /**
    * 发送订阅类模板消息所用的模板库标题 ID ，可通过 getTemplateLibraryList 获取
    * 当参数类型为 Array 时，可传递 1~3 个模板库标题 ID
    */

@@ -31,4 +31,12 @@ export interface Progress {
    * forwards：动画从上次结束点接着播
    */
   "active-mode"?: string;
+  /**
+   * 进度增加1%所需毫秒数，仅在 active 为 true 时生效
+   */
+  duration?: number;
+  /**
+   * 动画完成后执行的事件，仅在 active 为 true 时执行
+   */
+  bindActiveEnd?: () => void;
 }

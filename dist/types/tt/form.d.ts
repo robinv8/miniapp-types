@@ -7,6 +7,15 @@
 
 export interface Form {
   /**
+   * 用于分发目的。取值：0 或 1，其中 0 表示默认，1 表示留资目标，需要和留资分发配置一起使用，详情见留资分发配置
+   */
+  "conversion-target"?: number;
+  /**
+   * 用于分发目的。开发者在【小程序开发者后台 -> 进入目标小程序 -> 运营 -> 流量配置 -> 抖音 -> 留资分发配置】复制创建的配置 ID，需要和留资分发配置一起使用，详情见留资分发配置
+   *
+   */
+  "clue-component-id"?: string;
+  /**
    * 携带 form 中的数据触发 submit 事件，event.detail = {value : {'name': 'value'} , ...}。
    */
   bindSubmit?: () => void;

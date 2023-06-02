@@ -22,4 +22,8 @@ export interface Text {
    * 是否解码
    */
   decode?: boolean;
+  /**
+   * 限制文本最大行数
+   */
+  "max-lines": number;
 }

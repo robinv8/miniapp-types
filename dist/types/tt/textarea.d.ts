@@ -98,4 +98,8 @@ export interface Textarea {
    * 输入框行数变化时触发，详情见 bindlinechange 说明。
    */
   bindLineChange?: () => void;
+  /**
+   * 键盘高度发生变化的时候触发此事件，详情见 bindkeyboardheightchange 说明。
+   */
+  bindKeyboardHeightChange?: () => void;
 }

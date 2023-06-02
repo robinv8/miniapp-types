@@ -150,6 +150,10 @@ export interface LivePusher {
         [k: string]: unknown;
       };
   /**
+   * 0：关闭变声；1：熊孩子；2：萝莉；3：大叔；4：重金属；6：外国人；7：困兽；8：死肥仔；9：强电流；10：重机械；11：空灵
+   */
+  "voice-changer-type"?: 0 | 1 | 2 | 3 | 4 | 6 | 7 | 8 | 9 | 10 | 11;
+  /**
    * 是否启动自定义特效，设定后不能更改
    */
   "custom-effect"?: boolean;
@@ -169,6 +173,10 @@ export interface LivePusher {
    * 自定义特效大眼效果，取值 0~1。需要开启 custom-effect
    */
   "eye-bigness"?: number;
+  /**
+   * 帧率，有效值为 1~30
+   */
+  fps?: number;
   /**
    * 状态变化事件，detail = {code}
    */

@@ -29,7 +29,7 @@ export interface Button {
   /**
    * 用于调用开放能力, 详情见 open-type 的合法值
    */
-  "open-type"?: "share" | "getPhoneNumber" | "contact" | "im";
+  "open-type"?: "share" | "getPhoneNumber" | "contact" | "im" | "openSetting";
   /**
    * 点击状态的样式类
    */
@@ -47,7 +47,11 @@ export interface Button {
    */
   "hover-stop-propagation"?: boolean;
   /**
-   * 获取用户手机号回调，只在 open-type=getPhoneNumber 时有效
+   * 获取用户手机号回调，只在 open-type="getPhoneNumber" 时有效
    */
   bindGetPhoneNumber?: () => void;
+  /**
+   * 在打开授权设置页后回调。只在open-type="openSetting"时有效
+   */
+  bindOpenSetting?: () => void;
 }

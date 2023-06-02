@@ -29,17 +29,21 @@ export interface Image {
     | "bottom left"
     | "bottom right";
   /**
-   * 默认不解析 webP 格式，只支持网络资源
+   * 无需指定，默认支持
    */
   webp?: boolean;
   /**
-   * 图片懒加载，在即将进入一定范围（上下三屏）时才开始加载
+   * 受 scroll-view 按需渲染影响，默认生效
    */
   "lazy-load"?: boolean;
   /**
    * 长按图片显示发送给朋友、收藏、保存图片、搜一搜、打开名片/前往群聊/打开小程序（若图片中包含对应二维码或小程序码）的菜单。
    */
   "show-menu-by-longpress"?: boolean;
+  /**
+   * 是否渐显
+   */
+  "fade-in"?: boolean;
   /**
    * 当错误发生时触发，event.detail = {errMsg}
    */

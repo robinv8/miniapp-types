@@ -75,6 +75,10 @@ export interface Input {
    */
   "hold-keyboard"?: boolean;
   /**
+   * 用于分发目的。取值：0 和 1，其中 0 表示默认，1 表示手机号，需要和留资分发配置一起使用，详情见留资分发配置。
+   */
+  "clue-type"?: number;
+  /**
    * 键盘输入时触发，处理函数可以直接 return 一个字符串，将替换输入框的内容，详情见 bindinput 说明。
    */
   bindInput?: () => void;
@@ -90,4 +94,8 @@ export interface Input {
    * 用户点击键盘的完成按钮时触发，详情见 bindconfirm 说明。
    */
   bindConfirm?: () => void;
+  /**
+   * 键盘高度发生变化的时候触发此事件，详情见 bindkeyboardheightchange 说明。
+   */
+  bindKeyboardHeightChange?: () => void;
 }

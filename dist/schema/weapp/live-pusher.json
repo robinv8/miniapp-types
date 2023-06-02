@@ -207,6 +207,24 @@
         "pop"
       ]
     },
+    "voice-changer-type": {
+      "type": "number",
+      "description": "0：关闭变声；1：熊孩子；2：萝莉；3：大叔；4：重金属；6：外国人；7：困兽；8：死肥仔；9：强电流；10：重机械；11：空灵",
+      "defaultValue": 0,
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
     "custom-effect": {
       "type": "boolean",
       "description": "是否启动自定义特效，设定后不能更改",
@@ -231,6 +249,11 @@
       "type": "number",
       "description": "自定义特效大眼效果，取值 0~1。需要开启 custom-effect",
       "defaultValue": 0
+    },
+    "fps": {
+      "type": "number",
+      "description": "帧率，有效值为 1~30",
+      "defaultValue": 15
     },
     "bindStateChange": {
       "tsType": "() => void",

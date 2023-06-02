@@ -12,4 +12,14 @@ export interface RichText {
   nodes?: {
     [k: string]: unknown;
   };
+  /**
+   * 显示连续空格。
+   *
+   * 有效值：
+   *
+   * ensp：中文字符空格一半大小。
+   * emsp：中文字符空格大小。
+   * nbsp：根据字体设置的空格大小。
+   */
+  space?: string;
 }

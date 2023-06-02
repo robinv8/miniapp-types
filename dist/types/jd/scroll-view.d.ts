@@ -43,6 +43,10 @@ export interface ScrollView {
    */
   "enable-back-to-top"?: boolean;
   /**
+   * 启用 flexbox 布局。开启后，当前节点声明了 display: flex 就会成为 flex container，并作用于其孩子节点。
+   */
+  "enable-flex"?: boolean;
+  /**
    * 滚动到顶部/左边，会触发 scrolltoupper 事件
    */
   bindScrollToUpper?: () => void;

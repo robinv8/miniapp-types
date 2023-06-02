@@ -28,6 +28,16 @@
       "description": "距底部 / 右边多远时（单位 px），触发 scrolltolower 事件",
       "defaultValue": "50"
     },
+    "enhanced": {
+      "type": "boolean",
+      "description": "启用 scroll-view 增强特性",
+      "defaultValue": false
+    },
+    "bounces": {
+      "type": "boolean",
+      "description": "iOS 下 scroll-view 边界弹性控制 (同时开启 enhanced 属性后生效)",
+      "defaultValue": true
+    },
     "scroll-top": {
       "type": [
         "number",

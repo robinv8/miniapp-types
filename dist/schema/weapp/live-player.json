@@ -103,6 +103,11 @@
         "no-referrer"
       ]
     },
+    "enable-casting": {
+      "type": "boolean",
+      "description": "是否支持投屏。开启后，可以通过 LivePlayerContext 上相关方法进行操作。",
+      "defaultValue": false
+    },
     "bindStateChange": {
       "tsType": "() => void",
       "description": "播放状态变化事件，detail = {code}"
@@ -126,6 +131,18 @@
     "bindLeavePictureInPicture": {
       "tsType": "() => void",
       "description": "播放器退出小窗"
+    },
+    "bindCastingUserSelect": {
+      "tsType": "() => void",
+      "description": "用户选择投屏设备时触发 detail = { state: \"success\"/\"fail\" }"
+    },
+    "bindCastingStateChange": {
+      "tsType": "() => void",
+      "description": "投屏成功/失败时触发 detail = { type, state: \"success\"/\"fail\" }"
+    },
+    "bindCastingInterrupt": {
+      "tsType": "() => void",
+      "description": "投屏被中断时触发"
     }
   },
   "additionalProperties": false

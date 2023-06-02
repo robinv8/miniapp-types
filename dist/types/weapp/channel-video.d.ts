@@ -7,17 +7,21 @@
 
 export interface ChannelVideo {
   /**
-   * 视频 feedId
+   * 仅视频号视频与小程序同主体时生效。若内嵌非同主体视频，请使用 feed-token。
    */
   "feed-id": string;
   /**
-   * 视频号 id，以“sph”开头的id，可在视频号助手获取。视频号必须与当前小程序相同主体。
+   * 视频号 id，以“sph”开头的id，可在视频号助手获取。
    */
   "finder-user-name": string;
   /**
+   * 仅内嵌小程序非同主体视频号视频时使用，获取方式参考本指引。
+   */
+  "feed-token": string;
+  /**
    * 是否自动播放
    */
-  autoplay?: boolean;
+  autoplay: boolean;
   /**
    * 是否循环播放
    */
