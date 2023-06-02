@@ -30,7 +30,7 @@
     "color": {
       "type": "string",
       "description": "背景条的颜色（请使用 backgroundColor）",
-      "defaultValue": "#e9e9e9"
+      "defaultValue": "#DADADA"
     },
     "selected-color": {
       "type": "string",
@@ -45,7 +45,7 @@
     "backgroundColor": {
       "type": "string",
       "description": "背景条的颜色",
-      "defaultValue": "#e9e9e9"
+      "defaultValue": "#DADADA"
     },
     "block-size": {
       "type": "number",
@@ -55,7 +55,7 @@
     "block-color": {
       "type": "string",
       "description": "滑块的颜色",
-      "defaultValue": "#ffffff"
+      "defaultValue": "#FFFFFF"
     },
     "show-value": {
       "type": "boolean",

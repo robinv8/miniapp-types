@@ -115,6 +115,10 @@
     "bindLineChange": {
       "tsType": "() => void",
       "description": "输入框行数变化时触发，详情见 bindlinechange 说明。"
+    },
+    "bindKeyboardHeightChange": {
+      "tsType": "() => void",
+      "description": "键盘高度发生变化的时候触发此事件，详情见 bindkeyboardheightchange 说明。"
     }
   },
   "additionalProperties": false
