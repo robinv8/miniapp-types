@@ -130,7 +130,6 @@ class Service {
       });
     } else {
       await this.browser.close();
-      bar.stop();
     }
   }
   async exec() {
