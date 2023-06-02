@@ -42,7 +42,7 @@ class Service {
     this.evaluate = options.evaluate;
     this.waitTime = options.waitTime || 0;
     this.componentList = require(`./${this.platform}/componentList.json`);
-    
+
     const length = this.componentList.length;
     this.bar = bar.create(length, 0, {
       platform: platformName[this.platform]
@@ -55,14 +55,17 @@ class Service {
     });
     this.page = await this.browser.newPage();
     await this.page.setCacheEnabled(false);
-    await this.page.setRequestInterception(true);
-    this.page.on('request', (request) => {
-      if (request.resourceType() === 'image' || request.resourceType() === 'stylesheet' || request.resourceType() === 'font') {
-        request.abort();
-      } else {
-        request.continue();
-      }
-    });
+
+    switch (this.platform) {
+      case 'weapp':
+      case 'qq':
+        await this.weappConfig();
+        break;
+      default:
+
+        break;
+    }
+
   }
 
   handleType(str, char) {
@@ -73,7 +76,7 @@ class Service {
   }
   async getComponentProps({ page, url, name }) {
     this.bar.update(this.index + 1);
-    await this.page.goto(url, { waitUntil: this.waitUntil, debugger: true });
+    await this.page.goto(url, { waitUntil: this.waitUntil, timeout: 0 });
     await this.page.waitForTimeout(this.waitTime)
     const data = await this.evaluate(this.page, this.componentList[this.index]);
     if (data.length > 0) {
@@ -138,6 +141,28 @@ class Service {
       url,
       name,
       page: this.page,
+    });
+  }
+
+  async weappConfig() {
+    await this.page.setRequestInterception(true);
+    this.page.on('request', (request) => {
+      if (request.resourceType() === "document") {
+        request.continue();
+      } else {
+        request.abort();
+      }
+    });
+  }
+
+  async defaultConfig() {
+    await this.page.setRequestInterception(true);
+    this.page.on('request', (request) => {
+      if (request.resourceType() === "image" || request.resourceType() === "stylesheet" || request.resourceType() === "font") {
+        request.abort();
+      } else {
+        request.continue();
+      }
     });
   }
 }
