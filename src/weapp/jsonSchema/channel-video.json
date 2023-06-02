@@ -4,11 +4,15 @@
   "properties": {
     "feed-id": {
       "type": "string",
-      "description": "视频 feedId"
+      "description": "仅视频号视频与小程序同主体时生效。若内嵌非同主体视频，请使用 feed-token。"
     },
     "finder-user-name": {
       "type": "string",
-      "description": "视频号 id，以“sph”开头的id，可在视频号助手获取。视频号必须与当前小程序相同主体。"
+      "description": "视频号 id，以“sph”开头的id，可在视频号助手获取。"
+    },
+    "feed-token": {
+      "type": "string",
+      "description": "仅内嵌小程序非同主体视频号视频时使用，获取方式参考本指引。"
     },
     "autoplay": {
       "type": "boolean",
@@ -43,6 +47,8 @@
   "additionalProperties": false,
   "required": [
     "feed-id",
-    "finder-user-name"
+    "finder-user-name",
+    "feed-token",
+    "autoplay"
   ]
 }

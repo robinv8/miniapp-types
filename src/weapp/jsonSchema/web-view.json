@@ -8,7 +8,7 @@
     },
     "bindMessage": {
       "tsType": "() => void",
-      "description": "网页向小程序 postMessage 时，会在特定时机（小程序后退、组件销毁、分享）触发并收到消息。e.detail = { data }，data是多次 postMessage 的参数组成的数组"
+      "description": "网页向小程序 postMessage 时，会在以下特定时机触发并收到消息：小程序后退、组件销毁、分享、复制链接（2.31.1）。e.detail = { data }，data是多次 postMessage 的参数组成的数组。"
     },
     "bindLoad": {
       "tsType": "() => void",

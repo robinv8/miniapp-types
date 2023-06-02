@@ -129,5 +129,8 @@
   "bindreply": "bindReply",
   "bindscrollstart": "bindScrollStart",
   "bindscrollend": "bindScrollEnd",
-  "bindrefresherwillrefresh": "bindRefresherWillRefresh"
+  "bindrefresherwillrefresh": "bindRefresherWillRefresh",
+  "bindcastinguserselect": "bindCastingUserSelect",
+  "bindcastingstatechange": "bindCastingStateChange",
+  "bindcastinginterrupt": "bindCastingInterrupt"
 }

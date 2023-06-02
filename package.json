@@ -1,6 +1,6 @@
 {
   "name": "miniapp-types",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "小程序类型生成器",
   "types": "./dist/types/index.d.ts",
   "files": [
@@ -21,7 +21,8 @@
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "clean-package",
-    "postpack": "clean-package restore"
+    "postpack": "clean-package restore",
+    "release": "release-it"
   },
   "author": "robin <robin@rnode.me> (https://github.com/robinv8)",
   "bugs": {
@@ -33,6 +34,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/ansi-colors": "^3.2.2",
+    "@types/cli-progress": "^3.11.0",
     "@types/fs-extra": "^9.0.13",
     "@types/humps": "^2.0.1",
     "@types/node": "^18.0.0",
@@ -42,8 +45,11 @@
     "humps": "^2.0.1",
     "json-schema-to-typescript": "^10.1.5",
     "puppeteer": "^13.7.0",
+    "release-it": "^15.10.1",
     "ts-node": "^10.8.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "ansi-colors": "^4.1.3",
+    "cli-progress": "^3.12.0"
   },
   "clean-package": {
     "indent": 2,

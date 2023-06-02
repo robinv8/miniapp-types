@@ -2,6 +2,26 @@ import * as puppeteer from "puppeteer";
 import * as fs from "fs";
 import * as path from "path";
 import * as humps from "humps";
+import * as progress from "cli-progress";
+import * as colors from "ansi-colors"
+
+const platformName = {
+  weapp: '微信  ',
+  alipay: '支付宝',
+  swan: '百度  ',
+  qq: 'QQ    ',
+  jd: '京东  ',
+  tt: '字节  ',
+}
+const bar = new progress.MultiBar(
+  {
+    format: '{platform} 进度 |' + colors.cyan('{bar}') + '| {percentage}% || {value}/{total}',
+    barCompleteChar: "\u2588",
+    barIncompleteChar: "\u2591",
+    hideCursor: true,
+  },
+  progress.Presets.shades_classic
+);
 
 const eventTypes = ['eventHandle', 'eventhandle', 'handler', 'handlerEvent', 'eventHandler'];
 const omitTypes = ['color'];
@@ -13,20 +33,39 @@ class Service {
   index = 0;
   evaluate;
   componentList;
-  waitTime
+  waitTime;
+  componentCount = 0;
+  bar;
   constructor(options) {
     this.platform = options.platform;
     this.waitUntil = options.waitUntil;
     this.evaluate = options.evaluate;
     this.waitTime = options.waitTime || 0;
     this.componentList = require(`./${this.platform}/componentList.json`);
+
+    const length = this.componentList.length;
+    this.bar = bar.create(length, 0, {
+      platform: platformName[this.platform]
+    });
   }
   async init() {
     this.browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       defaultViewport: null,
     });
     this.page = await this.browser.newPage();
+    await this.page.setCacheEnabled(false);
+
+    switch (this.platform) {
+      case 'weapp':
+      case 'qq':
+        await this.weappConfig();
+        break;
+      default:
+
+        break;
+    }
+
   }
 
   handleType(str, char) {
@@ -36,7 +75,8 @@ class Service {
     return str.split(char).map((item) => item.trim());
   }
   async getComponentProps({ page, url, name }) {
-    await this.page.goto(url, { waitUntil: this.waitUntil, debugger: true });
+    this.bar.update(this.index + 1);
+    await this.page.goto(url, { waitUntil: this.waitUntil, timeout: 0 });
     await this.page.waitForTimeout(this.waitTime)
     const data = await this.evaluate(this.page, this.componentList[this.index]);
     if (data.length > 0) {
@@ -100,6 +140,28 @@ class Service {
       url,
       name,
       page: this.page,
+    });
+  }
+
+  async weappConfig() {
+    await this.page.setRequestInterception(true);
+    this.page.on('request', (request) => {
+      if (request.resourceType() === "document") {
+        request.continue();
+      } else {
+        request.abort();
+      }
+    });
+  }
+
+  async defaultConfig() {
+    await this.page.setRequestInterception(true);
+    this.page.on('request', (request) => {
+      if (request.resourceType() === "image" || request.resourceType() === "stylesheet" || request.resourceType() === "font") {
+        request.abort();
+      } else {
+        request.continue();
+      }
     });
   }
 }

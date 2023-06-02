@@ -6,6 +6,10 @@
       "type": "(Node|Text)[]|String",
       "description": "节点列表 / HTML String",
       "defaultValue": "[ ]"
+    },
+    "space": {
+      "type": "string",
+      "description": "显示连续空格。\n\n有效值：\n\nensp：中文字符空格一半大小。\nemsp：中文字符空格大小。\nnbsp：根据字体设置的空格大小。"
     }
   },
   "additionalProperties": false

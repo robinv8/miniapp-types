@@ -168,6 +168,7 @@
     "bindblur",
     "bindconfirm",
     "bindkeyboardheightchange",
-    "bindnicknamereview"
+    "bindnicknamereview",
+    "placeholder-style"
   ]
 }

@@ -81,6 +81,30 @@
       "description": "名称前是否带有 loading 图标",
       "defaultValue": false
     },
+    "session-from": {
+      "type": "string",
+      "description": "会话来源，open-type=\"contact\" 时有效"
+    },
+    "send-message-title": {
+      "type": "string",
+      "description": "会话内消息卡片标题，open-type=\"contact\" 时有效",
+      "defaultValue": "当前标题"
+    },
+    "send-message-path": {
+      "type": "string",
+      "description": "会话内消息卡片点击跳转小程序路径，open-type=\"contact\" 时有效",
+      "defaultValue": "当前页面路径"
+    },
+    "send-message-img": {
+      "type": "string",
+      "description": "会话内消息卡片图片，open-type=\"contact\" 时有效",
+      "defaultValue": "默认图片"
+    },
+    "show-message-card": {
+      "type": "boolean",
+      "description": "是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示\"可能要发送的小程序\"提示，用户点击后可以快速发送小程序消息，open-type=\"contact\" 时有效",
+      "defaultValue": false
+    },
     "template-id": {
       "type": [
         "string",

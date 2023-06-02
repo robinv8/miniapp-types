@@ -25,7 +25,14 @@
       "type": "boolean",
       "description": "是否解码",
       "defaultValue": false
+    },
+    "max-lines": {
+      "type": "number",
+      "description": "限制文本最大行数"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": [
+    "max-lines"
+  ]
 }
