@@ -42,7 +42,7 @@ const service = new Service({
 
           const innerText = (<HTMLElement>el.children[0])?.innerText;
           document.querySelectorAll('table').forEach((table) => {
-            const text = table.previousElementSibling?.innerHTML;
+            const text = (<HTMLElement>table.previousElementSibling)?.innerText;
             if (text === `${innerText} 的合法值`) {
               table.querySelectorAll('tbody tr').forEach((el) => {
                 const innerText = (<HTMLElement>el.children[0])?.innerText;
@@ -61,8 +61,9 @@ const service = new Service({
             (<HTMLElement>el.children[fields.type])?.innerText,
             '/',
           );
+
           const defaultValue = (<HTMLElement>el.children[fields.defaultValue])
-            ?.innerText;
+            ?.innerText.replace(/无|\n|"|'/g, '');
           const description = (<HTMLElement>el.children[fields.description])
             ?.innerText;
           const required = (<HTMLElement>el.children[fields.required])
